@@ -146,8 +146,8 @@ function checkAnswer(selectedIndex, btnElement) {
     explanationText.innerText = currentQ.explanation || "No explanation provided.";
     explanationBox.style.display = 'block';
 
-    // Auto Advance after 3 seconds for incorrect, 1.5s for correct
-    const delay = isCorrect ? 1500 : 3500;
+    // Auto Advance after 1.8 seconds for incorrect, 0.8s for correct
+    const delay = isCorrect ? 800 : 1800;
 
     setTimeout(() => {
         currentQuestionIndex++;
