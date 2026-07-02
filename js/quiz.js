@@ -36,6 +36,14 @@ document.querySelectorAll('.start-btn').forEach(btn => {
     });
 });
 
+// Listeners for subject-specific practice start
+document.querySelectorAll('.start-sub-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const subject = e.target.closest('.subject-card').getAttribute('data-subject');
+        initQuiz('subject', subject);
+    });
+});
+
 document.getElementById('home-btn').addEventListener('click', () => {
     resultScreen.classList.remove('active');
     setupScreen.classList.add('active');
@@ -53,26 +61,34 @@ function shuffle(array) {
 }
 
 // Initialization
-function initQuiz(mode) {
+function initQuiz(mode, subjectKey = null) {
     currentQuestions = [];
-    let targetTotal = MODE_TOTALS[mode];
 
-    const subjectKeys = Object.keys(window.quizData);
-    let itemsPerSubject = Math.ceil(targetTotal / subjectKeys.length);
-
-    // Collect questions from all subjects securely
-    subjectKeys.forEach(subjectKey => {
+    if (mode === 'subject' && subjectKey) {
         let qs = window.quizData[subjectKey];
         if (qs && qs.length > 0) {
-            // Shuffle a copy of the subject's questions
-            let shuffledQs = shuffle([...qs]);
-            // Take the requested amount, or as many as available
-            currentQuestions = currentQuestions.concat(shuffledQs.slice(0, itemsPerSubject));
+            // Take 100 random questions from this specific subject
+            currentQuestions = shuffle([...qs]).slice(0, 100);
         }
-    });
+    } else {
+        let targetTotal = MODE_TOTALS[mode];
+        const subjectKeys = Object.keys(window.quizData);
+        let itemsPerSubject = Math.ceil(targetTotal / subjectKeys.length);
 
-    // Shuffle the final batched array so subjects are mixed seamlessly
-    currentQuestions = shuffle(currentQuestions);
+        // Collect questions from all subjects securely
+        subjectKeys.forEach(key => {
+            let qs = window.quizData[key];
+            if (qs && qs.length > 0) {
+                // Shuffle a copy of the subject's questions
+                let shuffledQs = shuffle([...qs]);
+                // Take the requested amount, or as many as available
+                currentQuestions = currentQuestions.concat(shuffledQs.slice(0, itemsPerSubject));
+            }
+        });
+
+        // Shuffle the final batched array so subjects are mixed seamlessly
+        currentQuestions = shuffle(currentQuestions);
+    }
 
     if (currentQuestions.length === 0) {
         alert("No questions found! Please generate the data files.");
