@@ -6,12 +6,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "What are the seven layers of the OSI model in order?",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
       "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
   },
   {
@@ -20,12 +20,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "Which IP address structure is 128 bits long?",
     "options": [
+      "IPv6",
       "MAC Address",
       "Subnet Mask",
-      "IPv4",
-      "IPv6"
+      "IPv4"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "IPv6 uses 128-bit hexadecimal addresses."
   },
   {
@@ -34,10 +34,10 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "HTTP works on which default port?",
     "options": [
-      "21",
       "22",
+      "443",
       "80",
-      "443"
+      "21"
     ],
     "answer": 2,
     "explanation": "HTTP uses port 80; HTTPS uses port 443."
@@ -48,10 +48,10 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "HTTPS uses which default port?",
     "options": [
-      "80",
+      "25",
       "443",
       "8080",
-      "25"
+      "80"
     ],
     "answer": 1,
     "explanation": "HTTPS defaults to port 443 for secure TLS connections."
@@ -64,10 +64,10 @@ window.quizData.cn = [
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
@@ -76,12 +76,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "DHCP stands for?",
     "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
       "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
+      "Direct Host Configuration Port",
+      "Distributed Host Control Protocol",
+      "Dynamic Host Connection Protocol"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "DHCP dynamically assigns IP addresses to hosts."
   },
   {
@@ -90,12 +90,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
     "options": [
-      "Switch",
-      "Repeater",
       "Hub",
-      "Router"
+      "Router",
+      "Repeater",
+      "Switch"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Routers route packets across IP networks (Layer 3)."
   },
   {
@@ -104,12 +104,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "A standard network Switch operates at which OSI layer?",
     "options": [
-      "Physical Layer",
       "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Switches use MAC addresses to forward frames at Layer 2."
   },
   {
@@ -118,12 +118,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "TCP is characterized as?",
     "options": [
-      "Connectionless and unreliable",
       "Connection-oriented and reliable",
+      "Connectionless and unreliable",
       "Best-effort delivery",
       "Lightweight with no handshake"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
   },
   {
@@ -132,12 +132,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "UDP is characterized as?",
     "options": [
-      "Connection-oriented",
-      "Heavyweight",
+      "Guaranteed delivery",
       "Connectionless and unreliable",
-      "Guaranteed delivery"
+      "Connection-oriented",
+      "Heavyweight"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
@@ -160,10 +160,10 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "What is subnetting?",
     "options": [
-      "Increasing network bandwidth",
       "Connecting different protocols",
+      "Encrypting network packets",
       "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
+      "Increasing network bandwidth"
     ],
     "answer": 2,
     "explanation": "Subnetting improves routing efficiency and security."
@@ -174,12 +174,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "In Class C IP addressing, what is the default subnet mask?",
     "options": [
+      "255.255.255.255",
       "255.255.0.0",
-      "255.255.255.0",
       "255.0.0.0",
-      "255.255.255.255"
+      "255.255.255.0"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Class C uses 24 bits for the network portion."
   },
   {
@@ -188,12 +188,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "Which protocol is primarily used for transferring files over the internet?",
     "options": [
+      "SMTP",
       "HTTP",
       "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
+      "FTP (File Transfer Protocol)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "FTP is dedicated to file upload/download."
   },
   {
@@ -202,12 +202,12 @@ window.quizData.cn = [
     "difficulty": "Easy",
     "question": "SMTP is used to?",
     "options": [
+      "Transfer files",
       "Retrieve emails",
-      "Send emails",
       "Retrieve IP addresses",
-      "Transfer files"
+      "Send emails"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
   },
   {
@@ -216,12 +216,12 @@ window.quizData.cn = [
     "difficulty": "Medium",
     "question": "What does NAT (Network Address Translation) do?",
     "options": [
+      "Translates MAC to IP",
       "Encrypts network traffic",
       "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
+      "Translates private IP addresses to a public IP"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
   },
   {
@@ -230,12 +230,12 @@ window.quizData.cn = [
     "difficulty": "Medium",
     "question": "What is TCP flow control achieved through?",
     "options": [
-      "Congestion window sizing",
-      "Three-way handshake",
+      "Sliding window mechanism",
       "Timeout retransmission only",
-      "Sliding window mechanism"
+      "Congestion window sizing",
+      "Three-way handshake"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Sliding window prevents receiver buffer overflow."
   },
   {
@@ -245,8 +245,8 @@ window.quizData.cn = [
     "question": "What is TCP congestion control achieved through?",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -258,12 +258,12 @@ window.quizData.cn = [
     "difficulty": "Medium",
     "question": "What is the primary method of error detection in TCP/IP?",
     "options": [
-      "Hamming code",
-      "Parity bit",
       "Checksum",
-      "CRC only"
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "TCP and UDP header fields include a checksum."
   },
   {
@@ -272,51 +272,1955 @@ window.quizData.cn = [
     "difficulty": "Medium",
     "question": "Which layer performs encryption and data compression in OSI?",
     "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
+      "Transport Layer",
       "Application Layer",
-      "Transport Layer"
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Presentation handles formatting, compression, and encryption."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet?",
     "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service?",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet?",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the POP3 service?",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "110"
+    ],
+    "answer": 3,
+    "explanation": "POP3 standard port is 110."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
     ],
     "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet?",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service?",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service?",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service?",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service?",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the IMAP service?",
+    "options": [
+      "21",
+      "23",
+      "143",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "IMAP standard port is 143."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service?",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet?",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /24. What is the maximum number of assignable host IP addresses on this subnet?",
+    "options": [
+      "254",
+      "508",
+      "252",
+      "256"
+    ],
+    "answer": 0,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /24, this equals 254 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service?",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service?",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "What is TCP congestion control achieved through? (Set 2)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 3)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 4)",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 10)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
     ],
     "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 11)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 13)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 17)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20)",
+    "options": [
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 27)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 28)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 31)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35)",
+    "options": [
+      "FTP",
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP"
+    ],
+    "answer": 2,
+    "explanation": "DNS translates human-readable names to machine-readable IPs."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which IP address structure is 128 bits long? (Set 36)",
+    "options": [
+      "IPv6",
+      "MAC Address",
+      "Subnet Mask",
+      "IPv4"
+    ],
+    "answer": 0,
+    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 38)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 39)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 42)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 44)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 45)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 42) (Set 53)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 54)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 56)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 58)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 59)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 62)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 31) (Set 63)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 64)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 65)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 66)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 68)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 69)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 64) (Set 72)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 74)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 75)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 31) (Set 63) (Set 76)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 69) (Set 77)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 79)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 80)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 81)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 83)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 85)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which IP address structure is 128 bits long? (Set 36) (Set 86)",
+    "options": [
+      "IPv6",
+      "MAC Address",
+      "Subnet Mask",
+      "IPv4"
+    ],
+    "answer": 0,
+    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 87)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37) (Set 88)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 91)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 92)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 95)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 96)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 68) (Set 100)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 101)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 102)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24) (Set 103)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 87) (Set 107)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 110)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 111)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 102) (Set 112)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84) (Set 113)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 66) (Set 115)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 116)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 117)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -325,461 +2229,391 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124)",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
     ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 125)",
     "options": [
-      "Hamming code",
-      "Parity bit",
       "Checksum",
-      "CRC only"
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "TCP and UDP header fields include a checksum."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 65) (Set 127)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37) (Set 128)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 129)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 130)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37) (Set 88) (Set 131)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 132)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 133)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
     ],
     "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 135)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 136)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 137)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 138)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 139)",
     "options": [
-      "80",
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 141)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 142)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 144)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 145)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 146)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 3) (Set 147)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 148)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 149)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 150)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151)",
+    "options": [
+      "25",
       "443",
       "8080",
-      "25"
+      "80"
     ],
     "answer": 1,
     "explanation": "HTTPS defaults to port 443 for secure TLS connections."
@@ -788,263 +2622,193 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152)",
     "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 146) (Set 153)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "DHCP stands for?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155)",
     "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 156)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 159)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 161)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 162)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 163)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24) (Set 103) (Set 164)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -1053,68 +2817,446 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 92) (Set 167)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 168)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
     ],
-    "answer": 2,
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 169)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
     "explanation": "Switches use MAC addresses to forward frames at Layer 2."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
+      "4",
+      "6",
+      "8",
+      "12"
     ],
     "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 172)",
     "options": [
-      "Hamming code",
-      "Parity bit",
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 173)",
+    "options": [
       "Checksum",
-      "CRC only"
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 174)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 175)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 176)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 177)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 139) (Set 179)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 181)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 182)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
     "explanation": "TCP and UDP header fields include a checksum."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 139) (Set 183)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 68) (Set 184)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 186)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 13) (Set 189)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121) (Set 190)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 191)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 192)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 193)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124) (Set 194)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 195)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 196)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123) (Set 197)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -1123,8 +3265,36 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 198)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the POP3 service? (Set 199)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "110"
+    ],
+    "answer": 3,
+    "explanation": "POP3 standard port is 110."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 200)",
     "options": [
       "FTP",
       "DHCP",
@@ -1138,82 +3308,12 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "DHCP stands for?",
+    "question": "What is subnetting? (Set 201)",
     "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
       "Connecting different protocols",
+      "Encrypting network packets",
       "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
+      "Increasing network bandwidth"
     ],
     "answer": 2,
     "explanation": "Subnetting improves routing efficiency and security."
@@ -1222,194 +3322,12 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "SMTP is used to?",
+    "question": "What is subnetting? (Set 202)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
       "Connecting different protocols",
+      "Encrypting network packets",
       "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
+      "Increasing network bandwidth"
     ],
     "answer": 2,
     "explanation": "Subnetting improves routing efficiency and security."
@@ -1418,231 +3336,1673 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 96) (Set 203)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
+      "255.255.255.255",
       "255.255.0.0",
-      "255.255.255.0",
       "255.0.0.0",
-      "255.255.255.255"
+      "255.255.255.0"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Class C uses 24 bits for the network portion."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205)",
     "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 196) (Set 206)",
     "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
     ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 208)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 209)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 210)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 212)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 174) (Set 213)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 176) (Set 215)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 4) (Set 216)",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 74) (Set 217)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 218)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 219)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
     ],
     "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 220)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 59) (Set 221)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 222)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 223)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 177) (Set 224)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 225)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 227)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24) (Set 103) (Set 228)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 229)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 209) (Set 230)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 231)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 232)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 233)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 235)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 236)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 237)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 238)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 239)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 240)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 241)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 169) (Set 243)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 245)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 247)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 248)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 249)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 237) (Set 250)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 174) (Set 251)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 252)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 144) (Set 253)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 254)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 255)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 256)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 258)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 27) (Set 259)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 249) (Set 260)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 261)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 263)",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 195) (Set 264)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 54) (Set 265)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 266)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 267)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 268)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 39) (Set 269)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What is subnetting? (Set 270)",
+    "options": [
+      "Connecting different protocols",
+      "Encrypting network packets",
+      "Dividing a large network into smaller subnetworks",
+      "Increasing network bandwidth"
+    ],
+    "answer": 2,
+    "explanation": "Subnetting improves routing efficiency and security."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 177) (Set 271)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 272)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 273)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 274)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 275)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 116) (Set 276)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24) (Set 103) (Set 164) (Set 277)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178) (Set 278)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the POP3 service? (Set 280)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "110"
+    ],
+    "answer": 3,
+    "explanation": "POP3 standard port is 110."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180) (Set 281)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180) (Set 283)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 284)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 285)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286)",
+    "options": [
+      "FTP",
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP"
+    ],
+    "answer": 2,
+    "explanation": "DNS translates human-readable names to machine-readable IPs."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 182) (Set 287)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 3) (Set 147) (Set 288)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178) (Set 278) (Set 289)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24) (Set 103) (Set 164) (Set 277) (Set 290)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 208) (Set 291)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 275) (Set 292)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 235) (Set 293)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 44) (Set 294)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 295)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 296)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 64) (Set 72) (Set 298)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 285) (Set 299)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 301)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 302)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 303)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 68) (Set 184) (Set 304)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the POP3 service? (Set 199) (Set 305)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "110"
+    ],
+    "answer": 3,
+    "explanation": "POP3 standard port is 110."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 306)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 91) (Set 307)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 309)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 306) (Set 310)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 10) (Set 311)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 312)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84) (Set 113) (Set 313)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 314)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20) (Set 315)",
+    "options": [
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 45) (Set 316)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 318)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 267) (Set 320)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 321)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 322)",
     "options": [
       "FTP",
       "DHCP",
@@ -1656,82 +5016,530 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319) (Set 323)",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 62) (Set 324)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 13) (Set 189) (Set 325)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
     ],
     "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /24. What is the maximum number of assignable host IP addresses on this subnet? (Set 327)",
+    "options": [
+      "254",
+      "508",
+      "252",
+      "256"
+    ],
+    "answer": 0,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /24, this equals 254 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282) (Set 328)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37) (Set 88) (Set 329)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 330)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 331)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 332)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 233) (Set 333)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 334)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 225) (Set 335)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 219) (Set 336)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 337)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 54) (Set 265) (Set 338)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 339)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121) (Set 340)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 341)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 342)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 343)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 266) (Set 344)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 345)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123) (Set 346)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 347)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 267) (Set 320) (Set 348)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 349)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 174) (Set 251) (Set 350)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 351)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 352)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
     "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 322) (Set 353)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "FTP",
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP"
     ],
     "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+    "explanation": "DNS translates human-readable names to machine-readable IPs."
   },
   {
     "subject": "CN",
-    "topic": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 354)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 176) (Set 355)",
     "options": [
       "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124) (Set 356)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 232) (Set 358)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 352) (Set 359)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360)",
+    "options": [
+      "25",
       "443",
       "8080",
-      "25"
+      "80"
     ],
     "answer": 1,
     "explanation": "HTTPS defaults to port 443 for secure TLS connections."
@@ -1739,50 +5547,820 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 361)",
     "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
+      "25",
+      "443",
+      "8080",
+      "80"
     ],
     "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 362)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 111) (Set 363)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124) (Set 194) (Set 366)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 367)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 322) (Set 368)",
+    "options": [
+      "FTP",
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP"
+    ],
+    "answer": 2,
+    "explanation": "DNS translates human-readable names to machine-readable IPs."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 369)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 370)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 371)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 372)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 45) (Set 316) (Set 373)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106) (Set 374)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 375)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 376)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 377)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the IMAP service? (Set 378)",
+    "options": [
+      "21",
+      "23",
+      "143",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "IMAP standard port is 143."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 379)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 349) (Set 380)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234) (Set 381)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 249) (Set 382)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 383)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 384)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 385)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 386)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365) (Set 387)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 388)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 389)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 139) (Set 390)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 391)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 349) (Set 380) (Set 392)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 332) (Set 393)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 231) (Set 394)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 83) (Set 395)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20) (Set 396)",
+    "options": [
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 397)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 39) (Set 269) (Set 398)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 24) (Set 103) (Set 228) (Set 399)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 372) (Set 400)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205) (Set 401)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 44) (Set 402)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 218) (Set 403)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 275) (Set 292) (Set 404)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 405)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121) (Set 340) (Set 406)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 407)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 144) (Set 253) (Set 408)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 186) (Set 409)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 54) (Set 410)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 411)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 412)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84) (Set 113) (Set 313) (Set 413)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 196) (Set 206) (Set 414)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 415)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 110) (Set 416)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 245) (Set 417)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 354) (Set 418)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 322) (Set 368) (Set 419)",
     "options": [
       "FTP",
       "DHCP",
@@ -1795,6830 +6373,2252 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 420)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 169) (Set 243) (Set 421)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 422)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /24. What is the maximum number of assignable host IP addresses on this subnet? (Set 423)",
+    "options": [
+      "254",
+      "508",
+      "252",
+      "256"
+    ],
+    "answer": 0,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /24, this equals 254 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 136) (Set 424)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What is subnetting? (Set 202) (Set 425)",
+    "options": [
+      "Connecting different protocols",
+      "Encrypting network packets",
+      "Dividing a large network into smaller subnetworks",
+      "Increasing network bandwidth"
+    ],
+    "answer": 2,
+    "explanation": "Subnetting improves routing efficiency and security."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 266) (Set 426)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 427)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 301) (Set 428)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 245) (Set 429)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 275) (Set 292) (Set 404) (Set 430)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 161) (Set 431)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 69) (Set 432)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 101) (Set 433)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 434)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 435)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 367) (Set 436)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 437)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 438)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 132) (Set 439)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 209) (Set 440)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 384) (Set 441)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 442)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 443)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 386) (Set 444)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 384) (Set 441) (Set 445)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 446)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 447)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 148) (Set 448)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178) (Set 449)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 285) (Set 450)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 186) (Set 451)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178) (Set 278) (Set 289) (Set 452)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 339) (Set 453)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 454)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 369) (Set 455)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 457)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 458)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 459)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106) (Set 374) (Set 460)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 461)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 435) (Set 462)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 412) (Set 463)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 464)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 465)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 79) (Set 466)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84) (Set 113) (Set 467)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 468)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 469)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 415) (Set 470)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 471)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106) (Set 374) (Set 460) (Set 472)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365) (Set 473)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 474)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 161) (Set 431) (Set 475)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 161) (Set 476)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 477)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 478)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205) (Set 479)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 148) (Set 480)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 208) (Set 481)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20) (Set 482)",
+    "options": [
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205) (Set 479) (Set 483)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282) (Set 328) (Set 484)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 235) (Set 293) (Set 485)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 31) (Set 63) (Set 486)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 193) (Set 487)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 488)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 388) (Set 489)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 471) (Set 490)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 491)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 492)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 274) (Set 493)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
     ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 415) (Set 494)",
     "options": [
-      "Physical Layer",
       "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 379) (Set 495)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 420) (Set 496)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 497)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 384) (Set 441) (Set 498)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 499)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 500)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 427) (Set 501)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 502)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 503)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 181) (Set 504)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 464) (Set 505)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 506)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 507)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 54) (Set 265) (Set 338) (Set 508)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
     "explanation": "Switches use MAC addresses to forward frames at Layer 2."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 303) (Set 509)",
     "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 3) (Set 510)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 511)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 512)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 314) (Set 513)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 514)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 59) (Set 515)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 516)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 492) (Set 517)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 285) (Set 299) (Set 518)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 159) (Set 519)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 241) (Set 520)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 266) (Set 426) (Set 521)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 11) (Set 522)",
+    "options": [
+      "22",
+      "443",
+      "80",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106) (Set 374) (Set 523)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 412) (Set 463) (Set 524)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 525)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 343) (Set 526)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 285) (Set 299) (Set 518) (Set 527)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 321) (Set 528)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 343) (Set 529)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 38) (Set 530)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 132) (Set 439) (Set 531)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 532)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
     "explanation": "FTP is dedicated to file upload/download."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "What is TCP congestion control achieved through? (Set 267) (Set 533)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
     ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP flow control achieved through?",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 534)",
     "options": [
-      "Congestion window sizing",
-      "Three-way handshake",
+      "FTP",
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP"
+    ],
+    "answer": 2,
+    "explanation": "DNS translates human-readable names to machine-readable IPs."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 535)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 343) (Set 529) (Set 536)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 376) (Set 537)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319) (Set 323) (Set 538)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 539)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 540)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 492) (Set 517) (Set 541)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is TCP flow control achieved through? (Set 542)",
+    "options": [
+      "Sliding window mechanism",
       "Timeout retransmission only",
-      "Sliding window mechanism"
+      "Congestion window sizing",
+      "Three-way handshake"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Sliding window prevents receiver buffer overflow."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 543)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
     ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 443) (Set 544)",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
     ],
     "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
     "explanation": "Class C uses 24 bits for the network portion."
   },
   {
     "subject": "CN",
-    "topic": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 545)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTP works on which default port?",
-    "options": [
-      "21",
       "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 27) (Set 259) (Set 546)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 11) (Set 522) (Set 547)",
+    "options": [
+      "22",
+      "443",
       "80",
-      "443"
+      "21"
     ],
     "answer": 2,
     "explanation": "HTTP uses port 80; HTTPS uses port 443."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242) (Set 548)",
     "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
+      "4",
+      "6",
+      "8",
+      "12"
     ],
     "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "HTTP works on which default port?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 405) (Set 549)",
     "options": [
-      "21",
       "22",
-      "80",
-      "443"
-    ],
-    "answer": 2,
-    "explanation": "HTTP uses port 80; HTTPS uses port 443."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "21",
+      "23",
+      "68"
     ],
     "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "TCP is characterized as? (Set 279) (Set 343) (Set 529) (Set 550)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
       "Connection-oriented and reliable",
+      "Connectionless and unreliable",
       "Best-effort delivery",
       "Lightweight with no handshake"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "SMTP is used to?",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20) (Set 482) (Set 551)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
+      "Transport Layer",
       "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
       "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
+      "Session Layer"
     ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Presentation handles formatting, compression, and encryption."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 411) (Set 552)",
     "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
+      "SMTP",
       "HTTP",
       "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
+      "FTP (File Transfer Protocol)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "FTP is dedicated to file upload/download."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319) (Set 553)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 554)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
     ],
     "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 208) (Set 291) (Set 555)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 62) (Set 324) (Set 556)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 427) (Set 501) (Set 557)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 383) (Set 558)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 168) (Set 559)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 223) (Set 560)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180) (Set 283) (Set 561)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 231) (Set 562)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 148) (Set 448) (Set 563)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 411) (Set 564)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 345) (Set 565)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 45) (Set 316) (Set 373) (Set 566)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 62) (Set 567)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 4) (Set 216) (Set 568)",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 38) (Set 530) (Set 569)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "SMTP is used to? (Set 570)",
+    "options": [
+      "Transfer files",
+      "Retrieve emails",
+      "Retrieve IP addresses",
+      "Send emails"
+    ],
+    "answer": 3,
+    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 209) (Set 230) (Set 571)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 572)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 149) (Set 573)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 525) (Set 574)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357) (Set 575)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 139) (Set 390) (Set 576)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 577)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 477) (Set 578)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 434) (Set 579)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123) (Set 197) (Set 580)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -8627,41 +8627,1441 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 349) (Set 380) (Set 392) (Set 581)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
     ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 385) (Set 582)",
     "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
     ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 386) (Set 444) (Set 583)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84) (Set 113) (Set 313) (Set 413) (Set 584)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Hard",
-    "question": "What is subnetting?",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234) (Set 585)",
     "options": [
-      "Increasing network bandwidth",
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 586)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 464) (Set 505) (Set 587)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 144) (Set 253) (Set 588)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 79) (Set 589)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 13) (Set 189) (Set 325) (Set 590)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "SMTP is used to? (Set 570) (Set 591)",
+    "options": [
+      "Transfer files",
+      "Retrieve emails",
+      "Retrieve IP addresses",
+      "Send emails"
+    ],
+    "answer": 3,
+    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 592)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 303) (Set 593)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 379) (Set 594)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 79) (Set 589) (Set 595)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 376) (Set 537) (Set 596)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 597)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 144) (Set 253) (Set 408) (Set 598)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 149) (Set 599)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 321) (Set 600)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 601)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 397) (Set 602)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 603)",
+    "options": [
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 604)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 168) (Set 559) (Set 605)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 69) (Set 432) (Set 606)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 607)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 397) (Set 602) (Set 608)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 435) (Set 609)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 458) (Set 610)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 168) (Set 611)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123) (Set 197) (Set 580) (Set 612)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357) (Set 613)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 192) (Set 614)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 615)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205) (Set 401) (Set 616)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 617)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 618)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 177) (Set 224) (Set 619)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 620)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 604) (Set 621)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 176) (Set 215) (Set 622)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the IMAP service? (Set 623)",
+    "options": [
+      "21",
+      "23",
+      "143",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "IMAP standard port is 143."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 196) (Set 206) (Set 624)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123) (Set 197) (Set 580) (Set 612) (Set 625)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 506) (Set 626)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 627)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 628)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 96) (Set 629)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282) (Set 328) (Set 630)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180) (Set 631)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 492) (Set 517) (Set 541) (Set 632)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 132) (Set 633)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 268) (Set 634)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 163) (Set 635)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 331) (Set 636)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 238) (Set 637)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 437) (Set 638)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 332) (Set 393) (Set 639)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 640)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242) (Set 641)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365) (Set 642)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37) (Set 643)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 644)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 222) (Set 645)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 646)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 233) (Set 333) (Set 647)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242) (Set 548) (Set 648)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 233) (Set 333) (Set 649)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 628) (Set 650)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 367) (Set 651)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 17) (Set 652)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 653)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 191) (Set 654)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 174) (Set 655)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 500) (Set 656)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 58) (Set 657)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 341) (Set 658)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 659)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the IMAP service? (Set 623) (Set 660)",
+    "options": [
+      "21",
+      "23",
+      "143",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "IMAP standard port is 143."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234) (Set 661)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 554) (Set 662)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357) (Set 663)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 354) (Set 418) (Set 664)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 111) (Set 363) (Set 665)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 181) (Set 666)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 105) (Set 187) (Set 499) (Set 667)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 181) (Set 666) (Set 668)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 235) (Set 669)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319) (Set 323) (Set 670)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242) (Set 641) (Set 671)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 59) (Set 221) (Set 672)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 68) (Set 673)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 674)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282) (Set 328) (Set 675)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319) (Set 553) (Set 676)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 237) (Set 250) (Set 677)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 386) (Set 678)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 225) (Set 679)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 321) (Set 600) (Set 680)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "DHCP stands for? (Set 681)",
+    "options": [
+      "Dynamic Host Configuration Protocol",
+      "Direct Host Configuration Port",
+      "Distributed Host Control Protocol",
+      "Dynamic Host Connection Protocol"
+    ],
+    "answer": 0,
+    "explanation": "DHCP dynamically assigns IP addresses to hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 225) (Set 679) (Set 682)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What is subnetting? (Set 201) (Set 683)",
+    "options": [
       "Connecting different protocols",
+      "Encrypting network packets",
       "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
+      "Increasing network bandwidth"
     ],
     "answer": 2,
     "explanation": "Subnetting improves routing efficiency and security."
@@ -8670,165 +10070,347 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 427) (Set 684)",
     "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 685)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
+    "question": "What are the seven layers of the OSI model in order? (Set 69) (Set 432) (Set 686)",
     "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
     ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "TCP is characterized as?",
+    "question": "TCP is characterized as? (Set 248) (Set 687)",
     "options": [
-      "Connectionless and unreliable",
       "Connection-oriented and reliable",
+      "Connectionless and unreliable",
       "Best-effort delivery",
       "Lightweight with no handshake"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 210) (Set 688)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 689)",
     "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
     ],
     "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 477) (Set 690)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365) (Set 387) (Set 691)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 692)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 59) (Set 221) (Set 693)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 694)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 572) (Set 695)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 692) (Set 696)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 195) (Set 264) (Set 697)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 212) (Set 698)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 699)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 96) (Set 203) (Set 700)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 273) (Set 701)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 193) (Set 702)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 231) (Set 703)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which IP address structure is 128 bits long? (Set 704)",
+    "options": [
+      "IPv6",
+      "MAC Address",
+      "Subnet Mask",
+      "IPv4"
+    ],
+    "answer": 0,
+    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 705)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 17) (Set 706)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 707)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
     "explanation": "Routers route packets across IP networks (Layer 3)."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 123) (Set 197) (Set 580) (Set 612) (Set 625) (Set 708)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -8837,22 +10419,92 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 254) (Set 709)",
     "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
     ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 177) (Set 224) (Set 710)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 711)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180) (Set 281) (Set 712)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121) (Set 340) (Set 406) (Set 713)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 714)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 322) (Set 368) (Set 419) (Set 715)",
     "options": [
       "FTP",
       "DHCP",
@@ -8864,252 +10516,42 @@ window.quizData.cn = [
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 85) (Set 716)",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTP works on which default port?",
-    "options": [
+      "23",
       "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /24. What is the maximum number of assignable host IP addresses on this subnet? (Set 327) (Set 717)",
+    "options": [
+      "254",
+      "508",
+      "252",
+      "256"
+    ],
+    "answer": 0,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /24, this equals 254 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTP works on which default port? (Set 11) (Set 718)",
+    "options": [
       "22",
+      "443",
       "80",
-      "443"
+      "21"
     ],
     "answer": 2,
     "explanation": "HTTP uses port 80; HTTPS uses port 443."
@@ -9118,2084 +10560,26 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "UDP is characterized as?",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 719)",
     "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
+      "255.255.255.255",
       "255.255.0.0",
-      "255.255.255.0",
       "255.0.0.0",
-      "255.255.255.255"
+      "255.255.255.0"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Class C uses 24 bits for the network portion."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "HTTP works on which default port? (Set 468) (Set 720)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
-    "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
-    ],
-    "answer": 1,
-    "explanation": "Class C uses 24 bits for the network portion."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTP works on which default port?",
-    "options": [
-      "21",
       "22",
+      "443",
       "80",
-      "443"
+      "21"
     ],
     "answer": 2,
     "explanation": "HTTP uses port 80; HTTPS uses port 443."
@@ -11203,792 +10587,680 @@ window.quizData.cn = [
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 138) (Set 721)",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
-    "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
-    ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "TCP is characterized as?",
-    "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 268) (Set 722)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
-    ],
-    "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
       "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which layer performs encryption and data compression in OSI?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205) (Set 401) (Set 723)",
     "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
-      "Application Layer",
-      "Transport Layer"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 386) (Set 444) (Set 724)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
     ],
     "answer": 1,
-    "explanation": "Presentation handles formatting, compression, and encryption."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178) (Set 278) (Set 725)",
     "options": [
-      "255.255.0.0",
-      "255.255.255.0",
-      "255.0.0.0",
-      "255.255.255.255"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 1,
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 372) (Set 400) (Set 726)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 135) (Set 727)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 719) (Set 728)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
     "explanation": "Class C uses 24 bits for the network portion."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 477) (Set 729)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 347) (Set 730)",
     "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
+      "Guaranteed delivery",
       "Connectionless and unreliable",
-      "Guaranteed delivery"
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 108) (Set 159) (Set 519) (Set 731)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 420) (Set 496) (Set 732)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 38) (Set 530) (Set 733)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 74) (Set 734)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 252) (Set 735)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 44) (Set 294) (Set 736)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 692) (Set 737)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 212) (Set 698) (Set 738)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 352) (Set 359) (Set 739)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 740)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124) (Set 356) (Set 741)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
     "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is subnetting?",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 539) (Set 742)",
     "options": [
-      "Increasing network bandwidth",
-      "Connecting different protocols",
-      "Dividing a large network into smaller subnetworks",
-      "Encrypting network packets"
+      "25",
+      "443",
+      "8080",
+      "80"
     ],
-    "answer": 2,
-    "explanation": "Subnetting improves routing efficiency and security."
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 130) (Set 743)",
     "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "22",
+      "21",
+      "25",
+      "23"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "SMTP standard port is 25."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 161) (Set 744)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357) (Set 575) (Set 745)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
     "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 309) (Set 746)",
     "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
     ],
     "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+    "explanation": "FTP is dedicated to file upload/download."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "TCP is characterized as?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 747)",
     "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 748)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 659) (Set 749)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 321) (Set 750)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 644) (Set 751)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106) (Set 752)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 478) (Set 753)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 754)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 755)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365) (Set 473) (Set 756)",
+    "options": [
+      "Guaranteed delivery",
       "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
+      "Connection-oriented",
+      "Heavyweight"
     ],
     "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 191) (Set 757)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 758)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 341) (Set 658) (Set 759)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 41) (Set 352) (Set 359) (Set 760)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
       "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
     ],
-    "answer": 3,
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 454) (Set 761)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 118) (Set 154) (Set 341) (Set 658) (Set 759) (Set 762)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 386) (Set 444) (Set 583) (Set 763)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 764)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
     "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
   },
   {
     "subject": "CN",
     "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 372) (Set 400) (Set 765)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 252) (Set 735) (Set 766)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
     "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "What is TCP congestion control achieved through? (Set 2) (Set 61) (Set 114) (Set 379) (Set 495) (Set 767)",
+    "options": [
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
+    ],
+    "answer": 3,
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 768)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 200) (Set 769)",
     "options": [
       "FTP",
       "DHCP",
@@ -12002,1258 +11274,600 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124) (Set 770)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
     ],
     "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 102) (Set 771)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 772)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 773)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 74) (Set 774)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "UDP is characterized as? (Set 39) (Set 269) (Set 775)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
     ],
     "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 332) (Set 393) (Set 639) (Set 776)",
     "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
     "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 257) (Set 777)",
     "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
+      "4",
+      "6",
+      "8",
+      "12"
     ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "SMTP is used to? (Set 570) (Set 591) (Set 778)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
+      "Transfer files",
       "Retrieve emails",
-      "Send emails",
       "Retrieve IP addresses",
-      "Transfer files"
+      "Send emails"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234) (Set 779)",
     "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "Sliding window",
+      "MAC addresses",
+      "Checksums",
+      "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP flow control achieved through?",
-    "options": [
-      "Congestion window sizing",
-      "Three-way handshake",
-      "Timeout retransmission only",
-      "Sliding window mechanism"
-    ],
-    "answer": 3,
-    "explanation": "Sliding window prevents receiver buffer overflow."
+    "explanation": "Prevents network congestion by scaling down output when drops occur."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20) (Set 780)",
     "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 56) (Set 781)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
     ],
     "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
   },
   {
     "subject": "CN",
-    "topic": "CN",
+    "topic": "Subnetting",
     "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 447) (Set 782)",
     "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "28",
+      "60",
+      "32",
+      "30"
     ],
     "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "DHCP stands for?",
+    "question": "HTTP works on which default port? (Set 468) (Set 783)",
     "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTP works on which default port?",
-    "options": [
-      "21",
       "22",
+      "443",
       "80",
-      "443"
+      "21"
     ],
     "answer": 2,
     "explanation": "HTTP uses port 80; HTTPS uses port 443."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 334) (Set 784)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
     "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 192) (Set 785)",
     "options": [
-      "FTP",
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 321) (Set 750) (Set 786)",
+    "options": [
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 254) (Set 787)",
     "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
+      "Guaranteed delivery",
       "Connectionless and unreliable",
-      "Guaranteed delivery"
+      "Connection-oriented",
+      "Heavyweight"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "UDP is low-overhead and does not perform retransmissions."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "UDP is characterized as?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 788)",
     "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
-    "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "HTTP works on which default port? (Set 11) (Set 522) (Set 547) (Set 789)",
     "options": [
-      "80",
+      "22",
       "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
+      "80",
+      "21"
     ],
     "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
+    "explanation": "HTTP uses port 80; HTTPS uses port 443."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 790)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 5) (Set 13) (Set 189) (Set 325) (Set 590) (Set 791)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "SMTP is used to?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 295) (Set 792)",
     "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 554) (Set 662) (Set 793)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 225) (Set 335) (Set 794)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 795)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 193) (Set 702) (Set 796)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "TCP is characterized as?",
+    "question": "What is subnetting? (Set 202) (Set 797)",
     "options": [
-      "Connectionless and unreliable",
-      "Connection-oriented and reliable",
-      "Best-effort delivery",
-      "Lightweight with no handshake"
-    ],
-    "answer": 1,
-    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
+      "Connecting different protocols",
+      "Encrypting network packets",
+      "Dividing a large network into smaller subnetworks",
+      "Increasing network bandwidth"
     ],
     "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
+    "explanation": "Subnetting improves routing efficiency and security."
   },
   {
     "subject": "CN",
-    "topic": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 79) (Set 466) (Set 798)",
     "options": [
       "80",
-      "443",
-      "8080",
-      "25"
+      "23",
+      "22",
+      "21"
     ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 73) (Set 705) (Set 799)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 800)",
     "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
-    ],
-    "answer": 2,
-    "explanation": "FTP is dedicated to file upload/download."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
-    "topic": "CN",
+    "topic": "Ports & Protocols",
     "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 4) (Set 216) (Set 568) (Set 801)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "21",
+      "25",
+      "22",
+      "23"
     ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Medium",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 802)",
     "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "UDP is characterized as?",
-    "options": [
-      "Connection-oriented",
-      "Heavyweight",
-      "Connectionless and unreliable",
-      "Guaranteed delivery"
-    ],
-    "answer": 2,
-    "explanation": "UDP is low-overhead and does not perform retransmissions."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "SMTP is used to?",
-    "options": [
-      "Retrieve emails",
-      "Send emails",
-      "Retrieve IP addresses",
-      "Transfer files"
-    ],
-    "answer": 1,
-    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
-      "MAC Address",
-      "Subnet Mask",
-      "IPv4",
-      "IPv6"
-    ],
-    "answer": 3,
-    "explanation": "IPv6 uses 128-bit hexadecimal addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which layer performs encryption and data compression in OSI?",
-    "options": [
-      "Session Layer",
-      "Presentation Layer (Layer 6)",
+      "Transport Layer",
       "Application Layer",
-      "Transport Layer"
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Presentation handles formatting, compression, and encryption."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 69) (Set 432) (Set 803)",
     "options": [
-      "FTP",
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 318) (Set 804)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "DHCP stands for? (Set 681) (Set 805)",
+    "options": [
+      "Dynamic Host Configuration Protocol",
+      "Direct Host Configuration Port",
+      "Distributed Host Control Protocol",
+      "Dynamic Host Connection Protocol"
+    ],
+    "answer": 0,
+    "explanation": "DHCP dynamically assigns IP addresses to hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 806)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What is subnetting? (Set 202) (Set 807)",
+    "options": [
+      "Connecting different protocols",
+      "Encrypting network packets",
+      "Dividing a large network into smaller subnetworks",
+      "Increasing network bandwidth"
+    ],
+    "answer": 2,
+    "explanation": "Subnetting improves routing efficiency and security."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 653) (Set 808)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 233) (Set 333) (Set 647) (Set 809)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 178) (Set 278) (Set 289) (Set 810)",
+    "options": [
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 811)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 812)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
-    ],
-    "answer": 2,
-    "explanation": "TCP and UDP header fields include a checksum."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
+      "25",
       "443",
       "8080",
-      "25"
+      "80"
     ],
     "answer": 1,
     "explanation": "HTTPS defaults to port 443 for secure TLS connections."
@@ -13262,497 +11876,917 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol is primarily used for transferring files over the internet?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 813)",
     "options": [
-      "HTTP",
-      "SNMP",
-      "FTP (File Transfer Protocol)",
-      "SMTP"
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 331) (Set 814)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 45) (Set 316) (Set 815)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 371) (Set 816)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 817)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 818)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 819)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 254) (Set 787) (Set 820)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 554) (Set 821)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 768) (Set 822)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 196) (Set 206) (Set 414) (Set 823)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 342) (Set 824)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 354) (Set 418) (Set 825)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 826)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 659) (Set 749) (Set 827)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 308) (Set 411) (Set 828)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
     "explanation": "FTP is dedicated to file upload/download."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
     "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 182) (Set 287) (Set 829)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What is the primary method of error detection in TCP/IP?",
-    "options": [
-      "Hamming code",
-      "Parity bit",
       "Checksum",
-      "CRC only"
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121) (Set 340) (Set 406) (Set 830)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 136) (Set 424) (Set 831)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242) (Set 548) (Set 832)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 34) (Set 514) (Set 833)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
     "explanation": "TCP and UDP header fields include a checksum."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 238) (Set 637) (Set 834)",
     "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
     ],
     "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "DHCP stands for?",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 331) (Set 636) (Set 835)",
     "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
     ],
     "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
     "explanation": "Routers route packets across IP networks (Layer 3)."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 836)",
     "options": [
-      "FTP",
       "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 222) (Set 645) (Set 837)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 195) (Set 838)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model? (Set 90) (Set 331) (Set 636) (Set 839)",
+    "options": [
+      "Hub",
+      "Router",
+      "Repeater",
+      "Switch"
+    ],
+    "answer": 1,
+    "explanation": "Routers route packets across IP networks (Layer 3)."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 840)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Hard",
-    "question": "In Class C IP addressing, what is the default subnet mask?",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 714) (Set 841)",
     "options": [
+      "255.255.255.255",
       "255.255.0.0",
-      "255.255.255.0",
       "255.0.0.0",
-      "255.255.255.255"
+      "255.255.255.0"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Class C uses 24 bits for the network portion."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
-    "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
-    ],
-    "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is TCP congestion control achieved through?",
-    "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 464) (Set 505) (Set 587) (Set 842)",
     "options": [
       "DHCP",
       "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
+      "ARP (Address Resolution Protocol)",
+      "NAT"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 120) (Set 205) (Set 479) (Set 483) (Set 843)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 3) (Set 844)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 18) (Set 172) (Set 845)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
     "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 846)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 101) (Set 433) (Set 847)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 181) (Set 848)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 27) (Set 849)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 181) (Set 666) (Set 850)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 427) (Set 501) (Set 851)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 768) (Set 822) (Set 852)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 853)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 854)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 384) (Set 855)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 155) (Set 856)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 91) (Set 307) (Set 857)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DNS service? (Set 59) (Set 221) (Set 858)",
+    "options": [
+      "53",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "DNS standard port is 53."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 457) (Set 859)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 300) (Set 365) (Set 387) (Set 860)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 238) (Set 637) (Set 834) (Set 861)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 91) (Set 862)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is primarily used for transferring files over the internet? (Set 116) (Set 276) (Set 863)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SNMP",
+      "FTP (File Transfer Protocol)"
+    ],
+    "answer": 3,
+    "explanation": "FTP is dedicated to file upload/download."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 65) (Set 864)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 865)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 17) (Set 706) (Set 866)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 89) (Set 152) (Set 185) (Set 456) (Set 477) (Set 578) (Set 867)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "SMTP is used to? (Set 570) (Set 868)",
+    "options": [
+      "Transfer files",
+      "Retrieve emails",
+      "Retrieve IP addresses",
+      "Send emails"
+    ],
+    "answer": 3,
+    "explanation": "Simple Mail Transfer Protocol is used to transmit emails."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 244) (Set 303) (Set 869)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 84) (Set 113) (Set 313) (Set 870)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 47) (Set 871)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 106) (Set 374) (Set 460) (Set 872)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 297) (Set 607) (Set 873)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SMTP service? (Set 874)",
+    "options": [
+      "22",
+      "21",
+      "25",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SMTP standard port is 25."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 196) (Set 206) (Set 624) (Set 875)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 434) (Set 579) (Set 876)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 191) (Set 757) (Set 877)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 322) (Set 368) (Set 419) (Set 715) (Set 878)",
     "options": [
       "FTP",
       "DHCP",
@@ -13764,223 +12798,503 @@ window.quizData.cn = [
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What is the primary method of error detection in TCP/IP?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 82) (Set 169) (Set 243) (Set 421) (Set 879)",
     "options": [
-      "Hamming code",
-      "Parity bit",
-      "Checksum",
-      "CRC only"
+      "22",
+      "21",
+      "23",
+      "68"
     ],
-    "answer": 2,
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 539) (Set 742) (Set 880)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /28. What is the maximum number of assignable host IP addresses on this subnet? (Set 211) (Set 604) (Set 881)",
+    "options": [
+      "28",
+      "16",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /28, this equals 14 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 19) (Set 182) (Set 287) (Set 829) (Set 882)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
     "explanation": "TCP and UDP header fields include a checksum."
   },
   {
     "subject": "CN",
-    "topic": "CN",
+    "topic": "Subnetting",
     "difficulty": "Medium",
-    "question": "Which protocol is used to translate domain names into IP addresses?",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 32) (Set 37) (Set 88) (Set 329) (Set 883)",
     "options": [
-      "FTP",
-      "DHCP",
-      "DNS (Domain Name System)",
-      "ARP"
+      "60",
+      "64",
+      "62",
+      "124"
     ],
     "answer": 2,
-    "explanation": "DNS translates human-readable names to machine-readable IPs."
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /26. What is the maximum number of assignable host IP addresses on this subnet? (Set 884)",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /26, this equals 62 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 332) (Set 885)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 886)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 887)",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
   },
   {
     "subject": "CN",
     "topic": "CN",
-    "difficulty": "Medium",
-    "question": "HTTPS uses which default port?",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 478) (Set 753) (Set 888)",
     "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 85) (Set 889)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
     ],
     "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+    "explanation": "FTP standard port is 21."
   },
   {
     "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "A standard network Switch operates at which OSI layer?",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the IMAP service? (Set 623) (Set 660) (Set 890)",
     "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
+      "21",
+      "23",
+      "143",
+      "22"
     ],
     "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What are the seven layers of the OSI model in order?",
-    "options": [
-      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
-      "Physical, Data Link, Network, Session, Transport, Presentation, Application",
-      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
-      "Physical, Data Link, Network, Transport, Session, Presentation, Application"
-    ],
-    "answer": 3,
-    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+    "explanation": "IMAP standard port is 143."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "Which IP address structure is 128 bits long? (Set 36) (Set 891)",
     "options": [
-      "Sliding window",
-      "Checksums",
-      "MAC addresses",
-      "Congestion window (cwnd) and algorithms like Slow Start"
-    ],
-    "answer": 3,
-    "explanation": "Prevents network congestion by scaling down output when drops occur."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "A standard network Switch operates at which OSI layer?",
-    "options": [
-      "Physical Layer",
-      "Network Layer",
-      "Data Link Layer (Layer 2)",
-      "Transport Layer"
-    ],
-    "answer": 2,
-    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "HTTPS uses which default port?",
-    "options": [
-      "80",
-      "443",
-      "8080",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Hard",
-    "question": "What does NAT (Network Address Translation) do?",
-    "options": [
-      "Encrypts network traffic",
-      "Filters spam emails",
-      "Translates private IP addresses to a public IP",
-      "Translates MAC to IP"
-    ],
-    "answer": 2,
-    "explanation": "NAT conserves IPv4 space by mapping private IPs to a public IP."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "Which protocol resolves IP addresses to physical MAC addresses?",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "ARP (Address Resolution Protocol)"
-    ],
-    "answer": 3,
-    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which device operates primarily at Layer 3 (Network Layer) of the OSI model?",
-    "options": [
-      "Switch",
-      "Repeater",
-      "Hub",
-      "Router"
-    ],
-    "answer": 3,
-    "explanation": "Routers route packets across IP networks (Layer 3)."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Medium",
-    "question": "DHCP stands for?",
-    "options": [
-      "Direct Host Configuration Port",
-      "Dynamic Host Connection Protocol",
-      "Dynamic Host Configuration Protocol",
-      "Distributed Host Control Protocol"
-    ],
-    "answer": 2,
-    "explanation": "DHCP dynamically assigns IP addresses to hosts."
-  },
-  {
-    "subject": "CN",
-    "topic": "CN",
-    "difficulty": "Easy",
-    "question": "Which IP address structure is 128 bits long?",
-    "options": [
+      "IPv6",
       "MAC Address",
       "Subnet Mask",
-      "IPv4",
-      "IPv6"
+      "IPv4"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "IPv6 uses 128-bit hexadecimal addresses."
   },
   {
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 818) (Set 892)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 535) (Set 893)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 97) (Set 317) (Set 364) (Set 644) (Set 894)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 895)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 124) (Set 356) (Set 896)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 454) (Set 761) (Set 897)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 813) (Set 898)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 367) (Set 436) (Set 899)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 900)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 901)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 104) (Set 144) (Set 253) (Set 408) (Set 902)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 214) (Set 226) (Set 233) (Set 333) (Set 647) (Set 809) (Set 903)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 91) (Set 307) (Set 857) (Set 904)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 30) (Set 40) (Set 52) (Set 140) (Set 209) (Set 230) (Set 571) (Set 905)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 134) (Set 222) (Set 645) (Set 906)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "A standard network Switch operates at which OSI layer? (Set 12) (Set 170) (Set 907)",
+    "options": [
+      "Network Layer",
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer (Layer 2)"
+    ],
+    "answer": 3,
+    "explanation": "Switches use MAC addresses to forward frames at Layer 2."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 219) (Set 908)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 195) (Set 264) (Set 697) (Set 909)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 910)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol is used to translate domain names into IP addresses? (Set 35) (Set 286) (Set 911)",
+    "options": [
+      "FTP",
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP"
+    ],
+    "answer": 2,
+    "explanation": "DNS translates human-readable names to machine-readable IPs."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 119) (Set 157) (Set 232) (Set 912)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 685) (Set 913)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234) (Set 661) (Set 914)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
@@ -13990,14 +13304,700 @@ window.quizData.cn = [
     "subject": "CN",
     "topic": "CN",
     "difficulty": "Easy",
-    "question": "What is TCP congestion control achieved through?",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 254) (Set 709) (Set 915)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 174) (Set 251) (Set 916)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 347) (Set 730) (Set 917)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "What is the primary method of error detection in TCP/IP? (Set 23) (Set 139) (Set 179) (Set 918)",
+    "options": [
+      "Checksum",
+      "Hamming code",
+      "CRC only",
+      "Parity bit"
+    ],
+    "answer": 0,
+    "explanation": "TCP and UDP header fields include a checksum."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the SSH service? (Set 919)",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "SSH standard port is 22."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 266) (Set 426) (Set 920)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 295) (Set 792) (Set 921)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 764) (Set 922)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 279) (Set 923)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 266) (Set 426) (Set 521) (Set 924)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 39) (Set 269) (Set 398) (Set 925)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "In Class C IP addressing, what is the default subnet mask? (Set 204) (Set 478) (Set 926)",
+    "options": [
+      "255.255.255.255",
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0"
+    ],
+    "answer": 3,
+    "explanation": "Class C uses 24 bits for the network portion."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 78) (Set 99) (Set 136) (Set 424) (Set 927)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357) (Set 575) (Set 928)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282) (Set 328) (Set 929)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 15) (Set 357) (Set 575) (Set 745) (Set 930)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 192) (Set 614) (Set 931)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Hard",
+    "question": "What is TCP congestion control achieved through? (Set 165) (Set 234) (Set 779) (Set 932)",
     "options": [
       "Sliding window",
-      "Checksums",
       "MAC addresses",
+      "Checksums",
       "Congestion window (cwnd) and algorithms like Slow Start"
     ],
     "answer": 3,
     "explanation": "Prevents network congestion by scaling down output when drops occur."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Medium",
+    "question": "Which layer performs encryption and data compression in OSI? (Set 20) (Set 933)",
+    "options": [
+      "Transport Layer",
+      "Application Layer",
+      "Presentation Layer (Layer 6)",
+      "Session Layer"
+    ],
+    "answer": 2,
+    "explanation": "Presentation handles formatting, compression, and encryption."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 98) (Set 158) (Set 326) (Set 435) (Set 462) (Set 934)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 284) (Set 935)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the Telnet service? (Set 22) (Set 48) (Set 188) (Set 454) (Set 761) (Set 897) (Set 936)",
+    "options": [
+      "23",
+      "25",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Telnet standard port is 23."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the FTP service? (Set 111) (Set 363) (Set 937)",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "FTP standard port is 21."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 60) (Set 262) (Set 273) (Set 938)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 93) (Set 94) (Set 347) (Set 730) (Set 939)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 236) (Set 940)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 161) (Set 941)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 166) (Set 180) (Set 281) (Set 942)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 46) (Set 49) (Set 282) (Set 943)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 67) (Set 944)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 151) (Set 360) (Set 601) (Set 945)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 465) (Set 946)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "UDP is characterized as? (Set 25) (Set 26) (Set 947)",
+    "options": [
+      "Guaranteed delivery",
+      "Connectionless and unreliable",
+      "Connection-oriented",
+      "Heavyweight"
+    ],
+    "answer": 1,
+    "explanation": "UDP is low-overhead and does not perform retransmissions."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 207) (Set 246) (Set 319) (Set 323) (Set 670) (Set 948)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What are the seven layers of the OSI model in order? (Set 6) (Set 764) (Set 949)",
+    "options": [
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Physical, Network, Transport, Data Link, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Physical, Data Link",
+      "Physical, Data Link, Network, Session, Transport, Presentation, Application"
+    ],
+    "answer": 0,
+    "explanation": "Mnemonic: Please Do Not Throw Sausage Pizza Away."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What is subnetting? (Set 202) (Set 425) (Set 950)",
+    "options": [
+      "Connecting different protocols",
+      "Encrypting network packets",
+      "Dividing a large network into smaller subnetworks",
+      "Increasing network bandwidth"
+    ],
+    "answer": 2,
+    "explanation": "Subnetting improves routing efficiency and security."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 38) (Set 530) (Set 569) (Set 951)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 55) (Set 511) (Set 952)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTP service? (Set 21) (Set 121) (Set 340) (Set 406) (Set 953)",
+    "options": [
+      "80",
+      "23",
+      "22",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "HTTP standard port is 80."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the HTTPS service? (Set 122) (Set 659) (Set 749) (Set 954)",
+    "options": [
+      "21",
+      "23",
+      "22",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS standard port is 443."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "HTTPS uses which default port? (Set 525) (Set 574) (Set 955)",
+    "options": [
+      "25",
+      "443",
+      "8080",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS defaults to port 443 for secure TLS connections."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /29. What is the maximum number of assignable host IP addresses on this subnet? (Set 14) (Set 171) (Set 242) (Set 641) (Set 671) (Set 956)",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /29, this equals 6 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Ports & Protocols",
+    "difficulty": "Easy",
+    "question": "In Computer Networks, what is the default transport layer port number designated for the DHCP (Client) service? (Set 7) (Set 8) (Set 70) (Set 109) (Set 160) (Set 191) (Set 957)",
+    "options": [
+      "22",
+      "21",
+      "23",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "DHCP (Client) standard port is 68."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 71) (Set 818) (Set 892) (Set 958)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 43) (Set 236) (Set 940) (Set 959)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "DHCP stands for? (Set 681) (Set 805) (Set 960)",
+    "options": [
+      "Dynamic Host Configuration Protocol",
+      "Direct Host Configuration Port",
+      "Distributed Host Control Protocol",
+      "Dynamic Host Connection Protocol"
+    ],
+    "answer": 0,
+    "explanation": "DHCP dynamically assigns IP addresses to hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "TCP is characterized as? (Set 33) (Set 50) (Set 51) (Set 143) (Set 231) (Set 562) (Set 961)",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless and unreliable",
+      "Best-effort delivery",
+      "Lightweight with no handshake"
+    ],
+    "answer": 0,
+    "explanation": "TCP uses a 3-way handshake and guarantees packet ordering."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /25. What is the maximum number of assignable host IP addresses on this subnet? (Set 57) (Set 62) (Set 567) (Set 962)",
+    "options": [
+      "124",
+      "252",
+      "126",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /25, this equals 126 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "A subnet mask is configured with CIDR notation /27. What is the maximum number of assignable host IP addresses on this subnet? (Set 1) (Set 29) (Set 117) (Set 963)",
+    "options": [
+      "28",
+      "60",
+      "32",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Formula is 2^(32 - CIDR) - 2. For /27, this equals 30 hosts."
+  },
+  {
+    "subject": "CN",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "Which protocol resolves IP addresses to physical MAC addresses? (Set 9) (Set 16) (Set 126) (Set 437) (Set 964)",
+    "options": [
+      "DHCP",
+      "DNS",
+      "ARP (Address Resolution Protocol)",
+      "NAT"
+    ],
+    "answer": 2,
+    "explanation": "ARP resolves Layer 3 IP to Layer 2 MAC addresses."
   }
 ];

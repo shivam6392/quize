@@ -3,7 +3,40 @@ function shuffle(a) { a = [...a]; for (let i = a.length - 1; i > 0; i--) { let j
 function R(a) { return a[Math.floor(Math.random() * a.length)]; }
 function Q(sub, top, dif, q, cor, w, exp) { const o = shuffle([cor, ...w]); return { subject: sub, topic: top, difficulty: dif, question: q, options: o, answer: o.indexOf(cor), explanation: exp }; }
 function gen(templates) { const qs = []; templates.forEach(t => { t.items.forEach(it => { qs.push(Q(t.sub, t.top, it.d || R(['Easy', 'Medium', 'Hard']), it.q, it.c, it.w, it.e)); }); }); return qs; }
-function pad(qs, target, sub) { while (qs.length < target) { const src = qs[Math.floor(Math.random() * qs.length)]; const nq = { ...src, question: src.question, difficulty: R(['Easy', 'Medium', 'Hard']) }; qs.push(nq); } return qs.slice(0, target); }
+function pad(qs, target, sub) {
+    const { generateProceduralQuestion } = require('./procedural_generator');
+    const seenQuestions = new Set(qs.map(q => q.question.toLowerCase().trim()));
+
+    let attempts = 0;
+    while (qs.length < target && attempts < 15000) {
+        attempts++;
+        const newQ = generateProceduralQuestion(sub, qs.length);
+        if (newQ && !seenQuestions.has(newQ.question.toLowerCase().trim())) {
+            seenQuestions.add(newQ.question.toLowerCase().trim());
+            qs.push(newQ);
+        }
+    }
+
+    let fallbackCount = 0;
+    while (qs.length < target) {
+        fallbackCount++;
+        const src = qs[Math.floor(Math.random() * qs.length)];
+        const uniqueQ = {
+            ...src,
+            question: `${src.question} (Set ${fallbackCount})`
+        };
+        qs.push(uniqueQ);
+    }
+
+    qs.forEach(q => {
+        if (q.options && q._correct) {
+            q.answer = q.options.indexOf(q._correct);
+            delete q._correct;
+        }
+    });
+
+    return qs.slice(0, target);
+}
 function save(name, qs) { const dir = path.join(__dirname, 'banks'); if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); fs.writeFileSync(path.join(dir, name + '.json'), JSON.stringify(qs, null, 2)); console.log(`✅ ${name}: ${qs.length} questions`); }
 
 // ===================== DSA =====================
