@@ -1,0 +1,14003 @@
+window.quizData = window.quizData || {};
+window.quizData.aiml = [
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Supervised learning uses?",
+    "options": [
+      "No data",
+      "Random data",
+      "Labeled data",
+      "Unlabeled data"
+    ],
+    "answer": 2,
+    "explanation": "Supervised learning maps input to known output labels."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Linear regression predicts?",
+    "options": [
+      "Clusters",
+      "Binary classes",
+      "Continuous numerical values",
+      "Categories"
+    ],
+    "answer": 2,
+    "explanation": "Fits a line to minimize squared errors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Logistic regression is used for?",
+    "options": [
+      "Binary classification",
+      "Clustering",
+      "Regression",
+      "Dimensionality reduction"
+    ],
+    "answer": 0,
+    "explanation": "Outputs probability via sigmoid function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Naive Bayes assumes?",
+    "options": [
+      "All features are correlated",
+      "Feature independence given class",
+      "Linear separability",
+      "No prior probability"
+    ],
+    "answer": 1,
+    "explanation": "Conditional independence assumption simplifies computation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Transformers use?",
+    "options": [
+      "Random forests",
+      "Recurrent connections",
+      "Self-attention mechanism",
+      "Convolutional filters"
+    ],
+    "answer": 2,
+    "explanation": "Attention scores capture relationships regardless of distance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Accuracy = ?",
+    "options": [
+      "2*P*R/(P+R)",
+      "TP/FP",
+      "(TP+TN) / Total",
+      "TP/(TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Correct predictions divided by total."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Recall = ?",
+    "options": [
+      "TP / (TP+FP)",
+      "TP / (TP + FN)",
+      "(TP+TN)/Total",
+      "FN/(FP+FN)"
+    ],
+    "answer": 1,
+    "explanation": "Of actual positives, how many were correctly predicted."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Learning rate controls?",
+    "options": [
+      "Number of features",
+      "Step size in gradient descent",
+      "Data augmentation",
+      "Dropout rate"
+    ],
+    "answer": 1,
+    "explanation": "Too high: overshoots; too low: slow convergence."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Dropout in neural networks?",
+    "options": [
+      "Adds more neurons",
+      "Speeds up inference",
+      "Randomly deactivates neurons during training",
+      "Removes layers permanently"
+    ],
+    "answer": 2,
+    "explanation": "Regularization technique preventing co-adaptation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Transfer learning means?",
+    "options": [
+      "Training from scratch",
+      "Feature deletion",
+      "Using pre-trained model for a new task",
+      "Unsupervised clustering"
+    ],
+    "answer": 2,
+    "explanation": "Fine-tune existing model on new domain data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Minimax algorithm is used for?",
+    "options": [
+      "Game playing (adversarial search)",
+      "Data preprocessing",
+      "Regression",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Maximizes own score while minimizing opponent's."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Types of AI include?",
+    "options": [
+      "Narrow AI, General AI, Super AI",
+      "Only Deep Learning",
+      "Hardware and Software",
+      "Only Narrow AI"
+    ],
+    "answer": 0,
+    "explanation": "Classification by capability level."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Intelligent agent in AI?",
+    "options": [
+      "Passive data store",
+      "Entity that perceives environment and acts to maximize goals",
+      "Static program",
+      "Simple calculator"
+    ],
+    "answer": 1,
+    "explanation": "Agents sense, decide, and act in their environment."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Multiple regression uses?",
+    "options": [
+      "No variables",
+      "Only categorical",
+      "One independent variable",
+      "Multiple independent variables to predict one dependent"
+    ],
+    "answer": 3,
+    "explanation": "Extends simple linear regression to multiple predictors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "TensorFlow is?",
+    "options": [
+      "Operating system",
+      "Open-source deep learning framework by Google",
+      "Web framework",
+      "Database system"
+    ],
+    "answer": 1,
+    "explanation": "Enables building and training neural networks at scale."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "TensorFlow is?",
+    "options": [
+      "Operating system",
+      "Open-source deep learning framework by Google",
+      "Web framework",
+      "Database system"
+    ],
+    "answer": 1,
+    "explanation": "Enables building and training neural networks at scale."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Transformers use?",
+    "options": [
+      "Random forests",
+      "Recurrent connections",
+      "Self-attention mechanism",
+      "Convolutional filters"
+    ],
+    "answer": 2,
+    "explanation": "Attention scores capture relationships regardless of distance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Learning rate controls?",
+    "options": [
+      "Number of features",
+      "Step size in gradient descent",
+      "Data augmentation",
+      "Dropout rate"
+    ],
+    "answer": 1,
+    "explanation": "Too high: overshoots; too low: slow convergence."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "TensorFlow is?",
+    "options": [
+      "Operating system",
+      "Open-source deep learning framework by Google",
+      "Web framework",
+      "Database system"
+    ],
+    "answer": 1,
+    "explanation": "Enables building and training neural networks at scale."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Types of AI include?",
+    "options": [
+      "Narrow AI, General AI, Super AI",
+      "Only Deep Learning",
+      "Hardware and Software",
+      "Only Narrow AI"
+    ],
+    "answer": 0,
+    "explanation": "Classification by capability level."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Recall = ?",
+    "options": [
+      "TP / (TP+FP)",
+      "TP / (TP + FN)",
+      "(TP+TN)/Total",
+      "FN/(FP+FN)"
+    ],
+    "answer": 1,
+    "explanation": "Of actual positives, how many were correctly predicted."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Minimax algorithm is used for?",
+    "options": [
+      "Game playing (adversarial search)",
+      "Data preprocessing",
+      "Regression",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Maximizes own score while minimizing opponent's."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Logistic regression is used for?",
+    "options": [
+      "Binary classification",
+      "Clustering",
+      "Regression",
+      "Dimensionality reduction"
+    ],
+    "answer": 0,
+    "explanation": "Outputs probability via sigmoid function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Linear regression predicts?",
+    "options": [
+      "Clusters",
+      "Binary classes",
+      "Continuous numerical values",
+      "Categories"
+    ],
+    "answer": 2,
+    "explanation": "Fits a line to minimize squared errors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "TensorFlow is?",
+    "options": [
+      "Operating system",
+      "Open-source deep learning framework by Google",
+      "Web framework",
+      "Database system"
+    ],
+    "answer": 1,
+    "explanation": "Enables building and training neural networks at scale."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Linear regression predicts?",
+    "options": [
+      "Clusters",
+      "Binary classes",
+      "Continuous numerical values",
+      "Categories"
+    ],
+    "answer": 2,
+    "explanation": "Fits a line to minimize squared errors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Types of AI include?",
+    "options": [
+      "Narrow AI, General AI, Super AI",
+      "Only Deep Learning",
+      "Hardware and Software",
+      "Only Narrow AI"
+    ],
+    "answer": 0,
+    "explanation": "Classification by capability level."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Recall = ?",
+    "options": [
+      "TP / (TP+FP)",
+      "TP / (TP + FN)",
+      "(TP+TN)/Total",
+      "FN/(FP+FN)"
+    ],
+    "answer": 1,
+    "explanation": "Of actual positives, how many were correctly predicted."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Accuracy = ?",
+    "options": [
+      "2*P*R/(P+R)",
+      "TP/FP",
+      "(TP+TN) / Total",
+      "TP/(TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Correct predictions divided by total."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Supervised learning uses?",
+    "options": [
+      "No data",
+      "Random data",
+      "Labeled data",
+      "Unlabeled data"
+    ],
+    "answer": 2,
+    "explanation": "Supervised learning maps input to known output labels."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Naive Bayes assumes?",
+    "options": [
+      "All features are correlated",
+      "Feature independence given class",
+      "Linear separability",
+      "No prior probability"
+    ],
+    "answer": 1,
+    "explanation": "Conditional independence assumption simplifies computation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Recall = ?",
+    "options": [
+      "TP / (TP+FP)",
+      "TP / (TP + FN)",
+      "(TP+TN)/Total",
+      "FN/(FP+FN)"
+    ],
+    "answer": 1,
+    "explanation": "Of actual positives, how many were correctly predicted."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Naive Bayes assumes?",
+    "options": [
+      "All features are correlated",
+      "Feature independence given class",
+      "Linear separability",
+      "No prior probability"
+    ],
+    "answer": 1,
+    "explanation": "Conditional independence assumption simplifies computation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Supervised learning uses?",
+    "options": [
+      "No data",
+      "Random data",
+      "Labeled data",
+      "Unlabeled data"
+    ],
+    "answer": 2,
+    "explanation": "Supervised learning maps input to known output labels."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Linear regression predicts?",
+    "options": [
+      "Clusters",
+      "Binary classes",
+      "Continuous numerical values",
+      "Categories"
+    ],
+    "answer": 2,
+    "explanation": "Fits a line to minimize squared errors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Recall = ?",
+    "options": [
+      "TP / (TP+FP)",
+      "TP / (TP + FN)",
+      "(TP+TN)/Total",
+      "FN/(FP+FN)"
+    ],
+    "answer": 1,
+    "explanation": "Of actual positives, how many were correctly predicted."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "TensorFlow is?",
+    "options": [
+      "Operating system",
+      "Open-source deep learning framework by Google",
+      "Web framework",
+      "Database system"
+    ],
+    "answer": 1,
+    "explanation": "Enables building and training neural networks at scale."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Linear regression predicts?",
+    "options": [
+      "Clusters",
+      "Binary classes",
+      "Continuous numerical values",
+      "Categories"
+    ],
+    "answer": 2,
+    "explanation": "Fits a line to minimize squared errors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Transformers use?",
+    "options": [
+      "Random forests",
+      "Recurrent connections",
+      "Self-attention mechanism",
+      "Convolutional filters"
+    ],
+    "answer": 2,
+    "explanation": "Attention scores capture relationships regardless of distance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Learning rate controls?",
+    "options": [
+      "Number of features",
+      "Step size in gradient descent",
+      "Data augmentation",
+      "Dropout rate"
+    ],
+    "answer": 1,
+    "explanation": "Too high: overshoots; too low: slow convergence."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Underfitting means?",
+    "options": [
+      "Model memorizes data",
+      "Model overfits",
+      "Perfect generalization",
+      "Model is too simple to capture patterns"
+    ],
+    "answer": 3,
+    "explanation": "High bias, low variance; needs more complexity."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Pandas provides?",
+    "options": [
+      "Image processing",
+      "DataFrame for structured data manipulation",
+      "Neural network layers",
+      "GPU computing"
+    ],
+    "answer": 1,
+    "explanation": "Tabular data analysis tool in Python."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Accuracy = ?",
+    "options": [
+      "2*P*R/(P+R)",
+      "TP/FP",
+      "(TP+TN) / Total",
+      "TP/(TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Correct predictions divided by total."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Transfer learning means?",
+    "options": [
+      "Training from scratch",
+      "Feature deletion",
+      "Using pre-trained model for a new task",
+      "Unsupervised clustering"
+    ],
+    "answer": 2,
+    "explanation": "Fine-tune existing model on new domain data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Multiple regression uses?",
+    "options": [
+      "No variables",
+      "Only categorical",
+      "One independent variable",
+      "Multiple independent variables to predict one dependent"
+    ],
+    "answer": 3,
+    "explanation": "Extends simple linear regression to multiple predictors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Unsupervised learning is used for?",
+    "options": [
+      "Classification with labels",
+      "Regression with targets",
+      "Predicting known outputs",
+      "Finding hidden patterns without labels"
+    ],
+    "answer": 3,
+    "explanation": "No target variable; discovers structure in data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Reinforcement learning learns through?",
+    "options": [
+      "Backpropagation only",
+      "Rewards and penalties",
+      "Labeled datasets",
+      "Clustering"
+    ],
+    "answer": 1,
+    "explanation": "Agent maximizes cumulative reward via trial and error."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Accuracy = ?",
+    "options": [
+      "2*P*R/(P+R)",
+      "TP/FP",
+      "(TP+TN) / Total",
+      "TP/(TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Correct predictions divided by total."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Perceptron is?",
+    "options": [
+      "Regression only",
+      "Unsupervised method",
+      "Clustering algorithm",
+      "Single-layer neural network for linear classification"
+    ],
+    "answer": 3,
+    "explanation": "Weighted sum + activation function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Accuracy = ?",
+    "options": [
+      "2*P*R/(P+R)",
+      "TP/FP",
+      "(TP+TN) / Total",
+      "TP/(TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Correct predictions divided by total."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Matplotlib is used for?",
+    "options": [
+      "Web development",
+      "Data visualization and plotting",
+      "ML training",
+      "Data storage"
+    ],
+    "answer": 1,
+    "explanation": "Creates charts, graphs, and visual representations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Variance in ML refers to?",
+    "options": [
+      "Sensitivity to fluctuations in training data",
+      "Zero error",
+      "Average error",
+      "Constant error"
+    ],
+    "answer": 0,
+    "explanation": "High variance = overfitting to training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Activation function introduces?",
+    "options": [
+      "Non-linearity into neural networks",
+      "Linearity",
+      "Randomness",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Without activation, network is just linear transformation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "SVM finds?",
+    "options": [
+      "Minimum distance",
+      "Cluster centers",
+      "Maximum margin hyperplane",
+      "Principal components"
+    ],
+    "answer": 2,
+    "explanation": "Support vectors define the decision boundary."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Recall = ?",
+    "options": [
+      "TP / (TP+FP)",
+      "TP / (TP + FN)",
+      "(TP+TN)/Total",
+      "FN/(FP+FN)"
+    ],
+    "answer": 1,
+    "explanation": "Of actual positives, how many were correctly predicted."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Transformers use?",
+    "options": [
+      "Random forests",
+      "Recurrent connections",
+      "Self-attention mechanism",
+      "Convolutional filters"
+    ],
+    "answer": 2,
+    "explanation": "Attention scores capture relationships regardless of distance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Hierarchical clustering produces?",
+    "options": [
+      "Decision boundary",
+      "Confusion matrix",
+      "Dendrogram",
+      "ROC curve"
+    ],
+    "answer": 2,
+    "explanation": "Agglomerative or divisive approach builds tree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Multiple regression uses?",
+    "options": [
+      "No variables",
+      "Only categorical",
+      "One independent variable",
+      "Multiple independent variables to predict one dependent"
+    ],
+    "answer": 3,
+    "explanation": "Extends simple linear regression to multiple predictors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Label Encoding assigns?",
+    "options": [
+      "Binary vectors",
+      "String hashes",
+      "Integer values to categories",
+      "Random floats"
+    ],
+    "answer": 2,
+    "explanation": "Each unique category gets a unique integer."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Bias in ML refers to?",
+    "options": [
+      "Error from noise",
+      "Feature count",
+      "Error from oversimplified assumptions",
+      "Dataset size"
+    ],
+    "answer": 2,
+    "explanation": "High bias = underfitting the training data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Accuracy = ?",
+    "options": [
+      "2*P*R/(P+R)",
+      "TP/FP",
+      "(TP+TN) / Total",
+      "TP/(TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Correct predictions divided by total."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "LSTM solves?",
+    "options": [
+      "Vanishing gradient in standard RNNs",
+      "Data imbalance",
+      "Underfitting",
+      "Overfitting"
+    ],
+    "answer": 0,
+    "explanation": "Gates control information flow through memory cell."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Decision tree splits data based on?",
+    "options": [
+      "All features equally",
+      "Target variable only",
+      "Random features",
+      "Feature that gives best information gain"
+    ],
+    "answer": 3,
+    "explanation": "Greedy splits maximize purity of child nodes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "NumPy is used for?",
+    "options": [
+      "Web scraping",
+      "Database queries",
+      "Numerical array operations",
+      "File compression"
+    ],
+    "answer": 2,
+    "explanation": "Efficient multidimensional array computations."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Transformers use?",
+    "options": [
+      "Random forests",
+      "Recurrent connections",
+      "Self-attention mechanism",
+      "Convolutional filters"
+    ],
+    "answer": 2,
+    "explanation": "Attention scores capture relationships regardless of distance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Linear regression predicts?",
+    "options": [
+      "Clusters",
+      "Binary classes",
+      "Continuous numerical values",
+      "Categories"
+    ],
+    "answer": 2,
+    "explanation": "Fits a line to minimize squared errors."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Knowledge representation in AI uses?",
+    "options": [
+      "Only images",
+      "Only numbers",
+      "Logic, semantic networks, frames, ontologies",
+      "Only text"
+    ],
+    "answer": 2,
+    "explanation": "Structures to encode knowledge for reasoning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Backpropagation computes?",
+    "options": [
+      "Cluster assignments",
+      "Gradients of loss w.r.t. weights",
+      "Feature importance",
+      "Forward pass only"
+    ],
+    "answer": 1,
+    "explanation": "Chain rule propagates error backwards through layers."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "RNN is designed for?",
+    "options": [
+      "Image data",
+      "Clustering",
+      "Sequential/time-series data",
+      "Static tabular data"
+    ],
+    "answer": 2,
+    "explanation": "Recurrent connections maintain hidden state across time steps."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "CNN is best for?",
+    "options": [
+      "Tabular data only",
+      "Sequential text data",
+      "Audio only",
+      "Image recognition tasks"
+    ],
+    "answer": 3,
+    "explanation": "Convolutional layers detect spatial patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Learning rate controls?",
+    "options": [
+      "Number of features",
+      "Step size in gradient descent",
+      "Data augmentation",
+      "Dropout rate"
+    ],
+    "answer": 1,
+    "explanation": "Too high: overshoots; too low: slow convergence."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "TensorFlow is?",
+    "options": [
+      "Operating system",
+      "Open-source deep learning framework by Google",
+      "Web framework",
+      "Database system"
+    ],
+    "answer": 1,
+    "explanation": "Enables building and training neural networks at scale."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Batch size is?",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of epochs",
+      "Number of features"
+    ],
+    "answer": 1,
+    "explanation": "Larger batch = more stable gradient, more memory."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Regularization reduces?",
+    "options": [
+      "Dataset size",
+      "Overfitting by penalizing large weights",
+      "Training time",
+      "Underfitting"
+    ],
+    "answer": 1,
+    "explanation": "L1/L2 add penalty term to loss function."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Random forest is?",
+    "options": [
+      "Single deep tree",
+      "Ensemble of decision trees",
+      "Clustering method",
+      "Neural network"
+    ],
+    "answer": 1,
+    "explanation": "Aggregates predictions from multiple trees."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "ROC curve plots?",
+    "options": [
+      "Accuracy vs Loss",
+      "Error vs Epochs",
+      "Precision vs Recall",
+      "True Positive Rate vs False Positive Rate"
+    ],
+    "answer": 3,
+    "explanation": "Shows classifier performance across all thresholds."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Train-test split typically uses?",
+    "options": [
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "50-50 always",
+      "99-1"
+    ],
+    "answer": 1,
+    "explanation": "Majority for training, held-out portion for evaluation."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Gradient descent minimizes?",
+    "options": [
+      "Accuracy",
+      "Data size",
+      "Loss/cost function",
+      "Number of features"
+    ],
+    "answer": 2,
+    "explanation": "Iteratively updates parameters in direction of steepest descent."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Feature scaling is needed because?",
+    "options": [
+      "Algorithms sensitive to magnitude perform poorly without it",
+      "It reduces accuracy",
+      "It removes features",
+      "It adds noise"
+    ],
+    "answer": 0,
+    "explanation": "Normalization/standardization ensures equal feature contribution."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Hard",
+    "question": "Confusion matrix shows?",
+    "options": [
+      "Feature importance",
+      "Learning rate",
+      "TP, TN, FP, FN counts",
+      "Cluster assignments"
+    ],
+    "answer": 2,
+    "explanation": "Tabulates actual vs predicted classifications."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "Reduce dataset size",
+      "Assess model generalization on unseen data",
+      "Increase features",
+      "Speed up training"
+    ],
+    "answer": 1,
+    "explanation": "K-fold splits data into train/validate partitions."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Ethics in AI includes?",
+    "options": [
+      "Only speed optimization",
+      "Only profit",
+      "Only accuracy",
+      "Bias mitigation, privacy, transparency, accountability"
+    ],
+    "answer": 3,
+    "explanation": "Responsible AI development considers societal impact."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Batch normalization does?",
+    "options": [
+      "Reduces features",
+      "Increases batch size",
+      "Normalizes layer inputs during training",
+      "Removes all layers"
+    ],
+    "answer": 2,
+    "explanation": "Stabilizes learning and allows higher learning rates."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "F1 Score is?",
+    "options": [
+      "Geometric mean",
+      "Simple average of accuracy",
+      "Arithmetic mean",
+      "Harmonic mean of Precision and Recall"
+    ],
+    "answer": 3,
+    "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Missing values can be handled by?",
+    "options": [
+      "Imputation (mean, median, mode) or deletion",
+      "Multiplying by -1",
+      "Ignoring them always",
+      "Setting all to zero"
+    ],
+    "answer": 0,
+    "explanation": "Strategy depends on data distribution and missingness pattern."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "A* search algorithm uses?",
+    "options": [
+      "Only path cost",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic",
+      "Random selection"
+    ],
+    "answer": 1,
+    "explanation": "Combines actual cost and heuristic estimate."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Overfitting means?",
+    "options": [
+      "Model fails on both",
+      "Model performs well on training but poorly on test data",
+      "Model has no parameters",
+      "Model is too simple"
+    ],
+    "answer": 1,
+    "explanation": "Model memorizes noise instead of learning patterns."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "K-Means clustering minimizes?",
+    "options": [
+      "Within-cluster sum of squares",
+      "Between-cluster distance",
+      "Entropy",
+      "Number of features"
+    ],
+    "answer": 0,
+    "explanation": "Iteratively assigns points to nearest centroid."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Scikit-learn provides?",
+    "options": [
+      "Web framework",
+      "Deep learning only",
+      "Machine learning algorithms and utilities",
+      "Database ORM"
+    ],
+    "answer": 2,
+    "explanation": "Preprocessing, models, metrics all in one library."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "K-Nearest Neighbors classifies by?",
+    "options": [
+      "Tree splitting",
+      "Feature elimination",
+      "Majority vote of K nearest points",
+      "Gradient descent"
+    ],
+    "answer": 2,
+    "explanation": "Distance-based lazy learner."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Easy",
+    "question": "One-Hot Encoding is used for?",
+    "options": [
+      "Scaling numerical features",
+      "Removing outliers",
+      "Converting categorical variables to binary vectors",
+      "Reducing dimensions"
+    ],
+    "answer": 2,
+    "explanation": "Each category becomes a binary column."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Data augmentation is?",
+    "options": [
+      "Deleting data",
+      "Reducing features",
+      "Creating modified copies of data to increase dataset size",
+      "Normalizing only"
+    ],
+    "answer": 2,
+    "explanation": "Flips, rotations, crops etc. for image data."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "DBSCAN clusters based on?",
+    "options": [
+      "Density of points",
+      "Distance to centroid only",
+      "Random assignment",
+      "Feature importance"
+    ],
+    "answer": 0,
+    "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Easy",
+    "question": "Precision = ?",
+    "options": [
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP + FP)",
+      "TP / (TP+FN)"
+    ],
+    "answer": 2,
+    "explanation": "Of predicted positives, how many are actually positive."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Medium",
+    "question": "Polynomial regression fits?",
+    "options": [
+      "Categorical data",
+      "Only straight lines",
+      "No relationships",
+      "Curved relationships using polynomial terms"
+    ],
+    "answer": 3,
+    "explanation": "Transforms features to polynomial degree."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Principal Component Analysis (PCA) does?",
+    "options": [
+      "Dimensionality reduction",
+      "Regression",
+      "Classification",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "Projects data onto directions of maximum variance."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "ML Basics",
+    "difficulty": "Hard",
+    "question": "Epoch means?",
+    "options": [
+      "One complete pass through the entire training dataset",
+      "One sample",
+      "One batch",
+      "One layer update"
+    ],
+    "answer": 0,
+    "explanation": "Multiple epochs improve learning."
+  }
+];

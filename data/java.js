@@ -1,0 +1,14003 @@
+window.quizData = window.quizData || {};
+window.quizData.java = [
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overloading is?",
+    "options": [
+      "Same name same parameters",
+      "Different classes",
+      "Different return type only",
+      "Same method name with different parameters"
+    ],
+    "answer": 3,
+    "explanation": "Compile-time (static) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "HashSet stores?",
+    "options": [
+      "Unique elements only, no duplicates",
+      "Key-value pairs",
+      "Sorted elements",
+      "Duplicates allowed"
+    ],
+    "answer": 0,
+    "explanation": "Internally uses HashMap; add returns false for duplicates."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "try-catch-finally: finally block runs?",
+    "options": [
+      "Always (except System.exit)",
+      "Only on exception",
+      "Never",
+      "Only on success"
+    ],
+    "answer": 0,
+    "explanation": "Finally ensures cleanup code executes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "String is immutable in Java because?",
+    "options": [
+      "It has no methods",
+      "It uses char array",
+      "Its value cannot be changed after creation",
+      "It is final class"
+    ],
+    "answer": 2,
+    "explanation": "String pool and security require immutability."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Thread can be created by?",
+    "options": [
+      "Only Runnable",
+      "Only extending Thread",
+      "Using String class",
+      "Extending Thread class or implementing Runnable"
+    ],
+    "answer": 3,
+    "explanation": "Two standard approaches to multithreading."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Lambda expression syntax?",
+    "options": [
+      "function(){}",
+      "def func():",
+      "(parameters) -> expression/body",
+      "method => param"
+    ],
+    "answer": 2,
+    "explanation": "Java 8 functional programming feature."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Garbage collection in Java?",
+    "options": [
+      "JVM automatically reclaims unused object memory",
+      "No memory management",
+      "Programmer must free memory",
+      "OS handles it"
+    ],
+    "answer": 0,
+    "explanation": "GC runs in background; objects without references are collected."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "File class in Java represents?",
+    "options": [
+      "Network socket",
+      "Database connection",
+      "File contents",
+      "File or directory path"
+    ],
+    "answer": 3,
+    "explanation": "java.io.File for file system operations."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "BufferedReader is faster than Scanner because?",
+    "options": [
+      "It is newer",
+      "It uses less memory",
+      "Larger internal buffer reduces I/O operations",
+      "It skips characters"
+    ],
+    "answer": 2,
+    "explanation": "BufferedReader reads large chunks at once."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Serialization converts object to?",
+    "options": [
+      "String format",
+      "HTML page",
+      "XML only",
+      "Byte stream for storage or transmission"
+    ],
+    "answer": 3,
+    "explanation": "Implements Serializable interface."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "this keyword refers to?",
+    "options": [
+      "Current object instance",
+      "Static context",
+      "Previous object",
+      "Parent class"
+    ],
+    "answer": 0,
+    "explanation": "this resolves ambiguity between fields and parameters."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Optional class in Java 8 helps avoid?",
+    "options": [
+      "ArrayIndexOutOfBounds",
+      "NullPointerException",
+      "StackOverflow",
+      "ClassCast"
+    ],
+    "answer": 1,
+    "explanation": "Optional wraps nullable value with safe methods."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is classpath in Java?",
+    "options": [
+      "Database URL",
+      "Network path",
+      "File system root",
+      "Path where JVM looks for classes and packages"
+    ],
+    "answer": 3,
+    "explanation": "Set via -cp flag or CLASSPATH environment variable."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an Object reference?",
+    "options": [
+      "0",
+      "undefined",
+      "null",
+      "empty string"
+    ],
+    "answer": 2,
+    "explanation": "Uninitialized object references default to null."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "var keyword in Java 10+?",
+    "options": [
+      "Global variable",
+      "Constant declaration",
+      "Dynamic typing",
+      "Local variable type inference"
+    ],
+    "answer": 3,
+    "explanation": "Compiler infers type from initializer."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "question": "String is immutable in Java because?",
+    "options": [
+      "It has no methods",
+      "It uses char array",
+      "Its value cannot be changed after creation",
+      "It is final class"
+    ],
+    "answer": 2,
+    "explanation": "String pool and security require immutability."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "HashSet stores?",
+    "options": [
+      "Unique elements only, no duplicates",
+      "Key-value pairs",
+      "Sorted elements",
+      "Duplicates allowed"
+    ],
+    "answer": 0,
+    "explanation": "Internally uses HashMap; add returns false for duplicates."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Serialization converts object to?",
+    "options": [
+      "String format",
+      "HTML page",
+      "XML only",
+      "Byte stream for storage or transmission"
+    ],
+    "answer": 3,
+    "explanation": "Implements Serializable interface."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overloading is?",
+    "options": [
+      "Same name same parameters",
+      "Different classes",
+      "Different return type only",
+      "Same method name with different parameters"
+    ],
+    "answer": 3,
+    "explanation": "Compile-time (static) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Serialization converts object to?",
+    "options": [
+      "String format",
+      "HTML page",
+      "XML only",
+      "Byte stream for storage or transmission"
+    ],
+    "answer": 3,
+    "explanation": "Implements Serializable interface."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "var keyword in Java 10+?",
+    "options": [
+      "Global variable",
+      "Constant declaration",
+      "Dynamic typing",
+      "Local variable type inference"
+    ],
+    "answer": 3,
+    "explanation": "Compiler infers type from initializer."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "question": "String is immutable in Java because?",
+    "options": [
+      "It has no methods",
+      "It uses char array",
+      "Its value cannot be changed after creation",
+      "It is final class"
+    ],
+    "answer": 2,
+    "explanation": "String pool and security require immutability."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "HashSet stores?",
+    "options": [
+      "Unique elements only, no duplicates",
+      "Key-value pairs",
+      "Sorted elements",
+      "Duplicates allowed"
+    ],
+    "answer": 0,
+    "explanation": "Internally uses HashMap; add returns false for duplicates."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overloading is?",
+    "options": [
+      "Same name same parameters",
+      "Different classes",
+      "Different return type only",
+      "Same method name with different parameters"
+    ],
+    "answer": 3,
+    "explanation": "Compile-time (static) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Optional class in Java 8 helps avoid?",
+    "options": [
+      "ArrayIndexOutOfBounds",
+      "NullPointerException",
+      "StackOverflow",
+      "ClassCast"
+    ],
+    "answer": 1,
+    "explanation": "Optional wraps nullable value with safe methods."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "BufferedReader is faster than Scanner because?",
+    "options": [
+      "It is newer",
+      "It uses less memory",
+      "Larger internal buffer reduces I/O operations",
+      "It skips characters"
+    ],
+    "answer": 2,
+    "explanation": "BufferedReader reads large chunks at once."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Serialization converts object to?",
+    "options": [
+      "String format",
+      "HTML page",
+      "XML only",
+      "Byte stream for storage or transmission"
+    ],
+    "answer": 3,
+    "explanation": "Implements Serializable interface."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Serialization converts object to?",
+    "options": [
+      "String format",
+      "HTML page",
+      "XML only",
+      "Byte stream for storage or transmission"
+    ],
+    "answer": 3,
+    "explanation": "Implements Serializable interface."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "BufferedReader is faster than Scanner because?",
+    "options": [
+      "It is newer",
+      "It uses less memory",
+      "Larger internal buffer reduces I/O operations",
+      "It skips characters"
+    ],
+    "answer": 2,
+    "explanation": "BufferedReader reads large chunks at once."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "HashSet stores?",
+    "options": [
+      "Unique elements only, no duplicates",
+      "Key-value pairs",
+      "Sorted elements",
+      "Duplicates allowed"
+    ],
+    "answer": 0,
+    "explanation": "Internally uses HashMap; add returns false for duplicates."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Garbage collection in Java?",
+    "options": [
+      "JVM automatically reclaims unused object memory",
+      "No memory management",
+      "Programmer must free memory",
+      "OS handles it"
+    ],
+    "answer": 0,
+    "explanation": "GC runs in background; objects without references are collected."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "this keyword refers to?",
+    "options": [
+      "Current object instance",
+      "Static context",
+      "Previous object",
+      "Parent class"
+    ],
+    "answer": 0,
+    "explanation": "this resolves ambiguity between fields and parameters."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Thread can be created by?",
+    "options": [
+      "Only Runnable",
+      "Only extending Thread",
+      "Using String class",
+      "Extending Thread class or implementing Runnable"
+    ],
+    "answer": 3,
+    "explanation": "Two standard approaches to multithreading."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overloading is?",
+    "options": [
+      "Same name same parameters",
+      "Different classes",
+      "Different return type only",
+      "Same method name with different parameters"
+    ],
+    "answer": 3,
+    "explanation": "Compile-time (static) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "var keyword in Java 10+?",
+    "options": [
+      "Global variable",
+      "Constant declaration",
+      "Dynamic typing",
+      "Local variable type inference"
+    ],
+    "answer": 3,
+    "explanation": "Compiler infers type from initializer."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is classpath in Java?",
+    "options": [
+      "Database URL",
+      "Network path",
+      "File system root",
+      "Path where JVM looks for classes and packages"
+    ],
+    "answer": 3,
+    "explanation": "Set via -cp flag or CLASSPATH environment variable."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overloading is?",
+    "options": [
+      "Same name same parameters",
+      "Different classes",
+      "Different return type only",
+      "Same method name with different parameters"
+    ],
+    "answer": 3,
+    "explanation": "Compile-time (static) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "this keyword refers to?",
+    "options": [
+      "Current object instance",
+      "Static context",
+      "Previous object",
+      "Parent class"
+    ],
+    "answer": 0,
+    "explanation": "this resolves ambiguity between fields and parameters."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Garbage collection in Java?",
+    "options": [
+      "JVM automatically reclaims unused object memory",
+      "No memory management",
+      "Programmer must free memory",
+      "OS handles it"
+    ],
+    "answer": 0,
+    "explanation": "GC runs in background; objects without references are collected."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Comparator interface is used for?",
+    "options": [
+      "Equality checking",
+      "Custom sorting logic",
+      "Serialization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "explanation": "compare() method defines custom ordering."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Lambda expression syntax?",
+    "options": [
+      "function(){}",
+      "def func():",
+      "(parameters) -> expression/body",
+      "method => param"
+    ],
+    "answer": 2,
+    "explanation": "Java 8 functional programming feature."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Thread can be created by?",
+    "options": [
+      "Only Runnable",
+      "Only extending Thread",
+      "Using String class",
+      "Extending Thread class or implementing Runnable"
+    ],
+    "answer": 3,
+    "explanation": "Two standard approaches to multithreading."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "equals() vs == in Java?",
+    "options": [
+      "Both check reference",
+      "No difference",
+      "Both check content",
+      "equals() checks content equality; == checks reference"
+    ],
+    "answer": 3,
+    "explanation": "== compares memory addresses for objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "HashSet stores?",
+    "options": [
+      "Unique elements only, no duplicates",
+      "Key-value pairs",
+      "Sorted elements",
+      "Duplicates allowed"
+    ],
+    "answer": 0,
+    "explanation": "Internally uses HashMap; add returns false for duplicates."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Inheritance allows?",
+    "options": [
+      "Handling exceptions",
+      "Thread creation",
+      "A class to inherit properties of another class",
+      "Creating objects"
+    ],
+    "answer": 2,
+    "explanation": "Child class extends parent class."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Garbage collection in Java?",
+    "options": [
+      "JVM automatically reclaims unused object memory",
+      "No memory management",
+      "Programmer must free memory",
+      "OS handles it"
+    ],
+    "answer": 0,
+    "explanation": "GC runs in background; objects without references are collected."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Optional class in Java 8 helps avoid?",
+    "options": [
+      "ArrayIndexOutOfBounds",
+      "NullPointerException",
+      "StackOverflow",
+      "ClassCast"
+    ],
+    "answer": 1,
+    "explanation": "Optional wraps nullable value with safe methods."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "HashSet stores?",
+    "options": [
+      "Unique elements only, no duplicates",
+      "Key-value pairs",
+      "Sorted elements",
+      "Duplicates allowed"
+    ],
+    "answer": 0,
+    "explanation": "Internally uses HashMap; add returns false for duplicates."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Checked exceptions are?",
+    "options": [
+      "Never checked",
+      "Runtime only",
+      "Verified at compile time",
+      "OS-level errors"
+    ],
+    "answer": 2,
+    "explanation": "Must be caught or declared with throws."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JDK includes?",
+    "options": [
+      "Only editor",
+      "Only JVM",
+      "Only libraries",
+      "JRE + development tools (compiler, debugger)"
+    ],
+    "answer": 3,
+    "explanation": "JDK is the full development kit."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Enum in Java is?",
+    "options": [
+      "A special class representing a fixed set of constants",
+      "A variable type",
+      "A loop construct",
+      "A method"
+    ],
+    "answer": 0,
+    "explanation": "Enums provide type-safe constant definitions."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Factory provides?",
+    "options": [
+      "Sorting algorithm",
+      "Object creation without exposing instantiation logic",
+      "Thread management",
+      "Memory allocation"
+    ],
+    "answer": 1,
+    "explanation": "Factory method returns appropriate subclass instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Design pattern: Singleton ensures?",
+    "options": [
+      "Multiple instances",
+      "Abstract class",
+      "No instances",
+      "Only one instance of a class exists"
+    ],
+    "answer": 3,
+    "explanation": "Private constructor + static instance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Lambda expression syntax?",
+    "options": [
+      "function(){}",
+      "def func():",
+      "(parameters) -> expression/body",
+      "method => param"
+    ],
+    "answer": 2,
+    "explanation": "Java 8 functional programming feature."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Java is which type of language?",
+    "options": [
+      "Functional only",
+      "Procedural only",
+      "Object-Oriented",
+      "Assembly"
+    ],
+    "answer": 2,
+    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "static keyword means?",
+    "options": [
+      "Cannot be accessed",
+      "Belongs to instance",
+      "Is private",
+      "Belongs to class, not instance"
+    ],
+    "answer": 3,
+    "explanation": "Static members shared across all instances."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Encapsulation is achieved by?",
+    "options": [
+      "Abstract classes",
+      "Private fields with public getters/setters",
+      "Public fields",
+      "Static methods only"
+    ],
+    "answer": 1,
+    "explanation": "Data hiding protects internal state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Garbage collection in Java?",
+    "options": [
+      "JVM automatically reclaims unused object memory",
+      "No memory management",
+      "Programmer must free memory",
+      "OS handles it"
+    ],
+    "answer": 0,
+    "explanation": "GC runs in background; objects without references are collected."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "What is the default value of an int in Java?",
+    "options": [
+      "-1",
+      "null",
+      "undefined",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Primitive int defaults to 0 in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "TreeMap stores keys in?",
+    "options": [
+      "Reverse order",
+      "Sorted (natural) order",
+      "Insertion order",
+      "Random order"
+    ],
+    "answer": 1,
+    "explanation": "Red-black tree implementation maintains sorted keys."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JRE includes?",
+    "options": [
+      "Only compiler",
+      "JVM + core libraries",
+      "Only debugger",
+      "Only source code"
+    ],
+    "answer": 1,
+    "explanation": "JRE is needed to run Java applications."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "String is immutable in Java because?",
+    "options": [
+      "It has no methods",
+      "It uses char array",
+      "Its value cannot be changed after creation",
+      "It is final class"
+    ],
+    "answer": 2,
+    "explanation": "String pool and security require immutability."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "File class in Java represents?",
+    "options": [
+      "Network socket",
+      "Database connection",
+      "File contents",
+      "File or directory path"
+    ],
+    "answer": 3,
+    "explanation": "java.io.File for file system operations."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Optional class in Java 8 helps avoid?",
+    "options": [
+      "ArrayIndexOutOfBounds",
+      "NullPointerException",
+      "StackOverflow",
+      "ClassCast"
+    ],
+    "answer": 1,
+    "explanation": "Optional wraps nullable value with safe methods."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Method overriding is?",
+    "options": [
+      "Different method name",
+      "Child class redefines parent method with same signature",
+      "Static methods",
+      "Same class different params"
+    ],
+    "answer": 1,
+    "explanation": "Runtime (dynamic) polymorphism."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Heap memory stores?",
+    "options": [
+      "Primitives only",
+      "Method calls",
+      "Local variables only",
+      "Objects and instance variables"
+    ],
+    "answer": 3,
+    "explanation": "Shared heap stores dynamically allocated objects."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Serialization converts object to?",
+    "options": [
+      "String format",
+      "HTML page",
+      "XML only",
+      "Byte stream for storage or transmission"
+    ],
+    "answer": 3,
+    "explanation": "Implements Serializable interface."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Constructor is called when?",
+    "options": [
+      "Object is created using new keyword",
+      "Variable is declared",
+      "Class is loaded",
+      "Method is called"
+    ],
+    "answer": 0,
+    "explanation": "Constructors initialize object state."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "What is classpath in Java?",
+    "options": [
+      "Database URL",
+      "Network path",
+      "File system root",
+      "Path where JVM looks for classes and packages"
+    ],
+    "answer": 3,
+    "explanation": "Set via -cp flag or CLASSPATH environment variable."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Abstraction is implemented using?",
+    "options": [
+      "Concrete classes only",
+      "Variables",
+      "Loops",
+      "Abstract classes and interfaces"
+    ],
+    "answer": 3,
+    "explanation": "Hides implementation, shows only functionality."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Autoboxing in Java is?",
+    "options": [
+      "String to int",
+      "Object to primitive only",
+      "Manual casting",
+      "Automatic conversion of primitive to wrapper class"
+    ],
+    "answer": 3,
+    "explanation": "int to Integer happens automatically."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "question": "StringBuilder vs StringBuffer?",
+    "options": [
+      "Both thread-safe",
+      "StringBuffer is faster",
+      "StringBuilder is not thread-safe but faster",
+      "Both not thread-safe"
+    ],
+    "answer": 2,
+    "explanation": "StringBuffer is synchronized; StringBuilder is not."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "BufferedReader is faster than Scanner because?",
+    "options": [
+      "It is newer",
+      "It uses less memory",
+      "Larger internal buffer reduces I/O operations",
+      "It skips characters"
+    ],
+    "answer": 2,
+    "explanation": "BufferedReader reads large chunks at once."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Observer implements?",
+    "options": [
+      "Singleton pattern",
+      "One-to-many dependency notification",
+      "Sorting",
+      "Tree traversal"
+    ],
+    "answer": 1,
+    "explanation": "When subject changes, all observers are notified."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Custom exception extends?",
+    "options": [
+      "Object",
+      "Thread",
+      "Exception or RuntimeException",
+      "String"
+    ],
+    "answer": 2,
+    "explanation": "Custom exceptions inherit from exception hierarchy."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "HashMap allows?",
+    "options": [
+      "No nulls",
+      "Only null values",
+      "Multiple null keys",
+      "One null key and multiple null values"
+    ],
+    "answer": 3,
+    "explanation": "HashMap permits one null key in its implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Interface in Java contains?",
+    "options": [
+      "Constructors",
+      "Main method",
+      "Instance variables",
+      "Abstract methods (and default/static in Java 8+)"
+    ],
+    "answer": 3,
+    "explanation": "Interface defines a contract for implementing classes."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "Dynamic method dispatch is?",
+    "options": [
+      "Constructor call",
+      "Compile-time resolution",
+      "Static method call",
+      "Runtime resolution of overridden method call"
+    ],
+    "answer": 3,
+    "explanation": "JVM determines which overridden method to call at runtime."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "super keyword is used to?",
+    "options": [
+      "Define variable",
+      "Handle exception",
+      "Create new object",
+      "Call parent class constructor or method"
+    ],
+    "answer": 3,
+    "explanation": "super() invokes parent constructor."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Polymorphism means?",
+    "options": [
+      "No methods",
+      "One method one behavior",
+      "Static binding always",
+      "Same method behaves differently based on context"
+    ],
+    "answer": 3,
+    "explanation": "Achieved via overloading and overriding."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Java supports multiple inheritance through?",
+    "options": [
+      "Interfaces only",
+      "Abstract classes",
+      "Constructors",
+      "Classes"
+    ],
+    "answer": 0,
+    "explanation": "Java avoids diamond problem by restricting class inheritance."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "PriorityQueue orders elements by?",
+    "options": [
+      "Natural ordering or custom Comparator",
+      "Random",
+      "Alphabetical only",
+      "Insertion order"
+    ],
+    "answer": 0,
+    "explanation": "Min-heap by default in Java."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Design pattern: Builder is used for?",
+    "options": [
+      "Threading",
+      "Sorting",
+      "Constructing complex objects step by step",
+      "Destroying objects"
+    ],
+    "answer": 2,
+    "explanation": "Builder separates construction from representation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "ArrayList vs LinkedList: random access?",
+    "options": [
+      "Both O(1)",
+      "ArrayList is O(1), LinkedList is O(n)",
+      "Both O(n)",
+      "LinkedList is faster"
+    ],
+    "answer": 1,
+    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Functional interface has?",
+    "options": [
+      "Exactly one abstract method",
+      "Multiple abstract methods",
+      "Only default methods",
+      "No methods"
+    ],
+    "answer": 0,
+    "explanation": "@FunctionalInterface annotation enforces this."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "throw vs throws?",
+    "options": [
+      "throws catches exception",
+      "Same thing",
+      "throw is for classes",
+      "throw creates exception; throws declares it in method signature"
+    ],
+    "answer": 3,
+    "explanation": "throw is used in body; throws in declaration."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stream API is used for?",
+    "options": [
+      "Network streaming",
+      "Audio streaming",
+      "File I/O streaming",
+      "Functional-style operations on collections"
+    ],
+    "answer": 3,
+    "explanation": "map, filter, reduce operations on data."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Medium",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "Thread can be created by?",
+    "options": [
+      "Only Runnable",
+      "Only extending Thread",
+      "Using String class",
+      "Extending Thread class or implementing Runnable"
+    ],
+    "answer": 3,
+    "explanation": "Two standard approaches to multithreading."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "final class cannot be?",
+    "options": [
+      "Instantiated",
+      "Used",
+      "Imported",
+      "Extended/inherited"
+    ],
+    "answer": 3,
+    "explanation": "final prevents subclassing."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Easy",
+    "question": "Garbage collection in Java?",
+    "options": [
+      "JVM automatically reclaims unused object memory",
+      "No memory management",
+      "Programmer must free memory",
+      "OS handles it"
+    ],
+    "answer": 0,
+    "explanation": "GC runs in background; objects without references are collected."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "abstract class can have?",
+    "options": [
+      "No methods",
+      "Only abstract methods",
+      "Both abstract and concrete methods",
+      "Only concrete methods"
+    ],
+    "answer": 2,
+    "explanation": "Abstract classes provide partial implementation."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Hard",
+    "question": "Stack memory stores?",
+    "options": [
+      "Static variables only",
+      "Class definitions",
+      "Objects only",
+      "Method calls and local variables"
+    ],
+    "answer": 3,
+    "explanation": "Stack is LIFO; each thread has its own."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Hard",
+    "question": "synchronized keyword ensures?",
+    "options": [
+      "Only one thread accesses block/method at a time",
+      "Memory is freed",
+      "All threads run simultaneously",
+      "Thread is stopped"
+    ],
+    "answer": 0,
+    "explanation": "Mutual exclusion for thread safety."
+  },
+  {
+    "subject": "Java",
+    "topic": "Multithreading",
+    "difficulty": "Easy",
+    "question": "Executor framework provides?",
+    "options": [
+      "Database access",
+      "Network calls",
+      "Thread pool management",
+      "File handling"
+    ],
+    "answer": 2,
+    "explanation": "Manages thread lifecycle efficiently."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Core",
+    "difficulty": "Medium",
+    "question": "JVM stands for?",
+    "options": [
+      "Java Version Module",
+      "Java Variable Manager",
+      "Java Visual Maker",
+      "Java Virtual Machine"
+    ],
+    "answer": 3,
+    "explanation": "JVM executes Java bytecode on any platform."
+  }
+];

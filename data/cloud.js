@@ -1,0 +1,14003 @@
+window.quizData = window.quizData || {};
+window.quizData.cloud = [
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which AWS service provides load balancing across multiple targets?",
+    "options": [
+      "CloudTrail",
+      "Route 53",
+      "VPC",
+      "ALB (Application Load Balancer)"
+    ],
+    "answer": 3,
+    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which AWS service provides load balancing across multiple targets?",
+    "options": [
+      "CloudTrail",
+      "Route 53",
+      "VPC",
+      "ALB (Application Load Balancer)"
+    ],
+    "answer": 3,
+    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which AWS service provides load balancing across multiple targets?",
+    "options": [
+      "CloudTrail",
+      "Route 53",
+      "VPC",
+      "ALB (Application Load Balancer)"
+    ],
+    "answer": 3,
+    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is serverless computing?",
+    "options": [
+      "No servers are used at all",
+      "Physical servers are deleted",
+      "Developer writes code without worrying about server provisioning",
+      "Running code offline"
+    ],
+    "answer": 2,
+    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the scope of a VPC (Virtual Private Cloud)?",
+    "options": [
+      "A logically isolated virtual network within an AWS account",
+      "A physical storage array",
+      "An encryption service",
+      "A database instance"
+    ],
+    "answer": 0,
+    "explanation": "VPC allows securing and provisioning a private network."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is IaaS (Infrastructure as a Service)?",
+    "options": [
+      "Provides ready-to-run business applications",
+      "Provides virtualized computing resources (VMs, storage, networks)",
+      "Provides only database access",
+      "Provides code execution environments without servers"
+    ],
+    "answer": 1,
+    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS S3 is an example of?",
+    "options": [
+      "Block Storage",
+      "Object Storage",
+      "Relational Database",
+      "File System Storage"
+    ],
+    "answer": 1,
+    "explanation": "S3 stores flat files/folders as objects with metadata."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Standard public cloud model means?",
+    "options": [
+      "Resources are shared across multiple tenants over the internet",
+      "Private network access only",
+      "Hosted on-premises only",
+      "Resources are dedicated to a single enterprise"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is SaaS (Software as a Service)?",
+    "options": [
+      "Database servers",
+      "Code execution runtimes",
+      "End-user applications hosted and managed by a provider",
+      "Virtual servers"
+    ],
+    "answer": 2,
+    "explanation": "Examples: Gmail, Office 365, Salesforce."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What does Auto Scaling do?",
+    "options": [
+      "Speeds up connection latency",
+      "Optimizes query performance",
+      "Dynamically adjusts the number of EC2 instances based on load",
+      "Resizes databases automatically"
+    ],
+    "answer": 2,
+    "explanation": "Ensures application has enough resources to handle target load."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Kubernetes is used for?",
+    "options": [
+      "Version control",
+      "Container orchestration and management",
+      "Creating container images",
+      "Web development"
+    ],
+    "answer": 1,
+    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Infrastructure as Code (IaC) is represented by?",
+    "options": [
+      "Docker",
+      "Git",
+      "Kubernetes",
+      "Terraform / AWS CloudFormation"
+    ],
+    "answer": 3,
+    "explanation": "IaC provisions resources using configuration files."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "Docker allows you to?",
+    "options": [
+      "Store databases only",
+      "Emulate full hardware with an OS",
+      "Package an app with its dependencies into a lightweight container",
+      "Deploy physical servers"
+    ],
+    "answer": 2,
+    "explanation": "Containers run isolated environments sharing the host OS kernel."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Easy",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is hybrid cloud deployment?",
+    "options": [
+      "Combining public cloud with private cloud/on-premises infrastructure",
+      "Using multiple public clouds",
+      "Using physical servers only",
+      "Offline storage only"
+    ],
+    "answer": 0,
+    "explanation": "Allows keeping critical data private while using public cloud scale."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Medium",
+    "question": "AWS EC2 stands for?",
+    "options": [
+      "Elastic Connection Cloud",
+      "Extended Core Engine",
+      "Easy Compute Center",
+      "Elastic Compute Cloud"
+    ],
+    "answer": 3,
+    "explanation": "EC2 is Amazon's resizable virtual server service."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "What is the AWS Shared Responsibility Model?",
+    "options": [
+      "AWS secures the infrastructure; customer secures data and access",
+      "AWS handles application code debugging",
+      "Customer is responsible for physical host security",
+      "Both manage everything together"
+    ],
+    "answer": 0,
+    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cloud",
+    "difficulty": "Hard",
+    "question": "Which cloud service model provides OS, runtime, and tools directly?",
+    "options": [
+      "SaaS",
+      "FaaS",
+      "PaaS (Platform as a Service)",
+      "IaaS"
+    ],
+    "answer": 2,
+    "explanation": "PaaS lets you run apps without managing the OS."
+  }
+];
