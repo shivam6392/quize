@@ -24,9 +24,9 @@ function generateProceduralQuestion(sub, id) {
         const type = R(['rowmajor', 'complexity', 'prefixsum', 'graph_edges']);
 
         if (type === 'rowmajor') {
-            const rows = Math.floor(Math.random() * 15) + 5; // 5 to 19
-            const cols = Math.floor(Math.random() * 20) + 10; // 10 to 29
-            const base = Math.floor(Math.random() * 10) * 100 + 1000; // 1000 to 1900
+            const rows = Math.floor(Math.random() * 25) + 5; // 5 to 29
+            const cols = Math.floor(Math.random() * 30) + 10; // 10 to 39
+            const base = Math.floor(Math.random() * 20) * 100 + 1000; // 1000 to 2900
             const size = R([1, 2, 4, 8]);
             const targetRow = Math.floor(Math.random() * (rows - 2)) + 1;
             const targetCol = Math.floor(Math.random() * (cols - 2)) + 1;
@@ -41,10 +41,11 @@ function generateProceduralQuestion(sub, id) {
 
             const cor = addr.toString();
             const w = [
-                (addr + 4).toString(),
-                (addr - 8).toString(),
+                (addr + (isRowMajor ? cols : rows) * size).toString(),
+                (addr - size * 2).toString(),
                 (base + (targetRow * targetCol) * size).toString()
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push((addr + 16).toString());
 
             return {
                 subject: 'DSA',
@@ -57,9 +58,9 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'prefixsum') {
-            const size = Math.floor(Math.random() * 6) + 5; // 5 to 10
-            const arr = Array.from({ length: size }, () => Math.floor(Math.random() * 20) + 1);
-            const index = Math.floor(Math.random() * (size - 2)) + 2; // 2 to size-1
+            const size = Math.floor(Math.random() * 8) + 5; // 5 to 12
+            const arr = Array.from({ length: size }, () => Math.floor(Math.random() * 50) + 1);
+            const index = Math.floor(Math.random() * (size - 3)) + 2; // 2 to size-2
             let sum = 0;
             for (let i = 0; i <= index; i++) sum += arr[i];
 
@@ -67,8 +68,9 @@ function generateProceduralQuestion(sub, id) {
             const w = [
                 (sum + arr[index]).toString(),
                 (sum - arr[0]).toString(),
-                (sum + 5).toString()
-            ];
+                (sum + 17).toString()
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push((sum + 30).toString());
 
             return {
                 subject: 'DSA',
@@ -81,17 +83,18 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'graph_edges') {
-            const nodes = Math.floor(Math.random() * 30) + 5; // 5 to 34
+            const nodes = Math.floor(Math.random() * 50) + 10; // 10 to 59
             const maxEdges = (nodes * (nodes - 1)) / 2;
-            const density = parseFloat((Math.random() * 0.4 + 0.3).toFixed(2)); // 30% to 70%
+            const density = parseFloat((Math.random() * 0.5 + 0.2).toFixed(2)); // 20% to 70%
             const edges = Math.floor(maxEdges * density);
 
             const cor = edges.toString();
             const w = [
-                (edges + 5).toString(),
-                (edges - 3).toString(),
+                (edges + nodes).toString(),
+                (edges - Math.floor(nodes / 2)).toString(),
                 maxEdges.toString()
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push((edges + 4).toString());
 
             return {
                 subject: 'DSA',
@@ -152,10 +155,10 @@ function generateProceduralQuestion(sub, id) {
         const type = R(['confusion', 'regression', 'distance', 'datasplit']);
 
         if (type === 'confusion') {
-            const tp = 50 + Math.floor(Math.random() * 200);
-            const fp = 5 + Math.floor(Math.random() * 50);
-            const fn = 5 + Math.floor(Math.random() * 50);
-            const tn = 100 + Math.floor(Math.random() * 300);
+            const tp = 50 + Math.floor(Math.random() * 300);
+            const fp = 5 + Math.floor(Math.random() * 80);
+            const fn = 5 + Math.floor(Math.random() * 80);
+            const tn = 100 + Math.floor(Math.random() * 500);
 
             const metric = R(['Accuracy', 'Precision', 'Recall', 'Specificity']);
             let val = 0;
@@ -166,9 +169,9 @@ function generateProceduralQuestion(sub, id) {
 
             const cor = (val * 100).toFixed(2) + '%';
             const w = [
-                ((val - 0.12) * 100).toFixed(2) + '%',
-                ((val + 0.08) * 100).toFixed(2) + '%',
-                ((val * 0.85) * 100).toFixed(2) + '%',
+                ((val - 0.14) * 100).toFixed(2) + '%',
+                ((val + 0.09) * 100).toFixed(2) + '%',
+                ((val * 0.88) * 100).toFixed(2) + '%',
             ];
 
             return {
@@ -182,10 +185,10 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'distance') {
-            const x1 = Math.floor(Math.random() * 30);
-            const y1 = Math.floor(Math.random() * 30);
-            const x2 = Math.floor(Math.random() * 30) + 5;
-            const y2 = Math.floor(Math.random() * 30) + 5;
+            const x1 = Math.floor(Math.random() * 50);
+            const y1 = Math.floor(Math.random() * 50);
+            const x2 = Math.floor(Math.random() * 50) + 5;
+            const y2 = Math.floor(Math.random() * 50) + 5;
 
             const metric = R(['Manhattan', 'Euclidean']);
             let val = 0;
@@ -197,10 +200,11 @@ function generateProceduralQuestion(sub, id) {
 
             const cor = val.toFixed(2);
             const w = [
-                (val + 3.25).toFixed(2),
-                Math.abs(val - 1.85).toFixed(2),
-                (val * 1.35).toFixed(2)
-            ];
+                (val + 4.15).toFixed(2),
+                Math.abs(val - 2.25).toFixed(2),
+                (val * 1.25).toFixed(2)
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push((val + 10.00).toFixed(2));
 
             return {
                 subject: 'AI / ML',
@@ -213,7 +217,7 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'datasplit') {
-            const total = (Math.floor(Math.random() * 50) + 10) * 100; // 1000 to 6000
+            const total = (Math.floor(Math.random() * 190) + 10) * 100; // 1000 to 20000
             const pct = R([70, 75, 80]);
             const trainCount = (total * pct) / 100;
             const testCount = total - trainCount;
@@ -221,10 +225,11 @@ function generateProceduralQuestion(sub, id) {
             const askTrain = Math.random() > 0.5;
             const cor = (askTrain ? trainCount : testCount).toString();
             const w = [
-                (askTrain ? trainCount - 250 : testCount + 250).toString(),
-                (askTrain ? trainCount * 0.8 : testCount * 1.5).toString(),
+                (askTrain ? trainCount - 500 : testCount + 500).toString(),
+                (askTrain ? trainCount * 0.75 : testCount * 1.25).toString(),
                 (total / 2).toString()
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push((total - 100).toString());
 
             return {
                 subject: 'AI / ML',
@@ -237,16 +242,17 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else {
-            const slope = Math.floor(Math.random() * 12) + 2;
-            const intercept = Math.floor(Math.random() * 20) - 10;
-            const x = Math.floor(Math.random() * 40);
+            const slope = Math.floor(Math.random() * 25) + 2;
+            const intercept = Math.floor(Math.random() * 40) - 20;
+            const x = Math.floor(Math.random() * 100);
 
             const cor = (slope * x + intercept).toString();
             const w = [
-                ((slope + 3) * x + intercept).toString(),
-                (slope * x + intercept + 15).toString(),
+                ((slope + 4) * x + intercept).toString(),
+                (slope * x + intercept + 25).toString(),
                 (slope * x - intercept).toString()
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push((slope * x + 77).toString());
 
             return {
                 subject: 'AI / ML',
@@ -268,8 +274,8 @@ function generateProceduralQuestion(sub, id) {
         const type = R(['bitwise', 'modulo', 'ternary']);
 
         if (type === 'bitwise') {
-            const a = Math.floor(Math.random() * 16) + 4; // 4 to 19
-            const b = Math.floor(Math.random() * 8) + 2; // 2 to 9
+            const a = Math.floor(Math.random() * 200) + 10; // 10 to 209
+            const b = Math.floor(Math.random() * 100) + 5; // 5 to 104
             const op = R(['&', '|', '^']);
 
             let val = 0;
@@ -279,11 +285,11 @@ function generateProceduralQuestion(sub, id) {
 
             const cor = val.toString();
             const w = [
-                (val + 2).toString(),
-                (val - 1).toString(),
+                (val + 3).toString(),
+                (val - 2).toString(),
                 (a + b).toString()
             ].filter(x => x !== cor).slice(0, 3);
-            while (w.length < 3) w.push((Math.floor(Math.random() * 30) + 25).toString());
+            while (w.length < 3) w.push((val + 24).toString());
 
             return {
                 subject: 'Java',
@@ -296,15 +302,15 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'modulo') {
-            const a = Math.floor(Math.random() * 50) + 15;
-            const b = Math.floor(Math.random() * 8) + 4;
+            const a = Math.floor(Math.random() * 5000) + 200;
+            const b = Math.floor(Math.random() * 50) + 10;
             const cor = (a % b).toString();
             const w = [
-                (a % b + 2).toString(),
+                (a % b + 3).toString(),
                 Math.floor(a / b).toString(),
                 '0'
             ].filter(x => x !== cor).slice(0, 3);
-            while (w.length < 3) w.push((Math.floor(Math.random() * 10) + 12).toString());
+            while (w.length < 3) w.push((a % b + 7).toString());
 
             return {
                 subject: 'Java',
@@ -317,9 +323,9 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else {
-            const x = Math.floor(Math.random() * 20) + 5;
-            const y = Math.floor(Math.random() * 20) + 5;
-            const addVal = Math.floor(Math.random() * 10) + 2;
+            const x = Math.floor(Math.random() * 200) + 10;
+            const y = Math.floor(Math.random() * 200) + 10;
+            const addVal = Math.floor(Math.random() * 30) + 5;
 
             const cond = x > y;
             const cor = (cond ? x + addVal : y - addVal).toString();
@@ -328,7 +334,7 @@ function generateProceduralQuestion(sub, id) {
                 x.toString(),
                 y.toString()
             ].filter(x => x !== cor).slice(0, 3);
-            while (w.length < 3) w.push((Math.floor(Math.random() * 30) + 40).toString());
+            while (w.length < 3) w.push((Math.floor(Math.random() * 300) + 250).toString());
 
             return {
                 subject: 'Java',
@@ -350,9 +356,9 @@ function generateProceduralQuestion(sub, id) {
         const type = R(['scheduling', 'pagefaults', 'partitions']);
 
         if (type === 'scheduling') {
-            const b1 = Math.floor(Math.random() * 10) + 3; // P1
-            const b2 = Math.floor(Math.random() * 10) + 3; // P2
-            const b3 = Math.floor(Math.random() * 10) + 3; // P3
+            const b1 = Math.floor(Math.random() * 40) + 5; // P1: 5 to 44
+            const b2 = Math.floor(Math.random() * 40) + 5; // P2: ...
+            const b3 = Math.floor(Math.random() * 40) + 5; // P3: ...
 
             // Average turnaround time (AT) under FCFS arriving at 0
             const avgAT = ((b1 + (b1 + b2) + (b1 + b2 + b3)) / 3).toFixed(2);
@@ -361,7 +367,8 @@ function generateProceduralQuestion(sub, id) {
                 ((b1 + b2 + b3) / 3).toFixed(2) + ' ms',
                 ((b1 + b2) / 3).toFixed(2) + ' ms',
                 ((b2 + b3) / 3).toFixed(2) + ' ms'
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push(((b1 + b2 + b3 + 12) / 3).toFixed(2) + ' ms');
 
             return {
                 subject: 'OS',
@@ -374,11 +381,13 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'pagefaults') {
-            // Generating variable length strings to avoid duplicates
-            const val1 = Math.floor(Math.random() * 4) + 1;
-            const val2 = Math.floor(Math.random() * 4) + 5;
-            const str = [val1, val2, val1, val2 - 1, val1 + 1, val2];
-            const frames = R([3, 4]);
+            // Generating reference string of length 8 with 8 distinct elements
+            const arrSize = 8;
+            const str = [];
+            for (let i = 0; i < arrSize; i++) {
+                str.push(Math.floor(Math.random() * 7) + 1); // pages 1 to 7
+            }
+            const frames = R([3, 4, 5]);
 
             // Emulate FIFO
             let pf = 0;
@@ -395,8 +404,9 @@ function generateProceduralQuestion(sub, id) {
             const w = [
                 (pf + 2).toString() + ' page faults',
                 (pf - 1).toString() + ' page faults',
-                '3 page faults'
-            ];
+                (pf === 8 ? '5' : '8') + ' page faults'
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('3 page faults');
 
             return {
                 subject: 'OS',
@@ -409,8 +419,8 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else {
-            const req = Math.floor(Math.random() * 100) + 100; // 100 to 199 KB
-            const partitions = [req - 40, req + 20, req + 80, req - 10];
+            const req = Math.floor(Math.random() * 500) + 100; // 100 to 599 KB
+            const partitions = [req - 60, req + 30, req + 120, req - 15];
 
             // Best Fit is the smallest large-enough partition
             const sortedValids = partitions.filter(x => x >= req).sort((a, b) => a - b);
@@ -419,6 +429,7 @@ function generateProceduralQuestion(sub, id) {
             const cor = corVal.toString() + ' KB partition';
             const w = partitions.filter(x => x !== corVal).map(x => x.toString() + ' KB partition');
             if (w.length < 3) w.push('None of the partitions');
+            while (w.length < 3) w.push((req + 200).toString() + ' KB partition');
 
             return {
                 subject: 'OS',
@@ -437,73 +448,110 @@ function generateProceduralQuestion(sub, id) {
     // 5. COMPUTER NETWORKS (CN)
     // ============================================================
     if (key === 'cn') {
-        const type = R(['subnet', 'port', 'latency']);
+        const type = R(['subnet', 'latency', 'transmission']);
 
         if (type === 'subnet') {
-            const cidr = Math.floor(Math.random() * 7) + 24; // /24 to /30
-            const hostIPs = Math.pow(2, 32 - cidr) - 2;
-            const subnetOctet = 256 - Math.pow(2, 32 - cidr);
+            const octet1 = R([10, 172, 192]);
+            let octet2 = 168;
+            if (octet1 === 10) octet2 = Math.floor(Math.random() * 250) + 1;
+            else if (octet1 === 172) octet2 = Math.floor(Math.random() * 16) + 16;
 
-            const subName = cidr >= 24 ? `255.255.255.${subnetOctet}` : `255.255.${subnetOctet}.0`;
-            const cor = hostIPs.toString() + ' assignable hosts';
+            const octet3 = Math.floor(Math.random() * 254) + 1;
+            const octet4 = Math.floor(Math.random() * 254) + 1;
+            const cidr = Math.floor(Math.random() * 9) + 22; // /22 to /30
+
+            // Calculations for subnet
+            const ipInt = (octet1 << 24) | (octet2 << 16) | (octet3 << 8) | octet4;
+            const mask = ~((1 << (32 - cidr)) - 1);
+            const netInt = ipInt & mask;
+
+            const netIP = [
+                (netInt >>> 24) & 255,
+                (netInt >>> 16) & 255,
+                (netInt >>> 8) & 255,
+                netInt & 255
+            ].join('.');
+
+            const broadInt = netInt | ~mask;
+            const broadIP = [
+                (broadInt >>> 24) & 255,
+                (broadInt >>> 16) & 255,
+                (broadInt >>> 8) & 255,
+                broadInt & 255
+            ].join('.');
+
+            const askNetwork = Math.random() > 0.5;
+            const cor = askNetwork ? netIP : broadIP;
+
+            // Generate wrong options by altering network segments slightly (offset base octet4)
+            const baseO4 = netInt & 255;
+            const step = Math.pow(2, 32 - cidr);
             const w = [
-                (hostIPs + 2).toString() + ' assignable hosts',
-                (hostIPs * 2).toString() + ' assignable hosts',
-                (hostIPs + 4).toString() + ' assignable hosts'
-            ];
+                [(octet1), (octet2), (octet3), (baseO4 + step) & 255].join('.'),
+                [(octet1), (octet2), (octet3), Math.max(0, baseO4 - step) & 255].join('.'),
+                [(octet1), (octet2), (octet3 + 1), baseO4].join('.')
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('255.255.255.255');
 
             return {
                 subject: 'CN',
-                topic: 'Subnet Masking',
-                difficulty: 'Medium',
-                question: `An enterprise interface is configured with the subnet mask ${subName} (corresponding to CIDR notation /${cidr}). How many usable host IP addresses are supported?`,
+                topic: 'IP Subnetting',
+                difficulty: 'Hard',
+                question: `An interface is configured with host IP address ${octet1}.${octet2}.${octet3}.${octet4} and subnet mask /${cidr}. What is the correct ${askNetwork ? 'Network ID (Subnet Address)' : 'Directed Broadcast Address'} of this subnet?`,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `Formula = 2^(32-CIDR) - 2. For /${cidr}, standard calculation is 2^${32 - cidr} - 2 = ${cor}.`,
+                explanation: `For host ${octet1}.${octet2}.${octet3}.${octet4}/${cidr}, the subnet mask bits reveal the network ID is ${netIP} and broadcast address is ${broadIP}.`,
                 _correct: cor
             };
         } else if (type === 'latency') {
-            const size = Math.floor(Math.random() * 5) * 1000 + 4000; // 4000 to 8000 bits
-            const rate = R([10, 100, 1000]); // kbps
-            const delay = (size / (rate * 1000)) * 1000; // ms
+            const sizeKB = Math.floor(Math.random() * 490) * 10 + 100; // 100 to 5000 KB
+            const rateMbps = Math.floor(Math.random() * 99) + 2; // 2 to 100 Mbps
 
-            const cor = delay.toFixed(1) + ' milliseconds';
+            // Delay in milliseconds: (sizeKB * 1024 * 8) / (rateMbps * 1000)
+            const sizeBits = sizeKB * 1024 * 8;
+            const rateBps = rateMbps * 1000000;
+            const delayMs = (sizeBits / rateBps) * 1000;
+
+            const cor = delayMs.toFixed(3) + ' ms';
             const w = [
-                (delay * 10).toFixed(1) + ' milliseconds',
-                (delay / 2).toFixed(1) + ' milliseconds',
-                '0.5 milliseconds'
-            ];
+                (delayMs * 1.5).toFixed(3) + ' ms',
+                (delayMs / 4).toFixed(3) + ' ms',
+                (delayMs + 12.5).toFixed(3) + ' ms'
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('1.250 ms');
+
             return {
                 subject: 'CN',
                 topic: 'Network Performance Calculations',
                 difficulty: 'Hard',
-                question: `A router transmits a packet of size ${size} bits onto a communication link with bandwidth speed of ${rate} kbps. What is the transmission delay?`,
+                question: `A client sends a file of size ${sizeKB} KB over a point-to-point network link with transmission bandwidth rate of ${rateMbps} Mbps. What is the theoretical transmission delay?`,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `Delay = Packet size / Bandwidth = ${size} bits / (${rate} * 1000 bps) = ${delay} ms = ${cor}.`,
+                explanation: `Delay = File size in bits / Link rate = (${sizeKB} * 1024 * 8) / (${rateMbps} * 10^6) = ${cor}.`,
                 _correct: cor
             };
         } else {
-            const ports = [
-                { svc: 'SSH Secure Shell login', p: '22', layer: 'Application Layer' },
-                { svc: 'DNS domain resolution protocol', p: '53', layer: 'Application Layer' },
-                { svc: 'SMTP mail forwarding protocol', p: '25', layer: 'Application Layer' },
-                { svc: 'HTTP web transfer server default', p: '80', layer: 'Application Layer' },
-                { svc: 'HTTPS SSL/TLS protected website access', p: '443', layer: 'Application Layer' },
-                { svc: 'IMAP webmail access utility', p: '143', layer: 'Application Layer' }
-            ];
-            const target = R(ports);
-            const cor = 'Default Port ' + target.p;
-            const w = ports.filter(x => x.p !== target.p).map(x => 'Default Port ' + x.p).slice(0, 3);
+            const sizeBits = Math.floor(Math.random() * 100) * 50 + 1000; // 1000 to 6000 bits
+            const rateKbps = R([10, 20, 50, 100, 200, 500]); // kbps
+
+            // Delay in ms
+            const delayMs = (sizeBits / (rateKbps * 1000)) * 1000;
+            const cor = delayMs.toFixed(2) + ' ms';
+            const w = [
+                (delayMs * 10).toFixed(2) + ' ms',
+                (delayMs / 2).toFixed(2) + ' ms',
+                (delayMs + 4.5).toFixed(2) + ' ms'
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('10.00 ms');
 
             return {
                 subject: 'CN',
-                topic: 'Port Protocols Mapping',
-                difficulty: 'Easy',
-                question: `In Internet networking architecture protocols, which destination port is used by default for the ${target.svc}?`,
+                topic: 'Transmission Delays',
+                difficulty: 'Medium',
+                question: `A router transmits a packet of size ${sizeBits} bits onto a communication link with bandwidth speed of ${rateKbps} kbps. What is the transmission delay?`,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `Standard TCP/IP RFC designations link ${target.svc} to ${cor}.`,
+                explanation: `Delay = Size / Rate = ${sizeBits} bits / (${rateKbps} * 1000 bps) = ${cor}.`,
                 _correct: cor
             };
         }
@@ -518,7 +566,7 @@ function generateProceduralQuestion(sub, id) {
         if (type === 'sla') {
             const pctIndex = R([0, 1, 2]);
             const pcts = ['99.9%', '99.99%', '99.999%'];
-            const values = ['8.76 hours per year', '52.56 minutes per year', '5.26 minutes per year'];
+            const values = ['8.72 hours per year', '52.56 minutes per year', '5.26 minutes per year'];
             const cor = values[pctIndex];
             const w = values.filter(x => x !== cor);
             w.push('365.25 minutes per year');
@@ -628,13 +676,15 @@ function generateProceduralQuestion(sub, id) {
         const type = R(['binary', 'hex', 'cache_split']);
 
         if (type === 'binary') {
-            const val = Math.floor(Math.random() * 200) + 15;
+            const val = Math.floor(Math.random() * 10000) + 15;
             const cor = val.toString(2);
             const w = [
-                (val + 5).toString(2),
-                (val - 3).toString(2),
-                (val + 17).toString(2)
-            ];
+                (val + 6).toString(2),
+                (val - 4).toString(2),
+                (val + 24).toString(2)
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('11111111');
+
             return {
                 subject: 'COA',
                 topic: 'Binary Conversions',
@@ -646,13 +696,15 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else if (type === 'hex') {
-            const val = Math.floor(Math.random() * 500) + 60;
+            const val = Math.floor(Math.random() * 80000) + 60;
             const cor = '0x' + val.toString(16).toUpperCase();
             const w = [
-                '0x' + (val - 12).toString(16).toUpperCase(),
-                '0x' + (val + 32).toString(16).toUpperCase(),
+                '0x' + (val - 16).toString(16).toUpperCase(),
+                '0x' + (val + 64).toString(16).toUpperCase(),
                 '0x' + (val * 2).toString(16).toUpperCase()
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('0x00FF');
+
             return {
                 subject: 'COA',
                 topic: 'Hexadecimal Conversions',
@@ -664,12 +716,14 @@ function generateProceduralQuestion(sub, id) {
                 _correct: cor
             };
         } else {
-            const addrBits = R([16, 24, 32]);
-            const cacheSizeKB = R([16, 32, 64, 128]);
-            const blockSizeB = R([16, 32, 64]);
+            const addrBits = R([16, 24, 32, 64]);
+            const cacheSizeKB = R([4, 8, 16, 32, 64, 128, 256]);
+            const blockSizeB = R([16, 32, 64, 128]);
+            const ways = R([1, 2, 4, 8, 16]); // 1 is direct-mapped
 
             const offsetBits = Math.log2(blockSizeB);
-            const indexBits = Math.log2((cacheSizeKB * 1024) / blockSizeB);
+            const cacheSlots = (cacheSizeKB * 1024) / blockSizeB;
+            const indexBits = Math.log2(cacheSlots / ways);
             const tagBits = addrBits - indexBits - offsetBits;
 
             const ask = R(['tag', 'index', 'offset']);
@@ -682,16 +736,17 @@ function generateProceduralQuestion(sub, id) {
                 (corVal + 2).toString() + ' bits',
                 Math.abs(corVal - 3).toString() + ' bits',
                 (addrBits - corVal).toString() + ' bits'
-            ];
+            ].filter(x => x !== cor).slice(0, 3);
+            while (w.length < 3) w.push('8 bits');
 
             return {
                 subject: 'COA',
                 topic: 'Cache Architecture',
                 difficulty: 'Hard',
-                question: `In a direct-mapped cache architecture using ${addrBits}-bit memory addresses, cache size is ${cacheSizeKB} KB, and line block size is ${blockSizeB} bytes. What is the length of the ${ask.toUpperCase()} bitfield?`,
+                question: `In a ${ways}-way set-associative cache architecture using ${addrBits}-bit memory addresses, cache size is ${cacheSizeKB} KB, and line block size is ${blockSizeB} bytes. What is the length of the ${ask.toUpperCase()} bitfield?`,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `For ${addrBits}-bit addresses: Offset = log2(${blockSizeB}) = ${offsetBits} bits. Index = log2(${cacheSizeKB}KB/${blockSizeB}B) = ${indexBits} bits. Tag = ${addrBits} - Index - Offset = ${tagBits} bits.`,
+                explanation: `For ${addrBits}-bit addresses: Offset = log2(${blockSizeB}) = ${offsetBits} bits. Sets = CacheSlots / Ways = (${cacheSizeKB}KB/${blockSizeB}B)/${ways}. Index = log2(Sets) = ${indexBits} bits. Tag = ${addrBits} - Index - Offset = ${tagBits} bits.`,
                 _correct: cor
             };
         }
@@ -701,20 +756,20 @@ function generateProceduralQuestion(sub, id) {
     // 8. FULL STACK DEVELOPMENT (FSD)
     // ============================================================
     if (key === 'fsd') {
-        const type = R(['color', 'status', 'sqlcount']);
+        const type = R(['color', 'sqlcount', 'statuscode']);
 
         if (type === 'color') {
-            const r = Math.floor(Math.random() * 6) * 51; // gives multiples of 51 (web safe)
-            const g = Math.floor(Math.random() * 6) * 51;
-            const b = Math.floor(Math.random() * 6) * 51;
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
 
             const toHex = (x) => x.toString(16).padStart(2, '0').toUpperCase();
             const hex = `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 
             const cor = `rgb(${r}, ${g}, ${b})`;
             const w = [
-                `rgb(${Math.min(255, r + 51)}, ${g}, ${b})`,
-                `rgb(${r}, ${Math.max(0, g - 51)}, ${b})`,
+                `rgb(${Math.min(255, r + 24)}, ${g}, ${b})`,
+                `rgb(${r}, ${Math.max(0, g - 48)}, ${b})`,
                 `rgb(0, 0, 0)`
             ].filter(x => x !== cor).slice(0, 3);
             while (w.length < 3) w.push(`rgb(${Math.floor(Math.random() * 255)}, 255, 255)`);
@@ -732,26 +787,32 @@ function generateProceduralQuestion(sub, id) {
         }
 
         if (type === 'sqlcount') {
-            const threshold = Math.floor(Math.random() * 30) + 18; // 18 to 47
-            const ageVal1 = threshold - 2;
-            const ageVal2 = threshold + 5;
-            const ageVal3 = threshold - 1;
+            const threshold = Math.floor(Math.random() * 8000) + 10; // 10 to 8009
+            const table = R(['Customers', 'Users', 'Employees', 'Accounts', 'Products', 'Orders', 'Transactions']);
+            const col = R(['age', 'salary', 'score', 'points', 'balance', 'price', 'quantity']);
+            const op = R(['>', '<', '>=', '<=', '!=']);
 
-            const cor = `Query output is all rows with age values strictly larger than ${threshold}`;
+            const opDesc = op === '>' ? 'strictly larger than' :
+                op === '<' ? 'strictly smaller than' :
+                    op === '>=' ? 'greater than or equal to' :
+                        op === '<=' ? 'less than or equal to' :
+                            'not equal to';
+
+            const cor = `Query output is all rows with ${col} values ${opDesc} ${threshold}`;
             const w = [
-                `Query output includes only rows having age exactly ${threshold} inside the database`,
-                `Query output returns count representing table column rows having age less than or equal to ${threshold}`,
-                `Query output returns errors due to invalid query syntax parameters on filtering age`
+                `Query output includes only rows having ${col} exactly equivalent to ${threshold} value`,
+                `Query output returns count representing table column rows having ${col} value sum up to ${threshold}`,
+                `Query output returns errors due to invalid query syntax parameters on filtering ${col}`
             ];
 
             return {
                 subject: 'FSD',
                 topic: 'SQL Databases Select Queries',
                 difficulty: 'Medium',
-                question: `For a database table containing age values, what does query: SELECT * FROM Students WHERE age > ${threshold}; filter for?`,
+                question: `For a database table named '${table}', what does the SQL query filter for? SELECT * FROM ${table} WHERE ${col} ${op} ${threshold};`,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `The '>' operator returns records where the column value is strictly greater than the threshold ${threshold}.`,
+                explanation: `The '${op}' operator filters table rows where the column '${col}' matches the criteria, which is ${opDesc} ${threshold}.`,
                 _correct: cor
             };
         }
@@ -761,10 +822,15 @@ function generateProceduralQuestion(sub, id) {
             { code: '200', text: 'OK (Request succeeded)' },
             { code: '201', text: 'Created (Resource successfully created)' },
             { code: '204', text: 'No Content (Request succeeded but returns no content body)' },
+            { code: '301', text: 'Moved Permanently (Target resource URI changed)' },
+            { code: '304', text: 'Not Modified (Cached local copy still updated)' },
             { code: '400', text: 'Bad Request (Server cannot interpret payload syntax)' },
             { code: '401', text: 'Unauthorized (Target credentials invalid or missing)' },
             { code: '403', text: 'Forbidden (Client validated but has no authorization permissions)' },
-            { code: '404', text: 'Not Found (Target URL resource does not exist)' }
+            { code: '404', text: 'Not Found (Target URL resource does not exist)' },
+            { code: '500', text: 'Internal Server Error (Generic server-side error code)' },
+            { code: '502', text: 'Bad Gateway (Upstream server returned invalid response)' },
+            { code: '503', text: 'Service Unavailable (Server overloaded or down for maintenance)' }
         ];
         const target = R(statusList);
         const cor = target.text;

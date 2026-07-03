@@ -8,7 +8,7 @@ function pad(qs, target, sub) {
     const seenQuestions = new Set(qs.map(q => q.question.toLowerCase().trim()));
 
     let attempts = 0;
-    while (qs.length < target && attempts < 15000) {
+    while (qs.length < target && attempts < 50000) {
         attempts++;
         const newQ = generateProceduralQuestion(sub, qs.length);
         if (newQ && !seenQuestions.has(newQ.question.toLowerCase().trim())) {
@@ -17,15 +17,8 @@ function pad(qs, target, sub) {
         }
     }
 
-    let fallbackCount = 0;
-    while (qs.length < target) {
-        fallbackCount++;
-        const src = qs[Math.floor(Math.random() * qs.length)];
-        const uniqueQ = {
-            ...src,
-            question: `${src.question} (Set ${fallbackCount})`
-        };
-        qs.push(uniqueQ);
+    if (qs.length < target) {
+        throw new Error(`CRITICAL ERROR: Failed to generate ${target} unique questions for subject '${sub}'! Only generated ${qs.length} questions. Please expand the procedural generator's parameter space.`);
     }
 
     qs.forEach(q => {

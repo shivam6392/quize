@@ -6,12 +6,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Supervised learning uses?",
     "options": [
-      "Unlabeled data",
-      "Labeled data",
+      "Random data",
       "No data",
-      "Random data"
+      "Labeled data",
+      "Unlabeled data"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Supervised learning maps input to known output labels."
   },
   {
@@ -22,8 +22,8 @@ window.quizData.aiml = [
     "options": [
       "Regression with targets in practice",
       "Finding hidden patterns without labels",
-      "Classification with labels (widely accepted)",
-      "Predicting known outputs (commonly used)"
+      "Predicting known outputs (typical scenario)",
+      "Classification with labels in most cases"
     ],
     "answer": 1,
     "explanation": "No target variable; discovers structure in data."
@@ -34,12 +34,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Reinforcement learning learns through?",
     "options": [
-      "Backpropagation only",
-      "Clustering (widely accepted)",
       "Rewards and penalties",
-      "Labeled datasets"
+      "Labeled datasets",
+      "Backpropagation only",
+      "Clustering in practice"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Agent maximizes cumulative reward via trial and error."
   },
   {
@@ -48,12 +48,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Linear regression predicts?",
     "options": [
-      "Binary classes (typical scenario)",
       "Continuous numerical values",
-      "Clusters (default behavior)",
-      "Categories by design"
+      "Clusters in practice",
+      "Categories (default behavior)",
+      "Binary classes in practice"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Fits a line to minimize squared errors."
   },
   {
@@ -62,12 +62,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Logistic regression is used for?",
     "options": [
-      "Clustering (general case)",
-      "Binary classification",
-      "Regression (general case)",
-      "Dimensionality reduction"
+      "Clustering in most cases",
+      "Regression in most cases",
+      "Dimensionality reduction",
+      "Binary classification"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Outputs probability via sigmoid function."
   },
   {
@@ -76,12 +76,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Decision tree splits data based on?",
     "options": [
-      "All features equally in standard usage",
-      "Target variable only (commonly used)",
+      "Target variable only (widely accepted)",
       "Feature that gives best information gain",
-      "Random features in typical implementations"
+      "Random features based on convention",
+      "All features equally (general case)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Greedy splits maximize purity of child nodes."
   },
   {
@@ -90,9 +90,9 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Random forest is?",
     "options": [
-      "Neural network in most cases",
-      "Clustering method in practice",
-      "Single deep tree (commonly used)",
+      "Neural network by design",
+      "Clustering method in most cases",
+      "Single deep tree in practice",
       "Ensemble of decision trees"
     ],
     "answer": 3,
@@ -104,10 +104,10 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "K-Nearest Neighbors classifies by?",
     "options": [
-      "Gradient descent in practice",
       "Tree splitting based on convention",
+      "Gradient descent (default behavior)",
       "Majority vote of K nearest points",
-      "Feature elimination (commonly used)"
+      "Feature elimination (widely accepted)"
     ],
     "answer": 2,
     "explanation": "Distance-based lazy learner."
@@ -118,10 +118,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "SVM finds?",
     "options": [
-      "Minimum distance (general case)",
+      "Minimum distance by design",
       "Principal components",
       "Maximum margin hyperplane",
-      "Cluster centers in practice"
+      "Cluster centers (general case)"
     ],
     "answer": 2,
     "explanation": "Support vectors define the decision boundary."
@@ -132,10 +132,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Naive Bayes assumes?",
     "options": [
+      "All features are correlated",
       "No prior probability (widely accepted)",
-      "Linear separability (widely accepted)",
       "Feature independence given class",
-      "All features are correlated"
+      "Linear separability in practice"
     ],
     "answer": 2,
     "explanation": "Conditional independence assumption simplifies computation."
@@ -146,12 +146,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "K-Means clustering minimizes?",
     "options": [
+      "Entropy (default behavior)",
       "Between-cluster distance",
-      "Number of features in standard usage",
-      "Entropy (widely accepted)",
-      "Within-cluster sum of squares"
+      "Within-cluster sum of squares",
+      "Number of features by design"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Iteratively assigns points to nearest centroid."
   },
   {
@@ -160,12 +160,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Hierarchical clustering produces?",
     "options": [
-      "Dendrogram",
-      "Decision boundary",
+      "ROC curve",
       "Confusion matrix",
-      "ROC curve"
+      "Decision boundary",
+      "Dendrogram"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Agglomerative or divisive approach builds tree."
   },
   {
@@ -175,9 +175,9 @@ window.quizData.aiml = [
     "question": "DBSCAN clusters based on?",
     "options": [
       "Random assignment",
-      "Distance to centroid only",
+      "Feature importance",
       "Density of points",
-      "Feature importance"
+      "Distance to centroid only"
     ],
     "answer": 2,
     "explanation": "Density-Based Spatial Clustering finds arbitrary shapes."
@@ -188,12 +188,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Perceptron is?",
     "options": [
-      "Unsupervised method in typical implementations",
       "Regression only in typical implementations",
       "Clustering algorithm in typical implementations",
-      "Single-layer neural network for linear classification"
+      "Single-layer neural network for linear classification",
+      "Unsupervised method in typical implementations"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Weighted sum + activation function."
   },
   {
@@ -202,10 +202,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Backpropagation computes?",
     "options": [
-      "Forward pass only as per specification",
+      "Cluster assignments (general case)",
       "Gradients of loss w.r.t. weights",
-      "Cluster assignments in practice",
-      "Feature importance (commonly used)"
+      "Forward pass only in practice",
+      "Feature importance in most cases"
     ],
     "answer": 1,
     "explanation": "Chain rule propagates error backwards through layers."
@@ -216,12 +216,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Activation function introduces?",
     "options": [
-      "Overfitting under normal conditions",
-      "Linearity (widely accepted)",
+      "Overfitting based on convention",
       "Non-linearity into neural networks",
-      "Randomness under normal conditions"
+      "Randomness (widely accepted)",
+      "Linearity based on convention"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Without activation, network is just linear transformation."
   },
   {
@@ -231,9 +231,9 @@ window.quizData.aiml = [
     "question": "CNN is best for?",
     "options": [
       "Sequential text data",
-      "Tabular data only in practice",
+      "Tabular data only by design",
       "Image recognition tasks",
-      "Audio only by design"
+      "Audio only (primary approach)"
     ],
     "answer": 2,
     "explanation": "Convolutional layers detect spatial patterns."
@@ -244,12 +244,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "RNN is designed for?",
     "options": [
-      "Static tabular data in most cases",
-      "Image data (commonly used)",
       "Sequential/time-series data",
-      "Clustering (primary approach)"
+      "Clustering (standard definition)",
+      "Image data in most cases",
+      "Static tabular data in most cases"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Recurrent connections maintain hidden state across time steps."
   },
   {
@@ -258,12 +258,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "LSTM solves?",
     "options": [
-      "Underfitting based on convention",
-      "Overfitting in standard usage",
-      "Data imbalance (commonly used)",
-      "Vanishing gradient in standard RNNs"
+      "Underfitting (standard definition)",
+      "Vanishing gradient in standard RNNs",
+      "Overfitting in typical implementations",
+      "Data imbalance based on convention"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Gates control information flow through memory cell."
   },
   {
@@ -272,12 +272,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Transformers use?",
     "options": [
-      "Recurrent connections",
       "Convolutional filters",
-      "Random forests in practice",
-      "Self-attention mechanism"
+      "Self-attention mechanism",
+      "Recurrent connections",
+      "Random forests by design"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Attention scores capture relationships regardless of distance."
   },
   {
@@ -286,12 +286,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Accuracy = ?",
     "options": [
-      "TP/(TP+FN)",
-      "TP/FP by design",
       "(TP+TN) / Total",
+      "TP/FP (general case)",
+      "TP/(TP+FN)",
       "2*P*R/(P+R)"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Correct predictions divided by total."
   },
   {
@@ -301,8 +301,8 @@ window.quizData.aiml = [
     "question": "Precision = ?",
     "options": [
       "(TP+TN)/Total",
-      "TP / (TP+FN)",
       "FP/(FP+TN)",
+      "TP / (TP+FN)",
       "TP / (TP + FP)"
     ],
     "answer": 3,
@@ -314,12 +314,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Recall = ?",
     "options": [
-      "(TP+TN)/Total",
-      "TP / (TP+FP)",
+      "FN/(FP+FN)",
       "TP / (TP + FN)",
-      "FN/(FP+FN)"
+      "TP / (TP+FP)",
+      "(TP+TN)/Total"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Of actual positives, how many were correctly predicted."
   },
   {
@@ -328,12 +328,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "F1 Score is?",
     "options": [
-      "Arithmetic mean based on convention",
-      "Geometric mean in standard usage",
-      "Simple average of accuracy (general case)",
-      "Harmonic mean of Precision and Recall"
+      "Harmonic mean of Precision and Recall",
+      "Arithmetic mean (typical scenario)",
+      "Geometric mean as per specification",
+      "Simple average of accuracy (general case)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
   },
   {
@@ -342,12 +342,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "ROC curve plots?",
     "options": [
-      "True Positive Rate vs False Positive Rate",
-      "Accuracy vs Loss under normal conditions",
-      "Precision vs Recall in typical implementations",
-      "Error vs Epochs (standard definition)"
+      "Error vs Epochs (default behavior)",
+      "Precision vs Recall (widely accepted)",
+      "Accuracy vs Loss based on convention",
+      "True Positive Rate vs False Positive Rate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Shows classifier performance across all thresholds."
   },
   {
@@ -356,12 +356,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Confusion matrix shows?",
     "options": [
+      "TP, TN, FP, FN counts",
       "Cluster assignments",
       "Feature importance",
-      "TP, TN, FP, FN counts",
-      "Learning rate (general case)"
+      "Learning rate in practice"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Tabulates actual vs predicted classifications."
   },
   {
@@ -370,12 +370,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Overfitting means?",
     "options": [
-      "Model performs well on training but poorly on test data",
       "Model has no parameters in typical implementations",
-      "Model is too simple in typical implementations",
-      "Model fails on both in typical implementations"
+      "Model fails on both in typical implementations",
+      "Model performs well on training but poorly on test data",
+      "Model is too simple in typical implementations"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Model memorizes noise instead of learning patterns."
   },
   {
@@ -384,12 +384,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Underfitting means?",
     "options": [
-      "Model is too simple to capture patterns",
-      "Perfect generalization (typical scenario)",
-      "Model memorizes data (general case)",
-      "Model overfits under normal conditions"
+      "Perfect generalization (primary approach)",
+      "Model memorizes data under normal conditions",
+      "Model overfits under normal conditions",
+      "Model is too simple to capture patterns"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "High bias, low variance; needs more complexity."
   },
   {
@@ -398,12 +398,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Cross-validation purpose?",
     "options": [
-      "Speed up training as per specification",
-      "Reduce dataset size as per specification",
-      "Assess model generalization on unseen data",
-      "Increase features (standard definition)"
+      "Reduce dataset size (standard definition)",
+      "Increase features under normal conditions",
+      "Speed up training (primary approach)",
+      "Assess model generalization on unseen data"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "K-fold splits data into train/validate partitions."
   },
   {
@@ -412,12 +412,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Feature scaling is needed because?",
     "options": [
-      "Algorithms sensitive to magnitude perform poorly without it",
       "It reduces accuracy in typical implementations",
+      "Algorithms sensitive to magnitude perform poorly without it",
       "It adds noise in typical implementations",
       "It removes features in typical implementations"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Normalization/standardization ensures equal feature contribution."
   },
   {
@@ -426,12 +426,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "One-Hot Encoding is used for?",
     "options": [
-      "Converting categorical variables to binary vectors",
       "Removing outliers in typical implementations",
-      "Scaling numerical features (standard definition)",
-      "Reducing dimensions under normal conditions"
+      "Reducing dimensions in typical implementations",
+      "Converting categorical variables to binary vectors",
+      "Scaling numerical features as per specification"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Each category becomes a binary column."
   },
   {
@@ -440,12 +440,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Label Encoding assigns?",
     "options": [
-      "Integer values to categories",
-      "String hashes in practice",
-      "Binary vectors (default behavior)",
-      "Random floats by design"
+      "String hashes (widely accepted)",
+      "Random floats in practice",
+      "Binary vectors (widely accepted)",
+      "Integer values to categories"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Each unique category gets a unique integer."
   },
   {
@@ -454,12 +454,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Missing values can be handled by?",
     "options": [
+      "Multiplying by -1 as per specification",
       "Imputation (mean, median, mode) or deletion",
-      "Ignoring them always in typical implementations",
-      "Setting all to zero (typical scenario)",
-      "Multiplying by -1 (standard definition)"
+      "Setting all to zero (primary approach)",
+      "Ignoring them always as per specification"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Strategy depends on data distribution and missingness pattern."
   },
   {
@@ -468,12 +468,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Gradient descent minimizes?",
     "options": [
-      "Loss/cost function",
-      "Accuracy (commonly used)",
       "Number of features",
-      "Data size (general case)"
+      "Data size in most cases",
+      "Accuracy by design",
+      "Loss/cost function"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Iteratively updates parameters in direction of steepest descent."
   },
   {
@@ -483,9 +483,9 @@ window.quizData.aiml = [
     "question": "Learning rate controls?",
     "options": [
       "Step size in gradient descent",
-      "Dropout rate under normal conditions",
-      "Number of features in standard usage",
-      "Data augmentation in standard usage"
+      "Number of features in practice",
+      "Dropout rate (widely accepted)",
+      "Data augmentation (general case)"
     ],
     "answer": 0,
     "explanation": "Too high: overshoots; too low: slow convergence."
@@ -496,12 +496,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Regularization reduces?",
     "options": [
-      "Dataset size under normal conditions",
-      "Underfitting (standard definition)",
       "Overfitting by penalizing large weights",
-      "Training time (standard definition)"
+      "Training time (default behavior)",
+      "Dataset size as per specification",
+      "Underfitting under normal conditions"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "L1/L2 add penalty term to loss function."
   },
   {
@@ -510,12 +510,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "NumPy is used for?",
     "options": [
-      "Web scraping (general case)",
-      "Numerical array operations",
-      "File compression by design",
-      "Database queries by design"
+      "File compression (general case)",
+      "Database queries (general case)",
+      "Web scraping by design",
+      "Numerical array operations"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Efficient multidimensional array computations."
   },
   {
@@ -524,9 +524,9 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Pandas provides?",
     "options": [
-      "Image processing (default behavior)",
-      "GPU computing under normal conditions",
-      "Neural network layers in most cases",
+      "GPU computing in typical implementations",
+      "Image processing under normal conditions",
+      "Neural network layers in standard usage",
       "DataFrame for structured data manipulation"
     ],
     "answer": 3,
@@ -538,12 +538,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Scikit-learn provides?",
     "options": [
-      "Web framework in typical implementations",
-      "Machine learning algorithms and utilities",
-      "Deep learning only in typical implementations",
-      "Database ORM in typical implementations"
+      "Deep learning only (typical scenario)",
+      "Database ORM under normal conditions",
+      "Web framework under normal conditions",
+      "Machine learning algorithms and utilities"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Preprocessing, models, metrics all in one library."
   },
   {
@@ -553,11 +553,11 @@ window.quizData.aiml = [
     "question": "Matplotlib is used for?",
     "options": [
       "Data storage based on convention",
-      "ML training as per specification",
-      "Web development (commonly used)",
-      "Data visualization and plotting"
+      "Web development (primary approach)",
+      "Data visualization and plotting",
+      "ML training as per specification"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Creates charts, graphs, and visual representations."
   },
   {
@@ -566,12 +566,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Train-test split typically uses?",
     "options": [
-      "99-1 (widely accepted)",
-      "No split needed",
       "50-50 always (general case)",
-      "80-20 or 70-30 ratio"
+      "No split needed",
+      "80-20 or 70-30 ratio",
+      "99-1 in standard usage"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Majority for training, held-out portion for evaluation."
   },
   {
@@ -580,9 +580,9 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Bias in ML refers to?",
     "options": [
-      "Error from noise (typical scenario)",
-      "Feature count (typical scenario)",
-      "Dataset size (default behavior)",
+      "Dataset size in typical implementations",
+      "Error from noise (general case)",
+      "Feature count in typical implementations",
       "Error from oversimplified assumptions"
     ],
     "answer": 3,
@@ -595,9 +595,9 @@ window.quizData.aiml = [
     "question": "Variance in ML refers to?",
     "options": [
       "Sensitivity to fluctuations in training data",
-      "Zero error in typical implementations",
       "Constant error in typical implementations",
-      "Average error under normal conditions"
+      "Average error in typical implementations",
+      "Zero error in typical implementations"
     ],
     "answer": 0,
     "explanation": "High variance = overfitting to training data."
@@ -608,10 +608,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Principal Component Analysis (PCA) does?",
     "options": [
-      "Clustering as per specification",
+      "Clustering (typical scenario)",
       "Dimensionality reduction",
-      "Classification in most cases",
-      "Regression (widely accepted)"
+      "Classification (commonly used)",
+      "Regression by design"
     ],
     "answer": 1,
     "explanation": "Projects data onto directions of maximum variance."
@@ -622,12 +622,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Dropout in neural networks?",
     "options": [
-      "Removes layers permanently in standard usage",
-      "Speeds up inference in standard usage",
+      "Speeds up inference as per specification",
       "Randomly deactivates neurons during training",
-      "Adds more neurons in typical implementations"
+      "Removes layers permanently (default behavior)",
+      "Adds more neurons as per specification"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Regularization technique preventing co-adaptation."
   },
   {
@@ -636,12 +636,12 @@ window.quizData.aiml = [
     "difficulty": "Hard",
     "question": "Batch normalization does?",
     "options": [
-      "Reduces features under normal conditions",
-      "Increases batch size in standard usage",
-      "Normalizes layer inputs during training",
-      "Removes all layers (typical scenario)"
+      "Removes all layers (general case)",
+      "Reduces features as per specification",
+      "Increases batch size (standard definition)",
+      "Normalizes layer inputs during training"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Stabilizes learning and allows higher learning rates."
   },
   {
@@ -650,10 +650,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Transfer learning means?",
     "options": [
-      "Feature deletion (default behavior)",
-      "Training from scratch (general case)",
+      "Unsupervised clustering in standard usage",
+      "Feature deletion (primary approach)",
       "Using pre-trained model for a new task",
-      "Unsupervised clustering (widely accepted)"
+      "Training from scratch (general case)"
     ],
     "answer": 2,
     "explanation": "Fine-tune existing model on new domain data."
@@ -665,11 +665,11 @@ window.quizData.aiml = [
     "question": "Epoch means?",
     "options": [
       "One sample in typical implementations",
+      "One complete pass through the entire training dataset",
       "One layer update in typical implementations",
-      "One batch in typical implementations",
-      "One complete pass through the entire training dataset"
+      "One batch in typical implementations"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Multiple epochs improve learning."
   },
   {
@@ -678,12 +678,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Batch size is?",
     "options": [
+      "Number of features in typical implementations",
       "Number of samples processed before updating weights",
       "Number of epochs in typical implementations",
-      "Number of features in typical implementations",
       "Total dataset size in typical implementations"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Larger batch = more stable gradient, more memory."
   },
   {
@@ -692,12 +692,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "A* search algorithm uses?",
     "options": [
-      "Random selection (standard definition)",
-      "Only path cost (primary approach)",
-      "Only heuristic (general case)",
-      "Heuristic + path cost (f = g + h)"
+      "Random selection (commonly used)",
+      "Heuristic + path cost (f = g + h)",
+      "Only heuristic as per specification",
+      "Only path cost based on convention"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Combines actual cost and heuristic estimate."
   },
   {
@@ -706,12 +706,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Minimax algorithm is used for?",
     "options": [
-      "Regression under normal conditions",
-      "Data preprocessing in standard usage",
       "Game playing (adversarial search)",
-      "Clustering in typical implementations"
+      "Clustering based on convention",
+      "Data preprocessing (general case)",
+      "Regression (standard definition)"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Maximizes own score while minimizing opponent's."
   },
   {
@@ -721,9 +721,9 @@ window.quizData.aiml = [
     "question": "Types of AI include?",
     "options": [
       "Narrow AI, General AI, Super AI",
-      "Only Narrow AI as per specification",
-      "Hardware and Software (commonly used)",
-      "Only Deep Learning (typical scenario)"
+      "Only Deep Learning (typical scenario)",
+      "Hardware and Software in most cases",
+      "Only Narrow AI in most cases"
     ],
     "answer": 0,
     "explanation": "Classification by capability level."
@@ -750,10 +750,10 @@ window.quizData.aiml = [
     "options": [
       "Only images in typical implementations",
       "Only numbers in typical implementations",
-      "Only text in typical implementations",
-      "Logic, semantic networks, frames, ontologies"
+      "Logic, semantic networks, frames, ontologies",
+      "Only text in typical implementations"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Structures to encode knowledge for reasoning."
   },
   {
@@ -762,12 +762,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Polynomial regression fits?",
     "options": [
-      "No relationships (standard definition)",
-      "Curved relationships using polynomial terms",
-      "Categorical data based on convention",
-      "Only straight lines in standard usage"
+      "Categorical data (standard definition)",
+      "No relationships in typical implementations",
+      "Only straight lines under normal conditions",
+      "Curved relationships using polynomial terms"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Transforms features to polynomial degree."
   },
   {
@@ -776,12 +776,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Multiple regression uses?",
     "options": [
-      "Only categorical in typical implementations",
-      "No variables in typical implementations",
       "One independent variable under normal conditions",
-      "Multiple independent variables to predict one dependent"
+      "No variables in typical implementations",
+      "Multiple independent variables to predict one dependent",
+      "Only categorical in typical implementations"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Extends simple linear regression to multiple predictors."
   },
   {
@@ -790,12 +790,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Ethics in AI includes?",
     "options": [
-      "Only speed optimization in typical implementations",
+      "Bias mitigation, privacy, transparency, accountability",
       "Only accuracy in typical implementations",
-      "Only profit in typical implementations",
-      "Bias mitigation, privacy, transparency, accountability"
+      "Only speed optimization under normal conditions",
+      "Only profit in typical implementations"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Responsible AI development considers societal impact."
   },
   {
@@ -804,12 +804,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Data augmentation is?",
     "options": [
-      "Normalizing only in typical implementations",
-      "Deleting data in typical implementations",
+      "Creating modified copies of data to increase dataset size",
       "Reducing features in typical implementations",
-      "Creating modified copies of data to increase dataset size"
+      "Deleting data in typical implementations",
+      "Normalizing only in typical implementations"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Flips, rotations, crops etc. for image data."
   },
   {
@@ -818,6929 +818,153 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "TensorFlow is?",
     "options": [
+      "Operating system (standard definition)",
       "Web framework in typical implementations",
       "Open-source deep learning framework by Google",
-      "Operating system in typical implementations",
       "Database system in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Enables building and training neural networks at scale."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 210, FP = 6, FN = 27, and TN = 232, what is the exact Accuracy?",
-    "options": [
-      "81.05%",
-      "79.09%",
-      "101.05%",
-      "93.05%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=210, FP=6, FN=27, TN=232."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 155, FP = 53, FN = 30, and TN = 220, what is the exact Specificity?",
-    "options": [
-      "68.59%",
-      "88.59%",
-      "80.59%",
-      "68.50%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=155, FP=53, FN=30, TN=220."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1800 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "790",
-      "900",
-      "540",
-      "810"
-    ],
-    "answer": 2,
-    "explanation": "70% of 1800 is 1260. 30% is 540."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 22, FN = 6, and TN = 126, what is the exact Accuracy?",
-    "options": [
-      "86.47%",
-      "74.47%",
-      "94.47%",
-      "73.50%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=53, FP=22, FN=6, TN=126."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 5) and point B(9, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.25",
-      "10.00",
-      "13.50",
-      "8.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3000 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "600",
-      "850",
-      "1500",
-      "900"
-    ],
-    "answer": 0,
-    "explanation": "80% of 3000 is 2400. 20% is 600."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 155, FP = 9, FN = 41, and TN = 369, what is the exact Recall?",
-    "options": [
-      "67.22%",
-      "67.08%",
-      "87.08%",
-      "79.08%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=155, FP=9, FN=41, TN=369."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 61, FP = 27, FN = 12, and TN = 230, what is the exact Accuracy?",
-    "options": [
-      "76.18%",
-      "96.18%",
-      "74.95%",
-      "88.18%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=61, FP=27, FN=12, TN=230."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 196, FP = 47, FN = 53, and TN = 264, what is the exact Precision?",
-    "options": [
-      "80.66%",
-      "88.66%",
-      "68.66%",
-      "68.56%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=196, FP=47, FN=53, TN=264."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1920",
-      "2170",
-      "1550",
-      "1736"
-    ],
-    "answer": 1,
-    "explanation": "70% of 3100 is 2170. 30% is 930."
-  },
-  {
-    "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-6), what is the predicted response variable y value for x = 28?",
+    "question": "For a linear regression model parameterized as y = 19x + (3), what is the predicted response variable y value for x = 2?",
     "options": [
-      "246",
-      "258",
-      "330",
-      "261"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(28) + -6 = 246."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(25, 11) and point B(18, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.29",
-      "22.14",
-      "29.88",
-      "25.39"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 22.14."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 18) and point B(34, 5) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.80",
-      "12.08",
-      "13.93",
-      "17.18"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 13.93."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (2), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "17",
-      "-2",
-      "2",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "y = 7(0) + 2 = 2."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 199, FP = 9, FN = 27, and TN = 264, what is the exact Precision?",
-    "options": [
-      "81.32%",
-      "95.67%",
-      "103.67%",
-      "83.67%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=199, FP=9, FN=27, TN=264."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 62, FP = 15, FN = 32, and TN = 262, what is the exact Specificity?",
-    "options": [
-      "94.58%",
-      "82.58%",
-      "102.58%",
-      "80.40%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=62, FP=15, FN=32, TN=262."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-1), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "206",
-      "263",
-      "191",
-      "193"
-    ],
-    "answer": 2,
-    "explanation": "y = 8(24) + -1 = 191."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "3575",
-      "3060",
-      "2550",
-      "3825"
-    ],
-    "answer": 3,
-    "explanation": "75% of 5100 is 3825. 25% is 1275."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(23, 8) and point B(32, 13) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.90",
-      "17.25",
-      "12.15",
-      "14.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 247, FP = 48, FN = 19, and TN = 313, what is the exact Specificity?",
-    "options": [
-      "94.70%",
-      "74.70%",
-      "73.70%",
-      "86.70%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=247, FP=48, FN=19, TN=313."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 19) and point B(12, 28) in a 2D Euclidean coordinate space?",
-    "options": [
-      "12.15",
-      "17.25",
-      "18.90",
-      "14.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4200 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "2688",
-      "3110",
-      "3360",
-      "2100"
-    ],
-    "answer": 2,
-    "explanation": "80% of 4200 is 3360. 20% is 840."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 122, FP = 9, FN = 50, and TN = 155, what is the exact Accuracy?",
-    "options": [
-      "90.44%",
-      "70.44%",
-      "82.44%",
-      "70.07%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=122, FP=9, FN=50, TN=155."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 19) and point B(23, 28) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.15",
-      "22.95",
-      "20.25",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(27, 21) and point B(26, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "4.15",
-      "8.10",
-      "9.25",
-      "6.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-6), what is the predicted response variable y value for x = 15?",
-    "options": [
-      "204",
-      "171",
-      "159",
-      "174"
-    ],
-    "answer": 2,
-    "explanation": "y = 11(15) + -6 = 159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 238, FP = 46, FN = 54, and TN = 108, what is the exact Accuracy?",
-    "options": [
-      "77.58%",
-      "85.58%",
-      "65.94%",
-      "65.58%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=238, FP=46, FN=54, TN=108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2550",
-      "1700",
-      "2040",
-      "2300"
-    ],
-    "answer": 0,
-    "explanation": "75% of 3400 is 2550. 25% is 850."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 169, FP = 17, FN = 7, and TN = 226, what is the exact Precision?",
-    "options": [
-      "90.86%",
-      "98.86%",
-      "77.23%",
-      "78.86%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=17, FN=7, TN=226."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(12, 4) and point B(33, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "53.25",
-      "48.15",
-      "50.00",
-      "67.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 50.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 18) and point B(26, 27) in a 2D Euclidean coordinate space?",
-    "options": [
-      "32.15",
-      "37.25",
-      "34.00",
-      "45.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 34.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 65, FP = 10, FN = 53, and TN = 335, what is the exact Accuracy?",
-    "options": [
-      "94.39%",
-      "73.43%",
-      "74.39%",
-      "86.39%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=65, FP=10, FN=53, TN=335."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (9), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "9",
-      "9",
-      "-9",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "y = 7(0) + 9 = 9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 186, FP = 54, FN = 9, and TN = 330, what is the exact Precision?",
-    "options": [
-      "85.50%",
-      "77.50%",
-      "65.88%",
-      "65.50%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=186, FP=54, FN=9, TN=330."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-5), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "5",
-      "-5",
-      "-5",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "y = 10(0) + -5 = -5."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2600 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1830",
-      "1300",
-      "2080",
-      "1664"
-    ],
-    "answer": 2,
-    "explanation": "80% of 2600 is 2080. 20% is 520."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-8), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "20",
-      "4",
-      "13",
-      "19"
-    ],
-    "answer": 1,
-    "explanation": "y = 4(3) + -8 = 4."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-1), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "197",
-      "212",
-      "199",
-      "263"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(22) + -1 = 197."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(28, 6) and point B(7, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.72",
-      "20.62",
-      "30.34",
-      "22.47"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 22.47."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2900 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1450",
-      "2030",
-      "1780",
-      "1624"
-    ],
-    "answer": 1,
-    "explanation": "70% of 2900 is 2030. 30% is 870."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-5), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "374",
-      "369",
-      "443",
-      "359"
-    ],
-    "answer": 3,
-    "explanation": "y = 13(28) + -5 = 359."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (5), what is the predicted response variable y value for x = 25?",
-    "options": [
-      "95",
-      "180",
-      "105",
-      "120"
-    ],
-    "answer": 2,
-    "explanation": "y = 4(25) + 5 = 105."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4800 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2400",
-      "1440",
-      "960",
-      "1210"
-    ],
-    "answer": 2,
-    "explanation": "80% of 4800 is 3840. 20% is 960."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2115",
-      "2350",
-      "1410",
-      "1660"
-    ],
-    "answer": 2,
-    "explanation": "70% of 4700 is 3290. 30% is 1410."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 210, FP = 32, FN = 18, and TN = 109, what is the exact Specificity?",
-    "options": [
-      "65.71%",
-      "65.30%",
-      "77.30%",
-      "85.30%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=210, FP=32, FN=18, TN=109."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-5), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "257",
-      "299",
-      "242",
-      "252"
-    ],
-    "answer": 2,
-    "explanation": "y = 13(19) + -5 = 242."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 4) and point B(28, 28) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.00",
-      "28.15",
-      "33.25",
-      "40.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 30.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 130, FP = 28, FN = 23, and TN = 250, what is the exact Accuracy?",
-    "options": [
-      "88.17%",
-      "76.17%",
-      "74.94%",
-      "96.17%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=130, FP=28, FN=23, TN=250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(19, 22) and point B(19, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "2.70",
-      "0.15",
-      "2.00",
-      "5.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 2.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 91, FP = 23, FN = 32, and TN = 333, what is the exact Precision?",
-    "options": [
-      "79.82%",
-      "67.85%",
-      "67.82%",
-      "87.82%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=91, FP=23, FN=32, TN=333."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (2), what is the predicted response variable y value for x = 12?",
-    "options": [
-      "53",
-      "34",
-      "74",
-      "38"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(12) + 2 = 38."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 126, FP = 25, FN = 53, and TN = 181, what is the exact Recall?",
-    "options": [
-      "58.39%",
-      "78.39%",
-      "59.83%",
-      "70.39%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=126, FP=25, FN=53, TN=181."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 179, FP = 5, FN = 11, and TN = 286, what is the exact Recall?",
-    "options": [
-      "80.08%",
-      "82.21%",
-      "102.21%",
-      "94.21%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=179, FP=5, FN=11, TN=286."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 244, FP = 29, FN = 47, and TN = 267, what is the exact Recall?",
-    "options": [
-      "91.85%",
-      "71.85%",
-      "83.85%",
-      "71.27%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=244, FP=29, FN=47, TN=267."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 16) and point B(22, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "21.00",
-      "24.25",
-      "28.35",
-      "19.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 17, FN = 18, and TN = 177, what is the exact Recall?",
-    "options": [
-      "72.03%",
-      "84.75%",
-      "92.75%",
-      "72.75%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=100, FP=17, FN=18, TN=177."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 154, FP = 54, FN = 14, and TN = 389, what is the exact Accuracy?",
-    "options": [
-      "96.87%",
-      "75.54%",
-      "76.87%",
-      "88.87%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=154, FP=54, FN=14, TN=389."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(10, 0) and point B(18, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.08",
-      "28.23",
-      "33.33",
-      "40.61"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 30.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(23, 4) and point B(15, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.94",
-      "12.19",
-      "7.09",
-      "12.07"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.94."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-10), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "27",
-      "32",
-      "18",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "y = 11(2) + -10 = 12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5200 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "3900",
-      "2600",
-      "3650",
-      "3120"
-    ],
-    "answer": 0,
-    "explanation": "75% of 5200 is 3900. 25% is 1300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (7), what is the predicted response variable y value for x = 37?",
-    "options": [
-      "207",
-      "178",
-      "192",
-      "303"
-    ],
-    "answer": 2,
-    "explanation": "y = 5(37) + 7 = 192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(9, 14) and point B(19, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.15",
-      "22.95",
-      "17.00",
-      "20.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2150",
-      "1540",
-      "1290",
-      "1935"
-    ],
-    "answer": 2,
-    "explanation": "70% of 4300 is 3010. 30% is 1290."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "950",
-      "1750",
-      "1050",
-      "700"
-    ],
-    "answer": 3,
-    "explanation": "80% of 3500 is 2800. 20% is 700."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (6), what is the predicted response variable y value for x = 7?",
-    "options": [
-      "78",
-      "111",
-      "90",
-      "105"
-    ],
-    "answer": 2,
-    "explanation": "y = 12(7) + 6 = 90."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-4), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "-4",
-      "4",
-      "-4",
-      "11"
-    ],
-    "answer": 0,
-    "explanation": "y = 6(0) + -4 = -4."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-3), what is the predicted response variable y value for x = 33?",
-    "options": [
-      "393",
-      "408",
-      "492",
-      "399"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(33) + -3 = 393."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 207, FP = 21, FN = 16, and TN = 143, what is the exact Specificity?",
-    "options": [
-      "87.20%",
-      "74.12%",
-      "95.20%",
-      "75.20%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=207, FP=21, FN=16, TN=143."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4900 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2450",
-      "1720",
-      "1470",
-      "2205"
-    ],
-    "answer": 2,
-    "explanation": "70% of 4900 is 3430. 30% is 1470."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2800 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "950",
-      "1400",
-      "700",
-      "1050"
-    ],
-    "answer": 2,
-    "explanation": "75% of 2800 is 2100. 25% is 700."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 203, FP = 34, FN = 9, and TN = 221, what is the exact Recall?",
-    "options": [
-      "81.39%",
-      "95.75%",
-      "103.75%",
-      "83.75%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=203, FP=34, FN=9, TN=221."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4700 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2632",
-      "3040",
-      "2350",
-      "3290"
-    ],
-    "answer": 3,
-    "explanation": "70% of 4700 is 3290. 30% is 1410."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(18, 23) and point B(22, 23) in a 2D Euclidean coordinate space?",
-    "options": [
-      "2.15",
-      "7.25",
-      "4.00",
-      "5.40"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(9, 28) and point B(18, 13) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.15",
-      "32.40",
-      "27.25",
-      "24.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 11, FN = 41, and TN = 339, what is the exact Specificity?",
-    "options": [
-      "96.86%",
-      "82.33%",
-      "104.86%",
-      "84.86%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=124, FP=11, FN=41, TN=339."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 205, FP = 31, FN = 48, and TN = 208, what is the exact Precision?",
-    "options": [
-      "94.86%",
-      "86.86%",
-      "73.83%",
-      "74.86%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=205, FP=31, FN=48, TN=208."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2400 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1670",
-      "1920",
-      "1200",
-      "1536"
-    ],
-    "answer": 1,
-    "explanation": "80% of 2400 is 1920. 20% is 480."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 24) and point B(23, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.45",
-      "23.23",
-      "17.20",
-      "15.35"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 7) and point B(18, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.15",
-      "31.00",
-      "41.85",
-      "34.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 31.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 167, FP = 12, FN = 32, and TN = 185, what is the exact Specificity?",
-    "options": [
-      "101.91%",
-      "81.91%",
-      "79.82%",
-      "93.91%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=167, FP=12, FN=32, TN=185."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "570",
-      "320",
-      "800",
-      "480"
-    ],
-    "answer": 1,
-    "explanation": "80% of 1600 is 1280. 20% is 320."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (9), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "373",
-      "388",
-      "457",
-      "355"
-    ],
-    "answer": 0,
-    "explanation": "y = 13(28) + 9 = 373."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5500 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "4400",
-      "3520",
-      "2750",
-      "4150"
-    ],
-    "answer": 0,
-    "explanation": "80% of 5500 is 4400. 20% is 1100."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (0), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "60",
-      "60",
-      "78",
-      "75"
-    ],
-    "answer": 0,
-    "explanation": "y = 10(6) + 0 = 60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "4025",
-      "3420",
-      "4275",
-      "2850"
-    ],
-    "answer": 2,
-    "explanation": "75% of 5700 is 4275. 25% is 1425."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(21, 4) and point B(20, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.26",
-      "10.19",
-      "12.04",
-      "15.29"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 12.04."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(6, 17) and point B(27, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.48",
-      "24.35",
-      "19.25",
-      "21.10"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 21.10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 226, FP = 18, FN = 31, and TN = 283, what is the exact Precision?",
-    "options": [
-      "92.62%",
-      "80.62%",
-      "78.73%",
-      "100.62%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=226, FP=18, FN=31, TN=283."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-3), what is the predicted response variable y value for x = 13?",
-    "options": [
-      "81",
-      "114",
-      "90",
-      "75"
-    ],
-    "answer": 3,
-    "explanation": "y = 6(13) + -3 = 75."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (3), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "27",
-      "21",
-      "42",
-      "33"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(2) + 3 = 27."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 108, FP = 38, FN = 26, and TN = 116, what is the exact Accuracy?",
-    "options": [
-      "65.78%",
-      "85.78%",
-      "66.11%",
-      "77.78%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=108, FP=38, FN=26, TN=116."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (2), what is the predicted response variable y value for x = 26?",
-    "options": [
-      "184",
-      "121",
-      "102",
-      "106"
-    ],
-    "answer": 3,
-    "explanation": "y = 4(26) + 2 = 106."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 190, FP = 29, FN = 22, and TN = 123, what is the exact Accuracy?",
-    "options": [
-      "73.99%",
-      "93.99%",
-      "85.99%",
-      "73.09%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=190, FP=29, FN=22, TN=123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 26) and point B(15, 34) in a 2D Euclidean coordinate space?",
-    "options": [
-      "6.15",
-      "11.25",
-      "10.80",
-      "8.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(8, 8) and point B(15, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.07",
-      "10.32",
-      "9.55",
-      "5.22"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 7.07."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "4350",
-      "4100",
-      "3480",
-      "2900"
-    ],
-    "answer": 0,
-    "explanation": "75% of 5800 is 4350. 25% is 1450."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 37, FN = 22, and TN = 234, what is the exact Specificity?",
-    "options": [
-      "94.35%",
-      "86.35%",
-      "74.35%",
-      "73.39%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=143, FP=37, FN=22, TN=234."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 137, FP = 45, FN = 38, and TN = 349, what is the exact Recall?",
-    "options": [
-      "86.29%",
-      "66.54%",
-      "66.29%",
-      "78.29%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=137, FP=45, FN=38, TN=349."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 27, FN = 11, and TN = 304, what is the exact Specificity?",
-    "options": [
-      "99.84%",
-      "78.07%",
-      "91.84%",
-      "79.84%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=131, FP=27, FN=11, TN=304."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(18, 29) and point B(26, 22) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.78",
-      "13.88",
-      "10.63",
-      "14.35"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.63."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-9), what is the predicted response variable y value for x = 27?",
-    "options": [
-      "276",
-      "279",
-      "342",
-      "261"
-    ],
-    "answer": 3,
-    "explanation": "y = 10(27) + -9 = 261."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 105, FP = 39, FN = 37, and TN = 358, what is the exact Precision?",
-    "options": [
-      "61.98%",
-      "60.92%",
-      "80.92%",
-      "72.92%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=105, FP=39, FN=37, TN=358."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (5), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "291",
-      "240",
-      "225",
-      "215"
-    ],
-    "answer": 2,
-    "explanation": "y = 10(22) + 5 = 225."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4600 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2576",
-      "2970",
-      "2300",
-      "3220"
-    ],
-    "answer": 3,
-    "explanation": "70% of 4600 is 3220. 30% is 1380."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-4), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "5",
-      "14",
-      "13",
-      "20"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(3) + -4 = 5."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 27, FN = 35, and TN = 230, what is the exact Specificity?",
-    "options": [
-      "97.49%",
-      "89.49%",
-      "76.07%",
-      "77.49%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=53, FP=27, FN=35, TN=230."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 68, FP = 47, FN = 8, and TN = 239, what is the exact Recall?",
-    "options": [
-      "97.47%",
-      "77.47%",
-      "76.05%",
-      "89.47%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=68, FP=47, FN=8, TN=239."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 243, FP = 10, FN = 35, and TN = 121, what is the exact Recall?",
-    "options": [
-      "74.30%",
-      "95.41%",
-      "75.41%",
-      "87.41%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=243, FP=10, FN=35, TN=121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(8, 15) and point B(34, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "36.00",
-      "34.15",
-      "48.60",
-      "39.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 36.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1590",
-      "2650",
-      "1060",
-      "1310"
-    ],
-    "answer": 2,
-    "explanation": "80% of 5300 is 4240. 20% is 1060."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1725",
-      "1475",
-      "2950",
-      "2212.5"
-    ],
-    "answer": 1,
-    "explanation": "75% of 5900 is 4425. 25% is 1475."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-6), what is the predicted response variable y value for x = 9?",
-    "options": [
-      "54",
-      "39",
-      "66",
-      "51"
-    ],
-    "answer": 1,
-    "explanation": "y = 5(9) + -6 = 39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "825",
-      "550",
-      "1100",
-      "800"
-    ],
-    "answer": 1,
-    "explanation": "75% of 2200 is 1650. 25% is 550."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1290",
-      "1232",
-      "1540",
-      "1100"
-    ],
-    "answer": 2,
-    "explanation": "70% of 2200 is 1540. 30% is 660."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2500",
-      "1500",
-      "1875",
-      "1250"
-    ],
-    "answer": 3,
-    "explanation": "75% of 5000 is 3750. 25% is 1250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(9, 14) and point B(17, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.80",
-      "11.25",
-      "8.00",
-      "6.15"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 153, FP = 10, FN = 38, and TN = 167, what is the exact Specificity?",
-    "options": [
-      "82.35%",
-      "80.20%",
-      "94.35%",
-      "102.35%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=153, FP=10, FN=38, TN=167."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 234, FP = 30, FN = 25, and TN = 227, what is the exact Precision?",
-    "options": [
-      "75.34%",
-      "96.64%",
-      "76.64%",
-      "88.64%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=234, FP=30, FN=25, TN=227."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 50, FP = 47, FN = 16, and TN = 166, what is the exact Specificity?",
-    "options": [
-      "65.93%",
-      "85.93%",
-      "66.24%",
-      "77.93%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=50, FP=47, FN=16, TN=166."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 76, FP = 24, FN = 19, and TN = 236, what is the exact Specificity?",
-    "options": [
-      "98.77%",
-      "77.15%",
-      "90.77%",
-      "78.77%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=76, FP=24, FN=19, TN=236."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(3, 13) and point B(20, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "19.00",
-      "22.25",
-      "17.15",
-      "25.65"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(7, 17) and point B(31, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.17",
-      "24.02",
-      "27.27",
-      "32.43"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 24.02."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-6), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "101",
-      "86",
-      "155",
-      "98"
-    ],
-    "answer": 1,
-    "explanation": "y = 4(23) + -6 = 86."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 242, FP = 48, FN = 22, and TN = 125, what is the exact Specificity?",
-    "options": [
-      "72.25%",
-      "60.25%",
-      "80.25%",
-      "61.42%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=242, FP=48, FN=22, TN=125."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (0), what is the predicted response variable y value for x = 14?",
-    "options": [
-      "85",
-      "112",
-      "70",
-      "70"
-    ],
-    "answer": 2,
-    "explanation": "y = 5(14) + 0 = 70."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(12, 6) and point B(5, 13) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.25",
-      "18.90",
-      "14.00",
-      "12.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 75, FP = 7, FN = 41, and TN = 177, what is the exact Specificity?",
-    "options": [
-      "81.77%",
-      "96.20%",
-      "104.20%",
-      "84.20%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=75, FP=7, FN=41, TN=177."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(10, 16) and point B(26, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.61",
-      "23.58",
-      "20.71",
-      "17.46"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.46."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (0), what is the predicted response variable y value for x = 30?",
-    "options": [
-      "120",
-      "120",
-      "135",
-      "210"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(30) + 0 = 120."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-6), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "134",
-      "146",
-      "149",
-      "218"
-    ],
-    "answer": 0,
-    "explanation": "y = 5(28) + -6 = 134."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 17) and point B(11, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.55",
-      "16.25",
-      "11.15",
-      "13.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(8, 1) and point B(12, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.59",
-      "21.69",
-      "18.44",
-      "24.89"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 18.44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-4), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "110",
-      "68",
-      "61",
-      "53"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(19) + -4 = 53."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (9), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "30",
-      "15",
-      "18",
-      "-3"
-    ],
-    "answer": 1,
-    "explanation": "y = 6(1) + 9 = 15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (9), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "72",
-      "39",
-      "75",
-      "57"
-    ],
-    "answer": 3,
-    "explanation": "y = 8(6) + 9 = 57."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (4), what is the predicted response variable y value for x = 4?",
-    "options": [
-      "48",
-      "51",
-      "28",
-      "36"
-    ],
-    "answer": 3,
-    "explanation": "y = 8(4) + 4 = 36."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(19, 13) and point B(13, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "6.08",
-      "4.23",
-      "8.21",
-      "9.33"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 159, FP = 6, FN = 44, and TN = 151, what is the exact Recall?",
-    "options": [
-      "78.33%",
-      "66.58%",
-      "66.33%",
-      "86.33%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=159, FP=6, FN=44, TN=151."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 23) and point B(14, 23) in a 2D Euclidean coordinate space?",
-    "options": [
-      "14.00",
-      "17.25",
-      "12.15",
-      "18.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (3), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "3",
-      "18",
-      "-3",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(0) + 3 = 3."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 92, FP = 48, FN = 5, and TN = 136, what is the exact Specificity?",
-    "options": [
-      "81.91%",
-      "62.83%",
-      "61.91%",
-      "73.91%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=92, FP=48, FN=5, TN=136."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 190, FP = 7, FN = 9, and TN = 114, what is the exact Recall?",
-    "options": [
-      "103.48%",
-      "95.48%",
-      "83.48%",
-      "81.16%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=190, FP=7, FN=9, TN=114."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3300 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2060",
-      "1650",
-      "2310",
-      "1848"
-    ],
-    "answer": 2,
-    "explanation": "70% of 3300 is 2310. 30% is 990."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (2), what is the predicted response variable y value for x = 15?",
-    "options": [
-      "107",
-      "88",
-      "137",
-      "92"
-    ],
-    "answer": 3,
-    "explanation": "y = 6(15) + 2 = 92."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2700",
-      "4050",
-      "3800",
-      "3240"
-    ],
-    "answer": 1,
-    "explanation": "75% of 5400 is 4050. 25% is 1350."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-5), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "105",
-      "39",
-      "54",
-      "49"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(22) + -5 = 39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-9), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "27",
-      "24",
-      "9",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "y = 6(3) + -9 = 9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3900 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1950",
-      "1420",
-      "1755",
-      "1170"
-    ],
-    "answer": 3,
-    "explanation": "70% of 3900 is 2730. 30% is 1170."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 116, FP = 20, FN = 17, and TN = 319, what is the exact Recall?",
-    "options": [
-      "74.14%",
-      "75.22%",
-      "87.22%",
-      "95.22%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=116, FP=20, FN=17, TN=319."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(12, 28) and point B(17, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "6.75",
-      "8.60",
-      "11.85",
-      "11.61"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 8.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2100 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "787.5",
-      "775",
-      "1050",
-      "525"
-    ],
-    "answer": 3,
-    "explanation": "75% of 2100 is 1575. 25% is 525."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 150, FP = 11, FN = 50, and TN = 161, what is the exact Specificity?",
-    "options": [
-      "101.60%",
-      "93.60%",
-      "81.60%",
-      "79.56%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=150, FP=11, FN=50, TN=161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 139, FP = 32, FN = 44, and TN = 305, what is the exact Accuracy?",
-    "options": [
-      "72.58%",
-      "93.38%",
-      "73.38%",
-      "85.38%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=139, FP=32, FN=44, TN=305."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 249, FP = 18, FN = 40, and TN = 199, what is the exact Accuracy?",
-    "options": [
-      "96.54%",
-      "75.26%",
-      "76.54%",
-      "88.54%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=249, FP=18, FN=40, TN=199."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 16) and point B(12, 22) in a 2D Euclidean coordinate space?",
-    "options": [
-      "14.91",
-      "11.66",
-      "15.74",
-      "9.81"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 11.66."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 205, FP = 45, FN = 41, and TN = 139, what is the exact Accuracy?",
-    "options": [
-      "88.00%",
-      "68.00%",
-      "68.00%",
-      "80.00%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=205, FP=45, FN=41, TN=139."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 168, FP = 36, FN = 50, and TN = 211, what is the exact Specificity?",
-    "options": [
-      "72.61%",
-      "85.43%",
-      "73.43%",
-      "93.43%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=168, FP=36, FN=50, TN=211."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(18, 0) and point B(20, 28) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.07",
-      "26.22",
-      "31.32",
-      "37.90"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 28.07."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 32, FN = 53, and TN = 261, what is the exact Accuracy?",
-    "options": [
-      "90.62%",
-      "82.62%",
-      "70.22%",
-      "70.62%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=143, FP=32, FN=53, TN=261."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3500 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1312.5",
-      "1125",
-      "1750",
-      "875"
-    ],
-    "answer": 3,
-    "explanation": "75% of 3500 is 2625. 25% is 875."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1125",
-      "1000",
-      "750",
-      "1250"
-    ],
-    "answer": 2,
-    "explanation": "70% of 2500 is 1750. 30% is 750."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-8), what is the predicted response variable y value for x = 34?",
-    "options": [
-      "264",
-      "177",
-      "178",
-      "162"
-    ],
-    "answer": 3,
-    "explanation": "y = 5(34) + -8 = 162."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "660",
-      "825",
-      "575",
-      "550"
-    ],
-    "answer": 1,
-    "explanation": "75% of 1100 is 825. 25% is 275."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (3), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "413",
-      "515",
-      "419",
-      "434"
-    ],
-    "answer": 2,
-    "explanation": "y = 13(32) + 3 = 419."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2825",
-      "3075",
-      "2460",
-      "2050"
-    ],
-    "answer": 1,
-    "explanation": "75% of 4100 is 3075. 25% is 1025."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 114, FP = 20, FN = 8, and TN = 351, what is the exact Recall?",
-    "options": [
-      "79.43%",
-      "93.44%",
-      "101.44%",
-      "81.44%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=114, FP=20, FN=8, TN=351."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 92, FP = 12, FN = 30, and TN = 386, what is the exact Accuracy?",
-    "options": [
-      "79.92%",
-      "91.92%",
-      "99.92%",
-      "78.13%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=92, FP=12, FN=30, TN=386."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(13, 8) and point B(11, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "2.15",
-      "4.00",
-      "5.40",
-      "7.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (4), what is the predicted response variable y value for x = 25?",
-    "options": [
-      "404",
-      "329",
-      "344",
-      "321"
-    ],
-    "answer": 1,
-    "explanation": "y = 13(25) + 4 = 329."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-5), what is the predicted response variable y value for x = 39?",
-    "options": [
-      "151",
-      "166",
-      "161",
-      "268"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(39) + -5 = 151."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(23, 20) and point B(13, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.77",
-      "14.54",
-      "14.02",
-      "8.92"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 10.77."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-10), what is the predicted response variable y value for x = 33?",
-    "options": [
-      "137",
-      "142",
-      "122",
-      "221"
-    ],
-    "answer": 2,
-    "explanation": "y = 4(33) + -10 = 122."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 21) and point B(24, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.55",
-      "11.15",
-      "13.00",
-      "16.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-1), what is the predicted response variable y value for x = 14?",
-    "options": [
-      "55",
-      "70",
-      "97",
-      "57"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(14) + -1 = 55."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "940",
-      "1410",
-      "2350",
-      "1190"
-    ],
-    "answer": 0,
-    "explanation": "80% of 4700 is 3760. 20% is 940."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (6), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "18",
-      "27",
-      "0",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(2) + 6 = 12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-5), what is the predicted response variable y value for x = 21?",
-    "options": [
-      "79",
-      "89",
-      "94",
-      "142"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(21) + -5 = 79."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 25) and point B(23, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.16",
-      "19.41",
-      "21.81",
-      "14.31"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 16.16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-3), what is the predicted response variable y value for x = 8?",
-    "options": [
-      "92",
-      "83",
-      "101",
-      "77"
-    ],
-    "answer": 3,
-    "explanation": "y = 10(8) + -3 = 77."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 161, FP = 31, FN = 26, and TN = 208, what is the exact Precision?",
-    "options": [
-      "71.28%",
-      "71.85%",
-      "83.85%",
-      "91.85%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=161, FP=31, FN=26, TN=208."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-2), what is the predicted response variable y value for x = 25?",
-    "options": [
-      "198",
-      "127",
-      "138",
-      "123"
-    ],
-    "answer": 3,
-    "explanation": "y = 5(25) + -2 = 123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (4), what is the predicted response variable y value for x = 35?",
-    "options": [
-      "66",
-      "74",
-      "89",
-      "179"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(35) + 4 = 74."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1180",
-      "1550",
-      "1395",
-      "930"
-    ],
-    "answer": 3,
-    "explanation": "70% of 3100 is 2170. 30% is 930."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (1), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "181",
-      "73",
-      "71",
-      "88"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(36) + 1 = 73."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-1), what is the predicted response variable y value for x = 31?",
-    "options": [
-      "154",
-      "63",
-      "76",
-      "61"
-    ],
-    "answer": 3,
-    "explanation": "y = 2(31) + -1 = 61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 40, FN = 9, and TN = 338, what is the exact Recall?",
-    "options": [
-      "83.00%",
-      "103.00%",
-      "95.00%",
-      "80.75%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=171, FP=40, FN=9, TN=338."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 27) and point B(33, 5) in a 2D Euclidean coordinate space?",
-    "options": [
-      "64.80",
-      "51.25",
-      "48.00",
-      "46.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 48.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(28, 22) and point B(31, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "4.87",
-      "1.76",
-      "3.61",
-      "6.86"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 3.61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (1), what is the predicted response variable y value for x = 4?",
-    "options": [
-      "29",
+      "49",
       "41",
-      "44",
-      "27"
-    ],
-    "answer": 0,
-    "explanation": "y = 7(4) + 1 = 29."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 161, FP = 30, FN = 15, and TN = 241, what is the exact Recall?",
-    "options": [
-      "77.76%",
-      "99.48%",
-      "79.48%",
-      "91.48%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=161, FP=30, FN=15, TN=241."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 18) and point B(17, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.15",
-      "22.95",
-      "17.00",
-      "20.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(10, 20) and point B(28, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.35",
-      "25.45",
-      "29.97",
-      "22.20"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 22.20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 84, FP = 29, FN = 45, and TN = 289, what is the exact Specificity?",
-    "options": [
-      "98.88%",
-      "90.88%",
-      "77.25%",
-      "78.88%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=84, FP=29, FN=45, TN=289."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(24, 21) and point B(33, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "24.00",
-      "27.25",
-      "22.15",
-      "32.40"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 133, FP = 27, FN = 42, and TN = 214, what is the exact Precision?",
-    "options": [
-      "83.13%",
-      "71.13%",
-      "91.13%",
-      "70.66%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=133, FP=27, FN=42, TN=214."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (5), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "172",
-      "147",
-      "157",
-      "214"
-    ],
-    "answer": 2,
-    "explanation": "y = 8(19) + 5 = 157."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (0), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "228",
-      "243",
-      "285",
-      "228"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(19) + 0 = 228."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1200 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "650",
-      "900",
-      "720",
-      "600"
-    ],
-    "answer": 1,
-    "explanation": "75% of 1200 is 900. 25% is 300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5100 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1020",
-      "1270",
-      "1530",
-      "2550"
-    ],
-    "answer": 0,
-    "explanation": "80% of 5100 is 4080. 20% is 1020."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 150, FP = 16, FN = 53, and TN = 195, what is the exact Accuracy?",
-    "options": [
-      "71.33%",
-      "91.33%",
-      "70.83%",
-      "83.33%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=150, FP=16, FN=53, TN=195."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(23, 22) and point B(7, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.05",
-      "26.25",
-      "21.15",
-      "23.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 152, FP = 25, FN = 26, and TN = 345, what is the exact Precision?",
-    "options": [
-      "73.88%",
-      "72.99%",
-      "85.88%",
-      "93.88%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=152, FP=25, FN=26, TN=345."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (0), what is the predicted response variable y value for x = 17?",
-    "options": [
-      "51",
-      "51",
-      "102",
+      "35",
       "66"
     ],
-    "answer": 0,
-    "explanation": "y = 3(17) + 0 = 51."
+    "answer": 1,
+    "explanation": "y = 19(2) + 3 = 41."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 177, FP = 5, FN = 28, and TN = 220, what is the exact Accuracy?",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 23x + (-17), what is the predicted response variable y value for x = 31?",
     "options": [
-      "80.33%",
-      "78.48%",
-      "100.33%",
-      "92.33%"
+      "730",
+      "820",
+      "721",
+      "696"
     ],
     "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=177, FP=5, FN=28, TN=220."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(6, 29) and point B(8, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.00",
-      "19.25",
-      "21.60",
-      "14.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(12, 29) and point B(11, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.17",
-      "23.27",
-      "20.02",
-      "27.03"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 20.02."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(19, 23) and point B(20, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.60",
-      "13.04",
-      "11.19",
-      "16.29"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 13.04."
+    "explanation": "y = 23(31) + -17 = 696."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5100 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 16500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
     "options": [
-      "3264",
-      "4080",
-      "2550",
-      "3830"
+      "3800",
+      "8250",
+      "3300",
+      "4125"
+    ],
+    "answer": 2,
+    "explanation": "80% of 16500 is 13200. 20% is 3300."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 170, FP = 45, FN = 81, and TN = 317, what is the exact Accuracy?",
+    "options": [
+      "88.45%",
+      "79.45%",
+      "69.91%",
+      "65.45%"
     ],
     "answer": 1,
-    "explanation": "80% of 5100 is 4080. 20% is 1020."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=170, FP=45, FN=81, TN=317."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(15, 6) and point B(15, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "23.75",
+      "32.50",
+      "26.00",
+      "30.15"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 26.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2600 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 16000 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
     "options": [
-      "1820",
-      "1456",
-      "1300",
-      "1570"
-    ],
-    "answer": 0,
-    "explanation": "70% of 2600 is 1820. 30% is 780."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 169, FP = 50, FN = 44, and TN = 108, what is the exact Precision?",
-    "options": [
-      "77.17%",
-      "65.59%",
-      "85.17%",
-      "65.17%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=50, FN=44, TN=108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(12, 18) and point B(11, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.00",
-      "11.25",
-      "10.80",
-      "6.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 216, FP = 43, FN = 11, and TN = 275, what is the exact Specificity?",
-    "options": [
-      "74.48%",
-      "73.51%",
-      "86.48%",
-      "94.48%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=216, FP=43, FN=11, TN=275."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(14, 28) and point B(22, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.95",
-      "17.00",
-      "20.25",
-      "15.15"
+      "4500",
+      "4000",
+      "8000",
+      "5000"
     ],
     "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 17.00."
+    "explanation": "75% of 16000 is 12000. 25% is 4000."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 189, FP = 48, FN = 5, and TN = 258, what is the exact Specificity?",
-    "options": [
-      "92.31%",
-      "72.31%",
-      "84.31%",
-      "71.67%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=189, FP=48, FN=5, TN=258."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(10, 1) and point B(29, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "46.80",
-      "34.67",
-      "37.92",
-      "32.82"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 34.67."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "600",
-      "900",
-      "850",
-      "1000"
-    ],
-    "answer": 0,
-    "explanation": "70% of 2000 is 1400. 30% is 600."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-10), what is the predicted response variable y value for x = 13?",
-    "options": [
-      "109",
-      "133",
-      "94",
-      "114"
-    ],
-    "answer": 2,
-    "explanation": "y = 8(13) + -10 = 94."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "3050",
-      "2640",
-      "2200",
-      "3300"
-    ],
-    "answer": 3,
-    "explanation": "75% of 4400 is 3300. 25% is 1100."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 72, FP = 28, FN = 38, and TN = 212, what is the exact Specificity?",
-    "options": [
-      "76.33%",
-      "96.33%",
-      "88.33%",
-      "75.08%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=72, FP=28, FN=38, TN=212."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 14) and point B(10, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.15",
-      "15.25",
-      "16.20",
-      "12.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 105, FP = 34, FN = 33, and TN = 284, what is the exact Recall?",
-    "options": [
-      "64.67%",
-      "76.09%",
-      "84.09%",
-      "64.09%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=105, FP=34, FN=33, TN=284."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 151, FP = 48, FN = 39, and TN = 378, what is the exact Recall?",
-    "options": [
-      "79.47%",
-      "67.47%",
-      "87.47%",
-      "67.55%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=151, FP=48, FN=39, TN=378."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (9), what is the predicted response variable y value for x = 26?",
-    "options": [
-      "43",
-      "139",
-      "61",
-      "76"
-    ],
-    "answer": 2,
-    "explanation": "y = 2(26) + 9 = 61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 20, FN = 45, and TN = 346, what is the exact Precision?",
-    "options": [
-      "74.75%",
-      "86.75%",
-      "73.74%",
-      "94.75%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=131, FP=20, FN=45, TN=346."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (4), what is the predicted response variable y value for x = 20?",
-    "options": [
-      "259",
-      "244",
-      "304",
-      "236"
-    ],
-    "answer": 1,
-    "explanation": "y = 12(20) + 4 = 244."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(15, 7) and point B(19, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.25",
-      "5.40",
-      "2.15",
-      "4.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2100",
-      "1680",
-      "1400",
-      "1850"
-    ],
-    "answer": 0,
-    "explanation": "75% of 2800 is 2100. 25% is 700."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "390",
-      "650",
-      "260",
-      "510"
-    ],
-    "answer": 2,
-    "explanation": "80% of 1300 is 1040. 20% is 260."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (5), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "105",
-      "65",
-      "90",
-      "75"
-    ],
-    "answer": 3,
-    "explanation": "y = 7(10) + 5 = 75."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 225, FP = 50, FN = 13, and TN = 221, what is the exact Precision?",
-    "options": [
-      "69.82%",
-      "89.82%",
-      "69.55%",
-      "81.82%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=225, FP=50, FN=13, TN=221."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 58, FP = 43, FN = 28, and TN = 245, what is the exact Specificity?",
-    "options": [
-      "72.31%",
-      "73.07%",
-      "93.07%",
-      "85.07%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=58, FP=43, FN=28, TN=245."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "2000",
-      "1750",
-      "1250",
-      "1600"
-    ],
-    "answer": 0,
-    "explanation": "80% of 2500 is 2000. 20% is 500."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-10), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "293",
-      "374",
-      "298",
-      "278"
-    ],
-    "answer": 3,
-    "explanation": "y = 9(32) + -10 = 278."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(21, 4) and point B(14, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "40.27",
-      "27.98",
-      "29.83",
-      "33.08"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 29.83."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 241, FP = 30, FN = 21, and TN = 108, what is the exact Specificity?",
-    "options": [
-      "66.52%",
-      "66.26%",
-      "86.26%",
-      "78.26%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=241, FP=30, FN=21, TN=108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-8), what is the predicted response variable y value for x = 8?",
-    "options": [
-      "80",
-      "56",
-      "71",
-      "72"
-    ],
-    "answer": 1,
-    "explanation": "y = 8(8) + -8 = 56."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2400 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1430",
-      "1200",
-      "1344",
-      "1680"
-    ],
-    "answer": 3,
-    "explanation": "70% of 2400 is 1680. 30% is 720."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 4) and point B(18, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.90",
-      "12.15",
-      "17.25",
-      "14.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-9), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "205",
-      "271",
-      "187",
-      "202"
-    ],
-    "answer": 2,
-    "explanation": "y = 7(28) + -9 = 187."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "2450",
-      "3920",
-      "3670",
-      "3136"
-    ],
-    "answer": 1,
-    "explanation": "80% of 4900 is 3920. 20% is 980."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 163, FP = 33, FN = 46, and TN = 139, what is the exact Precision?",
-    "options": [
-      "71.16%",
-      "83.16%",
-      "70.69%",
-      "91.16%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=163, FP=33, FN=46, TN=139."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(18, 2) and point B(8, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.35",
-      "20.45",
-      "23.23",
-      "17.20"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1500",
-      "1750",
-      "2250",
-      "2500"
-    ],
-    "answer": 0,
-    "explanation": "70% of 5000 is 3500. 30% is 1500."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2600 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1300",
-      "780",
-      "1170",
-      "1030"
-    ],
-    "answer": 1,
-    "explanation": "70% of 2600 is 1820. 30% is 780."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(3, 28) and point B(8, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.63",
-      "16.76",
-      "20.01",
-      "14.91"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 16.76."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (7), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "227",
-      "176",
-      "147",
-      "161"
-    ],
-    "answer": 3,
-    "explanation": "y = 7(22) + 7 = 161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 219, FP = 40, FN = 30, and TN = 182, what is the exact Accuracy?",
-    "options": [
-      "72.37%",
-      "73.14%",
-      "93.14%",
-      "85.14%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=219, FP=40, FN=30, TN=182."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 10) and point B(26, 34) in a 2D Euclidean coordinate space?",
-    "options": [
-      "32.85",
-      "24.33",
-      "22.48",
-      "27.58"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 24.33."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-6), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "144",
-      "201",
-      "147",
-      "132"
-    ],
-    "answer": 3,
-    "explanation": "y = 6(23) + -6 = 132."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(24, 24) and point B(21, 13) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.25",
-      "18.90",
-      "12.15",
-      "14.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (5), what is the predicted response variable y value for x = 30?",
-    "options": [
-      "145",
-      "170",
-      "245",
-      "155"
-    ],
-    "answer": 3,
-    "explanation": "y = 5(30) + 5 = 155."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(2, 12) and point B(15, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.25",
-      "35.10",
-      "24.15",
-      "26.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 169, FP = 11, FN = 28, and TN = 189, what is the exact Recall?",
-    "options": [
-      "93.79%",
-      "73.79%",
-      "72.92%",
-      "85.79%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=169, FP=11, FN=28, TN=189."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (6), what is the predicted response variable y value for x = 11?",
-    "options": [
-      "105",
-      "138",
-      "120",
-      "93"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(11) + 6 = 105."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(6, 26) and point B(23, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.15",
-      "39.15",
-      "29.00",
-      "32.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 29.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 6) and point B(30, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.15",
-      "33.00",
-      "36.25",
-      "44.55"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 33.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3400 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1100",
-      "850",
-      "1275",
-      "1700"
-    ],
-    "answer": 1,
-    "explanation": "75% of 3400 is 2550. 25% is 850."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-10), what is the predicted response variable y value for x = 20?",
-    "options": [
-      "165",
-      "210",
-      "170",
-      "150"
-    ],
-    "answer": 3,
-    "explanation": "y = 8(20) + -10 = 150."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 0) and point B(12, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.96",
-      "15.81",
-      "19.06",
-      "21.35"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 15.81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 75, FP = 12, FN = 54, and TN = 251, what is the exact Recall?",
-    "options": [
-      "49.42%",
-      "66.14%",
-      "46.14%",
-      "58.14%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=75, FP=12, FN=54, TN=251."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 11) and point B(25, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.15",
-      "25.65",
-      "22.25",
-      "19.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 23) and point B(27, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "33.25",
-      "30.00",
-      "28.15",
-      "40.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 30.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2750",
-      "2475",
-      "1650",
-      "1900"
-    ],
-    "answer": 2,
-    "explanation": "70% of 5500 is 3850. 30% is 1650."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-5), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "329",
-      "427",
-      "319",
-      "334"
-    ],
-    "answer": 2,
-    "explanation": "y = 9(36) + -5 = 319."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2100",
-      "2625",
-      "2375",
-      "1750"
-    ],
-    "answer": 1,
-    "explanation": "75% of 3500 is 2625. 25% is 875."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 84, FP = 11, FN = 19, and TN = 310, what is the exact Specificity?",
-    "options": [
-      "104.57%",
-      "82.09%",
-      "96.57%",
-      "84.57%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=84, FP=11, FN=19, TN=310."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1400",
-      "1960",
-      "1710",
-      "1568"
-    ],
-    "answer": 1,
-    "explanation": "70% of 2800 is 1960. 30% is 840."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 172, FP = 9, FN = 15, and TN = 275, what is the exact Recall?",
-    "options": [
-      "78.18%",
-      "99.98%",
-      "91.98%",
-      "79.98%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=172, FP=9, FN=15, TN=275."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 126, FP = 19, FN = 33, and TN = 325, what is the exact Precision?",
-    "options": [
-      "73.86%",
-      "74.90%",
-      "94.90%",
-      "86.90%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=126, FP=19, FN=33, TN=325."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 1) and point B(22, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "35.15",
-      "49.95",
-      "37.00",
-      "40.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 37.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (9), what is the predicted response variable y value for x = 33?",
-    "options": [
-      "387",
-      "420",
-      "504",
-      "405"
-    ],
-    "answer": 3,
-    "explanation": "y = 12(33) + 9 = 405."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-6), what is the predicted response variable y value for x = 38?",
-    "options": [
-      "108",
-      "123",
-      "120",
-      "222"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(38) + -6 = 108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1990",
-      "2240",
-      "1400",
-      "1792"
-    ],
-    "answer": 1,
-    "explanation": "80% of 2800 is 2240. 20% is 560."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1100 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "630",
-      "550",
-      "704",
-      "880"
-    ],
-    "answer": 3,
-    "explanation": "80% of 1100 is 880. 20% is 220."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 63, FP = 49, FN = 13, and TN = 356, what is the exact Specificity?",
-    "options": [
-      "95.90%",
-      "87.90%",
-      "74.72%",
-      "75.90%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=63, FP=49, FN=13, TN=356."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-10), what is the predicted response variable y value for x = 9?",
-    "options": [
-      "118",
-      "98",
-      "125",
-      "113"
-    ],
-    "answer": 1,
-    "explanation": "y = 12(9) + -10 = 98."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1400 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "280",
-      "420",
-      "530",
-      "700"
-    ],
-    "answer": 0,
-    "explanation": "80% of 1400 is 1120. 20% is 280."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(23, 9) and point B(27, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "24.00",
-      "32.40",
-      "27.25",
-      "22.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-3), what is the predicted response variable y value for x = 34?",
-    "options": [
-      "303",
-      "216",
-      "207",
-      "201"
-    ],
-    "answer": 3,
-    "explanation": "y = 6(34) + -3 = 201."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 102, FP = 49, FN = 10, and TN = 135, what is the exact Recall?",
-    "options": [
-      "99.07%",
-      "79.07%",
-      "77.41%",
-      "91.07%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=102, FP=49, FN=10, TN=135."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(2, 8) and point B(12, 5) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.00",
-      "11.15",
-      "17.55",
-      "16.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 25) and point B(17, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "2.15",
-      "5.40",
-      "7.25",
-      "4.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(7, 13) and point B(6, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "3.02",
-      "2.24",
-      "5.49",
-      "0.39"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 2.24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-5), what is the predicted response variable y value for x = 33?",
-    "options": [
-      "292",
-      "307",
-      "391",
-      "302"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(33) + -5 = 292."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 114, FP = 11, FN = 22, and TN = 255, what is the exact Precision?",
-    "options": [
-      "99.20%",
-      "91.20%",
-      "79.20%",
-      "77.52%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=114, FP=11, FN=22, TN=255."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (6), what is the predicted response variable y value for x = 20?",
-    "options": [
-      "214",
-      "226",
-      "241",
-      "286"
-    ],
-    "answer": 1,
-    "explanation": "y = 11(20) + 6 = 226."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 123, FP = 15, FN = 45, and TN = 120, what is the exact Recall?",
-    "options": [
-      "81.21%",
-      "62.23%",
-      "73.21%",
-      "61.21%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=123, FP=15, FN=45, TN=120."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "300",
-      "500",
-      "450",
-      "550"
-    ],
-    "answer": 0,
-    "explanation": "70% of 1000 is 700. 30% is 300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(3, 21) and point B(27, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.54",
-      "25.44",
-      "27.29",
-      "36.85"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 27.29."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (7), what is the predicted response variable y value for x = 37?",
-    "options": [
-      "400",
-      "429",
-      "414",
-      "525"
-    ],
-    "answer": 2,
-    "explanation": "y = 11(37) + 7 = 414."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(24, 20) and point B(16, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.00",
-      "23.25",
-      "27.00",
-      "18.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 216, FP = 8, FN = 17, and TN = 317, what is the exact Specificity?",
-    "options": [
-      "85.54%",
-      "105.54%",
-      "82.91%",
-      "97.54%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=216, FP=8, FN=17, TN=317."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-10), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "148",
-      "197",
-      "143",
-      "128"
-    ],
-    "answer": 3,
-    "explanation": "y = 6(23) + -10 = 128."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1012.5",
-      "675",
-      "925",
-      "1350"
-    ],
-    "answer": 1,
-    "explanation": "75% of 2700 is 2025. 25% is 675."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 166, FP = 44, FN = 53, and TN = 205, what is the exact Accuracy?",
-    "options": [
-      "79.27%",
-      "67.38%",
-      "87.27%",
-      "67.27%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=166, FP=44, FN=53, TN=205."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 80, FP = 25, FN = 20, and TN = 379, what is the exact Accuracy?",
-    "options": [
-      "79.07%",
-      "99.07%",
-      "91.07%",
-      "77.41%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=80, FP=25, FN=20, TN=379."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-8), what is the predicted response variable y value for x = 35?",
-    "options": [
-      "147",
-      "237",
-      "148",
-      "132"
-    ],
-    "answer": 3,
-    "explanation": "y = 4(35) + -8 = 132."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 0) and point B(7, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.33",
-      "35.20",
-      "24.23",
-      "26.08"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 26.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-3), what is the predicted response variable y value for x = 18?",
-    "options": [
-      "195",
-      "147",
-      "156",
-      "141"
-    ],
-    "answer": 3,
-    "explanation": "y = 8(18) + -3 = 141."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(24, 10) and point B(26, 13) in a 2D Euclidean coordinate space?",
-    "options": [
-      "6.86",
-      "4.87",
-      "3.61",
-      "1.76"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 3.61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(1, 5) and point B(5, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.55",
-      "23.65",
-      "20.40",
-      "27.53"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 20.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 0) and point B(32, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "41.41",
-      "30.68",
-      "33.93",
-      "28.83"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 30.68."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 201, FP = 8, FN = 50, and TN = 292, what is the exact Accuracy?",
-    "options": [
-      "77.47%",
-      "89.47%",
-      "97.47%",
-      "76.05%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=201, FP=8, FN=50, TN=292."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 22) and point B(34, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.92",
-      "30.61",
-      "22.67",
-      "20.82"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 22.67."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1500",
-      "1400",
-      "1750",
-      "1250"
-    ],
-    "answer": 2,
-    "explanation": "70% of 2500 is 1750. 30% is 750."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 134, FP = 31, FN = 12, and TN = 327, what is the exact Precision?",
-    "options": [
-      "81.21%",
-      "69.03%",
-      "89.21%",
-      "69.21%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=134, FP=31, FN=12, TN=327."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (5), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "296",
-      "271",
-      "350",
-      "281"
-    ],
-    "answer": 3,
-    "explanation": "y = 12(23) + 5 = 281."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "800",
-      "700",
-      "840",
-      "1050"
-    ],
-    "answer": 3,
-    "explanation": "75% of 1400 is 1050. 25% is 350."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 28) and point B(7, 27) in a 2D Euclidean coordinate space?",
-    "options": [
-      "9.45",
-      "7.00",
-      "5.15",
-      "10.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3800 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1200",
-      "1900",
-      "950",
-      "1425"
-    ],
-    "answer": 2,
-    "explanation": "75% of 3800 is 2850. 25% is 950."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "710",
-      "1150",
-      "690",
-      "460"
-    ],
-    "answer": 3,
-    "explanation": "80% of 2300 is 1840. 20% is 460."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (6), what is the predicted response variable y value for x = 21?",
-    "options": [
-      "231",
-      "204",
-      "216",
-      "279"
-    ],
-    "answer": 2,
-    "explanation": "y = 10(21) + 6 = 216."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-7), what is the predicted response variable y value for x = 17?",
-    "options": [
-      "163",
-      "214",
-      "178",
-      "177"
-    ],
-    "answer": 0,
-    "explanation": "y = 10(17) + -7 = 163."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-3), what is the predicted response variable y value for x = 29?",
-    "options": [
-      "70",
-      "55",
-      "142",
-      "61"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(29) + -3 = 55."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 5) and point B(32, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.45",
-      "18.55",
-      "15.30",
-      "20.65"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 15.30."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1110",
-      "1665",
-      "1360",
-      "1850"
-    ],
-    "answer": 0,
-    "explanation": "70% of 3700 is 2590. 30% is 1110."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (6), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "54",
-      "45",
-      "60",
-      "33"
-    ],
-    "answer": 1,
-    "explanation": "y = 13(3) + 6 = 45."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 34, FN = 49, and TN = 231, what is the exact Precision?",
-    "options": [
-      "67.39%",
-      "79.39%",
-      "87.39%",
-      "67.48%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=131, FP=34, FN=49, TN=231."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 14) and point B(24, 34) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.35",
-      "18.25",
-      "20.10",
-      "27.13"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 20.10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-2), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "121",
-      "110",
-      "106",
-      "214"
-    ],
-    "answer": 2,
-    "explanation": "y = 3(36) + -2 = 106."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 112, FP = 6, FN = 34, and TN = 334, what is the exact Specificity?",
-    "options": [
-      "83.50%",
-      "98.24%",
-      "86.24%",
-      "106.24%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=112, FP=6, FN=34, TN=334."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(28, 17) and point B(32, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.88",
-      "8.06",
-      "11.31",
-      "6.21"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 8.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 249, FP = 45, FN = 18, and TN = 391, what is the exact Specificity?",
-    "options": [
-      "76.23%",
-      "77.68%",
-      "97.68%",
-      "89.68%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=249, FP=45, FN=18, TN=391."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(28, 19) and point B(9, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.65",
-      "22.25",
-      "19.00",
-      "17.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 68, FP = 43, FN = 52, and TN = 116, what is the exact Recall?",
-    "options": [
-      "44.67%",
-      "56.67%",
-      "48.17%",
-      "64.67%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=68, FP=43, FN=52, TN=116."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 6) and point B(34, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.25",
-      "27.00",
-      "20.00",
-      "18.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 121, FP = 45, FN = 25, and TN = 381, what is the exact Precision?",
-    "options": [
-      "60.89%",
-      "80.89%",
-      "72.89%",
-      "61.96%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=121, FP=45, FN=25, TN=381."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 23) and point B(20, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "35.00",
-      "38.25",
-      "33.15",
-      "47.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 35.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-2), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "67",
-      "136",
-      "82",
-      "71"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(23) + -2 = 67."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5400 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "2700",
-      "4320",
-      "4070",
-      "3456"
-    ],
-    "answer": 1,
-    "explanation": "80% of 5400 is 4320. 20% is 1080."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 101, FP = 10, FN = 17, and TN = 293, what is the exact Accuracy?",
-    "options": [
-      "93.59%",
-      "101.59%",
-      "79.55%",
-      "81.59%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=101, FP=10, FN=17, TN=293."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(16, 7) and point B(29, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.25",
-      "25.00",
-      "23.15",
-      "33.75"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(12, 17) and point B(32, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "37.80",
-      "28.00",
-      "31.25",
-      "26.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 28.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 8) and point B(6, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.21",
-      "35.05",
-      "24.11",
-      "25.96"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 25.96."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1225",
-      "1475",
-      "1837.5",
-      "2450"
-    ],
-    "answer": 0,
-    "explanation": "75% of 4900 is 3675. 25% is 1225."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-2), what is the predicted response variable y value for x = 29?",
-    "options": [
-      "201",
-      "288",
-      "216",
-      "205"
-    ],
-    "answer": 0,
-    "explanation": "y = 7(29) + -2 = 201."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-2), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "108",
-      "138",
-      "123",
-      "112"
-    ],
-    "answer": 0,
-    "explanation": "y = 11(10) + -2 = 108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 57, FP = 10, FN = 7, and TN = 244, what is the exact Specificity?",
-    "options": [
-      "96.06%",
-      "104.06%",
-      "81.65%",
-      "84.06%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=57, FP=10, FN=7, TN=244."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 174, FP = 32, FN = 7, and TN = 297, what is the exact Specificity?",
-    "options": [
-      "76.73%",
-      "90.27%",
-      "78.27%",
-      "98.27%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=174, FP=32, FN=7, TN=297."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2775",
-      "1850",
-      "2220",
-      "2525"
-    ],
-    "answer": 0,
-    "explanation": "75% of 3700 is 2775. 25% is 925."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(27, 6) and point B(24, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.59",
-      "13.69",
-      "10.44",
-      "14.09"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(4, 9) and point B(14, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "19.15",
-      "24.25",
-      "21.00",
-      "28.35"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(16, 25) and point B(34, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "24.76",
-      "33.42",
-      "28.01",
-      "22.91"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 24.76."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-2), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "40",
-      "46",
-      "31",
-      "35"
-    ],
-    "answer": 2,
-    "explanation": "y = 11(3) + -2 = 31."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-10), what is the predicted response variable y value for x = 21?",
-    "options": [
-      "241",
-      "236",
-      "221",
-      "284"
-    ],
-    "answer": 2,
-    "explanation": "y = 11(21) + -10 = 221."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 66, FP = 23, FN = 8, and TN = 241, what is the exact Precision?",
-    "options": [
-      "82.16%",
-      "74.16%",
-      "62.16%",
-      "63.03%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=66, FP=23, FN=8, TN=241."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-2), what is the predicted response variable y value for x = 11?",
-    "options": [
-      "64",
-      "35",
-      "46",
-      "31"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(11) + -2 = 31."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-9), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "253",
-      "295",
-      "238",
-      "256"
-    ],
-    "answer": 2,
-    "explanation": "y = 13(19) + -9 = 238."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(0, 25) and point B(14, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "24.04",
-      "21.05",
-      "15.95",
-      "17.80"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.80."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "870",
-      "1550",
-      "620",
-      "930"
-    ],
-    "answer": 2,
-    "explanation": "80% of 3100 is 2480. 20% is 620."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (7), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "99",
-      "114",
-      "85",
-      "168"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(23) + 7 = 99."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1040",
-      "2600",
-      "1290",
-      "1560"
-    ],
-    "answer": 0,
-    "explanation": "80% of 5200 is 4160. 20% is 1040."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4300 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2580",
-      "3225",
-      "2150",
-      "2975"
-    ],
-    "answer": 1,
-    "explanation": "75% of 4300 is 3225. 25% is 1075."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 193, FP = 24, FN = 49, and TN = 348, what is the exact Specificity?",
-    "options": [
-      "93.55%",
-      "101.55%",
-      "79.52%",
-      "81.55%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=193, FP=24, FN=49, TN=348."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-9), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "-9",
-      "-9",
-      "6",
-      "9"
-    ],
-    "answer": 0,
-    "explanation": "y = 8(0) + -9 = -9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(25, 14) and point B(30, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.00",
-      "5.15",
-      "9.45",
-      "10.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 74, FP = 29, FN = 19, and TN = 322, what is the exact Specificity?",
-    "options": [
-      "91.74%",
-      "79.74%",
-      "99.74%",
-      "77.98%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=74, FP=29, FN=19, TN=322."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (2), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "66",
-      "81",
-      "62",
-      "162"
-    ],
-    "answer": 0,
-    "explanation": "y = 2(32) + 2 = 66."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 137, FP = 47, FN = 22, and TN = 175, what is the exact Accuracy?",
-    "options": [
-      "69.61%",
-      "89.89%",
-      "69.89%",
-      "81.89%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=137, FP=47, FN=22, TN=175."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "640",
-      "1600",
-      "960",
-      "890"
-    ],
-    "answer": 0,
-    "explanation": "80% of 3200 is 2560. 20% is 640."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(14, 27) and point B(26, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.44",
-      "24.19",
-      "32.65",
-      "22.34"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 24.19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (8), what is the predicted response variable y value for x = 34?",
-    "options": [
-      "178",
-      "280",
-      "193",
-      "162"
-    ],
-    "answer": 0,
-    "explanation": "y = 5(34) + 8 = 178."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 159, FP = 48, FN = 39, and TN = 245, what is the exact Accuracy?",
-    "options": [
-      "70.28%",
-      "82.28%",
-      "90.28%",
-      "69.94%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=159, FP=48, FN=39, TN=245."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 199, FP = 18, FN = 6, and TN = 159, what is the exact Precision?",
-    "options": [
-      "91.71%",
-      "99.71%",
-      "79.71%",
-      "77.95%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=199, FP=18, FN=6, TN=159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 210, FP = 16, FN = 35, and TN = 168, what is the exact Accuracy?",
-    "options": [
-      "74.90%",
-      "96.11%",
-      "88.11%",
-      "76.11%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=210, FP=16, FN=35, TN=168."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 111, FP = 31, FN = 50, and TN = 367, what is the exact Specificity?",
-    "options": [
-      "80.21%",
-      "92.21%",
-      "100.21%",
-      "78.38%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=111, FP=31, FN=50, TN=367."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-9), what is the predicted response variable y value for x = 29?",
-    "options": [
-      "165",
-      "93",
-      "78",
-      "96"
-    ],
-    "answer": 2,
-    "explanation": "y = 3(29) + -9 = 78."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 15, FN = 16, and TN = 295, what is the exact Precision?",
-    "options": [
-      "77.94%",
-      "65.94%",
-      "66.25%",
-      "85.94%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=53, FP=15, FN=16, TN=295."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(21, 0) and point B(26, 18) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.68",
-      "25.22",
-      "21.93",
-      "16.83"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.68."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 52, FP = 15, FN = 25, and TN = 296, what is the exact Precision?",
-    "options": [
-      "77.61%",
-      "85.61%",
-      "65.97%",
-      "65.61%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=52, FP=15, FN=25, TN=296."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (4), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "308",
-      "251",
-      "266",
-      "243"
-    ],
-    "answer": 1,
-    "explanation": "y = 13(19) + 4 = 251."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "1440",
-      "1200",
-      "1800",
-      "1550"
-    ],
-    "answer": 2,
-    "explanation": "75% of 2400 is 1800. 25% is 600."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-6), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "6",
-      "21",
-      "18",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "y = 2(6) + -6 = 6."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 10) and point B(20, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.15",
-      "44.55",
-      "36.25",
-      "33.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 33.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 80, FP = 34, FN = 16, and TN = 396, what is the exact Specificity?",
-    "options": [
-      "80.09%",
-      "92.09%",
-      "100.09%",
-      "78.28%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=80, FP=34, FN=16, TN=396."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 141, FP = 9, FN = 46, and TN = 328, what is the exact Specificity?",
-    "options": [
-      "85.33%",
-      "82.73%",
-      "97.33%",
-      "105.33%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=141, FP=9, FN=46, TN=328."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 130, FP = 29, FN = 10, and TN = 159, what is the exact Precision?",
-    "options": [
-      "69.50%",
-      "89.76%",
-      "81.76%",
-      "69.76%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=130, FP=29, FN=10, TN=159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-3), what is the predicted response variable y value for x = 16?",
-    "options": [
-      "156",
-      "147",
-      "141",
-      "189"
-    ],
-    "answer": 2,
-    "explanation": "y = 9(16) + -3 = 141."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-1), what is the predicted response variable y value for x = 18?",
-    "options": [
-      "161",
-      "107",
-      "109",
-      "122"
-    ],
-    "answer": 1,
-    "explanation": "y = 6(18) + -1 = 107."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 116, FP = 20, FN = 6, and TN = 187, what is the exact Precision?",
-    "options": [
-      "73.29%",
-      "85.29%",
-      "72.50%",
-      "93.29%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=116, FP=20, FN=6, TN=187."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 119, FP = 49, FN = 15, and TN = 292, what is the exact Recall?",
-    "options": [
-      "96.81%",
-      "76.81%",
-      "88.81%",
-      "75.49%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=119, FP=49, FN=15, TN=292."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1440",
-      "960",
-      "1210",
-      "1600"
-    ],
-    "answer": 1,
-    "explanation": "70% of 3200 is 2240. 30% is 960."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5400 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1870",
-      "1620",
-      "2430",
-      "2700"
-    ],
-    "answer": 1,
-    "explanation": "70% of 5400 is 3780. 30% is 1620."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 239, FP = 37, FN = 12, and TN = 220, what is the exact Accuracy?",
-    "options": [
-      "98.35%",
-      "78.35%",
-      "76.80%",
-      "90.35%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=239, FP=37, FN=12, TN=220."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2100 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "420",
-      "1050",
-      "630",
-      "670"
-    ],
-    "answer": 0,
-    "explanation": "80% of 2100 is 1680. 20% is 420."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 0) and point B(31, 5) in a 2D Euclidean coordinate space?",
-    "options": [
-      "5.39",
-      "7.27",
-      "3.54",
-      "8.64"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 5.39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2900 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1450",
-      "870",
-      "830",
-      "580"
-    ],
-    "answer": 3,
-    "explanation": "80% of 2900 is 2320. 20% is 580."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 163, FP = 15, FN = 38, and TN = 247, what is the exact Precision?",
+    "question": "Given a classification report with TP = 207, FP = 45, FN = 33, and TN = 425, what is the exact Specificity?",
     "options": [
       "79.57%",
-      "77.84%",
-      "91.57%",
-      "99.57%"
+      "90.43%",
+      "99.43%",
+      "76.43%"
     ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=163, FP=15, FN=38, TN=247."
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=207, FP=45, FN=33, TN=425."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 111, FP = 20, FN = 54, and TN = 382, what is the exact Precision?",
+    "question": "Given a classification report with TP = 296, FP = 53, FN = 36, and TN = 579, what is the exact Specificity?",
     "options": [
-      "72.73%",
-      "84.73%",
-      "72.02%",
-      "92.73%"
+      "91.61%",
+      "100.61%",
+      "77.61%",
+      "80.62%"
     ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=111, FP=20, FN=54, TN=382."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 248, FP = 7, FN = 23, and TN = 390, what is the exact Specificity?",
-    "options": [
-      "86.24%",
-      "83.50%",
-      "106.24%",
-      "98.24%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=248, FP=7, FN=23, TN=390."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 81, FP = 35, FN = 19, and TN = 213, what is the exact Specificity?",
-    "options": [
-      "73.89%",
-      "85.89%",
-      "93.89%",
-      "73.00%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=81, FP=35, FN=19, TN=213."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(26, 21) and point B(9, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "24.82",
-      "18.38",
-      "21.63",
-      "16.53"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 18.38."
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=296, FP=53, FN=36, TN=579."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-7), what is the predicted response variable y value for x = 22?",
+    "question": "For a linear regression model parameterized as y = 20x + (2), what is the predicted response variable y value for x = 47?",
     "options": [
-      "73",
-      "59",
-      "125",
-      "74"
-    ],
-    "answer": 1,
-    "explanation": "y = 3(22) + -7 = 59."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 176, FP = 7, FN = 54, and TN = 154, what is the exact Specificity?",
-    "options": [
-      "83.65%",
-      "95.65%",
-      "103.65%",
-      "81.30%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=176, FP=7, FN=54, TN=154."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (7), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "17",
-      "31",
-      "46",
-      "40"
-    ],
-    "answer": 1,
-    "explanation": "y = 8(3) + 7 = 31."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1300 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "487.5",
-      "650",
-      "325",
-      "575"
-    ],
-    "answer": 2,
-    "explanation": "75% of 1300 is 975. 25% is 325."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5300 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2968",
-      "3710",
-      "2650",
-      "3460"
-    ],
-    "answer": 1,
-    "explanation": "70% of 5300 is 3710. 30% is 1590."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 66, FP = 5, FN = 26, and TN = 119, what is the exact Specificity?",
-    "options": [
-      "95.97%",
-      "103.97%",
-      "83.97%",
-      "81.57%"
+      "942",
+      "1130",
+      "938",
+      "967"
     ],
     "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=66, FP=5, FN=26, TN=119."
+    "explanation": "y = 20(47) + 2 = 942."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1200 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 11800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
     "options": [
-      "710",
-      "600",
-      "768",
-      "960"
-    ],
-    "answer": 3,
-    "explanation": "80% of 1200 is 960. 20% is 240."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(19, 19) and point B(29, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.40",
-      "19.65",
-      "22.14",
-      "14.55"
+      "9440",
+      "5900",
+      "8940",
+      "7080"
     ],
     "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 16.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 95, FP = 38, FN = 18, and TN = 170, what is the exact Precision?",
-    "options": [
-      "71.43%",
-      "60.71%",
-      "59.43%",
-      "79.43%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=95, FP=38, FN=18, TN=170."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 227, FP = 7, FN = 9, and TN = 158, what is the exact Precision?",
-    "options": [
-      "85.01%",
-      "105.01%",
-      "82.46%",
-      "97.01%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=227, FP=7, FN=9, TN=158."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 16) and point B(16, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.25",
-      "15.00",
-      "13.15",
-      "18.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 26) and point B(25, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.15",
-      "27.00",
-      "30.25",
-      "36.45"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 27.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "4390",
-      "4640",
-      "3712",
-      "2900"
-    ],
-    "answer": 1,
-    "explanation": "80% of 5800 is 4640. 20% is 1160."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5100 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2550",
-      "2856",
-      "3570",
-      "3320"
-    ],
-    "answer": 2,
-    "explanation": "70% of 5100 is 3570. 30% is 1530."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 50, FN = 14, and TN = 103, what is the exact Specificity?",
-    "options": [
-      "55.32%",
-      "75.32%",
-      "67.32%",
-      "57.22%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=53, FP=50, FN=14, TN=103."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (0), what is the predicted response variable y value for x = 27?",
-    "options": [
-      "351",
-      "366",
-      "432",
-      "351"
-    ],
-    "answer": 0,
-    "explanation": "y = 13(27) + 0 = 351."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-2), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "190",
-      "122",
-      "133",
-      "118"
-    ],
-    "answer": 3,
-    "explanation": "y = 5(24) + -2 = 118."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (4), what is the predicted response variable y value for x = 17?",
-    "options": [
-      "157",
-      "172",
-      "149",
-      "208"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(17) + 4 = 157."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 104, FP = 15, FN = 51, and TN = 192, what is the exact Accuracy?",
-    "options": [
-      "69.77%",
-      "81.77%",
-      "69.50%",
-      "89.77%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=104, FP=15, FN=51, TN=192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(8, 19) and point B(19, 5) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.15",
-      "25.00",
-      "28.25",
-      "33.75"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 24) and point B(5, 22) in a 2D Euclidean coordinate space?",
-    "options": [
-      "12.00",
-      "15.25",
-      "10.15",
-      "16.20"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4200 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "2100",
-      "3150",
-      "2900",
-      "2520"
-    ],
-    "answer": 1,
-    "explanation": "75% of 4200 is 3150. 25% is 1050."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2000 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "1500",
-      "1200",
-      "1000",
-      "1250"
-    ],
-    "answer": 0,
-    "explanation": "75% of 2000 is 1500. 25% is 500."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "725",
-      "950",
-      "475",
-      "712.5"
-    ],
-    "answer": 2,
-    "explanation": "75% of 1900 is 1425. 25% is 475."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 205, FP = 44, FN = 5, and TN = 145, what is the exact Recall?",
-    "options": [
-      "85.62%",
-      "82.98%",
-      "105.62%",
-      "97.62%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=205, FP=44, FN=5, TN=145."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 246, FP = 41, FN = 44, and TN = 186, what is the exact Specificity?",
-    "options": [
-      "69.94%",
-      "69.65%",
-      "89.94%",
-      "81.94%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=246, FP=41, FN=44, TN=186."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 154, FP = 54, FN = 29, and TN = 392, what is the exact Precision?",
-    "options": [
-      "82.04%",
-      "74.04%",
-      "62.04%",
-      "62.93%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=154, FP=54, FN=29, TN=392."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (0), what is the predicted response variable y value for x = 16?",
-    "options": [
-      "112",
-      "79",
-      "64",
-      "64"
-    ],
-    "answer": 2,
-    "explanation": "y = 4(16) + 0 = 64."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(25, 26) and point B(10, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "14.31",
-      "21.81",
-      "16.16",
-      "19.41"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 16.16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-4), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "308",
-      "244",
-      "251",
-      "236"
-    ],
-    "answer": 3,
-    "explanation": "y = 10(24) + -4 = 236."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 209, FP = 40, FN = 12, and TN = 211, what is the exact Specificity?",
-    "options": [
-      "92.06%",
-      "72.06%",
-      "84.06%",
-      "71.45%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=209, FP=40, FN=12, TN=211."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(2, 22) and point B(33, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.06",
-      "34.31",
-      "29.21",
-      "41.94"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 31.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1480",
-      "2050",
-      "1845",
-      "1230"
-    ],
-    "answer": 3,
-    "explanation": "70% of 4100 is 2870. 30% is 1230."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(11, 18) and point B(17, 27) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.82",
-      "14.07",
-      "8.97",
-      "14.60"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 10.82."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 6) and point B(22, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.00",
-      "29.15",
-      "41.85",
-      "34.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 31.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(24, 2) and point B(13, 31) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.17",
-      "34.27",
-      "31.02",
-      "41.87"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 31.02."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-1), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "14",
-      "-1",
-      "1",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "y = 9(0) + -1 = -1."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 206, FP = 8, FN = 33, and TN = 162, what is the exact Precision?",
-    "options": [
-      "81.82%",
-      "104.26%",
-      "84.26%",
-      "96.26%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=206, FP=8, FN=33, TN=162."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3000 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1500",
-      "1920",
-      "2150",
-      "2400"
-    ],
-    "answer": 3,
-    "explanation": "80% of 3000 is 2400. 20% is 600."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (6), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "13",
-      "10",
-      "-2",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "y = 4(1) + 6 = 10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-4), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "251",
-      "243",
-      "258",
-      "300"
-    ],
-    "answer": 1,
-    "explanation": "y = 13(19) + -4 = 243."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(9, 7) and point B(33, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "36.25",
-      "33.00",
-      "44.55",
-      "31.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 33.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(10, 6) and point B(31, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "26.10",
-      "22.85",
-      "21.00",
-      "30.84"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 22.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-4), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "200",
-      "192",
-      "276",
-      "207"
-    ],
-    "answer": 1,
-    "explanation": "y = 7(28) + -4 = 192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-2), what is the predicted response variable y value for x = 0?",
-    "options": [
-      "2",
-      "-2",
-      "13",
-      "-2"
-    ],
-    "answer": 1,
-    "explanation": "y = 3(0) + -2 = -2."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 15) and point B(25, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "48.60",
-      "36.00",
-      "39.25",
-      "34.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 36.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-3), what is the predicted response variable y value for x = 39?",
-    "options": [
-      "582",
-      "480",
-      "465",
-      "471"
-    ],
-    "answer": 2,
-    "explanation": "y = 12(39) + -3 = 465."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 104, FP = 24, FN = 37, and TN = 332, what is the exact Specificity?",
-    "options": [
-      "81.26%",
-      "101.26%",
-      "93.26%",
-      "79.27%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=104, FP=24, FN=37, TN=332."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4300 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1612.5",
-      "1325",
-      "2150",
-      "1075"
-    ],
-    "answer": 3,
-    "explanation": "75% of 4300 is 3225. 25% is 1075."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 204, FP = 52, FN = 47, and TN = 283, what is the exact Recall?",
-    "options": [
-      "69.08%",
-      "81.27%",
-      "89.27%",
-      "69.27%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=204, FP=52, FN=47, TN=283."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 142, FP = 28, FN = 54, and TN = 167, what is the exact Precision?",
-    "options": [
-      "71.00%",
-      "71.53%",
-      "83.53%",
-      "91.53%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=142, FP=28, FN=54, TN=167."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 102, FP = 28, FN = 54, and TN = 330, what is the exact Accuracy?",
-    "options": [
-      "72.05%",
-      "92.05%",
-      "84.05%",
-      "71.44%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=102, FP=28, FN=54, TN=330."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 160, FP = 36, FN = 14, and TN = 177, what is the exact Accuracy?",
-    "options": [
-      "75.08%",
-      "87.08%",
-      "95.08%",
-      "74.02%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=160, FP=36, FN=14, TN=177."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1000 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "600",
-      "750",
-      "500",
-      "500"
-    ],
-    "answer": 1,
-    "explanation": "75% of 1000 is 750. 25% is 250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-9), what is the predicted response variable y value for x = 18?",
-    "options": [
-      "117",
-      "171",
-      "132",
-      "135"
-    ],
-    "answer": 0,
-    "explanation": "y = 7(18) + -9 = 117."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-8), what is the predicted response variable y value for x = 33?",
-    "options": [
-      "338",
-      "322",
-      "337",
-      "421"
-    ],
-    "answer": 1,
-    "explanation": "y = 10(33) + -8 = 322."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "750",
-      "1125",
-      "900",
-      "875"
-    ],
-    "answer": 1,
-    "explanation": "75% of 1500 is 1125. 25% is 375."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-5), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "28",
-      "13",
-      "19",
-      "23"
-    ],
-    "answer": 1,
-    "explanation": "y = 9(2) + -5 = 13."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "300",
-      "450",
-      "600",
-      "550"
-    ],
-    "answer": 0,
-    "explanation": "75% of 1200 is 900. 25% is 300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 22) and point B(19, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.37",
-      "12.47",
-      "12.45",
-      "9.22"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 145, FP = 8, FN = 14, and TN = 192, what is the exact Accuracy?",
-    "options": [
-      "81.87%",
-      "93.87%",
-      "101.87%",
-      "79.79%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=145, FP=8, FN=14, TN=192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 123, FP = 48, FN = 26, and TN = 335, what is the exact Precision?",
-    "options": [
-      "79.93%",
-      "71.93%",
-      "59.93%",
-      "61.14%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=123, FP=48, FN=26, TN=335."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 15) and point B(29, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "33.75",
-      "28.25",
-      "23.15",
-      "25.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-2), what is the predicted response variable y value for x = 23?",
-    "options": [
-      "128",
-      "113",
-      "182",
-      "117"
-    ],
-    "answer": 1,
-    "explanation": "y = 5(23) + -2 = 113."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (5), what is the predicted response variable y value for x = 12?",
-    "options": [
-      "128",
-      "149",
-      "113",
-      "103"
-    ],
-    "answer": 2,
-    "explanation": "y = 9(12) + 5 = 113."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (6), what is the predicted response variable y value for x = 7?",
-    "options": [
-      "42",
-      "48",
-      "15",
-      "27"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(7) + 6 = 27."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(2, 27) and point B(32, 5) in a 2D Euclidean coordinate space?",
-    "options": [
-      "50.15",
-      "70.20",
-      "52.00",
-      "55.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 52.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5800 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1740",
-      "1160",
-      "1410",
-      "2900"
-    ],
-    "answer": 1,
-    "explanation": "80% of 5800 is 4640. 20% is 1160."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 187, FP = 23, FN = 18, and TN = 187, what is the exact Recall?",
-    "options": [
-      "79.22%",
-      "91.22%",
-      "99.22%",
-      "77.54%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=187, FP=23, FN=18, TN=187."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 17) and point B(24, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.25",
-      "22.95",
-      "15.15",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3000 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "750",
-      "1125",
-      "1500",
-      "1000"
-    ],
-    "answer": 0,
-    "explanation": "75% of 3000 is 2250. 25% is 750."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 7) and point B(5, 22) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.15",
-      "43.20",
-      "35.25",
-      "32.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 32.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1190",
-      "900",
-      "1152",
-      "1440"
-    ],
-    "answer": 3,
-    "explanation": "80% of 1800 is 1440. 20% is 360."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 66, FP = 54, FN = 47, and TN = 124, what is the exact Precision?",
-    "options": [
-      "55.00%",
-      "43.00%",
-      "63.00%",
-      "46.75%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=66, FP=54, FN=47, TN=124."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2000 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "750",
-      "1000",
-      "500",
-      "750"
-    ],
-    "answer": 2,
-    "explanation": "75% of 2000 is 1500. 25% is 500."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1050",
-      "880",
-      "945",
-      "630"
-    ],
-    "answer": 3,
-    "explanation": "70% of 2100 is 1470. 30% is 630."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(20, 22) and point B(12, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.15",
-      "24.00",
-      "27.25",
-      "32.40"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2700 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1640",
-      "1350",
-      "1512",
-      "1890"
-    ],
-    "answer": 3,
-    "explanation": "70% of 2700 is 1890. 30% is 810."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 8) and point B(34, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.42",
-      "10.32",
-      "12.17",
-      "15.42"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 12.17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 24) and point B(28, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.28",
-      "22.99",
-      "17.03",
-      "15.18"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "1500",
-      "1875",
-      "1625",
-      "1250"
-    ],
-    "answer": 1,
-    "explanation": "75% of 2500 is 1875. 25% is 625."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-8), what is the predicted response variable y value for x = 33?",
-    "options": [
-      "73",
-      "58",
-      "157",
-      "74"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(33) + -8 = 58."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(25, 20) and point B(18, 22) in a 2D Euclidean coordinate space?",
-    "options": [
-      "9.00",
-      "12.15",
-      "12.25",
-      "7.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 61, FP = 30, FN = 39, and TN = 261, what is the exact Specificity?",
-    "options": [
-      "89.69%",
-      "97.69%",
-      "77.69%",
-      "76.24%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=61, FP=30, FN=39, TN=261."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 170, FP = 16, FN = 49, and TN = 232, what is the exact Precision?",
-    "options": [
-      "99.40%",
-      "91.40%",
-      "77.69%",
-      "79.40%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=170, FP=16, FN=49, TN=232."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 77, FP = 24, FN = 35, and TN = 297, what is the exact Recall?",
-    "options": [
-      "76.75%",
-      "68.75%",
-      "56.75%",
-      "58.44%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=77, FP=24, FN=35, TN=297."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2400 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "600",
-      "1200",
-      "850",
-      "900"
-    ],
-    "answer": 0,
-    "explanation": "75% of 2400 is 1800. 25% is 600."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 166, FP = 26, FN = 25, and TN = 374, what is the exact Accuracy?",
-    "options": [
-      "99.37%",
-      "91.37%",
-      "77.66%",
-      "79.37%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=166, FP=26, FN=25, TN=374."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3400 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2380",
-      "1700",
-      "2130",
-      "1904"
-    ],
-    "answer": 0,
-    "explanation": "70% of 3400 is 2380. 30% is 1020."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 123, FP = 29, FN = 12, and TN = 152, what is the exact Recall?",
-    "options": [
-      "77.44%",
-      "79.11%",
-      "91.11%",
-      "99.11%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=123, FP=29, FN=12, TN=152."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(27, 12) and point B(31, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "2.27",
-      "5.57",
-      "7.37",
-      "4.12"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 4.12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "3750",
-      "4000",
-      "2500",
-      "3200"
-    ],
-    "answer": 1,
-    "explanation": "80% of 5000 is 4000. 20% is 1000."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 114, FP = 35, FN = 22, and TN = 363, what is the exact Specificity?",
-    "options": [
-      "79.21%",
-      "91.21%",
-      "77.53%",
-      "99.21%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=114, FP=35, FN=22, TN=363."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "3375",
-      "3125",
-      "2700",
-      "2250"
-    ],
-    "answer": 0,
-    "explanation": "75% of 4500 is 3375. 25% is 1125."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-5), what is the predicted response variable y value for x = 15?",
-    "options": [
-      "160",
-      "115",
-      "130",
-      "125"
-    ],
-    "answer": 1,
-    "explanation": "y = 8(15) + -5 = 115."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 116, FP = 31, FN = 36, and TN = 196, what is the exact Recall?",
-    "options": [
-      "76.32%",
-      "64.32%",
-      "64.87%",
-      "84.32%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=116, FP=31, FN=36, TN=196."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 101, FP = 46, FN = 35, and TN = 143, what is the exact Accuracy?",
-    "options": [
-      "75.08%",
-      "63.82%",
-      "83.08%",
-      "63.08%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=101, FP=46, FN=35, TN=143."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 234, FP = 52, FN = 24, and TN = 303, what is the exact Precision?",
-    "options": [
-      "69.55%",
-      "81.82%",
-      "69.82%",
-      "89.82%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=234, FP=52, FN=24, TN=303."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-6), what is the predicted response variable y value for x = 37?",
-    "options": [
-      "179",
-      "68",
-      "83",
-      "80"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(37) + -6 = 68."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "440",
-      "1100",
-      "690",
-      "660"
-    ],
-    "answer": 0,
-    "explanation": "80% of 2200 is 1760. 20% is 440."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 3) and point B(16, 34) in a 2D Euclidean coordinate space?",
-    "options": [
-      "36.00",
-      "48.60",
-      "34.15",
-      "39.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 36.00."
+    "explanation": "80% of 11800 is 9440. 20% is 2360."
   },
   {
     "subject": "AI / ML",
@@ -7748,93 +972,317 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "A machine learning pipeline is partitioning a dataset of 5800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
     "options": [
-      "3248",
       "4060",
-      "3810",
-      "2900"
-    ],
-    "answer": 1,
-    "explanation": "70% of 5800 is 4060. 30% is 1740."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(4, 5) and point B(15, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.15",
-      "39.36",
-      "32.40",
-      "27.30"
+      "3560",
+      "2900",
+      "3045"
     ],
     "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 29.15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 106, FP = 43, FN = 8, and TN = 189, what is the exact Recall?",
-    "options": [
-      "79.04%",
-      "92.98%",
-      "80.98%",
-      "100.98%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=106, FP=43, FN=8, TN=189."
+    "explanation": "70% of 5800 is 4060. 30% is 1740."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (8), what is the predicted response variable y value for x = 6?",
+    "question": "For a linear regression model parameterized as y = 21x + (-2), what is the predicted response variable y value for x = 87?",
     "options": [
-      "74",
-      "56",
-      "71",
-      "40"
+      "2173",
+      "1825",
+      "1829",
+      "1850"
     ],
     "answer": 1,
-    "explanation": "y = 8(6) + 8 = 56."
+    "explanation": "y = 21(87) + -2 = 1825."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 156, FP = 38, FN = 30, and TN = 411, what is the exact Accuracy?",
+    "options": [
+      "78.58%",
+      "98.29%",
+      "75.29%",
+      "89.29%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=156, FP=38, FN=30, TN=411."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(49, 26) and point B(14, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "43.00",
+      "53.75",
+      "47.15",
+      "40.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 43.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
     "options": [
-      "1025",
-      "1550",
-      "775",
-      "1162.5"
-    ],
-    "answer": 2,
-    "explanation": "75% of 3100 is 2325. 25% is 775."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(4, 21) and point B(29, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "26.33",
-      "38.04",
-      "31.43",
-      "28.18"
+      "1406.25",
+      "1375",
+      "1250",
+      "1875"
     ],
     "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 28.18."
+    "explanation": "75% of 2500 is 1875. 25% is 625."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 227, FP = 42, FN = 43, and TN = 574, what is the exact Specificity?",
+    "options": [
+      "82.00%",
+      "79.18%",
+      "102.18%",
+      "93.18%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=227, FP=42, FN=43, TN=574."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 180, FP = 36, FN = 56, and TN = 281, what is the exact Accuracy?",
+    "options": [
+      "92.36%",
+      "83.36%",
+      "73.36%",
+      "69.36%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=180, FP=36, FN=56, TN=281."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 328, FP = 53, FN = 9, and TN = 549, what is the exact Accuracy?",
+    "options": [
+      "79.40%",
+      "102.40%",
+      "93.40%",
+      "82.19%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=328, FP=53, FN=9, TN=549."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1000 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "250",
+      "562.5",
+      "750",
+      "500"
+    ],
+    "answer": 2,
+    "explanation": "75% of 1000 is 750. 25% is 250."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1156.25",
+      "1425",
+      "1850",
+      "925"
+    ],
+    "answer": 3,
+    "explanation": "75% of 3700 is 2775. 25% is 925."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 156, FP = 45, FN = 51, and TN = 563, what is the exact Specificity?",
+    "options": [
+      "81.49%",
+      "101.60%",
+      "92.60%",
+      "78.60%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=156, FP=45, FN=51, TN=563."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "15920",
+      "15420",
+      "11940",
+      "9950"
+    ],
+    "answer": 0,
+    "explanation": "80% of 19900 is 15920. 20% is 3980."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 270, FP = 22, FN = 9, and TN = 505, what is the exact Specificity?",
+    "options": [
+      "81.83%",
+      "84.33%",
+      "104.83%",
+      "95.83%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=270, FP=22, FN=9, TN=505."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 1) and point B(6, 18) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(30, 20) and point B(48, 40) in a 2D Euclidean coordinate space?",
     "options": [
-      "29.70",
-      "25.25",
-      "20.15",
+      "38.00",
+      "35.75",
+      "42.15",
+      "47.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 38.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 60, FP = 7, FN = 81, and TN = 597, what is the exact Accuracy?",
+    "options": [
+      "74.19%",
+      "88.19%",
+      "77.61%",
+      "97.19%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=60, FP=7, FN=81, TN=597."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 177, FP = 11, FN = 36, and TN = 259, what is the exact Precision?",
+    "options": [
+      "103.15%",
+      "94.15%",
+      "80.15%",
+      "82.85%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=177, FP=11, FN=36, TN=259."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(19, 18) and point B(42, 7) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.87",
+      "29.65",
+      "23.25",
+      "25.50"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 25.50."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (-6), what is the predicted response variable y value for x = 36?",
+    "options": [
+      "343",
+      "318",
+      "330",
+      "462"
+    ],
+    "answer": 1,
+    "explanation": "y = 9(36) + -6 = 318."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (18), what is the predicted response variable y value for x = 22?",
+    "options": [
+      "238",
+      "326",
+      "202",
+      "263"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(22) + 18 = 238."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "7850",
+      "11775",
+      "8831.25",
+      "11275"
+    ],
+    "answer": 1,
+    "explanation": "75% of 15700 is 11775. 25% is 3925."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(17, 18) and point B(25, 37) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.00",
+      "31.15",
+      "24.75",
+      "33.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1250",
+      "937.5",
+      "1250",
+      "750"
+    ],
+    "answer": 3,
+    "explanation": "70% of 2500 is 1750. 30% is 750."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(46, 16) and point B(35, 27) in a 2D Euclidean coordinate space?",
+    "options": [
+      "26.15",
+      "27.50",
+      "19.75",
       "22.00"
     ],
     "answer": 3,
@@ -7844,71 +1292,169 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 62, FP = 27, FN = 19, and TN = 323, what is the exact Accuracy?",
+    "question": "Given a classification report with TP = 68, FP = 44, FN = 14, and TN = 591, what is the exact Specificity?",
     "options": [
-      "75.93%",
-      "97.33%",
-      "89.33%",
-      "77.33%"
+      "102.07%",
+      "79.07%",
+      "93.07%",
+      "81.90%"
     ],
     "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=62, FP=27, FN=19, TN=323."
+    "explanation": "Specificity is calculated by standard formula using counts: TP=68, FP=44, FN=14, TN=591."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(17, 35) and point B(49, 39) in a 2D Euclidean coordinate space?",
+    "options": [
+      "36.40",
+      "30.00",
+      "40.31",
+      "32.25"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 32.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(7, 43) and point B(15, 26) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.75",
+      "31.25",
+      "25.00",
+      "29.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 25.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(22, 1) and point B(45, 16) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.46",
+      "31.61",
+      "34.32",
+      "25.21"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 27.46."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (2), what is the predicted response variable y value for x = 16?",
+    "options": [
+      "270",
+      "274",
+      "338",
+      "299"
+    ],
+    "answer": 1,
+    "explanation": "y = 17(16) + 2 = 274."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 65, FP = 22, FN = 5, and TN = 273, what is the exact Precision?",
+    "question": "Given a classification report with TP = 214, FP = 45, FN = 31, and TN = 576, what is the exact Accuracy?",
     "options": [
-      "82.71%",
-      "62.71%",
-      "63.51%",
-      "74.71%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=65, FP=22, FN=5, TN=273."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 11) and point B(31, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.15",
-      "39.15",
-      "29.00",
-      "32.25"
+      "77.22%",
+      "80.28%",
+      "91.22%",
+      "100.22%"
     ],
     "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 29.00."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=214, FP=45, FN=31, TN=576."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 18) and point B(26, 32) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 81, FP = 9, FN = 20, and TN = 357, what is the exact Precision?",
     "options": [
-      "36.25",
-      "33.00",
-      "31.15",
-      "44.55"
+      "76.00%",
+      "99.00%",
+      "90.00%",
+      "79.20%"
     ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 33.00."
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=81, FP=9, FN=20, TN=357."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-7), what is the predicted response variable y value for x = 2?",
+    "options": [
+      "34",
+      "23",
+      "9",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "y = 8(2) + -7 = 9."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (9), what is the predicted response variable y value for x = 76?",
+    "options": [
+      "1605",
+      "1326",
+      "1301",
+      "1283"
+    ],
+    "answer": 2,
+    "explanation": "y = 17(76) + 9 = 1301."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4900 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 5300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
     "options": [
-      "3430",
-      "2450",
-      "2744",
-      "3180"
+      "1590",
+      "2650",
+      "2090",
+      "1987.5"
     ],
     "answer": 0,
-    "explanation": "70% of 4900 is 3430. 30% is 1470."
+    "explanation": "70% of 5300 is 3710. 30% is 1590."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3800",
+      "5500",
+      "4125",
+      "3300"
+    ],
+    "answer": 3,
+    "explanation": "70% of 11000 is 7700. 30% is 3300."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (-9), what is the predicted response variable y value for x = 9?",
+    "options": [
+      "9",
+      "45",
+      "34",
+      "27"
+    ],
+    "answer": 0,
+    "explanation": "y = 2(9) + -9 = 9."
   },
   {
     "subject": "AI / ML",
@@ -7916,219 +1462,205 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "A machine learning pipeline is partitioning a dataset of 1500 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
     "options": [
-      "625",
+      "468.75",
       "375",
-      "562.5",
-      "750"
+      "750",
+      "875"
     ],
     "answer": 1,
     "explanation": "75% of 1500 is 1125. 25% is 375."
   },
   {
     "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-1), what is the predicted response variable y value for x = 29?",
-    "options": [
-      "57",
-      "72",
-      "59",
-      "144"
-    ],
-    "answer": 0,
-    "explanation": "y = 2(29) + -1 = 57."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2100 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1470",
-      "1220",
-      "1050",
-      "1176"
-    ],
-    "answer": 0,
-    "explanation": "70% of 2100 is 1470. 30% is 630."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-2), what is the predicted response variable y value for x = 13?",
-    "options": [
-      "63",
-      "39",
-      "24",
-      "28"
-    ],
-    "answer": 2,
-    "explanation": "y = 2(13) + -2 = 24."
-  },
-  {
-    "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(28, 28) and point B(16, 34) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(42, 22) and point B(53, 18) in a 2D Euclidean coordinate space?",
     "options": [
-      "13.42",
-      "11.57",
-      "18.11",
-      "16.67"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 13.42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-10), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "53",
-      "38",
-      "58",
-      "110"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(24) + -10 = 38."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(14, 29) and point B(24, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.84",
-      "18.74",
-      "20.59",
-      "27.80"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 20.59."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 243, FP = 29, FN = 21, and TN = 242, what is the exact Accuracy?",
-    "options": [
-      "98.65%",
-      "78.65%",
-      "90.65%",
-      "77.06%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=243, FP=29, FN=21, TN=242."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (3), what is the predicted response variable y value for x = 8?",
-    "options": [
-      "91",
-      "67",
-      "61",
-      "82"
-    ],
-    "answer": 1,
-    "explanation": "y = 8(8) + 3 = 67."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "896",
-      "800",
-      "1120",
-      "870"
-    ],
-    "answer": 2,
-    "explanation": "70% of 1600 is 1120. 30% is 480."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 249, FP = 53, FN = 27, and TN = 298, what is the exact Accuracy?",
-    "options": [
-      "87.24%",
-      "74.15%",
-      "75.24%",
-      "95.24%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=249, FP=53, FN=27, TN=298."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (8), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "260",
-      "244",
-      "275",
-      "368"
-    ],
-    "answer": 0,
-    "explanation": "y = 7(36) + 8 = 260."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (2), what is the predicted response variable y value for x = 9?",
-    "options": [
-      "70",
-      "101",
-      "89",
-      "74"
+      "9.45",
+      "15.85",
+      "14.63",
+      "11.70"
     ],
     "answer": 3,
-    "explanation": "y = 8(9) + 2 = 74."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 192, FP = 25, FN = 51, and TN = 272, what is the exact Accuracy?",
-    "options": [
-      "73.04%",
-      "93.93%",
-      "73.93%",
-      "85.93%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=192, FP=25, FN=51, TN=272."
+    "explanation": "Euclidean distance formula resolves to 11.70."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 10000 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
     "options": [
-      "2675",
-      "2925",
-      "2340",
-      "1950"
+      "5625",
+      "5000",
+      "7000",
+      "7500"
     ],
-    "answer": 1,
-    "explanation": "75% of 3900 is 2925. 25% is 975."
+    "answer": 3,
+    "explanation": "75% of 10000 is 7500. 25% is 2500."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 277, FP = 45, FN = 62, and TN = 155, what is the exact Precision?",
+    "options": [
+      "75.70%",
+      "95.02%",
+      "72.02%",
+      "86.02%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=277, FP=45, FN=62, TN=155."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (2), what is the predicted response variable y value for x = 70?",
+    "options": [
+      "492",
+      "488",
+      "772",
+      "517"
+    ],
+    "answer": 0,
+    "explanation": "y = 7(70) + 2 = 492."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (-16), what is the predicted response variable y value for x = 28?",
+    "options": [
+      "404",
+      "429",
+      "516",
+      "436"
+    ],
+    "answer": 0,
+    "explanation": "y = 15(28) + -16 = 404."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 11) and point B(16, 25) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(15, 22) and point B(28, 28) in a 2D Euclidean coordinate space?",
     "options": [
-      "28.15",
-      "33.25",
-      "40.50",
+      "23.75",
+      "23.15",
+      "16.75",
+      "19.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 19.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 245, FP = 9, FN = 81, and TN = 266, what is the exact Accuracy?",
+    "options": [
+      "74.82%",
+      "94.02%",
+      "85.02%",
+      "71.02%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=245, FP=9, FN=81, TN=266."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(40, 9) and point B(50, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "9.75",
+      "15.00",
+      "12.00",
+      "16.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 74, FP = 33, FN = 12, and TN = 140, what is the exact Precision?",
+    "options": [
+      "69.16%",
+      "60.86%",
+      "78.16%",
+      "55.16%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=74, FP=33, FN=12, TN=140."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 295, FP = 9, FN = 49, and TN = 210, what is the exact Accuracy?",
+    "options": [
+      "89.70%",
+      "98.70%",
+      "78.93%",
+      "75.70%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=295, FP=9, FN=49, TN=210."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-1), what is the predicted response variable y value for x = 80?",
+    "options": [
+      "1784",
+      "1761",
+      "2079",
+      "1759"
+    ],
+    "answer": 3,
+    "explanation": "y = 22(80) + -1 = 1759."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(13, 21) and point B(45, 9) in a 2D Euclidean coordinate space?",
+    "options": [
+      "42.72",
+      "31.93",
+      "38.33",
+      "34.18"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 34.18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-11), what is the predicted response variable y value for x = 30?",
+    "options": [
+      "254",
+      "251",
+      "349",
+      "229"
+    ],
+    "answer": 3,
+    "explanation": "y = 8(30) + -11 = 229."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(29, 43) and point B(8, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.75",
+      "37.50",
+      "34.15",
       "30.00"
     ],
     "answer": 3,
@@ -8138,295 +1670,2689 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(6, 18) and point B(15, 21) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(22, 12) and point B(51, 16) in a 2D Euclidean coordinate space?",
     "options": [
-      "9.49",
-      "7.64",
-      "12.74",
-      "12.81"
+      "36.59",
+      "33.42",
+      "29.27",
+      "27.02"
     ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 9.49."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(1, 28) and point B(30, 28) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.00",
-      "39.15",
-      "27.15",
-      "32.25"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 29.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(3, 3) and point B(26, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "37.80",
-      "35.95",
-      "41.05",
-      "51.03"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 37.80."
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 29.27."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (0), what is the predicted response variable y value for x = 35?",
+    "question": "For a linear regression model parameterized as y = 7x + (-17), what is the predicted response variable y value for x = 31?",
     "options": [
-      "420",
-      "435",
-      "420",
-      "525"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(35) + 0 = 420."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (7), what is the predicted response variable y value for x = 31?",
-    "options": [
-      "332",
-      "317",
-      "303",
-      "410"
+      "324",
+      "200",
+      "234",
+      "225"
     ],
     "answer": 1,
-    "explanation": "y = 10(31) + 7 = 317."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 178, FP = 44, FN = 25, and TN = 267, what is the exact Recall?",
-    "options": [
-      "87.68%",
-      "75.68%",
-      "74.53%",
-      "95.68%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=178, FP=44, FN=25, TN=267."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 186, FP = 7, FN = 24, and TN = 368, what is the exact Recall?",
-    "options": [
-      "88.57%",
-      "76.57%",
-      "96.57%",
-      "75.29%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=186, FP=7, FN=24, TN=368."
+    "explanation": "y = 7(31) + -17 = 200."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 4) and point B(6, 15) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(5, 31) and point B(41, 19) in a 2D Euclidean coordinate space?",
     "options": [
-      "13.04",
-      "16.29",
-      "17.60",
-      "11.19"
+      "48.00",
+      "45.75",
+      "60.00",
+      "52.15"
     ],
     "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 48.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 329, FP = 55, FN = 32, and TN = 268, what is the exact Recall?",
+    "options": [
+      "100.14%",
+      "77.14%",
+      "91.14%",
+      "80.20%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=329, FP=55, FN=32, TN=268."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(40, 30) and point B(49, 53) in a 2D Euclidean coordinate space?",
+    "options": [
+      "28.85",
+      "24.70",
+      "22.45",
+      "30.87"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 24.70."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14800 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2960",
+      "7400",
+      "3460",
+      "3700"
+    ],
+    "answer": 0,
+    "explanation": "80% of 14800 is 11840. 20% is 2960."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3343.75",
+      "5350",
+      "2675",
+      "3175"
+    ],
+    "answer": 2,
+    "explanation": "75% of 10700 is 8025. 25% is 2675."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(49, 18) and point B(17, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "32.76",
+      "36.91",
+      "30.51",
+      "40.95"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 32.76."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(36, 1) and point B(29, 12) in a 2D Euclidean coordinate space?",
+    "options": [
+      "16.30",
+      "10.79",
+      "13.04",
+      "17.19"
+    ],
+    "answer": 2,
     "explanation": "Euclidean distance formula resolves to 13.04."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(9, 14) and point B(29, 15) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 240, FP = 71, FN = 15, and TN = 182, what is the exact Precision?",
     "options": [
-      "21.00",
-      "28.35",
-      "24.25",
-      "19.15"
+      "63.17%",
+      "67.91%",
+      "86.17%",
+      "77.17%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=240, FP=71, FN=15, TN=182."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8850",
+      "3540",
+      "4040",
+      "4425"
+    ],
+    "answer": 1,
+    "explanation": "80% of 17700 is 14160. 20% is 3540."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (15), what is the predicted response variable y value for x = 47?",
+    "options": [
+      "250",
+      "275",
+      "438",
+      "220"
     ],
     "answer": 0,
+    "explanation": "y = 5(47) + 15 = 250."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2400",
+      "2900",
+      "4000",
+      "3000"
+    ],
+    "answer": 0,
+    "explanation": "70% of 8000 is 5600. 30% is 2400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15400 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3080",
+      "7700",
+      "3850",
+      "3580"
+    ],
+    "answer": 0,
+    "explanation": "80% of 15400 is 12320. 20% is 3080."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1040",
+      "1350",
+      "540",
+      "675"
+    ],
+    "answer": 2,
+    "explanation": "80% of 2700 is 2160. 20% is 540."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 111, FP = 37, FN = 8, and TN = 266, what is the exact Precision?",
+    "options": [
+      "75.00%",
+      "66.00%",
+      "61.00%",
+      "84.00%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=111, FP=37, FN=8, TN=266."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (5), what is the predicted response variable y value for x = 12?",
+    "options": [
+      "221",
+      "269",
+      "211",
+      "246"
+    ],
+    "answer": 0,
+    "explanation": "y = 18(12) + 5 = 221."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(15, 48) and point B(40, 42) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.00",
+      "35.15",
+      "38.75",
+      "28.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 31.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 13x + (-5), what is the predicted response variable y value for x = 70?",
+    "options": [
+      "915",
+      "1185",
+      "930",
+      "905"
+    ],
+    "answer": 3,
+    "explanation": "y = 13(70) + -5 = 905."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (-13), what is the predicted response variable y value for x = 23?",
+    "options": [
+      "427",
+      "493",
+      "401",
+      "426"
+    ],
+    "answer": 2,
+    "explanation": "y = 18(23) + -13 = 401."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(17, 21) and point B(19, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "6.39",
+      "2.24",
+      "2.80",
+      "0.01"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 2.24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 275, FP = 48, FN = 36, and TN = 485, what is the exact Precision?",
+    "options": [
+      "85.14%",
+      "71.14%",
+      "74.92%",
+      "94.14%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=275, FP=48, FN=36, TN=485."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(18, 21) and point B(37, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "29.00",
+      "33.15",
+      "36.25",
+      "26.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 29.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 331, FP = 24, FN = 40, and TN = 597, what is the exact Accuracy?",
+    "options": [
+      "82.32%",
+      "93.55%",
+      "102.55%",
+      "79.55%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=331, FP=24, FN=40, TN=597."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (3), what is the predicted response variable y value for x = 86?",
+    "options": [
+      "1981",
+      "1631",
+      "1637",
+      "1662"
+    ],
+    "answer": 2,
+    "explanation": "y = 19(86) + 3 = 1637."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8400 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2520",
+      "4200",
+      "3150",
+      "3020"
+    ],
+    "answer": 0,
+    "explanation": "70% of 8400 is 5880. 30% is 2520."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (7), what is the predicted response variable y value for x = 2?",
+    "options": [
+      "25",
+      "33",
+      "11",
+      "50"
+    ],
+    "answer": 0,
+    "explanation": "y = 9(2) + 7 = 25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (0), what is the predicted response variable y value for x = 66?",
+    "options": [
+      "528",
+      "264",
+      "341",
+      "289"
+    ],
+    "answer": 1,
+    "explanation": "y = 4(66) + 0 = 264."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2030",
+      "1530",
+      "1912.5",
+      "2550"
+    ],
+    "answer": 1,
+    "explanation": "70% of 5100 is 3570. 30% is 1530."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(34, 26) and point B(54, 40) in a 2D Euclidean coordinate space?",
+    "options": [
+      "38.15",
+      "34.00",
+      "31.75",
+      "42.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 34.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(30, 4) and point B(7, 43) in a 2D Euclidean coordinate space?",
+    "options": [
+      "62.00",
+      "77.50",
+      "59.75",
+      "66.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 62.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16300 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5093.75",
+      "8150",
+      "4075",
+      "4575"
+    ],
+    "answer": 2,
+    "explanation": "75% of 16300 is 12225. 25% is 4075."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17700 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "14160",
+      "13660",
+      "10620",
+      "8850"
+    ],
+    "answer": 0,
+    "explanation": "80% of 17700 is 14160. 20% is 3540."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(4, 38) and point B(38, 17) in a 2D Euclidean coordinate space?",
+    "options": [
+      "55.00",
+      "52.75",
+      "59.15",
+      "68.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 55.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (-11), what is the predicted response variable y value for x = 12?",
+    "options": [
+      "242",
+      "265",
+      "239",
+      "217"
+    ],
+    "answer": 3,
+    "explanation": "y = 19(12) + -11 = 217."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (0), what is the predicted response variable y value for x = 84?",
+    "options": [
+      "1285",
+      "1596",
+      "1260",
+      "1337"
+    ],
+    "answer": 2,
+    "explanation": "y = 15(84) + 0 = 1260."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9400 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "6080",
+      "6580",
+      "4935",
+      "4700"
+    ],
+    "answer": 1,
+    "explanation": "70% of 9400 is 6580. 30% is 2820."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "11175",
+      "8381.25",
+      "7450",
+      "10675"
+    ],
+    "answer": 0,
+    "explanation": "75% of 14900 is 11175. 25% is 3725."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(22, 8) and point B(41, 22) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.75",
+      "37.15",
+      "33.00",
+      "41.25"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 33.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 254, FP = 37, FN = 69, and TN = 468, what is the exact Accuracy?",
+    "options": [
+      "73.20%",
+      "96.20%",
+      "87.20%",
+      "76.73%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=254, FP=37, FN=69, TN=468."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5010",
+      "5510",
+      "6262.5",
+      "8350"
+    ],
+    "answer": 0,
+    "explanation": "70% of 16700 is 11690. 30% is 5010."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5800 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2240",
+      "1740",
+      "2900",
+      "2175"
+    ],
+    "answer": 1,
+    "explanation": "70% of 5800 is 4060. 30% is 1740."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 107, FP = 33, FN = 21, and TN = 304, what is the exact Recall?",
+    "options": [
+      "83.59%",
+      "73.56%",
+      "69.59%",
+      "92.59%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=107, FP=33, FN=21, TN=304."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2300 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "1225",
+      "1293.75",
+      "1150",
+      "1725"
+    ],
+    "answer": 3,
+    "explanation": "75% of 2300 is 1725. 25% is 575."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(0, 36) and point B(10, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.75",
+      "30.00",
+      "28.15",
+      "24.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(45, 44) and point B(44, 14) in a 2D Euclidean coordinate space?",
+    "options": [
+      "28.75",
+      "31.00",
+      "35.15",
+      "38.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 31.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 294, FP = 22, FN = 45, and TN = 188, what is the exact Specificity?",
+    "options": [
+      "98.52%",
+      "78.78%",
+      "75.52%",
+      "89.52%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=294, FP=22, FN=45, TN=188."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 23x + (-14), what is the predicted response variable y value for x = 61?",
+    "options": [
+      "1633",
+      "1389",
+      "1414",
+      "1417"
+    ],
+    "answer": 1,
+    "explanation": "y = 23(61) + -14 = 1389."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(1, 10) and point B(42, 43) in a 2D Euclidean coordinate space?",
+    "options": [
+      "71.75",
+      "92.50",
+      "78.15",
+      "74.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 74.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 156, FP = 62, FN = 31, and TN = 202, what is the exact Recall?",
+    "options": [
+      "83.42%",
+      "92.42%",
+      "69.42%",
+      "73.41%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=156, FP=62, FN=31, TN=202."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "7162.5",
+      "9550",
+      "5730",
+      "6230"
+    ],
+    "answer": 2,
+    "explanation": "70% of 19100 is 13370. 30% is 5730."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10400 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5200",
+      "2600",
+      "3250",
+      "3100"
+    ],
+    "answer": 1,
+    "explanation": "75% of 10400 is 7800. 25% is 2600."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9300 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "4650",
+      "5580",
+      "7440",
+      "6940"
+    ],
+    "answer": 2,
+    "explanation": "80% of 9300 is 7440. 20% is 1860."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(28, 23) and point B(40, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "39.00",
+      "36.75",
+      "48.75",
+      "43.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 39.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(41, 6) and point B(53, 10) in a 2D Euclidean coordinate space?",
+    "options": [
+      "13.75",
+      "16.00",
+      "20.15",
+      "20.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (15), what is the predicted response variable y value for x = 9?",
+    "options": [
+      "150",
+      "139",
+      "84",
+      "114"
+    ],
+    "answer": 3,
+    "explanation": "y = 11(9) + 15 = 114."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (2), what is the predicted response variable y value for x = 13?",
+    "options": [
+      "366",
+      "310",
+      "339",
+      "314"
+    ],
+    "answer": 3,
+    "explanation": "y = 24(13) + 2 = 314."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (-15), what is the predicted response variable y value for x = 57?",
+    "options": [
+      "612",
+      "414",
+      "384",
+      "409"
+    ],
+    "answer": 2,
+    "explanation": "y = 7(57) + -15 = 384."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "1825",
+      "2325",
+      "1550",
+      "1743.75"
+    ],
+    "answer": 1,
+    "explanation": "75% of 3100 is 2325. 25% is 775."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8400 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2180",
+      "4200",
+      "1680",
+      "2100"
+    ],
+    "answer": 2,
+    "explanation": "80% of 8400 is 6720. 20% is 1680."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (-8), what is the predicted response variable y value for x = 47?",
+    "options": [
+      "462",
+      "650",
+      "487",
+      "478"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(47) + -8 = 462."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (-6), what is the predicted response variable y value for x = 26?",
+    "options": [
+      "540",
+      "461",
+      "448",
+      "436"
+    ],
+    "answer": 3,
+    "explanation": "y = 17(26) + -6 = 436."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(33, 39) and point B(53, 40) in a 2D Euclidean coordinate space?",
+    "options": [
+      "25.15",
+      "21.00",
+      "18.75",
+      "26.25"
+    ],
+    "answer": 1,
     "explanation": "Manhattan distance formula resolves to 21.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 172, FP = 45, FN = 43, and TN = 313, what is the exact Accuracy?",
-    "options": [
-      "84.64%",
-      "72.64%",
-      "71.95%",
-      "92.64%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=172, FP=45, FN=43, TN=313."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 22, FN = 50, and TN = 151, what is the exact Recall?",
-    "options": [
-      "62.98%",
-      "74.09%",
-      "62.09%",
-      "82.09%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=143, FP=22, FN=50, TN=151."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 19) and point B(11, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "6.15",
-      "8.00",
-      "11.25",
-      "10.80"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-3), what is the predicted response variable y value for x = 28?",
+    "question": "For a linear regression model parameterized as y = 15x + (-20), what is the predicted response variable y value for x = 85?",
     "options": [
-      "277",
-      "208",
-      "193",
-      "199"
+      "1255",
+      "1595",
+      "1295",
+      "1280"
+    ],
+    "answer": 0,
+    "explanation": "y = 15(85) + -20 = 1255."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5687.5",
+      "9100",
+      "4550",
+      "5050"
     ],
     "answer": 2,
-    "explanation": "y = 7(28) + -3 = 193."
+    "explanation": "75% of 18200 is 13650. 25% is 4550."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 0) and point B(14, 7) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(23, 22) and point B(21, 17) in a 2D Euclidean coordinate space?",
     "options": [
-      "8.15",
-      "13.50",
-      "13.25",
-      "10.00"
+      "6.73",
+      "5.39",
+      "3.14",
+      "9.54"
     ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 10.00."
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 5.39."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 81, FP = 32, FN = 31, and TN = 145, what is the exact Specificity?",
+    "question": "Given a classification report with TP = 170, FP = 80, FN = 52, and TN = 307, what is the exact Accuracy?",
     "options": [
-      "81.92%",
-      "89.92%",
-      "69.92%",
-      "69.63%"
+      "87.33%",
+      "78.33%",
+      "68.93%",
+      "64.33%"
     ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=81, FP=32, FN=31, TN=145."
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=170, FP=80, FN=52, TN=307."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 262, FP = 34, FN = 55, and TN = 470, what is the exact Precision?",
+    "options": [
+      "97.51%",
+      "74.51%",
+      "77.89%",
+      "88.51%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=262, FP=34, FN=55, TN=470."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "4162.5",
+      "5050",
+      "3700",
+      "5550"
+    ],
+    "answer": 3,
+    "explanation": "75% of 7400 is 5550. 25% is 1850."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-4), what is the predicted response variable y value for x = 11?",
+    "question": "For a linear regression model parameterized as y = 24x + (5), what is the predicted response variable y value for x = 52?",
     "options": [
-      "51",
-      "18",
-      "26",
-      "33"
+      "1243",
+      "1253",
+      "1461",
+      "1278"
     ],
     "answer": 1,
-    "explanation": "y = 2(11) + -4 = 18."
+    "explanation": "y = 24(52) + 5 = 1253."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4437.5",
+      "3550",
+      "7100",
+      "4050"
+    ],
+    "answer": 1,
+    "explanation": "75% of 14200 is 10650. 25% is 3550."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-8), what is the predicted response variable y value for x = 53?",
+    "options": [
+      "1183",
+      "1174",
+      "1370",
+      "1158"
+    ],
+    "answer": 3,
+    "explanation": "y = 22(53) + -8 = 1158."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 9) and point B(34, 32) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(12, 18) and point B(48, 45) in a 2D Euclidean coordinate space?",
     "options": [
-      "59.25",
-      "56.00",
-      "54.15",
-      "75.60"
+      "56.25",
+      "45.00",
+      "42.75",
+      "49.15"
     ],
     "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 45.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (-5), what is the predicted response variable y value for x = 41?",
+    "options": [
+      "307",
+      "282",
+      "292",
+      "446"
+    ],
+    "answer": 1,
+    "explanation": "y = 7(41) + -5 = 282."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (-15), what is the predicted response variable y value for x = 4?",
+    "options": [
+      "37",
+      "46",
+      "21",
+      "51"
+    ],
+    "answer": 2,
+    "explanation": "y = 9(4) + -15 = 21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-15), what is the predicted response variable y value for x = 12?",
+    "options": [
+      "279",
+      "249",
+      "297",
+      "274"
+    ],
+    "answer": 1,
+    "explanation": "y = 22(12) + -15 = 249."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1000",
+      "625",
+      "500",
+      "1250"
+    ],
+    "answer": 2,
+    "explanation": "80% of 2500 is 2000. 20% is 500."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2240",
+      "2175",
+      "4350",
+      "1740"
+    ],
+    "answer": 3,
+    "explanation": "80% of 8700 is 6960. 20% is 1740."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 57, FP = 6, FN = 75, and TN = 580, what is the exact Recall?",
+    "options": [
+      "38.00%",
+      "29.18%",
+      "43.18%",
+      "52.18%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=57, FP=6, FN=75, TN=580."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (-10), what is the predicted response variable y value for x = 11?",
+    "options": [
+      "87",
+      "67",
+      "92",
+      "111"
+    ],
+    "answer": 1,
+    "explanation": "y = 7(11) + -10 = 67."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(26, 14) and point B(32, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "8.39",
+      "10.86",
+      "6.71",
+      "4.46"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 6.71."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (9), what is the predicted response variable y value for x = 93?",
+    "options": [
+      "753",
+      "381",
+      "363",
+      "406"
+    ],
+    "answer": 1,
+    "explanation": "y = 4(93) + 9 = 381."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (7), what is the predicted response variable y value for x = 1?",
+    "options": [
+      "29",
+      "25",
+      "50",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "y = 18(1) + 7 = 25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11000 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2750",
+      "5500",
+      "2700",
+      "2200"
+    ],
+    "answer": 3,
+    "explanation": "80% of 11000 is 8800. 20% is 2200."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 247, FP = 16, FN = 30, and TN = 453, what is the exact Recall?",
+    "options": [
+      "75.17%",
+      "78.47%",
+      "89.17%",
+      "98.17%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=247, FP=16, FN=30, TN=453."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(17, 35) and point B(6, 24) in a 2D Euclidean coordinate space?",
+    "options": [
+      "19.45",
+      "15.56",
+      "19.71",
+      "13.31"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 15.56."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3000",
+      "2900",
+      "2400",
+      "4800"
+    ],
+    "answer": 2,
+    "explanation": "75% of 9600 is 7200. 25% is 2400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (10), what is the predicted response variable y value for x = 70?",
+    "options": [
+      "1785",
+      "1740",
+      "1760",
+      "2040"
+    ],
+    "answer": 2,
+    "explanation": "y = 25(70) + 10 = 1760."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 195, FP = 18, FN = 77, and TN = 228, what is the exact Specificity?",
+    "options": [
+      "78.68%",
+      "81.56%",
+      "92.68%",
+      "101.68%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=195, FP=18, FN=77, TN=228."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(21, 1) and point B(42, 52) in a 2D Euclidean coordinate space?",
+    "options": [
+      "72.00",
+      "90.00",
+      "76.15",
+      "69.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 72.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 307, FP = 79, FN = 55, and TN = 123, what is the exact Accuracy?",
+    "options": [
+      "67.09%",
+      "85.24%",
+      "76.24%",
+      "62.24%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=307, FP=79, FN=55, TN=123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(16, 37) and point B(13, 22) in a 2D Euclidean coordinate space?",
+    "options": [
+      "19.12",
+      "19.45",
+      "13.05",
+      "15.30"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 15.30."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (14), what is the predicted response variable y value for x = 21?",
+    "options": [
+      "91",
+      "119",
+      "144",
+      "203"
+    ],
+    "answer": 1,
+    "explanation": "y = 5(21) + 14 = 119."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (10), what is the predicted response variable y value for x = 78?",
+    "options": [
+      "191",
+      "478",
+      "166",
+      "146"
+    ],
+    "answer": 2,
+    "explanation": "y = 2(78) + 10 = 166."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (5), what is the predicted response variable y value for x = 96?",
+    "options": [
+      "1733",
+      "1758",
+      "2117",
+      "1723"
+    ],
+    "answer": 0,
+    "explanation": "y = 18(96) + 5 = 1733."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 123, FP = 29, FN = 52, and TN = 136, what is the exact Recall?",
+    "options": [
+      "70.29%",
+      "79.29%",
+      "56.29%",
+      "61.85%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=123, FP=29, FN=52, TN=136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4762.5",
+      "3810",
+      "6350",
+      "4310"
+    ],
+    "answer": 1,
+    "explanation": "70% of 12700 is 8890. 30% is 3810."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(26, 49) and point B(28, 43) in a 2D Euclidean coordinate space?",
+    "options": [
+      "6.32",
+      "7.91",
+      "10.47",
+      "4.07"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 6.32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(29, 23) and point B(12, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "19.75",
+      "26.15",
+      "22.00",
+      "27.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(39, 3) and point B(37, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "42.50",
+      "34.00",
+      "38.15",
+      "31.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 34.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(30, 21) and point B(46, 19) in a 2D Euclidean coordinate space?",
+    "options": [
+      "15.75",
+      "22.50",
+      "18.00",
+      "22.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (18), what is the predicted response variable y value for x = 34?",
+    "options": [
+      "213",
+      "188",
+      "324",
+      "152"
+    ],
+    "answer": 1,
+    "explanation": "y = 5(34) + 18 = 188."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-9), what is the predicted response variable y value for x = 78?",
+    "options": [
+      "640",
+      "633",
+      "927",
+      "615"
+    ],
+    "answer": 3,
+    "explanation": "y = 8(78) + -9 = 615."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (-7), what is the predicted response variable y value for x = 65?",
+    "options": [
+      "278",
+      "513",
+      "267",
+      "253"
+    ],
+    "answer": 3,
+    "explanation": "y = 4(65) + -7 = 253."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 20x + (8), what is the predicted response variable y value for x = 21?",
+    "options": [
+      "453",
+      "428",
+      "412",
+      "512"
+    ],
+    "answer": 1,
+    "explanation": "y = 20(21) + 8 = 428."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 278, FP = 9, FN = 76, and TN = 121, what is the exact Recall?",
+    "options": [
+      "69.11%",
+      "78.53%",
+      "87.53%",
+      "64.53%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=278, FP=9, FN=76, TN=121."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14000 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "11200",
+      "7000",
+      "10700",
+      "8400"
+    ],
+    "answer": 0,
+    "explanation": "80% of 14000 is 11200. 20% is 2800."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19400 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4850",
+      "4380",
+      "3880",
+      "9700"
+    ],
+    "answer": 2,
+    "explanation": "80% of 19400 is 15520. 20% is 3880."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "11920",
+      "11420",
+      "7450",
+      "8940"
+    ],
+    "answer": 0,
+    "explanation": "80% of 14900 is 11920. 20% is 2980."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (19), what is the predicted response variable y value for x = 23?",
+    "options": [
+      "134",
+      "96",
+      "226",
+      "159"
+    ],
+    "answer": 0,
+    "explanation": "y = 5(23) + 19 = 134."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(9, 47) and point B(33, 8) in a 2D Euclidean coordinate space?",
+    "options": [
+      "63.00",
+      "78.75",
+      "67.15",
+      "60.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 63.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 225, FP = 15, FN = 42, and TN = 201, what is the exact Specificity?",
+    "options": [
+      "79.06%",
+      "102.06%",
+      "81.89%",
+      "93.06%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=225, FP=15, FN=42, TN=201."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 108, FP = 38, FN = 75, and TN = 258, what is the exact Accuracy?",
+    "options": [
+      "76.41%",
+      "62.41%",
+      "67.24%",
+      "85.41%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=108, FP=38, FN=75, TN=258."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(9, 24) and point B(11, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "10.15",
+      "7.50",
+      "6.00",
+      "3.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15600 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "7800",
+      "10420",
+      "8190",
+      "10920"
+    ],
+    "answer": 3,
+    "explanation": "70% of 15600 is 10920. 30% is 4680."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 181, FP = 76, FN = 34, and TN = 369, what is the exact Recall?",
+    "options": [
+      "93.19%",
+      "84.19%",
+      "70.19%",
+      "74.08%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=181, FP=76, FN=34, TN=369."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(43, 34) and point B(48, 52) in a 2D Euclidean coordinate space?",
+    "options": [
+      "28.75",
+      "23.00",
+      "27.15",
+      "20.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 267, FP = 27, FN = 17, and TN = 569, what is the exact Accuracy?",
+    "options": [
+      "95.00%",
+      "81.00%",
+      "104.00%",
+      "83.60%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=267, FP=27, FN=17, TN=569."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (1), what is the predicted response variable y value for x = 87?",
+    "options": [
+      "2201",
+      "2174",
+      "2524",
+      "2176"
+    ],
+    "answer": 3,
+    "explanation": "y = 25(87) + 1 = 2176."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(45, 3) and point B(36, 30) in a 2D Euclidean coordinate space?",
+    "options": [
+      "36.00",
+      "40.15",
+      "45.00",
+      "33.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 36.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14600 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "7300",
+      "10450",
+      "10950",
+      "8212.5"
+    ],
+    "answer": 2,
+    "explanation": "75% of 14600 is 10950. 25% is 3650."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4700 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "3290",
+      "2350",
+      "2467.5",
+      "2790"
+    ],
+    "answer": 0,
+    "explanation": "70% of 4700 is 3290. 30% is 1410."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(10, 36) and point B(45, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "32.81",
+      "39.21",
+      "35.06",
+      "43.82"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 35.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(13, 39) and point B(7, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "25.00",
+      "31.25",
+      "22.75",
+      "29.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 25.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(20, 39) and point B(6, 23) in a 2D Euclidean coordinate space?",
+    "options": [
+      "25.41",
+      "19.01",
+      "21.26",
+      "26.58"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 21.26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(4, 34) and point B(36, 14) in a 2D Euclidean coordinate space?",
+    "options": [
+      "49.75",
+      "65.00",
+      "52.00",
+      "56.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 52.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(46, 41) and point B(10, 37) in a 2D Euclidean coordinate space?",
+    "options": [
+      "50.00",
+      "37.75",
+      "40.00",
+      "44.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 40.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "6800",
+      "3400",
+      "3900",
+      "4250"
+    ],
+    "answer": 1,
+    "explanation": "75% of 13600 is 10200. 25% is 3400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(11, 0) and point B(37, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "61.15",
+      "71.25",
+      "57.00",
+      "54.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 57.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11800 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2860",
+      "5900",
+      "2360",
+      "2950"
+    ],
+    "answer": 2,
+    "explanation": "80% of 11800 is 9440. 20% is 2360."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 257, FP = 32, FN = 63, and TN = 300, what is the exact Precision?",
+    "options": [
+      "97.93%",
+      "74.93%",
+      "78.26%",
+      "88.93%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=257, FP=32, FN=63, TN=300."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 123, FP = 35, FN = 49, and TN = 370, what is the exact Accuracy?",
+    "options": [
+      "94.44%",
+      "71.44%",
+      "75.19%",
+      "85.44%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=123, FP=35, FN=49, TN=370."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5600 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1680",
+      "2180",
+      "2100",
+      "2800"
+    ],
+    "answer": 0,
+    "explanation": "70% of 5600 is 3920. 30% is 1680."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(17, 19) and point B(41, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "28.17",
+      "24.02",
+      "21.77",
+      "30.03"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 24.02."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 290, FP = 76, FN = 58, and TN = 502, what is the exact Specificity?",
+    "options": [
+      "76.43%",
+      "72.85%",
+      "86.85%",
+      "95.85%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=290, FP=76, FN=58, TN=502."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16800 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8400",
+      "4700",
+      "5250",
+      "4200"
+    ],
+    "answer": 3,
+    "explanation": "75% of 16800 is 12600. 25% is 4200."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (4), what is the predicted response variable y value for x = 46?",
+    "options": [
+      "464",
+      "489",
+      "648",
+      "456"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(46) + 4 = 464."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "11060",
+      "8295",
+      "7900",
+      "10560"
+    ],
+    "answer": 0,
+    "explanation": "70% of 15800 is 11060. 30% is 4740."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (-14), what is the predicted response variable y value for x = 34?",
+    "options": [
+      "462",
+      "487",
+      "490",
+      "598"
+    ],
+    "answer": 0,
+    "explanation": "y = 14(34) + -14 = 462."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(34, 13) and point B(37, 37) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.94",
+      "24.19",
+      "28.34",
+      "30.23"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 24.19."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (9), what is the predicted response variable y value for x = 7?",
+    "options": [
+      "110",
+      "156",
+      "153",
+      "128"
+    ],
+    "answer": 3,
+    "explanation": "y = 17(7) + 9 = 128."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (-15), what is the predicted response variable y value for x = 70?",
+    "options": [
+      "545",
+      "265",
+      "290",
+      "295"
+    ],
+    "answer": 1,
+    "explanation": "y = 4(70) + -15 = 265."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 261, FP = 43, FN = 19, and TN = 282, what is the exact Specificity?",
+    "options": [
+      "86.77%",
+      "72.77%",
+      "95.77%",
+      "76.36%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=261, FP=43, FN=19, TN=282."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 23x + (-8), what is the predicted response variable y value for x = 98?",
+    "options": [
+      "2246",
+      "2271",
+      "2638",
+      "2262"
+    ],
+    "answer": 0,
+    "explanation": "y = 23(98) + -8 = 2246."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4125",
+      "3300",
+      "6600",
+      "3800"
+    ],
+    "answer": 1,
+    "explanation": "75% of 13200 is 9900. 25% is 3300."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (8), what is the predicted response variable y value for x = 78?",
+    "options": [
+      "928",
+      "944",
+      "969",
+      "1256"
+    ],
+    "answer": 1,
+    "explanation": "y = 12(78) + 8 = 944."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 243, FP = 52, FN = 81, and TN = 478, what is the exact Accuracy?",
+    "options": [
+      "74.30%",
+      "93.43%",
+      "70.43%",
+      "84.43%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=243, FP=52, FN=81, TN=478."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (-13), what is the predicted response variable y value for x = 35?",
+    "options": [
+      "83",
+      "57",
+      "197",
+      "82"
+    ],
+    "answer": 1,
+    "explanation": "y = 2(35) + -13 = 57."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "7800",
+      "3900",
+      "4875",
+      "4400"
+    ],
+    "answer": 1,
+    "explanation": "75% of 15600 is 11700. 25% is 3900."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(38, 43) and point B(12, 13) in a 2D Euclidean coordinate space?",
+    "options": [
+      "53.75",
+      "70.00",
+      "56.00",
+      "60.15"
+    ],
+    "answer": 2,
     "explanation": "Manhattan distance formula resolves to 56.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "Data Splitting",
+    "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3400 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "question": "For a linear regression model parameterized as y = 12x + (-10), what is the predicted response variable y value for x = 81?",
     "options": [
-      "2470",
-      "1700",
-      "2176",
-      "2720"
+      "987",
+      "962",
+      "1286",
+      "982"
     ],
-    "answer": 3,
-    "explanation": "80% of 3400 is 2720. 20% is 680."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(4, 21) and point B(18, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.95",
-      "15.15",
-      "20.25",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 17.00."
+    "answer": 1,
+    "explanation": "y = 12(81) + -10 = 962."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 108, FP = 11, FN = 16, and TN = 157, what is the exact Precision?",
+    "question": "Given a classification report with TP = 172, FP = 34, FN = 17, and TN = 275, what is the exact Precision?",
     "options": [
-      "98.76%",
-      "90.76%",
-      "78.76%",
-      "77.14%"
+      "69.50%",
+      "73.48%",
+      "92.50%",
+      "83.50%"
     ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=108, FP=11, FN=16, TN=157."
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=172, FP=34, FN=17, TN=275."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2800 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 4700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
     "options": [
-      "1400",
-      "840",
-      "810",
-      "560"
+      "1762.5",
+      "2350",
+      "1910",
+      "1410"
     ],
     "answer": 3,
-    "explanation": "80% of 2800 is 2240. 20% is 560."
+    "explanation": "70% of 4700 is 3290. 30% is 1410."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (-13), what is the predicted response variable y value for x = 81?",
+    "options": [
+      "1471",
+      "1769",
+      "1445",
+      "1470"
+    ],
+    "answer": 2,
+    "explanation": "y = 18(81) + -13 = 1445."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11200 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "8400",
+      "5600",
+      "6300",
+      "7900"
+    ],
+    "answer": 0,
+    "explanation": "75% of 11200 is 8400. 25% is 2800."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 26x + (1), what is the predicted response variable y value for x = 60?",
+    "options": [
+      "1559",
+      "1586",
+      "1801",
+      "1561"
+    ],
+    "answer": 3,
+    "explanation": "y = 26(60) + 1 = 1561."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 257, FP = 67, FN = 74, and TN = 150, what is the exact Accuracy?",
+    "options": [
+      "83.27%",
+      "60.27%",
+      "65.36%",
+      "74.27%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=257, FP=67, FN=74, TN=150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 20x + (-1), what is the predicted response variable y value for x = 90?",
+    "options": [
+      "1801",
+      "1824",
+      "2159",
+      "1799"
+    ],
+    "answer": 3,
+    "explanation": "y = 20(90) + -1 = 1799."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 335, FP = 9, FN = 11, and TN = 149, what is the exact Specificity?",
+    "options": [
+      "80.30%",
+      "94.30%",
+      "82.99%",
+      "103.30%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=335, FP=9, FN=11, TN=149."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(31, 11) and point B(14, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "41.27",
+      "34.87",
+      "46.40",
+      "37.12"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 37.12."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (5), what is the predicted response variable y value for x = 10?",
+    "options": [
+      "135",
+      "120",
+      "85",
+      "95"
+    ],
+    "answer": 3,
+    "explanation": "y = 9(10) + 5 = 95."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (8), what is the predicted response variable y value for x = 59?",
+    "options": [
+      "464",
+      "480",
+      "716",
+      "505"
+    ],
+    "answer": 1,
+    "explanation": "y = 8(59) + 8 = 480."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(15, 27) and point B(54, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "58.75",
+      "44.75",
+      "47.00",
+      "51.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 47.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 226, FP = 10, FN = 71, and TN = 562, what is the exact Specificity?",
+    "options": [
+      "107.25%",
+      "84.25%",
+      "98.25%",
+      "86.46%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=226, FP=10, FN=71, TN=562."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (-4), what is the predicted response variable y value for x = 96?",
+    "options": [
+      "2108",
+      "1749",
+      "1732",
+      "1724"
+    ],
+    "answer": 3,
+    "explanation": "y = 18(96) + -4 = 1724."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 168, FP = 25, FN = 66, and TN = 519, what is the exact Precision?",
+    "options": [
+      "87.05%",
+      "73.05%",
+      "96.05%",
+      "76.60%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=168, FP=25, FN=66, TN=519."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 268, FP = 34, FN = 5, and TN = 534, what is the exact Recall?",
+    "options": [
+      "84.17%",
+      "107.17%",
+      "98.17%",
+      "86.39%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=268, FP=34, FN=5, TN=534."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7000 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1400",
+      "1750",
+      "1900",
+      "3500"
+    ],
+    "answer": 0,
+    "explanation": "80% of 7000 is 5600. 20% is 1400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4400 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2200",
+      "1100",
+      "880",
+      "1380"
+    ],
+    "answer": 2,
+    "explanation": "80% of 4400 is 3520. 20% is 880."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9900 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "4950",
+      "5197.5",
+      "6930",
+      "6430"
+    ],
+    "answer": 2,
+    "explanation": "70% of 9900 is 6930. 30% is 2970."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "6000",
+      "4800",
+      "5300",
+      "9600"
+    ],
+    "answer": 1,
+    "explanation": "75% of 19200 is 14400. 25% is 4800."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(8, 12) and point B(50, 23) in a 2D Euclidean coordinate space?",
+    "options": [
+      "57.15",
+      "53.00",
+      "66.25",
+      "50.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 53.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(44, 8) and point B(44, 26) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.50",
+      "15.75",
+      "22.15",
+      "18.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 175, FP = 5, FN = 46, and TN = 261, what is the exact Precision?",
+    "options": [
+      "85.56%",
+      "97.22%",
+      "83.22%",
+      "106.22%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=175, FP=5, FN=46, TN=261."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 132, FP = 65, FN = 62, and TN = 330, what is the exact Accuracy?",
+    "options": [
+      "69.03%",
+      "87.44%",
+      "64.44%",
+      "78.44%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=132, FP=65, FN=62, TN=330."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2362.5",
+      "2390",
+      "3150",
+      "1890"
+    ],
+    "answer": 3,
+    "explanation": "70% of 6300 is 4410. 30% is 1890."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 6x + (-10), what is the predicted response variable y value for x = 67?",
+    "options": [
+      "412",
+      "417",
+      "392",
+      "660"
+    ],
+    "answer": 2,
+    "explanation": "y = 6(67) + -10 = 392."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-15), what is the predicted response variable y value for x = 90?",
+    "options": [
+      "730",
+      "705",
+      "1065",
+      "735"
+    ],
+    "answer": 1,
+    "explanation": "y = 8(90) + -15 = 705."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (14), what is the predicted response variable y value for x = 61?",
+    "options": [
+      "962",
+      "1015",
+      "1234",
+      "990"
+    ],
+    "answer": 3,
+    "explanation": "y = 16(61) + 14 = 990."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "6850",
+      "3425",
+      "3925",
+      "4281.25"
+    ],
+    "answer": 1,
+    "explanation": "75% of 13700 is 10275. 25% is 3425."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5150",
+      "3862.5",
+      "3590",
+      "3090"
+    ],
+    "answer": 3,
+    "explanation": "70% of 10300 is 7210. 30% is 3090."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6300 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "4410",
+      "3910",
+      "3307.5",
+      "3150"
+    ],
+    "answer": 0,
+    "explanation": "70% of 6300 is 4410. 30% is 1890."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(34, 30) and point B(22, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "15.75",
+      "22.50",
+      "18.00",
+      "22.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "750",
+      "843.75",
+      "1125",
+      "625"
+    ],
+    "answer": 2,
+    "explanation": "75% of 1500 is 1125. 25% is 375."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(24, 12) and point B(42, 54) in a 2D Euclidean coordinate space?",
+    "options": [
+      "57.12",
+      "45.69",
+      "49.84",
+      "43.44"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 45.69."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 199, FP = 12, FN = 50, and TN = 323, what is the exact Precision?",
+    "options": [
+      "83.00%",
+      "80.31%",
+      "103.31%",
+      "94.31%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=199, FP=12, FN=50, TN=323."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(35, 16) and point B(43, 16) in a 2D Euclidean coordinate space?",
+    "options": [
+      "12.15",
+      "5.75",
+      "8.00",
+      "10.00"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (-19), what is the predicted response variable y value for x = 10?",
+    "options": [
+      "199",
+      "201",
+      "161",
+      "186"
+    ],
+    "answer": 2,
+    "explanation": "y = 18(10) + -19 = 161."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 124, FP = 65, FN = 53, and TN = 120, what is the exact Specificity?",
+    "options": [
+      "57.08%",
+      "50.86%",
+      "73.86%",
+      "64.86%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=124, FP=65, FN=53, TN=120."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 325, FP = 36, FN = 34, and TN = 429, what is the exact Precision?",
+    "options": [
+      "99.03%",
+      "90.03%",
+      "79.22%",
+      "76.03%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=325, FP=36, FN=34, TN=429."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "6487.5",
+      "8650",
+      "5190",
+      "5690"
+    ],
+    "answer": 2,
+    "explanation": "70% of 17300 is 12110. 30% is 5190."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (14), what is the predicted response variable y value for x = 48?",
+    "options": [
+      "686",
+      "878",
+      "658",
+      "711"
+    ],
+    "answer": 0,
+    "explanation": "y = 14(48) + 14 = 686."
   },
   {
     "subject": "AI / ML",
@@ -8434,2250 +4360,528 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "A machine learning pipeline is partitioning a dataset of 1300 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
     "options": [
-      "832",
+      "540",
       "650",
-      "1040",
-      "790"
+      "780",
+      "1040"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "80% of 1300 is 1040. 20% is 260."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 23) and point B(11, 19) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 61, FP = 8, FN = 27, and TN = 525, what is the exact Recall?",
     "options": [
-      "13.25",
-      "13.50",
-      "8.15",
-      "10.00"
+      "55.32%",
+      "61.00%",
+      "78.32%",
+      "69.32%"
     ],
     "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(29, 21) and point B(30, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.25",
-      "20.25",
-      "15.00",
-      "13.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(4, 14) and point B(25, 28) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.49",
-      "23.39",
-      "34.07",
-      "25.24"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 25.24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "725",
-      "1087.5",
-      "975",
-      "1450"
-    ],
-    "answer": 0,
-    "explanation": "75% of 2900 is 2175. 25% is 725."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1900 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "570",
-      "820",
-      "855",
-      "950"
-    ],
-    "answer": 0,
-    "explanation": "70% of 1900 is 1330. 30% is 570."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 12) and point B(8, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.49",
-      "25.24",
-      "34.07",
-      "23.39"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 25.24."
+    "explanation": "Recall is calculated by standard formula using counts: TP=61, FP=8, FN=27, TN=525."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-8), what is the predicted response variable y value for x = 11?",
+    "question": "For a linear regression model parameterized as y = 10x + (-7), what is the predicted response variable y value for x = 34?",
     "options": [
-      "140",
-      "124",
-      "157",
-      "139"
+      "347",
+      "333",
+      "358",
+      "469"
     ],
     "answer": 1,
-    "explanation": "y = 12(11) + -8 = 124."
+    "explanation": "y = 10(34) + -7 = 333."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (15), what is the predicted response variable y value for x = 78?",
+    "options": [
+      "531",
+      "586",
+      "561",
+      "873"
+    ],
+    "answer": 2,
+    "explanation": "y = 7(78) + 15 = 561."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 129, FP = 10, FN = 13, and TN = 288, what is the exact Specificity?",
+    "question": "Given a classification report with TP = 138, FP = 51, FN = 51, and TN = 476, what is the exact Recall?",
     "options": [
-      "84.64%",
-      "96.64%",
-      "82.15%",
-      "104.64%"
+      "59.02%",
+      "64.25%",
+      "73.02%",
+      "82.02%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=138, FP=51, FN=51, TN=476."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(47, 17) and point B(31, 46) in a 2D Euclidean coordinate space?",
+    "options": [
+      "41.40",
+      "33.12",
+      "30.87",
+      "37.27"
     ],
     "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=129, FP=10, FN=13, TN=288."
+    "explanation": "Euclidean distance formula resolves to 33.12."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(13, 40) and point B(49, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "36.88",
+      "34.63",
+      "41.03",
+      "46.10"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 36.88."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (7), what is the predicted response variable y value for x = 28?",
+    "question": "For a linear regression model parameterized as y = 11x + (15), what is the predicted response variable y value for x = 25?",
     "options": [
-      "218",
-      "203",
-      "287",
-      "189"
+      "260",
+      "390",
+      "315",
+      "290"
     ],
-    "answer": 1,
-    "explanation": "y = 7(28) + 7 = 203."
+    "answer": 3,
+    "explanation": "y = 11(25) + 15 = 290."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7100 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "5180",
+      "4260",
+      "5680",
+      "3550"
+    ],
+    "answer": 2,
+    "explanation": "80% of 7100 is 5680. 20% is 1420."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(4, 43) and point B(15, 6) in a 2D Euclidean coordinate space?",
+    "options": [
+      "48.25",
+      "42.75",
+      "38.60",
+      "36.35"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 38.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (-16), what is the predicted response variable y value for x = 78?",
+    "options": [
+      "842",
+      "874",
+      "867",
+      "1154"
+    ],
+    "answer": 0,
+    "explanation": "y = 11(78) + -16 = 842."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-5), what is the predicted response variable y value for x = 62?",
+    "options": [
+      "1607",
+      "1369",
+      "1384",
+      "1359"
+    ],
+    "answer": 3,
+    "explanation": "y = 22(62) + -5 = 1359."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 36, FN = 51, and TN = 282, what is the exact Recall?",
+    "question": "Given a classification report with TP = 306, FP = 40, FN = 69, and TN = 176, what is the exact Specificity?",
     "options": [
-      "74.23%",
-      "54.23%",
-      "56.29%",
-      "66.23%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=100, FP=36, FN=51, TN=282."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 135, FP = 35, FN = 35, and TN = 310, what is the exact Recall?",
-    "options": [
-      "67.50%",
-      "67.41%",
-      "87.41%",
-      "79.41%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=135, FP=35, FN=35, TN=310."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3200 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1600",
-      "1990",
-      "2240",
-      "1792"
-    ],
-    "answer": 2,
-    "explanation": "70% of 3200 is 2240. 30% is 960."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(23, 27) and point B(21, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.25",
-      "5.15",
-      "7.00",
-      "9.45"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(13, 8) and point B(10, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "4.00",
-      "2.15",
-      "5.40",
-      "7.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 139, FP = 45, FN = 27, and TN = 130, what is the exact Precision?",
-    "options": [
-      "75.54%",
-      "64.21%",
-      "83.54%",
-      "63.54%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=139, FP=45, FN=27, TN=130."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "860",
-      "2150",
-      "1110",
-      "1290"
-    ],
-    "answer": 0,
-    "explanation": "80% of 4300 is 3440. 20% is 860."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(20, 6) and point B(29, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.64",
-      "23.62",
-      "20.74",
-      "17.49"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.49."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5900 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1770",
-      "1180",
-      "2950",
-      "1430"
+      "67.48%",
+      "81.48%",
+      "90.48%",
+      "71.70%"
     ],
     "answer": 1,
-    "explanation": "80% of 5900 is 4720. 20% is 1180."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(18, 19) and point B(9, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "9.00",
-      "12.25",
-      "12.15",
-      "7.15"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5700 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "4310",
-      "2850",
-      "3648",
-      "4560"
-    ],
-    "answer": 3,
-    "explanation": "80% of 5700 is 4560. 20% is 1140."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 9) and point B(9, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.30",
-      "23.47",
-      "20.22",
-      "18.37"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 20.22."
+    "explanation": "Specificity is calculated by standard formula using counts: TP=306, FP=40, FN=69, TN=176."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-10), what is the predicted response variable y value for x = 3?",
+    "question": "For a linear regression model parameterized as y = 26x + (14), what is the predicted response variable y value for x = 29?",
     "options": [
-      "26",
-      "11",
-      "20",
-      "31"
-    ],
-    "answer": 1,
-    "explanation": "y = 7(3) + -10 = 11."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2100",
-      "1650",
-      "1400",
-      "2800"
-    ],
-    "answer": 2,
-    "explanation": "75% of 5600 is 4200. 25% is 1400."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (6), what is the predicted response variable y value for x = 21?",
-    "options": [
-      "279",
-      "294",
-      "342",
-      "267"
-    ],
-    "answer": 0,
-    "explanation": "y = 13(21) + 6 = 279."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-9), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "141",
-      "123",
-      "138",
-      "189"
-    ],
-    "answer": 1,
-    "explanation": "y = 6(22) + -9 = 123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-10), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "494",
-      "406",
-      "386",
-      "401"
-    ],
-    "answer": 2,
-    "explanation": "y = 11(36) + -10 = 386."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(13, 4) and point B(5, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "12.00",
-      "10.15",
-      "16.20",
-      "15.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (8), what is the predicted response variable y value for x = 18?",
-    "options": [
-      "152",
-      "136",
-      "167",
-      "206"
-    ],
-    "answer": 0,
-    "explanation": "y = 8(18) + 8 = 152."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1400 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "896",
-      "870",
-      "1120",
-      "700"
-    ],
-    "answer": 2,
-    "explanation": "80% of 1400 is 1120. 20% is 280."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2900 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1120",
-      "1305",
-      "1450",
-      "870"
-    ],
-    "answer": 3,
-    "explanation": "70% of 2900 is 2030. 30% is 870."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "500",
-      "450",
-      "700",
-      "560"
-    ],
-    "answer": 2,
-    "explanation": "70% of 1000 is 700. 30% is 300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(16, 29) and point B(10, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.25",
-      "9.45",
-      "5.15",
-      "7.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1800",
-      "2000",
-      "1450",
-      "1200"
-    ],
-    "answer": 3,
-    "explanation": "70% of 4000 is 2800. 30% is 1200."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 158, FP = 33, FN = 52, and TN = 319, what is the exact Precision?",
-    "options": [
-      "82.72%",
-      "70.72%",
-      "70.31%",
-      "90.72%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=158, FP=33, FN=52, TN=319."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (4), what is the predicted response variable y value for x = 4?",
-    "options": [
-      "32",
-      "35",
-      "12",
-      "20"
-    ],
-    "answer": 3,
-    "explanation": "y = 4(4) + 4 = 20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (9), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "249",
-      "192",
-      "177",
-      "159"
-    ],
-    "answer": 2,
-    "explanation": "y = 7(24) + 9 = 177."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 125, FP = 18, FN = 42, and TN = 236, what is the exact Specificity?",
-    "options": [
-      "92.91%",
-      "80.91%",
-      "100.91%",
-      "78.98%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=125, FP=18, FN=42, TN=236."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-5), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "105",
-      "85",
-      "75",
-      "90"
-    ],
-    "answer": 2,
-    "explanation": "y = 8(10) + -5 = 75."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2500",
-      "3500",
-      "3250",
-      "2800"
-    ],
-    "answer": 1,
-    "explanation": "70% of 5000 is 3500. 30% is 1500."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-2), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "20",
-      "31",
-      "22",
-      "16"
-    ],
-    "answer": 3,
-    "explanation": "y = 9(2) + -2 = 16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (2), what is the predicted response variable y value for x = 17?",
-    "options": [
-      "170",
-      "151",
-      "206",
-      "155"
-    ],
-    "answer": 3,
-    "explanation": "y = 9(17) + 2 = 155."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(7, 29) and point B(19, 27) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.42",
-      "12.17",
-      "16.42",
-      "10.32"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 12.17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(6, 2) and point B(15, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.00",
-      "21.15",
-      "31.05",
-      "26.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2400 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1080",
-      "720",
-      "970",
-      "1200"
-    ],
-    "answer": 1,
-    "explanation": "70% of 2400 is 1680. 30% is 720."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-6), what is the predicted response variable y value for x = 25?",
-    "options": [
-      "319",
-      "331",
-      "394",
-      "334"
-    ],
-    "answer": 0,
-    "explanation": "y = 13(25) + -6 = 319."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(11, 4) and point B(26, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.60",
-      "21.85",
-      "16.75",
-      "25.11"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(11, 28) and point B(17, 34) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.49",
-      "6.64",
-      "11.74",
-      "11.46"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.49."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (1), what is the predicted response variable y value for x = 8?",
-    "options": [
-      "63",
-      "89",
-      "80",
-      "65"
-    ],
-    "answer": 3,
-    "explanation": "y = 8(8) + 1 = 65."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(2, 5) and point B(26, 18) in a 2D Euclidean coordinate space?",
-    "options": [
-      "37.00",
-      "49.95",
-      "40.25",
-      "35.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 37.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (3), what is the predicted response variable y value for x = 18?",
-    "options": [
-      "213",
-      "234",
-      "219",
-      "273"
-    ],
-    "answer": 2,
-    "explanation": "y = 12(18) + 3 = 219."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-8), what is the predicted response variable y value for x = 38?",
-    "options": [
-      "121",
-      "106",
-      "122",
-      "220"
-    ],
-    "answer": 1,
-    "explanation": "y = 3(38) + -8 = 106."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (2), what is the predicted response variable y value for x = 12?",
-    "options": [
-      "158",
-      "122",
-      "118",
-      "137"
-    ],
-    "answer": 1,
-    "explanation": "y = 10(12) + 2 = 122."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 207, FP = 34, FN = 52, and TN = 242, what is the exact Accuracy?",
-    "options": [
-      "83.93%",
-      "91.93%",
-      "71.93%",
-      "71.34%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=207, FP=34, FN=52, TN=242."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(0, 3) and point B(25, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.98",
-      "37.44",
-      "27.73",
-      "25.88"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 27.73."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(13, 20) and point B(32, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.15",
-      "31.00",
-      "41.85",
-      "34.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 31.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(19, 18) and point B(17, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.54",
-      "4.47",
-      "6.32",
-      "9.57"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 6.32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "3750",
-      "2500",
-      "3500",
-      "3000"
-    ],
-    "answer": 0,
-    "explanation": "75% of 5000 is 3750. 25% is 1250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(15, 12) and point B(21, 13) in a 2D Euclidean coordinate space?",
-    "options": [
-      "9.33",
-      "8.21",
-      "6.08",
-      "4.23"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (9), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "143",
-      "218",
-      "176",
-      "161"
-    ],
-    "answer": 3,
-    "explanation": "y = 8(19) + 9 = 161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(12, 21) and point B(16, 27) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.25",
-      "8.15",
-      "10.00",
-      "13.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (6), what is the predicted response variable y value for x = 34?",
-    "options": [
-      "232",
-      "346",
-      "244",
-      "259"
-    ],
-    "answer": 2,
-    "explanation": "y = 7(34) + 6 = 244."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(2, 23) and point B(23, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.17",
-      "36.47",
-      "30.27",
-      "27.02"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 27.02."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 18) and point B(17, 18) in a 2D Euclidean coordinate space?",
-    "options": [
-      "10.25",
-      "9.45",
-      "7.00",
-      "5.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(21, 12) and point B(16, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.68",
-      "21.93",
-      "25.22",
-      "16.83"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.68."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(14, 12) and point B(32, 18) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.12",
-      "25.61",
-      "18.97",
-      "22.22"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 18.97."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 236, FP = 20, FN = 22, and TN = 149, what is the exact Specificity?",
-    "options": [
-      "96.17%",
-      "88.17%",
-      "76.17%",
-      "74.94%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=236, FP=20, FN=22, TN=149."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(7, 8) and point B(17, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.40",
-      "23.26",
-      "26.51",
-      "21.41"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 23.26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(9, 26) and point B(21, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "32.25",
-      "29.00",
-      "27.15",
-      "39.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 29.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(12, 13) and point B(24, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.90",
-      "17.25",
-      "14.00",
-      "12.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 125, FP = 43, FN = 43, and TN = 156, what is the exact Specificity?",
-    "options": [
-      "86.39%",
-      "66.63%",
-      "66.39%",
-      "78.39%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=125, FP=43, FN=43, TN=156."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 179, FP = 13, FN = 20, and TN = 209, what is the exact Specificity?",
-    "options": [
-      "80.02%",
-      "94.14%",
-      "102.14%",
-      "82.14%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=179, FP=13, FN=20, TN=209."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (8), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "53",
-      "68",
-      "38",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "y = 3(10) + 8 = 38."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1100",
-      "1760",
-      "1408",
-      "1510"
-    ],
-    "answer": 1,
-    "explanation": "80% of 2200 is 1760. 20% is 440."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "1025",
-      "850",
-      "1275",
-      "1020"
-    ],
-    "answer": 2,
-    "explanation": "75% of 1700 is 1275. 25% is 425."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 5) and point B(19, 18) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.00",
-      "34.25",
-      "29.15",
-      "41.85"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 31.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(25, 3) and point B(20, 6) in a 2D Euclidean coordinate space?",
-    "options": [
-      "5.83",
-      "3.98",
-      "9.08",
-      "7.87"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 5.83."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-10), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "180",
-      "123",
-      "138",
-      "143"
-    ],
-    "answer": 1,
-    "explanation": "y = 7(19) + -10 = 123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (5), what is the predicted response variable y value for x = 26?",
-    "options": [
-      "213",
-      "135",
-      "150",
-      "125"
-    ],
-    "answer": 1,
-    "explanation": "y = 5(26) + 5 = 135."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 107, FP = 47, FN = 12, and TN = 247, what is the exact Specificity?",
-    "options": [
-      "92.01%",
-      "72.01%",
-      "71.41%",
-      "84.01%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=107, FP=47, FN=12, TN=247."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 21, FN = 53, and TN = 194, what is the exact Recall?",
-    "options": [
-      "60.52%",
-      "79.20%",
-      "59.20%",
-      "71.20%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=131, FP=21, FN=53, TN=194."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-7), what is the predicted response variable y value for x = 13?",
-    "options": [
-      "97",
-      "136",
-      "111",
-      "112"
-    ],
-    "answer": 0,
-    "explanation": "y = 8(13) + -7 = 97."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(16, 19) and point B(8, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "22.25",
-      "25.65",
-      "17.15",
-      "19.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (4), what is the predicted response variable y value for x = 8?",
-    "options": [
-      "52",
-      "76",
-      "67",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "y = 6(8) + 4 = 52."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1110",
+      "884",
       "740",
-      "990",
-      "1850"
-    ],
-    "answer": 1,
-    "explanation": "80% of 3700 is 2960. 20% is 740."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 16) and point B(8, 31) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.96",
-      "19.06",
-      "15.81",
-      "21.35"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 15.81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 135, FP = 49, FN = 30, and TN = 222, what is the exact Specificity?",
-    "options": [
-      "89.92%",
-      "81.92%",
-      "69.92%",
-      "69.63%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=135, FP=49, FN=30, TN=222."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 228, FP = 25, FN = 36, and TN = 316, what is the exact Precision?",
-    "options": [
-      "90.12%",
-      "98.12%",
-      "78.12%",
-      "76.60%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=228, FP=25, FN=36, TN=316."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-9), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "16",
-      "1",
-      "13",
-      "-2"
+      "793",
+      "768"
     ],
     "answer": 3,
-    "explanation": "y = 7(1) + -9 = -2."
+    "explanation": "y = 26(29) + 14 = 768."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (3), what is the predicted response variable y value for x = 1?",
+    "question": "For a linear regression model parameterized as y = 8x + (5), what is the predicted response variable y value for x = 5?",
     "options": [
-      "3",
-      "9",
-      "24",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "y = 6(1) + 3 = 9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(23, 16) and point B(19, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.71",
-      "23.58",
-      "17.46",
-      "15.61"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.46."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(6, 13) and point B(33, 23) in a 2D Euclidean coordinate space?",
-    "options": [
-      "26.94",
-      "32.04",
-      "28.79",
-      "38.87"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 28.79."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (4), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "112",
-      "127",
-      "220",
-      "104"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(36) + 4 = 112."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 216, FP = 20, FN = 24, and TN = 255, what is the exact Recall?",
-    "options": [
-      "78.00%",
-      "76.50%",
-      "98.00%",
-      "90.00%"
+      "70",
+      "65",
+      "35",
+      "45"
     ],
     "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=216, FP=20, FN=24, TN=255."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 231, FP = 47, FN = 42, and TN = 246, what is the exact Specificity?",
-    "options": [
-      "91.96%",
-      "83.96%",
-      "71.37%",
-      "71.96%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=231, FP=47, FN=42, TN=246."
+    "explanation": "y = 8(5) + 5 = 45."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 12700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
     "options": [
-      "1650",
-      "2750",
-      "1350",
-      "1100"
+      "3175",
+      "3968.75",
+      "3675",
+      "6350"
     ],
-    "answer": 3,
-    "explanation": "80% of 5500 is 4400. 20% is 1100."
+    "answer": 0,
+    "explanation": "75% of 12700 is 9525. 25% is 3175."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 29) and point B(9, 16) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 191, FP = 25, FN = 32, and TN = 245, what is the exact Precision?",
     "options": [
-      "28.35",
-      "19.15",
-      "24.25",
-      "21.00"
+      "88.43%",
+      "77.81%",
+      "74.43%",
+      "97.43%"
     ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 21.00."
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=191, FP=25, FN=32, TN=245."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 303, FP = 46, FN = 7, and TN = 372, what is the exact Precision?",
+    "options": [
+      "72.82%",
+      "76.40%",
+      "86.82%",
+      "95.82%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=303, FP=46, FN=7, TN=372."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-5), what is the predicted response variable y value for x = 39?",
+    "question": "For a linear regression model parameterized as y = 5x + (-1), what is the predicted response variable y value for x = 29?",
     "options": [
-      "517",
-      "512",
-      "502",
-      "619"
-    ],
-    "answer": 2,
-    "explanation": "y = 13(39) + -5 = 502."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 216, FP = 35, FN = 43, and TN = 157, what is the exact Precision?",
-    "options": [
-      "94.06%",
-      "73.15%",
-      "86.06%",
-      "74.06%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=216, FP=35, FN=43, TN=157."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(23, 13) and point B(10, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "21.40",
-      "19.55",
-      "28.89",
-      "24.65"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 21.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 230, FP = 29, FN = 21, and TN = 102, what is the exact Precision?",
-    "options": [
-      "96.80%",
-      "88.80%",
-      "76.80%",
-      "75.48%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=230, FP=29, FN=21, TN=102."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 233, FP = 20, FN = 28, and TN = 167, what is the exact Precision?",
-    "options": [
-      "92.09%",
-      "80.09%",
-      "100.09%",
-      "78.28%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=233, FP=20, FN=28, TN=167."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(11, 8) and point B(15, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "6.75",
-      "8.25",
-      "3.15",
-      "5.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "2240",
-      "2550",
-      "2800",
-      "2000"
-    ],
-    "answer": 2,
-    "explanation": "70% of 4000 is 2800. 30% is 1200."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (7), what is the predicted response variable y value for x = 7?",
-    "options": [
-      "92",
-      "77",
-      "63",
-      "98"
-    ],
-    "answer": 1,
-    "explanation": "y = 10(7) + 7 = 77."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(2, 13) and point B(30, 17) in a 2D Euclidean coordinate space?",
-    "options": [
-      "35.25",
-      "43.20",
-      "30.15",
-      "32.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 32.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4000 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "3200",
-      "2000",
-      "2560",
-      "2950"
-    ],
-    "answer": 0,
-    "explanation": "80% of 4000 is 3200. 20% is 800."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 93, FP = 20, FN = 25, and TN = 332, what is the exact Specificity?",
-    "options": [
-      "82.32%",
-      "102.32%",
-      "80.17%",
-      "94.32%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=93, FP=20, FN=25, TN=332."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 178, FP = 16, FN = 46, and TN = 392, what is the exact Recall?",
-    "options": [
-      "79.46%",
-      "87.46%",
-      "67.46%",
-      "67.54%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=178, FP=16, FN=46, TN=392."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "3360",
-      "3110",
-      "2400",
-      "2688"
-    ],
-    "answer": 0,
-    "explanation": "70% of 4800 is 3360. 30% is 1440."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(19, 24) and point B(32, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.18",
-      "13.93",
-      "12.08",
-      "18.80"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 13.93."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 15) and point B(23, 32) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.00",
-      "26.25",
-      "31.05",
-      "21.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-2), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "173",
+      "260",
       "169",
-      "226",
-      "184"
-    ],
-    "answer": 1,
-    "explanation": "y = 9(19) + -2 = 169."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 15) and point B(33, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.60",
-      "18.36",
-      "11.75",
-      "16.85"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 13.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (3), what is the predicted response variable y value for x = 39?",
-    "options": [
-      "486",
-      "588",
-      "465",
-      "471"
+      "146",
+      "144"
     ],
     "answer": 3,
-    "explanation": "y = 12(39) + 3 = 471."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 182, FP = 29, FN = 34, and TN = 124, what is the exact Accuracy?",
-    "options": [
-      "82.93%",
-      "90.93%",
-      "70.49%",
-      "70.93%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=182, FP=29, FN=34, TN=124."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 12) and point B(5, 23) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.00",
-      "20.25",
-      "15.15",
-      "22.95"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 120, FP = 34, FN = 46, and TN = 270, what is the exact Recall?",
-    "options": [
-      "80.29%",
-      "60.29%",
-      "61.45%",
-      "72.29%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=120, FP=34, FN=46, TN=270."
+    "explanation": "y = 5(29) + -1 = 144."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (-2), what is the predicted response variable y value for x = 30?",
+    "question": "For a linear regression model parameterized as y = 8x + (-10), what is the predicted response variable y value for x = 20?",
     "options": [
-      "388",
-      "302",
-      "313",
-      "298"
-    ],
-    "answer": 3,
-    "explanation": "y = 10(30) + -2 = 298."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 242, FP = 33, FN = 31, and TN = 122, what is the exact Precision?",
-    "options": [
-      "76.00%",
-      "74.80%",
-      "88.00%",
-      "96.00%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=242, FP=33, FN=31, TN=122."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 231, FP = 25, FN = 30, and TN = 374, what is the exact Specificity?",
-    "options": [
-      "79.67%",
-      "81.73%",
-      "101.73%",
-      "93.73%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=231, FP=25, FN=30, TN=374."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 87, FP = 30, FN = 15, and TN = 239, what is the exact Precision?",
-    "options": [
-      "74.36%",
-      "82.36%",
-      "63.21%",
-      "62.36%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=87, FP=30, FN=15, TN=239."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-4), what is the predicted response variable y value for x = 11?",
-    "options": [
-      "128",
-      "161",
-      "143",
-      "136"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(11) + -4 = 128."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (6), what is the predicted response variable y value for x = 29?",
-    "options": [
-      "267",
-      "354",
-      "255",
-      "282"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(29) + 6 = 267."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 233, FP = 22, FN = 33, and TN = 357, what is the exact Accuracy?",
-    "options": [
-      "91.47%",
-      "77.75%",
-      "99.47%",
-      "79.47%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=233, FP=22, FN=33, TN=357."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(5, 13) and point B(34, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "39.52",
-      "32.52",
-      "29.27",
-      "27.42"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 29.27."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(4, 6) and point B(11, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "11.15",
-      "16.25",
-      "13.00",
-      "17.55"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(13, 24) and point B(8, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "19.00",
-      "25.65",
-      "22.25",
-      "17.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-7), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "249",
-      "153",
-      "168",
-      "167"
-    ],
-    "answer": 1,
-    "explanation": "y = 5(32) + -7 = 153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
-    "options": [
-      "1260",
-      "1575",
-      "1050",
-      "1325"
-    ],
-    "answer": 1,
-    "explanation": "75% of 2100 is 1575. 25% is 525."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(18, 26) and point B(30, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "11.57",
-      "16.67",
-      "13.42",
-      "18.11"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 13.42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (6), what is the predicted response variable y value for x = 13?",
-    "options": [
-      "163",
-      "214",
+      "150",
+      "230",
       "175",
-      "190"
+      "170"
+    ],
+    "answer": 0,
+    "explanation": "y = 8(20) + -10 = 150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5137.5",
+      "6850",
+      "4110",
+      "4610"
     ],
     "answer": 2,
-    "explanation": "y = 13(13) + 6 = 175."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (8), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "64",
-      "152",
-      "95",
-      "80"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(24) + 8 = 80."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1500 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1200",
-      "960",
-      "750",
-      "950"
-    ],
-    "answer": 0,
-    "explanation": "80% of 1500 is 1200. 20% is 300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (8), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "26",
-      "41",
-      "10",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(6) + 8 = 26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1700 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1190",
-      "940",
-      "952",
-      "850"
-    ],
-    "answer": 0,
-    "explanation": "70% of 1700 is 1190. 30% is 510."
+    "explanation": "70% of 13700 is 9590. 30% is 4110."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 89, FP = 25, FN = 18, and TN = 387, what is the exact Specificity?",
+    "question": "Given a classification report with TP = 199, FP = 17, FN = 72, and TN = 122, what is the exact Specificity?",
     "options": [
-      "101.93%",
-      "79.84%",
-      "81.93%",
-      "93.93%"
+      "87.77%",
+      "77.24%",
+      "73.77%",
+      "96.77%"
     ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=89, FP=25, FN=18, TN=387."
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=199, FP=17, FN=72, TN=122."
   },
   {
     "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(34, 3) and point B(24, 23) in a 2D Euclidean coordinate space?",
     "options": [
-      "1680",
-      "2100",
-      "1850",
-      "1500"
+      "27.95",
+      "22.36",
+      "20.11",
+      "26.51"
     ],
     "answer": 1,
-    "explanation": "70% of 3000 is 2100. 30% is 900."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (5), what is the predicted response variable y value for x = 5?",
-    "options": [
-      "25",
-      "40",
-      "15",
-      "40"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(5) + 5 = 25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 248, FP = 10, FN = 50, and TN = 153, what is the exact Recall?",
-    "options": [
-      "70.74%",
-      "91.22%",
-      "83.22%",
-      "71.22%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=248, FP=10, FN=50, TN=153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 60, FP = 9, FN = 7, and TN = 375, what is the exact Recall?",
-    "options": [
-      "89.55%",
-      "76.12%",
-      "97.55%",
-      "77.55%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=60, FP=9, FN=7, TN=375."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 146, FP = 47, FN = 22, and TN = 347, what is the exact Specificity?",
-    "options": [
-      "76.07%",
-      "74.86%",
-      "88.07%",
-      "96.07%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=146, FP=47, FN=22, TN=347."
+    "explanation": "Euclidean distance formula resolves to 22.36."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 6000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
     "options": [
-      "950",
-      "1216",
-      "1520",
-      "1270"
+      "3000",
+      "4200",
+      "3150",
+      "3700"
     ],
-    "answer": 2,
-    "explanation": "80% of 1900 is 1520. 20% is 380."
+    "answer": 1,
+    "explanation": "70% of 6000 is 4200. 30% is 1800."
   },
   {
     "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4400 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 182, FP = 52, FN = 63, and TN = 224, what is the exact Specificity?",
     "options": [
-      "1570",
-      "2200",
-      "1980",
-      "1320"
+      "81.16%",
+      "67.16%",
+      "90.16%",
+      "71.42%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=182, FP=52, FN=63, TN=224."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 80, FP = 76, FN = 44, and TN = 360, what is the exact Precision?",
+    "options": [
+      "60.28%",
+      "37.28%",
+      "45.13%",
+      "51.28%"
     ],
     "answer": 3,
-    "explanation": "70% of 4400 is 3080. 30% is 1320."
+    "explanation": "Precision is calculated by standard formula using counts: TP=80, FP=76, FN=44, TN=360."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 121, FP = 65, FN = 52, and TN = 323, what is the exact Specificity?",
+    "options": [
+      "69.25%",
+      "73.26%",
+      "92.25%",
+      "83.25%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=121, FP=65, FN=52, TN=323."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-2), what is the predicted response variable y value for x = 13?",
+    "question": "For a linear regression model parameterized as y = 24x + (4), what is the predicted response variable y value for x = 75?",
     "options": [
-      "102",
-      "78",
-      "67",
-      "63"
+      "1804",
+      "1829",
+      "1796",
+      "2104"
     ],
-    "answer": 3,
-    "explanation": "y = 5(13) + -2 = 63."
+    "answer": 0,
+    "explanation": "y = 24(75) + 4 = 1804."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 109, FP = 17, FN = 31, and TN = 263, what is the exact Precision?",
+    "question": "Given a classification report with TP = 147, FP = 26, FN = 11, and TN = 213, what is the exact Specificity?",
     "options": [
-      "73.53%",
-      "74.51%",
-      "94.51%",
-      "86.51%"
+      "78.43%",
+      "75.12%",
+      "89.12%",
+      "98.12%"
     ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=109, FP=17, FN=31, TN=263."
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=147, FP=26, FN=11, TN=213."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 61, FP = 49, FN = 49, and TN = 289, what is the exact Precision?",
+    "question": "Given a classification report with TP = 169, FP = 74, FN = 32, and TN = 146, what is the exact Precision?",
     "options": [
-      "43.45%",
-      "55.45%",
-      "63.45%",
-      "47.14%"
+      "61.20%",
+      "55.55%",
+      "69.55%",
+      "78.55%"
     ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=61, FP=49, FN=49, TN=289."
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=74, FN=32, TN=146."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-10), what is the predicted response variable y value for x = 21?",
+    "question": "For a linear regression model parameterized as y = 15x + (19), what is the predicted response variable y value for x = 87?",
     "options": [
-      "52",
-      "32",
-      "95",
-      "47"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(21) + -10 = 32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(27, 3) and point B(8, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.00",
-      "33.25",
-      "28.15",
-      "40.50"
+      "1324",
+      "1672",
+      "1286",
+      "1349"
     ],
     "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 30.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(23, 0) and point B(29, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "12.45",
-      "7.37",
-      "12.47",
-      "9.22"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 16) and point B(29, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.35",
-      "24.25",
-      "19.15",
-      "21.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 109, FP = 6, FN = 30, and TN = 309, what is the exact Recall?",
-    "options": [
-      "66.42%",
-      "86.42%",
-      "66.65%",
-      "78.42%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=109, FP=6, FN=30, TN=309."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 26) and point B(28, 29) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.00",
-      "18.15",
-      "27.00",
-      "23.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 4) and point B(34, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "58.25",
-      "53.15",
-      "74.25",
-      "55.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 55.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 10, FN = 29, and TN = 209, what is the exact Recall?",
-    "options": [
-      "85.50%",
-      "72.67%",
-      "73.50%",
-      "93.50%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=171, FP=10, FN=29, TN=209."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 239, FP = 51, FN = 50, and TN = 275, what is the exact Precision?",
-    "options": [
-      "82.41%",
-      "90.41%",
-      "70.05%",
-      "70.41%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=239, FP=51, FN=50, TN=275."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 107, FP = 13, FN = 36, and TN = 398, what is the exact Accuracy?",
-    "options": [
-      "91.16%",
-      "77.48%",
-      "99.16%",
-      "79.16%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=107, FP=13, FN=36, TN=398."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 116, FP = 34, FN = 34, and TN = 370, what is the exact Precision?",
-    "options": [
-      "65.33%",
-      "77.33%",
-      "85.33%",
-      "65.73%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=116, FP=34, FN=34, TN=370."
+    "explanation": "y = 15(87) + 19 = 1324."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5200 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 14100 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
     "options": [
-      "2600",
-      "3328",
-      "4160",
-      "3910"
-    ],
-    "answer": 2,
-    "explanation": "80% of 5200 is 4160. 20% is 1040."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(15, 28) and point B(27, 17) in a 2D Euclidean coordinate space?",
-    "options": [
-      "31.05",
-      "21.15",
-      "26.25",
-      "23.00"
+      "7402.5",
+      "7050",
+      "9370",
+      "9870"
     ],
     "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 23.00."
+    "explanation": "70% of 14100 is 9870. 30% is 4230."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (3), what is the predicted response variable y value for x = 34?",
+    "options": [
+      "717",
+      "606",
+      "575",
+      "581"
+    ],
+    "answer": 3,
+    "explanation": "y = 17(34) + 3 = 581."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 249, FP = 21, FN = 15, and TN = 467, what is the exact Specificity?",
+    "options": [
+      "104.70%",
+      "95.70%",
+      "84.21%",
+      "81.70%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=249, FP=21, FN=15, TN=467."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 74, FP = 60, FN = 45, and TN = 185, what is the exact Accuracy?",
+    "options": [
+      "71.15%",
+      "80.15%",
+      "57.15%",
+      "62.62%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=74, FP=60, FN=45, TN=185."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 83, FP = 46, FN = 56, and TN = 235, what is the exact Recall?",
+    "options": [
+      "52.55%",
+      "59.71%",
+      "68.71%",
+      "45.71%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=83, FP=46, FN=56, TN=235."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (4), what is the predicted response variable y value for x = 93?",
+    "options": [
+      "1306",
+      "1678",
+      "1331",
+      "1298"
+    ],
+    "answer": 0,
+    "explanation": "y = 14(93) + 4 = 1306."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(6, 7) and point B(9, 14) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(35, 29) and point B(28, 26) in a 2D Euclidean coordinate space?",
     "options": [
-      "10.28",
+      "5.37",
       "7.62",
-      "10.87",
-      "5.77"
+      "9.52",
+      "11.77"
     ],
     "answer": 1,
     "explanation": "Euclidean distance formula resolves to 7.62."
@@ -10686,446 +4890,2602 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3600 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 4300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
     "options": [
-      "2270",
-      "2520",
-      "1800",
-      "2016"
+      "1075",
+      "860",
+      "2150",
+      "1360"
     ],
     "answer": 1,
-    "explanation": "70% of 3600 is 2520. 30% is 1080."
+    "explanation": "80% of 4300 is 3440. 20% is 860."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 335, FP = 15, FN = 63, and TN = 302, what is the exact Specificity?",
+    "options": [
+      "95.27%",
+      "83.84%",
+      "81.27%",
+      "104.27%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=335, FP=15, FN=63, TN=302."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3300 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 13700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
     "options": [
-      "2475",
-      "1650",
-      "1980",
-      "2225"
-    ],
-    "answer": 0,
-    "explanation": "75% of 3300 is 2475. 25% is 825."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(21, 1) and point B(26, 22) in a 2D Euclidean coordinate space?",
-    "options": [
-      "29.25",
-      "24.15",
-      "26.00",
-      "35.10"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (4), what is the predicted response variable y value for x = 31?",
-    "options": [
-      "128",
-      "221",
-      "120",
-      "143"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(31) + 4 = 128."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(20, 21) and point B(27, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.15",
-      "10.00",
-      "13.50",
-      "13.25"
+      "6850",
+      "10275",
+      "7706.25",
+      "9775"
     ],
     "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 10.00."
+    "explanation": "75% of 13700 is 10275. 25% is 3425."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 113, FP = 8, FN = 26, and TN = 208, what is the exact Accuracy?",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
     "options": [
-      "78.42%",
-      "76.86%",
-      "98.42%",
-      "90.42%"
+      "6937.5",
+      "6050",
+      "9250",
+      "5550"
     ],
     "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=113, FP=8, FN=26, TN=208."
+    "explanation": "70% of 18500 is 12950. 30% is 5550."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 248, FP = 49, FN = 23, and TN = 319, what is the exact Accuracy?",
+    "question": "Given a classification report with TP = 261, FP = 53, FN = 50, and TN = 161, what is the exact Precision?",
     "options": [
-      "76.73%",
-      "75.42%",
-      "88.73%",
-      "96.73%"
+      "69.12%",
+      "73.15%",
+      "83.12%",
+      "92.12%"
     ],
     "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=248, FP=49, FN=23, TN=319."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 71, FP = 33, FN = 21, and TN = 139, what is the exact Specificity?",
-    "options": [
-      "68.69%",
-      "68.81%",
-      "80.81%",
-      "88.81%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=71, FP=33, FN=21, TN=139."
+    "explanation": "Precision is calculated by standard formula using counts: TP=261, FP=53, FN=50, TN=161."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(19, 26) and point B(13, 34) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(27, 12) and point B(35, 34) in a 2D Euclidean coordinate space?",
     "options": [
-      "18.90",
-      "17.25",
-      "12.15",
-      "14.00"
+      "29.26",
+      "21.16",
+      "23.41",
+      "27.56"
     ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 14.00."
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 23.41."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(31, 16) and point B(32, 33) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.15",
+      "18.00",
+      "15.75",
+      "22.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 337, FP = 46, FN = 17, and TN = 508, what is the exact Accuracy?",
+    "options": [
+      "79.06%",
+      "93.06%",
+      "102.06%",
+      "81.89%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=337, FP=46, FN=17, TN=508."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (8), what is the predicted response variable y value for x = 14?",
+    "question": "For a linear regression model parameterized as y = 13x + (15), what is the predicted response variable y value for x = 67?",
     "options": [
-      "78",
-      "20",
-      "36",
-      "51"
+      "886",
+      "1154",
+      "911",
+      "856"
+    ],
+    "answer": 0,
+    "explanation": "y = 13(67) + 15 = 886."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "7680",
+      "10240",
+      "6400",
+      "9740"
+    ],
+    "answer": 1,
+    "explanation": "80% of 12800 is 10240. 20% is 2560."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17100 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5343.75",
+      "4775",
+      "4275",
+      "8550"
     ],
     "answer": 2,
-    "explanation": "y = 2(14) + 8 = 36."
+    "explanation": "75% of 17100 is 12825. 25% is 4275."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 209, FP = 71, FN = 58, and TN = 439, what is the exact Recall?",
+    "options": [
+      "87.28%",
+      "64.28%",
+      "78.28%",
+      "68.88%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=209, FP=71, FN=58, TN=439."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (-17), what is the predicted response variable y value for x = 14?",
+    "options": [
+      "389",
+      "333",
+      "367",
+      "358"
+    ],
+    "answer": 1,
+    "explanation": "y = 25(14) + -17 = 333."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (3), what is the predicted response variable y value for x = 82?",
+    "options": [
+      "741",
+      "735",
+      "1069",
+      "766"
+    ],
+    "answer": 0,
+    "explanation": "y = 9(82) + 3 = 741."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 262, FP = 68, FN = 28, and TN = 137, what is the exact Recall?",
+    "options": [
+      "90.34%",
+      "76.34%",
+      "79.50%",
+      "99.34%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=262, FP=68, FN=28, TN=137."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(16, 22) and point B(33, 5) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(8, 11) and point B(51, 48) in a 2D Euclidean coordinate space?",
     "options": [
-      "32.15",
-      "45.90",
+      "100.00",
+      "77.75",
+      "80.00",
+      "84.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 80.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (13), what is the predicted response variable y value for x = 40?",
+    "options": [
+      "1133",
+      "973",
+      "947",
+      "998"
+    ],
+    "answer": 1,
+    "explanation": "y = 24(40) + 13 = 973."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(36, 7) and point B(7, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "42.00",
+      "52.50",
+      "46.15",
+      "39.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 42.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(35, 11) and point B(37, 53) in a 2D Euclidean coordinate space?",
+    "options": [
+      "39.80",
+      "46.20",
+      "52.56",
+      "42.05"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 42.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (-7), what is the predicted response variable y value for x = 96?",
+    "options": [
+      "1337",
+      "1721",
+      "1362",
+      "1351"
+    ],
+    "answer": 0,
+    "explanation": "y = 14(96) + -7 = 1337."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (-9), what is the predicted response variable y value for x = 54?",
+    "options": [
+      "1233",
+      "1035",
+      "1017",
+      "1042"
+    ],
+    "answer": 2,
+    "explanation": "y = 19(54) + -9 = 1017."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 258, FP = 83, FN = 37, and TN = 415, what is the exact Accuracy?",
+    "options": [
+      "84.87%",
+      "70.87%",
+      "93.87%",
+      "74.68%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=258, FP=83, FN=37, TN=415."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(2, 23) and point B(16, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "28.75",
+      "20.75",
+      "23.00",
+      "27.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(30, 32) and point B(45, 51) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.96",
+      "24.21",
+      "28.36",
+      "30.26"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 24.21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (-1), what is the predicted response variable y value for x = 0?",
+    "options": [
+      "24",
+      "-1",
+      "1",
+      "77"
+    ],
+    "answer": 1,
+    "explanation": "y = 19(0) + -1 = -1."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5050",
+      "3030",
+      "3787.5",
+      "3530"
+    ],
+    "answer": 1,
+    "explanation": "70% of 10100 is 7070. 30% is 3030."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 141, FP = 17, FN = 65, and TN = 332, what is the exact Precision?",
+    "options": [
+      "98.24%",
+      "75.24%",
+      "89.24%",
+      "78.53%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=141, FP=17, FN=65, TN=332."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(26, 38) and point B(36, 37) in a 2D Euclidean coordinate space?",
+    "options": [
+      "14.20",
+      "10.05",
+      "12.56",
+      "7.80"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 10.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(15, 30) and point B(16, 22) in a 2D Euclidean coordinate space?",
+    "options": [
+      "6.75",
+      "9.00",
+      "11.25",
+      "13.15"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1400 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "437.5",
+      "350",
+      "700",
+      "850"
+    ],
+    "answer": 1,
+    "explanation": "75% of 1400 is 1050. 25% is 350."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(8, 36) and point B(19, 48) in a 2D Euclidean coordinate space?",
+    "options": [
+      "23.00",
+      "28.75",
+      "27.15",
+      "20.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (-15), what is the predicted response variable y value for x = 94?",
+    "options": [
+      "1019",
+      "1049",
+      "1044",
+      "1395"
+    ],
+    "answer": 0,
+    "explanation": "y = 11(94) + -15 = 1019."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 167, FP = 16, FN = 37, and TN = 560, what is the exact Accuracy?",
+    "options": [
+      "102.21%",
+      "93.21%",
+      "79.21%",
+      "82.02%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=167, FP=16, FN=37, TN=560."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 211, FP = 63, FN = 61, and TN = 562, what is the exact Accuracy?",
+    "options": [
+      "86.18%",
+      "95.18%",
+      "75.84%",
+      "72.18%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=211, FP=63, FN=61, TN=562."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14100 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3525",
+      "7050",
+      "4406.25",
+      "4025"
+    ],
+    "answer": 0,
+    "explanation": "75% of 14100 is 10575. 25% is 3525."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 177, FP = 63, FN = 84, and TN = 581, what is the exact Specificity?",
+    "options": [
+      "76.22%",
+      "79.39%",
+      "99.22%",
+      "90.22%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=177, FP=63, FN=84, TN=581."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (-16), what is the predicted response variable y value for x = 65?",
+    "options": [
+      "1609",
+      "1869",
+      "1634",
+      "1641"
+    ],
+    "answer": 0,
+    "explanation": "y = 25(65) + -16 = 1609."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 287, FP = 10, FN = 45, and TN = 186, what is the exact Precision?",
+    "options": [
+      "82.63%",
+      "96.63%",
+      "105.63%",
+      "85.04%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=287, FP=10, FN=45, TN=186."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(45, 46) and point B(23, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "38.15",
       "34.00",
-      "37.25"
+      "42.50",
+      "31.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 34.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (-5), what is the predicted response variable y value for x = 77?",
+    "options": [
+      "1304",
+      "1612",
+      "1329",
+      "1314"
+    ],
+    "answer": 0,
+    "explanation": "y = 17(77) + -5 = 1304."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (4), what is the predicted response variable y value for x = 9?",
+    "options": [
+      "22",
+      "14",
+      "58",
+      "47"
+    ],
+    "answer": 0,
+    "explanation": "y = 2(9) + 4 = 22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (-10), what is the predicted response variable y value for x = 20?",
+    "options": [
+      "510",
+      "490",
+      "515",
+      "570"
+    ],
+    "answer": 1,
+    "explanation": "y = 25(20) + -10 = 490."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8900 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "5730",
+      "4450",
+      "4672.5",
+      "6230"
+    ],
+    "answer": 3,
+    "explanation": "70% of 8900 is 6230. 30% is 2670."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(40, 20) and point B(25, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "35.15",
+      "31.00",
+      "28.75",
+      "38.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 31.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4250",
+      "2550",
+      "3187.5",
+      "3050"
+    ],
+    "answer": 1,
+    "explanation": "70% of 8500 is 5950. 30% is 2550."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(31, 44) and point B(23, 10) in a 2D Euclidean coordinate space?",
+    "options": [
+      "32.68",
+      "34.93",
+      "43.66",
+      "39.08"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 34.93."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(30, 40) and point B(20, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.00",
+      "22.15",
+      "15.75",
+      "22.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (19), what is the predicted response variable y value for x = 15?",
+    "options": [
+      "314",
+      "289",
+      "349",
+      "251"
+    ],
+    "answer": 1,
+    "explanation": "y = 18(15) + 19 = 289."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "13360",
+      "13860",
+      "9900",
+      "10395"
+    ],
+    "answer": 1,
+    "explanation": "70% of 19800 is 13860. 30% is 5940."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(15, 27) and point B(43, 9) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.04",
+      "37.44",
+      "33.29",
+      "41.61"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 33.29."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 33) and point B(29, 23) in a 2D Euclidean coordinate space?",
+    "options": [
+      "8.52",
+      "14.92",
+      "10.77",
+      "13.46"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 10.77."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 307, FP = 39, FN = 68, and TN = 576, what is the exact Recall?",
+    "options": [
+      "81.87%",
+      "72.04%",
+      "90.87%",
+      "67.87%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=307, FP=39, FN=68, TN=576."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(8, 5) and point B(13, 15) in a 2D Euclidean coordinate space?",
+    "options": [
+      "12.75",
+      "15.00",
+      "19.15",
+      "18.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (2), what is the predicted response variable y value for x = 51?",
+    "options": [
+      "202",
+      "231",
+      "410",
+      "206"
+    ],
+    "answer": 3,
+    "explanation": "y = 4(51) + 2 = 206."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18900 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4725",
+      "3780",
+      "4280",
+      "9450"
+    ],
+    "answer": 1,
+    "explanation": "80% of 18900 is 15120. 20% is 3780."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "1670",
+      "1627.5",
+      "1550",
+      "2170"
+    ],
+    "answer": 3,
+    "explanation": "70% of 3100 is 2170. 30% is 930."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 90, FP = 61, FN = 83, and TN = 479, what is the exact Accuracy?",
+    "options": [
+      "70.23%",
+      "79.80%",
+      "88.80%",
+      "65.80%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=90, FP=61, FN=83, TN=479."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(48, 37) and point B(17, 38) in a 2D Euclidean coordinate space?",
+    "options": [
+      "35.17",
+      "28.77",
+      "38.77",
+      "31.02"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 31.02."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (-17), what is the predicted response variable y value for x = 25?",
+    "options": [
+      "708",
+      "642",
+      "633",
+      "608"
+    ],
+    "answer": 3,
+    "explanation": "y = 25(25) + -17 = 608."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 294, FP = 59, FN = 83, and TN = 323, what is the exact Accuracy?",
+    "options": [
+      "67.29%",
+      "90.29%",
+      "81.29%",
+      "71.54%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=294, FP=59, FN=83, TN=323."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(18, 3) and point B(17, 46) in a 2D Euclidean coordinate space?",
+    "options": [
+      "44.00",
+      "48.15",
+      "55.00",
+      "41.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 44.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (-14), what is the predicted response variable y value for x = 23?",
+    "options": [
+      "492",
+      "400",
+      "425",
+      "428"
+    ],
+    "answer": 1,
+    "explanation": "y = 18(23) + -14 = 400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4400 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1375",
+      "2200",
+      "1600",
+      "1100"
+    ],
+    "answer": 3,
+    "explanation": "75% of 4400 is 3300. 25% is 1100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 103, FP = 61, FN = 49, and TN = 220, what is the exact Accuracy?",
+    "options": [
+      "65.64%",
+      "74.60%",
+      "60.60%",
+      "83.60%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=103, FP=61, FN=49, TN=220."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 322, FP = 11, FN = 16, and TN = 112, what is the exact Specificity?",
+    "options": [
+      "80.13%",
+      "77.06%",
+      "100.06%",
+      "91.06%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=322, FP=11, FN=16, TN=112."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (5), what is the predicted response variable y value for x = 48?",
+    "options": [
+      "174",
+      "139",
+      "149",
+      "341"
+    ],
+    "answer": 2,
+    "explanation": "y = 3(48) + 5 = 149."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16800 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5540",
+      "5040",
+      "8400",
+      "6300"
+    ],
+    "answer": 1,
+    "explanation": "70% of 16800 is 11760. 30% is 5040."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 193, FP = 78, FN = 69, and TN = 244, what is the exact Recall?",
+    "options": [
+      "64.82%",
+      "82.66%",
+      "73.66%",
+      "59.66%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=193, FP=78, FN=69, TN=244."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1425",
+      "1925",
+      "1781.25",
+      "2850"
+    ],
+    "answer": 0,
+    "explanation": "75% of 5700 is 4275. 25% is 1425."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1050",
+      "550",
+      "1100",
+      "687.5"
+    ],
+    "answer": 1,
+    "explanation": "75% of 2200 is 1650. 25% is 550."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (17), what is the predicted response variable y value for x = 55?",
+    "options": [
+      "812",
+      "787",
+      "1007",
+      "753"
+    ],
+    "answer": 1,
+    "explanation": "y = 14(55) + 17 = 787."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(23, 40) and point B(34, 15) in a 2D Euclidean coordinate space?",
+    "options": [
+      "36.00",
+      "45.00",
+      "40.15",
+      "33.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 36.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(4, 25) and point B(10, 12) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.47",
+      "12.07",
+      "14.32",
+      "17.90"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 14.32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 288, FP = 21, FN = 45, and TN = 535, what is the exact Specificity?",
+    "options": [
+      "84.68%",
+      "105.22%",
+      "96.22%",
+      "82.22%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=288, FP=21, FN=45, TN=535."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7900 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3950",
+      "2962.5",
+      "2870",
+      "2370"
+    ],
+    "answer": 3,
+    "explanation": "70% of 7900 is 5530. 30% is 2370."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7600 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2780",
+      "3800",
+      "2280",
+      "2850"
+    ],
+    "answer": 2,
+    "explanation": "70% of 7600 is 5320. 30% is 2280."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "975",
+      "1218.75",
+      "1950",
+      "1475"
+    ],
+    "answer": 0,
+    "explanation": "75% of 3900 is 2925. 25% is 975."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (13), what is the predicted response variable y value for x = 65?",
+    "options": [
+      "1248",
+      "1222",
+      "1273",
+      "1508"
+    ],
+    "answer": 0,
+    "explanation": "y = 19(65) + 13 = 1248."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (1), what is the predicted response variable y value for x = 42?",
+    "options": [
+      "530",
+      "505",
+      "673",
+      "503"
+    ],
+    "answer": 1,
+    "explanation": "y = 12(42) + 1 = 505."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(8, 27) and point B(49, 47) in a 2D Euclidean coordinate space?",
+    "options": [
+      "57.02",
+      "45.62",
+      "43.37",
+      "49.77"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 45.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 155, FP = 28, FN = 75, and TN = 497, what is the exact Accuracy?",
+    "options": [
+      "95.36%",
+      "86.36%",
+      "75.99%",
+      "72.36%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=155, FP=28, FN=75, TN=497."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6900 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2587.5",
+      "2070",
+      "3450",
+      "2570"
+    ],
+    "answer": 1,
+    "explanation": "70% of 6900 is 4830. 30% is 2070."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (9), what is the predicted response variable y value for x = 8?",
+    "options": [
+      "121",
+      "89",
+      "71",
+      "114"
+    ],
+    "answer": 1,
+    "explanation": "y = 10(8) + 9 = 89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8300 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4150",
+      "2075",
+      "2593.75",
+      "2575"
+    ],
+    "answer": 1,
+    "explanation": "75% of 8300 is 6225. 25% is 2075."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(29, 8) and point B(35, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "8.39",
+      "10.86",
+      "6.71",
+      "4.46"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 6.71."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (0), what is the predicted response variable y value for x = 93?",
+    "options": [
+      "1674",
+      "2046",
+      "1751",
+      "1699"
+    ],
+    "answer": 0,
+    "explanation": "y = 18(93) + 0 = 1674."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 56, FP = 7, FN = 48, and TN = 521, what is the exact Accuracy?",
+    "options": [
+      "100.30%",
+      "77.30%",
+      "80.34%",
+      "91.30%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=56, FP=7, FN=48, TN=521."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 167, FP = 54, FN = 27, and TN = 500, what is the exact Accuracy?",
+    "options": [
+      "78.47%",
+      "89.17%",
+      "98.17%",
+      "75.17%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=167, FP=54, FN=27, TN=500."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(26, 5) and point B(45, 47) in a 2D Euclidean coordinate space?",
+    "options": [
+      "61.00",
+      "65.15",
+      "76.25",
+      "58.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 61.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(29, 35) and point B(51, 17) in a 2D Euclidean coordinate space?",
+    "options": [
+      "37.75",
+      "44.15",
+      "50.00",
+      "40.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 40.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(46, 32) and point B(29, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "17.26",
+      "21.58",
+      "15.01",
+      "21.41"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 17.26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 334, FP = 61, FN = 63, and TN = 227, what is the exact Accuracy?",
+    "options": [
+      "67.90%",
+      "72.07%",
+      "81.90%",
+      "90.90%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=334, FP=61, FN=63, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 112, FP = 67, FN = 48, and TN = 339, what is the exact Specificity?",
+    "options": [
+      "69.50%",
+      "73.48%",
+      "83.50%",
+      "92.50%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=112, FP=67, FN=48, TN=339."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(40, 21) and point B(10, 19) in a 2D Euclidean coordinate space?",
+    "options": [
+      "29.75",
+      "40.00",
+      "32.00",
+      "36.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 32.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-8), what is the predicted response variable y value for x = 82?",
+    "options": [
+      "2124",
+      "1796",
+      "1812",
+      "1821"
+    ],
+    "answer": 1,
+    "explanation": "y = 22(82) + -8 = 1796."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (9), what is the predicted response variable y value for x = 79?",
+    "options": [
+      "1668",
+      "1352",
+      "1377",
+      "1334"
+    ],
+    "answer": 1,
+    "explanation": "y = 17(79) + 9 = 1352."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 329, FP = 63, FN = 9, and TN = 518, what is the exact Precision?",
+    "options": [
+      "69.93%",
+      "83.93%",
+      "92.93%",
+      "73.86%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=329, FP=63, FN=9, TN=518."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (-15), what is the predicted response variable y value for x = 37?",
+    "options": [
+      "688",
+      "718",
+      "836",
+      "713"
+    ],
+    "answer": 0,
+    "explanation": "y = 19(37) + -15 = 688."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (-14), what is the predicted response variable y value for x = 58?",
+    "options": [
+      "881",
+      "856",
+      "884",
+      "1088"
+    ],
+    "answer": 1,
+    "explanation": "y = 15(58) + -14 = 856."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 142, FP = 66, FN = 17, and TN = 486, what is the exact Accuracy?",
+    "options": [
+      "74.33%",
+      "88.33%",
+      "77.73%",
+      "97.33%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=142, FP=66, FN=17, TN=486."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (14), what is the predicted response variable y value for x = 22?",
+    "options": [
+      "190",
+      "127",
+      "102",
+      "74"
+    ],
+    "answer": 2,
+    "explanation": "y = 4(22) + 14 = 102."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(26, 39) and point B(45, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.00",
+      "27.75",
+      "37.50",
+      "34.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 30.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(32, 13) and point B(40, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "9.43",
+      "13.58",
+      "7.18",
+      "11.79"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 9.43."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (-12), what is the predicted response variable y value for x = 25?",
+    "options": [
+      "287",
+      "363",
+      "263",
+      "288"
+    ],
+    "answer": 2,
+    "explanation": "y = 11(25) + -12 = 263."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "7031.25",
+      "8875",
+      "9375",
+      "6250"
+    ],
+    "answer": 2,
+    "explanation": "75% of 12500 is 9375. 25% is 3125."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (-6), what is the predicted response variable y value for x = 80?",
+    "options": [
+      "714",
+      "419",
+      "394",
+      "406"
+    ],
+    "answer": 2,
+    "explanation": "y = 5(80) + -6 = 394."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(41, 8) and point B(17, 29) in a 2D Euclidean coordinate space?",
+    "options": [
+      "56.25",
+      "49.15",
+      "45.00",
+      "42.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 45.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 222, FP = 18, FN = 39, and TN = 295, what is the exact Recall?",
+    "options": [
+      "71.06%",
+      "85.06%",
+      "94.06%",
+      "74.85%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=222, FP=18, FN=39, TN=295."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(28, 1) and point B(28, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.25",
+      "21.15",
+      "17.00",
+      "14.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(43, 38) and point B(12, 10) in a 2D Euclidean coordinate space?",
+    "options": [
+      "52.22",
+      "45.92",
+      "41.77",
+      "39.52"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 41.77."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(6, 20) and point B(38, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "77.50",
+      "62.00",
+      "66.15",
+      "59.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 62.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(30, 25) and point B(42, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "15.00",
+      "12.75",
+      "19.15",
+      "18.75"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 26x + (-18), what is the predicted response variable y value for x = 60?",
+    "options": [
+      "1578",
+      "1542",
+      "1567",
+      "1782"
+    ],
+    "answer": 1,
+    "explanation": "y = 26(60) + -18 = 1542."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 315, FP = 63, FN = 9, and TN = 552, what is the exact Recall?",
+    "options": [
+      "106.22%",
+      "83.22%",
+      "85.56%",
+      "97.22%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=315, FP=63, FN=9, TN=552."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (8), what is the predicted response variable y value for x = 39?",
+    "options": [
+      "710",
+      "735",
+      "866",
+      "694"
+    ],
+    "answer": 0,
+    "explanation": "y = 18(39) + 8 = 710."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 329, FP = 62, FN = 47, and TN = 476, what is the exact Recall?",
+    "options": [
+      "87.50%",
+      "96.50%",
+      "73.50%",
+      "77.00%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=329, FP=62, FN=47, TN=476."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(14, 13) and point B(5, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "20.00",
+      "20.15",
+      "16.00",
+      "13.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 200, FP = 57, FN = 22, and TN = 126, what is the exact Precision?",
+    "options": [
+      "63.82%",
+      "77.82%",
+      "86.82%",
+      "68.48%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=200, FP=57, FN=22, TN=126."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 73, FP = 39, FN = 39, and TN = 391, what is the exact Accuracy?",
+    "options": [
+      "71.61%",
+      "94.61%",
+      "75.34%",
+      "85.61%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=73, FP=39, FN=39, TN=391."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(2, 18) and point B(9, 54) in a 2D Euclidean coordinate space?",
+    "options": [
+      "43.00",
+      "40.75",
+      "53.75",
+      "47.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 43.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(0, 26) and point B(53, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "53.60",
+      "67.00",
+      "51.35",
+      "57.75"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 53.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (-7), what is the predicted response variable y value for x = 52?",
+    "options": [
+      "253",
+      "267",
+      "461",
+      "278"
+    ],
+    "answer": 0,
+    "explanation": "y = 5(52) + -7 = 253."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 211, FP = 7, FN = 76, and TN = 398, what is the exact Recall?",
+    "options": [
+      "82.52%",
+      "73.52%",
+      "64.70%",
+      "59.52%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=211, FP=7, FN=76, TN=398."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (-3), what is the predicted response variable y value for x = 64?",
+    "options": [
+      "470",
+      "701",
+      "445",
+      "451"
+    ],
+    "answer": 2,
+    "explanation": "y = 7(64) + -3 = 445."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(7, 36) and point B(29, 15) in a 2D Euclidean coordinate space?",
+    "options": [
+      "34.56",
+      "28.16",
+      "38.02",
+      "30.41"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 30.41."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 57, FP = 71, FN = 30, and TN = 467, what is the exact Accuracy?",
+    "options": [
+      "92.84%",
+      "73.78%",
+      "83.84%",
+      "69.84%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=57, FP=71, FN=30, TN=467."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (-14), what is the predicted response variable y value for x = 61?",
+    "options": [
+      "535",
+      "319",
+      "316",
+      "291"
+    ],
+    "answer": 3,
+    "explanation": "y = 5(61) + -14 = 291."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 26x + (-16), what is the predicted response variable y value for x = 47?",
+    "options": [
+      "1231",
+      "1394",
+      "1238",
+      "1206"
+    ],
+    "answer": 3,
+    "explanation": "y = 26(47) + -16 = 1206."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 145, FP = 5, FN = 15, and TN = 302, what is the exact Recall?",
+    "options": [
+      "90.63%",
+      "76.63%",
+      "79.75%",
+      "99.63%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=145, FP=5, FN=15, TN=302."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (-1), what is the predicted response variable y value for x = 39?",
+    "options": [
+      "547",
+      "701",
+      "570",
+      "545"
+    ],
+    "answer": 3,
+    "explanation": "y = 14(39) + -1 = 545."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (13), what is the predicted response variable y value for x = 18?",
+    "options": [
+      "293",
+      "319",
+      "391",
+      "344"
+    ],
+    "answer": 1,
+    "explanation": "y = 17(18) + 13 = 319."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 338, FP = 51, FN = 7, and TN = 330, what is the exact Accuracy?",
+    "options": [
+      "78.01%",
+      "101.01%",
+      "92.01%",
+      "80.97%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=338, FP=51, FN=7, TN=330."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "850",
+      "1350",
+      "1012.5",
+      "900"
+    ],
+    "answer": 1,
+    "explanation": "75% of 1800 is 1350. 25% is 450."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8700 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "4350",
+      "4567.5",
+      "5590",
+      "6090"
+    ],
+    "answer": 3,
+    "explanation": "70% of 8700 is 6090. 30% is 2610."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (3), what is the predicted response variable y value for x = 94?",
+    "options": [
+      "780",
+      "1131",
+      "749",
+      "755"
+    ],
+    "answer": 3,
+    "explanation": "y = 8(94) + 3 = 755."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "1280",
+      "780",
+      "800",
+      "960"
+    ],
+    "answer": 0,
+    "explanation": "80% of 1600 is 1280. 20% is 320."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(3, 7) and point B(8, 7) in a 2D Euclidean coordinate space?",
+    "options": [
+      "5.00",
+      "9.15",
+      "6.25",
+      "2.75"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 344, FP = 26, FN = 38, and TN = 141, what is the exact Recall?",
+    "options": [
+      "76.05%",
+      "99.05%",
+      "90.05%",
+      "79.25%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=344, FP=26, FN=38, TN=141."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(16, 7) and point B(30, 26) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.35",
+      "27.75",
+      "29.50",
+      "23.60"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 23.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (-2), what is the predicted response variable y value for x = 49?",
+    "options": [
+      "1178",
+      "1370",
+      "1199",
+      "1174"
+    ],
+    "answer": 3,
+    "explanation": "y = 24(49) + -2 = 1174."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 59, FP = 12, FN = 22, and TN = 202, what is the exact Accuracy?",
+    "options": [
+      "77.86%",
+      "88.47%",
+      "74.47%",
+      "97.47%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=59, FP=12, FN=22, TN=202."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (4), what is the predicted response variable y value for x = 54?",
+    "options": [
+      "1084",
+      "860",
+      "893",
+      "868"
+    ],
+    "answer": 3,
+    "explanation": "y = 16(54) + 4 = 868."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(45, 31) and point B(34, 21) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.00",
+      "18.75",
+      "25.15",
+      "26.25"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (7), what is the predicted response variable y value for x = 21?",
+    "options": [
+      "217",
+      "301",
+      "242",
+      "203"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(21) + 7 = 217."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 268, FP = 45, FN = 62, and TN = 571, what is the exact Accuracy?",
+    "options": [
+      "78.05%",
+      "74.69%",
+      "97.69%",
+      "88.69%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=268, FP=45, FN=62, TN=571."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "4375",
+      "3656.25",
+      "4875",
+      "3250"
+    ],
+    "answer": 2,
+    "explanation": "75% of 6500 is 4875. 25% is 1625."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (8), what is the predicted response variable y value for x = 84?",
+    "options": [
+      "1041",
+      "1352",
+      "1016",
+      "1000"
+    ],
+    "answer": 2,
+    "explanation": "y = 12(84) + 8 = 1016."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 294, FP = 71, FN = 8, and TN = 489, what is the exact Recall?",
+    "options": [
+      "97.35%",
+      "85.67%",
+      "106.35%",
+      "83.35%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=294, FP=71, FN=8, TN=489."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(0, 31) and point B(7, 16) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.50",
+      "22.00",
+      "19.75",
+      "26.15"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(36, 23) and point B(22, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "17.80",
+      "22.26",
+      "15.55",
+      "21.95"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 17.80."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (-13), what is the predicted response variable y value for x = 65?",
+    "options": [
+      "1547",
+      "1572",
+      "1807",
+      "1573"
+    ],
+    "answer": 0,
+    "explanation": "y = 24(65) + -13 = 1547."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(9, 11) and point B(41, 33) in a 2D Euclidean coordinate space?",
+    "options": [
+      "38.83",
+      "36.58",
+      "42.98",
+      "48.54"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 38.83."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9800 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4900",
+      "3675",
+      "3440",
+      "2940"
+    ],
+    "answer": 3,
+    "explanation": "70% of 9800 is 6860. 30% is 2940."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 195, FP = 64, FN = 23, and TN = 316, what is the exact Recall?",
+    "options": [
+      "78.72%",
+      "89.45%",
+      "75.45%",
+      "98.45%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=195, FP=64, FN=23, TN=316."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 52, FP = 67, FN = 69, and TN = 143, what is the exact Precision?",
+    "options": [
+      "29.70%",
+      "43.70%",
+      "38.45%",
+      "52.70%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=52, FP=67, FN=69, TN=143."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(8, 39) and point B(11, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "25.91",
+      "35.20",
+      "28.16",
+      "32.31"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 28.16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 277, FP = 21, FN = 59, and TN = 294, what is the exact Recall?",
+    "options": [
+      "91.44%",
+      "82.44%",
+      "72.55%",
+      "68.44%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=277, FP=21, FN=59, TN=294."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2690",
+      "3650",
+      "2737.5",
+      "2190"
+    ],
+    "answer": 3,
+    "explanation": "70% of 7300 is 5110. 30% is 2190."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14900 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3480",
+      "7450",
+      "3725",
+      "2980"
+    ],
+    "answer": 3,
+    "explanation": "80% of 14900 is 11920. 20% is 2980."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9600 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "6700",
+      "4800",
+      "5400",
+      "7200"
+    ],
+    "answer": 3,
+    "explanation": "75% of 9600 is 7200. 25% is 2400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(13, 47) and point B(19, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "17.09",
+      "21.24",
+      "21.36",
+      "14.84"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 17.09."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12400 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "6200",
+      "7440",
+      "9420",
+      "9920"
+    ],
+    "answer": 3,
+    "explanation": "80% of 12400 is 9920. 20% is 2480."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 328, FP = 55, FN = 74, and TN = 279, what is the exact Specificity?",
+    "options": [
+      "92.53%",
+      "73.51%",
+      "83.53%",
+      "69.53%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=328, FP=55, FN=74, TN=279."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(13, 0) and point B(15, 27) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.22",
+      "33.84",
+      "24.82",
+      "27.07"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 27.07."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 6x + (16), what is the predicted response variable y value for x = 93?",
+    "options": [
+      "542",
+      "574",
+      "946",
+      "599"
+    ],
+    "answer": 1,
+    "explanation": "y = 6(93) + 16 = 574."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 230, FP = 6, FN = 29, and TN = 212, what is the exact Accuracy?",
+    "options": [
+      "92.66%",
+      "101.66%",
+      "78.66%",
+      "81.54%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=230, FP=6, FN=29, TN=212."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(17, 37) and point B(37, 27) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.00",
+      "27.75",
+      "34.15",
+      "37.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 30.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "820",
+      "320",
+      "800",
+      "400"
+    ],
+    "answer": 1,
+    "explanation": "80% of 1600 is 1280. 20% is 320."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (13), what is the predicted response variable y value for x = 53?",
+    "options": [
+      "888",
+      "939",
+      "1126",
+      "914"
+    ],
+    "answer": 3,
+    "explanation": "y = 17(53) + 13 = 914."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 333, FP = 33, FN = 41, and TN = 313, what is the exact Accuracy?",
+    "options": [
+      "78.96%",
+      "89.72%",
+      "98.72%",
+      "75.72%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=333, FP=33, FN=41, TN=313."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4900 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "2930",
+      "2450",
+      "3430",
+      "2572.5"
+    ],
+    "answer": 2,
+    "explanation": "70% of 4900 is 3430. 30% is 1470."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 76, FP = 41, FN = 13, and TN = 351, what is the exact Specificity?",
+    "options": [
+      "89.54%",
+      "78.80%",
+      "98.54%",
+      "75.54%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=76, FP=41, FN=13, TN=351."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 127, FP = 73, FN = 33, and TN = 496, what is the exact Specificity?",
+    "options": [
+      "96.17%",
+      "76.71%",
+      "73.17%",
+      "87.17%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=127, FP=73, FN=33, TN=496."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 165, FP = 33, FN = 36, and TN = 381, what is the exact Accuracy?",
+    "options": [
+      "78.13%",
+      "97.78%",
+      "74.78%",
+      "88.78%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=165, FP=33, FN=36, TN=381."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(43, 1) and point B(6, 23) in a 2D Euclidean coordinate space?",
+    "options": [
+      "56.75",
+      "59.00",
+      "63.15",
+      "73.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 59.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 102, FP = 30, FN = 61, and TN = 310, what is the exact Recall?",
+    "options": [
+      "71.58%",
+      "55.07%",
+      "62.58%",
+      "48.58%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=102, FP=30, FN=61, TN=310."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(30, 9) and point B(24, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "36.25",
+      "26.75",
+      "29.00",
+      "33.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 29.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (17), what is the predicted response variable y value for x = 44?",
+    "options": [
+      "457",
+      "482",
+      "633",
+      "423"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(44) + 17 = 457."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "9660",
+      "6900",
+      "9160",
+      "7245"
+    ],
+    "answer": 0,
+    "explanation": "70% of 13800 is 9660. 30% is 4140."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14400 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "10300",
+      "8100",
+      "7200",
+      "10800"
+    ],
+    "answer": 3,
+    "explanation": "75% of 14400 is 10800. 25% is 3600."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 281, FP = 74, FN = 52, and TN = 439, what is the exact Specificity?",
+    "options": [
+      "75.31%",
+      "94.58%",
+      "85.58%",
+      "71.58%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=281, FP=74, FN=52, TN=439."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(27, 30) and point B(52, 21) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.75",
+      "42.50",
+      "34.00",
+      "38.15"
     ],
     "answer": 2,
     "explanation": "Manhattan distance formula resolves to 34.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 3) and point B(18, 11) in a 2D Euclidean coordinate space?",
-    "options": [
-      "17.15",
-      "25.65",
-      "19.00",
-      "22.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(15, 23) and point B(14, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.20",
-      "13.57",
-      "10.05",
-      "13.30"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.05."
-  },
-  {
-    "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 60, FP = 30, FN = 22, and TN = 178, what is the exact Accuracy?",
+    "question": "Given a classification report with TP = 287, FP = 73, FN = 23, and TN = 321, what is the exact Precision?",
     "options": [
-      "82.07%",
-      "69.76%",
-      "70.07%",
-      "90.07%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=60, FP=30, FN=22, TN=178."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 6) and point B(12, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "21.35",
-      "13.96",
-      "19.06",
-      "15.81"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 15.81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 96, FP = 28, FN = 30, and TN = 340, what is the exact Specificity?",
-    "options": [
-      "92.39%",
-      "100.39%",
-      "78.53%",
-      "80.39%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=96, FP=28, FN=30, TN=340."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3100 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1984",
-      "2480",
-      "1550",
-      "2230"
+      "70.16%",
+      "79.72%",
+      "65.72%",
+      "88.72%"
     ],
     "answer": 1,
-    "explanation": "80% of 3100 is 2480. 20% is 620."
+    "explanation": "Precision is calculated by standard formula using counts: TP=287, FP=73, FN=23, TN=321."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 28, FN = 44, and TN = 288, what is the exact Specificity?",
+    "question": "Given a classification report with TP = 213, FP = 53, FN = 30, and TN = 437, what is the exact Accuracy?",
     "options": [
-      "99.14%",
-      "77.47%",
-      "79.14%",
-      "91.14%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=131, FP=28, FN=44, TN=288."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(27, 2) and point B(29, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.37",
-      "15.27",
-      "17.12",
-      "23.11"
+      "78.04%",
+      "97.68%",
+      "88.68%",
+      "74.68%"
     ],
     "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(9, 24) and point B(24, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.15",
-      "27.00",
-      "36.45",
-      "30.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 27.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(19, 26) and point B(33, 18) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.12",
-      "21.77",
-      "14.27",
-      "19.37"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 16.12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 83, FP = 37, FN = 33, and TN = 210, what is the exact Specificity?",
-    "options": [
-      "85.02%",
-      "73.02%",
-      "72.27%",
-      "93.02%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=83, FP=37, FN=33, TN=210."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=213, FP=53, FN=30, TN=437."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (0), what is the predicted response variable y value for x = 16?",
+    "question": "For a linear regression model parameterized as y = 17x + (-5), what is the predicted response variable y value for x = 88?",
     "options": [
-      "192",
-      "240",
-      "192",
-      "207"
+      "1491",
+      "1501",
+      "1516",
+      "1843"
     ],
     "answer": 0,
-    "explanation": "y = 12(16) + 0 = 192."
+    "explanation": "y = 17(88) + -5 = 1491."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(19, 10) and point B(21, 22) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(16, 14) and point B(30, 13) in a 2D Euclidean coordinate space?",
     "options": [
-      "17.25",
-      "18.90",
-      "14.00",
-      "12.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-8), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "11",
-      "-1",
-      "-4",
-      "12"
-    ],
-    "answer": 2,
-    "explanation": "y = 4(1) + -8 = -4."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 202, FP = 39, FN = 49, and TN = 262, what is the exact Precision?",
-    "options": [
-      "91.82%",
-      "83.82%",
-      "71.82%",
-      "71.24%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=202, FP=39, FN=49, TN=262."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 18) and point B(28, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "51.30",
-      "41.25",
-      "38.00",
-      "36.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 38.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (2), what is the predicted response variable y value for x = 15?",
-    "options": [
-      "77",
-      "73",
-      "122",
-      "92"
-    ],
-    "answer": 0,
-    "explanation": "y = 5(15) + 2 = 77."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(0, 9) and point B(20, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.61",
-      "24.44",
-      "21.19",
-      "19.34"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 21.19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(14, 17) and point B(34, 17) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.15",
-      "20.00",
-      "23.25",
-      "27.00"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 144, FP = 49, FN = 31, and TN = 279, what is the exact Specificity?",
-    "options": [
-      "85.06%",
-      "93.06%",
-      "72.30%",
-      "73.06%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=144, FP=49, FN=31, TN=279."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 23) and point B(13, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "18.25",
-      "20.25",
+      "18.75",
+      "12.75",
       "15.00",
-      "13.15"
+      "19.15"
     ],
     "answer": 2,
     "explanation": "Manhattan distance formula resolves to 15.00."
@@ -11134,183 +7494,1135 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(7, 28) and point B(13, 15) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(1, 31) and point B(37, 35) in a 2D Euclidean coordinate space?",
     "options": [
-      "12.47",
-      "14.32",
-      "19.33",
-      "17.57"
+      "36.22",
+      "45.28",
+      "40.37",
+      "33.97"
     ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 14.32."
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 36.22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18300 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5718.75",
+      "5075",
+      "4575",
+      "9150"
+    ],
+    "answer": 2,
+    "explanation": "75% of 18300 is 13725. 25% is 4575."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(19, 9) and point B(27, 28) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(18, 8) and point B(17, 24) in a 2D Euclidean coordinate space?",
     "options": [
-      "36.45",
+      "21.25",
+      "14.75",
+      "17.00",
+      "21.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8300",
+      "5187.5",
+      "4650",
+      "4150"
+    ],
+    "answer": 3,
+    "explanation": "75% of 16600 is 12450. 25% is 4150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (15), what is the predicted response variable y value for x = 50?",
+    "options": [
+      "1215",
+      "1415",
+      "1240",
+      "1185"
+    ],
+    "answer": 0,
+    "explanation": "y = 24(50) + 15 = 1215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(18, 3) and point B(49, 38) in a 2D Euclidean coordinate space?",
+    "options": [
+      "44.50",
+      "50.90",
+      "46.75",
+      "58.44"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 46.75."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 13) and point B(54, 38) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.40",
+      "32.65",
+      "36.80",
+      "40.81"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 32.65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 72, FP = 46, FN = 9, and TN = 579, what is the exact Specificity?",
+    "options": [
+      "78.64%",
+      "101.64%",
+      "92.64%",
+      "81.52%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=72, FP=46, FN=9, TN=579."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2960",
+      "4100",
+      "3075",
+      "2460"
+    ],
+    "answer": 3,
+    "explanation": "70% of 8200 is 5740. 30% is 2460."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (-1), what is the predicted response variable y value for x = 72?",
+    "options": [
+      "240",
+      "215",
+      "503",
+      "217"
+    ],
+    "answer": 1,
+    "explanation": "y = 3(72) + -1 = 215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5662.5",
+      "4530",
+      "5030",
+      "7550"
+    ],
+    "answer": 1,
+    "explanation": "70% of 15100 is 10570. 30% is 4530."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (-17), what is the predicted response variable y value for x = 11?",
+    "options": [
+      "159",
+      "115",
+      "140",
+      "149"
+    ],
+    "answer": 1,
+    "explanation": "y = 12(11) + -17 = 115."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (18), what is the predicted response variable y value for x = 99?",
+    "options": [
+      "1627",
+      "1566",
+      "1998",
+      "1602"
+    ],
+    "answer": 3,
+    "explanation": "y = 16(99) + 18 = 1602."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "990",
+      "1237.5",
+      "1650",
+      "1490"
+    ],
+    "answer": 0,
+    "explanation": "70% of 3300 is 2310. 30% is 990."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "7350",
+      "3675",
+      "4175",
+      "4593.75"
+    ],
+    "answer": 1,
+    "explanation": "75% of 14700 is 11025. 25% is 3675."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "2340",
+      "1950",
+      "3120",
+      "2620"
+    ],
+    "answer": 2,
+    "explanation": "80% of 3900 is 3120. 20% is 780."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(19, 7) and point B(38, 45) in a 2D Euclidean coordinate space?",
+    "options": [
+      "71.25",
+      "61.15",
+      "54.75",
+      "57.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 57.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "4675",
+      "5175",
+      "3450",
+      "3881.25"
+    ],
+    "answer": 1,
+    "explanation": "75% of 6900 is 5175. 25% is 1725."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (18), what is the predicted response variable y value for x = 76?",
+    "options": [
+      "1806",
+      "1867",
+      "1842",
+      "2146"
+    ],
+    "answer": 2,
+    "explanation": "y = 24(76) + 18 = 1842."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 59, FP = 23, FN = 12, and TN = 578, what is the exact Accuracy?",
+    "options": [
+      "103.79%",
+      "83.42%",
+      "94.79%",
+      "80.79%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=59, FP=23, FN=12, TN=578."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 348, FP = 48, FN = 74, and TN = 394, what is the exact Recall?",
+    "options": [
+      "72.57%",
+      "91.46%",
+      "68.46%",
+      "82.46%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=348, FP=48, FN=74, TN=394."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (-16), what is the predicted response variable y value for x = 9?",
+    "options": [
+      "11",
+      "36",
+      "47",
+      "43"
+    ],
+    "answer": 0,
+    "explanation": "y = 3(9) + -16 = 11."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8950",
+      "5593.75",
+      "4975",
+      "4475"
+    ],
+    "answer": 3,
+    "explanation": "75% of 17900 is 13425. 25% is 4475."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "1100",
+      "1650",
+      "1237.5",
+      "1150"
+    ],
+    "answer": 1,
+    "explanation": "75% of 2200 is 1650. 25% is 550."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(40, 48) and point B(16, 23) in a 2D Euclidean coordinate space?",
+    "options": [
+      "46.75",
+      "61.25",
+      "53.15",
+      "49.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 49.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 58, FP = 19, FN = 9, and TN = 424, what is the exact Accuracy?",
+    "options": [
+      "94.51%",
+      "80.51%",
+      "103.51%",
+      "83.17%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=58, FP=19, FN=9, TN=424."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18400 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3680",
+      "9200",
+      "4180",
+      "4600"
+    ],
+    "answer": 0,
+    "explanation": "80% of 18400 is 14720. 20% is 3680."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4400 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1820",
+      "2200",
+      "1320",
+      "1650"
+    ],
+    "answer": 2,
+    "explanation": "70% of 4400 is 3080. 30% is 1320."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(2, 33) and point B(38, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "66.25",
+      "50.75",
+      "53.00",
+      "57.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 53.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 6x + (-7), what is the predicted response variable y value for x = 6?",
+    "options": [
+      "53",
+      "29",
+      "54",
+      "43"
+    ],
+    "answer": 1,
+    "explanation": "y = 6(6) + -7 = 29."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(40, 39) and point B(33, 54) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.00",
+      "26.15",
+      "27.50",
+      "19.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (-13), what is the predicted response variable y value for x = 47?",
+    "options": [
+      "410",
+      "435",
+      "598",
+      "436"
+    ],
+    "answer": 0,
+    "explanation": "y = 9(47) + -13 = 410."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(35, 6) and point B(43, 25) in a 2D Euclidean coordinate space?",
+    "options": [
+      "33.75",
+      "31.15",
       "27.00",
-      "30.25",
-      "25.15"
+      "24.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 55, FP = 75, FN = 64, and TN = 296, what is the exact Specificity?",
+    "options": [
+      "65.78%",
+      "88.78%",
+      "70.21%",
+      "79.78%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=55, FP=75, FN=64, TN=296."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(21, 7) and point B(7, 30) in a 2D Euclidean coordinate space?",
+    "options": [
+      "41.15",
+      "34.75",
+      "37.00",
+      "46.25"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 37.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 112, FP = 22, FN = 23, and TN = 400, what is the exact Specificity?",
+    "options": [
+      "83.41%",
+      "103.79%",
+      "94.79%",
+      "80.79%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=112, FP=22, FN=23, TN=400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(17, 7) and point B(22, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "6.40",
+      "8.00",
+      "4.15",
+      "10.55"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 6.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8800",
+      "4900",
+      "5500",
+      "4400"
+    ],
+    "answer": 3,
+    "explanation": "75% of 17600 is 13200. 25% is 4400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 68, FN = 18, and TN = 531, what is the exact Specificity?",
+    "options": [
+      "88.65%",
+      "78.01%",
+      "74.65%",
+      "97.65%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=115, FP=68, FN=18, TN=531."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 110, FP = 67, FN = 9, and TN = 212, what is the exact Specificity?",
+    "options": [
+      "66.87%",
+      "84.99%",
+      "75.99%",
+      "61.99%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=110, FP=67, FN=9, TN=212."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (0), what is the predicted response variable y value for x = 20?",
+    "options": [
+      "360",
+      "440",
+      "437",
+      "385"
+    ],
+    "answer": 0,
+    "explanation": "y = 18(20) + 0 = 360."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(49, 34) and point B(48, 12) in a 2D Euclidean coordinate space?",
+    "options": [
+      "26.17",
+      "27.53",
+      "19.77",
+      "22.02"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 22.02."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (3), what is the predicted response variable y value for x = 60?",
+    "options": [
+      "1497",
+      "1528",
+      "1503",
+      "1743"
+    ],
+    "answer": 2,
+    "explanation": "y = 25(60) + 3 = 1503."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 23) and point B(40, 19) in a 2D Euclidean coordinate space?",
+    "options": [
+      "5.81",
+      "8.06",
+      "12.21",
+      "10.08"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 8.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11200 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "5880",
+      "7340",
+      "5600",
+      "7840"
+    ],
+    "answer": 3,
+    "explanation": "70% of 11200 is 7840. 30% is 3360."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(3, 1) and point B(22, 51) in a 2D Euclidean coordinate space?",
+    "options": [
+      "86.25",
+      "66.75",
+      "73.15",
+      "69.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 69.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (8), what is the predicted response variable y value for x = 91?",
+    "options": [
+      "1464",
+      "1084",
+      "1125",
+      "1100"
+    ],
+    "answer": 3,
+    "explanation": "y = 12(91) + 8 = 1100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19500 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "13150",
+      "9750",
+      "10237.5",
+      "13650"
+    ],
+    "answer": 3,
+    "explanation": "70% of 19500 is 13650. 30% is 5850."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 84, FP = 77, FN = 20, and TN = 101, what is the exact Accuracy?",
+    "options": [
+      "57.73%",
+      "74.60%",
+      "65.60%",
+      "51.60%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=84, FP=77, FN=20, TN=101."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5960",
+      "5460",
+      "6825",
+      "9100"
+    ],
+    "answer": 1,
+    "explanation": "70% of 18200 is 12740. 30% is 5460."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "2275",
+      "2081.25",
+      "1850",
+      "2775"
+    ],
+    "answer": 3,
+    "explanation": "75% of 3700 is 2775. 25% is 925."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "13675",
+      "14175",
+      "9450",
+      "10631.25"
+    ],
+    "answer": 1,
+    "explanation": "75% of 18900 is 14175. 25% is 4725."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 297, FP = 84, FN = 36, and TN = 387, what is the exact Precision?",
+    "options": [
+      "86.95%",
+      "63.95%",
+      "77.95%",
+      "68.60%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=297, FP=84, FN=36, TN=387."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(41, 27) and point B(9, 29) in a 2D Euclidean coordinate space?",
+    "options": [
+      "40.08",
+      "29.81",
+      "36.21",
+      "32.06"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 32.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(47, 10) and point B(13, 38) in a 2D Euclidean coordinate space?",
+    "options": [
+      "55.06",
+      "48.20",
+      "44.05",
+      "41.80"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 44.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 121, FP = 46, FN = 49, and TN = 443, what is the exact Precision?",
+    "options": [
+      "81.46%",
+      "58.46%",
+      "63.76%",
+      "72.46%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=121, FP=46, FN=49, TN=443."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 173, FP = 59, FN = 75, and TN = 376, what is the exact Recall?",
+    "options": [
+      "55.76%",
+      "78.76%",
+      "61.39%",
+      "69.76%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=173, FP=59, FN=75, TN=376."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "8575",
+      "9075",
+      "6050",
+      "6806.25"
+    ],
+    "answer": 1,
+    "explanation": "75% of 12100 is 9075. 25% is 3025."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (17), what is the predicted response variable y value for x = 18?",
+    "options": [
+      "240",
+      "181",
+      "215",
+      "287"
+    ],
+    "answer": 2,
+    "explanation": "y = 11(18) + 17 = 215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 124, FP = 82, FN = 18, and TN = 470, what is the exact Accuracy?",
+    "options": [
+      "75.32%",
+      "94.59%",
+      "71.59%",
+      "85.59%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=124, FP=82, FN=18, TN=470."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 172, FP = 6, FN = 38, and TN = 353, what is the exact Accuracy?",
+    "options": [
+      "81.20%",
+      "92.27%",
+      "78.27%",
+      "101.27%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=172, FP=6, FN=38, TN=353."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "700",
+      "875",
+      "1750",
+      "1200"
+    ],
+    "answer": 0,
+    "explanation": "80% of 3500 is 2800. 20% is 700."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 205, FP = 9, FN = 48, and TN = 303, what is the exact Specificity?",
+    "options": [
+      "83.12%",
+      "85.46%",
+      "106.12%",
+      "97.12%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=205, FP=9, FN=48, TN=303."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9400 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3320",
+      "4700",
+      "3525",
+      "2820"
+    ],
+    "answer": 3,
+    "explanation": "70% of 9400 is 6580. 30% is 2820."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(21, 38) and point B(47, 39) in a 2D Euclidean coordinate space?",
+    "options": [
+      "33.75",
+      "27.00",
+      "31.15",
+      "24.75"
     ],
     "answer": 1,
     "explanation": "Manhattan distance formula resolves to 27.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(16, 2) and point B(27, 12) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 321, FP = 13, FN = 61, and TN = 316, what is the exact Recall?",
     "options": [
-      "28.35",
-      "24.25",
-      "21.00",
-      "19.15"
+      "93.03%",
+      "70.03%",
+      "84.03%",
+      "73.95%"
     ],
     "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 21.00."
+    "explanation": "Recall is calculated by standard formula using counts: TP=321, FP=13, FN=61, TN=316."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 26) and point B(25, 25) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(33, 48) and point B(5, 53) in a 2D Euclidean coordinate space?",
     "options": [
-      "24.25",
-      "21.00",
-      "19.15",
-      "28.35"
+      "35.55",
+      "28.44",
+      "32.59",
+      "26.19"
     ],
     "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 21.00."
+    "explanation": "Euclidean distance formula resolves to 28.44."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 152, FP = 14, FN = 41, and TN = 321, what is the exact Accuracy?",
+    "question": "Given a classification report with TP = 226, FP = 80, FN = 72, and TN = 386, what is the exact Accuracy?",
     "options": [
-      "89.58%",
-      "76.15%",
-      "77.58%",
-      "97.58%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=152, FP=14, FN=41, TN=321."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 29) and point B(25, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "19.15",
-      "24.25",
-      "21.00",
-      "28.35"
+      "66.10%",
+      "89.10%",
+      "80.10%",
+      "70.49%"
     ],
     "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 21.00."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=226, FP=80, FN=72, TN=386."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (8), what is the predicted response variable y value for x = 1?",
+    "question": "For a linear regression model parameterized as y = 15x + (-20), what is the predicted response variable y value for x = 9?",
     "options": [
-      "-3",
-      "28",
-      "13",
-      "16"
+      "115",
+      "151",
+      "140",
+      "155"
     ],
-    "answer": 2,
-    "explanation": "y = 5(1) + 8 = 13."
+    "answer": 0,
+    "explanation": "y = 15(9) + -20 = 115."
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(20, 14) and point B(8, 14) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 261, FP = 54, FN = 66, and TN = 577, what is the exact Precision?",
     "options": [
-      "10.15",
-      "12.00",
-      "16.20",
-      "15.25"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(20, 29) and point B(12, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.09",
-      "12.07",
-      "12.19",
-      "8.94"
+      "91.86%",
+      "68.86%",
+      "72.91%",
+      "82.86%"
     ],
     "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 8.94."
+    "explanation": "Precision is calculated by standard formula using counts: TP=261, FP=54, FN=66, TN=577."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 128, FP = 23, FN = 17, and TN = 111, what is the exact Precision?",
+    "options": [
+      "93.77%",
+      "74.60%",
+      "84.77%",
+      "70.77%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=128, FP=23, FN=17, TN=111."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "800",
+      "480",
+      "980",
+      "600"
+    ],
+    "answer": 1,
+    "explanation": "70% of 1600 is 1120. 30% is 480."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19800 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4950",
+      "4460",
+      "9900",
+      "3960"
+    ],
+    "answer": 3,
+    "explanation": "80% of 19800 is 15840. 20% is 3960."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3825",
+      "3560",
+      "5100",
+      "3060"
+    ],
+    "answer": 3,
+    "explanation": "70% of 10200 is 7140. 30% is 3060."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(29, 12) and point B(19, 14) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(31, 17) and point B(8, 35) in a 2D Euclidean coordinate space?",
     "options": [
-      "12.00",
-      "15.25",
-      "16.20",
-      "10.15"
+      "36.51",
+      "33.36",
+      "26.96",
+      "29.21"
     ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 12.00."
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 29.21."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
+    "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 111, FP = 44, FN = 37, and TN = 346, what is the exact Accuracy?",
+    "question": "What is the Manhattan distance between coordinate point A(45, 16) and point B(46, 7) in a 2D Euclidean coordinate space?",
     "options": [
-      "84.94%",
-      "72.94%",
-      "72.20%",
-      "92.94%"
+      "7.75",
+      "12.50",
+      "10.00",
+      "14.15"
     ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=111, FP=44, FN=37, TN=346."
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 10.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 232, FP = 23, FN = 29, and TN = 292, what is the exact Precision?",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
     "options": [
-      "90.98%",
-      "98.98%",
-      "77.33%",
-      "78.98%"
+      "12720",
+      "9540",
+      "7950",
+      "12220"
     ],
     "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=232, FP=23, FN=29, TN=292."
+    "explanation": "80% of 15900 is 12720. 20% is 3180."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3312.5",
+      "3150",
+      "5300",
+      "2650"
+    ],
+    "answer": 3,
+    "explanation": "75% of 10600 is 7950. 25% is 2650."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(17, 43) and point B(19, 24) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.75",
+      "21.00",
+      "25.15",
+      "26.25"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11100 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2220",
+      "2720",
+      "5550",
+      "2775"
+    ],
+    "answer": 0,
+    "explanation": "80% of 11100 is 8880. 20% is 2220."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-5), what is the predicted response variable y value for x = 30?",
+    "question": "For a linear regression model parameterized as y = 17x + (-11), what is the predicted response variable y value for x = 96?",
     "options": [
-      "155",
-      "160",
-      "145",
-      "235"
+      "1646",
+      "2005",
+      "1621",
+      "1643"
     ],
     "answer": 2,
-    "explanation": "y = 5(30) + -5 = 145."
+    "explanation": "y = 17(96) + -11 = 1621."
   },
   {
     "subject": "AI / ML",
@@ -11319,8 +8631,8 @@ window.quizData.aiml = [
     "question": "A machine learning pipeline is partitioning a dataset of 4200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
     "options": [
       "1260",
-      "1890",
-      "1510",
+      "1575",
+      "1760",
       "2100"
     ],
     "answer": 0,
@@ -11330,1523 +8642,1383 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 17000 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
     "options": [
-      "1390",
-      "2850",
-      "1710",
-      "1140"
+      "4250",
+      "8500",
+      "3900",
+      "3400"
     ],
     "answer": 3,
-    "explanation": "80% of 5700 is 4560. 20% is 1140."
+    "explanation": "80% of 17000 is 13600. 20% is 3400."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(16, 24) and point B(13, 12) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(48, 26) and point B(48, 50) in a 2D Euclidean coordinate space?",
     "options": [
-      "16.70",
-      "12.37",
-      "15.62",
-      "10.52"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 12.37."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-1), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "575",
-      "482",
-      "469",
-      "467"
-    ],
-    "answer": 3,
-    "explanation": "y = 13(36) + -1 = 467."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 144, FP = 12, FN = 16, and TN = 226, what is the exact Accuracy?",
-    "options": [
-      "79.02%",
-      "80.96%",
-      "92.96%",
-      "100.96%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=144, FP=12, FN=16, TN=226."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 110, FP = 13, FN = 36, and TN = 359, what is the exact Accuracy?",
-    "options": [
-      "98.54%",
-      "90.54%",
-      "78.54%",
-      "76.96%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=110, FP=13, FN=36, TN=359."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 129, FP = 19, FN = 27, and TN = 201, what is the exact Recall?",
-    "options": [
-      "70.29%",
-      "70.69%",
-      "82.69%",
-      "90.69%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=129, FP=19, FN=27, TN=201."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 93, FP = 14, FN = 46, and TN = 121, what is the exact Precision?",
-    "options": [
-      "74.92%",
-      "94.92%",
-      "73.88%",
-      "86.92%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=93, FP=14, FN=46, TN=121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1050",
-      "2100",
-      "1300",
-      "1575"
-    ],
-    "answer": 0,
-    "explanation": "75% of 4200 is 3150. 25% is 1050."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 128, FP = 19, FN = 11, and TN = 254, what is the exact Recall?",
-    "options": [
-      "92.09%",
-      "100.09%",
-      "80.09%",
-      "78.27%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=128, FP=19, FN=11, TN=254."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (-3), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "5",
-      "-1",
-      "2",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "y = 2(1) + -3 = -1."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-5), what is the predicted response variable y value for x = 34?",
-    "options": [
-      "199",
-      "112",
-      "97",
-      "107"
-    ],
-    "answer": 2,
-    "explanation": "y = 3(34) + -5 = 97."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 9) and point B(19, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "36.00",
-      "34.15",
-      "39.25",
-      "48.60"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 36.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 13) and point B(14, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.00",
-      "11.25",
-      "10.80",
-      "6.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-3), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "227",
-      "317",
-      "236",
-      "221"
-    ],
-    "answer": 3,
-    "explanation": "y = 7(32) + -3 = 221."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(0, 12) and point B(21, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "37.80",
-      "31.25",
-      "28.00",
-      "26.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 28.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 245, FP = 46, FN = 21, and TN = 257, what is the exact Specificity?",
-    "options": [
-      "72.82%",
-      "72.10%",
-      "84.82%",
-      "92.82%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=245, FP=46, FN=21, TN=257."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (9), what is the predicted response variable y value for x = 30?",
-    "options": [
-      "414",
-      "489",
-      "399",
-      "381"
-    ],
-    "answer": 2,
-    "explanation": "y = 13(30) + 9 = 399."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(17, 11) and point B(27, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.25",
-      "25.00",
-      "23.15",
-      "33.75"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(6, 11) and point B(26, 21) in a 2D Euclidean coordinate space?",
-    "options": [
+      "30.00",
       "28.15",
-      "33.25",
-      "40.50",
-      "30.00"
+      "21.75",
+      "24.00"
     ],
     "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 30.00."
+    "explanation": "Manhattan distance formula resolves to 24.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(23, 39) and point B(16, 30) in a 2D Euclidean coordinate space?",
     "options": [
-      "3600",
-      "2880",
-      "3350",
-      "2400"
+      "14.25",
+      "9.15",
+      "11.40",
+      "15.55"
     ],
-    "answer": 0,
-    "explanation": "75% of 4800 is 3600. 25% is 1200."
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 11.40."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (5), what is the predicted response variable y value for x = 20?",
+    "question": "For a linear regression model parameterized as y = 22x + (-9), what is the predicted response variable y value for x = 14?",
     "options": [
-      "85",
-      "75",
-      "100",
-      "145"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(20) + 5 = 85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 89, FP = 50, FN = 45, and TN = 296, what is the exact Accuracy?",
-    "options": [
-      "80.21%",
-      "68.18%",
-      "68.21%",
-      "88.21%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=89, FP=50, FN=45, TN=296."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 249, FP = 27, FN = 38, and TN = 268, what is the exact Recall?",
-    "options": [
-      "74.76%",
-      "94.76%",
-      "73.75%",
-      "86.76%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=249, FP=27, FN=38, TN=268."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 167, FP = 14, FN = 29, and TN = 194, what is the exact Recall?",
-    "options": [
-      "73.20%",
-      "93.20%",
-      "72.42%",
-      "85.20%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=167, FP=14, FN=29, TN=194."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 78, FP = 26, FN = 39, and TN = 228, what is the exact Specificity?",
-    "options": [
-      "97.76%",
-      "89.76%",
-      "76.30%",
-      "77.76%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=78, FP=26, FN=39, TN=228."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-9), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "314",
-      "383",
       "317",
-      "299"
-    ],
-    "answer": 3,
-    "explanation": "y = 11(28) + -9 = 299."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 9) and point B(16, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "9.06",
-      "4.86",
-      "9.96",
-      "6.71"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 6.71."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (2), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "305",
-      "286",
-      "290",
-      "362"
+      "355",
+      "299",
+      "324"
     ],
     "answer": 2,
-    "explanation": "y = 12(24) + 2 = 290."
+    "explanation": "y = 22(14) + -9 = 299."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(25, 0) and point B(32, 6) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(37, 12) and point B(52, 26) in a 2D Euclidean coordinate space?",
     "options": [
-      "13.00",
-      "11.15",
-      "16.25",
-      "17.55"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-6), what is the predicted response variable y value for x = 18?",
-    "options": [
-      "225",
-      "210",
-      "264",
-      "222"
+      "18.27",
+      "20.52",
+      "24.67",
+      "25.65"
     ],
     "answer": 1,
-    "explanation": "y = 12(18) + -6 = 210."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 211, FP = 25, FN = 35, and TN = 286, what is the exact Accuracy?",
-    "options": [
-      "77.23%",
-      "97.23%",
-      "75.84%",
-      "89.23%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=211, FP=25, FN=35, TN=286."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 62, FP = 31, FN = 43, and TN = 114, what is the exact Recall?",
-    "options": [
-      "59.05%",
-      "47.05%",
-      "50.19%",
-      "67.05%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=62, FP=31, FN=43, TN=114."
+    "explanation": "Euclidean distance formula resolves to 20.52."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(20, 17) and point B(25, 22) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(7, 48) and point B(23, 35) in a 2D Euclidean coordinate space?",
     "options": [
-      "13.50",
-      "10.00",
-      "13.25",
-      "8.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 75, FP = 5, FN = 46, and TN = 145, what is the exact Precision?",
-    "options": [
-      "101.75%",
-      "79.69%",
-      "81.75%",
-      "93.75%"
+      "18.37",
+      "25.77",
+      "24.77",
+      "20.62"
     ],
     "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=75, FP=5, FN=46, TN=145."
+    "explanation": "Euclidean distance formula resolves to 20.62."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (2), what is the predicted response variable y value for x = 25?",
+    "question": "For a linear regression model parameterized as y = 14x + (-2), what is the predicted response variable y value for x = 45?",
     "options": [
-      "202",
-      "217",
-      "198",
-      "277"
+      "653",
+      "628",
+      "632",
+      "808"
+    ],
+    "answer": 1,
+    "explanation": "y = 14(45) + -2 = 628."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (-18), what is the predicted response variable y value for x = 61?",
+    "options": [
+      "1177",
+      "1166",
+      "1385",
+      "1141"
+    ],
+    "answer": 3,
+    "explanation": "y = 19(61) + -18 = 1141."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 26x + (-6), what is the predicted response variable y value for x = 28?",
+    "options": [
+      "722",
+      "747",
+      "834",
+      "734"
     ],
     "answer": 0,
-    "explanation": "y = 8(25) + 2 = 202."
+    "explanation": "y = 26(28) + -6 = 722."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(18, 40) and point B(50, 14) in a 2D Euclidean coordinate space?",
+    "options": [
+      "38.98",
+      "45.38",
+      "41.23",
+      "51.54"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 41.23."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 202, FP = 25, FN = 27, and TN = 569, what is the exact Accuracy?",
+    "options": [
+      "82.44%",
+      "93.68%",
+      "79.68%",
+      "102.68%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=202, FP=25, FN=27, TN=569."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(18, 0) and point B(49, 54) in a 2D Euclidean coordinate space?",
+    "options": [
+      "60.02",
+      "77.83",
+      "66.42",
+      "62.27"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 62.27."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(8, 28) and point B(54, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "57.62",
+      "50.25",
+      "43.85",
+      "46.10"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 46.10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(45, 29) and point B(5, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "59.15",
+      "52.75",
+      "55.00",
+      "68.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 55.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 7200 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
     "options": [
-      "3875",
-      "4125",
-      "2750",
-      "3300"
+      "5040",
+      "3780",
+      "3600",
+      "4540"
     ],
-    "answer": 1,
-    "explanation": "75% of 5500 is 4125. 25% is 1375."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(22, 17) and point B(20, 8) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.37",
-      "12.47",
-      "12.45",
-      "9.22"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 23, FN = 30, and TN = 143, what is the exact Accuracy?",
-    "options": [
-      "66.71%",
-      "66.91%",
-      "86.71%",
-      "78.71%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=53, FP=23, FN=30, TN=143."
+    "answer": 0,
+    "explanation": "70% of 7200 is 5040. 30% is 2160."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-2), what is the predicted response variable y value for x = 3?",
+    "question": "For a linear regression model parameterized as y = 14x + (14), what is the predicted response variable y value for x = 68?",
     "options": [
-      "25",
-      "20",
-      "31",
-      "16"
+      "1238",
+      "966",
+      "991",
+      "938"
+    ],
+    "answer": 1,
+    "explanation": "y = 14(68) + 14 = 966."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 21x + (13), what is the predicted response variable y value for x = 56?",
+    "options": [
+      "1163",
+      "1413",
+      "1214",
+      "1189"
     ],
     "answer": 3,
-    "explanation": "y = 6(3) + -2 = 16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (9), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "297",
-      "279",
-      "393",
-      "312"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(32) + 9 = 297."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(18, 26) and point B(5, 23) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.00",
-      "19.25",
-      "21.60",
-      "14.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 142, FP = 14, FN = 46, and TN = 327, what is the exact Accuracy?",
-    "options": [
-      "88.66%",
-      "76.66%",
-      "75.36%",
-      "96.66%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=142, FP=14, FN=46, TN=327."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (2), what is the predicted response variable y value for x = 26?",
-    "options": [
-      "288",
-      "210",
-      "225",
-      "206"
-    ],
-    "answer": 1,
-    "explanation": "y = 8(26) + 2 = 210."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(11, 11) and point B(18, 19) in a 2D Euclidean coordinate space?",
-    "options": [
-      "8.78",
-      "13.88",
-      "10.63",
-      "14.35"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.63."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(16, 9) and point B(18, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.27",
-      "8.64",
-      "5.39",
-      "3.54"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 5.39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 177, FP = 15, FN = 28, and TN = 115, what is the exact Specificity?",
-    "options": [
-      "96.46%",
-      "88.46%",
-      "75.19%",
-      "76.46%"
-    ],
-    "answer": 1,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=177, FP=15, FN=28, TN=115."
+    "explanation": "y = 21(56) + 13 = 1189."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 1100 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "880",
+      "550",
+      "660",
+      "380"
+    ],
+    "answer": 0,
+    "explanation": "80% of 1100 is 880. 20% is 220."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 98, FP = 51, FN = 51, and TN = 297, what is the exact Recall?",
+    "options": [
+      "65.77%",
+      "57.88%",
+      "74.77%",
+      "51.77%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=98, FP=51, FN=51, TN=297."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(29, 36) and point B(15, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "14.00",
+      "17.50",
+      "11.75",
+      "18.15"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-4), what is the predicted response variable y value for x = 23?",
+    "options": [
+      "527",
+      "510",
+      "594",
+      "502"
+    ],
+    "answer": 3,
+    "explanation": "y = 22(23) + -4 = 502."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
     "options": [
       "800",
       "1200",
-      "1050",
-      "1600"
-    ],
-    "answer": 0,
-    "explanation": "75% of 3200 is 2400. 25% is 800."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 145, FP = 25, FN = 9, and TN = 272, what is the exact Precision?",
-    "options": [
-      "93.29%",
-      "73.29%",
-      "72.50%",
-      "85.29%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=145, FP=25, FN=9, TN=272."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(3, 22) and point B(13, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "21.60",
-      "16.00",
-      "19.25",
-      "14.15"
+      "900",
+      "700"
     ],
     "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 16.00."
+    "explanation": "75% of 1600 is 1200. 25% is 400."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-7), what is the predicted response variable y value for x = 16?",
+    "question": "For a linear regression model parameterized as y = 26x + (15), what is the predicted response variable y value for x = 4?",
     "options": [
-      "137",
-      "151",
-      "185",
-      "152"
-    ],
-    "answer": 0,
-    "explanation": "y = 9(16) + -7 = 137."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (0), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "18",
-      "33",
-      "18",
-      "36"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(6) + 0 = 18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 62, FP = 42, FN = 14, and TN = 298, what is the exact Precision?",
-    "options": [
-      "59.62%",
-      "47.62%",
-      "50.67%",
-      "67.62%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=62, FP=42, FN=14, TN=298."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 1) and point B(21, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "44.55",
-      "31.15",
-      "33.00",
-      "36.25"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 33.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (0), what is the predicted response variable y value for x = 38?",
-    "options": [
-      "114",
-      "129",
-      "114",
-      "228"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(38) + 0 = 114."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (6), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "357",
-      "426",
-      "342",
-      "330"
-    ],
-    "answer": 2,
-    "explanation": "y = 12(28) + 6 = 342."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (0), what is the predicted response variable y value for x = 38?",
-    "options": [
-      "418",
-      "418",
-      "433",
-      "532"
-    ],
-    "answer": 0,
-    "explanation": "y = 11(38) + 0 = 418."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(7, 8) and point B(34, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "37.66",
-      "26.04",
-      "31.14",
-      "27.89"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 27.89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 65, FP = 39, FN = 29, and TN = 186, what is the exact Precision?",
-    "options": [
-      "70.50%",
-      "53.13%",
-      "62.50%",
-      "50.50%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=65, FP=39, FN=29, TN=186."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-9), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "27",
-      "30",
-      "12",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "y = 7(3) + -9 = 12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(23, 0) and point B(33, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "33.25",
-      "28.15",
-      "40.50",
-      "30.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 30.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(11, 26) and point B(11, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.65",
-      "19.00",
-      "22.25",
-      "17.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(2, 26) and point B(11, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "13.30",
-      "8.00",
-      "13.10",
-      "9.85"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5800 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2175",
-      "1450",
-      "2900",
-      "1700"
-    ],
-    "answer": 1,
-    "explanation": "75% of 5800 is 4350. 25% is 1450."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(6, 17) and point B(8, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.00",
-      "18.25",
-      "20.25",
-      "13.15"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(0, 22) and point B(15, 30) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.15",
-      "22.95",
-      "20.25",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 163, FP = 40, FN = 11, and TN = 191, what is the exact Accuracy?",
-    "options": [
-      "75.41%",
-      "74.30%",
-      "87.41%",
-      "95.41%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=163, FP=40, FN=11, TN=191."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (8), what is the predicted response variable y value for x = 11?",
-    "options": [
+      "144",
+      "135",
       "89",
-      "74",
-      "107",
-      "58"
+      "119"
     ],
-    "answer": 1,
-    "explanation": "y = 6(11) + 8 = 74."
+    "answer": 3,
+    "explanation": "y = 26(4) + 15 = 119."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-9), what is the predicted response variable y value for x = 4?",
+    "question": "For a linear regression model parameterized as y = 3x + (12), what is the predicted response variable y value for x = 56?",
     "options": [
-      "54",
-      "51",
-      "39",
-      "57"
-    ],
-    "answer": 2,
-    "explanation": "y = 12(4) + -9 = 39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (8), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "118",
-      "184",
-      "133",
-      "102"
+      "180",
+      "205",
+      "156",
+      "404"
     ],
     "answer": 0,
-    "explanation": "y = 5(22) + 8 = 118."
+    "explanation": "y = 3(56) + 12 = 180."
   },
   {
     "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (5), what is the predicted response variable y value for x = 16?",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(26, 43) and point B(41, 6) in a 2D Euclidean coordinate space?",
     "options": [
-      "123",
-      "133",
-      "181",
-      "148"
+      "37.67",
+      "39.92",
+      "44.07",
+      "49.91"
     ],
     "answer": 1,
-    "explanation": "y = 8(16) + 5 = 133."
+    "explanation": "Euclidean distance formula resolves to 39.92."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(36, 13) and point B(47, 15) in a 2D Euclidean coordinate space?",
+    "options": [
+      "13.98",
+      "11.18",
+      "8.93",
+      "15.33"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 11.18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(40, 38) and point B(35, 9) in a 2D Euclidean coordinate space?",
+    "options": [
+      "34.00",
+      "31.75",
+      "42.50",
+      "38.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 34.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2100 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "920",
+      "1050",
+      "525",
+      "420"
+    ],
+    "answer": 3,
+    "explanation": "80% of 2100 is 1680. 20% is 420."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12600 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4725",
+      "6300",
+      "4280",
+      "3780"
+    ],
+    "answer": 3,
+    "explanation": "70% of 12600 is 8820. 30% is 3780."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 241, FP = 44, FN = 22, and TN = 101, what is the exact Specificity?",
+    "options": [
+      "78.66%",
+      "55.66%",
+      "61.30%",
+      "69.66%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=241, FP=44, FN=22, TN=101."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (9), what is the predicted response variable y value for x = 5?",
+    "question": "For a linear regression model parameterized as y = 19x + (10), what is the predicted response variable y value for x = 88?",
     "options": [
-      "16",
-      "49",
-      "34",
-      "49"
+      "1682",
+      "1707",
+      "1662",
+      "2034"
+    ],
+    "answer": 0,
+    "explanation": "y = 19(88) + 10 = 1682."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 273, FP = 31, FN = 63, and TN = 297, what is the exact Specificity?",
+    "options": [
+      "99.55%",
+      "90.55%",
+      "76.55%",
+      "79.68%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=273, FP=31, FN=63, TN=297."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "5275",
+      "3850",
+      "4331.25",
+      "5775"
+    ],
+    "answer": 3,
+    "explanation": "75% of 7700 is 5775. 25% is 1925."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(21, 40) and point B(46, 49) in a 2D Euclidean coordinate space?",
+    "options": [
+      "24.32",
+      "33.21",
+      "26.57",
+      "30.72"
     ],
     "answer": 2,
-    "explanation": "y = 5(5) + 9 = 34."
+    "explanation": "Euclidean distance formula resolves to 26.57."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 256, FP = 11, FN = 38, and TN = 237, what is the exact Accuracy?",
+    "options": [
+      "99.96%",
+      "80.04%",
+      "76.96%",
+      "90.96%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=256, FP=11, FN=38, TN=237."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 324, FP = 73, FN = 43, and TN = 116, what is the exact Recall?",
+    "options": [
+      "97.28%",
+      "74.28%",
+      "88.28%",
+      "77.69%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=324, FP=73, FN=43, TN=116."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(42, 4) and point B(11, 17) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.37",
+      "42.02",
+      "33.62",
+      "37.77"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 33.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2800 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1400",
+      "840",
+      "1050",
+      "1340"
+    ],
+    "answer": 1,
+    "explanation": "70% of 2800 is 1960. 30% is 840."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4150",
+      "2075",
+      "2160",
+      "1660"
+    ],
+    "answer": 3,
+    "explanation": "80% of 8300 is 6640. 20% is 1660."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (2), what is the predicted response variable y value for x = 27?",
+    "question": "For a linear regression model parameterized as y = 8x + (11), what is the predicted response variable y value for x = 43?",
     "options": [
+      "355",
       "380",
-      "295",
-      "314",
-      "299"
+      "527",
+      "333"
     ],
-    "answer": 3,
-    "explanation": "y = 11(27) + 2 = 299."
+    "answer": 0,
+    "explanation": "y = 8(43) + 11 = 355."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (3), what is the predicted response variable y value for x = 34?",
+    "question": "For a linear regression model parameterized as y = 26x + (16), what is the predicted response variable y value for x = 35?",
     "options": [
-      "337",
+      "894",
+      "1066",
+      "926",
+      "951"
+    ],
+    "answer": 2,
+    "explanation": "y = 26(35) + 16 = 926."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3800 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1640",
+      "1425",
+      "1900",
+      "1140"
+    ],
+    "answer": 3,
+    "explanation": "70% of 3800 is 2660. 30% is 1140."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10600 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2650",
+      "5300",
+      "2120",
+      "2620"
+    ],
+    "answer": 2,
+    "explanation": "80% of 10600 is 8480. 20% is 2120."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 44) and point B(10, 9) in a 2D Euclidean coordinate space?",
+    "options": [
+      "41.88",
+      "46.03",
+      "39.63",
+      "52.35"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 41.88."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "1000",
+      "1400",
+      "900",
+      "1050"
+    ],
+    "answer": 1,
+    "explanation": "70% of 2000 is 1400. 30% is 600."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9300 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "6975",
+      "4650",
+      "5231.25",
+      "6475"
+    ],
+    "answer": 0,
+    "explanation": "75% of 9300 is 6975. 25% is 2325."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 26x + (17), what is the predicted response variable y value for x = 62?",
+    "options": [
+      "1629",
+      "1595",
+      "1654",
+      "1877"
+    ],
+    "answer": 0,
+    "explanation": "y = 26(62) + 17 = 1629."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 247, FP = 73, FN = 52, and TN = 281, what is the exact Recall?",
+    "options": [
+      "68.61%",
+      "82.61%",
+      "91.61%",
+      "72.70%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=247, FP=73, FN=52, TN=281."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4400 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "2580",
+      "2200",
+      "2310",
+      "3080"
+    ],
+    "answer": 3,
+    "explanation": "70% of 4400 is 3080. 30% is 1320."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(27, 13) and point B(47, 13) in a 2D Euclidean coordinate space?",
+    "options": [
+      "25.00",
+      "24.15",
+      "17.75",
+      "20.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 20.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2700 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "1620",
+      "1660",
+      "1350",
+      "2160"
+    ],
+    "answer": 3,
+    "explanation": "80% of 2700 is 2160. 20% is 540."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(39, 27) and point B(32, 13) in a 2D Euclidean coordinate space?",
+    "options": [
+      "19.80",
+      "13.40",
+      "15.65",
+      "19.57"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 15.65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (-9), what is the predicted response variable y value for x = 67?",
+    "options": [
+      "1081",
+      "1063",
+      "1331",
+      "1088"
+    ],
+    "answer": 1,
+    "explanation": "y = 16(67) + -9 = 1063."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2790",
+      "3487.5",
+      "4650",
+      "3290"
+    ],
+    "answer": 0,
+    "explanation": "70% of 9300 is 6510. 30% is 2790."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(36, 43) and point B(35, 7) in a 2D Euclidean coordinate space?",
+    "options": [
+      "45.02",
+      "36.01",
+      "40.16",
+      "33.76"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 36.01."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 319, FP = 83, FN = 73, and TN = 230, what is the exact Recall?",
+    "options": [
+      "81.38%",
+      "90.38%",
+      "71.61%",
+      "67.38%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=319, FP=83, FN=73, TN=230."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 23x + (-18), what is the predicted response variable y value for x = 88?",
+    "options": [
+      "2042",
+      "2358",
+      "2006",
+      "2031"
+    ],
+    "answer": 2,
+    "explanation": "y = 23(88) + -18 = 2006."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (-10), what is the predicted response variable y value for x = 65?",
+    "options": [
+      "205",
       "445",
-      "358",
-      "343"
+      "210",
+      "185"
     ],
     "answer": 3,
-    "explanation": "y = 10(34) + 3 = 343."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 69, FP = 10, FN = 46, and TN = 329, what is the exact Recall?",
-    "options": [
-      "48.00%",
-      "51.00%",
-      "68.00%",
-      "60.00%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=69, FP=10, FN=46, TN=329."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1700 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "1110",
-      "850",
-      "1088",
-      "1360"
-    ],
-    "answer": 3,
-    "explanation": "80% of 1700 is 1360. 20% is 340."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 194, FP = 36, FN = 52, and TN = 360, what is the exact Precision?",
-    "options": [
-      "71.70%",
-      "92.35%",
-      "84.35%",
-      "72.35%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=194, FP=36, FN=52, TN=360."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 191, FP = 34, FN = 54, and TN = 312, what is the exact Specificity?",
-    "options": [
-      "78.17%",
-      "76.65%",
-      "90.17%",
-      "98.17%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=191, FP=34, FN=54, TN=312."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (4), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "26",
-      "34",
-      "49",
-      "64"
-    ],
-    "answer": 1,
-    "explanation": "y = 3(10) + 4 = 34."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (4), what is the predicted response variable y value for x = 12?",
-    "options": [
-      "124",
-      "80",
-      "88",
-      "103"
-    ],
-    "answer": 2,
-    "explanation": "y = 7(12) + 4 = 88."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4700 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "3008",
-      "3760",
-      "2350",
-      "3510"
-    ],
-    "answer": 1,
-    "explanation": "80% of 4700 is 3760. 20% is 940."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (8), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "38",
-      "32",
-      "16",
-      "47"
-    ],
-    "answer": 1,
-    "explanation": "y = 12(2) + 8 = 32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 156, FP = 22, FN = 22, and TN = 248, what is the exact Recall?",
-    "options": [
-      "75.64%",
-      "95.64%",
-      "87.64%",
-      "74.49%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=156, FP=22, FN=22, TN=248."
+    "explanation": "y = 3(65) + -10 = 185."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(20, 15) and point B(29, 11) in a 2D Euclidean coordinate space?",
+    "question": "What is the Manhattan distance between coordinate point A(49, 41) and point B(36, 30) in a 2D Euclidean coordinate space?",
     "options": [
-      "9.85",
-      "13.30",
-      "13.10",
-      "8.00"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 9.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 172, FP = 44, FN = 18, and TN = 268, what is the exact Precision?",
-    "options": [
-      "67.69%",
-      "67.63%",
-      "87.63%",
-      "79.63%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=172, FP=44, FN=18, TN=268."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (2), what is the predicted response variable y value for x = 31?",
-    "options": [
-      "215",
-      "312",
-      "234",
-      "219"
-    ],
-    "answer": 3,
-    "explanation": "y = 7(31) + 2 = 219."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 1) and point B(17, 9) in a 2D Euclidean coordinate space?",
-    "options": [
-      "11.25",
-      "10.80",
-      "6.15",
-      "8.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (5), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "237",
-      "262",
-      "313",
-      "247"
-    ],
-    "answer": 3,
-    "explanation": "y = 11(22) + 5 = 247."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1300",
-      "2600",
-      "1550",
-      "1950"
-    ],
-    "answer": 0,
-    "explanation": "75% of 5200 is 3900. 25% is 1300."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(29, 27) and point B(29, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.00",
-      "20.25",
-      "18.25",
-      "13.15"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 240, FP = 51, FN = 44, and TN = 363, what is the exact Recall?",
-    "options": [
-      "84.51%",
-      "92.51%",
-      "71.83%",
-      "72.51%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=240, FP=51, FN=44, TN=363."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-1), what is the predicted response variable y value for x = 20?",
-    "options": [
-      "194",
-      "179",
-      "239",
-      "181"
-    ],
-    "answer": 1,
-    "explanation": "y = 9(20) + -1 = 179."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1800 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
-    "options": [
-      "1010",
-      "1260",
-      "1008",
-      "900"
-    ],
-    "answer": 1,
-    "explanation": "70% of 1800 is 1260. 30% is 540."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(27, 2) and point B(14, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.40",
-      "19.65",
-      "14.55",
-      "22.14"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 16.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(16, 10) and point B(25, 25) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.25",
+      "21.75",
       "24.00",
-      "32.40",
-      "22.15"
+      "28.15",
+      "30.00"
     ],
     "answer": 1,
     "explanation": "Manhattan distance formula resolves to 24.00."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 50, FN = 22, and TN = 147, what is the exact Precision?",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19900 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
     "options": [
-      "39.46%",
-      "43.74%",
-      "51.46%",
-      "59.46%"
+      "5475",
+      "9950",
+      "4975",
+      "6218.75"
     ],
     "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=53, FP=50, FN=22, TN=147."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-1), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "54",
-      "39",
-      "69",
-      "41"
-    ],
-    "answer": 1,
-    "explanation": "y = 4(10) + -1 = 39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 135, FP = 47, FN = 39, and TN = 365, what is the exact Accuracy?",
-    "options": [
-      "85.32%",
-      "93.32%",
-      "73.32%",
-      "72.53%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=135, FP=47, FN=39, TN=365."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 194, FP = 9, FN = 54, and TN = 340, what is the exact Precision?",
-    "options": [
-      "81.23%",
-      "103.57%",
-      "83.57%",
-      "95.57%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=194, FP=9, FN=54, TN=340."
+    "explanation": "75% of 19900 is 14925. 25% is 4975."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(20, 11) and point B(10, 33) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(30, 45) and point B(45, 5) in a 2D Euclidean coordinate space?",
     "options": [
+      "40.47",
+      "53.40",
+      "42.72",
+      "46.87"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 42.72."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(22, 34) and point B(16, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.24",
+      "14.84",
+      "21.36",
+      "17.09"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 17.09."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (5), what is the predicted response variable y value for x = 20?",
+    "options": [
+      "165",
+      "190",
+      "155",
+      "245"
+    ],
+    "answer": 0,
+    "explanation": "y = 8(20) + 5 = 165."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 193, FP = 51, FN = 11, and TN = 386, what is the exact Accuracy?",
+    "options": [
+      "99.33%",
+      "76.33%",
+      "90.33%",
+      "79.49%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=193, FP=51, FN=11, TN=386."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "11350",
+      "7900",
+      "11850",
+      "8887.5"
+    ],
+    "answer": 2,
+    "explanation": "75% of 15800 is 11850. 25% is 3950."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(3, 15) and point B(9, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.18",
+      "22.53",
+      "18.03",
+      "15.78"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 18.03."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 299, FP = 19, FN = 53, and TN = 513, what is the exact Specificity?",
+    "options": [
+      "105.43%",
+      "96.43%",
+      "84.86%",
+      "82.43%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=299, FP=19, FN=53, TN=513."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(19, 47) and point B(5, 23) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.78",
+      "31.93",
+      "25.53",
+      "34.73"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 27.78."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(3, 39) and point B(34, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "29.15",
+      "39.25",
+      "35.55",
+      "31.40"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 31.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (7), what is the predicted response variable y value for x = 86?",
+    "options": [
+      "1297",
+      "1641",
+      "1322",
+      "1283"
+    ],
+    "answer": 0,
+    "explanation": "y = 15(86) + 7 = 1297."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(4, 5) and point B(48, 21) in a 2D Euclidean coordinate space?",
+    "options": [
+      "64.15",
+      "75.00",
+      "57.75",
+      "60.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 60.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 122, FP = 74, FN = 56, and TN = 302, what is the exact Accuracy?",
+    "options": [
+      "85.53%",
+      "76.53%",
+      "62.53%",
+      "67.35%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=122, FP=74, FN=56, TN=302."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(5, 48) and point B(18, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "23.25",
+      "23.88",
+      "16.85",
+      "19.10"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 19.10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(46, 4) and point B(53, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "44.75",
+      "51.15",
+      "47.00",
+      "58.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 47.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (-17), what is the predicted response variable y value for x = 21?",
+    "options": [
+      "46",
+      "130",
+      "80",
+      "71"
+    ],
+    "answer": 0,
+    "explanation": "y = 3(21) + -17 = 46."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(0, 29) and point B(39, 33) in a 2D Euclidean coordinate space?",
+    "options": [
+      "43.35",
+      "49.01",
+      "36.95",
+      "39.20"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 39.20."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(24, 46) and point B(17, 10) in a 2D Euclidean coordinate space?",
+    "options": [
+      "45.84",
+      "36.67",
+      "40.82",
+      "34.42"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 36.67."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 144, FP = 10, FN = 77, and TN = 174, what is the exact Precision?",
+    "options": [
+      "82.29%",
+      "93.51%",
+      "102.51%",
+      "79.51%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=144, FP=10, FN=77, TN=174."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 23x + (19), what is the predicted response variable y value for x = 48?",
+    "options": [
+      "1315",
+      "1148",
+      "1123",
+      "1085"
+    ],
+    "answer": 2,
+    "explanation": "y = 23(48) + 19 = 1123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 253, FP = 74, FN = 32, and TN = 240, what is the exact Recall?",
+    "options": [
+      "88.77%",
+      "74.77%",
+      "97.77%",
+      "78.12%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=253, FP=74, FN=32, TN=240."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(28, 2) and point B(43, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.40",
+      "36.80",
+      "32.65",
+      "40.81"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 32.65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 88, FP = 55, FN = 46, and TN = 544, what is the exact Accuracy?",
+    "options": [
+      "75.87%",
+      "86.22%",
+      "95.22%",
+      "72.22%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=88, FP=55, FN=46, TN=544."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13000 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4062.5",
+      "6500",
+      "3750",
+      "3250"
+    ],
+    "answer": 3,
+    "explanation": "75% of 13000 is 9750. 25% is 3250."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 21) and point B(23, 53) in a 2D Euclidean coordinate space?",
+    "options": [
+      "41.91",
+      "33.53",
+      "37.68",
+      "31.28"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 33.53."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4300 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1075",
+      "1343.75",
+      "2150",
+      "1575"
+    ],
+    "answer": 0,
+    "explanation": "75% of 4300 is 3225. 25% is 1075."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (-6), what is the predicted response variable y value for x = 40?",
+    "options": [
+      "594",
+      "606",
+      "754",
+      "619"
+    ],
+    "answer": 0,
+    "explanation": "y = 15(40) + -6 = 594."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (-8), what is the predicted response variable y value for x = 47?",
+    "options": [
+      "581",
+      "744",
+      "572",
+      "556"
+    ],
+    "answer": 3,
+    "explanation": "y = 12(47) + -8 = 556."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(22, 28) and point B(45, 17) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.75",
+      "42.50",
+      "38.15",
+      "34.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 34.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 162, FP = 27, FN = 73, and TN = 301, what is the exact Recall?",
+    "options": [
+      "77.94%",
+      "60.66%",
+      "68.94%",
+      "54.94%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=162, FP=27, FN=73, TN=301."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "6750",
+      "5900",
+      "9000",
+      "5400"
+    ],
+    "answer": 3,
+    "explanation": "70% of 18000 is 12600. 30% is 5400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(12, 9) and point B(12, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "26.00",
+      "32.50",
+      "23.75",
+      "30.15"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 26.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 100, FP = 16, FN = 7, and TN = 331, what is the exact Recall?",
+    "options": [
+      "93.46%",
+      "102.46%",
+      "82.24%",
+      "79.46%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=100, FP=16, FN=7, TN=331."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1100",
+      "660",
+      "825",
+      "1160"
+    ],
+    "answer": 1,
+    "explanation": "70% of 2200 is 1540. 30% is 660."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(28, 16) and point B(30, 51) in a 2D Euclidean coordinate space?",
+    "options": [
+      "35.06",
+      "39.21",
+      "43.82",
+      "32.81"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 35.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (-18), what is the predicted response variable y value for x = 62?",
+    "options": [
+      "1557",
+      "1532",
+      "1568",
+      "1780"
+    ],
+    "answer": 1,
+    "explanation": "y = 25(62) + -18 = 1532."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (5), what is the predicted response variable y value for x = 92?",
+    "options": [
+      "1661",
+      "1318",
+      "1293",
+      "1283"
+    ],
+    "answer": 2,
+    "explanation": "y = 14(92) + 5 = 1293."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 242, FP = 56, FN = 18, and TN = 104, what is the exact Specificity?",
+    "options": [
+      "74.00%",
+      "51.00%",
+      "57.20%",
+      "65.00%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=242, FP=56, FN=18, TN=104."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(8, 0) and point B(11, 42) in a 2D Euclidean coordinate space?",
+    "options": [
+      "39.86",
+      "42.11",
+      "52.63",
+      "46.26"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 42.11."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(35, 39) and point B(11, 41) in a 2D Euclidean coordinate space?",
+    "options": [
+      "32.50",
       "30.15",
-      "35.25",
-      "43.20",
-      "32.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 32.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (5), what is the predicted response variable y value for x = 12?",
-    "options": [
-      "149",
-      "164",
-      "139",
-      "185"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(12) + 5 = 149."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 0) and point B(13, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "30.00",
-      "28.15",
-      "40.50",
-      "33.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 30.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (8), what is the predicted response variable y value for x = 34?",
-    "options": [
-      "416",
-      "518",
-      "400",
-      "431"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(34) + 8 = 416."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 118, FP = 48, FN = 22, and TN = 129, what is the exact Precision?",
-    "options": [
-      "71.08%",
-      "60.42%",
-      "59.08%",
-      "79.08%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=118, FP=48, FN=22, TN=129."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 151, FP = 54, FN = 34, and TN = 323, what is the exact Recall?",
-    "options": [
-      "81.62%",
-      "89.62%",
-      "69.62%",
-      "69.38%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=151, FP=54, FN=34, TN=323."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(18, 1) and point B(28, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "28.15",
-      "33.25",
-      "40.50",
-      "30.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 30.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(26, 9) and point B(24, 26) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.37",
-      "17.12",
-      "15.27",
-      "23.11"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 17.12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-7), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "53",
-      "35",
-      "49",
-      "50"
-    ],
-    "answer": 1,
-    "explanation": "y = 7(6) + -7 = 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 12) and point B(6, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "3.00",
-      "4.05",
-      "1.15",
-      "6.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(22, 2) and point B(30, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "35.10",
-      "29.25",
-      "24.15",
+      "23.75",
       "26.00"
     ],
     "answer": 3,
@@ -12854,168 +10026,1638 @@ window.quizData.aiml = [
   },
   {
     "subject": "AI / ML",
-    "topic": "KNN & Clustering",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(25, 3) and point B(15, 28) in a 2D Euclidean coordinate space?",
+    "question": "Given a classification report with TP = 305, FP = 67, FN = 52, and TN = 174, what is the exact Recall?",
     "options": [
-      "35.00",
-      "38.25",
-      "47.25",
-      "33.15"
+      "75.18%",
+      "94.43%",
+      "71.43%",
+      "85.43%"
     ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 35.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-6), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "186",
-      "198",
-      "258",
-      "201"
-    ],
-    "answer": 0,
-    "explanation": "y = 8(24) + -6 = 186."
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=305, FP=67, FN=52, TN=174."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 218, FP = 27, FN = 6, and TN = 282, what is the exact Precision?",
+    "question": "Given a classification report with TP = 110, FP = 56, FN = 14, and TN = 382, what is the exact Precision?",
     "options": [
-      "75.63%",
-      "76.98%",
-      "96.98%",
-      "88.98%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=218, FP=27, FN=6, TN=282."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (0), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "15",
-      "24",
-      "30",
-      "15"
-    ],
-    "answer": 0,
-    "explanation": "y = 5(3) + 0 = 15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (3), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "30",
-      "15",
-      "9",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "y = 12(1) + 3 = 15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (7), what is the predicted response variable y value for x = 1?",
-    "options": [
-      "20",
-      "3",
-      "32",
-      "17"
-    ],
-    "answer": 3,
-    "explanation": "y = 10(1) + 7 = 17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (5), what is the predicted response variable y value for x = 12?",
-    "options": [
-      "43",
-      "53",
-      "68",
-      "89"
-    ],
-    "answer": 1,
-    "explanation": "y = 4(12) + 5 = 53."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 222, FP = 47, FN = 42, and TN = 144, what is the exact Specificity?",
-    "options": [
-      "64.08%",
-      "83.39%",
-      "63.39%",
-      "75.39%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=222, FP=47, FN=42, TN=144."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(25, 23) and point B(5, 27) in a 2D Euclidean coordinate space?",
-    "options": [
-      "20.40",
-      "23.65",
-      "27.53",
-      "18.55"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 20.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 140, FP = 18, FN = 33, and TN = 155, what is the exact Recall?",
-    "options": [
-      "68.79%",
-      "88.92%",
-      "68.92%",
-      "80.92%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=140, FP=18, FN=33, TN=155."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 152, FP = 35, FN = 5, and TN = 283, what is the exact Specificity?",
-    "options": [
-      "76.99%",
-      "96.99%",
-      "88.99%",
-      "75.64%"
+      "52.27%",
+      "75.27%",
+      "66.27%",
+      "58.31%"
     ],
     "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=152, FP=35, FN=5, TN=283."
+    "explanation": "Precision is calculated by standard formula using counts: TP=110, FP=56, FN=14, TN=382."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (4), what is the predicted response variable y value for x = 41?",
+    "options": [
+      "250",
+      "86",
+      "78",
+      "111"
+    ],
+    "answer": 1,
+    "explanation": "y = 2(41) + 4 = 86."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9000 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2700",
+      "3200",
+      "3375",
+      "4500"
+    ],
+    "answer": 0,
+    "explanation": "70% of 9000 is 6300. 30% is 2700."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(2, 0) and point B(8, 22) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(25, 9) and point B(16, 16) in a 2D Euclidean coordinate space?",
     "options": [
-      "26.15",
-      "37.80",
-      "28.00",
+      "14.25",
+      "11.40",
+      "9.15",
+      "15.55"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 11.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8900 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "7120",
+      "4450",
+      "5340",
+      "6620"
+    ],
+    "answer": 0,
+    "explanation": "80% of 8900 is 7120. 20% is 1780."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 21x + (-3), what is the predicted response variable y value for x = 21?",
+    "options": [
+      "444",
+      "463",
+      "438",
+      "522"
+    ],
+    "answer": 2,
+    "explanation": "y = 21(21) + -3 = 438."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(37, 25) and point B(29, 30) in a 2D Euclidean coordinate space?",
+    "options": [
+      "7.18",
+      "11.79",
+      "9.43",
+      "13.58"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 9.43."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(48, 39) and point B(14, 24) in a 2D Euclidean coordinate space?",
+    "options": [
+      "34.91",
+      "46.45",
+      "37.16",
+      "41.31"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 37.16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(4, 9) and point B(15, 6) in a 2D Euclidean coordinate space?",
+    "options": [
+      "9.15",
+      "15.55",
+      "14.25",
+      "11.40"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 11.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(42, 45) and point B(7, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "40.15",
+      "36.00",
+      "45.00",
+      "33.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 36.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (17), what is the predicted response variable y value for x = 85?",
+    "options": [
+      "867",
+      "1207",
+      "892",
+      "833"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(85) + 17 = 867."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 120, FP = 47, FN = 15, and TN = 404, what is the exact Precision?",
+    "options": [
+      "57.86%",
+      "80.86%",
+      "71.86%",
+      "63.23%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=120, FP=47, FN=15, TN=404."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (13), what is the predicted response variable y value for x = 87?",
+    "options": [
+      "1379",
+      "1405",
+      "1430",
+      "1753"
+    ],
+    "answer": 1,
+    "explanation": "y = 16(87) + 13 = 1405."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(37, 31) and point B(50, 43) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.75",
+      "29.15",
+      "25.00",
       "31.25"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 25.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (12), what is the predicted response variable y value for x = 61?",
+    "options": [
+      "317",
+      "561",
+      "293",
+      "342"
+    ],
+    "answer": 0,
+    "explanation": "y = 5(61) + 12 = 317."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(29, 5) and point B(52, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "51.75",
+      "67.50",
+      "58.15",
+      "54.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 54.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (-14), what is the predicted response variable y value for x = 57?",
+    "options": [
+      "983",
+      "980",
+      "955",
+      "1183"
+    ],
+    "answer": 2,
+    "explanation": "y = 17(57) + -14 = 955."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(6, 7) and point B(12, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "47.57",
+      "43.42",
+      "54.27",
+      "41.17"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 43.42."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1460",
+      "1825",
+      "1960",
+      "3650"
+    ],
+    "answer": 0,
+    "explanation": "80% of 7300 is 5840. 20% is 1460."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(21, 36) and point B(25, 40) in a 2D Euclidean coordinate space?",
+    "options": [
+      "9.81",
+      "3.41",
+      "5.66",
+      "7.07"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 5.66."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2500 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "1250",
+      "2000",
+      "1500",
+      "1500"
+    ],
+    "answer": 1,
+    "explanation": "80% of 2500 is 2000. 20% is 500."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(17, 48) and point B(9, 15) in a 2D Euclidean coordinate space?",
+    "options": [
+      "45.15",
+      "51.25",
+      "38.75",
+      "41.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 41.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (10), what is the predicted response variable y value for x = 75?",
+    "options": [
+      "335",
+      "290",
+      "310",
+      "610"
+    ],
+    "answer": 2,
+    "explanation": "y = 4(75) + 10 = 310."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2700 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "1525",
+      "1518.75",
+      "2025",
+      "1350"
+    ],
+    "answer": 2,
+    "explanation": "75% of 2700 is 2025. 25% is 675."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(13, 4) and point B(19, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "41.25",
+      "33.00",
+      "30.75",
+      "37.15"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 33.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (0), what is the predicted response variable y value for x = 88?",
+    "options": [
+      "880",
+      "905",
+      "1232",
+      "957"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(88) + 0 = 880."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 139, FP = 42, FN = 48, and TN = 215, what is the exact Specificity?",
+    "options": [
+      "69.66%",
+      "92.66%",
+      "83.66%",
+      "73.62%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=139, FP=42, FN=48, TN=215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 312, FP = 26, FN = 12, and TN = 169, what is the exact Specificity?",
+    "options": [
+      "76.27%",
+      "95.67%",
+      "72.67%",
+      "86.67%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=312, FP=26, FN=12, TN=169."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 228, FP = 78, FN = 23, and TN = 131, what is the exact Recall?",
+    "options": [
+      "76.84%",
+      "99.84%",
+      "79.94%",
+      "90.84%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=228, FP=78, FN=23, TN=131."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14500 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "10375",
+      "7250",
+      "10875",
+      "8156.25"
+    ],
+    "answer": 2,
+    "explanation": "75% of 14500 is 10875. 25% is 3625."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(6, 0) and point B(5, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "39.16",
+      "32.76",
+      "43.77",
+      "35.01"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 35.01."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 332, FP = 49, FN = 27, and TN = 186, what is the exact Accuracy?",
+    "options": [
+      "87.21%",
+      "73.21%",
+      "96.21%",
+      "76.74%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=332, FP=49, FN=27, TN=186."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3840",
+      "4800",
+      "9600",
+      "4340"
+    ],
+    "answer": 0,
+    "explanation": "80% of 19200 is 15360. 20% is 3840."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7500 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2375",
+      "2343.75",
+      "1875",
+      "3750"
+    ],
+    "answer": 2,
+    "explanation": "75% of 7500 is 5625. 25% is 1875."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (13), what is the predicted response variable y value for x = 81?",
+    "options": [
+      "1471",
+      "1172",
+      "1121",
+      "1147"
+    ],
+    "answer": 3,
+    "explanation": "y = 14(81) + 13 = 1147."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 25x + (5), what is the predicted response variable y value for x = 5?",
+    "options": [
+      "120",
+      "155",
+      "130",
+      "150"
+    ],
+    "answer": 2,
+    "explanation": "y = 25(5) + 5 = 130."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4600 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "920",
+      "1420",
+      "2300",
+      "1150"
+    ],
+    "answer": 0,
+    "explanation": "80% of 4600 is 3680. 20% is 920."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 210, FP = 37, FN = 29, and TN = 487, what is the exact Precision?",
+    "options": [
+      "71.02%",
+      "94.02%",
+      "85.02%",
+      "74.82%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=210, FP=37, FN=29, TN=487."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 313, FP = 31, FN = 75, and TN = 590, what is the exact Accuracy?",
+    "options": [
+      "98.49%",
+      "75.49%",
+      "89.49%",
+      "78.76%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=313, FP=31, FN=75, TN=590."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (-19), what is the predicted response variable y value for x = 80?",
+    "options": [
+      "541",
+      "221",
+      "246",
+      "259"
+    ],
+    "answer": 1,
+    "explanation": "y = 3(80) + -19 = 221."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2750",
+      "1375",
+      "1600",
+      "1100"
+    ],
+    "answer": 3,
+    "explanation": "80% of 5500 is 4400. 20% is 1100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 288, FP = 62, FN = 20, and TN = 338, what is the exact Specificity?",
+    "options": [
+      "70.50%",
+      "74.36%",
+      "84.50%",
+      "93.50%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=288, FP=62, FN=20, TN=338."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (5), what is the predicted response variable y value for x = 14?",
+    "options": [
+      "205",
+      "215",
+      "271",
+      "240"
+    ],
+    "answer": 1,
+    "explanation": "y = 15(14) + 5 = 215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(20, 34) and point B(25, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "9.25",
+      "2.85",
+      "5.10",
+      "6.37"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 5.10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 58, FN = 25, and TN = 397, what is the exact Specificity?",
+    "options": [
+      "87.25%",
+      "96.25%",
+      "76.78%",
+      "73.25%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=78, FP=58, FN=25, TN=397."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(8, 25) and point B(34, 40) in a 2D Euclidean coordinate space?",
+    "options": [
+      "34.17",
+      "27.77",
+      "37.52",
+      "30.02"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 30.02."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 334, FP = 59, FN = 48, and TN = 183, what is the exact Precision?",
+    "options": [
+      "70.99%",
+      "93.99%",
+      "84.99%",
+      "74.79%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=334, FP=59, FN=48, TN=183."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1000",
+      "1500",
+      "1250",
+      "2500"
+    ],
+    "answer": 0,
+    "explanation": "80% of 5000 is 4000. 20% is 1000."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (-15), what is the predicted response variable y value for x = 57?",
+    "options": [
+      "129",
+      "327",
+      "124",
+      "99"
+    ],
+    "answer": 3,
+    "explanation": "y = 2(57) + -15 = 99."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(13, 28) and point B(49, 24) in a 2D Euclidean coordinate space?",
+    "options": [
+      "37.75",
+      "50.00",
+      "44.15",
+      "40.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 40.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 176, FP = 64, FN = 52, and TN = 471, what is the exact Accuracy?",
+    "options": [
+      "93.80%",
+      "70.80%",
+      "74.62%",
+      "84.80%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=176, FP=64, FN=52, TN=471."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(9, 16) and point B(25, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "54.15",
+      "50.00",
+      "47.75",
+      "62.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 50.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (0), what is the predicted response variable y value for x = 96?",
+    "options": [
+      "697",
+      "1056",
+      "749",
+      "672"
+    ],
+    "answer": 3,
+    "explanation": "y = 7(96) + 0 = 672."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-5), what is the predicted response variable y value for x = 5?",
+    "options": [
+      "35",
+      "45",
+      "55",
+      "60"
+    ],
+    "answer": 0,
+    "explanation": "y = 8(5) + -5 = 35."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 212, FP = 62, FN = 67, and TN = 348, what is the exact Accuracy?",
+    "options": [
+      "81.28%",
+      "90.28%",
+      "67.28%",
+      "71.52%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=212, FP=62, FN=67, TN=348."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (10), what is the predicted response variable y value for x = 79?",
+    "options": [
+      "1886",
+      "1931",
+      "2222",
+      "1906"
+    ],
+    "answer": 3,
+    "explanation": "y = 24(79) + 10 = 1906."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(7, 15) and point B(39, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "37.22",
+      "34.97",
+      "46.52",
+      "41.37"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 37.22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 9100 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1820",
+      "2320",
+      "2275",
+      "4550"
+    ],
+    "answer": 0,
+    "explanation": "80% of 9100 is 7280. 20% is 1820."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "9175",
+      "9675",
+      "6450",
+      "7256.25"
+    ],
+    "answer": 1,
+    "explanation": "75% of 12900 is 9675. 25% is 3225."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16300 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "9168.75",
+      "11725",
+      "12225",
+      "8150"
+    ],
+    "answer": 2,
+    "explanation": "75% of 16300 is 12225. 25% is 4075."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13200 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "9240",
+      "6600",
+      "8740",
+      "6930"
+    ],
+    "answer": 0,
+    "explanation": "70% of 13200 is 9240. 30% is 3960."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "4260",
+      "5325",
+      "4760",
+      "7100"
+    ],
+    "answer": 0,
+    "explanation": "70% of 14200 is 9940. 30% is 4260."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 161, FP = 46, FN = 64, and TN = 355, what is the exact Specificity?",
+    "options": [
+      "88.53%",
+      "77.91%",
+      "74.53%",
+      "97.53%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=161, FP=46, FN=64, TN=355."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(12, 11) and point B(10, 30) in a 2D Euclidean coordinate space?",
+    "options": [
+      "23.88",
+      "16.85",
+      "23.25",
+      "19.10"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 19.10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 20x + (-14), what is the predicted response variable y value for x = 8?",
+    "options": [
+      "171",
+      "178",
+      "174",
+      "146"
+    ],
+    "answer": 3,
+    "explanation": "y = 20(8) + -14 = 146."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (18), what is the predicted response variable y value for x = 99?",
+    "options": [
+      "1033",
+      "1404",
+      "1008",
+      "972"
+    ],
+    "answer": 2,
+    "explanation": "y = 10(99) + 18 = 1008."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 111, FP = 63, FN = 58, and TN = 211, what is the exact Recall?",
+    "options": [
+      "51.68%",
+      "65.68%",
+      "57.80%",
+      "74.68%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=111, FP=63, FN=58, TN=211."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (-3), what is the predicted response variable y value for x = 98?",
+    "options": [
+      "2355",
+      "2349",
+      "2741",
+      "2374"
+    ],
+    "answer": 1,
+    "explanation": "y = 24(98) + -3 = 2349."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(42, 27) and point B(17, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.40",
+      "32.81",
+      "24.00",
+      "26.25"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 26.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 276, FP = 55, FN = 28, and TN = 583, what is the exact Specificity?",
+    "options": [
+      "100.38%",
+      "77.38%",
+      "80.41%",
+      "91.38%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=276, FP=55, FN=28, TN=583."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 12x + (-18), what is the predicted response variable y value for x = 3?",
+    "options": [
+      "18",
+      "54",
+      "43",
+      "30"
+    ],
+    "answer": 0,
+    "explanation": "y = 12(3) + -18 = 18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (-1), what is the predicted response variable y value for x = 16?",
+    "options": [
+      "81",
+      "143",
+      "104",
+      "79"
+    ],
+    "answer": 3,
+    "explanation": "y = 5(16) + -1 = 79."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (-2), what is the predicted response variable y value for x = 8?",
+    "options": [
+      "142",
+      "135",
+      "110",
+      "114"
+    ],
+    "answer": 2,
+    "explanation": "y = 14(8) + -2 = 110."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 13x + (12), what is the predicted response variable y value for x = 80?",
+    "options": [
+      "1077",
+      "1372",
+      "1052",
+      "1028"
+    ],
+    "answer": 2,
+    "explanation": "y = 13(80) + 12 = 1052."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 337, FP = 11, FN = 42, and TN = 529, what is the exact Recall?",
+    "options": [
+      "78.25%",
+      "97.92%",
+      "74.92%",
+      "88.92%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=337, FP=11, FN=42, TN=529."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(19, 1) and point B(51, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "79.15",
+      "75.00",
+      "72.75",
+      "93.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 75.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(1, 22) and point B(8, 13) in a 2D Euclidean coordinate space?",
+    "options": [
+      "13.75",
+      "20.15",
+      "20.00",
+      "16.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (-8), what is the predicted response variable y value for x = 58?",
+    "options": [
+      "1094",
+      "887",
+      "862",
+      "878"
+    ],
+    "answer": 2,
+    "explanation": "y = 15(58) + -8 = 862."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(42, 38) and point B(49, 5) in a 2D Euclidean coordinate space?",
+    "options": [
+      "50.00",
+      "37.75",
+      "44.15",
+      "40.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 40.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12000 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "6000",
+      "6750",
+      "9000",
+      "8500"
+    ],
+    "answer": 2,
+    "explanation": "75% of 12000 is 9000. 25% is 3000."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(15, 32) and point B(47, 31) in a 2D Euclidean coordinate space?",
+    "options": [
+      "36.17",
+      "40.02",
+      "32.02",
+      "29.77"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 32.02."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(18, 0) and point B(10, 40) in a 2D Euclidean coordinate space?",
+    "options": [
+      "52.15",
+      "60.00",
+      "48.00",
+      "45.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 48.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (-9), what is the predicted response variable y value for x = 28?",
+    "options": [
+      "495",
+      "383",
+      "401",
+      "408"
+    ],
+    "answer": 1,
+    "explanation": "y = 14(28) + -9 = 383."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (-11), what is the predicted response variable y value for x = 43?",
+    "options": [
+      "613",
+      "616",
+      "591",
+      "763"
+    ],
+    "answer": 2,
+    "explanation": "y = 14(43) + -11 = 591."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(43, 15) and point B(16, 9) in a 2D Euclidean coordinate space?",
+    "options": [
+      "30.75",
+      "41.25",
+      "37.15",
+      "33.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 33.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(36, 12) and point B(40, 21) in a 2D Euclidean coordinate space?",
+    "options": [
+      "17.15",
+      "16.25",
+      "10.75",
+      "13.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 310, FP = 77, FN = 39, and TN = 341, what is the exact Accuracy?",
+    "options": [
+      "74.69%",
+      "84.88%",
+      "93.88%",
+      "70.88%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=310, FP=77, FN=39, TN=341."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(5, 26) and point B(40, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "45.00",
+      "42.75",
+      "49.15",
+      "56.25"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 45.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-17), what is the predicted response variable y value for x = 5?",
+    "options": [
+      "57",
+      "48",
+      "43",
+      "23"
+    ],
+    "answer": 3,
+    "explanation": "y = 8(5) + -17 = 23."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 215, FP = 42, FN = 84, and TN = 583, what is the exact Accuracy?",
+    "options": [
+      "95.36%",
+      "72.36%",
+      "76.00%",
+      "86.36%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=215, FP=42, FN=84, TN=583."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(17, 29) and point B(7, 8) in a 2D Euclidean coordinate space?",
+    "options": [
+      "23.26",
+      "29.07",
+      "21.01",
+      "27.41"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 23.26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4600 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1150",
+      "2300",
+      "1437.5",
+      "1650"
+    ],
+    "answer": 0,
+    "explanation": "75% of 4600 is 3450. 25% is 1150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "7750",
+      "5812.5",
+      "4650",
+      "5150"
+    ],
+    "answer": 2,
+    "explanation": "70% of 15500 is 10850. 30% is 4650."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (-16), what is the predicted response variable y value for x = 19?",
+    "options": [
+      "174",
+      "199",
+      "206",
+      "250"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(19) + -16 = 174."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(16, 47) and point B(32, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "35.53",
+      "31.38",
+      "29.13",
+      "39.23"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 31.38."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(14, 25) and point B(48, 12) in a 2D Euclidean coordinate space?",
+    "options": [
+      "58.75",
+      "47.00",
+      "51.15",
+      "44.75"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 47.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2560",
+      "2575",
+      "5150",
+      "2060"
+    ],
+    "answer": 3,
+    "explanation": "80% of 10300 is 8240. 20% is 2060."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 293, FP = 51, FN = 79, and TN = 240, what is the exact Recall?",
+    "options": [
+      "69.31%",
+      "87.76%",
+      "64.76%",
+      "78.76%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=293, FP=51, FN=79, TN=240."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(4, 5) and point B(50, 14) in a 2D Euclidean coordinate space?",
+    "options": [
+      "68.75",
+      "59.15",
+      "55.00",
+      "52.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 55.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (-19), what is the predicted response variable y value for x = 91?",
+    "options": [
+      "1475",
+      "1437",
+      "1462",
+      "1801"
+    ],
+    "answer": 1,
+    "explanation": "y = 16(91) + -19 = 1437."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 148, FP = 27, FN = 32, and TN = 144, what is the exact Precision?",
+    "options": [
+      "84.57%",
+      "74.42%",
+      "93.57%",
+      "70.57%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=148, FP=27, FN=32, TN=144."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 23x + (6), what is the predicted response variable y value for x = 27?",
+    "options": [
+      "735",
+      "615",
+      "652",
+      "627"
+    ],
+    "answer": 3,
+    "explanation": "y = 23(27) + 6 = 627."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3600 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "2700",
+      "2200",
+      "1800",
+      "2025"
+    ],
+    "answer": 0,
+    "explanation": "75% of 3600 is 2700. 25% is 900."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (-4), what is the predicted response variable y value for x = 39?",
+    "options": [
+      "581",
+      "433",
+      "425",
+      "450"
+    ],
+    "answer": 2,
+    "explanation": "y = 11(39) + -4 = 425."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 272, FP = 26, FN = 76, and TN = 275, what is the exact Specificity?",
+    "options": [
+      "91.36%",
+      "100.36%",
+      "80.40%",
+      "77.36%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=272, FP=26, FN=76, TN=275."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 140, FP = 26, FN = 67, and TN = 340, what is the exact Precision?",
+    "options": [
+      "74.22%",
+      "70.34%",
+      "93.34%",
+      "84.34%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=140, FP=26, FN=67, TN=340."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (11), what is the predicted response variable y value for x = 85?",
+    "options": [
+      "1456",
+      "1796",
+      "1481",
+      "1434"
+    ],
+    "answer": 0,
+    "explanation": "y = 17(85) + 11 = 1456."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 247, FP = 29, FN = 44, and TN = 528, what is the exact Accuracy?",
+    "options": [
+      "77.39%",
+      "91.39%",
+      "100.39%",
+      "80.42%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=247, FP=29, FN=44, TN=528."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (-8), what is the predicted response variable y value for x = 72?",
+    "options": [
+      "1576",
+      "1864",
+      "1601",
+      "1592"
+    ],
+    "answer": 0,
+    "explanation": "y = 22(72) + -8 = 1576."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (15), what is the predicted response variable y value for x = 9?",
+    "options": [
+      "123",
+      "87",
+      "112",
+      "57"
+    ],
+    "answer": 1,
+    "explanation": "y = 8(9) + 15 = 87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 80, FP = 82, FN = 73, and TN = 508, what is the exact Accuracy?",
+    "options": [
+      "88.14%",
+      "69.64%",
+      "79.14%",
+      "65.14%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=80, FP=82, FN=73, TN=508."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(7, 8) and point B(51, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "54.27",
+      "62.65",
+      "47.87",
+      "50.12"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 50.12."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "4400",
+      "6100",
+      "6600",
+      "4950"
+    ],
+    "answer": 2,
+    "explanation": "75% of 8800 is 6600. 25% is 2200."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 125, FP = 80, FN = 14, and TN = 109, what is the exact Accuracy?",
+    "options": [
+      "62.78%",
+      "80.34%",
+      "57.34%",
+      "71.34%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=125, FP=80, FN=14, TN=109."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12000 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "7200",
+      "6000",
+      "9600",
+      "9100"
+    ],
+    "answer": 2,
+    "explanation": "80% of 12000 is 9600. 20% is 2400."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(28, 29) and point B(48, 21) in a 2D Euclidean coordinate space?",
+    "options": [
+      "35.00",
+      "25.75",
+      "28.00",
+      "32.15"
     ],
     "answer": 2,
     "explanation": "Manhattan distance formula resolves to 28.00."
@@ -13024,68 +11666,1356 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (9), what is the predicted response variable y value for x = 18?",
+    "question": "For a linear regression model parameterized as y = 21x + (-18), what is the predicted response variable y value for x = 38?",
     "options": [
-      "63",
-      "81",
-      "135",
-      "96"
+      "816",
+      "780",
+      "932",
+      "805"
     ],
     "answer": 1,
-    "explanation": "y = 4(18) + 9 = 81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-1), what is the predicted response variable y value for x = 24?",
-    "options": [
-      "134",
-      "121",
-      "119",
-      "191"
-    ],
-    "answer": 2,
-    "explanation": "y = 5(24) + -1 = 119."
+    "explanation": "y = 21(38) + -18 = 780."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 10400 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
     "options": [
-      "1350",
-      "1150",
-      "2250",
-      "900"
+      "5200",
+      "7820",
+      "6240",
+      "8320"
     ],
     "answer": 3,
-    "explanation": "80% of 4500 is 3600. 20% is 900."
+    "explanation": "80% of 10400 is 8320. 20% is 2080."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (1), what is the predicted response variable y value for x = 0?",
+    "question": "For a linear regression model parameterized as y = 24x + (17), what is the predicted response variable y value for x = 3?",
     "options": [
-      "1",
-      "-1",
-      "16",
-      "1"
+      "89",
+      "114",
+      "101",
+      "55"
     ],
     "answer": 0,
-    "explanation": "y = 10(0) + 1 = 1."
+    "explanation": "y = 24(3) + 17 = 89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7800 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3900",
+      "2437.5",
+      "1950",
+      "2450"
+    ],
+    "answer": 2,
+    "explanation": "75% of 7800 is 5850. 25% is 1950."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(7, 25) and point B(30, 19) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(5, 21) and point B(38, 35) in a 2D Euclidean coordinate space?",
+    "options": [
+      "44.81",
+      "35.85",
+      "40.00",
+      "33.60"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 35.85."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(46, 37) and point B(49, 50) in a 2D Euclidean coordinate space?",
+    "options": [
+      "13.75",
+      "20.15",
+      "16.00",
+      "20.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 61, FP = 71, FN = 16, and TN = 261, what is the exact Precision?",
+    "options": [
+      "46.21%",
+      "40.67%",
+      "55.21%",
+      "32.21%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=61, FP=71, FN=16, TN=261."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 174, FP = 37, FN = 28, and TN = 171, what is the exact Specificity?",
+    "options": [
+      "91.21%",
+      "82.21%",
+      "68.21%",
+      "72.35%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=174, FP=37, FN=28, TN=171."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(28, 4) and point B(14, 12) in a 2D Euclidean coordinate space?",
+    "options": [
+      "20.16",
+      "16.12",
+      "20.27",
+      "13.87"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 16.12."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (-9), what is the predicted response variable y value for x = 18?",
+    "options": [
+      "387",
+      "315",
+      "333",
+      "340"
+    ],
+    "answer": 1,
+    "explanation": "y = 18(18) + -9 = 315."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 6x + (-9), what is the predicted response variable y value for x = 86?",
+    "options": [
+      "532",
+      "851",
+      "525",
+      "507"
+    ],
+    "answer": 3,
+    "explanation": "y = 6(86) + -9 = 507."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(5, 46) and point B(44, 34) in a 2D Euclidean coordinate space?",
+    "options": [
+      "55.15",
+      "63.75",
+      "51.00",
+      "48.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 51.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 253, FP = 68, FN = 51, and TN = 459, what is the exact Specificity?",
+    "options": [
+      "73.10%",
+      "87.10%",
+      "76.65%",
+      "96.10%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=253, FP=68, FN=51, TN=459."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 261, FP = 53, FN = 12, and TN = 505, what is the exact Recall?",
+    "options": [
+      "81.60%",
+      "84.13%",
+      "95.60%",
+      "104.60%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=261, FP=53, FN=12, TN=505."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 20x + (-8), what is the predicted response variable y value for x = 84?",
+    "options": [
+      "1697",
+      "1688",
+      "2008",
+      "1672"
+    ],
+    "answer": 3,
+    "explanation": "y = 20(84) + -8 = 1672."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4100 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2050",
+      "1730",
+      "1230",
+      "1537.5"
+    ],
+    "answer": 2,
+    "explanation": "70% of 4100 is 2870. 30% is 1230."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(41, 39) and point B(14, 5) in a 2D Euclidean coordinate space?",
+    "options": [
+      "76.25",
+      "65.15",
+      "61.00",
+      "58.75"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 61.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (7), what is the predicted response variable y value for x = 92?",
+    "options": [
+      "375",
+      "743",
+      "361",
+      "400"
+    ],
+    "answer": 0,
+    "explanation": "y = 4(92) + 7 = 375."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 269, FP = 31, FN = 38, and TN = 438, what is the exact Accuracy?",
+    "options": [
+      "91.11%",
+      "80.18%",
+      "100.11%",
+      "77.11%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=269, FP=31, FN=38, TN=438."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 19500 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "9750",
+      "5850",
+      "6350",
+      "7312.5"
+    ],
+    "answer": 1,
+    "explanation": "70% of 19500 is 13650. 30% is 5850."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13000 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2600",
+      "3250",
+      "3100",
+      "6500"
+    ],
+    "answer": 0,
+    "explanation": "80% of 13000 is 10400. 20% is 2600."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(23, 5) and point B(28, 15) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.75",
+      "12.75",
+      "15.00",
+      "19.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(4, 17) and point B(50, 39) in a 2D Euclidean coordinate space?",
+    "options": [
+      "63.74",
+      "50.99",
+      "55.14",
+      "48.74"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 50.99."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(22, 13) and point B(14, 21) in a 2D Euclidean coordinate space?",
+    "options": [
+      "11.31",
+      "15.46",
+      "14.14",
+      "9.06"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 11.31."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7400 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "5180",
+      "4680",
+      "3700",
+      "3885"
+    ],
+    "answer": 0,
+    "explanation": "70% of 7400 is 5180. 30% is 2220."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 8100 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "4050",
+      "5980",
+      "6480",
+      "4860"
+    ],
+    "answer": 2,
+    "explanation": "80% of 8100 is 6480. 20% is 1620."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 196, FP = 56, FN = 17, and TN = 579, what is the exact Accuracy?",
+    "options": [
+      "91.39%",
+      "77.39%",
+      "100.39%",
+      "80.42%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=196, FP=56, FN=17, TN=579."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 113, FP = 62, FN = 10, and TN = 212, what is the exact Specificity?",
+    "options": [
+      "63.37%",
+      "77.37%",
+      "68.09%",
+      "86.37%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=113, FP=62, FN=10, TN=212."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (-20), what is the predicted response variable y value for x = 32?",
+    "options": [
+      "69",
+      "84",
+      "44",
+      "172"
+    ],
+    "answer": 2,
+    "explanation": "y = 2(32) + -20 = 44."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 45, FN = 27, and TN = 437, what is the exact Recall?",
+    "options": [
+      "80.99%",
+      "66.99%",
+      "89.99%",
+      "71.27%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=115, FP=45, FN=27, TN=437."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 24x + (-11), what is the predicted response variable y value for x = 76?",
+    "options": [
+      "1838",
+      "2117",
+      "1835",
+      "1813"
+    ],
+    "answer": 3,
+    "explanation": "y = 24(76) + -11 = 1813."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (7), what is the predicted response variable y value for x = 68?",
+    "options": [
+      "415",
+      "168",
+      "129",
+      "143"
+    ],
+    "answer": 3,
+    "explanation": "y = 2(68) + 7 = 143."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 185, FP = 50, FN = 22, and TN = 249, what is the exact Recall?",
+    "options": [
+      "78.65%",
+      "89.37%",
+      "98.37%",
+      "75.37%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=185, FP=50, FN=22, TN=249."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 4x + (-6), what is the predicted response variable y value for x = 71?",
+    "options": [
+      "562",
+      "278",
+      "303",
+      "290"
+    ],
+    "answer": 1,
+    "explanation": "y = 4(71) + -6 = 278."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "10425",
+      "7818.75",
+      "9925",
+      "6950"
+    ],
+    "answer": 0,
+    "explanation": "75% of 13900 is 10425. 25% is 3475."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(25, 44) and point B(54, 16) in a 2D Euclidean coordinate space?",
+    "options": [
+      "57.00",
+      "61.15",
+      "71.25",
+      "54.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 57.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 214, FP = 81, FN = 69, and TN = 584, what is the exact Recall?",
+    "options": [
+      "75.62%",
+      "84.62%",
+      "66.54%",
+      "61.62%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=214, FP=81, FN=69, TN=584."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10500 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3281.25",
+      "3125",
+      "2625",
+      "5250"
+    ],
+    "answer": 2,
+    "explanation": "75% of 10500 is 7875. 25% is 2625."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 19x + (14), what is the predicted response variable y value for x = 88?",
+    "options": [
+      "1686",
+      "1711",
+      "1658",
+      "2038"
+    ],
+    "answer": 0,
+    "explanation": "y = 19(88) + 14 = 1686."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 280, FP = 12, FN = 45, and TN = 194, what is the exact Accuracy?",
+    "options": [
+      "75.27%",
+      "98.27%",
+      "78.55%",
+      "89.27%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=280, FP=12, FN=45, TN=194."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(39, 31) and point B(34, 49) in a 2D Euclidean coordinate space?",
+    "options": [
+      "23.35",
+      "16.43",
+      "22.83",
+      "18.68"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 18.68."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(20, 11) and point B(53, 7) in a 2D Euclidean coordinate space?",
+    "options": [
+      "33.24",
+      "41.55",
+      "30.99",
+      "37.39"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 33.24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 14x + (13), what is the predicted response variable y value for x = 91?",
+    "options": [
+      "1261",
+      "1312",
+      "1287",
+      "1651"
+    ],
+    "answer": 2,
+    "explanation": "y = 14(91) + 13 = 1287."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 20x + (1), what is the predicted response variable y value for x = 40?",
+    "options": [
+      "826",
+      "799",
+      "801",
+      "961"
+    ],
+    "answer": 2,
+    "explanation": "y = 20(40) + 1 = 801."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(30, 40) and point B(47, 48) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.75",
+      "31.25",
+      "29.15",
+      "25.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 25.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(43, 40) and point B(23, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.15",
+      "24.55",
+      "20.40",
+      "25.50"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 20.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 60, FP = 53, FN = 52, and TN = 582, what is the exact Precision?",
+    "options": [
+      "39.10%",
+      "53.10%",
+      "46.73%",
+      "62.10%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=60, FP=53, FN=52, TN=582."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3350",
+      "2510",
+      "2512.5",
+      "2010"
+    ],
+    "answer": 3,
+    "explanation": "70% of 6700 is 4690. 30% is 2010."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3300",
+      "6600",
+      "2640",
+      "3140"
+    ],
+    "answer": 2,
+    "explanation": "80% of 13200 is 10560. 20% is 2640."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "2090",
+      "2590",
+      "1850",
+      "1942.5"
+    ],
+    "answer": 1,
+    "explanation": "70% of 3700 is 2590. 30% is 1110."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 335, FP = 63, FN = 28, and TN = 511, what is the exact Accuracy?",
+    "options": [
+      "90.29%",
+      "79.45%",
+      "76.29%",
+      "99.29%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=335, FP=63, FN=28, TN=511."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1040",
+      "1540",
+      "2600",
+      "1300"
+    ],
+    "answer": 0,
+    "explanation": "80% of 5200 is 4160. 20% is 1040."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 15900 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "8347.5",
+      "7950",
+      "11130",
+      "10630"
+    ],
+    "answer": 2,
+    "explanation": "70% of 15900 is 11130. 30% is 4770."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 2x + (2), what is the predicted response variable y value for x = 19?",
+    "options": [
+      "40",
+      "65",
+      "36",
+      "116"
+    ],
+    "answer": 0,
+    "explanation": "y = 2(19) + 2 = 40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(5, 29) and point B(27, 46) in a 2D Euclidean coordinate space?",
+    "options": [
+      "39.00",
+      "48.75",
+      "36.75",
+      "43.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 39.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 122, FP = 41, FN = 6, and TN = 107, what is the exact Specificity?",
+    "options": [
+      "58.30%",
+      "63.62%",
+      "72.30%",
+      "81.30%"
+    ],
+    "answer": 2,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=122, FP=41, FN=6, TN=107."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 194, FP = 74, FN = 9, and TN = 304, what is the exact Accuracy?",
+    "options": [
+      "94.71%",
+      "71.71%",
+      "75.43%",
+      "85.71%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=194, FP=74, FN=9, TN=304."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(35, 9) and point B(49, 43) in a 2D Euclidean coordinate space?",
+    "options": [
+      "40.92",
+      "36.77",
+      "34.52",
+      "45.96"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 36.77."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(31, 38) and point B(50, 46) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.00",
+      "33.75",
+      "24.75",
+      "31.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 66, FP = 38, FN = 69, and TN = 253, what is the exact Accuracy?",
+    "options": [
+      "60.88%",
+      "65.90%",
+      "74.88%",
+      "83.88%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=66, FP=38, FN=69, TN=253."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 143, FP = 83, FN = 45, and TN = 120, what is the exact Accuracy?",
+    "options": [
+      "59.19%",
+      "76.26%",
+      "67.26%",
+      "53.26%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=143, FP=83, FN=45, TN=120."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7600 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "3800",
+      "5580",
+      "4560",
+      "6080"
+    ],
+    "answer": 3,
+    "explanation": "80% of 7600 is 6080. 20% is 1520."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (4), what is the predicted response variable y value for x = 43?",
+    "options": [
+      "391",
+      "383",
+      "563",
+      "416"
+    ],
+    "answer": 0,
+    "explanation": "y = 9(43) + 4 = 391."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(15, 36) and point B(21, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "3.75",
+      "6.00",
+      "10.15",
+      "7.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(43, 37) and point B(6, 37) in a 2D Euclidean coordinate space?",
+    "options": [
+      "34.75",
+      "46.25",
+      "37.00",
+      "41.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 37.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(3, 0) and point B(11, 16) in a 2D Euclidean coordinate space?",
+    "options": [
+      "17.89",
+      "15.64",
+      "22.36",
+      "22.04"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 17.89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 4100 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1025",
+      "1281.25",
+      "1525",
+      "2050"
+    ],
+    "answer": 0,
+    "explanation": "75% of 4100 is 3075. 25% is 1025."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 40, FN = 37, and TN = 294, what is the exact Specificity?",
+    "options": [
+      "88.02%",
+      "97.02%",
+      "77.46%",
+      "74.02%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=115, FP=40, FN=37, TN=294."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3600 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "2160",
+      "2880",
+      "1800",
+      "2380"
+    ],
+    "answer": 1,
+    "explanation": "80% of 3600 is 2880. 20% is 720."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(0, 32) and point B(7, 16) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.61",
+      "21.83",
+      "17.46",
+      "15.21"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 17.46."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 33) and point B(50, 11) in a 2D Euclidean coordinate space?",
+    "options": [
+      "31.95",
+      "25.55",
+      "34.75",
+      "27.80"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 27.80."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5000 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "2500",
+      "3000",
+      "3500",
+      "4000"
+    ],
+    "answer": 3,
+    "explanation": "80% of 5000 is 4000. 20% is 1000."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(6, 26) and point B(11, 25) in a 2D Euclidean coordinate space?",
+    "options": [
+      "6.00",
+      "10.15",
+      "7.50",
+      "3.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 7300 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "5475",
+      "3650",
+      "4106.25",
+      "4975"
+    ],
+    "answer": 0,
+    "explanation": "75% of 7300 is 5475. 25% is 1825."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "3400",
+      "5440",
+      "4940",
+      "4080"
+    ],
+    "answer": 1,
+    "explanation": "80% of 6800 is 5440. 20% is 1360."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 17x + (-6), what is the predicted response variable y value for x = 54?",
+    "options": [
+      "912",
+      "924",
+      "937",
+      "1128"
+    ],
+    "answer": 0,
+    "explanation": "y = 17(54) + -6 = 912."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6500 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "4050",
+      "4550",
+      "3250",
+      "3412.5"
+    ],
+    "answer": 1,
+    "explanation": "70% of 6500 is 4550. 30% is 1950."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 95, FP = 54, FN = 67, and TN = 160, what is the exact Precision?",
+    "options": [
+      "72.76%",
+      "56.11%",
+      "49.76%",
+      "63.76%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=95, FP=54, FN=67, TN=160."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 16300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8150",
+      "4075",
+      "3760",
+      "3260"
+    ],
+    "answer": 3,
+    "explanation": "80% of 16300 is 13040. 20% is 3260."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 3700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1240",
+      "925",
+      "1850",
+      "740"
+    ],
+    "answer": 3,
+    "explanation": "80% of 3700 is 2960. 20% is 740."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 244, FP = 53, FN = 62, and TN = 368, what is the exact Recall?",
+    "options": [
+      "70.17%",
+      "88.74%",
+      "79.74%",
+      "65.74%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=244, FP=53, FN=62, TN=368."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17800 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "13350",
+      "10012.5",
+      "8900",
+      "12850"
+    ],
+    "answer": 0,
+    "explanation": "75% of 17800 is 13350. 25% is 4450."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 22x + (14), what is the predicted response variable y value for x = 52?",
+    "options": [
+      "1183",
+      "1158",
+      "1130",
+      "1366"
+    ],
+    "answer": 1,
+    "explanation": "y = 22(52) + 14 = 1158."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 12200 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "9260",
+      "6100",
+      "9760",
+      "7320"
+    ],
+    "answer": 2,
+    "explanation": "80% of 12200 is 9760. 20% is 2440."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(39, 13) and point B(33, 30) in a 2D Euclidean coordinate space?",
+    "options": [
+      "22.53",
+      "22.18",
+      "18.03",
+      "15.78"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 18.03."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(3, 2) and point B(45, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "75.00",
+      "57.75",
+      "64.15",
+      "60.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 60.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (-15), what is the predicted response variable y value for x = 77?",
+    "options": [
+      "1063",
+      "780",
+      "755",
+      "785"
+    ],
+    "answer": 2,
+    "explanation": "y = 10(77) + -15 = 755."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(48, 33) and point B(41, 45) in a 2D Euclidean coordinate space?",
+    "options": [
+      "19.00",
+      "23.15",
+      "16.75",
+      "23.75"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 19.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (-19), what is the predicted response variable y value for x = 78?",
+    "options": [
+      "721",
+      "995",
+      "683",
+      "708"
+    ],
+    "answer": 2,
+    "explanation": "y = 9(78) + -19 = 683."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11700 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "5850",
+      "2925",
+      "2340",
+      "2840"
+    ],
+    "answer": 2,
+    "explanation": "80% of 11700 is 9360. 20% is 2340."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(37, 28) and point B(34, 40) in a 2D Euclidean coordinate space?",
+    "options": [
+      "16.52",
+      "10.12",
+      "12.37",
+      "15.46"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 12.37."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(42, 6) and point B(36, 18) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.00",
+      "22.15",
+      "15.75",
+      "22.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 2700 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1175",
+      "1350",
+      "675",
+      "843.75"
+    ],
+    "answer": 2,
+    "explanation": "75% of 2700 is 2025. 25% is 675."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 10900 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "6131.25",
+      "5450",
+      "7675",
+      "8175"
+    ],
+    "answer": 3,
+    "explanation": "75% of 10900 is 8175. 25% is 2725."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 26x + (11), what is the predicted response variable y value for x = 84?",
+    "options": [
+      "2531",
+      "2173",
+      "2220",
+      "2195"
+    ],
+    "answer": 3,
+    "explanation": "y = 26(84) + 11 = 2195."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 345, FP = 79, FN = 24, and TN = 123, what is the exact Specificity?",
+    "options": [
+      "69.89%",
+      "46.89%",
+      "53.58%",
+      "60.89%"
+    ],
+    "answer": 3,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=345, FP=79, FN=24, TN=123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(2, 49) and point B(26, 54) in a 2D Euclidean coordinate space?",
     "options": [
       "29.00",
-      "32.25",
-      "39.15",
-      "27.15"
+      "33.15",
+      "26.75",
+      "36.25"
     ],
     "answer": 0,
     "explanation": "Manhattan distance formula resolves to 29.00."
@@ -13094,910 +13024,980 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-5), what is the predicted response variable y value for x = 11?",
+    "question": "For a linear regression model parameterized as y = 18x + (2), what is the predicted response variable y value for x = 38?",
     "options": [
-      "105",
-      "72",
-      "82",
-      "87"
+      "838",
+      "686",
+      "682",
+      "711"
     ],
     "answer": 1,
-    "explanation": "y = 7(11) + -5 = 72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-7), what is the predicted response variable y value for x = 28?",
-    "options": [
-      "161",
-      "245",
-      "176",
-      "175"
-    ],
-    "answer": 0,
-    "explanation": "y = 6(28) + -7 = 161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (-8), what is the predicted response variable y value for x = 36?",
-    "options": [
-      "260",
-      "244",
-      "259",
-      "352"
-    ],
-    "answer": 1,
-    "explanation": "y = 7(36) + -8 = 244."
+    "explanation": "y = 18(38) + 2 = 686."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(10, 3) and point B(14, 20) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(10, 5) and point B(53, 6) in a 2D Euclidean coordinate space?",
     "options": [
-      "20.71",
-      "23.58",
-      "17.46",
-      "15.61"
+      "43.01",
+      "47.16",
+      "53.76",
+      "40.76"
     ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.46."
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 43.01."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 4x + (-1), what is the predicted response variable y value for x = 37?",
+    "question": "For a linear regression model parameterized as y = 17x + (-7), what is the predicted response variable y value for x = 35?",
     "options": [
-      "147",
-      "162",
-      "258",
-      "149"
-    ],
-    "answer": 0,
-    "explanation": "y = 4(37) + -1 = 147."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (7), what is the predicted response variable y value for x = 4?",
-    "options": [
-      "50",
-      "35",
-      "21",
-      "47"
-    ],
-    "answer": 1,
-    "explanation": "y = 7(4) + 7 = 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 53, FN = 49, and TN = 241, what is the exact Precision?",
-    "options": [
-      "60.96%",
-      "72.96%",
-      "62.02%",
-      "80.96%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=143, FP=53, FN=49, TN=241."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-1), what is the predicted response variable y value for x = 2?",
-    "options": [
-      "5",
-      "20",
-      "7",
-      "11"
-    ],
-    "answer": 0,
-    "explanation": "y = 3(2) + -1 = 5."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(18, 2) and point B(15, 15) in a 2D Euclidean coordinate space?",
-    "options": [
-      "16.00",
-      "21.60",
-      "14.15",
-      "19.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-1), what is the predicted response variable y value for x = 3?",
-    "options": [
-      "47",
-      "32",
-      "34",
-      "41"
-    ],
-    "answer": 1,
-    "explanation": "y = 11(3) + -1 = 32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 13x + (-4), what is the predicted response variable y value for x = 39?",
-    "options": [
-      "620",
-      "503",
-      "518",
-      "511"
-    ],
-    "answer": 1,
-    "explanation": "y = 13(39) + -4 = 503."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 246, FP = 18, FN = 6, and TN = 204, what is the exact Precision?",
-    "options": [
-      "93.18%",
-      "101.18%",
-      "81.18%",
-      "79.20%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=246, FP=18, FN=6, TN=204."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 83, FP = 31, FN = 50, and TN = 384, what is the exact Recall?",
-    "options": [
-      "62.41%",
-      "70.41%",
-      "53.05%",
-      "50.41%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=83, FP=31, FN=50, TN=384."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(5, 2) and point B(30, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "43.00",
-      "41.15",
-      "58.05",
-      "46.25"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 43.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 88, FP = 16, FN = 12, and TN = 121, what is the exact Recall?",
-    "options": [
-      "74.80%",
-      "96.00%",
-      "76.00%",
-      "88.00%"
+      "728",
+      "613",
+      "602",
+      "588"
     ],
     "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=88, FP=16, FN=12, TN=121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-10), what is the predicted response variable y value for x = 6?",
-    "options": [
-      "64",
-      "62",
-      "59",
-      "44"
-    ],
-    "answer": 3,
-    "explanation": "y = 9(6) + -10 = 44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(17, 29) and point B(22, 21) in a 2D Euclidean coordinate space?",
-    "options": [
-      "7.58",
-      "12.74",
-      "12.68",
-      "9.43"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.43."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (-9), what is the predicted response variable y value for x = 31?",
-    "options": [
-      "177",
-      "99",
-      "102",
-      "84"
-    ],
-    "answer": 3,
-    "explanation": "y = 3(31) + -9 = 84."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(4, 28) and point B(7, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.25",
-      "24.00",
-      "22.15",
-      "32.40"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 142, FP = 29, FN = 54, and TN = 296, what is the exact Precision?",
-    "options": [
-      "71.04%",
-      "83.04%",
-      "91.04%",
-      "70.58%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=142, FP=29, FN=54, TN=296."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 144, FP = 19, FN = 31, and TN = 235, what is the exact Specificity?",
-    "options": [
-      "80.52%",
-      "100.52%",
-      "92.52%",
-      "78.64%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=144, FP=19, FN=31, TN=235."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 9x + (-5), what is the predicted response variable y value for x = 19?",
-    "options": [
-      "176",
-      "223",
-      "181",
-      "166"
-    ],
-    "answer": 3,
-    "explanation": "y = 9(19) + -5 = 166."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 8x + (-2), what is the predicted response variable y value for x = 32?",
-    "options": [
-      "258",
-      "269",
-      "254",
-      "350"
-    ],
-    "answer": 2,
-    "explanation": "y = 8(32) + -2 = 254."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 67, FP = 13, FN = 20, and TN = 384, what is the exact Recall?",
-    "options": [
-      "65.46%",
-      "85.01%",
-      "77.01%",
-      "65.01%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=67, FP=13, FN=20, TN=384."
+    "explanation": "y = 17(35) + -7 = 588."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 1600 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 15000 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
     "options": [
-      "1200",
-      "960",
-      "800",
-      "950"
-    ],
-    "answer": 0,
-    "explanation": "75% of 1600 is 1200. 25% is 400."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 103, FP = 30, FN = 39, and TN = 318, what is the exact Recall?",
-    "options": [
-      "61.65%",
-      "72.54%",
-      "60.54%",
-      "80.54%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=103, FP=30, FN=39, TN=318."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4800 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1800",
-      "1450",
-      "2400",
-      "1200"
-    ],
-    "answer": 3,
-    "explanation": "75% of 4800 is 3600. 25% is 1200."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3300 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "1650",
-      "1485",
-      "990",
-      "1240"
+      "7875",
+      "7500",
+      "10500",
+      "10000"
     ],
     "answer": 2,
-    "explanation": "70% of 3300 is 2310. 30% is 990."
+    "explanation": "70% of 15000 is 10500. 30% is 4500."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(8, 3) and point B(8, 27) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(38, 43) and point B(26, 15) in a 2D Euclidean coordinate space?",
     "options": [
-      "24.00",
-      "27.25",
-      "22.15",
-      "32.40"
+      "28.21",
+      "30.46",
+      "38.08",
+      "34.61"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 30.46."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 16x + (10), what is the predicted response variable y value for x = 67?",
+    "options": [
+      "1082",
+      "1062",
+      "1350",
+      "1107"
     ],
     "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 24.00."
+    "explanation": "y = 16(67) + 10 = 1082."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(20, 17) and point B(26, 20) in a 2D Euclidean coordinate space?",
+    "options": [
+      "4.46",
+      "6.71",
+      "8.39",
+      "10.86"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 6.71."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(15, 8) and point B(42, 10) in a 2D Euclidean coordinate space?",
+    "options": [
+      "24.82",
+      "27.07",
+      "31.22",
+      "33.84"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 27.07."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 163, FP = 55, FN = 6, and TN = 556, what is the exact Specificity?",
+    "options": [
+      "77.00%",
+      "91.00%",
+      "80.08%",
+      "100.00%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=163, FP=55, FN=6, TN=556."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 123, FP = 72, FN = 60, and TN = 332, what is the exact Precision?",
+    "options": [
+      "63.08%",
+      "72.08%",
+      "49.08%",
+      "55.51%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=123, FP=72, FN=60, TN=332."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 2x + (8), what is the predicted response variable y value for x = 12?",
+    "question": "For a linear regression model parameterized as y = 8x + (-9), what is the predicted response variable y value for x = 38?",
     "options": [
-      "16",
-      "68",
-      "47",
-      "32"
+      "447",
+      "295",
+      "313",
+      "320"
+    ],
+    "answer": 1,
+    "explanation": "y = 8(38) + -9 = 295."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(2, 46) and point B(54, 54) in a 2D Euclidean coordinate space?",
+    "options": [
+      "64.15",
+      "57.75",
+      "60.00",
+      "75.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 60.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(0, 49) and point B(52, 32) in a 2D Euclidean coordinate space?",
+    "options": [
+      "58.86",
+      "54.71",
+      "68.39",
+      "52.46"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 54.71."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 348, FP = 35, FN = 73, and TN = 413, what is the exact Specificity?",
+    "options": [
+      "81.13%",
+      "101.19%",
+      "78.19%",
+      "92.19%"
     ],
     "answer": 3,
-    "explanation": "y = 2(12) + 8 = 32."
+    "explanation": "Specificity is calculated by standard formula using counts: TP=348, FP=35, FN=73, TN=413."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(5, 16) and point B(5, 24) in a 2D Euclidean coordinate space?",
+    "options": [
+      "10.00",
+      "5.75",
+      "12.15",
+      "8.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(47, 9) and point B(28, 38) in a 2D Euclidean coordinate space?",
+    "options": [
+      "60.00",
+      "45.75",
+      "52.15",
+      "48.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 48.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 95, FP = 73, FN = 22, and TN = 430, what is the exact Specificity?",
+    "options": [
+      "85.49%",
+      "71.49%",
+      "94.49%",
+      "75.23%"
+    ],
+    "answer": 0,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=95, FP=73, FN=22, TN=430."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 6x + (-6), what is the predicted response variable y value for x = 33?",
+    "question": "For a linear regression model parameterized as y = 6x + (-13), what is the predicted response variable y value for x = 13?",
     "options": [
-      "192",
-      "204",
+      "117",
+      "90",
+      "65",
+      "91"
+    ],
+    "answer": 2,
+    "explanation": "y = 6(13) + -13 = 65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6200 records. If configured with a 75/25 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3100",
+      "1550",
+      "2050",
+      "1937.5"
+    ],
+    "answer": 1,
+    "explanation": "75% of 6200 is 4650. 25% is 1550."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 159, FP = 20, FN = 43, and TN = 424, what is the exact Accuracy?",
+    "options": [
+      "76.25%",
+      "79.42%",
+      "90.25%",
+      "99.25%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=159, FP=20, FN=43, TN=424."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18200 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "12740",
+      "12240",
+      "9555",
+      "9100"
+    ],
+    "answer": 0,
+    "explanation": "70% of 18200 is 12740. 30% is 5460."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (18), what is the predicted response variable y value for x = 5?",
+    "options": [
+      "-3",
+      "58",
+      "53",
+      "33"
+    ],
+    "answer": 3,
+    "explanation": "y = 3(5) + 18 = 33."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 106, FP = 33, FN = 66, and TN = 375, what is the exact Accuracy?",
+    "options": [
+      "72.98%",
+      "82.93%",
+      "91.93%",
+      "68.93%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=106, FP=33, FN=66, TN=375."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14700 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
+    "options": [
+      "8820",
+      "11760",
+      "11260",
+      "7350"
+    ],
+    "answer": 1,
+    "explanation": "80% of 14700 is 11760. 20% is 2940."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (-11), what is the predicted response variable y value for x = 0?",
+    "options": [
+      "-11",
+      "11",
+      "77",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(0) + -11 = -11."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(2, 7) and point B(7, 29) in a 2D Euclidean coordinate space?",
+    "options": [
+      "20.31",
+      "22.56",
+      "28.20",
+      "26.71"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 22.56."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 13900 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2780",
+      "3475",
+      "3280",
+      "6950"
+    ],
+    "answer": 0,
+    "explanation": "80% of 13900 is 11120. 20% is 2780."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 11x + (8), what is the predicted response variable y value for x = 41?",
+    "options": [
+      "623",
+      "443",
+      "459",
+      "484"
+    ],
+    "answer": 2,
+    "explanation": "y = 11(41) + 8 = 459."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 14500 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "3625",
+      "3400",
+      "2900",
+      "7250"
+    ],
+    "answer": 2,
+    "explanation": "80% of 14500 is 11600. 20% is 2900."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 123, FP = 71, FN = 63, and TN = 424, what is the exact Specificity?",
+    "options": [
+      "75.38%",
+      "85.66%",
+      "94.66%",
+      "71.66%"
+    ],
+    "answer": 1,
+    "explanation": "Specificity is calculated by standard formula using counts: TP=123, FP=71, FN=63, TN=424."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 5x + (3), what is the predicted response variable y value for x = 80?",
+    "options": [
+      "403",
+      "723",
+      "428",
+      "397"
+    ],
+    "answer": 0,
+    "explanation": "y = 5(80) + 3 = 403."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 11100 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "options": [
+      "5550",
+      "8325",
+      "6243.75",
+      "7825"
+    ],
+    "answer": 1,
+    "explanation": "75% of 11100 is 8325. 25% is 2775."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (0), what is the predicted response variable y value for x = 23?",
+    "options": [
       "207",
-      "291"
+      "299",
+      "232",
+      "284"
     ],
     "answer": 0,
-    "explanation": "y = 6(33) + -6 = 192."
+    "explanation": "y = 9(23) + 0 = 207."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (2), what is the predicted response variable y value for x = 13?",
+    "question": "For a linear regression model parameterized as y = 3x + (-7), what is the predicted response variable y value for x = 90?",
     "options": [
-      "56",
-      "80",
-      "37",
-      "41"
+      "277",
+      "288",
+      "623",
+      "263"
     ],
     "answer": 3,
-    "explanation": "y = 3(13) + 2 = 41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 5x + (-5), what is the predicted response variable y value for x = 15?",
-    "options": [
-      "70",
-      "80",
-      "85",
-      "115"
-    ],
-    "answer": 0,
-    "explanation": "y = 5(15) + -5 = 70."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 3800 records. If configured with a 80/20 train/test split, how many samples are in the training set?",
-    "options": [
-      "3040",
-      "1900",
-      "2432",
-      "2790"
-    ],
-    "answer": 0,
-    "explanation": "80% of 3800 is 3040. 20% is 760."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 121, FP = 44, FN = 6, and TN = 376, what is the exact Specificity?",
-    "options": [
-      "97.52%",
-      "77.52%",
-      "89.52%",
-      "76.10%"
-    ],
-    "answer": 2,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=121, FP=44, FN=6, TN=376."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 130, FP = 36, FN = 28, and TN = 182, what is the exact Accuracy?",
-    "options": [
-      "70.53%",
-      "82.98%",
-      "90.98%",
-      "70.98%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=130, FP=36, FN=28, TN=182."
+    "explanation": "y = 3(90) + -7 = 263."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(15, 2) and point B(33, 34) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(6, 36) and point B(33, 10) in a 2D Euclidean coordinate space?",
     "options": [
-      "39.97",
-      "34.87",
-      "36.72",
-      "49.57"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 36.72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 98, FP = 50, FN = 24, and TN = 205, what is the exact Precision?",
-    "options": [
-      "56.28%",
-      "54.22%",
-      "66.22%",
-      "74.22%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=98, FP=50, FN=24, TN=205."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 11x + (-1), what is the predicted response variable y value for x = 10?",
-    "options": [
-      "109",
-      "139",
-      "111",
-      "124"
+      "37.48",
+      "46.85",
+      "41.63",
+      "35.23"
     ],
     "answer": 0,
-    "explanation": "y = 11(10) + -1 = 109."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 146, FP = 18, FN = 13, and TN = 103, what is the exact Specificity?",
-    "options": [
-      "93.12%",
-      "73.12%",
-      "72.36%",
-      "85.12%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=146, FP=18, FN=13, TN=103."
+    "explanation": "Euclidean distance formula resolves to 37.48."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 4200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 6200 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
+    "options": [
+      "1240",
+      "1740",
+      "3100",
+      "1550"
+    ],
+    "answer": 0,
+    "explanation": "80% of 6200 is 4960. 20% is 1240."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 9x + (18), what is the predicted response variable y value for x = 50?",
+    "options": [
+      "493",
+      "468",
+      "432",
+      "668"
+    ],
+    "answer": 1,
+    "explanation": "y = 9(50) + 18 = 468."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 3x + (1), what is the predicted response variable y value for x = 57?",
+    "options": [
+      "400",
+      "172",
+      "170",
+      "197"
+    ],
+    "answer": 1,
+    "explanation": "y = 3(57) + 1 = 172."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(20, 19) and point B(45, 36) in a 2D Euclidean coordinate space?",
+    "options": [
+      "42.00",
+      "39.75",
+      "52.50",
+      "46.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 42.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 8x + (-12), what is the predicted response variable y value for x = 33?",
+    "options": [
+      "252",
+      "276",
+      "277",
+      "384"
+    ],
+    "answer": 0,
+    "explanation": "y = 8(33) + -12 = 252."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 18600 records. If configured with a 70/30 train/test split, how many samples are in the training set?",
+    "options": [
+      "13020",
+      "9300",
+      "12520",
+      "9765"
+    ],
+    "answer": 0,
+    "explanation": "70% of 18600 is 13020. 30% is 5580."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 160, FP = 31, FN = 63, and TN = 591, what is the exact Precision?",
+    "options": [
+      "92.77%",
+      "73.72%",
+      "69.77%",
+      "83.77%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=160, FP=31, FN=63, TN=591."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 6300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
     "options": [
       "1260",
-      "2100",
-      "1090",
-      "840"
-    ],
-    "answer": 3,
-    "explanation": "80% of 4200 is 3360. 20% is 840."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 138, FP = 14, FN = 34, and TN = 186, what is the exact Accuracy?",
-    "options": [
-      "74.03%",
-      "87.10%",
-      "75.10%",
-      "95.10%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=138, FP=14, FN=34, TN=186."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(14, 10) and point B(31, 20) in a 2D Euclidean coordinate space?",
-    "options": [
-      "27.00",
-      "25.15",
-      "30.25",
-      "36.45"
+      "3150",
+      "1575",
+      "1760"
     ],
     "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 27.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(25, 9) and point B(14, 24) in a 2D Euclidean coordinate space?",
-    "options": [
-      "25.11",
-      "21.85",
-      "18.60",
-      "16.75"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 18.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 205, FP = 13, FN = 21, and TN = 190, what is the exact Precision?",
-    "options": [
-      "102.04%",
-      "94.04%",
-      "82.04%",
-      "79.93%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=205, FP=13, FN=21, TN=190."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 132, FP = 22, FN = 34, and TN = 211, what is the exact Accuracy?",
-    "options": [
-      "73.96%",
-      "73.07%",
-      "85.96%",
-      "93.96%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=132, FP=22, FN=34, TN=211."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(14, 19) and point B(28, 10) in a 2D Euclidean coordinate space?",
-    "options": [
-      "19.89",
-      "16.64",
-      "14.79",
-      "22.47"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 16.64."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 136, FP = 39, FN = 6, and TN = 131, what is the exact Recall?",
-    "options": [
-      "83.77%",
-      "103.77%",
-      "81.41%",
-      "95.77%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=136, FP=39, FN=6, TN=131."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 9) and point B(25, 14) in a 2D Euclidean coordinate space?",
-    "options": [
-      "23.25",
-      "27.00",
-      "20.00",
-      "18.15"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 20.00."
+    "explanation": "80% of 6300 is 5040. 20% is 1260."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 12x + (-8), what is the predicted response variable y value for x = 16?",
+    "question": "For a linear regression model parameterized as y = 12x + (-17), what is the predicted response variable y value for x = 44?",
     "options": [
-      "184",
-      "200",
-      "232",
-      "199"
-    ],
-    "answer": 0,
-    "explanation": "y = 12(16) + -8 = 184."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 15, FN = 27, and TN = 289, what is the exact Specificity?",
-    "options": [
-      "80.81%",
-      "103.07%",
-      "83.07%",
-      "95.07%"
-    ],
-    "answer": 3,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=100, FP=15, FN=27, TN=289."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 195, FP = 32, FN = 20, and TN = 225, what is the exact Accuracy?",
-    "options": [
-      "75.64%",
-      "88.98%",
-      "96.98%",
-      "76.98%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=195, FP=32, FN=20, TN=225."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(13, 26) and point B(10, 7) in a 2D Euclidean coordinate space?",
-    "options": [
-      "19.24",
-      "17.39",
-      "22.49",
-      "25.97"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 19.24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(10, 25) and point B(14, 12) in a 2D Euclidean coordinate space?",
-    "options": [
-      "15.15",
-      "20.25",
-      "17.00",
-      "22.95"
+      "545",
+      "536",
+      "511",
+      "687"
     ],
     "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 17.00."
+    "explanation": "y = 12(44) + -17 = 511."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 98, FP = 20, FN = 16, and TN = 185, what is the exact Specificity?",
+    "question": "Given a classification report with TP = 230, FP = 74, FN = 61, and TN = 236, what is the exact Specificity?",
     "options": [
-      "90.24%",
-      "78.24%",
-      "76.71%",
-      "98.24%"
+      "76.13%",
+      "62.13%",
+      "85.13%",
+      "66.99%"
     ],
     "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=98, FP=20, FN=16, TN=185."
+    "explanation": "Specificity is calculated by standard formula using counts: TP=230, FP=74, FN=61, TN=236."
   },
   {
     "subject": "AI / ML",
     "topic": "KNN & Clustering",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between coordinate point A(0, 1) and point B(30, 15) in a 2D Euclidean coordinate space?",
+    "question": "What is the Euclidean distance between coordinate point A(13, 14) and point B(42, 42) in a 2D Euclidean coordinate space?",
     "options": [
-      "44.69",
-      "33.11",
-      "31.26",
-      "36.36"
+      "44.46",
+      "50.39",
+      "38.06",
+      "40.31"
     ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 33.11."
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 40.31."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(23, 35) and point B(35, 44) in a 2D Euclidean coordinate space?",
+    "options": [
+      "18.75",
+      "26.25",
+      "21.00",
+      "25.15"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(21, 18) and point B(37, 33) in a 2D Euclidean coordinate space?",
+    "options": [
+      "21.93",
+      "27.41",
+      "19.68",
+      "26.08"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 21.93."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (3), what is the predicted response variable y value for x = 92?",
+    "options": [
+      "923",
+      "917",
+      "1291",
+      "948"
+    ],
+    "answer": 0,
+    "explanation": "y = 10(92) + 3 = 923."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 284, FP = 41, FN = 40, and TN = 208, what is the exact Recall?",
+    "options": [
+      "87.65%",
+      "96.65%",
+      "73.65%",
+      "77.14%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=284, FP=41, FN=40, TN=208."
   },
   {
     "subject": "AI / ML",
     "topic": "Data Splitting",
     "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 2200 records. If configured with a 75/25 train/test split, how many samples are in the training set?",
+    "question": "A machine learning pipeline is partitioning a dataset of 1300 records. If configured with a 80/20 train/test split, how many samples are in the testing set?",
     "options": [
-      "1400",
-      "1100",
-      "1320",
-      "1650"
+      "760",
+      "325",
+      "650",
+      "260"
     ],
     "answer": 3,
-    "explanation": "75% of 2200 is 1650. 25% is 550."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(23, 1) and point B(18, 33) in a 2D Euclidean coordinate space?",
-    "options": [
-      "49.95",
-      "37.00",
-      "40.25",
-      "35.15"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 37.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 200, FP = 42, FN = 54, and TN = 218, what is the exact Recall?",
-    "options": [
-      "78.74%",
-      "66.74%",
-      "66.93%",
-      "86.74%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=200, FP=42, FN=54, TN=218."
+    "explanation": "80% of 1300 is 1040. 20% is 260."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 3x + (0), what is the predicted response variable y value for x = 15?",
+    "question": "For a linear regression model parameterized as y = 5x + (15), what is the predicted response variable y value for x = 62?",
     "options": [
-      "60",
-      "45",
-      "45",
-      "90"
-    ],
-    "answer": 1,
-    "explanation": "y = 3(15) + 0 = 45."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 52, FP = 10, FN = 37, and TN = 216, what is the exact Specificity?",
-    "options": [
-      "95.58%",
-      "83.58%",
-      "103.58%",
-      "81.24%"
-    ],
-    "answer": 0,
-    "explanation": "Specificity is calculated by standard formula using counts: TP=52, FP=10, FN=37, TN=216."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Data Splitting",
-    "difficulty": "Easy",
-    "question": "A machine learning pipeline is partitioning a dataset of 5200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
-    "options": [
-      "2600",
-      "1560",
-      "2340",
-      "1810"
-    ],
-    "answer": 1,
-    "explanation": "70% of 5200 is 3640. 30% is 1560."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "KNN & Clustering",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between coordinate point A(1, 0) and point B(24, 16) in a 2D Euclidean coordinate space?",
-    "options": [
-      "39.00",
-      "42.25",
-      "37.15",
-      "52.65"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 39.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Linear Regression",
-    "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 10x + (9), what is the predicted response variable y value for x = 22?",
-    "options": [
-      "229",
-      "211",
+      "573",
       "295",
-      "244"
+      "350",
+      "325"
+    ],
+    "answer": 3,
+    "explanation": "y = 5(62) + 15 = 325."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(20, 13) and point B(53, 41) in a 2D Euclidean coordinate space?",
+    "options": [
+      "43.28",
+      "41.03",
+      "47.43",
+      "54.10"
     ],
     "answer": 0,
-    "explanation": "y = 10(22) + 9 = 229."
+    "explanation": "Euclidean distance formula resolves to 43.28."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 5700 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "2210",
+      "1710",
+      "2850",
+      "2137.5"
+    ],
+    "answer": 1,
+    "explanation": "70% of 5700 is 3990. 30% is 1710."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between coordinate point A(33, 7) and point B(17, 22) in a 2D Euclidean coordinate space?",
+    "options": [
+      "26.08",
+      "21.93",
+      "19.68",
+      "27.41"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 21.93."
   },
   {
     "subject": "AI / ML",
     "topic": "Linear Regression",
     "difficulty": "Easy",
-    "question": "For a linear regression model parameterized as y = 7x + (2), what is the predicted response variable y value for x = 17?",
+    "question": "For a linear regression model parameterized as y = 26x + (19), what is the predicted response variable y value for x = 95?",
     "options": [
-      "121",
-      "136",
-      "117",
-      "172"
+      "2451",
+      "2514",
+      "2489",
+      "2869"
+    ],
+    "answer": 2,
+    "explanation": "y = 26(95) + 19 = 2489."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(2, 48) and point B(27, 12) in a 2D Euclidean coordinate space?",
+    "options": [
+      "61.00",
+      "76.25",
+      "65.15",
+      "58.75"
     ],
     "answer": 0,
-    "explanation": "y = 7(17) + 2 = 121."
+    "explanation": "Manhattan distance formula resolves to 61.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(35, 2) and point B(24, 51) in a 2D Euclidean coordinate space?",
+    "options": [
+      "60.00",
+      "57.75",
+      "75.00",
+      "64.15"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 60.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Data Splitting",
+    "difficulty": "Easy",
+    "question": "A machine learning pipeline is partitioning a dataset of 17200 records. If configured with a 70/30 train/test split, how many samples are in the testing set?",
+    "options": [
+      "8600",
+      "6450",
+      "5160",
+      "5660"
+    ],
+    "answer": 2,
+    "explanation": "70% of 17200 is 12040. 30% is 5160."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 250, FP = 66, FN = 49, and TN = 584, what is the exact Recall?",
+    "options": [
+      "73.58%",
+      "83.61%",
+      "69.61%",
+      "92.61%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=250, FP=66, FN=49, TN=584."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 6x + (17), what is the predicted response variable y value for x = 43?",
+    "options": [
+      "275",
+      "241",
+      "300",
+      "447"
+    ],
+    "answer": 0,
+    "explanation": "y = 6(43) + 17 = 275."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "KNN & Clustering",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between coordinate point A(42, 17) and point B(20, 25) in a 2D Euclidean coordinate space?",
+    "options": [
+      "27.75",
+      "30.00",
+      "34.15",
+      "37.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 30.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 193, FP = 22, FN = 36, and TN = 130, what is the exact Accuracy?",
+    "options": [
+      "70.78%",
+      "84.78%",
+      "74.60%",
+      "93.78%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=193, FP=22, FN=36, TN=130."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 348, FP = 69, FN = 60, and TN = 513, what is the exact Precision?",
+    "options": [
+      "83.45%",
+      "69.45%",
+      "92.45%",
+      "73.44%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=348, FP=69, FN=60, TN=513."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 7x + (-3), what is the predicted response variable y value for x = 87?",
+    "options": [
+      "631",
+      "612",
+      "606",
+      "954"
+    ],
+    "answer": 2,
+    "explanation": "y = 7(87) + -3 = 606."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 15x + (-18), what is the predicted response variable y value for x = 31?",
+    "options": [
+      "483",
+      "472",
+      "571",
+      "447"
+    ],
+    "answer": 3,
+    "explanation": "y = 15(31) + -18 = 447."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 18x + (13), what is the predicted response variable y value for x = 89?",
+    "options": [
+      "1971",
+      "1640",
+      "1589",
+      "1615"
+    ],
+    "answer": 3,
+    "explanation": "y = 18(89) + 13 = 1615."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 20x + (-18), what is the predicted response variable y value for x = 9?",
+    "options": [
+      "162",
+      "198",
+      "187",
+      "198"
+    ],
+    "answer": 0,
+    "explanation": "y = 20(9) + -18 = 162."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Linear Regression",
+    "difficulty": "Easy",
+    "question": "For a linear regression model parameterized as y = 10x + (4), what is the predicted response variable y value for x = 83?",
+    "options": [
+      "826",
+      "859",
+      "1166",
+      "834"
+    ],
+    "answer": 3,
+    "explanation": "y = 10(83) + 4 = 834."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 298, FP = 49, FN = 34, and TN = 545, what is the exact Precision?",
+    "options": [
+      "71.88%",
+      "75.57%",
+      "85.88%",
+      "94.88%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=298, FP=49, FN=34, TN=545."
   }
 ];
