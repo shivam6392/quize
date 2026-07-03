@@ -6,10 +6,10 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the time complexity of binary search?",
     "options": [
-      "O(n)",
       "O(1)",
+      "O(n²)",
       "O(log n)",
-      "O(n²)"
+      "O(n)"
     ],
     "answer": 2,
     "explanation": "Binary search halves the search space each step."
@@ -20,12 +20,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the worst-case time complexity of bubble sort?",
     "options": [
-      "O(n²)",
-      "O(n)",
+      "O(log n)",
       "O(n log n)",
-      "O(log n)"
+      "O(n)",
+      "O(n²)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Bubble sort compares all pairs in worst case."
   },
   {
@@ -35,9 +35,9 @@ window.quizData.dsa = [
     "question": "What does Big O notation describe?",
     "options": [
       "Upper bound of growth rate",
-      "Average case only (commonly used)",
-      "Exact growth in most cases",
-      "Lower bound by design"
+      "Exact growth (default behavior)",
+      "Lower bound as per specification",
+      "Average case only (general case)"
     ],
     "answer": 0,
     "explanation": "Big O gives the worst-case upper bound."
@@ -48,12 +48,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the time complexity of accessing an array element by index?",
     "options": [
-      "O(log n)",
-      "O(1)",
+      "O(n²)",
       "O(n)",
-      "O(n²)"
+      "O(log n)",
+      "O(1)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Array access is constant time via direct addressing."
   },
   {
@@ -63,9 +63,9 @@ window.quizData.dsa = [
     "question": "Master theorem applies to recurrences of what form?",
     "options": [
       "T(n) = aT(n/b) + f(n)",
-      "T(n) = 2n + 1 in practice",
-      "T(n) = n! in most cases",
-      "T(n) = T(n-1) + n"
+      "T(n) = T(n-1) + n",
+      "T(n) = n! (commonly used)",
+      "T(n) = 2n + 1 in practice"
     ],
     "answer": 0,
     "explanation": "Master theorem solves divide-and-conquer recurrences."
@@ -76,12 +76,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the space complexity of merge sort?",
     "options": [
-      "O(n²)",
-      "O(n)",
       "O(1)",
-      "O(log n)"
+      "O(n²)",
+      "O(log n)",
+      "O(n)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Merge sort needs auxiliary array of size n."
   },
   {
@@ -90,12 +90,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Big Omega represents?",
     "options": [
+      "Average case",
       "Tight bound",
-      "Lower bound",
       "Upper bound",
-      "Average case"
+      "Lower bound"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Ω notation gives the best-case lower bound."
   },
   {
@@ -104,9 +104,9 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Big Theta represents?",
     "options": [
-      "No bound",
-      "Lower bound only",
       "Upper bound only",
+      "Lower bound only",
+      "No bound",
       "Tight bound"
     ],
     "answer": 3,
@@ -119,11 +119,11 @@ window.quizData.dsa = [
     "question": "What is the best case time complexity of insertion sort?",
     "options": [
       "O(n²)",
-      "O(n log n)",
       "O(1)",
-      "O(n)"
+      "O(n)",
+      "O(n log n)"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Already sorted array needs only one pass."
   },
   {
@@ -132,12 +132,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is amortized analysis?",
     "options": [
-      "Space analysis (standard definition)",
-      "Best case only as per specification",
+      "Best case only in typical implementations",
       "Average cost per operation over a sequence",
-      "Worst case only as per specification"
+      "Space analysis in typical implementations",
+      "Worst case only under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Amortized analysis averages cost across operations."
   },
   {
@@ -146,12 +146,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Time complexity of linear search?",
     "options": [
-      "O(1)",
-      "O(log n)",
+      "O(n)",
       "O(n²)",
-      "O(n)"
+      "O(1)",
+      "O(log n)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "May need to check every element."
   },
   {
@@ -160,12 +160,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the recurrence for merge sort?",
     "options": [
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = T(n-1) + O(n)",
+      "T(n) = nT(n/2) in practice",
       "T(n) = 2T(n/2) + O(n)",
-      "T(n) = nT(n/2) in practice"
+      "T(n) = T(n-1) + O(n)",
+      "T(n) = T(n/2) + O(1)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Merge sort splits in half and merges in O(n)."
   },
   {
@@ -174,12 +174,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "What is the time complexity of the naive recursive Fibonacci?",
     "options": [
+      "O(2^n)",
       "O(n)",
       "O(n²)",
-      "O(n log n)",
-      "O(2^n)"
+      "O(n log n)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Each call branches into two recursive calls."
   },
   {
@@ -189,11 +189,11 @@ window.quizData.dsa = [
     "question": "What is the auxiliary space of quicksort (average)?",
     "options": [
       "O(n²)",
-      "O(1)",
       "O(log n)",
+      "O(1)",
       "O(n)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Recursion stack depth is log n on average."
   },
   {
@@ -203,11 +203,11 @@ window.quizData.dsa = [
     "question": "Which notation is used when best and worst case are the same?",
     "options": [
       "Big Omega",
-      "Theta (Θ)",
       "Big O",
-      "Little o"
+      "Little o",
+      "Theta (Θ)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Θ means asymptotically tight bound."
   },
   {
@@ -216,23 +216,23 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Two Sum problem is best solved using?",
     "options": [
-      "Stack",
-      "Sorting",
       "HashMap",
+      "Sorting",
+      "Stack",
       "Binary Search Tree"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "HashMap gives O(1) lookup for complement."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Kadane's algorithm solves?",
     "options": [
+      "Sorting in standard usage",
+      "Shortest path in practice",
       "String matching",
-      "Shortest path in most cases",
-      "Sorting (typical scenario)",
       "Maximum subarray sum"
     ],
     "answer": 3,
@@ -244,9 +244,9 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Sliding window technique is used for?",
     "options": [
-      "Tree balancing in typical implementations",
-      "Graph traversal under normal conditions",
       "Sorting in typical implementations",
+      "Graph traversal under normal conditions",
+      "Tree balancing under normal conditions",
       "Subarray/substring problems with constraints"
     ],
     "answer": 3,
@@ -260,8 +260,8 @@ window.quizData.dsa = [
     "options": [
       "Three",
       "Four",
-      "Two",
-      "Five"
+      "Five",
+      "Two"
     ],
     "answer": 0,
     "explanation": "Low, mid, high pointers create 3 partitions."
@@ -269,13 +269,13 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Time complexity of rotating array by k positions using reversal?",
     "options": [
-      "O(n²)",
+      "O(n*k)",
       "O(n)",
-      "O(k)",
-      "O(n*k)"
+      "O(n²)",
+      "O(k)"
     ],
     "answer": 1,
     "explanation": "Three reversals each take O(n)."
@@ -283,35 +283,35 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Prefix sum array helps answer what queries efficiently?",
     "options": [
+      "Range sum queries",
       "Minimum element",
       "Sorting status",
-      "Graph connectivity",
-      "Range sum queries"
+      "Graph connectivity"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Prefix sum allows O(1) range sum queries."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Best Time to Buy Stock uses which pattern?",
     "options": [
-      "Two pointers (standard definition)",
       "Track minimum and max profit",
-      "Sliding window (commonly used)",
-      "Binary search as per specification"
+      "Binary search (widely accepted)",
+      "Sliding window in practice",
+      "Two pointers by design"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Track min price seen so far, compute max profit."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Move Zeroes problem moves zeros to?",
     "options": [
       "Sorted position",
@@ -328,12 +328,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Product of Array Except Self avoids division by using?",
     "options": [
+      "Sorting based on convention",
+      "Stack (default behavior)",
       "Left and right product arrays",
-      "Sorting (standard definition)",
-      "Stack based on convention",
-      "Queue (default behavior)"
+      "Queue under normal conditions"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Multiply prefix and suffix products."
   },
   {
@@ -343,25 +343,25 @@ window.quizData.dsa = [
     "question": "Merge Intervals first step is?",
     "options": [
       "Use a stack in most cases",
+      "Build a tree by design",
       "Sort by end time",
-      "Sort by start time",
-      "Build a tree in practice"
+      "Sort by start time"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Sorting by start allows sequential merging."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Two pointer technique works best on?",
     "options": [
-      "Graphs by design",
-      "Trees (general case)",
+      "Graphs in practice",
       "Sorted arrays",
-      "Heaps in most cases"
+      "Heaps by design",
+      "Trees in practice"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Two pointers converge from both ends of sorted data."
   },
   {
@@ -371,8 +371,8 @@ window.quizData.dsa = [
     "question": "What does the sliding window technique maintain?",
     "options": [
       "A balanced tree as per specification",
-      "A sorted subarray (primary approach)",
       "A priority queue in typical implementations",
+      "A sorted subarray under normal conditions",
       "A window of elements satisfying a condition"
     ],
     "answer": 3,
@@ -384,37 +384,37 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "KMP algorithm's time complexity for pattern matching?",
     "options": [
-      "O(m²)",
+      "O(n+m)",
       "O(n²)",
       "O(n*m)",
-      "O(n+m)"
+      "O(m²)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "KMP uses failure function to avoid re-scanning."
   },
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Rabin-Karp uses what technique?",
     "options": [
       "Backtracking",
-      "Hashing",
       "Greedy",
-      "Dynamic programming"
+      "Dynamic programming",
+      "Hashing"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Rolling hash compares pattern hash with window hash."
   },
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Checking if two strings are anagrams requires?",
     "options": [
-      "Substring search by design",
-      "Sorting only under normal conditions",
-      "Regular expressions (general case)",
+      "Sorting only (general case)",
+      "Regular expressions (commonly used)",
+      "Substring search (general case)",
       "Character frequency comparison"
     ],
     "answer": 3,
@@ -423,15 +423,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "A palindrome reads the same?",
     "options": [
-      "Only forward by design",
       "Forward and backward",
-      "Diagonally in most cases",
-      "Only backward in practice"
+      "Only backward in most cases",
+      "Only forward in most cases",
+      "Diagonally in most cases"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Palindromes are symmetric strings."
   },
   {
@@ -441,9 +441,9 @@ window.quizData.dsa = [
     "question": "StringBuilder in Java is preferred over String for?",
     "options": [
       "Frequent modifications (mutable)",
-      "Sorting in typical implementations",
-      "Read-only access by design",
-      "Hashing (standard definition)"
+      "Sorting (widely accepted)",
+      "Read-only access (commonly used)",
+      "Hashing based on convention"
     ],
     "answer": 0,
     "explanation": "StringBuilder avoids creating new String objects."
@@ -451,15 +451,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Time complexity to check if a string is palindrome?",
     "options": [
-      "O(n²)",
       "O(1)",
       "O(log n)",
-      "O(n)"
+      "O(n)",
+      "O(n²)"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Compare characters from both ends in one pass."
   },
   {
@@ -468,24 +468,24 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Frequency count of characters uses?",
     "options": [
-      "Stack based on convention",
-      "Linked List as per specification",
-      "Array of size 26 or HashMap",
-      "Queue (commonly used)"
+      "Linked List (default behavior)",
+      "Stack in typical implementations",
+      "Queue (commonly used)",
+      "Array of size 26 or HashMap"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Fixed-size array or map tracks counts efficiently."
   },
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Longest palindromic substring can be found in?",
     "options": [
-      "O(n) in typical implementations",
-      "O(n³) in typical implementations",
+      "O(n³) based on convention",
+      "O(n) under normal conditions",
       "O(n²) using expand around center",
-      "O(log n) (widely accepted)"
+      "O(log n) under normal conditions"
     ],
     "answer": 2,
     "explanation": "Expand from each center in O(n) time, n centers."
@@ -493,40 +493,40 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "Floyd's cycle detection uses?",
     "options": [
-      "Recursion only based on convention",
-      "Stack (primary approach)",
-      "Two pointers (slow and fast)",
-      "Queue (widely accepted)"
+      "Recursion only in most cases",
+      "Stack as per specification",
+      "Queue under normal conditions",
+      "Two pointers (slow and fast)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Reversing a singly linked list takes?",
     "options": [
-      "O(log n) time by design",
-      "O(n²) time in practice",
+      "O(log n) time (general case)",
       "O(n) time, O(1) space",
-      "O(n) space by design"
+      "O(n²) time in most cases",
+      "O(n) space (commonly used)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Iterate once, reversing pointers in-place."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Middle of linked list found using?",
     "options": [
+      "Stack in practice",
       "Counting then traversing",
-      "Recursion (typical scenario)",
-      "Stack (commonly used)",
+      "Recursion (commonly used)",
       "Slow and fast pointer"
     ],
     "answer": 3,
@@ -538,24 +538,24 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Merge two sorted linked lists time complexity?",
     "options": [
-      "O(n*m)",
-      "O(log(n+m))",
       "O(n+m)",
-      "O(n²)"
+      "O(log(n+m))",
+      "O(n²)",
+      "O(n*m)"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Compare heads and merge in single pass."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Doubly linked list advantage over singly?",
     "options": [
-      "Less memory (primary approach)",
+      "Faster access by index in practice",
       "Simpler implementation in practice",
       "Traversal in both directions",
-      "Faster access by index in practice"
+      "Less memory as per specification"
     ],
     "answer": 2,
     "explanation": "DLL has prev pointer enabling backward traversal."
@@ -563,29 +563,29 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Circular linked list last node points to?",
     "options": [
+      "Previous node",
+      "Itself by design",
       "First node (head)",
-      "Itself (general case)",
-      "NULL (typical scenario)",
-      "Previous node"
+      "NULL based on convention"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Circular list forms a loop back to head."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Detecting intersection point of two lists uses?",
     "options": [
-      "Queue in typical implementations",
-      "Stack in typical implementations",
+      "Sorting in typical implementations",
       "Length difference or two-pointer approach",
-      "Sorting in typical implementations"
+      "Queue in typical implementations",
+      "Stack in typical implementations"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Align starts by length diff, then traverse together."
   },
   {
@@ -594,26 +594,26 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Remove Nth node from end uses?",
     "options": [
-      "Reverse list (commonly used)",
-      "Binary search by design",
-      "Stack of size N in practice",
-      "Two pointers with N gap"
+      "Stack of size N (general case)",
+      "Binary search (commonly used)",
+      "Two pointers with N gap",
+      "Reverse list (commonly used)"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Fast pointer leads by N, both advance until fast reaches end."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Stack follows which principle?",
     "options": [
-      "LILO in typical implementations",
-      "FIFO under normal conditions",
-      "Random access by design",
-      "LIFO (Last In First Out)"
+      "LIFO (Last In First Out)",
+      "LILO as per specification",
+      "Random access (general case)",
+      "FIFO in standard usage"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Last element pushed is first popped."
   },
   {
@@ -622,26 +622,26 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Balanced parentheses checking uses?",
     "options": [
-      "Array",
-      "Queue",
       "Tree",
-      "Stack"
+      "Stack",
+      "Queue",
+      "Array"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Push opening brackets, pop and match closing ones."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Monotonic stack is used for?",
     "options": [
-      "Next greater/smaller element problems",
-      "String matching (commonly used)",
+      "String matching (typical scenario)",
       "BFS in typical implementations",
-      "Sorting in typical implementations"
+      "Sorting under normal conditions",
+      "Next greater/smaller element problems"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Maintains increasing/decreasing order of elements."
   },
   {
@@ -650,32 +650,32 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Infix to postfix conversion uses?",
     "options": [
-      "Linked list by design",
-      "Queue in practice",
       "Stack for operators",
-      "Tree by design"
+      "Tree based on convention",
+      "Linked list (general case)",
+      "Queue in most cases"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Operators are pushed/popped based on precedence."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Time complexity of push and pop in stack?",
     "options": [
-      "O(1)",
       "O(n)",
       "O(log n)",
-      "O(n²)"
+      "O(n²)",
+      "O(1)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Both operations work on the top element only."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Stack overflow occurs when?",
     "options": [
       "Stack memory is exhausted (e.g., deep recursion)",
@@ -689,15 +689,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Postfix expression evaluation uses?",
     "options": [
       "Two stacks by design",
-      "Tree (general case)",
-      "Queue (general case)",
-      "Stack for operands"
+      "Stack for operands",
+      "Queue (default behavior)",
+      "Tree (widely accepted)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Push operands, pop two for each operator."
   },
   {
@@ -706,12 +706,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Queue follows which principle?",
     "options": [
-      "Random access (commonly used)",
+      "Random access by design",
+      "LIFO (general case)",
       "FIFO (First In First Out)",
-      "LIFO (default behavior)",
-      "Priority (widely accepted)"
+      "Priority (typical scenario)"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "First element enqueued is first dequeued."
   },
   {
@@ -720,12 +720,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Circular queue solves which problem?",
     "options": [
+      "Searching (widely accepted)",
+      "Balancing as per specification",
       "Wasted space in linear queue",
-      "Searching (standard definition)",
-      "Balancing (widely accepted)",
-      "Sorting (default behavior)"
+      "Sorting under normal conditions"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Rear wraps around to use freed front space."
   },
   {
@@ -734,12 +734,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Deque allows operations at?",
     "options": [
-      "Middle only in practice",
-      "Only front by design",
+      "Only front (commonly used)",
       "Both front and rear",
+      "Middle only in practice",
       "Only rear (commonly used)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Double-ended queue supports both ends."
   },
   {
@@ -748,12 +748,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Priority queue is typically implemented using?",
     "options": [
-      "Heap (binary heap)",
-      "Linked list in most cases",
-      "Array (widely accepted)",
-      "Stack (primary approach)"
+      "Stack (general case)",
+      "Linked list by design",
+      "Array (primary approach)",
+      "Heap (binary heap)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Heap gives O(log n) insert and extract-min/max."
   },
   {
@@ -764,10 +764,10 @@ window.quizData.dsa = [
     "options": [
       "Priority queue",
       "Deque",
-      "Stack",
-      "Queue"
+      "Queue",
+      "Stack"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "BFS explores level by level using FIFO."
   },
   {
@@ -776,26 +776,26 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Time complexity of enqueue in circular queue?",
     "options": [
-      "O(log n)",
+      "O(n²)",
       "O(n)",
-      "O(1)",
-      "O(n²)"
+      "O(log n)",
+      "O(1)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Direct insertion at rear pointer."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "HashMap provides average case lookup of?",
     "options": [
-      "O(n)",
+      "O(n²)",
       "O(log n)",
-      "O(1)",
-      "O(n²)"
+      "O(n)",
+      "O(1)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Hash function maps key directly to bucket."
   },
   {
@@ -804,12 +804,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Collision in hashing means?",
     "options": [
-      "Duplicate keys by design",
       "Two keys map to same index",
-      "Key not found in standard usage",
-      "Hash table is full by design"
+      "Hash table is full in practice",
+      "Key not found (commonly used)",
+      "Duplicate keys (general case)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Different keys producing same hash cause collision."
   },
   {
@@ -818,24 +818,24 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Chaining resolves collisions using?",
     "options": [
-      "Sorting (standard definition)",
+      "Rehashing only (primary approach)",
+      "Open addressing by design",
       "Linked list at each bucket",
-      "Open addressing (widely accepted)",
-      "Rehashing only (commonly used)"
+      "Sorting (default behavior)"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Each bucket holds a chain of entries."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Open addressing resolves collisions by?",
     "options": [
-      "Using linked lists in most cases",
-      "Ignoring collision (commonly used)",
+      "Creating new table in practice",
+      "Ignoring collision by design",
       "Probing for next empty slot",
-      "Creating new table by design"
+      "Using linked lists (general case)"
     ],
     "answer": 2,
     "explanation": "Linear/quadratic probing finds alternative slots."
@@ -846,68 +846,68 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Rehashing is triggered when?",
     "options": [
-      "After deletion only by design",
-      "Table is empty based on convention",
+      "First insertion (default behavior)",
       "Load factor exceeds threshold",
-      "First insertion (typical scenario)"
+      "Table is empty in practice",
+      "After deletion only in practice"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "High load factor degrades performance, so table resizes."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "HashSet stores?",
     "options": [
-      "Duplicates allowed",
       "Sorted elements",
-      "Key-value pairs",
-      "Unique elements only"
+      "Unique elements only",
+      "Duplicates allowed",
+      "Key-value pairs"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "HashSet rejects duplicate entries."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "What is a good hash function property?",
     "options": [
+      "Ignores input (typical scenario)",
       "Uniform distribution of keys",
-      "Always returns 0 (typical scenario)",
-      "Ignores input (commonly used)",
-      "Returns key itself in most cases"
+      "Returns key itself in most cases",
+      "Always returns 0 (commonly used)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Uniform distribution minimizes collisions."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Inorder traversal of BST gives?",
     "options": [
-      "Sorted ascending order",
-      "Random order in most cases",
       "Level order by design",
+      "Random order in most cases",
+      "Sorted ascending order",
       "Descending order by design"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Left-Root-Right visits BST nodes in sorted order."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Height of a balanced BST with n nodes?",
     "options": [
-      "O(log n)",
-      "O(n)",
       "O(n²)",
-      "O(1)"
+      "O(1)",
+      "O(n)",
+      "O(log n)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Balanced tree has logarithmic height."
   },
   {
@@ -917,9 +917,9 @@ window.quizData.dsa = [
     "question": "LCA (Lowest Common Ancestor) in BST takes?",
     "options": [
       "O(h) where h is height",
-      "O(n log n) in standard usage",
-      "O(1) under normal conditions",
-      "O(n²) (primary approach)"
+      "O(n log n) (widely accepted)",
+      "O(n²) in most cases",
+      "O(1) in most cases"
     ],
     "answer": 0,
     "explanation": "Follow BST property to find split point."
@@ -930,52 +930,52 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "AVL tree maintains balance by?",
     "options": [
+      "Sorting nodes in most cases",
+      "Using extra array (default behavior)",
       "Rotations after insert/delete",
-      "Using extra array in practice",
-      "Rebuilding tree (widely accepted)",
-      "Sorting nodes (standard definition)"
+      "Rebuilding tree (general case)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Single/double rotations restore balance factor."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Binary tree maximum path sum problem uses?",
     "options": [
-      "Recursion with global max tracking",
-      "Greedy (standard definition)",
+      "Sorting under normal conditions",
       "BFS in typical implementations",
-      "Sorting (standard definition)"
+      "Recursion with global max tracking",
+      "Greedy (standard definition)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "At each node, compute max path through it."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Preorder traversal visits?",
     "options": [
+      "Left, Right, Root",
       "Left, Root, Right",
       "Right, Root, Left",
-      "Root, Left, Right",
-      "Left, Right, Root"
+      "Root, Left, Right"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Pre = root first, then children."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Postorder traversal visits?",
     "options": [
-      "Left, Root, Right",
-      "Left, Right, Root",
       "Root, Left, Right",
-      "Right, Left, Root"
+      "Left, Right, Root",
+      "Right, Left, Root",
+      "Left, Root, Right"
     ],
     "answer": 1,
     "explanation": "Post = root last, after children."
@@ -986,9 +986,9 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Level order traversal uses?",
     "options": [
-      "Stack by design",
-      "Sorting",
       "Recursion only",
+      "Stack in practice",
+      "Sorting",
       "Queue (BFS)"
     ],
     "answer": 3,
@@ -1000,26 +1000,26 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Diameter of binary tree is?",
     "options": [
-      "Height of tree (general case)",
       "Longest path between any two nodes",
       "Number of leaves based on convention",
-      "Root to deepest node in standard usage"
+      "Height of tree in typical implementations",
+      "Root to deepest node as per specification"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Diameter = max of left height + right height at each node."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Segment tree is used for?",
     "options": [
-      "Range queries and updates efficiently",
-      "String matching (primary approach)",
-      "Sorting in typical implementations",
-      "Graph traversal under normal conditions"
+      "Sorting under normal conditions",
+      "Graph traversal (general case)",
+      "String matching under normal conditions",
+      "Range queries and updates efficiently"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Segment tree handles range sum/min/max in O(log n)."
   },
   {
@@ -1028,12 +1028,12 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Heap property: in a max-heap, parent is?",
     "options": [
-      "Equal to children in most cases",
       "Random under normal conditions",
-      "Less than children (widely accepted)",
-      "Greater than or equal to children"
+      "Greater than or equal to children",
+      "Less than children by design",
+      "Equal to children (standard definition)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Max-heap: parent >= children at every node."
   },
   {
@@ -1042,24 +1042,24 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "BST search time complexity (balanced)?",
     "options": [
-      "O(n)",
-      "O(1)",
       "O(n²)",
-      "O(log n)"
+      "O(log n)",
+      "O(n)",
+      "O(1)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Balanced BST halves search space each step."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "BFS uses which data structure?",
     "options": [
       "Queue",
       "Heap",
-      "Stack",
-      "Array"
+      "Array",
+      "Stack"
     ],
     "answer": 0,
     "explanation": "BFS explores neighbors level-by-level using FIFO."
@@ -1070,12 +1070,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "DFS uses which data structure?",
     "options": [
-      "Heap (commonly used)",
-      "Array by design",
-      "Queue (default behavior)",
-      "Stack (or recursion)"
+      "Stack (or recursion)",
+      "Queue in standard usage",
+      "Array (general case)",
+      "Heap (primary approach)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "DFS goes deep first using LIFO."
   },
   {
@@ -1084,65 +1084,65 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Dijkstra's algorithm fails with?",
     "options": [
+      "Dense graphs (general case)",
       "Positive weights",
       "Negative edge weights",
-      "Dense graphs (commonly used)",
       "Undirected graphs"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Greedy assumption breaks with negative edges."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Topological sort applies to?",
     "options": [
-      "Directed Acyclic Graphs (DAG)",
-      "Cyclic graphs (default behavior)",
-      "Undirected graphs in standard usage",
-      "Weighted graphs only (commonly used)"
+      "Weighted graphs only (commonly used)",
+      "Cyclic graphs (primary approach)",
+      "Undirected graphs in practice",
+      "Directed Acyclic Graphs (DAG)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Topological ordering requires no cycles."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Union-Find is used in?",
     "options": [
+      "BFS under normal conditions",
       "Kruskal's MST and cycle detection",
-      "String matching based on convention",
-      "Shortest path in most cases",
-      "BFS under normal conditions"
+      "String matching in most cases",
+      "Shortest path based on convention"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Union-Find efficiently tracks connected components."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Bellman-Ford handles?",
     "options": [
+      "Only trees (widely accepted)",
       "Only positive weights",
       "Negative edge weights",
-      "Only trees in standard usage",
-      "Only undirected in practice"
+      "Only undirected by design"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Relaxes all edges V-1 times."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Kruskal's algorithm is?",
     "options": [
-      "Divide and conquer in standard usage",
-      "Dynamic programming in practice",
-      "BFS-based (primary approach)",
+      "BFS-based (typical scenario)",
+      "Divide and conquer in most cases",
+      "Dynamic programming in most cases",
       "Greedy MST using sorted edges"
     ],
     "answer": 3,
@@ -1155,53 +1155,53 @@ window.quizData.dsa = [
     "question": "Prim's algorithm starts from?",
     "options": [
       "All vertices",
-      "Leaf node (general case)",
-      "Heaviest edge",
-      "Any single vertex"
+      "Any single vertex",
+      "Leaf node by design",
+      "Heaviest edge"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Prim grows MST from one vertex using min-edge."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Floyd-Warshall finds?",
     "options": [
-      "Topological order in most cases",
-      "All-pairs shortest paths",
       "Single-source shortest path",
-      "MST (widely accepted)"
+      "MST in typical implementations",
+      "Topological order in practice",
+      "All-pairs shortest paths"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "DP approach considers all intermediate vertices."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "Cycle detection in undirected graph uses?",
     "options": [
+      "Dijkstra under normal conditions",
+      "BFS only under normal conditions",
       "DFS with parent tracking or Union-Find",
-      "Topological sort (commonly used)",
-      "BFS only in typical implementations",
-      "Dijkstra in typical implementations"
+      "Topological sort (commonly used)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Back edge to non-parent indicates cycle."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Graph adjacency matrix space complexity?",
     "options": [
       "O(V)",
-      "O(V²)",
       "O(E)",
+      "O(V²)",
       "O(V+E)"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "V×V matrix stores all possible edges."
   },
   {
@@ -1211,8 +1211,8 @@ window.quizData.dsa = [
     "question": "Adjacency list space complexity?",
     "options": [
       "O(V²)",
-      "O(V)",
       "O(E²)",
+      "O(V)",
       "O(V+E)"
     ],
     "answer": 3,
@@ -1221,43 +1221,43 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Memoization is?",
     "options": [
-      "Top-down DP with caching",
-      "Brute force by design",
+      "Brute force (default behavior)",
       "Bottom-up approach in practice",
-      "Greedy (standard definition)"
+      "Greedy (commonly used)",
+      "Top-down DP with caching"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Store results of subproblems to avoid recomputation."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Tabulation is?",
     "options": [
-      "Backtracking in most cases",
-      "Top-down approach in most cases",
-      "Recursion (general case)",
-      "Bottom-up DP using table"
+      "Bottom-up DP using table",
+      "Recursion (typical scenario)",
+      "Backtracking (typical scenario)",
+      "Top-down approach in most cases"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Fill table iteratively from base cases."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "0/1 Knapsack time complexity?",
     "options": [
-      "O(n log n)",
+      "O(n²)",
       "O(2^n)",
-      "O(n*W)",
-      "O(n²)"
+      "O(n log n)",
+      "O(n*W)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "DP table of items × capacity."
   },
   {
@@ -1266,12 +1266,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "LIS (Longest Increasing Subsequence) optimal complexity?",
     "options": [
+      "O(n²)",
+      "O(n) by design",
       "O(n log n)",
-      "O(2^n)",
-      "O(n) in practice",
-      "O(n²)"
+      "O(2^n)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Binary search + patience sorting approach."
   },
   {
@@ -1280,12 +1280,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "LCS (Longest Common Subsequence) of two strings?",
     "options": [
-      "O(m²)",
       "O(2^n)",
-      "O(m*n)",
-      "O(m+n)"
+      "O(m+n)",
+      "O(m²)",
+      "O(m*n)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "2D DP table comparing characters."
   },
   {
@@ -1294,12 +1294,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Coin Change problem (min coins) is solved by?",
     "options": [
-      "Greedy always (widely accepted)",
       "DP (unbounded knapsack variant)",
-      "Sorting under normal conditions",
-      "BFS only as per specification"
+      "Greedy always (default behavior)",
+      "BFS only (typical scenario)",
+      "Sorting (standard definition)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Try each coin, take minimum."
   },
   {
@@ -1308,9 +1308,9 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Matrix Chain Multiplication optimizes?",
     "options": [
-      "Matrix values as per specification",
-      "Matrix sorting in standard usage",
-      "Matrix dimensions in most cases",
+      "Matrix sorting (default behavior)",
+      "Matrix values (typical scenario)",
+      "Matrix dimensions (primary approach)",
       "Order of matrix multiplications"
     ],
     "answer": 3,
@@ -1319,13 +1319,13 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "DP on grids typically moves?",
     "options": [
-      "Diagonally only",
       "All 8 directions",
+      "Up only by design",
       "Right and down",
-      "Up only by design"
+      "Diagonally only"
     ],
     "answer": 2,
     "explanation": "Grid DP usually considers right/down movements."
@@ -1333,13 +1333,13 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Optimal substructure means?",
     "options": [
-      "Only greedy works under normal conditions",
-      "Random solutions work (primary approach)",
+      "Problem has no solution (standard definition)",
+      "Only greedy works in typical implementations",
       "Optimal solution contains optimal sub-solutions",
-      "Problem has no solution in typical implementations"
+      "Random solutions work (default behavior)"
     ],
     "answer": 2,
     "explanation": "Key property enabling DP approach."
@@ -1347,27 +1347,27 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Overlapping subproblems means?",
     "options": [
+      "Linear scan suffices (general case)",
       "Same subproblems are solved multiple times",
-      "No subproblems exist (primary approach)",
-      "Linear scan suffices (standard definition)",
-      "Each subproblem is unique by design"
+      "Each subproblem is unique (general case)",
+      "No subproblems exist in standard usage"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Caching avoids redundant computation."
   },
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Activity selection problem selects by?",
     "options": [
       "Earliest finish time",
-      "Random in standard usage",
       "Latest start by design",
-      "Maximum duration"
+      "Maximum duration",
+      "Random as per specification"
     ],
     "answer": 0,
     "explanation": "Greedy: pick activity finishing earliest."
@@ -1378,10 +1378,10 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Fractional knapsack allows?",
     "options": [
-      "Only whole items (general case)",
+      "Negative weights by design",
       "Taking fractions of items",
-      "No items (primary approach)",
-      "Negative weights in most cases"
+      "No items (general case)",
+      "Only whole items (commonly used)"
     ],
     "answer": 1,
     "explanation": "Sort by value/weight ratio, take fractions."
@@ -1389,15 +1389,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Huffman coding builds?",
     "options": [
-      "Graph as per specification",
+      "Balanced BST (standard definition)",
+      "Hash table (default behavior)",
       "Optimal prefix-free binary tree",
-      "Balanced BST (typical scenario)",
-      "Hash table as per specification"
+      "Graph under normal conditions"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Greedy: merge two lowest-frequency nodes."
   },
   {
@@ -1406,26 +1406,26 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Job scheduling with deadlines maximizes?",
     "options": [
+      "Number of jobs",
       "Minimum cost",
       "Total profit",
-      "Number of jobs",
       "Total time"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Schedule highest-profit jobs first within deadlines."
   },
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Minimum platforms problem uses?",
     "options": [
-      "Stack (typical scenario)",
-      "Queue based on convention",
+      "Binary search based on convention",
       "Sorting arrival/departure times",
-      "Binary search as per specification"
+      "Queue (typical scenario)",
+      "Stack (standard definition)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Sort and count overlapping intervals."
   },
   {
@@ -1434,12 +1434,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Greedy algorithms guarantee optimal solution when?",
     "options": [
-      "Always in typical implementations",
       "Never in typical implementations",
-      "Greedy choice property and optimal substructure hold",
-      "Only for sorting in typical implementations"
+      "Always in typical implementations",
+      "Only for sorting in typical implementations",
+      "Greedy choice property and optimal substructure hold"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Both properties must be proven for correctness."
   },
   {
@@ -1448,9 +1448,9 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "N-Queens problem places N queens such that?",
     "options": [
-      "Queens form diagonal (general case)",
-      "All queens are in one row in practice",
       "Queens are adjacent (widely accepted)",
+      "Queens form diagonal (widely accepted)",
+      "All queens are in one row in practice",
       "No two queens attack each other"
     ],
     "answer": 3,
@@ -1462,12 +1462,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Sudoku solver uses?",
     "options": [
-      "Sorting under normal conditions",
-      "BFS in typical implementations",
       "Backtracking with constraint checking",
-      "Greedy under normal conditions"
+      "Greedy in typical implementations",
+      "Sorting under normal conditions",
+      "BFS in typical implementations"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Try digits 1-9, backtrack if constraint violated."
   },
   {
@@ -1476,9 +1476,9 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Rat in Maze explores paths using?",
     "options": [
-      "Dynamic programming in practice",
-      "Sorting in practice",
-      "BFS only as per specification",
+      "Dynamic programming by design",
+      "BFS only in practice",
+      "Sorting (default behavior)",
       "Recursion and backtracking"
     ],
     "answer": 3,
@@ -1487,55 +1487,55 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Backtracking",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Generating all permutations uses?",
     "options": [
-      "Sorting in practice",
-      "Hashing (widely accepted)",
-      "Queue (widely accepted)",
-      "Swap-based backtracking"
+      "Swap-based backtracking",
+      "Hashing based on convention",
+      "Sorting (primary approach)",
+      "Queue (default behavior)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Swap elements, recurse, then swap back."
   },
   {
     "subject": "DSA",
     "topic": "Backtracking",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Combination Sum allows?",
     "options": [
-      "Sorting only (primary approach)",
-      "Each element used once in practice",
-      "Negative numbers based on convention",
-      "Reusing elements to reach target"
+      "Reusing elements to reach target",
+      "Sorting only (widely accepted)",
+      "Each element used once (general case)",
+      "Negative numbers as per specification"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Include current element again or move to next."
   },
   {
     "subject": "DSA",
     "topic": "Backtracking",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "Backtracking time complexity is typically?",
     "options": [
-      "O(n) in most cases",
       "O(n²) by design",
-      "Exponential",
-      "O(n log n)"
+      "O(n) in most cases",
+      "O(n log n)",
+      "Exponential"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Explores all possible configurations."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "XOR of a number with itself gives?",
     "options": [
+      "Negative number",
       "1",
-      "The number itself",
       "0",
-      "Negative number"
+      "The number itself"
     ],
     "answer": 2,
     "explanation": "x ^ x = 0 for any x."
@@ -1543,13 +1543,13 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "XOR of a number with 0 gives?",
     "options": [
       "The number itself",
-      "Complement by design",
-      "1 based on convention",
-      "0 in most cases"
+      "Complement in practice",
+      "1 (primary approach)",
+      "0 (primary approach)"
     ],
     "answer": 0,
     "explanation": "x ^ 0 = x."
@@ -1560,12 +1560,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Check if number is power of 2 using?",
     "options": [
+      "n % 2 == 0",
       "n & (n-1) == 0",
-      "n >> 1 == 0",
       "n | 1 == n",
-      "n % 2 == 0"
+      "n >> 1 == 0"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Power of 2 has single set bit; n&(n-1) clears it."
   },
   {
@@ -1574,26 +1574,26 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Left shift by 1 is equivalent to?",
     "options": [
-      "Multiply by 2",
       "Divide by 2",
+      "Add 1 by design",
       "Subtract 1",
-      "Add 1 in most cases"
+      "Multiply by 2"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Shifting bits left doubles the value."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Right shift by 1 is equivalent to?",
     "options": [
-      "Multiply by 2 (commonly used)",
-      "XOR with 1 as per specification",
-      "Add 2 (default behavior)",
-      "Divide by 2 (integer division)"
+      "Add 2 in typical implementations",
+      "Divide by 2 (integer division)",
+      "Multiply by 2 based on convention",
+      "XOR with 1 (typical scenario)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Shifting bits right halves the value."
   },
   {
@@ -1602,38 +1602,38 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Bit masking is used for?",
     "options": [
-      "Sorting (standard definition)",
-      "String matching (widely accepted)",
-      "Extracting or setting specific bits",
-      "Graph traversal as per specification"
+      "Graph traversal under normal conditions",
+      "Sorting in typical implementations",
+      "String matching based on convention",
+      "Extracting or setting specific bits"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "AND/OR masks isolate or set individual bits."
   },
   {
     "subject": "DSA",
     "topic": "Advanced Topics",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Trie is best for?",
     "options": [
       "Sorting numbers (primary approach)",
-      "Graph traversal by design",
-      "Matrix operations based on convention",
-      "Prefix-based string operations"
+      "Prefix-based string operations",
+      "Matrix operations in practice",
+      "Graph traversal (widely accepted)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Trie stores strings character-by-character for prefix search."
   },
   {
     "subject": "DSA",
     "topic": "Advanced Topics",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Disjoint Set Union find uses?",
     "options": [
-      "Sorting as per specification",
+      "Sorting (standard definition)",
       "Path compression and union by rank",
-      "Hashing in typical implementations",
-      "BFS under normal conditions"
+      "BFS under normal conditions",
+      "Hashing under normal conditions"
     ],
     "answer": 1,
     "explanation": "Optimizations give nearly O(1) amortized operations."
@@ -1645,9 +1645,9 @@ window.quizData.dsa = [
     "question": "Fenwick tree (BIT) supports?",
     "options": [
       "String matching in standard usage",
-      "Graph BFS in typical implementations",
+      "Sorting under normal conditions",
       "Point updates and prefix sum queries",
-      "Sorting (standard definition)"
+      "Graph BFS in typical implementations"
     ],
     "answer": 2,
     "explanation": "Binary Indexed Tree uses bit manipulation for efficiency."
@@ -1660,6639 +1660,731 @@ window.quizData.dsa = [
     "options": [
       "O(1)",
       "O(log n)",
-      "O(n²)",
-      "O(n)"
+      "O(n)",
+      "O(n²)"
     ],
     "answer": 1,
     "explanation": "Tree structure allows logarithmic range operations."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Doubly Linked List?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Stack?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Queue?",
+    "question": "Given the 1D integer array [10, 13, 2, 13, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a BST?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
+      "30",
+      "15",
+      "25",
+      "27"
     ],
     "answer": 2,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Max Heap?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a BST?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Deletion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Red-Black Tree?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Red-Black Tree, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Singly Linked List?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (unsorted)?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Singly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a AVL Tree?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Access under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a AVL Tree?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Singly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Array (sorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a BST?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (sorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (sorted)?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Insertion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Red-Black Tree?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Access under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Min Heap?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Stack?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Red-Black Tree?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Stack?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Doubly Linked List?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Queue?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Doubly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Array (unsorted)?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Min Heap?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a AVL Tree?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Array (sorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Array (sorted)?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Insertion under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a AVL Tree?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For AVL Tree, a Insertion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (unsorted)?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Doubly Linked List?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Stack?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (sorted)?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Queue?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Queue?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Red-Black Tree?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Access under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Array (unsorted)?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Queue?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Array (sorted)?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Deletion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Doubly Linked List?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Red-Black Tree?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Red-Black Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Queue?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Doubly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Red-Black Tree?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (sorted)?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Deletion under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a AVL Tree?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For AVL Tree, a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Red-Black Tree?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a AVL Tree?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Min Heap?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Insertion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Min Heap?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Max Heap?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Red-Black Tree?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Red-Black Tree, a Insertion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Stack?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Array (unsorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a BST?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For BST, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Min Heap?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Red-Black Tree?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Red-Black Tree?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Max Heap?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Stack?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a BST?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a BST?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Red-Black Tree?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a AVL Tree?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Singly Linked List?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (sorted)?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Doubly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Max Heap?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a AVL Tree?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Singly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Min Heap?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Doubly Linked List?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Singly Linked List?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (sorted)?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Min Heap?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (unsorted)?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Deletion under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Stack?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a BST?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For BST, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a BST?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Queue?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a BST?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Access under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Array (unsorted)?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Deletion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a BST?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Max Heap?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Max Heap?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Insertion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Max Heap?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Singly Linked List?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Queue?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Red-Black Tree?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a AVL Tree?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For AVL Tree, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Doubly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Min Heap?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Doubly Linked List?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Queue?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Min Heap?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Array (sorted)?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a AVL Tree?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a AVL Tree?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Array (unsorted)?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST?",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Max Heap?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Singly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a AVL Tree?",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For AVL Tree, a Access under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Detecting intersection point of two lists uses? (Set 1)",
-    "options": [
-      "Length difference or two-pointer approach",
-      "Sorting in typical implementations",
-      "Stack in typical implementations",
-      "Queue in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Align starts by length diff, then traverse together."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 2)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 4)",
-    "options": [
-      "Always in typical implementations",
-      "Greedy choice property and optimal substructure hold",
-      "Never in typical implementations",
-      "Only for sorting in typical implementations"
-    ],
-    "answer": 1,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Hard",
-    "question": "Prim's algorithm starts from? (Set 5)",
-    "options": [
-      "All vertices",
-      "Heaviest edge",
-      "Any single vertex",
-      "Leaf node in most cases"
-    ],
-    "answer": 2,
-    "explanation": "Prim grows MST from one vertex using min-edge."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 6)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 7)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 8)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 9)",
-    "options": [
-      "Load factor exceeds threshold",
-      "First insertion as per specification",
-      "After deletion only in most cases",
-      "Table is empty based on convention"
-    ],
-    "answer": 0,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 10)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12)",
-    "options": [
-      "O(V+E)",
-      "O(V²)",
-      "O(E²)",
-      "O(V)"
-    ],
-    "answer": 0,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Medium",
-    "question": "Check if number is power of 2 using? (Set 13)",
-    "options": [
-      "n & (n-1) == 0",
-      "n | 1 == n",
-      "n % 2 == 0",
-      "n >> 1 == 0"
-    ],
-    "answer": 0,
-    "explanation": "Power of 2 has single set bit; n&(n-1) clears it."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n²)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Remove Nth node from end uses? (Set 16)",
-    "options": [
-      "Two pointers with N gap",
-      "Reverse list (general case)",
-      "Binary search by design",
-      "Stack of size N by design"
-    ],
-    "answer": 0,
-    "explanation": "Fast pointer leads by N, both advance until fast reaches end."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack? (Set 17)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 18)",
-    "options": [
-      "Probing for next empty slot",
-      "Creating new table in practice",
-      "Ignoring collision in most cases",
-      "Using linked lists in practice"
-    ],
-    "answer": 0,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 18) (Set 19)",
-    "options": [
-      "Creating new table (general case)",
-      "Ignoring collision (commonly used)",
-      "Using linked lists in most cases",
-      "Probing for next empty slot"
-    ],
-    "answer": 3,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "N-Queens problem places N queens such that? (Set 20)",
-    "options": [
-      "No two queens attack each other",
-      "All queens are in one row in practice",
-      "Queens form diagonal in most cases",
-      "Queens are adjacent (primary approach)"
-    ],
-    "answer": 0,
-    "explanation": "No two queens share row, column, or diagonal."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 21)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Preorder traversal visits? (Set 22)",
-    "options": [
-      "Left, Right, Root",
-      "Left, Root, Right",
-      "Root, Left, Right",
-      "Right, Root, Left"
-    ],
-    "answer": 2,
-    "explanation": "Pre = root first, then children."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Advanced Topics",
-    "difficulty": "Hard",
-    "question": "Disjoint Set Union find uses? (Set 23)",
-    "options": [
-      "Sorting under normal conditions",
-      "Hashing (standard definition)",
-      "Path compression and union by rank",
-      "BFS under normal conditions"
-    ],
-    "answer": 2,
-    "explanation": "Optimizations give nearly O(1) amortized operations."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Job scheduling with deadlines maximizes? (Set 24)",
-    "options": [
-      "Total profit",
-      "Number of jobs",
-      "Minimum cost",
-      "Total time"
-    ],
-    "answer": 0,
-    "explanation": "Schedule highest-profit jobs first within deadlines."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Hard",
-    "question": "Heap property: in a max-heap, parent is? (Set 26)",
-    "options": [
-      "Less than children (typical scenario)",
-      "Equal to children (default behavior)",
-      "Random in typical implementations",
-      "Greater than or equal to children"
-    ],
-    "answer": 3,
-    "explanation": "Max-heap: parent >= children at every node."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Postfix expression evaluation uses? (Set 27)",
-    "options": [
-      "Tree (typical scenario)",
-      "Two stacks (general case)",
-      "Queue (primary approach)",
-      "Stack for operands"
-    ],
-    "answer": 3,
-    "explanation": "Push operands, pop two for each operator."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 28)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 7) (Set 29)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 30)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Red-Black Tree, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Matrix Chain Multiplication optimizes? (Set 31)",
-    "options": [
-      "Matrix values under normal conditions",
-      "Matrix dimensions as per specification",
-      "Matrix sorting as per specification",
-      "Order of matrix multiplications"
-    ],
-    "answer": 3,
-    "explanation": "Different parenthesizations give different costs."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 32)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 33)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Red-Black Tree? (Set 34)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Red-Black Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 35)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36)",
-    "options": [
-      "Probing for next empty slot",
-      "Creating new table in most cases",
-      "Using linked lists by design",
-      "Ignoring collision in practice"
-    ],
-    "answer": 0,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Hard",
-    "question": "Tabulation is? (Set 37)",
-    "options": [
-      "Top-down approach in practice",
-      "Backtracking in standard usage",
-      "Bottom-up DP using table",
-      "Recursion in most cases"
-    ],
-    "answer": 2,
-    "explanation": "Fill table iteratively from base cases."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 38)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 39)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 25."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 40)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n²)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 41)",
-    "options": [
-      "O(E²)",
-      "O(V+E)",
-      "O(V)",
-      "O(V²)"
-    ],
-    "answer": 1,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the time complexity of binary search? (Set 42)",
-    "options": [
-      "O(n)",
-      "O(n²)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "Binary search halves the search space each step."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Detecting intersection point of two lists uses? (Set 1) (Set 43)",
-    "options": [
-      "Length difference or two-pointer approach",
-      "Stack in typical implementations",
-      "Sorting in typical implementations",
-      "Queue in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Align starts by length diff, then traverse together."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "Chaining resolves collisions using? (Set 44)",
-    "options": [
-      "Linked list at each bucket",
-      "Sorting (typical scenario)",
-      "Rehashing only (primary approach)",
-      "Open addressing in most cases"
-    ],
-    "answer": 0,
-    "explanation": "Each bucket holds a chain of entries."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 45)",
-    "options": [
-      "Never in typical implementations",
-      "Only for sorting in typical implementations",
-      "Always in typical implementations",
-      "Greedy choice property and optimal substructure hold"
-    ],
-    "answer": 3,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 46)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "N-Queens problem places N queens such that? (Set 20) (Set 47)",
-    "options": [
-      "No two queens attack each other",
-      "Queens form diagonal (general case)",
-      "Queens are adjacent in standard usage",
-      "All queens are in one row by design"
-    ],
-    "answer": 0,
-    "explanation": "No two queens share row, column, or diagonal."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49)",
-    "options": [
-      "Shortest path in practice",
-      "String matching",
-      "Maximum subarray sum",
-      "Sorting in most cases"
-    ],
-    "answer": 2,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 50)",
-    "options": [
-      "Dynamic programming in practice",
-      "BFS only (default behavior)",
-      "Sorting (standard definition)",
-      "Recursion and backtracking"
-    ],
-    "answer": 3,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 51)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Deletion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "Memoization is? (Set 52)",
-    "options": [
-      "Bottom-up approach by design",
-      "Top-down DP with caching",
-      "Brute force (general case)",
-      "Greedy (general case)"
-    ],
-    "answer": 1,
-    "explanation": "Store results of subproblems to avoid recomputation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 53)",
+    "question": "What is the time complexity of performing a 'Access' operation on a AVL Tree?",
     "options": [
       "O(n)",
       "O(log n)",
       "O(1)",
       "O(n log n)"
     ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 54)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
     "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Average Case takes O(n)."
+    "explanation": "For AVL Tree, performing a 'Access' takes O(log n)."
   },
   {
     "subject": "DSA",
-    "topic": "Dynamic Programming",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "0/1 Knapsack time complexity? (Set 55)",
+    "question": "Given the 1D integer array [3, 12, 10, 4, 14, 13, 14, 17], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
-      "O(n log n)",
-      "O(n*W)",
-      "O(n²)",
-      "O(2^n)"
-    ],
-    "answer": 1,
-    "explanation": "DP table of items × capacity."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56)",
-    "options": [
-      "Middle only (general case)",
-      "Only rear (general case)",
-      "Both front and rear",
-      "Only front (commonly used)"
-    ],
-    "answer": 2,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 30) (Set 57)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 58)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
+      "69",
+      "53",
+      "61",
+      "56"
     ],
     "answer": 3,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 56."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Doubly Linked List? (Set 59)",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][11] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][1]?",
     "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
+      "1296",
+      "1284",
+      "1208",
+      "1292"
     ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Insertion under Worst Case takes O(1)."
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 11 + 1) * 4 = 1292."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 3, 3, 7, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
+      "19",
+      "22",
+      "24",
+      "6"
     ],
     "answer": 0,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 19."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 61)",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][12] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][1]?",
     "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
+      "1952",
+      "1944",
+      "1904",
+      "1956"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (1 * 12 + 1) * 4 = 1952."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "74",
+      "82",
+      "210",
+      "77"
     ],
     "answer": 3,
-    "explanation": "For Array (unsorted), a Deletion under Worst Case takes O(n)."
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 37% density, total edges = 77."
   },
   {
     "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Medium",
-    "question": "Two Sum problem is best solved using? (Set 62)",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][11] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][1]?",
     "options": [
-      "Binary Search Tree",
-      "HashMap",
-      "Sorting",
-      "Stack"
+      "1213",
+      "1209",
+      "1203",
+      "1201"
     ],
     "answer": 1,
-    "explanation": "HashMap gives O(1) lookup for complement."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (1 * 6 + 3) * 1 = 1209."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Red-Black Tree? (Set 63)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "What is the time complexity of accessing an array element by index? (Set 64)",
+    "question": "Given the 1D integer array [1, 13, 17, 7, 9, 17, 18], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "O(n)",
-      "O(1)",
-      "O(n²)",
-      "O(log n)"
+      "37",
+      "38",
+      "43",
+      "45"
     ],
     "answer": 1,
-    "explanation": "Array access is constant time via direct addressing."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 65)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Combination Sum allows? (Set 66)",
-    "options": [
-      "Negative numbers (widely accepted)",
-      "Reusing elements to reach target",
-      "Sorting only (typical scenario)",
-      "Each element used once in practice"
-    ],
-    "answer": 1,
-    "explanation": "Include current element again or move to next."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 38."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is the time complexity of the naive recursive Fibonacci? (Set 67)",
-    "options": [
-      "O(n²)",
-      "O(n log n)",
-      "O(n)",
-      "O(2^n)"
-    ],
-    "answer": 3,
-    "explanation": "Each call branches into two recursive calls."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 68)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack? (Set 69)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Min Heap? (Set 70)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a BST? (Set 71)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Easy",
-    "question": "Time complexity to check if a string is palindrome? (Set 72)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n²)"
-    ],
-    "answer": 1,
-    "explanation": "Compare characters from both ends in one pass."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 73)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Min Heap? (Set 70) (Set 74)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Hard",
-    "question": "Heap property: in a max-heap, parent is? (Set 75)",
-    "options": [
-      "Less than children based on convention",
-      "Greater than or equal to children",
-      "Equal to children (standard definition)",
-      "Random as per specification"
-    ],
-    "answer": 1,
-    "explanation": "Max-heap: parent >= children at every node."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Topological sort applies to? (Set 76)",
-    "options": [
-      "Weighted graphs only (commonly used)",
-      "Directed Acyclic Graphs (DAG)",
-      "Undirected graphs (default behavior)",
-      "Cyclic graphs (typical scenario)"
-    ],
-    "answer": 1,
-    "explanation": "Topological ordering requires no cycles."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 77)",
-    "options": [
-      "String matching",
-      "Shortest path in practice",
-      "Sorting (default behavior)",
-      "Maximum subarray sum"
-    ],
-    "answer": 3,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 78)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n²)"
-    ],
-    "answer": 0,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Overlapping subproblems means? (Set 79)",
-    "options": [
-      "Linear scan suffices as per specification",
-      "Each subproblem is unique in practice",
-      "Same subproblems are solved multiple times",
-      "No subproblems exist in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Caching avoids redundant computation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80)",
-    "options": [
-      "Positive weights",
-      "Negative edge weights",
-      "Undirected graphs",
-      "Dense graphs in most cases"
-    ],
-    "answer": 1,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 81)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Postfix expression evaluation uses? (Set 27) (Set 82)",
-    "options": [
-      "Two stacks (general case)",
-      "Stack for operands",
-      "Tree as per specification",
-      "Queue (primary approach)"
-    ],
-    "answer": 1,
-    "explanation": "Push operands, pop two for each operator."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 83)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 4) (Set 84)",
-    "options": [
-      "Only for sorting in typical implementations",
-      "Never in typical implementations",
-      "Always in typical implementations",
-      "Greedy choice property and optimal substructure hold"
-    ],
-    "answer": 3,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "LCS (Longest Common Subsequence) of two strings? (Set 85)",
-    "options": [
-      "O(m*n)",
-      "O(m+n)",
-      "O(m²)",
-      "O(2^n)"
-    ],
-    "answer": 0,
-    "explanation": "2D DP table comparing characters."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 86)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Array (sorted)? (Set 87)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap? (Set 88)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 32) (Set 89)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15) (Set 90)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n²)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Matrix Chain Multiplication optimizes? (Set 31) (Set 91)",
-    "options": [
-      "Order of matrix multiplications",
-      "Matrix sorting (commonly used)",
-      "Matrix dimensions in most cases",
-      "Matrix values (commonly used)"
-    ],
-    "answer": 0,
-    "explanation": "Different parenthesizations give different costs."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Easy",
-    "question": "Left shift by 1 is equivalent to? (Set 92)",
-    "options": [
-      "Subtract 1",
-      "Divide by 2",
-      "Multiply by 2",
-      "Add 1 by design"
-    ],
-    "answer": 2,
-    "explanation": "Shifting bits left doubles the value."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15) (Set 93)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n²)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Stack? (Set 94)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Queue? (Set 95)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 50) (Set 96)",
-    "options": [
-      "Recursion and backtracking",
-      "BFS only (commonly used)",
-      "Dynamic programming in most cases",
-      "Sorting in standard usage"
-    ],
-    "answer": 0,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Preorder traversal visits? (Set 22) (Set 97)",
-    "options": [
-      "Left, Right, Root",
-      "Left, Root, Right",
-      "Root, Left, Right",
-      "Right, Root, Left"
-    ],
-    "answer": 2,
-    "explanation": "Pre = root first, then children."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 50) (Set 96) (Set 98)",
-    "options": [
-      "BFS only (commonly used)",
-      "Recursion and backtracking",
-      "Sorting (commonly used)",
-      "Dynamic programming by design"
-    ],
-    "answer": 1,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Detecting intersection point of two lists uses? (Set 1) (Set 43) (Set 99)",
-    "options": [
-      "Stack in typical implementations",
-      "Sorting in typical implementations",
-      "Length difference or two-pointer approach",
-      "Queue in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Align starts by length diff, then traverse together."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 100)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 101)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Postfix expression evaluation uses? (Set 27) (Set 82) (Set 102)",
-    "options": [
-      "Stack for operands",
-      "Tree (primary approach)",
-      "Queue (general case)",
-      "Two stacks (general case)"
-    ],
-    "answer": 0,
-    "explanation": "Push operands, pop two for each operator."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 103)",
-    "options": [
-      "Probing for next empty slot",
-      "Using linked lists (general case)",
-      "Creating new table (general case)",
-      "Ignoring collision by design"
-    ],
-    "answer": 0,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 104)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Stack? (Set 105)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 106)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Graph adjacency matrix space complexity? (Set 107)",
-    "options": [
-      "O(E)",
-      "O(V²)",
-      "O(V+E)",
-      "O(V)"
-    ],
-    "answer": 1,
-    "explanation": "V×V matrix stores all possible edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a BST? (Set 108)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109)",
-    "options": [
-      "Both front and rear",
-      "Only rear (commonly used)",
-      "Only front in most cases",
-      "Middle only (general case)"
-    ],
-    "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 110)",
-    "options": [
-      "O(n)",
-      "O(n²)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Red-Black Tree? (Set 111)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 112)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Queue? (Set 113)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 114)",
-    "options": [
-      "Undirected graphs",
-      "Dense graphs (commonly used)",
-      "Negative edge weights",
-      "Positive weights"
-    ],
-    "answer": 2,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 115)",
-    "options": [
-      "O(n²)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Stack? (Set 116)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Medium",
-    "question": "Move Zeroes problem moves zeros to? (Set 117)",
-    "options": [
-      "End of array",
-      "Middle in practice",
-      "Beginning",
-      "Sorted position"
-    ],
-    "answer": 0,
-    "explanation": "Non-zero elements move left, zeros fill right."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 118)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n²)"
-    ],
-    "answer": 1,
-    "explanation": "Both operations work on the top element only."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Preorder traversal visits? (Set 22) (Set 119)",
-    "options": [
-      "Left, Right, Root",
-      "Root, Left, Right",
-      "Left, Root, Right",
-      "Right, Root, Left"
-    ],
-    "answer": 1,
-    "explanation": "Pre = root first, then children."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue? (Set 120)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 121)",
-    "options": [
-      "String matching",
-      "Maximum subarray sum",
-      "Shortest path by design",
-      "Sorting (primary approach)"
-    ],
-    "answer": 1,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Advanced Topics",
-    "difficulty": "Hard",
-    "question": "Disjoint Set Union find uses? (Set 122)",
-    "options": [
-      "Sorting in typical implementations",
-      "Hashing (standard definition)",
-      "Path compression and union by rank",
-      "BFS in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Optimizations give nearly O(1) amortized operations."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a AVL Tree? (Set 123)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What does Big O notation describe? (Set 124)",
-    "options": [
-      "Exact growth as per specification",
-      "Average case only (general case)",
-      "Lower bound (primary approach)",
-      "Upper bound of growth rate"
-    ],
-    "answer": 3,
-    "explanation": "Big O gives the worst-case upper bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Min Heap? (Set 125)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Min Heap, a Insertion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 126)",
-    "options": [
-      "Two pointers (slow and fast)",
-      "Queue (widely accepted)",
-      "Stack in standard usage",
-      "Recursion only (primary approach)"
-    ],
-    "answer": 0,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 127)",
-    "options": [
-      "Recursion only in standard usage",
-      "Two pointers (slow and fast)",
-      "Queue (commonly used)",
-      "Stack in standard usage"
-    ],
-    "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 128)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 129)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Union-Find is used in? (Set 130)",
-    "options": [
-      "BFS in typical implementations",
-      "String matching (default behavior)",
-      "Kruskal's MST and cycle detection",
-      "Shortest path as per specification"
-    ],
-    "answer": 2,
-    "explanation": "Union-Find efficiently tracks connected components."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Floyd-Warshall finds? (Set 131)",
-    "options": [
-      "MST (commonly used)",
-      "All-pairs shortest paths",
-      "Topological order by design",
-      "Single-source shortest path"
-    ],
-    "answer": 1,
-    "explanation": "DP approach considers all intermediate vertices."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a AVL Tree? (Set 132)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Access under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Hard",
-    "question": "Inorder traversal of BST gives? (Set 133)",
-    "options": [
-      "Level order in standard usage",
-      "Random order in most cases",
-      "Sorted ascending order",
-      "Descending order in practice"
-    ],
-    "answer": 2,
-    "explanation": "Left-Root-Right visits BST nodes in sorted order."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a BST? (Set 134)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 135)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 126) (Set 136)",
-    "options": [
-      "Recursion only (commonly used)",
-      "Stack in typical implementations",
-      "Queue (widely accepted)",
-      "Two pointers (slow and fast)"
-    ],
-    "answer": 3,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 38) (Set 137)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Hard",
-    "question": "Prim's algorithm starts from? (Set 138)",
-    "options": [
-      "Leaf node in most cases",
-      "Heaviest edge",
-      "All vertices",
-      "Any single vertex"
-    ],
-    "answer": 3,
-    "explanation": "Prim grows MST from one vertex using min-edge."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Min Heap? (Set 139)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Easy",
-    "question": "AVL tree maintains balance by? (Set 140)",
-    "options": [
-      "Rotations after insert/delete",
-      "Using extra array (widely accepted)",
-      "Sorting nodes (primary approach)",
-      "Rebuilding tree (general case)"
-    ],
-    "answer": 0,
-    "explanation": "Single/double rotations restore balance factor."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Medium",
-    "question": "Monotonic stack is used for? (Set 142)",
-    "options": [
-      "Next greater/smaller element problems",
-      "BFS in typical implementations",
-      "String matching in typical implementations",
-      "Sorting under normal conditions"
-    ],
-    "answer": 0,
-    "explanation": "Maintains increasing/decreasing order of elements."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 143)",
-    "options": [
-      "Both front and rear",
-      "Only rear in most cases",
-      "Only front (general case)",
-      "Middle only in most cases"
-    ],
-    "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141) (Set 144)",
+    "question": "What is the time complexity of performing a 'Search' operation on a Singly Linked List?",
     "options": [
       "O(1)",
       "O(n log n)",
       "O(log n)",
       "O(n)"
     ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (sorted)? (Set 145)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
     "answer": 3,
-    "explanation": "For Array (sorted), a Search under Average Case takes O(log n)."
+    "explanation": "For Singly Linked List, performing a 'Search' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 146)",
+    "question": "An undirected simple graph G has 5 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n²)"
-    ],
-    "answer": 0,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Circular queue solves which problem? (Set 147)",
-    "options": [
-      "Balancing (widely accepted)",
-      "Sorting (commonly used)",
-      "Wasted space in linear queue",
-      "Searching (primary approach)"
-    ],
-    "answer": 2,
-    "explanation": "Rear wraps around to use freed front space."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Best Time to Buy Stock uses which pattern? (Set 148)",
-    "options": [
-      "Two pointers by design",
-      "Track minimum and max profit",
-      "Sliding window (general case)",
-      "Binary search by design"
-    ],
-    "answer": 1,
-    "explanation": "Track min price seen so far, compute max profit."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Stack? (Set 149)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 150)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Red-Black Tree? (Set 151)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Stack? (Set 152)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60) (Set 153)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Merge Intervals first step is? (Set 154)",
-    "options": [
-      "Build a tree by design",
-      "Sort by start time",
-      "Use a stack in most cases",
-      "Sort by end time"
-    ],
-    "answer": 1,
-    "explanation": "Sorting by start allows sequential merging."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155)",
-    "options": [
-      "Ignoring collision in most cases",
-      "Creating new table in practice",
-      "Probing for next empty slot",
-      "Using linked lists (general case)"
-    ],
-    "answer": 2,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 4) (Set 84) (Set 156)",
-    "options": [
-      "Always in typical implementations",
-      "Greedy choice property and optimal substructure hold",
-      "Never in typical implementations",
-      "Only for sorting in typical implementations"
-    ],
-    "answer": 1,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Floyd-Warshall finds? (Set 131) (Set 157)",
-    "options": [
-      "MST in typical implementations",
-      "All-pairs shortest paths",
-      "Topological order in practice",
-      "Single-source shortest path"
-    ],
-    "answer": 1,
-    "explanation": "DP approach considers all intermediate vertices."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 158)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 159)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Queue? (Set 160)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 161)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 40) (Set 162)",
-    "options": [
-      "O(n²)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 163)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 164)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 165)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 166)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 4) (Set 84) (Set 156) (Set 167)",
-    "options": [
-      "Always in typical implementations",
-      "Only for sorting in typical implementations",
-      "Greedy choice property and optimal substructure hold",
-      "Never in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a AVL Tree? (Set 168)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Combination Sum allows? (Set 66) (Set 169)",
-    "options": [
-      "Each element used once (commonly used)",
-      "Reusing elements to reach target",
-      "Negative numbers as per specification",
-      "Sorting only under normal conditions"
-    ],
-    "answer": 1,
-    "explanation": "Include current element again or move to next."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 135) (Set 170)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 171)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109) (Set 172)",
-    "options": [
-      "Only front by design",
-      "Middle only (general case)",
-      "Only rear in practice",
-      "Both front and rear"
-    ],
-    "answer": 3,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Red-Black Tree? (Set 151) (Set 173)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 174)",
-    "options": [
-      "Sorting only (commonly used)",
-      "Character frequency comparison",
-      "Substring search as per specification",
-      "Regular expressions in practice"
-    ],
-    "answer": 1,
-    "explanation": "Same character counts means anagram."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Hard",
-    "question": "Rabin-Karp uses what technique? (Set 175)",
-    "options": [
-      "Hashing",
-      "Backtracking",
-      "Greedy",
-      "Dynamic programming"
-    ],
-    "answer": 0,
-    "explanation": "Rolling hash compares pattern hash with window hash."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Longest palindromic substring can be found in? (Set 176)",
-    "options": [
-      "O(n²) using expand around center",
-      "O(log n) based on convention",
-      "O(n) (standard definition)",
-      "O(n³) (standard definition)"
-    ],
-    "answer": 0,
-    "explanation": "Expand from each center in O(n) time, n centers."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 177)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n²)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "Both operations work on the top element only."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 178)",
-    "options": [
-      "Creating new table in most cases",
-      "Using linked lists (general case)",
-      "Ignoring collision (general case)",
-      "Probing for next empty slot"
-    ],
-    "answer": 3,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 179)",
-    "options": [
-      "Character frequency comparison",
-      "Regular expressions in practice",
-      "Substring search (general case)",
-      "Sorting only in practice"
-    ],
-    "answer": 0,
-    "explanation": "Same character counts means anagram."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Hard",
-    "question": "Kruskal's algorithm is? (Set 180)",
-    "options": [
-      "Dynamic programming (general case)",
-      "Greedy MST using sorted edges",
-      "BFS-based in standard usage",
-      "Divide and conquer in standard usage"
-    ],
-    "answer": 1,
-    "explanation": "Sort edges, add if no cycle (Union-Find)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Max Heap? (Set 181)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 165) (Set 182)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Stack? (Set 94) (Set 183)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 184)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 185)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 186)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a BST? (Set 187)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 101) (Set 188)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 58) (Set 189)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a AVL Tree? (Set 190)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Hard",
-    "question": "Tabulation is? (Set 37) (Set 191)",
-    "options": [
-      "Bottom-up DP using table",
-      "Top-down approach in practice",
-      "Recursion (default behavior)",
-      "Backtracking (typical scenario)"
-    ],
-    "answer": 0,
-    "explanation": "Fill table iteratively from base cases."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Advanced Topics",
-    "difficulty": "Hard",
-    "question": "Fenwick tree (BIT) supports? (Set 192)",
-    "options": [
-      "Sorting in typical implementations",
-      "String matching (standard definition)",
-      "Graph BFS under normal conditions",
-      "Point updates and prefix sum queries"
-    ],
-    "answer": 3,
-    "explanation": "Binary Indexed Tree uses bit manipulation for efficiency."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Medium",
-    "question": "XOR of a number with itself gives? (Set 193)",
-    "options": [
-      "Negative number",
-      "0",
-      "The number itself",
+      "4",
+      "9",
+      "10",
       "1"
     ],
-    "answer": 1,
-    "explanation": "x ^ x = 0 for any x."
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 5*(4)/2 = 10. At 44% density, total edges = 4."
   },
   {
     "subject": "DSA",
-    "topic": "Trees",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 18, 16, 9, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "56",
+      "49",
+      "57",
+      "51"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Inorder traversal of BST gives? (Set 194)",
+    "question": "A 2D array A[10][13] starts at base address 1700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][5]?",
     "options": [
-      "Descending order in practice",
-      "Random order by design",
-      "Sorted ascending order",
-      "Level order in practice"
-    ],
-    "answer": 2,
-    "explanation": "Left-Root-Right visits BST nodes in sorted order."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Doubly Linked List? (Set 59) (Set 195)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
+      "1752",
+      "1756",
+      "1710",
+      "1744"
     ],
     "answer": 0,
-    "explanation": "For Doubly Linked List, a Insertion under Worst Case takes O(1)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (5 * 10 + 2) * 1 = 1752."
   },
   {
     "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 196)",
-    "options": [
-      "Creating new table (commonly used)",
-      "Ignoring collision in most cases",
-      "Probing for next empty slot",
-      "Using linked lists in most cases"
-    ],
-    "answer": 2,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 197)",
-    "options": [
-      "O(n²)",
-      "O(n) in practice",
-      "O(n log n)",
-      "O(2^n)"
-    ],
-    "answer": 2,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 198)",
-    "options": [
-      "O(V)",
-      "O(V+E)",
-      "O(E²)",
-      "O(V²)"
-    ],
-    "answer": 1,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 41) (Set 199)",
-    "options": [
-      "O(E²)",
-      "O(V+E)",
-      "O(V²)",
-      "O(V)"
-    ],
-    "answer": 1,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 200)",
+    "question": "A 2D array A[19][13] starts at base address 1200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[17][10]?",
     "options": [
-      "Queue based on convention",
-      "Recursion only in standard usage",
-      "Stack as per specification",
-      "Two pointers (slow and fast)"
-    ],
-    "answer": 3,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue? (Set 201)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
+      "1370",
+      "1431",
+      "1435",
+      "1423"
     ],
     "answer": 1,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (17 * 13 + 10) * 1 = 1431."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 202)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Middle of linked list found using? (Set 203)",
+    "question": "Given the 1D integer array [4, 6, 8, 15, 1, 13, 14], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "Recursion (widely accepted)",
-      "Stack based on convention",
-      "Slow and fast pointer",
-      "Counting then traversing"
-    ],
-    "answer": 2,
-    "explanation": "When fast reaches end, slow is at middle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 68) (Set 204)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 8) (Set 205)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
+      "30",
+      "39",
+      "35",
+      "34"
     ],
     "answer": 3,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 34."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Queue? (Set 206)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "A palindrome reads the same? (Set 207)",
-    "options": [
-      "Only backward in most cases",
-      "Forward and backward",
-      "Diagonally (general case)",
-      "Only forward in practice"
-    ],
-    "answer": 1,
-    "explanation": "Palindromes are symmetric strings."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Kruskal's algorithm is? (Set 180) (Set 208)",
+    "question": "A 2D array A[9][19] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][5]?",
     "options": [
-      "Greedy MST using sorted edges",
-      "Divide and conquer (commonly used)",
-      "Dynamic programming by design",
-      "BFS-based based on convention"
+      "1792",
+      "1640",
+      "1784",
+      "1796"
     ],
     "answer": 0,
-    "explanation": "Sort edges, add if no cycle (Union-Find)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (1 * 19 + 5) * 8 = 1792."
   },
   {
     "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 4) (Set 84) (Set 156) (Set 167) (Set 209)",
-    "options": [
-      "Only for sorting in typical implementations",
-      "Never in typical implementations",
-      "Greedy choice property and optimal substructure hold",
-      "Always in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 210)",
+    "question": "Given the 1D integer array [14, 8, 18, 5, 14, 20, 18], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue? (Set 120) (Set 211)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Easy",
-    "question": "Fractional knapsack allows? (Set 212)",
-    "options": [
-      "Only whole items in practice",
-      "No items (default behavior)",
-      "Negative weights in practice",
-      "Taking fractions of items"
+      "64",
+      "73",
+      "45",
+      "59"
     ],
     "answer": 3,
-    "explanation": "Sort by value/weight ratio, take fractions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 39) (Set 213)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (sorted)? (Set 214)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Postfix expression evaluation uses? (Set 27) (Set 82) (Set 215)",
-    "options": [
-      "Stack for operands",
-      "Tree as per specification",
-      "Two stacks in most cases",
-      "Queue in practice"
-    ],
-    "answer": 0,
-    "explanation": "Push operands, pop two for each operator."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Priority queue is typically implemented using? (Set 216)",
-    "options": [
-      "Array (primary approach)",
-      "Heap (binary heap)",
-      "Linked list in most cases",
-      "Stack in practice"
-    ],
-    "answer": 1,
-    "explanation": "Heap gives O(log n) insert and extract-min/max."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 217)",
-    "options": [
-      "Little o",
-      "Big O",
-      "Theta (Θ)",
-      "Big Omega"
-    ],
-    "answer": 2,
-    "explanation": "Θ means asymptotically tight bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Middle of linked list found using? (Set 203) (Set 218)",
-    "options": [
-      "Counting then traversing",
-      "Stack (typical scenario)",
-      "Recursion (widely accepted)",
-      "Slow and fast pointer"
-    ],
-    "answer": 3,
-    "explanation": "When fast reaches end, slow is at middle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 65) (Set 219)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Job scheduling with deadlines maximizes? (Set 220)",
-    "options": [
-      "Minimum cost",
-      "Total time",
-      "Total profit",
-      "Number of jobs"
-    ],
-    "answer": 2,
-    "explanation": "Schedule highest-profit jobs first within deadlines."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Array (sorted)? (Set 221)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 100) (Set 222)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Detecting intersection point of two lists uses? (Set 1) (Set 43) (Set 99) (Set 223)",
-    "options": [
-      "Queue in typical implementations",
-      "Sorting in typical implementations",
-      "Length difference or two-pointer approach",
-      "Stack in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Align starts by length diff, then traverse together."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 224)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Array (sorted)? (Set 225)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 224) (Set 226)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Queue? (Set 227)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 228)",
-    "options": [
-      "Uniform distribution of keys",
-      "Always returns 0 in standard usage",
-      "Returns key itself in most cases",
-      "Ignores input (default behavior)"
-    ],
-    "answer": 0,
-    "explanation": "Uniform distribution minimizes collisions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Red-Black Tree? (Set 229)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Red-Black Tree, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 127) (Set 230)",
-    "options": [
-      "Recursion only in practice",
-      "Queue (commonly used)",
-      "Stack based on convention",
-      "Two pointers (slow and fast)"
-    ],
-    "answer": 3,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 231)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 232)",
-    "options": [
-      "Table is empty in practice",
-      "First insertion (default behavior)",
-      "Load factor exceeds threshold",
-      "After deletion only (commonly used)"
-    ],
-    "answer": 2,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Stack? (Set 94) (Set 233)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What does Big O notation describe? (Set 234)",
-    "options": [
-      "Average case only in practice",
-      "Exact growth (commonly used)",
-      "Lower bound in most cases",
-      "Upper bound of growth rate"
-    ],
-    "answer": 3,
-    "explanation": "Big O gives the worst-case upper bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 100) (Set 235)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 127) (Set 230) (Set 236)",
-    "options": [
-      "Stack in typical implementations",
-      "Two pointers (slow and fast)",
-      "Queue in standard usage",
-      "Recursion only (general case)"
-    ],
-    "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack? (Set 237)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 238)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "HashSet stores? (Set 239)",
-    "options": [
-      "Key-value pairs",
-      "Sorted elements",
-      "Duplicates allowed",
-      "Unique elements only"
-    ],
-    "answer": 3,
-    "explanation": "HashSet rejects duplicate entries."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Medium",
-    "question": "Doubly linked list advantage over singly? (Set 240)",
-    "options": [
-      "Faster access by index by design",
-      "Traversal in both directions",
-      "Simpler implementation by design",
-      "Less memory based on convention"
-    ],
-    "answer": 1,
-    "explanation": "DLL has prev pointer enabling backward traversal."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 241)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Deletion under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 184) (Set 242)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 243)",
-    "options": [
-      "O(n²)",
-      "O(2^n)",
-      "O(n) in practice",
-      "O(n log n)"
-    ],
-    "answer": 3,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 244)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60) (Set 153) (Set 245)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 177) (Set 246)",
-    "options": [
-      "O(n²)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "Both operations work on the top element only."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Easy",
-    "question": "Activity selection problem selects by? (Set 247)",
-    "options": [
-      "Maximum duration",
-      "Random by design",
-      "Earliest finish time",
-      "Latest start in practice"
-    ],
-    "answer": 2,
-    "explanation": "Greedy: pick activity finishing earliest."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Max Heap? (Set 248)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Merge two sorted linked lists time complexity? (Set 249)",
-    "options": [
-      "O(n+m)",
-      "O(n*m)",
-      "O(n²)",
-      "O(log(n+m))"
-    ],
-    "answer": 0,
-    "explanation": "Compare heads and merge in single pass."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Two pointer technique works best on? (Set 250)",
-    "options": [
-      "Sorted arrays",
-      "Graphs by design",
-      "Heaps (general case)",
-      "Trees by design"
-    ],
-    "answer": 0,
-    "explanation": "Two pointers converge from both ends of sorted data."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 251)",
-    "options": [
-      "Both front and rear",
-      "Only rear (general case)",
-      "Middle only (general case)",
-      "Only front (general case)"
-    ],
-    "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 252)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Stack? (Set 253)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "Memoization is? (Set 52) (Set 254)",
-    "options": [
-      "Greedy (general case)",
-      "Top-down DP with caching",
-      "Brute force in practice",
-      "Bottom-up approach by design"
-    ],
-    "answer": 1,
-    "explanation": "Store results of subproblems to avoid recomputation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 255)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 83) (Set 256)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109) (Set 257)",
-    "options": [
-      "Only rear in practice",
-      "Middle only in practice",
-      "Only front (general case)",
-      "Both front and rear"
-    ],
-    "answer": 3,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60) (Set 258)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 127) (Set 230) (Set 259)",
-    "options": [
-      "Stack (typical scenario)",
-      "Queue as per specification",
-      "Recursion only in standard usage",
-      "Two pointers (slow and fast)"
-    ],
-    "answer": 3,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 260)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 6) (Set 261)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Graph adjacency matrix space complexity? (Set 107) (Set 262)",
-    "options": [
-      "O(V²)",
-      "O(E)",
-      "O(V+E)",
-      "O(V)"
-    ],
-    "answer": 0,
-    "explanation": "V×V matrix stores all possible edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 263)",
-    "options": [
-      "Theta (Θ)",
-      "Big O",
-      "Big Omega",
-      "Little o"
-    ],
-    "answer": 0,
-    "explanation": "Θ means asymptotically tight bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Red-Black Tree? (Set 264)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 265)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Red-Black Tree? (Set 34) (Set 266)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Red-Black Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Advanced Topics",
-    "difficulty": "Medium",
-    "question": "Segment tree range query time? (Set 267)",
-    "options": [
-      "O(n)",
-      "O(n²)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "Tree structure allows logarithmic range operations."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 268)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 33) (Set 269)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Min Heap? (Set 70) (Set 74) (Set 270)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 33) (Set 269) (Set 271)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack? (Set 237) (Set 272)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 273)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Hard",
-    "question": "Tabulation is? (Set 274)",
-    "options": [
-      "Bottom-up DP using table",
-      "Top-down approach by design",
-      "Backtracking by design",
-      "Recursion (primary approach)"
-    ],
-    "answer": 0,
-    "explanation": "Fill table iteratively from base cases."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 273) (Set 275)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Array (sorted)? (Set 87) (Set 276)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 241) (Set 277)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Deletion under Best Case takes O(n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 59."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is the time complexity of the naive recursive Fibonacci? (Set 278)",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Stack?",
     "options": [
-      "O(2^n)",
-      "O(n log n)",
+      "O(1)",
+      "O(log n)",
       "O(n)",
-      "O(n²)"
+      "O(n log n)"
     ],
     "answer": 0,
-    "explanation": "Each call branches into two recursive calls."
+    "explanation": "For Stack, performing a 'Deletion' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 279)",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Sorted Array?",
     "options": [
-      "O(n)",
+      "O(1)",
       "O(log n)",
-      "O(n²)",
-      "O(1)"
+      "O(n log n)",
+      "O(n)"
     ],
     "answer": 3,
-    "explanation": "Both operations work on the top element only."
+    "explanation": "For Sorted Array, performing a 'Deletion' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Singly Linked List? (Set 280)",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
+      "91",
+      "29",
+      "37",
+      "32"
     ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Insertion under Average Case takes O(1)."
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 36% density, total edges = 32."
   },
   {
     "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 281)",
-    "options": [
-      "Dynamic programming in practice",
-      "Sorting (widely accepted)",
-      "Recursion and backtracking",
-      "BFS only (typical scenario)"
-    ],
-    "answer": 2,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 39) (Set 213) (Set 282)",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (sorted)? (Set 145) (Set 283)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Preorder traversal visits? (Set 22) (Set 284)",
-    "options": [
-      "Left, Root, Right",
-      "Root, Left, Right",
-      "Right, Root, Left",
-      "Left, Right, Root"
+      "55",
+      "25",
+      "22",
+      "30"
     ],
     "answer": 1,
-    "explanation": "Pre = root first, then children."
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 47% density, total edges = 25."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 285)",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Doubly Linked List?",
     "options": [
-      "O(log n)",
       "O(1)",
       "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 101) (Set 286)",
-    "options": [
       "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109) (Set 257) (Set 287)",
-    "options": [
-      "Both front and rear",
-      "Middle only (general case)",
-      "Only front in most cases",
-      "Only rear (commonly used)"
-    ],
-    "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 288)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
       "O(log n)"
     ],
-    "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 289)",
-    "options": [
-      "Probing for next empty slot",
-      "Using linked lists (general case)",
-      "Ignoring collision in practice",
-      "Creating new table (general case)"
-    ],
     "answer": 0,
-    "explanation": "Linear/quadratic probing finds alternative slots."
+    "explanation": "For Doubly Linked List, performing a 'Insertion' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Singly Linked List? (Set 280) (Set 290)",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
     "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
+      "75",
+      "67",
+      "70",
+      "190"
     ],
     "answer": 2,
-    "explanation": "For Singly Linked List, a Insertion under Average Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 37% density, total edges = 70."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 291)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 292)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Red-Black Tree, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Rabin-Karp uses what technique? (Set 175) (Set 293)",
+    "question": "A 2D array A[6][20] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][3]?",
     "options": [
-      "Backtracking",
-      "Dynamic programming",
-      "Hashing",
-      "Greedy"
+      "1423",
+      "1411",
+      "1419",
+      "1403"
     ],
     "answer": 2,
-    "explanation": "Rolling hash compares pattern hash with window hash."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (3 * 6 + 1) * 1 = 1419."
   },
   {
     "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "What does the sliding window technique maintain? (Set 294)",
-    "options": [
-      "A priority queue under normal conditions",
-      "A sorted subarray as per specification",
-      "A window of elements satisfying a condition",
-      "A balanced tree under normal conditions"
-    ],
-    "answer": 2,
-    "explanation": "The window expands/contracts based on constraints."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 295)",
-    "options": [
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = nT(n/2) in practice",
-      "T(n) = 2T(n/2) + O(n)"
-    ],
-    "answer": 3,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Overlapping subproblems means? (Set 296)",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
     "options": [
-      "No subproblems exist (commonly used)",
-      "Each subproblem is unique based on convention",
-      "Same subproblems are solved multiple times",
-      "Linear scan suffices (default behavior)"
-    ],
-    "answer": 2,
-    "explanation": "Caching avoids redundant computation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 232) (Set 297)",
-    "options": [
-      "First insertion (primary approach)",
-      "Load factor exceeds threshold",
-      "After deletion only (general case)",
-      "Table is empty as per specification"
-    ],
-    "answer": 1,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 298)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
+      "147",
+      "152",
+      "144",
+      "300"
     ],
     "answer": 0,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 49% density, total edges = 147."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a AVL Tree? (Set 299)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141) (Set 300)",
+    "question": "Given the 1D integer array [5, 8, 13, 17, 8, 5], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
+      "60",
+      "48",
+      "43",
+      "38"
     ],
     "answer": 2,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 43."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 301)",
+    "question": "Given the 1D integer array [13, 12, 16, 8, 10], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
+      "57",
+      "28",
+      "41",
+      "46"
     ],
-    "answer": 3,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 41."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack? (Set 237) (Set 272) (Set 302)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 295) (Set 303)",
-    "options": [
-      "T(n) = nT(n/2) by design",
-      "T(n) = 2T(n/2) + O(n)",
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = T(n/2) + O(1)"
-    ],
-    "answer": 1,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Prim's algorithm starts from? (Set 5) (Set 304)",
+    "question": "A 2D array A[16][11] starts at base address 1900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][7]?",
     "options": [
-      "Leaf node in practice",
-      "All vertices",
-      "Any single vertex",
-      "Heaviest edge"
-    ],
-    "answer": 2,
-    "explanation": "Prim grows MST from one vertex using min-edge."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 305)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "Memoization is? (Set 306)",
-    "options": [
-      "Greedy (widely accepted)",
-      "Top-down DP with caching",
-      "Bottom-up approach by design",
-      "Brute force (general case)"
-    ],
-    "answer": 1,
-    "explanation": "Store results of subproblems to avoid recomputation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 100) (Set 235) (Set 307)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
+      "2848",
+      "2836",
+      "2236",
+      "2844"
     ],
     "answer": 3,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (7 * 16 + 6) * 8 = 2844."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Red-Black Tree? (Set 63) (Set 308)",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 309)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
+      "19",
+      "14",
+      "11",
+      "45"
     ],
     "answer": 1,
-    "explanation": "For Min Heap, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 310)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a BST? (Set 311)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For BST, a Access under Worst Case takes O(n)."
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 33% density, total edges = 14."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Unsorted Array?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Unsorted Array, performing a 'Deletion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 217) (Set 312)",
+    "question": "A 2D array A[17][14] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[14][2]?",
     "options": [
-      "Little o",
-      "Big Omega",
-      "Big O",
-      "Theta (Θ)"
+      "1948",
+      "1928",
+      "1940",
+      "1952"
     ],
-    "answer": 3,
-    "explanation": "Θ means asymptotically tight bound."
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (2 * 17 + 14) * 1 = 1948."
   },
   {
     "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
+    "options": [
+      "87",
+      "90",
+      "300",
+      "95"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 30% density, total edges = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "203",
+      "198",
+      "195",
+      "496"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 40% density, total edges = 198."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 19, 3, 17, 13, 9, 18, 15], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "28",
+      "31",
+      "22",
+      "33"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 28."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "224",
+      "227",
+      "232",
+      "406"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 56% density, total edges = 227."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "17",
+      "22",
+      "14",
+      "28"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 64% density, total edges = 17."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 3, 4, 2, 16, 15, 13, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "18",
+      "19",
+      "14",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 14."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 217) (Set 312) (Set 313)",
+    "question": "A 2D array A[9][27] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][21]?",
     "options": [
-      "Big O",
-      "Little o",
-      "Big Omega",
-      "Theta (Θ)"
-    ],
-    "answer": 3,
-    "explanation": "Θ means asymptotically tight bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a BST? (Set 314)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For BST, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 315)",
-    "options": [
-      "Only rear in most cases",
-      "Middle only by design",
-      "Only front in most cases",
-      "Both front and rear"
-    ],
-    "answer": 3,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 40) (Set 162) (Set 316)",
-    "options": [
-      "O(log n)",
-      "O(n²)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 121) (Set 317)",
-    "options": [
-      "Shortest path by design",
-      "String matching",
-      "Maximum subarray sum",
-      "Sorting based on convention"
+      "2150",
+      "2162",
+      "2158",
+      "2068"
     ],
     "answer": 2,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (4 * 27 + 21) * 2 = 2158."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 135) (Set 170) (Set 318)",
+    "question": "Given the 1D integer array [10, 15, 20, 2, 14, 6], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Segment tree is used for? (Set 319)",
-    "options": [
-      "Graph traversal (widely accepted)",
-      "String matching in standard usage",
-      "Sorting under normal conditions",
-      "Range queries and updates efficiently"
+      "35",
+      "50",
+      "65",
+      "45"
     ],
     "answer": 3,
-    "explanation": "Segment tree handles range sum/min/max in O(log n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 45."
   },
   {
     "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 126) (Set 136) (Set 320)",
+    "question": "A 2D array A[17][26] starts at base address 1100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][24]?",
     "options": [
-      "Stack as per specification",
-      "Recursion only as per specification",
-      "Two pointers (slow and fast)",
-      "Queue under normal conditions"
+      "3572",
+      "3580",
+      "3212",
+      "3584"
     ],
-    "answer": 2,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (11 * 26 + 24) * 8 = 3580."
   },
   {
     "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Singly Linked List?",
+    "options": [
+      "O(n log n)",
+      "O(n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer": 3,
+    "explanation": "For Singly Linked List, performing a 'Deletion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "14",
+      "28",
+      "9",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 34% density, total edges = 9."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "153",
+      "90",
+      "87",
+      "95"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 59% density, total edges = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Regular BST (worst case), performing a 'Search' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 321)",
+    "question": "A 2D array A[8][22] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][15]?",
     "options": [
-      "Stack in standard usage",
-      "Queue (typical scenario)",
-      "Recursion only by design",
-      "Two pointers (slow and fast)"
+      "1764",
+      "1540",
+      "1776",
+      "1772"
     ],
     "answer": 3,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (2 * 22 + 15) * 8 = 1772."
   },
   {
     "subject": "DSA",
-    "topic": "Strings",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Longest palindromic substring can be found in? (Set 322)",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
     "options": [
-      "O(log n) based on convention",
-      "O(n³) (standard definition)",
-      "O(n²) using expand around center",
-      "O(n) as per specification"
+      "120",
+      "81",
+      "76",
+      "73"
     ],
     "answer": 2,
-    "explanation": "Expand from each center in O(n) time, n centers."
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 64% density, total edges = 76."
   },
   {
     "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 323)",
-    "options": [
-      "Probing for next empty slot",
-      "Creating new table (commonly used)",
-      "Using linked lists in most cases",
-      "Ignoring collision in practice"
-    ],
-    "answer": 0,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 324)",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
     "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
+      "78",
+      "25",
+      "30",
+      "22"
     ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Search under Best Case takes O(n)."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 33% density, total edges = 25."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Master theorem applies to recurrences of what form? (Set 325)",
-    "options": [
-      "T(n) = aT(n/b) + f(n)",
-      "T(n) = T(n-1) + n",
-      "T(n) = n! in most cases",
-      "T(n) = 2n + 1 in practice"
-    ],
-    "answer": 0,
-    "explanation": "Master theorem solves divide-and-conquer recurrences."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
     "difficulty": "Medium",
-    "question": "Union-Find is used in? (Set 326)",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a AVL Tree?",
     "options": [
-      "Kruskal's MST and cycle detection",
-      "BFS under normal conditions",
-      "String matching (widely accepted)",
-      "Shortest path based on convention"
-    ],
-    "answer": 0,
-    "explanation": "Union-Find efficiently tracks connected components."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 241) (Set 277) (Set 327)",
-    "options": [
+      "O(n)",
       "O(log n)",
       "O(n log n)",
-      "O(n)",
       "O(1)"
     ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Deletion under Best Case takes O(n)."
+    "answer": 1,
+    "explanation": "For AVL Tree, performing a 'Deletion' takes O(log n)."
   },
   {
     "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "N-Queens problem places N queens such that? (Set 20) (Set 47) (Set 328)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
     "options": [
-      "All queens are in one row in practice",
-      "Queens form diagonal (general case)",
-      "No two queens attack each other",
-      "Queens are adjacent in most cases"
+      "171",
+      "61",
+      "58",
+      "66"
     ],
-    "answer": 2,
-    "explanation": "No two queens share row, column, or diagonal."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 36% density, total edges = 61."
   },
   {
     "subject": "DSA",
-    "topic": "Advanced Topics",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Trie is best for? (Set 329)",
+    "question": "A 2D array A[12][27] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][9]?",
     "options": [
-      "Sorting numbers (default behavior)",
-      "Matrix operations by design",
-      "Prefix-based string operations",
-      "Graph traversal (commonly used)"
+      "1530",
+      "1390",
+      "1526",
+      "1518"
     ],
     "answer": 2,
-    "explanation": "Trie stores strings character-by-character for prefix search."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (9 * 12 + 5) * 2 = 1526."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 330)",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Overlapping subproblems means? (Set 331)",
-    "options": [
-      "Each subproblem is unique (widely accepted)",
-      "Linear scan suffices under normal conditions",
-      "No subproblems exist (typical scenario)",
-      "Same subproblems are solved multiple times"
-    ],
-    "answer": 3,
-    "explanation": "Caching avoids redundant computation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 50) (Set 332)",
-    "options": [
-      "Dynamic programming by design",
-      "BFS only (typical scenario)",
-      "Sorting as per specification",
-      "Recursion and backtracking"
-    ],
-    "answer": 3,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack? (Set 333)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 174) (Set 334)",
-    "options": [
-      "Substring search (general case)",
-      "Regular expressions in practice",
-      "Sorting only in most cases",
-      "Character frequency comparison"
-    ],
-    "answer": 3,
-    "explanation": "Same character counts means anagram."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Matrix Chain Multiplication optimizes? (Set 31) (Set 335)",
-    "options": [
-      "Order of matrix multiplications",
-      "Matrix values (typical scenario)",
-      "Matrix sorting in most cases",
-      "Matrix dimensions (widely accepted)"
-    ],
-    "answer": 0,
-    "explanation": "Different parenthesizations give different costs."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Doubly Linked List? (Set 336)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 252) (Set 337)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Min Heap? (Set 338)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Min Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 121) (Set 317) (Set 339)",
-    "options": [
-      "String matching",
-      "Maximum subarray sum",
-      "Shortest path in most cases",
-      "Sorting (widely accepted)"
+      "174",
+      "177",
+      "378",
+      "182"
     ],
     "answer": 1,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 232) (Set 297) (Set 340)",
-    "options": [
-      "Load factor exceeds threshold",
-      "First insertion as per specification",
-      "After deletion only in most cases",
-      "Table is empty (typical scenario)"
-    ],
-    "answer": 0,
-    "explanation": "High load factor degrades performance, so table resizes."
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 47% density, total edges = 177."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 146) (Set 341)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n²)"
-    ],
-    "answer": 2,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 342)",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Regular BST (worst case)?",
     "options": [
       "O(n log n)",
       "O(n)",
@@ -8300,965 +2392,209 @@ window.quizData.dsa = [
       "O(log n)"
     ],
     "answer": 1,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
+    "explanation": "For Regular BST (worst case), performing a 'Insertion' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 343)",
-    "options": [
-      "Both front and rear",
-      "Only rear in most cases",
-      "Only front by design",
-      "Middle only in most cases"
-    ],
-    "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Min Heap? (Set 344)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 7) (Set 29) (Set 345)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 346)",
-    "options": [
-      "O(n log n)",
-      "O(n) in practice",
-      "O(n²)",
-      "O(2^n)"
-    ],
-    "answer": 0,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Coin Change problem (min coins) is solved by? (Set 347)",
-    "options": [
-      "Greedy always (primary approach)",
-      "BFS only (default behavior)",
-      "DP (unbounded knapsack variant)",
-      "Sorting (widely accepted)"
-    ],
-    "answer": 2,
-    "explanation": "Try each coin, take minimum."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Time complexity of enqueue in circular queue? (Set 348)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n²)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "Direct insertion at rear pointer."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 174) (Set 334) (Set 349)",
-    "options": [
-      "Character frequency comparison",
-      "Substring search by design",
-      "Sorting only as per specification",
-      "Regular expressions (widely accepted)"
-    ],
-    "answer": 0,
-    "explanation": "Same character counts means anagram."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Medium",
-    "question": "Sudoku solver uses? (Set 350)",
-    "options": [
-      "Greedy in typical implementations",
-      "BFS in typical implementations",
-      "Sorting in typical implementations",
-      "Backtracking with constraint checking"
-    ],
-    "answer": 3,
-    "explanation": "Try digits 1-9, backtrack if constraint violated."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 351)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Advanced Topics",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Disjoint Set Union find uses? (Set 352)",
+    "question": "A 2D array A[16][23] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][8]?",
     "options": [
-      "Sorting under normal conditions",
-      "Hashing in typical implementations",
-      "Path compression and union by rank",
-      "BFS under normal conditions"
-    ],
-    "answer": 2,
-    "explanation": "Optimizations give nearly O(1) amortized operations."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 353)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 342) (Set 354)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Stack? (Set 149) (Set 355)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 166) (Set 356)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
+      "1316",
+      "1430",
+      "1422",
+      "1434"
     ],
     "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (8 * 16 + 2) * 1 = 1430."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 310) (Set 357)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 41) (Set 358)",
-    "options": [
-      "O(V²)",
-      "O(E²)",
-      "O(V+E)",
-      "O(V)"
-    ],
-    "answer": 2,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80) (Set 359)",
-    "options": [
-      "Dense graphs by design",
-      "Negative edge weights",
-      "Positive weights",
-      "Undirected graphs"
-    ],
-    "answer": 1,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 360)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Easy",
-    "question": "StringBuilder in Java is preferred over String for? (Set 361)",
-    "options": [
-      "Sorting as per specification",
-      "Frequent modifications (mutable)",
-      "Hashing as per specification",
-      "Read-only access in most cases"
-    ],
-    "answer": 1,
-    "explanation": "StringBuilder avoids creating new String objects."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Medium",
-    "question": "Move Zeroes problem moves zeros to? (Set 117) (Set 362)",
-    "options": [
-      "Middle in practice",
-      "Sorted position",
-      "End of array",
-      "Beginning"
-    ],
-    "answer": 2,
-    "explanation": "Non-zero elements move left, zeros fill right."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 363)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 364)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Middle of linked list found using? (Set 203) (Set 365)",
-    "options": [
-      "Recursion (typical scenario)",
-      "Stack in standard usage",
-      "Counting then traversing",
-      "Slow and fast pointer"
-    ],
-    "answer": 3,
-    "explanation": "When fast reaches end, slow is at middle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Queue? (Set 366)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 21) (Set 367)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 45) (Set 368)",
-    "options": [
-      "Never in typical implementations",
-      "Only for sorting in typical implementations",
-      "Greedy choice property and optimal substructure hold",
-      "Always in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "BFS uses which data structure? (Set 369)",
-    "options": [
-      "Heap",
-      "Array",
-      "Stack",
-      "Queue"
-    ],
-    "answer": 3,
-    "explanation": "BFS explores neighbors level-by-level using FIFO."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 370)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 185) (Set 371)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 58) (Set 372)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 288) (Set 373)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 309) (Set 374)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap? (Set 88) (Set 375)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 376)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Bellman-Ford handles? (Set 377)",
-    "options": [
-      "Negative edge weights",
-      "Only trees by design",
-      "Only undirected in practice",
-      "Only positive weights"
-    ],
-    "answer": 0,
-    "explanation": "Relaxes all edges V-1 times."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "HashMap provides average case lookup of? (Set 378)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n²)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "Hash function maps key directly to bucket."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Min Heap? (Set 379)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Easy",
-    "question": "Left shift by 1 is equivalent to? (Set 92) (Set 380)",
-    "options": [
-      "Subtract 1",
-      "Add 1 in most cases",
-      "Divide by 2",
-      "Multiply by 2"
-    ],
-    "answer": 3,
-    "explanation": "Shifting bits left doubles the value."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 103) (Set 381)",
-    "options": [
-      "Using linked lists by design",
-      "Creating new table (commonly used)",
-      "Ignoring collision (commonly used)",
-      "Probing for next empty slot"
-    ],
-    "answer": 3,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Reversing a singly linked list takes? (Set 382)",
+    "question": "A 2D array A[13][18] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][6]?",
     "options": [
-      "O(n) time, O(1) space",
-      "O(log n) time in practice",
-      "O(n) space in practice",
-      "O(n²) time (general case)"
+      "1312",
+      "1048",
+      "1320",
+      "1324"
     ],
-    "answer": 0,
-    "explanation": "Iterate once, reversing pointers in-place."
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (6 * 13 + 2) * 4 = 1320."
   },
   {
     "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 383)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
     "options": [
-      "Dynamic programming in practice",
-      "Recursion and backtracking",
-      "Sorting under normal conditions",
-      "BFS only as per specification"
+      "55",
+      "91",
+      "50",
+      "47"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 56% density, total edges = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 18, 14, 7, 18, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "76",
+      "57",
+      "89",
+      "71"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 18, 13, 13, 2, 6, 8, 3, 14, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "44",
+      "59",
+      "72",
+      "64"
     ],
     "answer": 1,
-    "explanation": "Try all directions, backtrack on dead ends."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 59."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 186) (Set 384)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
+      "45",
+      "42",
+      "120",
+      "50"
     ],
     "answer": 0,
-    "explanation": "For Max Heap, a Insertion under Best Case takes O(log n)."
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 38% density, total edges = 45."
   },
   {
     "subject": "DSA",
-    "topic": "Trees",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Queue?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Queue, performing a 'Access' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Inorder traversal of BST gives? (Set 385)",
+    "question": "A 2D array A[10][23] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][4]?",
     "options": [
-      "Random order (general case)",
-      "Level order (commonly used)",
-      "Descending order by design",
-      "Sorted ascending order"
-    ],
-    "answer": 3,
-    "explanation": "Left-Root-Right visits BST nodes in sorted order."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 386)",
-    "options": [
-      "Uniform distribution of keys",
-      "Returns key itself in most cases",
-      "Ignores input in practice",
-      "Always returns 0 (typical scenario)"
+      "1084",
+      "1076",
+      "1016",
+      "1088"
     ],
     "answer": 0,
-    "explanation": "Uniform distribution minimizes collisions."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (4 * 10 + 2) * 2 = 1084."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Red-Black Tree? (Set 387)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 12, 5, 5, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Red-Black Tree, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Level order traversal uses? (Set 388)",
-    "options": [
-      "Sorting",
-      "Recursion only",
-      "Stack by design",
-      "Queue (BFS)"
-    ],
-    "answer": 3,
-    "explanation": "Process nodes level by level using queue."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 386) (Set 389)",
-    "options": [
-      "Ignores input in most cases",
-      "Uniform distribution of keys",
-      "Always returns 0 (typical scenario)",
-      "Returns key itself by design"
+      "31",
+      "26",
+      "31",
+      "17"
     ],
     "answer": 1,
-    "explanation": "Uniform distribution minimizes collisions."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 26."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Array (sorted)? (Set 87) (Set 390)",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Insertion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 391)",
-    "options": [
-      "O(n²)",
-      "O(2^n)",
-      "O(n log n)",
-      "O(n) by design"
-    ],
-    "answer": 2,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a AVL Tree? (Set 392)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
+      "78",
+      "49",
+      "41",
+      "44"
     ],
     "answer": 3,
-    "explanation": "For AVL Tree, a Access under Best Case takes O(log n)."
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 57% density, total edges = 44."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a AVL Tree? (Set 393)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
+      "465",
+      "234",
+      "237",
+      "242"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 51% density, total edges = 237."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "11",
+      "8",
+      "16",
+      "21"
     ],
     "answer": 0,
-    "explanation": "For AVL Tree, a Insertion under Best Case takes O(log n)."
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 54% density, total edges = 11."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 46) (Set 394)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (sorted)? (Set 214) (Set 395)",
+    "question": "Given the 1D integer array [4, 7, 18, 7, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (sorted), a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 396)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 298) (Set 397)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Union-Find is used in? (Set 326) (Set 398)",
-    "options": [
-      "String matching (typical scenario)",
-      "Shortest path as per specification",
-      "BFS under normal conditions",
-      "Kruskal's MST and cycle detection"
-    ],
-    "answer": 3,
-    "explanation": "Union-Find efficiently tracks connected components."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Combination Sum allows? (Set 66) (Set 399)",
-    "options": [
-      "Reusing elements to reach target",
-      "Negative numbers (standard definition)",
-      "Each element used once by design",
-      "Sorting only (default behavior)"
+      "52",
+      "57",
+      "68",
+      "48"
     ],
     "answer": 0,
-    "explanation": "Include current element again or move to next."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 52."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Queue? (Set 400)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 4, 9, 10, 5, 7, 12, 14, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
+      "13",
+      "18",
+      "23",
+      "27"
     ],
     "answer": 1,
-    "explanation": "For Queue, a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Frequency count of characters uses? (Set 401)",
-    "options": [
-      "Queue (commonly used)",
-      "Array of size 26 or HashMap",
-      "Linked List in practice",
-      "Stack (standard definition)"
-    ],
-    "answer": 1,
-    "explanation": "Fixed-size array or map tracks counts efficiently."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 33) (Set 269) (Set 271) (Set 402)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Circular queue solves which problem? (Set 147) (Set 403)",
-    "options": [
-      "Balancing (standard definition)",
-      "Searching (general case)",
-      "Sorting (widely accepted)",
-      "Wasted space in linear queue"
-    ],
-    "answer": 3,
-    "explanation": "Rear wraps around to use freed front space."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 10) (Set 404)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141) (Set 144) (Set 405)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack? (Set 406)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "HashMap provides average case lookup of? (Set 407)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n²)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "Hash function maps key directly to bucket."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Queue? (Set 160) (Set 408)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Easy",
-    "question": "Left shift by 1 is equivalent to? (Set 92) (Set 409)",
-    "options": [
-      "Add 1 in practice",
-      "Multiply by 2",
-      "Divide by 2",
-      "Subtract 1"
-    ],
-    "answer": 1,
-    "explanation": "Shifting bits left doubles the value."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 18."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15) (Set 90) (Set 410)",
-    "options": [
-      "O(1)",
-      "O(n²)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
     "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 411)",
+    "question": "What is the time complexity of performing a 'Search' operation on a Doubly Linked List?",
     "options": [
       "O(n log n)",
       "O(log n)",
@@ -9266,3373 +2602,1231 @@ window.quizData.dsa = [
       "O(1)"
     ],
     "answer": 2,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Stack? (Set 412)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 363) (Set 413)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Matrix Chain Multiplication optimizes? (Set 31) (Set 91) (Set 414)",
-    "options": [
-      "Matrix dimensions (typical scenario)",
-      "Order of matrix multiplications",
-      "Matrix values (commonly used)",
-      "Matrix sorting under normal conditions"
-    ],
-    "answer": 1,
-    "explanation": "Different parenthesizations give different costs."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 396) (Set 415)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 129) (Set 416)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Max Heap? (Set 417)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 53) (Set 418)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 45) (Set 419)",
-    "options": [
-      "Only for sorting in typical implementations",
-      "Never in typical implementations",
-      "Always in typical implementations",
-      "Greedy choice property and optimal substructure hold"
-    ],
-    "answer": 3,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 420)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 421)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 422)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 185) (Set 423)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Stack? (Set 424)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Max Heap? (Set 425)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Deletion under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 255) (Set 426)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 46) (Set 394) (Set 427)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 428)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 179) (Set 429)",
-    "options": [
-      "Sorting only (standard definition)",
-      "Character frequency comparison",
-      "Regular expressions in practice",
-      "Substring search (commonly used)"
-    ],
-    "answer": 1,
-    "explanation": "Same character counts means anagram."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a BST? (Set 108) (Set 430)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 346) (Set 431)",
-    "options": [
-      "O(n²)",
-      "O(n log n)",
-      "O(n) in practice",
-      "O(2^n)"
-    ],
-    "answer": 1,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 231) (Set 432)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Min Heap? (Set 433)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109) (Set 257) (Set 287) (Set 434)",
-    "options": [
-      "Only rear by design",
-      "Middle only (general case)",
-      "Both front and rear",
-      "Only front (commonly used)"
-    ],
-    "answer": 2,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Coin Change problem (min coins) is solved by? (Set 435)",
-    "options": [
-      "Greedy always (standard definition)",
-      "DP (unbounded knapsack variant)",
-      "Sorting (primary approach)",
-      "BFS only (primary approach)"
-    ],
-    "answer": 1,
-    "explanation": "Try each coin, take minimum."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Queue? (Set 160) (Set 436)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80) (Set 437)",
-    "options": [
-      "Positive weights",
-      "Dense graphs (general case)",
-      "Negative edge weights",
-      "Undirected graphs"
-    ],
-    "answer": 2,
-    "explanation": "Greedy assumption breaks with negative edges."
+    "explanation": "For Doubly Linked List, performing a 'Search' takes O(n)."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15) (Set 90) (Set 410) (Set 438)",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Unsorted Array?",
     "options": [
       "O(n)",
-      "O(n²)",
+      "O(n log n)",
       "O(log n)",
       "O(1)"
     ],
     "answer": 0,
-    "explanation": "May need to check every element."
+    "explanation": "For Unsorted Array, performing a 'Search' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Stack? (Set 152) (Set 439)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
     "options": [
-      "O(1)",
+      "146",
+      "141",
+      "253",
+      "138"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 56% density, total edges = 141."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "561",
+      "279",
+      "271",
+      "274"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 49% density, total edges = 274."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "33",
+      "30",
+      "55",
+      "38"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 61% density, total edges = 33."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "378",
+      "143",
+      "140",
+      "148"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 38% density, total edges = 143."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Queue?",
+    "options": [
       "O(n log n)",
+      "O(1)",
       "O(n)",
       "O(log n)"
     ],
-    "answer": 0,
-    "explanation": "For Stack, a Insertion under Average Case takes O(1)."
+    "answer": 1,
+    "explanation": "For Queue, performing a 'Insertion' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a AVL Tree?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": 1,
+    "explanation": "For AVL Tree, performing a 'Search' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 17, 13, 12, 16, 5, 8, 19], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "58",
+      "61",
+      "77",
+      "66"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "325",
+      "188",
+      "193",
+      "185"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 58% density, total edges = 188."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "195",
+      "190",
+      "187",
+      "465"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 41% density, total edges = 190."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "274",
+      "279",
+      "271",
+      "435"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 63% density, total edges = 274."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 440)",
+    "question": "A 2D array A[9][29] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][6]?",
     "options": [
-      "Recursion only as per specification",
-      "Two pointers (slow and fast)",
-      "Stack (primary approach)",
-      "Queue (primary approach)"
-    ],
-    "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Max Heap? (Set 181) (Set 441)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
+      "1520",
+      "1532",
+      "1528",
+      "1372"
     ],
     "answer": 2,
-    "explanation": "For Max Heap, a Search under Average Case takes O(n)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (6 * 9 + 3) * 4 = 1528."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 442)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Floyd-Warshall finds? (Set 443)",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
     "options": [
-      "Topological order in most cases",
-      "MST (standard definition)",
-      "Single-source shortest path",
-      "All-pairs shortest paths"
-    ],
-    "answer": 3,
-    "explanation": "DP approach considers all intermediate vertices."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 33) (Set 444)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 121) (Set 445)",
-    "options": [
-      "Maximum subarray sum",
-      "Shortest path in most cases",
-      "String matching",
-      "Sorting (default behavior)"
-    ],
-    "answer": 0,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 128) (Set 446)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 447)",
-    "options": [
-      "O(V)",
-      "O(E²)",
-      "O(V²)",
-      "O(V+E)"
-    ],
-    "answer": 3,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Postorder traversal visits? (Set 448)",
-    "options": [
-      "Root, Left, Right",
-      "Right, Left, Root",
-      "Left, Root, Right",
-      "Left, Right, Root"
-    ],
-    "answer": 3,
-    "explanation": "Post = root last, after children."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 185) (Set 449)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
+      "23",
+      "55",
+      "26",
+      "31"
     ],
     "answer": 2,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 48% density, total edges = 26."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 101) (Set 188) (Set 450)",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
     "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
+      "204",
+      "351",
+      "212",
+      "207"
     ],
     "answer": 3,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 59% density, total edges = 207."
   },
   {
     "subject": "DSA",
-    "topic": "Hashing",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Chaining resolves collisions using? (Set 44) (Set 451)",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
     "options": [
-      "Rehashing only in practice",
-      "Linked list at each bucket",
-      "Sorting under normal conditions",
-      "Open addressing (commonly used)"
-    ],
-    "answer": 1,
-    "explanation": "Each bucket holds a chain of entries."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "Collision in hashing means? (Set 452)",
-    "options": [
-      "Two keys map to same index",
-      "Hash table is full in most cases",
-      "Duplicate keys in practice",
-      "Key not found (default behavior)"
-    ],
-    "answer": 0,
-    "explanation": "Different keys producing same hash cause collision."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Doubly Linked List? (Set 453)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 305) (Set 454)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 455)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "Chaining resolves collisions using? (Set 44) (Set 456)",
-    "options": [
-      "Open addressing (widely accepted)",
-      "Sorting (widely accepted)",
-      "Rehashing only (general case)",
-      "Linked list at each bucket"
+      "172",
+      "351",
+      "180",
+      "175"
     ],
     "answer": 3,
-    "explanation": "Each bucket holds a chain of entries."
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 50% density, total edges = 175."
   },
   {
     "subject": "DSA",
-    "topic": "Advanced Topics",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Disjoint Set Union find uses? (Set 122) (Set 457)",
+    "question": "A 2D array A[13][14] starts at base address 1400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][4]?",
     "options": [
-      "BFS under normal conditions",
-      "Hashing under normal conditions",
-      "Sorting based on convention",
-      "Path compression and union by rank"
+      "1856",
+      "1528",
+      "1868",
+      "1864"
     ],
     "answer": 3,
-    "explanation": "Optimizations give nearly O(1) amortized operations."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a BST? (Set 458)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 459)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Red-Black Tree, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 364) (Set 460)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 252) (Set 337) (Set 461)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 241) (Set 277) (Set 462)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Deletion under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 343) (Set 463)",
-    "options": [
-      "Only rear in practice",
-      "Only front (general case)",
-      "Middle only in practice",
-      "Both front and rear"
-    ],
-    "answer": 3,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Red-Black Tree? (Set 464)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Red-Black Tree, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 386) (Set 389) (Set 465)",
-    "options": [
-      "Returns key itself by design",
-      "Uniform distribution of keys",
-      "Ignores input (commonly used)",
-      "Always returns 0 in most cases"
-    ],
-    "answer": 1,
-    "explanation": "Uniform distribution minimizes collisions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Time complexity of enqueue in circular queue? (Set 348) (Set 466)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n²)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "Direct insertion at rear pointer."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60) (Set 258) (Set 467)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 185) (Set 449) (Set 468)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (8 * 14 + 4) * 4 = 1864."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Big Omega represents? (Set 469)",
-    "options": [
-      "Tight bound",
-      "Average case",
-      "Upper bound",
-      "Lower bound"
-    ],
-    "answer": 3,
-    "explanation": "Ω notation gives the best-case lower bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 101) (Set 188) (Set 470)",
+    "question": "What is the time complexity of performing a 'Search' operation on a Stack?",
     "options": [
       "O(n log n)",
-      "O(log n)",
+      "O(1)",
       "O(n)",
-      "O(1)"
+      "O(log n)"
     ],
     "answer": 1,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
+    "explanation": "For Stack, performing a 'Search' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap? (Set 88) (Set 471)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Coin Change problem (min coins) is solved by? (Set 472)",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
     "options": [
-      "BFS only as per specification",
-      "Greedy always (commonly used)",
-      "Sorting (widely accepted)",
-      "DP (unbounded knapsack variant)"
-    ],
-    "answer": 3,
-    "explanation": "Try each coin, take minimum."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 238) (Set 473)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Stack? (Set 94) (Set 233) (Set 474)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
+      "170",
+      "300",
+      "167",
+      "175"
     ],
     "answer": 0,
-    "explanation": "For Stack, a Deletion under Worst Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 57% density, total edges = 170."
   },
   {
     "subject": "DSA",
-    "topic": "Advanced Topics",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Fenwick tree (BIT) supports? (Set 192) (Set 475)",
+    "question": "A 2D array A[6][26] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
     "options": [
-      "Sorting (standard definition)",
-      "Graph BFS (standard definition)",
-      "String matching as per specification",
-      "Point updates and prefix sum queries"
+      "2013",
+      "2001",
+      "1920",
+      "2009"
     ],
     "answer": 3,
-    "explanation": "Binary Indexed Tree uses bit manipulation for efficiency."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (4 * 26 + 5) * 1 = 2009."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Doubly Linked List? (Set 476)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 228) (Set 477)",
-    "options": [
-      "Always returns 0 in standard usage",
-      "Returns key itself (general case)",
-      "Ignores input by design",
-      "Uniform distribution of keys"
-    ],
-    "answer": 3,
-    "explanation": "Uniform distribution minimizes collisions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 478)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Deletion under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141) (Set 300) (Set 479)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 298) (Set 480)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109) (Set 172) (Set 481)",
-    "options": [
-      "Only front (commonly used)",
-      "Both front and rear",
-      "Middle only in most cases",
-      "Only rear in most cases"
-    ],
-    "answer": 1,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "BFS graph traversal uses? (Set 482)",
-    "options": [
-      "Queue",
-      "Stack",
-      "Deque",
-      "Priority queue"
-    ],
-    "answer": 0,
-    "explanation": "BFS explores level by level using FIFO."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 440) (Set 483)",
+    "question": "A 2D array A[6][18] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][3]?",
     "options": [
-      "Two pointers (slow and fast)",
-      "Stack (widely accepted)",
-      "Recursion only (general case)",
-      "Queue (widely accepted)"
+      "1444",
+      "1432",
+      "1412",
+      "1440"
     ],
-    "answer": 0,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (3 * 6 + 2) * 2 = 1440."
   },
   {
     "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Preorder traversal visits? (Set 484)",
-    "options": [
-      "Right, Root, Left",
-      "Root, Left, Right",
-      "Left, Right, Root",
-      "Left, Root, Right"
-    ],
-    "answer": 1,
-    "explanation": "Pre = root first, then children."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue? (Set 201) (Set 485)",
+    "question": "Given the 1D integer array [4, 2, 10, 6, 20, 10, 2], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
+      "50",
+      "59",
+      "54",
+      "56"
     ],
     "answer": 2,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 54."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Doubly Linked List? (Set 453) (Set 486)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
     "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
+      "254",
+      "257",
+      "262",
+      "496"
     ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Access under Worst Case takes O(n)."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 52% density, total edges = 257."
   },
   {
     "subject": "DSA",
-    "topic": "Advanced Topics",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 18, 8, 16, 7, 17, 1, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "67",
+      "78",
+      "42",
+      "62"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "23",
+      "28",
+      "15",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 67% density, total edges = 18."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "112",
+      "210",
+      "120",
+      "115"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 55% density, total edges = 115."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Fenwick tree (BIT) supports? (Set 192) (Set 487)",
+    "question": "A 2D array A[5][29] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][26]?",
     "options": [
-      "Point updates and prefix sum queries",
-      "Graph BFS as per specification",
-      "String matching as per specification",
-      "Sorting in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Binary Indexed Tree uses bit manipulation for efficiency."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Deletion' operation on a Singly Linked List? (Set 488)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
+      "2360",
+      "2356",
+      "1716",
+      "2348"
     ],
     "answer": 1,
-    "explanation": "For Singly Linked List, a Deletion under Worst Case takes O(1)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (26 * 5 + 2) * 8 = 2356."
   },
   {
     "subject": "DSA",
-    "topic": "Queue",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 109) (Set 257) (Set 489)",
+    "question": "Given the 1D integer array [15, 19, 16, 9, 10, 3, 18, 19], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "Both front and rear",
-      "Only front in most cases",
-      "Only rear by design",
-      "Middle only (general case)"
-    ],
-    "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Red-Black Tree? (Set 490)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
+      "95",
+      "108",
+      "75",
+      "90"
     ],
     "answer": 3,
-    "explanation": "For Red-Black Tree, a Insertion under Worst Case takes O(log n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 90."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 46) (Set 394) (Set 491)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 238) (Set 473) (Set 492)",
+    "question": "Given the 1D integer array [2, 7, 12, 5, 15, 10, 13, 12, 3, 13], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Optimal substructure means? (Set 493)",
-    "options": [
-      "Random solutions work under normal conditions",
-      "Optimal solution contains optimal sub-solutions",
-      "Problem has no solution in typical implementations",
-      "Only greedy works under normal conditions"
-    ],
-    "answer": 1,
-    "explanation": "Key property enabling DP approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 174) (Set 334) (Set 494)",
-    "options": [
-      "Sorting only in practice",
-      "Regular expressions (commonly used)",
-      "Substring search in standard usage",
-      "Character frequency comparison"
+      "46",
+      "56",
+      "39",
+      "41"
     ],
     "answer": 3,
-    "explanation": "Same character counts means anagram."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 41."
   },
   {
     "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 196) (Set 495)",
-    "options": [
-      "Probing for next empty slot",
-      "Using linked lists in practice",
-      "Ignoring collision in most cases",
-      "Creating new table in practice"
-    ],
-    "answer": 0,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 100) (Set 235) (Set 307) (Set 496)",
+    "question": "An undirected simple graph G has 5 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
     "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 114) (Set 497)",
-    "options": [
-      "Undirected graphs",
-      "Positive weights",
-      "Negative edge weights",
-      "Dense graphs by design"
+      "1",
+      "10",
+      "4",
+      "9"
     ],
     "answer": 2,
-    "explanation": "Greedy assumption breaks with negative edges."
+    "explanation": "Max edges = V*(V-1)/2 = 5*(4)/2 = 10. At 41% density, total edges = 4."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Singly Linked List?",
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "answer": 3,
+    "explanation": "For Singly Linked List, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(n log n)",
+      "O(n)",
+      "O(1)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Regular BST (worst case), performing a 'Deletion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "14",
+      "9",
+      "15",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 66% density, total edges = 9."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Sorted Array?",
+    "options": [
+      "O(1)",
+      "O(n log n)",
+      "O(log n)",
+      "O(n)"
+    ],
+    "answer": 2,
+    "explanation": "For Sorted Array, performing a 'Search' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 263) (Set 498)",
+    "question": "A 2D array A[18][14] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][5]?",
     "options": [
-      "Little o",
-      "Theta (Θ)",
-      "Big O",
-      "Big Omega"
-    ],
-    "answer": 1,
-    "explanation": "Θ means asymptotically tight bound."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 38) (Set 499)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 500)",
-    "options": [
-      "Only front in most cases",
-      "Only rear (commonly used)",
-      "Middle only by design",
-      "Both front and rear"
-    ],
-    "answer": 3,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a BST? (Set 501)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
+      "1295",
+      "1283",
+      "1291",
+      "1205"
     ],
     "answer": 2,
-    "explanation": "For BST, a Deletion under Best Case takes O(log n)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (5 * 18 + 1) * 1 = 1291."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 104) (Set 502)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 363) (Set 503)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 38) (Set 499) (Set 504)",
+    "question": "Given the 1D integer array [6, 15, 17, 18, 13, 13, 11, 19], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 232) (Set 297) (Set 505)",
-    "options": [
-      "First insertion by design",
-      "Load factor exceeds threshold",
-      "After deletion only in practice",
-      "Table is empty as per specification"
-    ],
-    "answer": 1,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 196) (Set 495) (Set 506)",
-    "options": [
-      "Using linked lists by design",
-      "Ignoring collision in most cases",
-      "Creating new table by design",
-      "Probing for next empty slot"
-    ],
-    "answer": 3,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 177) (Set 246) (Set 507)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n²)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "Both operations work on the top element only."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Big Theta represents? (Set 508)",
-    "options": [
-      "Upper bound only",
-      "No bound",
-      "Lower bound only",
-      "Tight bound"
-    ],
-    "answer": 3,
-    "explanation": "Θ gives both upper and lower bounds."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 241) (Set 277) (Set 509)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Deletion under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 174) (Set 334) (Set 510)",
-    "options": [
-      "Regular expressions in practice",
-      "Sorting only (general case)",
-      "Character frequency comparison",
-      "Substring search in standard usage"
+      "76",
+      "95",
+      "82",
+      "87"
     ],
     "answer": 2,
-    "explanation": "Same character counts means anagram."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 82."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141) (Set 300) (Set 511)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 512)",
-    "options": [
-      "Creating new table by design",
-      "Using linked lists (commonly used)",
-      "Probing for next empty slot",
-      "Ignoring collision (commonly used)"
-    ],
-    "answer": 2,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 513)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 46) (Set 394) (Set 427) (Set 514)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Advanced Topics",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Trie is best for? (Set 329) (Set 515)",
+    "question": "A 2D array A[7][29] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][5]?",
     "options": [
-      "Sorting numbers (commonly used)",
-      "Prefix-based string operations",
-      "Graph traversal based on convention",
-      "Matrix operations (general case)"
-    ],
-    "answer": 1,
-    "explanation": "Trie stores strings character-by-character for prefix search."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue? (Set 120) (Set 211) (Set 516)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Stack? (Set 517)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
+      "1504",
+      "1080",
+      "1508",
+      "1496"
     ],
     "answer": 0,
-    "explanation": "For Stack, a Deletion under Average Case takes O(1)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (2 * 29 + 5) * 8 = 1504."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 38) (Set 518)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Stack? (Set 519)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Graph adjacency matrix space complexity? (Set 107) (Set 262) (Set 520)",
-    "options": [
-      "O(V²)",
-      "O(V+E)",
-      "O(V)",
-      "O(E)"
-    ],
-    "answer": 0,
-    "explanation": "V×V matrix stores all possible edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Inorder traversal of BST gives? (Set 194) (Set 521)",
+    "question": "A 2D array A[10][23] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][19]?",
     "options": [
-      "Sorted ascending order",
-      "Level order (general case)",
-      "Descending order by design",
-      "Random order (commonly used)"
-    ],
-    "answer": 0,
-    "explanation": "Left-Root-Right visits BST nodes in sorted order."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Doubly Linked List? (Set 522)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Doubly Linked List, a Insertion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 39) (Set 523)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80) (Set 524)",
-    "options": [
-      "Undirected graphs",
-      "Positive weights",
-      "Dense graphs (general case)",
-      "Negative edge weights"
-    ],
-    "answer": 3,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 525)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 110) (Set 526)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n²)"
-    ],
-    "answer": 1,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of the naive recursive Fibonacci? (Set 67) (Set 527)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(n²)",
-      "O(2^n)"
-    ],
-    "answer": 3,
-    "explanation": "Each call branches into two recursive calls."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of the naive recursive Fibonacci? (Set 67) (Set 528)",
-    "options": [
-      "O(2^n)",
-      "O(n log n)",
-      "O(n)",
-      "O(n²)"
-    ],
-    "answer": 0,
-    "explanation": "Each call branches into two recursive calls."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "0/1 Knapsack time complexity? (Set 529)",
-    "options": [
-      "O(n*W)",
-      "O(n log n)",
-      "O(n²)",
-      "O(2^n)"
-    ],
-    "answer": 0,
-    "explanation": "DP table of items × capacity."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a BST? (Set 530)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For BST, a Access under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "BFS uses which data structure? (Set 369) (Set 531)",
-    "options": [
-      "Queue",
-      "Array",
-      "Stack",
-      "Heap"
-    ],
-    "answer": 0,
-    "explanation": "BFS explores neighbors level-by-level using FIFO."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 428) (Set 532)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 2) (Set 533)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80) (Set 534)",
-    "options": [
-      "Undirected graphs",
-      "Positive weights",
-      "Dense graphs (commonly used)",
-      "Negative edge weights"
-    ],
-    "answer": 3,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 342) (Set 354) (Set 535)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 78) (Set 536)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n²)"
-    ],
-    "answer": 1,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Detecting intersection point of two lists uses? (Set 1) (Set 43) (Set 99) (Set 537)",
-    "options": [
-      "Sorting in typical implementations",
-      "Stack in typical implementations",
-      "Length difference or two-pointer approach",
-      "Queue in typical implementations"
+      "2180",
+      "2192",
+      "2188",
+      "1952"
     ],
     "answer": 2,
-    "explanation": "Align starts by length diff, then traverse together."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (19 * 10 + 4) * 2 = 2188."
   },
   {
     "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 538)",
-    "options": [
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = 2T(n/2) + O(n)",
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = nT(n/2) by design"
-    ],
-    "answer": 1,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 41) (Set 199) (Set 539)",
-    "options": [
-      "O(E²)",
-      "O(V)",
-      "O(V²)",
-      "O(V+E)"
-    ],
-    "answer": 3,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 141) (Set 300) (Set 479) (Set 540)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (unsorted), a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 541)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 179) (Set 542)",
-    "options": [
-      "Regular expressions in most cases",
-      "Sorting only (primary approach)",
-      "Substring search by design",
-      "Character frequency comparison"
-    ],
-    "answer": 3,
-    "explanation": "Same character counts means anagram."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 543)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 544)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (unsorted), a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 54) (Set 545)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 46) (Set 546)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Big Theta represents? (Set 547)",
-    "options": [
-      "No bound",
-      "Lower bound only",
-      "Tight bound",
-      "Upper bound only"
-    ],
-    "answer": 2,
-    "explanation": "Θ gives both upper and lower bounds."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Array (sorted)? (Set 225) (Set 548)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Array (sorted), a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 163) (Set 549)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 550)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 186) (Set 384) (Set 551)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 41) (Set 358) (Set 552)",
-    "options": [
-      "O(V²)",
-      "O(V)",
-      "O(E²)",
-      "O(V+E)"
-    ],
-    "answer": 3,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Medium",
-    "question": "Two Sum problem is best solved using? (Set 553)",
-    "options": [
-      "Stack",
-      "Binary Search Tree",
-      "Sorting",
-      "HashMap"
-    ],
-    "answer": 3,
-    "explanation": "HashMap gives O(1) lookup for complement."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 353) (Set 554)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Stack? (Set 152) (Set 555)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Singly Linked List? (Set 556)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 386) (Set 389) (Set 465) (Set 557)",
-    "options": [
-      "Always returns 0 (typical scenario)",
-      "Ignores input (commonly used)",
-      "Returns key itself by design",
-      "Uniform distribution of keys"
-    ],
-    "answer": 3,
-    "explanation": "Uniform distribution minimizes collisions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 68) (Set 558)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Master theorem applies to recurrences of what form? (Set 325) (Set 559)",
-    "options": [
-      "T(n) = aT(n/b) + f(n)",
-      "T(n) = n! (widely accepted)",
-      "T(n) = 2n + 1 by design",
-      "T(n) = T(n-1) + n"
-    ],
-    "answer": 0,
-    "explanation": "Master theorem solves divide-and-conquer recurrences."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Inorder traversal of BST gives? (Set 194) (Set 521) (Set 560)",
+    "question": "A 2D array A[16][10] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[9][2]?",
     "options": [
-      "Level order (widely accepted)",
-      "Descending order in practice",
-      "Random order by design",
-      "Sorted ascending order"
+      "1736",
+      "1782",
+      "1774",
+      "1786"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (2 * 16 + 9) * 2 = 1782."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 16, 13, 14, 9, 2, 16, 13, 19, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "75",
+      "43",
+      "66",
+      "61"
     ],
     "answer": 3,
-    "explanation": "Left-Root-Right visits BST nodes in sorted order."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 61."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 364) (Set 460) (Set 561)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "LCS (Longest Common Subsequence) of two strings? (Set 562)",
-    "options": [
-      "O(m*n)",
-      "O(m²)",
-      "O(2^n)",
-      "O(m+n)"
-    ],
-    "answer": 0,
-    "explanation": "2D DP table comparing characters."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 126) (Set 136) (Set 563)",
+    "question": "A 2D array A[12][23] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][1]?",
     "options": [
-      "Recursion only (typical scenario)",
-      "Two pointers (slow and fast)",
-      "Stack (primary approach)",
-      "Queue as per specification"
+      "1584",
+      "1596",
+      "1408",
+      "1592"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (1 * 23 + 1) * 8 = 1592."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "71",
+      "68",
+      "153",
+      "76"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 47% density, total edges = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "112",
+      "115",
+      "351",
+      "120"
     ],
     "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 33% density, total edges = 115."
   },
   {
     "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Easy",
-    "question": "Binary tree maximum path sum problem uses? (Set 564)",
-    "options": [
-      "Recursion with global max tracking",
-      "Greedy (standard definition)",
-      "BFS in typical implementations",
-      "Sorting based on convention"
-    ],
-    "answer": 0,
-    "explanation": "At each node, compute max path through it."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 164) (Set 565)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 566)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 567)",
-    "options": [
-      "T(n) = 2T(n/2) + O(n)",
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = nT(n/2) in most cases"
-    ],
-    "answer": 0,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Time complexity of enqueue in circular queue? (Set 568)",
-    "options": [
-      "O(n²)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "Direct insertion at rear pointer."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Heap property: in a max-heap, parent is? (Set 569)",
+    "question": "A 2D array A[16][23] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[14][3]?",
     "options": [
-      "Greater than or equal to children",
-      "Equal to children (widely accepted)",
-      "Less than children (default behavior)",
-      "Random in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Max-heap: parent >= children at every node."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 353) (Set 570)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a BST? (Set 83) (Set 571)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 363) (Set 413) (Set 572)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 38) (Set 137) (Set 573)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "BFS uses which data structure? (Set 574)",
-    "options": [
-      "Heap",
-      "Array",
-      "Stack",
-      "Queue"
-    ],
-    "answer": 3,
-    "explanation": "BFS explores neighbors level-by-level using FIFO."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 459) (Set 575)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Medium",
-    "question": "Dutch National Flag partitions array into how many parts? (Set 576)",
-    "options": [
-      "Five",
-      "Three",
-      "Two",
-      "Four"
-    ],
-    "answer": 1,
-    "explanation": "Low, mid, high pointers create 3 partitions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 298) (Set 577)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "What does the sliding window technique maintain? (Set 294) (Set 578)",
-    "options": [
-      "A window of elements satisfying a condition",
-      "A sorted subarray based on convention",
-      "A priority queue (standard definition)",
-      "A balanced tree in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "The window expands/contracts based on constraints."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Combination Sum allows? (Set 579)",
-    "options": [
-      "Each element used once (commonly used)",
-      "Negative numbers as per specification",
-      "Sorting only (typical scenario)",
-      "Reusing elements to reach target"
-    ],
-    "answer": 3,
-    "explanation": "Include current element again or move to next."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack? (Set 580)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a AVL Tree? (Set 581)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Access under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 184) (Set 242) (Set 582)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Preorder traversal visits? (Set 22) (Set 583)",
-    "options": [
-      "Root, Left, Right",
-      "Left, Right, Root",
-      "Right, Root, Left",
-      "Left, Root, Right"
-    ],
-    "answer": 0,
-    "explanation": "Pre = root first, then children."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "BFS graph traversal uses? (Set 482) (Set 584)",
-    "options": [
-      "Queue",
-      "Stack",
-      "Priority queue",
-      "Deque"
-    ],
-    "answer": 0,
-    "explanation": "BFS explores level by level using FIFO."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack? (Set 406) (Set 585)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 103) (Set 381) (Set 586)",
-    "options": [
-      "Using linked lists (general case)",
-      "Probing for next empty slot",
-      "Creating new table (general case)",
-      "Ignoring collision (commonly used)"
-    ],
-    "answer": 1,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 104) (Set 587)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 301) (Set 588)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
+      "3592",
+      "1336",
+      "3600",
+      "3604"
     ],
     "answer": 2,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (14 * 23 + 3) * 8 = 3600."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack? (Set 69) (Set 589)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap? (Set 88) (Set 590)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Circular linked list last node points to? (Set 591)",
+    "question": "A 2D array A[17][27] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][9]?",
     "options": [
-      "NULL (primary approach)",
-      "Previous node",
-      "Itself by design",
-      "First node (head)"
+      "2014",
+      "2022",
+      "1844",
+      "2026"
     ],
-    "answer": 3,
-    "explanation": "Circular list forms a loop back to head."
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (9 * 17 + 8) * 2 = 2022."
   },
   {
     "subject": "DSA",
-    "topic": "Trees",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "184",
+      "176",
+      "179",
+      "276"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 65% density, total edges = 179."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "55",
+      "31",
+      "26",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 49% density, total edges = 26."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 14, 1, 12, 15, 14, 2], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "30",
+      "27",
+      "35",
+      "42"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Heap property: in a max-heap, parent is? (Set 26) (Set 592)",
+    "question": "A 2D array A[12][24] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][7]?",
     "options": [
-      "Random in typical implementations",
-      "Less than children by design",
-      "Equal to children (standard definition)",
-      "Greater than or equal to children"
+      "1452",
+      "1456",
+      "1444",
+      "1212"
     ],
-    "answer": 3,
-    "explanation": "Max-heap: parent >= children at every node."
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (7 * 12 + 4) * 4 = 1452."
   },
   {
     "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 321) (Set 593)",
+    "question": "A 2D array A[7][15] starts at base address 1600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][13]?",
     "options": [
-      "Stack in standard usage",
-      "Two pointers (slow and fast)",
-      "Recursion only (general case)",
-      "Queue in standard usage"
-    ],
-    "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60) (Set 258) (Set 594)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 121) (Set 317) (Set 339) (Set 595)",
-    "options": [
-      "Sorting in most cases",
-      "Shortest path in most cases",
-      "String matching",
-      "Maximum subarray sum"
+      "1648",
+      "1626",
+      "1660",
+      "1656"
     ],
     "answer": 3,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (1 * 15 + 13) * 2 = 1656."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Max Heap? (Set 596)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Greedy algorithms guarantee optimal solution when? (Set 4) (Set 84) (Set 156) (Set 167) (Set 597)",
-    "options": [
-      "Greedy choice property and optimal substructure hold",
-      "Always in typical implementations",
-      "Only for sorting in typical implementations",
-      "Never in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Both properties must be proven for correctness."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (sorted)? (Set 455) (Set 598)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Max Heap? (Set 101) (Set 599)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Insertion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap? (Set 88) (Set 471) (Set 600)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 9) (Set 601)",
-    "options": [
-      "Load factor exceeds threshold",
-      "First insertion (primary approach)",
-      "Table is empty (typical scenario)",
-      "After deletion only by design"
-    ],
-    "answer": 0,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 224) (Set 226) (Set 602)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "What does the sliding window technique maintain? (Set 294) (Set 578) (Set 603)",
-    "options": [
-      "A sorted subarray based on convention",
-      "A window of elements satisfying a condition",
-      "A priority queue (standard definition)",
-      "A balanced tree in typical implementations"
-    ],
-    "answer": 1,
-    "explanation": "The window expands/contracts based on constraints."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 363) (Set 413) (Set 572) (Set 604)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 605)",
-    "options": [
-      "O(n²)",
-      "O(n) by design",
-      "O(2^n)",
-      "O(n log n)"
-    ],
-    "answer": 3,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Medium",
-    "question": "Bit masking is used for? (Set 606)",
-    "options": [
-      "Sorting under normal conditions",
-      "Extracting or setting specific bits",
-      "String matching (commonly used)",
-      "Graph traversal in most cases"
-    ],
-    "answer": 1,
-    "explanation": "AND/OR masks isolate or set individual bits."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Medium",
-    "question": "Check if number is power of 2 using? (Set 607)",
-    "options": [
-      "n | 1 == n",
-      "n >> 1 == 0",
-      "n & (n-1) == 0",
-      "n % 2 == 0"
-    ],
-    "answer": 2,
-    "explanation": "Power of 2 has single set bit; n&(n-1) clears it."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Level order traversal uses? (Set 608)",
-    "options": [
-      "Recursion only",
-      "Queue (BFS)",
-      "Sorting",
-      "Stack in practice"
-    ],
-    "answer": 1,
-    "explanation": "Process nodes level by level using queue."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Union-Find is used in? (Set 609)",
-    "options": [
-      "Shortest path (primary approach)",
-      "String matching (typical scenario)",
-      "BFS in typical implementations",
-      "Kruskal's MST and cycle detection"
-    ],
-    "answer": 3,
-    "explanation": "Union-Find efficiently tracks connected components."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 279) (Set 610)",
-    "options": [
-      "O(log n)",
-      "O(n²)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "Both operations work on the top element only."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80) (Set 524) (Set 611)",
-    "options": [
-      "Negative edge weights",
-      "Dense graphs (general case)",
-      "Positive weights",
-      "Undirected graphs"
-    ],
-    "answer": 0,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 238) (Set 473) (Set 612)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 613)",
-    "options": [
-      "Load factor exceeds threshold",
-      "Table is empty in most cases",
-      "After deletion only (general case)",
-      "First insertion (general case)"
-    ],
-    "answer": 0,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Time complexity of enqueue in circular queue? (Set 568) (Set 614)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n²)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "Direct insertion at rear pointer."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Huffman coding builds? (Set 615)",
-    "options": [
-      "Balanced BST (typical scenario)",
-      "Hash table (widely accepted)",
-      "Optimal prefix-free binary tree",
-      "Graph (standard definition)"
-    ],
-    "answer": 2,
-    "explanation": "Greedy: merge two lowest-frequency nodes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 281) (Set 616)",
-    "options": [
-      "Sorting (standard definition)",
-      "BFS only in standard usage",
-      "Recursion and backtracking",
-      "Dynamic programming in practice"
-    ],
-    "answer": 2,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 217) (Set 312) (Set 313) (Set 617)",
+    "question": "A 2D array A[18][18] starts at base address 1500 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[12][13]?",
     "options": [
-      "Big Omega",
-      "Theta (Θ)",
-      "Big O",
-      "Little o"
+      "1962",
+      "1958",
+      "1812",
+      "1950"
     ],
     "answer": 1,
-    "explanation": "Θ means asymptotically tight bound."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (12 * 18 + 13) * 2 = 1958."
   },
   {
     "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "BFS graph traversal uses? (Set 618)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 9, 20, 18, 14, 15, 3], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "Priority queue",
-      "Queue",
-      "Deque",
-      "Stack"
-    ],
-    "answer": 1,
-    "explanation": "BFS explores level by level using FIFO."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Red-Black Tree? (Set 34) (Set 266) (Set 619)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
+      "79",
+      "96",
+      "94",
+      "91"
     ],
     "answer": 3,
-    "explanation": "For Red-Black Tree, a Access under Best Case takes O(log n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 91."
   },
   {
     "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Easy",
-    "question": "StringBuilder in Java is preferred over String for? (Set 361) (Set 620)",
-    "options": [
-      "Read-only access (typical scenario)",
-      "Frequent modifications (mutable)",
-      "Hashing (default behavior)",
-      "Sorting (widely accepted)"
-    ],
-    "answer": 1,
-    "explanation": "StringBuilder avoids creating new String objects."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
+    "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is a good hash function property? (Set 386) (Set 389) (Set 621)",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Unsorted Array?",
     "options": [
-      "Returns key itself in practice",
-      "Uniform distribution of keys",
-      "Always returns 0 (widely accepted)",
-      "Ignores input (general case)"
-    ],
-    "answer": 1,
-    "explanation": "Uniform distribution minimizes collisions."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 622)",
-    "options": [
-      "O(log n)",
       "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 623)",
-    "options": [
-      "Only rear by design",
-      "Both front and rear",
-      "Middle only in most cases",
-      "Only front in most cases"
-    ],
-    "answer": 1,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 50) (Set 96) (Set 624)",
-    "options": [
-      "Recursion and backtracking",
-      "Dynamic programming in practice",
-      "BFS only based on convention",
-      "Sorting in most cases"
-    ],
-    "answer": 0,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "Matrix Chain Multiplication optimizes? (Set 31) (Set 91) (Set 625)",
-    "options": [
-      "Matrix values in practice",
-      "Order of matrix multiplications",
-      "Matrix dimensions in most cases",
-      "Matrix sorting (standard definition)"
-    ],
-    "answer": 1,
-    "explanation": "Different parenthesizations give different costs."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Doubly Linked List? (Set 626)",
-    "options": [
+      "O(log n)",
       "O(n log n)",
-      "O(log n)",
-      "O(n)",
       "O(1)"
     ],
     "answer": 3,
-    "explanation": "For Doubly Linked List, a Insertion under Worst Case takes O(1)."
+    "explanation": "For Unsorted Array, performing a 'Insertion' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Strings",
-    "difficulty": "Medium",
-    "question": "Frequency count of characters uses? (Set 401) (Set 627)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 19, 4, 2, 8], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "Queue (standard definition)",
-      "Linked List in standard usage",
-      "Array of size 26 or HashMap",
-      "Stack as per specification"
+      "25",
+      "50",
+      "47",
+      "45"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 8, 3, 12, 9, 19, 4], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "56",
+      "52",
+      "32",
+      "47"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 18, 9, 20, 18, 7, 11, 17, 1, 13], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "115",
+      "127",
+      "110",
+      "100"
     ],
     "answer": 2,
-    "explanation": "Fixed-size array or map tracks counts efficiently."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 110."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 6) (Set 261) (Set 628)",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
     "options": [
-      "O(n log n)",
-      "O(1)",
+      "253",
+      "146",
+      "154",
+      "149"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 59% density, total edges = 149."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 10, 13, 6, 12, 7, 3, 20, 11], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "54",
+      "48",
+      "61",
+      "59"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 54."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 1, 3, 19, 18, 10, 7, 4], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "75",
+      "79",
+      "62",
+      "80"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 75."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 11, 7, 1, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "48",
+      "29",
+      "53",
+      "43"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "147",
+      "150",
+      "406",
+      "155"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 37% density, total edges = 150."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 4, 6, 6, 7, 12, 17, 5, 4, 2], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "69",
+      "64",
+      "66",
+      "63"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
+    "options": [
+      "66",
+      "34",
+      "39",
+      "31"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 52% density, total edges = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Doubly Linked List?",
+    "options": [
       "O(log n)",
+      "O(1)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "answer": 1,
+    "explanation": "For Doubly Linked List, performing a 'Deletion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 13, 8, 20, 1, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "42",
+      "48",
+      "49",
+      "53"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Sorted Array?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Sorted Array, performing a 'Access' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 7, 11, 4, 12, 18, 13, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "37",
+      "32",
+      "43",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 32."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n log n)",
       "O(n)"
     ],
     "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
+    "explanation": "For Regular BST (worst case), performing a 'Access' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 500) (Set 629)",
-    "options": [
-      "Only front in most cases",
-      "Both front and rear",
-      "Middle only in practice",
-      "Only rear in practice"
-    ],
-    "answer": 1,
-    "explanation": "Double-ended queue supports both ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 127) (Set 230) (Set 259) (Set 630)",
+    "question": "A 2D array A[5][22] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][5]?",
     "options": [
-      "Recursion only based on convention",
-      "Two pointers (slow and fast)",
-      "Queue in standard usage",
-      "Stack (typical scenario)"
+      "1444",
+      "1410",
+      "1452",
+      "1456"
     ],
-    "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (5 * 5 + 1) * 2 = 1452."
   },
   {
     "subject": "DSA",
-    "topic": "Linked List",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "18",
+      "45",
+      "23",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 41% density, total edges = 18."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Queue?",
+    "options": [
+      "O(n log n)",
+      "O(1)",
+      "O(log n)",
+      "O(n)"
+    ],
+    "answer": 1,
+    "explanation": "For Queue, performing a 'Search' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a AVL Tree?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "answer": 0,
+    "explanation": "For AVL Tree, performing a 'Insertion' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 6, 8, 6, 19, 17, 13, 20], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "57",
+      "56",
+      "62",
+      "74"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "223",
+      "496",
+      "218",
+      "215"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 44% density, total edges = 218."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 5, 15, 15, 15, 14], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "66",
+      "51",
+      "56",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 13, 5, 10, 1], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "36",
+      "41",
+      "31",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 11, 16, 2, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "46",
+      "29",
+      "48",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 1, 4, 1, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "11",
+      "6",
+      "16",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 11."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 15, 5, 14, 18, 12, 19, 2, 2], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "89",
+      "85",
+      "92",
+      "87"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 87."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 17, 2, 13, 12, 2, 10, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "53",
+      "50",
+      "48",
+      "46"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 7, 17, 3, 14, 5], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "55",
+      "69",
+      "60",
+      "41"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Floyd's cycle detection uses? (Set 126) (Set 136) (Set 631)",
+    "question": "A 2D array A[10][25] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][7]?",
     "options": [
-      "Queue (default behavior)",
-      "Two pointers (slow and fast)",
-      "Recursion only (primary approach)",
-      "Stack under normal conditions"
-    ],
-    "answer": 1,
-    "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Adjacency list space complexity? (Set 12) (Set 41) (Set 632)",
-    "options": [
-      "O(V+E)",
-      "O(E²)",
-      "O(V)",
-      "O(V²)"
-    ],
-    "answer": 0,
-    "explanation": "List stores only existing edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 513) (Set 633)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Level order traversal uses? (Set 608) (Set 634)",
-    "options": [
-      "Stack by design",
-      "Sorting",
-      "Recursion only",
-      "Queue (BFS)"
-    ],
-    "answer": 3,
-    "explanation": "Process nodes level by level using queue."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Floyd-Warshall finds? (Set 131) (Set 635)",
-    "options": [
-      "MST based on convention",
-      "All-pairs shortest paths",
-      "Single-source shortest path",
-      "Topological order in most cases"
-    ],
-    "answer": 1,
-    "explanation": "DP approach considers all intermediate vertices."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Huffman coding builds? (Set 615) (Set 636)",
-    "options": [
-      "Balanced BST based on convention",
-      "Graph based on convention",
-      "Hash table under normal conditions",
-      "Optimal prefix-free binary tree"
-    ],
-    "answer": 3,
-    "explanation": "Greedy: merge two lowest-frequency nodes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Stack? (Set 637)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
+      "2020",
+      "2032",
+      "2028",
+      "1424"
     ],
     "answer": 2,
-    "explanation": "For Stack, a Access under Average Case takes O(n)."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (8 * 25 + 7) * 4 = 2028."
   },
   {
     "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 295) (Set 638)",
+    "question": "Given the 1D integer array [13, 20, 5, 17, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "T(n) = nT(n/2) in practice",
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = 2T(n/2) + O(n)"
+      "87",
+      "58",
+      "76",
+      "71"
     ],
     "answer": 3,
-    "explanation": "Merge sort splits in half and merges in O(n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 71."
   },
   {
     "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the time complexity of accessing an array element by index? (Set 64) (Set 639)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
     "options": [
-      "O(n)",
-      "O(n²)",
-      "O(1)",
-      "O(log n)"
+      "528",
+      "358",
+      "350",
+      "353"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 67% density, total edges = 353."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "465",
+      "220",
+      "223",
+      "228"
     ],
     "answer": 2,
-    "explanation": "Array access is constant time via direct addressing."
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 48% density, total edges = 223."
   },
   {
     "subject": "DSA",
-    "topic": "Trees",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Heap property: in a max-heap, parent is? (Set 26) (Set 592) (Set 640)",
+    "question": "A 2D array A[9][13] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][8]?",
     "options": [
-      "Equal to children (typical scenario)",
-      "Less than children (commonly used)",
-      "Random based on convention",
-      "Greater than or equal to children"
-    ],
-    "answer": 3,
-    "explanation": "Max-heap: parent >= children at every node."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 641)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 298) (Set 480) (Set 642)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Doubly Linked List? (Set 298) (Set 577) (Set 643)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Doubly Linked List, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "BFS graph traversal uses? (Set 618) (Set 644)",
-    "options": [
-      "Queue",
-      "Deque",
-      "Stack",
-      "Priority queue"
+      "1972",
+      "1976",
+      "1964",
+      "1828"
     ],
     "answer": 0,
-    "explanation": "BFS explores level by level using FIFO."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (2 * 13 + 8) * 8 = 1972."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Insertion' operation on a Stack? (Set 285) (Set 645)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Insertion under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 217) (Set 312) (Set 313) (Set 617) (Set 646)",
+    "question": "A 2D array A[8][25] starts at base address 1400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][2]?",
     "options": [
-      "Big O",
-      "Little o",
-      "Theta (Θ)",
-      "Big Omega"
+      "1488",
+      "1484",
+      "1440",
+      "1476"
     ],
-    "answer": 2,
-    "explanation": "Θ means asymptotically tight bound."
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (2 * 8 + 5) * 4 = 1484."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "84",
+      "81",
+      "89",
+      "136"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 62% density, total edges = 84."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 567) (Set 647)",
-    "options": [
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = 2T(n/2) + O(n)",
-      "T(n) = nT(n/2) in practice",
-      "T(n) = T(n/2) + O(1)"
-    ],
-    "answer": 1,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
     "difficulty": "Medium",
-    "question": "Longest palindromic substring can be found in? (Set 322) (Set 648)",
-    "options": [
-      "O(n²) using expand around center",
-      "O(n) in typical implementations",
-      "O(n³) based on convention",
-      "O(log n) in standard usage"
-    ],
-    "answer": 0,
-    "explanation": "Expand from each center in O(n) time, n centers."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 39) (Set 213) (Set 282) (Set 649)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
-    "difficulty": "Medium",
-    "question": "Circular queue solves which problem? (Set 650)",
-    "options": [
-      "Balancing as per specification",
-      "Sorting in most cases",
-      "Searching (general case)",
-      "Wasted space in linear queue"
-    ],
-    "answer": 3,
-    "explanation": "Rear wraps around to use freed front space."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a AVL Tree? (Set 651)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 159) (Set 652)",
+    "question": "What is the time complexity of performing a 'Access' operation on a Unsorted Array?",
     "options": [
       "O(n)",
       "O(1)",
@@ -12640,1203 +3834,3653 @@ window.quizData.dsa = [
       "O(log n)"
     ],
     "answer": 1,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
+    "explanation": "For Unsorted Array, performing a 'Access' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 342) (Set 653)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 9, 8, 1, 5, 4, 3], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
+      "42",
+      "37",
+      "45",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 19, 7, 13, 11, 3, 10, 18, 19], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "80",
+      "63",
+      "85",
+      "90"
     ],
     "answer": 0,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 80."
   },
   {
     "subject": "DSA",
-    "topic": "Hashing",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 9) (Set 601) (Set 654)",
+    "question": "Given the 1D integer array [16, 9, 15, 6, 4, 20, 3, 5], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "Table is empty by design",
-      "First insertion in most cases",
-      "Load factor exceeds threshold",
-      "After deletion only in most cases"
-    ],
-    "answer": 2,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Combination Sum allows? (Set 66) (Set 655)",
-    "options": [
-      "Reusing elements to reach target",
-      "Each element used once (general case)",
-      "Negative numbers as per specification",
-      "Sorting only (widely accepted)"
-    ],
-    "answer": 0,
-    "explanation": "Include current element again or move to next."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the time complexity of binary search? (Set 42) (Set 656)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n²)"
-    ],
-    "answer": 0,
-    "explanation": "Binary search halves the search space each step."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 323) (Set 657)",
-    "options": [
-      "Creating new table (commonly used)",
-      "Using linked lists (general case)",
-      "Ignoring collision in most cases",
-      "Probing for next empty slot"
+      "51",
+      "30",
+      "52",
+      "46"
     ],
     "answer": 3,
-    "explanation": "Linear/quadratic probing finds alternative slots."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 46."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 396) (Set 658)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Queue",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Deque allows operations at? (Set 56) (Set 623) (Set 659)",
+    "question": "Given the 1D integer array [19, 9, 15, 11, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "Both front and rear",
-      "Only front by design",
-      "Only rear in practice",
-      "Middle only in most cases"
+      "60",
+      "41",
+      "66",
+      "65"
     ],
     "answer": 0,
-    "explanation": "Double-ended queue supports both ends."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 60."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a BST? (Set 660)",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
     "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For BST, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Floyd-Warshall finds? (Set 131) (Set 661)",
-    "options": [
-      "Topological order by design",
-      "Single-source shortest path",
-      "All-pairs shortest paths",
-      "MST in standard usage"
-    ],
-    "answer": 2,
-    "explanation": "DP approach considers all intermediate vertices."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 305) (Set 662)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Red-Black Tree? (Set 663)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Red-Black Tree, a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 197) (Set 664)",
-    "options": [
-      "O(n log n)",
-      "O(n²)",
-      "O(n) by design",
-      "O(2^n)"
-    ],
-    "answer": 0,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Best Time to Buy Stock uses which pattern? (Set 148) (Set 665)",
-    "options": [
-      "Sliding window based on convention",
-      "Track minimum and max profit",
-      "Two pointers (commonly used)",
-      "Binary search (standard definition)"
-    ],
-    "answer": 1,
-    "explanation": "Track min price seen so far, compute max profit."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 6) (Set 666)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
+      "205",
+      "496",
+      "213",
+      "208"
     ],
     "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 42% density, total edges = 208."
   },
   {
     "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Medium",
-    "question": "LIS (Longest Increasing Subsequence) optimal complexity? (Set 667)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 1, 6, 19, 11, 8, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "O(n²)",
-      "O(n log n)",
-      "O(n) in practice",
-      "O(2^n)"
-    ],
-    "answer": 1,
-    "explanation": "Binary search + patience sorting approach."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 6) (Set 261) (Set 668)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 342) (Set 669)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Union-Find is used in? (Set 609) (Set 670)",
-    "options": [
-      "Shortest path under normal conditions",
-      "String matching (primary approach)",
-      "Kruskal's MST and cycle detection",
-      "BFS under normal conditions"
-    ],
-    "answer": 2,
-    "explanation": "Union-Find efficiently tracks connected components."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Stack? (Set 252) (Set 337) (Set 461) (Set 671)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, a Search under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Stack? (Set 672)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
+      "27",
+      "33",
+      "7",
+      "32"
     ],
     "answer": 0,
-    "explanation": "For Stack, a Deletion under Best Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 27."
   },
   {
     "subject": "DSA",
-    "topic": "Stack",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Monotonic stack is used for? (Set 673)",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
     "options": [
-      "String matching in typical implementations",
-      "Next greater/smaller element problems",
-      "BFS in typical implementations",
-      "Sorting under normal conditions"
+      "109",
+      "112",
+      "190",
+      "117"
     ],
     "answer": 1,
-    "explanation": "Maintains increasing/decreasing order of elements."
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 59% density, total edges = 112."
   },
   {
     "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "Memoization is? (Set 306) (Set 674)",
-    "options": [
-      "Greedy (primary approach)",
-      "Top-down DP with caching",
-      "Bottom-up approach in practice",
-      "Brute force (primary approach)"
-    ],
-    "answer": 1,
-    "explanation": "Store results of subproblems to avoid recomputation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 184) (Set 675)",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
     "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Trees",
-    "difficulty": "Medium",
-    "question": "Level order traversal uses? (Set 608) (Set 634) (Set 676)",
-    "options": [
-      "Stack by design",
-      "Queue (BFS)",
-      "Recursion only",
-      "Sorting"
-    ],
-    "answer": 1,
-    "explanation": "Process nodes level by level using queue."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Greedy",
-    "difficulty": "Medium",
-    "question": "Huffman coding builds? (Set 615) (Set 677)",
-    "options": [
-      "Balanced BST (default behavior)",
-      "Optimal prefix-free binary tree",
-      "Hash table based on convention",
-      "Graph in typical implementations"
-    ],
-    "answer": 1,
-    "explanation": "Greedy: merge two lowest-frequency nodes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 196) (Set 495) (Set 506) (Set 678)",
-    "options": [
-      "Creating new table in most cases",
-      "Probing for next empty slot",
-      "Ignoring collision (general case)",
-      "Using linked lists in practice"
-    ],
-    "answer": 1,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 73) (Set 679)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Middle of linked list found using? (Set 680)",
-    "options": [
-      "Recursion (typical scenario)",
-      "Slow and fast pointer",
-      "Counting then traversing",
-      "Stack (standard definition)"
-    ],
-    "answer": 1,
-    "explanation": "When fast reaches end, slow is at middle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Bit Manipulation",
-    "difficulty": "Easy",
-    "question": "Left shift by 1 is equivalent to? (Set 92) (Set 409) (Set 681)",
-    "options": [
-      "Subtract 1",
-      "Add 1 (general case)",
-      "Multiply by 2",
-      "Divide by 2"
-    ],
-    "answer": 2,
-    "explanation": "Shifting bits left doubles the value."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Min Heap? (Set 682)",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Array (sorted)? (Set 683)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (sorted), a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Union-Find is used in? (Set 609) (Set 670) (Set 684)",
-    "options": [
-      "String matching (widely accepted)",
-      "Shortest path in typical implementations",
-      "Kruskal's MST and cycle detection",
-      "BFS under normal conditions"
-    ],
-    "answer": 2,
-    "explanation": "Union-Find efficiently tracks connected components."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a Array (unsorted)? (Set 32) (Set 685)",
-    "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
+      "327",
+      "561",
+      "335",
+      "330"
     ],
     "answer": 3,
-    "explanation": "For Array (unsorted), a Insertion under Best Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 59% density, total edges = 330."
   },
   {
     "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Bellman-Ford handles? (Set 686)",
-    "options": [
-      "Only trees (commonly used)",
-      "Only undirected by design",
-      "Negative edge weights",
-      "Only positive weights"
-    ],
-    "answer": 2,
-    "explanation": "Relaxes all edges V-1 times."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Array (unsorted)? (Set 65) (Set 219) (Set 687)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 273) (Set 275) (Set 688)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Rehashing is triggered when? (Set 232) (Set 297) (Set 689)",
-    "options": [
-      "First insertion as per specification",
-      "After deletion only (general case)",
-      "Table is empty in most cases",
-      "Load factor exceeds threshold"
-    ],
-    "answer": 3,
-    "explanation": "High load factor degrades performance, so table resizes."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Medium",
-    "question": "Collision in hashing means? (Set 452) (Set 690)",
-    "options": [
-      "Key not found (typical scenario)",
-      "Hash table is full by design",
-      "Duplicate keys in most cases",
-      "Two keys map to same index"
-    ],
-    "answer": 3,
-    "explanation": "Different keys producing same hash cause collision."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 295) (Set 691)",
-    "options": [
-      "T(n) = nT(n/2) by design",
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = T(n-1) + O(n)",
-      "T(n) = 2T(n/2) + O(n)"
-    ],
-    "answer": 3,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Singly Linked List? (Set 8) (Set 692)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Access under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 693)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "LCS (Longest Common Subsequence) of two strings? (Set 694)",
-    "options": [
-      "O(2^n)",
-      "O(m+n)",
-      "O(m*n)",
-      "O(m²)"
-    ],
-    "answer": 2,
-    "explanation": "2D DP table comparing characters."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 14) (Set 58) (Set 189) (Set 695)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 40) (Set 162) (Set 696)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n²)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Which notation is used when best and worst case are the same? (Set 217) (Set 312) (Set 313) (Set 617) (Set 697)",
+    "question": "A 2D array A[6][27] starts at base address 1100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][12]?",
     "options": [
-      "Theta (Θ)",
-      "Big Omega",
-      "Big O",
-      "Little o"
+      "1688",
+      "1684",
+      "1196",
+      "1676"
     ],
-    "answer": 0,
-    "explanation": "Θ means asymptotically tight bound."
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (12 * 6 + 1) * 8 = 1684."
   },
   {
     "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Medium",
-    "question": "Floyd-Warshall finds? (Set 131) (Set 698)",
-    "options": [
-      "All-pairs shortest paths",
-      "MST under normal conditions",
-      "Topological order in most cases",
-      "Single-source shortest path"
-    ],
-    "answer": 0,
-    "explanation": "DP approach considers all intermediate vertices."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Min Heap? (Set 442) (Set 699)",
+    "question": "Given the 1D integer array [9, 10, 3, 4, 8, 1, 18, 12, 10, 16], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
     "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Min Heap, a Access under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 700)",
-    "options": [
-      "Shortest path in practice",
-      "String matching",
-      "Maximum subarray sum",
-      "Sorting (primary approach)"
-    ],
-    "answer": 2,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Stack? (Set 149) (Set 355) (Set 701)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
+      "66",
+      "85",
+      "80",
+      "75"
     ],
     "answer": 3,
-    "explanation": "For Stack, a Search under Best Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 75."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Red-Black Tree? (Set 702)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
+      "208",
+      "205",
+      "213",
+      "435"
     ],
     "answer": 0,
-    "explanation": "For Red-Black Tree, a Access under Average Case takes O(log n)."
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 48% density, total edges = 208."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Array (sorted)? (Set 214) (Set 395) (Set 703)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Array (sorted), a Search under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Max Heap? (Set 88) (Set 375) (Set 704)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Max Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 80) (Set 359) (Set 705)",
-    "options": [
-      "Positive weights",
-      "Dense graphs (general case)",
-      "Negative edge weights",
-      "Undirected graphs"
-    ],
-    "answer": 2,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Queue? (Set 120) (Set 211) (Set 706)",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
+      "8",
+      "11",
+      "21",
+      "16"
     ],
     "answer": 1,
-    "explanation": "For Queue, a Deletion under Best Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 57% density, total edges = 11."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Max Heap? (Set 707)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Search under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Stack? (Set 519) (Set 708)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15) (Set 93) (Set 709)",
-    "options": [
-      "O(n²)",
-      "O(log n)",
-      "O(n)",
-      "O(1)"
-    ],
-    "answer": 2,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 428) (Set 532) (Set 710)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a AVL Tree? (Set 711)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For AVL Tree, a Search under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 3) (Set 6) (Set 712)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 0,
-    "explanation": "For Singly Linked List, a Search under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Stack? (Set 517) (Set 713)",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Deletion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Backtracking",
-    "difficulty": "Easy",
-    "question": "Rat in Maze explores paths using? (Set 281) (Set 714)",
-    "options": [
-      "Recursion and backtracking",
-      "Sorting (general case)",
-      "Dynamic programming in most cases",
-      "BFS only (typical scenario)"
-    ],
-    "answer": 0,
-    "explanation": "Try all directions, backtrack on dead ends."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "What is the recurrence for merge sort? (Set 715)",
-    "options": [
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = 2T(n/2) + O(n)",
-      "T(n) = nT(n/2) in most cases",
-      "T(n) = T(n-1) + O(n)"
-    ],
-    "answer": 1,
-    "explanation": "Merge sort splits in half and merges in O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Stack",
-    "difficulty": "Easy",
-    "question": "Time complexity of push and pop in stack? (Set 177) (Set 246) (Set 507) (Set 716)",
-    "options": [
-      "O(n²)",
-      "O(n)",
-      "O(log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "Both operations work on the top element only."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Insertion' operation on a AVL Tree? (Set 393) (Set 717)",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Insertion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Easy",
-    "question": "Time complexity of linear search? (Set 15) (Set 90) (Set 718)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
-    ],
-    "answer": 2,
-    "explanation": "May need to check every element."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Stack? (Set 149) (Set 355) (Set 719)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Best Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Best Time to Buy Stock uses which pattern? (Set 148) (Set 665) (Set 720)",
-    "options": [
-      "Binary search as per specification",
-      "Two pointers in standard usage",
-      "Track minimum and max profit",
-      "Sliding window in practice"
-    ],
-    "answer": 2,
-    "explanation": "Track min price seen so far, compute max profit."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Max Heap? (Set 60) (Set 153) (Set 245) (Set 721)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Search under Best Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Min Heap? (Set 722)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Min Heap, a Access under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Stack? (Set 69) (Set 589) (Set 723)",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Search under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "0/1 Knapsack time complexity? (Set 55) (Set 724)",
-    "options": [
-      "O(2^n)",
-      "O(n log n)",
-      "O(n²)",
-      "O(n*W)"
-    ],
-    "answer": 3,
-    "explanation": "DP table of items × capacity."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Dynamic Programming",
-    "difficulty": "Easy",
-    "question": "Memoization is? (Set 52) (Set 254) (Set 725)",
-    "options": [
-      "Greedy (commonly used)",
-      "Brute force in standard usage",
-      "Bottom-up approach in practice",
-      "Top-down DP with caching"
-    ],
-    "answer": 3,
-    "explanation": "Store results of subproblems to avoid recomputation."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Insertion' operation on a Queue? (Set 11) (Set 25) (Set 726)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Queue, a Insertion under Average Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Max Heap? (Set 231) (Set 432) (Set 727)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Max Heap, a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
-    "difficulty": "Easy",
-    "question": "Dijkstra's algorithm fails with? (Set 114) (Set 497) (Set 728)",
-    "options": [
-      "Negative edge weights",
-      "Dense graphs (commonly used)",
-      "Positive weights",
-      "Undirected graphs"
-    ],
-    "answer": 0,
-    "explanation": "Greedy assumption breaks with negative edges."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Linked List",
-    "difficulty": "Easy",
-    "question": "Middle of linked list found using? (Set 729)",
-    "options": [
-      "Recursion in most cases",
-      "Stack by design",
-      "Counting then traversing",
-      "Slow and fast pointer"
-    ],
-    "answer": 3,
-    "explanation": "When fast reaches end, slow is at middle."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 513) (Set 730)",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Deletion under Average Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Hashing",
-    "difficulty": "Easy",
-    "question": "Open addressing resolves collisions by? (Set 36) (Set 155) (Set 323) (Set 657) (Set 731)",
-    "options": [
-      "Creating new table by design",
-      "Using linked lists (general case)",
-      "Probing for next empty slot",
-      "Ignoring collision by design"
-    ],
-    "answer": 2,
-    "explanation": "Linear/quadratic probing finds alternative slots."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the best case time complexity of performing a 'Deletion' operation on a Min Heap? (Set 363) (Set 413) (Set 732)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Min Heap, a Deletion under Best Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Array (unsorted)? (Set 733)",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Array (unsorted), a Access under Worst Case takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Array (unsorted)? (Set 342) (Set 354) (Set 535) (Set 734)",
-    "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Array (unsorted), a Deletion under Average Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Stack? (Set 412) (Set 735)",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Prim's algorithm starts from? (Set 5) (Set 304) (Set 736)",
+    "question": "A 2D array A[11][26] starts at base address 1700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][9]?",
     "options": [
-      "Heaviest edge",
-      "Leaf node (general case)",
-      "Any single vertex",
-      "All vertices"
+      "2572",
+      "2568",
+      "1988",
+      "2560"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (8 * 26 + 9) * 4 = 2568."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][28] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[14][1]?",
+    "options": [
+      "1134",
+      "1122",
+      "1130",
+      "1114"
     ],
     "answer": 2,
-    "explanation": "Prim grows MST from one vertex using min-edge."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (1 * 16 + 14) * 1 = 1130."
   },
   {
     "subject": "DSA",
-    "topic": "Arrays",
-    "difficulty": "Easy",
-    "question": "Kadane's algorithm solves? (Set 49) (Set 737)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
     "options": [
-      "Maximum subarray sum",
-      "Sorting based on convention",
-      "Shortest path by design",
-      "String matching"
+      "225",
+      "228",
+      "351",
+      "233"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 65% density, total edges = 228."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][13] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[9][11]?",
+    "options": [
+      "2098",
+      "2148",
+      "2156",
+      "2160"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (9 * 13 + 11) * 2 = 2156."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "11",
+      "19",
+      "36",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 40% density, total edges = 14."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][25] starts at base address 1700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][18]?",
+    "options": [
+      "2580",
+      "2572",
+      "1988",
+      "2584"
     ],
     "answer": 0,
-    "explanation": "Kadane's finds max contiguous subarray in O(n)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (18 * 6 + 2) * 8 = 2580."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Queue?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "answer": 0,
+    "explanation": "For Queue, performing a 'Deletion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Search' operation on a Doubly Linked List? (Set 48) (Set 428) (Set 532) (Set 738)",
+    "question": "Given the 1D integer array [10, 9, 13, 3, 6, 2, 2, 12], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "69",
+      "47",
+      "62",
+      "57"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 3, 6, 14, 8, 15, 9, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "38",
+      "24",
+      "23",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 24."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "186",
+      "183",
+      "191",
+      "351"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 53% density, total edges = 186."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][11] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][8]?",
+    "options": [
+      "2204",
+      "2524",
+      "2532",
+      "2536"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (11 * 11 + 8) * 8 = 2532."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 5, 8, 18, 5, 8, 15, 1, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "27",
+      "35",
+      "32",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][13] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][11]?",
+    "options": [
+      "1720",
+      "1732",
+      "1728",
+      "1264"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (11 * 8 + 3) * 8 = 1728."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][13] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[11][9]?",
+    "options": [
+      "2244",
+      "2232",
+      "2240",
+      "1792"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (9 * 16 + 11) * 8 = 2240."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "65",
+      "73",
+      "120",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 57% density, total edges = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "12",
+      "28",
+      "20",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 55% density, total edges = 15."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "25",
+      "30",
+      "22",
+      "45"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 56% density, total edges = 25."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 2, 8, 2, 9, 9, 15, 13, 2, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "21",
+      "12",
+      "23",
+      "26"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 21."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 10, 17, 18, 2, 18, 12, 14], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "65",
+      "88",
+      "75",
+      "70"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 70."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
+    "options": [
+      "435",
+      "135",
+      "130",
+      "127"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 30% density, total edges = 130."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "59",
+      "67",
+      "153",
+      "62"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 41% density, total edges = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 14, 19, 2, 8, 4, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "41",
+      "36",
+      "55",
+      "33"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 17, 14, 20, 3, 6, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "55",
+      "58",
+      "54",
+      "60"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 1, 14, 6, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "30",
+      "21",
+      "29",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 24."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][29] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][17]?",
+    "options": [
+      "1302",
+      "1487",
+      "1495",
+      "1499"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (17 * 17 + 6) * 1 = 1495."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][11] starts at base address 1600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[10][1]?",
+    "options": [
+      "1814",
+      "1822",
+      "1620",
+      "1826"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (10 * 11 + 1) * 2 = 1822."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Doubly Linked List?",
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "answer": 2,
+    "explanation": "For Doubly Linked List, performing a 'Access' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "78",
+      "81",
+      "86",
+      "136"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 60% density, total edges = 81."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][27] starts at base address 1100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[12][12]?",
+    "options": [
+      "3792",
+      "2252",
+      "3788",
+      "3780"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (12 * 27 + 12) * 8 = 3788."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "231",
+      "141",
+      "133",
+      "136"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 59% density, total edges = 136."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 3, 14, 4, 10, 18, 20], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "77",
+      "92",
+      "69",
+      "72"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 72."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 14, 8, 4, 5, 15], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "53",
+      "58",
+      "46",
+      "68"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 53."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 17, 1, 15, 17, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "51",
+      "63",
+      "58",
+      "59"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "113",
+      "118",
+      "325",
+      "110"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 35% density, total edges = 113."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 12, 10, 18, 18, 14, 7, 5], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "58",
+      "77",
+      "72",
+      "90"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 72."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 14, 1, 14, 4, 2], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "42",
+      "39",
+      "37",
+      "35"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][28] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][12]?",
+    "options": [
+      "1674",
+      "1670",
+      "1662",
+      "1524"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (12 * 14 + 2) * 1 = 1670."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 13, 7, 6, 15, 8, 18, 12, 13], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "49",
+      "66",
+      "63",
+      "58"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][29] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "1466",
+      "1454",
+      "1462",
+      "1408"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (2 * 29 + 4) * 1 = 1462."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "10",
+      "2",
+      "5",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 37% density, total edges = 5."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 8, 14, 9, 3, 7], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "51",
+      "54",
+      "34",
+      "56"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 9, 11, 1, 8, 16, 16, 18, 4, 11], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "94",
+      "103",
+      "109",
+      "98"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 98."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 8, 5, 3, 8, 16, 6], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "70",
+      "46",
+      "64",
+      "69"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][13] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[7][3]?",
+    "options": [
+      "1956",
+      "1944",
+      "1952",
+      "1368"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (7 * 13 + 3) * 8 = 1952."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 11, 5, 13, 10, 13, 9, 11], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "35",
+      "48",
+      "40",
+      "29"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 35."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "300",
+      "295",
+      "292",
+      "528"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 56% density, total edges = 295."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 17, 5, 1, 4, 2, 14, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "43",
+      "23",
+      "39",
+      "38"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "162",
+      "231",
+      "154",
+      "157"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 68% density, total edges = 157."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 4, 11, 5, 6, 6, 5, 13, 18, 18], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "80",
+      "67",
+      "72",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][14] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][6]?",
+    "options": [
+      "1106",
+      "1094",
+      "1036",
+      "1102"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (6 * 8 + 3) * 2 = 1102."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 12, 9, 3, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "21",
+      "45",
+      "49",
+      "40"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 40."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][18] starts at base address 1700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][5]?",
+    "options": [
+      "1720",
+      "1774",
+      "1786",
+      "1782"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (2 * 18 + 5) * 2 = 1782."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][19] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][14]?",
+    "options": [
+      "1416",
+      "1412",
+      "1280",
+      "1404"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (14 * 7 + 5) * 4 = 1412."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "243",
+      "235",
+      "351",
+      "238"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 68% density, total edges = 238."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][28] starts at base address 1300 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][5]?",
+    "options": [
+      "1470",
+      "1482",
+      "1330",
+      "1478"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (3 * 28 + 5) * 2 = 1478."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 11, 11, 10, 2, 16, 5, 18, 5], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "87",
+      "87",
+      "82",
+      "78"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "50",
+      "55",
+      "78",
+      "47"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 65% density, total edges = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "120",
+      "37",
+      "34",
+      "42"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 31% density, total edges = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 18, 4, 4, 8, 16, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "29",
+      "22",
+      "25",
+      "30"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 25."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Sorted Array?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Sorted Array, performing a 'Insertion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "73",
+      "76",
+      "171",
+      "81"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 45% density, total edges = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 5, 1, 3, 18, 5, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "19",
+      "20",
+      "6",
+      "24"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 19."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][14] starts at base address 1900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[15][10]?",
+    "options": [
+      "3464",
+      "3460",
+      "3452",
+      "3100"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (10 * 18 + 15) * 8 = 3460."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 13, 14, 11, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "50",
+      "59",
+      "45",
+      "27"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 6, 12, 13, 7, 11, 12], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "79",
+      "49",
+      "68",
+      "73"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "35",
+      "43",
+      "78",
+      "38"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 49% density, total edges = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][28] starts at base address 1700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[14][20]?",
+    "options": [
+      "2116",
+      "2112",
+      "1980",
+      "2104"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (14 * 28 + 20) * 1 = 2112."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "68",
+      "76",
+      "231",
+      "71"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 31% density, total edges = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 3, 3, 16, 17], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "61",
+      "44",
+      "39",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 19, 4, 12, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "71",
+      "66",
+      "61",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 1, 13, 3, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "28",
+      "17",
+      "33",
+      "31"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 28."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][25] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][10]?",
+    "options": [
+      "2244",
+      "2240",
+      "2232",
+      "2020"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (3 * 25 + 10) * 4 = 2240."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 7, 7, 12, 18, 10], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "81",
+      "54",
+      "71",
+      "76"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][18] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[12][3]?",
+    "options": [
+      "1336",
+      "1357",
+      "1349",
+      "1361"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (3 * 15 + 12) * 1 = 1357."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][20] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][18]?",
+    "options": [
+      "3116",
+      "3112",
+      "2088",
+      "3104"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (18 * 18 + 4) * 4 = 3112."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 20, 4, 16, 4, 6, 14, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "57",
+      "68",
+      "40",
+      "52"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][16] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][1]?",
+    "options": [
+      "1316",
+      "1568",
+      "1556",
+      "1564"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (2 * 16 + 1) * 8 = 1564."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "264",
+      "267",
+      "272",
+      "496"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 54% density, total edges = 267."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "12",
+      "20",
+      "36",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 43% density, total edges = 15."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][23] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][11]?",
+    "options": [
+      "2010",
+      "1888",
+      "2006",
+      "1998"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (4 * 23 + 11) * 2 = 2006."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 4, 20, 10, 7, 18], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "44",
+      "41",
+      "49",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 11, 10, 6, 9, 4, 8, 17], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "70",
+      "48",
+      "73",
+      "65"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][11] starts at base address 1800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][8]?",
+    "options": [
+      "1955",
+      "1856",
+      "1943",
+      "1951"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (8 * 18 + 7) * 1 = 1951."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][10] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[9][1]?",
+    "options": [
+      "2074",
+      "1918",
+      "2086",
+      "2082"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (9 * 10 + 1) * 2 = 2082."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][18] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][7]?",
+    "options": [
+      "1508",
+      "1442",
+      "1496",
+      "1504"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (7 * 7 + 3) * 2 = 1504."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 10, 19, 5, 5, 14, 20, 5], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "95",
+      "100",
+      "78",
+      "100"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 95."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "140",
+      "276",
+      "145",
+      "137"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 51% density, total edges = 140."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "15",
+      "7",
+      "15",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 69% density, total edges = 10."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 7, 1, 2, 3, 3, 16, 15, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "49",
+      "65",
+      "54",
+      "32"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 49."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "74",
+      "79",
+      "153",
+      "71"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 49% density, total edges = 74."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "88",
+      "96",
+      "253",
+      "91"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 36% density, total edges = 91."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "52",
+      "60",
+      "55",
+      "120"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 46% density, total edges = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][23] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[12][19]?",
+    "options": [
+      "3092",
+      "2812",
+      "3080",
+      "3088"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (19 * 15 + 12) * 4 = 3088."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 7, 17, 4, 5, 9], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "67",
+      "71",
+      "62",
+      "42"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "79",
+      "153",
+      "82",
+      "87"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 54% density, total edges = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 6, 1, 9, 3], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "7",
+      "11",
+      "15",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 10."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 14, 5, 3, 1, 10, 14, 3, 4], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "60",
+      "56",
+      "54",
+      "61"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 56."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 16, 12, 16, 17, 18, 4, 14, 3, 20], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "114",
+      "96",
+      "101",
+      "79"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 96."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "23",
+      "55",
+      "18",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 34% density, total edges = 18."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 13, 13, 14, 16, 19, 5], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "88",
+      "83",
+      "102",
+      "75"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 83."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][26] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[10][8]?",
+    "options": [
+      "1452",
+      "1464",
+      "1460",
+      "1360"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (8 * 15 + 10) * 2 = 1460."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 11, 19, 19, 5], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "30",
+      "52",
+      "38",
+      "33"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 33."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 9, 8, 7, 3], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "27",
+      "36",
+      "34",
+      "31"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "125",
+      "120",
+      "325",
+      "117"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 37% density, total edges = 120."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][12] starts at base address 1500 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[11][9]?",
+    "options": [
+      "1782",
+      "1774",
+      "1786",
+      "1698"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (11 * 12 + 9) * 2 = 1782."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 3, 19, 15, 6, 7, 18, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "43",
+      "60",
+      "59",
+      "54"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 54."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "2",
+      "5",
+      "15",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 39% density, total edges = 5."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Stack?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "answer": 2,
+    "explanation": "For Stack, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 11, 10, 4, 13, 1, 19], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "38",
+      "50",
+      "55",
+      "63"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][20] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][16]?",
+    "options": [
+      "1828",
+      "1824",
+      "1816",
+      "1420"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (16 * 11 + 5) * 4 = 1824."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "435",
+      "248",
+      "243",
+      "240"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 56% density, total edges = 243."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][26] starts at base address 1600 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][9]?",
+    "options": [
+      "1858",
+      "1654",
+      "1850",
+      "1862"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (9 * 14 + 3) * 2 = 1858."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][14] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][2]?",
+    "options": [
+      "1360",
+      "1372",
+      "1280",
+      "1368"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (2 * 8 + 5) * 8 = 1368."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "37",
+      "66",
+      "45",
+      "40"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 61% density, total edges = 40."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][24] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][11]?",
+    "options": [
+      "1776",
+      "2048",
+      "2060",
+      "2056"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (11 * 5 + 2) * 8 = 2056."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][15] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[7][10]?",
+    "options": [
+      "1358",
+      "1140",
+      "1354",
+      "1346"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (10 * 17 + 7) * 2 = 1354."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][25] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[6][22]?",
+    "options": [
+      "2580",
+      "2256",
+      "2576",
+      "2568"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (6 * 25 + 22) * 8 = 2576."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "61",
+      "69",
+      "64",
+      "171"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 38% density, total edges = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][12] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][4]?",
+    "options": [
+      "1936",
+      "1932",
+      "1924",
+      "1908"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (1 * 12 + 4) * 2 = 1932."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 8, 10, 6, 20, 13, 1, 9, 19, 13], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "102",
+      "86",
+      "107",
+      "121"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 102."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "205",
+      "200",
+      "378",
+      "197"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 53% density, total edges = 200."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][19] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][7]?",
+    "options": [
+      "2124",
+      "2568",
+      "2556",
+      "2564"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (4 * 19 + 7) * 8 = 2564."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "187",
+      "182",
+      "179",
+      "406"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 45% density, total edges = 182."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][19] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[7][4]?",
+    "options": [
+      "1872",
+      "1868",
+      "1524",
+      "1860"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (4 * 16 + 7) * 8 = 1868."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "11",
+      "16",
+      "8",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 53% density, total edges = 11."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][29] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][21]?",
+    "options": [
+      "1537",
+      "1541",
+      "1529",
+      "1484"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (4 * 29 + 21) * 1 = 1537."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "35",
+      "30",
+      "55",
+      "27"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 56% density, total edges = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "13",
+      "21",
+      "36",
+      "16"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 45% density, total edges = 16."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "231",
+      "148",
+      "140",
+      "143"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 62% density, total edges = 143."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 4, 4, 3, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "27",
+      "43",
+      "48",
+      "59"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][17] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[14][6]?",
+    "options": [
+      "2176",
+      "1872",
+      "2180",
+      "2168"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (6 * 18 + 14) * 8 = 2176."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "465",
+      "330",
+      "325",
+      "322"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 70% density, total edges = 325."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][19] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[9][7]?",
+    "options": [
+      "2004",
+      "2304",
+      "2300",
+      "2292"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (7 * 13 + 9) * 8 = 2300."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][14] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[15][7]?",
+    "options": [
+      "1672",
+      "1610",
+      "1660",
+      "1668"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (7 * 17 + 15) * 2 = 1668."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 8, 18, 9, 1, 1, 18, 7], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "53",
+      "62",
+      "35",
+      "58"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 53."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][23] starts at base address 1200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][17]?",
+    "options": [
+      "1418",
+      "1422",
+      "1410",
+      "1336"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (4 * 23 + 17) * 2 = 1418."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 2, 14, 9, 8, 12], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "58",
+      "50",
+      "33",
+      "55"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][19] starts at base address 1500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[12][7]?",
+    "options": [
+      "2444",
+      "2440",
+      "1836",
+      "2432"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (12 * 19 + 7) * 4 = 2440."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][27] starts at base address 1900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][7]?",
+    "options": [
+      "2244",
+      "2236",
+      "2248",
+      "1956"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (7 * 6 + 1) * 8 = 2244."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 18, 1, 3, 2, 10, 9, 8], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "43",
+      "57",
+      "66",
+      "62"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 7, 9, 6, 1, 11, 5, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "23",
+      "39",
+      "35",
+      "34"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "333",
+      "561",
+      "341",
+      "336"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 60% density, total edges = 336."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 5 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "2",
+      "10",
+      "5",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 5*(4)/2 = 10. At 51% density, total edges = 5."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "99",
+      "231",
+      "91",
+      "94"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 41% density, total edges = 94."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "561",
+      "251",
+      "246",
+      "243"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 44% density, total edges = 246."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][15] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][13]?",
+    "options": [
+      "1847",
+      "1826",
+      "1835",
+      "1843"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (2 * 15 + 13) * 1 = 1843."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "18",
+      "10",
+      "36",
+      "13"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 37% density, total edges = 13."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "112",
+      "231",
+      "115",
+      "120"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 50% density, total edges = 115."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "561",
+      "238",
+      "241",
+      "246"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 43% density, total edges = 241."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][26] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[10][6]?",
+    "options": [
+      "2964",
+      "2968",
+      "2956",
+      "2140"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (10 * 26 + 6) * 4 = 2964."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][28] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][10]?",
+    "options": [
+      "2144",
+      "2136",
+      "1980",
+      "2148"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (4 * 28 + 10) * 2 = 2144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 16, 3, 9, 14, 16], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "94",
+      "83",
+      "58",
+      "78"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 16, 15, 3, 20], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "47",
+      "31",
+      "52",
+      "62"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 4, 7, 14, 17, 5, 9, 3], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "76",
+      "59",
+      "78",
+      "73"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 73."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 10, 19, 6, 6, 8, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "49",
+      "68",
+      "60",
+      "65"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][13] starts at base address 1200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][3]?",
+    "options": [
+      "1280",
+      "1292",
+      "1212",
+      "1288"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (3 * 7 + 1) * 4 = 1288."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][15] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][8]?",
+    "options": [
+      "1415",
+      "1408",
+      "1427",
+      "1423"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (1 * 15 + 8) * 1 = 1423."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "123",
+      "253",
+      "118",
+      "115"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 47% density, total edges = 118."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 19, 16, 11, 14, 7, 12, 13, 19], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "79",
+      "86",
+      "67",
+      "84"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 79."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][26] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][21]?",
+    "options": [
+      "1568",
+      "1576",
+      "1580",
+      "1368"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (1 * 26 + 21) * 8 = 1576."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
+    "options": [
+      "93",
+      "210",
+      "85",
+      "88"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 42% density, total edges = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 1, 19, 6, 15, 7, 2, 8, 5], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "37",
+      "32",
+      "20",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 32."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][17] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][7]?",
+    "options": [
+      "1728",
+      "1794",
+      "1806",
+      "1802"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (7 * 7 + 2) * 2 = 1802."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 7, 11, 15, 2, 19, 1, 7], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "38",
+      "35",
+      "41",
+      "36"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 3, 3, 14, 2, 4], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "35",
+      "26",
+      "30",
+      "34"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 16, 9, 3, 16, 12, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "47",
+      "25",
+      "42",
+      "51"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 42."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 10, 17, 4, 9, 4, 19, 6, 10], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "75",
+      "70",
+      "69",
+      "76"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 70."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 14, 18, 19, 9], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "32",
+      "49",
+      "67",
+      "54"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 49."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][16] starts at base address 1500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
+    "options": [
+      "1516",
+      "1528",
+      "1510",
+      "1524"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (1 * 7 + 5) * 2 = 1524."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][27] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][4]?",
+    "options": [
+      "2004",
+      "2012",
+      "2016",
+      "1880"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 12 + 5) * 4 = 2012."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "52",
+      "47",
+      "44",
+      "153"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 31% density, total edges = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 10, 13, 10, 6], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "44",
+      "23",
+      "52",
+      "39"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 4, 2, 20, 18, 18, 5, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "6",
+      "14",
+      "19",
+      "16"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 14."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][11] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[11][3]?",
+    "options": [
+      "1951",
+      "1959",
+      "1963",
+      "1933"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (3 * 16 + 11) * 1 = 1959."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 1, 16, 13, 12, 2, 14], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "62",
+      "69",
+      "42",
+      "57"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "82",
+      "120",
+      "79",
+      "87"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 69% density, total edges = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 13, 5, 20, 1, 17, 2, 17, 19, 4], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "88",
+      "105",
+      "93",
+      "75"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 1, 5, 16, 19, 2, 20, 4, 18, 18], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "67",
+      "90",
+      "89",
+      "85"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 85."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "327",
+      "332",
+      "324",
+      "528"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 62% density, total edges = 327."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 20, 4, 6, 17, 16, 6], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "71",
+      "69",
+      "77",
+      "76"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 5, 1, 15, 7, 18, 1, 10], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "72",
+      "47",
+      "67",
+      "68"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "28",
+      "33",
+      "25",
+      "78"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 37% density, total edges = 28."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 18, 13, 19, 12, 12, 13, 4, 5, 16], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "105",
+      "100",
+      "96",
+      "105"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][16] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[14][11]?",
+    "options": [
+      "1570",
+      "1408",
+      "1574",
+      "1562"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (14 * 16 + 11) * 2 = 1570."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 7, 17, 4, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "39",
+      "44",
+      "24",
+      "56"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 20, 7, 2, 8, 8, 3, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "62",
+      "65",
+      "67",
+      "48"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][11] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
+    "options": [
+      "1560",
+      "1796",
+      "1792",
+      "1784"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (4 * 11 + 5) * 8 = 1792."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][27] starts at base address 1700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][2]?",
+    "options": [
+      "1932",
+      "1940",
+      "1944",
+      "1732"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (2 * 14 + 2) * 8 = 1940."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 9, 1, 7, 19, 14, 18, 18, 20], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "65",
+      "50",
+      "79",
+      "70"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 8, 12, 11, 12, 12, 4, 20, 1], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "73",
+      "59",
+      "77",
+      "78"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 73."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "171",
+      "112",
+      "104",
+      "107"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 63% density, total edges = 107."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 13, 6, 18, 17], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "19",
+      "36",
+      "42",
+      "41"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "194",
+      "186",
+      "378",
+      "189"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 50% density, total edges = 189."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 7, 9, 3, 14, 15, 5, 17, 13, 12], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "95",
+      "108",
+      "120",
+      "113"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 108."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 11, 12, 11, 6, 11, 12, 1, 7], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "81",
+      "70",
+      "75",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 70."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][12] starts at base address 1500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][1]?",
+    "options": [
+      "1784",
+      "1792",
+      "1796",
+      "1524"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (6 * 12 + 1) * 4 = 1792."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][16] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][10]?",
+    "options": [
+      "1590",
+      "1623",
+      "1611",
+      "1619"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (10 * 11 + 9) * 1 = 1619."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 6, 15, 18, 18, 8, 5, 14], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "39",
+      "69",
+      "56",
+      "51"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][13] starts at base address 1800 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "2000",
+      "2008",
+      "1864",
+      "2012"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 6 + 2) * 8 = 2008."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "198",
+      "406",
+      "203",
+      "195"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 49% density, total edges = 198."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 16, 8, 13, 10, 1, 11, 15, 1], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "24",
+      "44",
+      "36",
+      "41"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "21",
+      "29",
+      "36",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 67% density, total edges = 24."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][11] starts at base address 1100 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[14][3]?",
+    "options": [
+      "1228",
+      "1236",
+      "1240",
+      "1184"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (3 * 18 + 14) * 2 = 1236."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][23] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][6]?",
+    "options": [
+      "1275",
+      "1267",
+      "1279",
+      "1254"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (6 * 11 + 9) * 1 = 1275."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][19] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[7][8]?",
+    "options": [
+      "1356",
+      "1445",
+      "1441",
+      "1433"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (7 * 19 + 8) * 1 = 1441."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][21] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][1]?",
+    "options": [
+      "1812",
+      "1828",
+      "1836",
+      "1840"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (1 * 6 + 3) * 4 = 1836."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 4, 8, 10, 5, 2, 7, 4], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "45",
+      "29",
+      "48",
+      "43"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "81",
+      "89",
+      "153",
+      "84"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 55% density, total edges = 84."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][19] starts at base address 1300 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[7][11]?",
+    "options": [
+      "1454",
+      "1592",
+      "1588",
+      "1580"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (7 * 19 + 11) * 2 = 1588."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "29",
+      "55",
+      "32",
+      "37"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 59% density, total edges = 32."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "93",
+      "153",
+      "101",
+      "96"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 63% density, total edges = 96."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 12, 1, 9, 17, 5, 5, 9], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "47",
+      "52",
+      "39",
+      "64"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 7, 12, 11, 7, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "30",
+      "42",
+      "47",
+      "53"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 42."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "169",
+      "177",
+      "172",
+      "253"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 68% density, total edges = 172."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 5, 19, 7, 19], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "56",
+      "51",
+      "50",
+      "70"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 6, 15, 5, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "26",
+      "38",
+      "43",
+      "43"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 9, 16, 13, 2, 8, 13, 7, 10], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "92",
+      "78",
+      "87",
+      "82"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 8, 13, 5, 6, 20, 15, 4, 6], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "94",
+      "67",
+      "79",
+      "84"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 79."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][17] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[10][12]?",
+    "options": [
+      "2360",
+      "2636",
+      "2624",
+      "2632"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (12 * 12 + 10) * 8 = 2632."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][25] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][16]?",
+    "options": [
+      "1441",
+      "1433",
+      "1445",
+      "1380"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (5 * 25 + 16) * 1 = 1441."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][24] starts at base address 1500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[15][12]?",
+    "options": [
+      "1986",
+      "1978",
+      "1860",
+      "1990"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (12 * 19 + 15) * 2 = 1986."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 8, 14, 15, 15, 13, 8, 20, 18], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "73",
+      "87",
+      "79",
+      "84"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 79."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 15, 17, 15, 2, 18, 19, 10, 12], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "49",
+      "62",
+      "65",
+      "60"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "205",
+      "200",
+      "197",
+      "351"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 57% density, total edges = 200."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 19, 19, 17, 12, 19, 6, 16], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "127",
+      "138",
+      "122",
+      "108"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 122."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "20",
+      "55",
+      "23",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 43% density, total edges = 23."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "36",
+      "8",
+      "11",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 33% density, total edges = 11."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 5 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "3",
+      "8",
+      "0",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 5*(4)/2 = 10. At 38% density, total edges = 3."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][18] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][4]?",
+    "options": [
+      "1600",
+      "1608",
+      "1612",
+      "1128"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (4 * 18 + 4) * 8 = 1608."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][14] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][8]?",
+    "options": [
+      "1868",
+      "1880",
+      "1764",
+      "1876"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (1 * 14 + 8) * 8 = 1876."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "208",
+      "406",
+      "200",
+      "203"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 50% density, total edges = 203."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][10] starts at base address 1000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][7]?",
+    "options": [
+      "1021",
+      "1041",
+      "1037",
+      "1029"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (3 * 10 + 7) * 1 = 1037."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][19] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[7][11]?",
+    "options": [
+      "2452",
+      "2456",
+      "2444",
+      "1916"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (7 * 19 + 11) * 8 = 2452."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "158",
+      "161",
+      "231",
+      "166"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 70% density, total edges = 161."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][18] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
+    "options": [
+      "1377",
+      "1320",
+      "1381",
+      "1369"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (4 * 18 + 5) * 1 = 1377."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][27] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][18]?",
+    "options": [
+      "1836",
+      "1388",
+      "1828",
+      "1840"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (18 * 10 + 4) * 4 = 1836."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
+    "options": [
+      "68",
+      "171",
+      "76",
+      "71"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 42% density, total edges = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][15] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][10]?",
+    "options": [
+      "1648",
+      "1440",
+      "1644",
+      "1636"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (10 * 12 + 2) * 2 = 1644."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "134",
+      "210",
+      "139",
+      "131"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 64% density, total edges = 134."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "330",
+      "561",
+      "325",
+      "322"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 58% density, total edges = 325."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "129",
+      "253",
+      "134",
+      "126"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 51% density, total edges = 129."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 12, 15, 6, 7, 17, 5, 19], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "87",
+      "62",
+      "87",
+      "82"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 6, 3, 8, 13, 9, 10], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "67",
+      "49",
+      "62",
+      "57"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 4, 20, 4, 9, 20, 10, 5], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "43",
+      "24",
+      "38",
+      "58"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 10, 13, 5, 6, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "36",
+      "41",
+      "41",
+      "28"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "17",
+      "12",
+      "28",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 46% density, total edges = 12."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "116",
+      "171",
+      "119",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 70% density, total edges = 119."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 11, 1, 2, 13, 3], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "47",
+      "34",
+      "27",
+      "39"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Stack?",
     "options": [
       "O(n log n)",
       "O(n)",
@@ -13844,160 +7488,6516 @@ window.quizData.dsa = [
       "O(log n)"
     ],
     "answer": 1,
-    "explanation": "For Doubly Linked List, a Search under Best Case takes O(n)."
+    "explanation": "For Stack, performing a 'Access' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Deletion' operation on a Queue? (Set 100) (Set 235) (Set 307) (Set 739)",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 3, 13, 15, 3, 7, 11, 9, 19, 20], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
+      "52",
+      "59",
+      "64",
+      "70"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 59."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 15, 6, 13, 16, 7, 5], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "50",
+      "84",
+      "68",
+      "73"
     ],
     "answer": 2,
-    "explanation": "For Queue, a Deletion under Average Case takes O(1)."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 68."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a AVL Tree? (Set 651) (Set 740)",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "For AVL Tree, a Search under Worst Case takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Access' operation on a Queue? (Set 741)",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, a Access under Worst Case takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Strings",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "Checking if two strings are anagrams requires? (Set 174) (Set 334) (Set 510) (Set 742)",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
     "options": [
-      "Character frequency comparison",
-      "Substring search (primary approach)",
-      "Regular expressions in practice",
-      "Sorting only (widely accepted)"
+      "73",
+      "76",
+      "136",
+      "81"
     ],
-    "answer": 0,
-    "explanation": "Same character counts means anagram."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 56% density, total edges = 76."
   },
   {
     "subject": "DSA",
-    "topic": "Queue",
+    "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "BFS graph traversal uses? (Set 618) (Set 644) (Set 743)",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
     "options": [
-      "Deque",
-      "Priority queue",
-      "Stack",
-      "Queue"
+      "134",
+      "129",
+      "126",
+      "300"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 43% density, total edges = 129."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "496",
+      "327",
+      "319",
+      "322"
     ],
     "answer": 3,
-    "explanation": "BFS explores level by level using FIFO."
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 65% density, total edges = 322."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the worst case time complexity of performing a 'Search' operation on a AVL Tree? (Set 651) (Set 744)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
     "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
+      "4",
+      "15",
+      "12",
+      "7"
     ],
-    "answer": 0,
-    "explanation": "For AVL Tree, a Search under Worst Case takes O(log n)."
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 50% density, total edges = 7."
   },
   {
     "subject": "DSA",
-    "topic": "Graph",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 1, 16, 7, 13, 11, 13, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "35",
+      "19",
+      "17",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 19."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "Prim's algorithm starts from? (Set 745)",
+    "question": "A 2D array A[12][27] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[7][8]?",
     "options": [
-      "All vertices",
-      "Heaviest edge",
-      "Leaf node by design",
-      "Any single vertex"
+      "1212",
+      "1498",
+      "1486",
+      "1494"
     ],
     "answer": 3,
-    "explanation": "Prim grows MST from one vertex using min-edge."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (7 * 27 + 8) * 2 = 1494."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 1, 11, 13, 11, 15, 1, 2, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "12",
+      "21",
+      "26",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 21."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][29] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][25]?",
+    "options": [
+      "1850",
+      "2744",
+      "2752",
+      "2756"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (25 * 19 + 1) * 2 = 2752."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 13, 10, 8, 18, 13, 2, 5], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "78",
+      "83",
+      "91",
+      "62"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "48",
+      "40",
+      "43",
+      "91"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 48% density, total edges = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][27] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][18]?",
+    "options": [
+      "1357",
+      "1254",
+      "1365",
+      "1369"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (18 * 9 + 3) * 1 = 1365."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 9, 16, 20, 8, 10, 11, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "45",
+      "61",
+      "56",
+      "76"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 56."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "250",
+      "258",
+      "378",
+      "253"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 67% density, total edges = 253."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "201",
+      "325",
+      "209",
+      "204"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 63% density, total edges = 204."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][22] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[13][4]?",
+    "options": [
+      "2008",
+      "2096",
+      "2084",
+      "2092"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 15 + 13) * 4 = 2092."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 11, 5, 12, 20, 10, 14, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "22",
+      "16",
+      "22",
+      "17"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 17."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][17] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[12][10]?",
+    "options": [
+      "1952",
+      "1948",
+      "1940",
+      "1780"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (10 * 15 + 12) * 4 = 1948."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][20] starts at base address 1400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[9][12]?",
+    "options": [
+      "1784",
+      "1776",
+      "1788",
+      "1616"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (9 * 20 + 12) * 2 = 1784."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 3, 8, 18, 13, 7, 1, 18, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "40",
+      "53",
+      "29",
+      "35"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 35."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "124",
+      "119",
+      "116",
+      "210"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 57% density, total edges = 119."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "74",
+      "66",
+      "69",
+      "210"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 33% density, total edges = 69."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 10, 7, 2, 2, 5, 2, 7], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "52",
+      "49",
+      "47",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][12] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][8]?",
+    "options": [
+      "1556",
+      "1607",
+      "1595",
+      "1603"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (8 * 12 + 7) * 1 = 1603."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 1, 2, 7, 2, 1, 15], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "62",
+      "52",
+      "47",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][29] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][6]?",
+    "options": [
+      "1290",
+      "1286",
+      "1136",
+      "1278"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (3 * 29 + 6) * 2 = 1286."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][26] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][22]?",
+    "options": [
+      "2096",
+      "2020",
+      "2104",
+      "2108"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (5 * 26 + 22) * 2 = 2104."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 4, 3, 7, 13, 1], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "25",
+      "20",
+      "7",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 20."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 13, 7, 11, 1, 11, 8, 12, 2, 8], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "45",
+      "56",
+      "31",
+      "50"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][15] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][12]?",
+    "options": [
+      "1780",
+      "1788",
+      "1396",
+      "1792"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (12 * 5 + 1) * 8 = 1788."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 4, 13, 1, 11, 4, 15, 2, 18, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "41",
+      "29",
+      "30",
+      "35"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 5, 7, 16, 12, 8, 15, 16, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "29",
+      "12",
+      "36",
+      "34"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 29."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "options": [
+      "179",
+      "561",
+      "176",
+      "184"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 32% density, total edges = 179."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "131",
+      "253",
+      "123",
+      "126"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 50% density, total edges = 126."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][26] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][12]?",
+    "options": [
+      "1848",
+      "2048",
+      "2044",
+      "2036"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (12 * 5 + 1) * 4 = 2044."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "18",
+      "23",
+      "15",
+      "28"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 65% density, total edges = 18."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "48",
+      "53",
+      "45",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 53% density, total edges = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][23] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[7][11]?",
+    "options": [
+      "2110",
+      "1854",
+      "2102",
+      "2114"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (11 * 18 + 7) * 2 = 2110."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "41",
+      "33",
+      "78",
+      "36"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 47% density, total edges = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][26] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][23]?",
+    "options": [
+      "1576",
+      "1572",
+      "1564",
+      "1376"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (23 * 5 + 3) * 4 = 1572."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "51",
+      "46",
+      "43",
+      "66"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 70% density, total edges = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][24] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][1]?",
+    "options": [
+      "1398",
+      "1406",
+      "1410",
+      "1401"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (1 * 5 + 1) * 1 = 1406."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "210",
+      "87",
+      "95",
+      "90"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 43% density, total edges = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "166",
+      "163",
+      "171",
+      "406"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 41% density, total edges = 166."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 3, 17, 16, 20, 7, 13], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "103",
+      "90",
+      "95",
+      "76"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "149",
+      "231",
+      "152",
+      "157"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 66% density, total edges = 152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][25] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[7][6]?",
+    "options": [
+      "1984",
+      "2254",
+      "2266",
+      "2262"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (7 * 25 + 6) * 2 = 2262."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 14, 8, 12, 5, 13, 19, 5, 13], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "85",
+      "90",
+      "90",
+      "76"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 85."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 3, 3, 2, 16, 19, 18, 6], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "79",
+      "80",
+      "67",
+      "74"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 74."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][24] starts at base address 1500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][22]?",
+    "options": [
+      "2304",
+      "1676",
+      "2292",
+      "2300"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (22 * 9 + 2) * 4 = 2300."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][26] starts at base address 1000 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[9][2]?",
+    "options": [
+      "1944",
+      "1072",
+      "1936",
+      "1948"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (9 * 26 + 2) * 4 = 1944."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 9, 14, 9, 20, 2, 8], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "61",
+      "66",
+      "81",
+      "52"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 10, 3, 11, 19, 12, 20], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "20",
+      "13",
+      "25",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 20."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][27] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][22]?",
+    "options": [
+      "3096",
+      "3084",
+      "3092",
+      "1676"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (22 * 9 + 1) * 8 = 3092."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "249",
+      "496",
+      "252",
+      "257"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 51% density, total edges = 252."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][16] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][12]?",
+    "options": [
+      "2408",
+      "2420",
+      "2176",
+      "2416"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (12 * 8 + 6) * 8 = 2416."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 18, 8, 3, 13, 17], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "43",
+      "26",
+      "51",
+      "48"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "26",
+      "45",
+      "31",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 59% density, total edges = 26."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "18",
+      "15",
+      "28",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 66% density, total edges = 18."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][11] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][7]?",
+    "options": [
+      "1356",
+      "1307",
+      "1368",
+      "1364"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (7 * 9 + 1) * 1 = 1364."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
+    "options": [
+      "126",
+      "300",
+      "131",
+      "123"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 42% density, total edges = 126."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 1, 8, 7, 14, 19, 10, 14], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "34",
+      "16",
+      "32",
+      "27"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][11] starts at base address 1100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[7][6]?",
+    "options": [
+      "1187",
+      "1183",
+      "1175",
+      "1142"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (7 * 11 + 6) * 1 = 1183."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "45",
+      "48",
+      "53",
+      "105"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 46% density, total edges = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 20, 18, 19, 7, 2, 7, 17], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "62",
+      "49",
+      "38",
+      "44"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][24] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[8][9]?",
+    "options": [
+      "2020",
+      "2008",
+      "1972",
+      "2016"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (9 * 12 + 8) * 1 = 2016."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 11, 13, 7, 14, 5, 7, 5, 20], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "64",
+      "57",
+      "71",
+      "69"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 5, 8, 18, 2, 3, 10, 4], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "62",
+      "50",
+      "61",
+      "57"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][11] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[8][2]?",
+    "options": [
+      "1596",
+      "1428",
+      "1608",
+      "1604"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (2 * 15 + 8) * 8 = 1604."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][18] starts at base address 1400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][1]?",
+    "options": [
+      "1402",
+      "1438",
+      "1442",
+      "1430"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (1 * 18 + 1) * 2 = 1438."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][26] starts at base address 1700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[10][5]?",
+    "options": [
+      "1957",
+      "1750",
+      "1965",
+      "1969"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (10 * 26 + 5) * 1 = 1965."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 15, 4, 6, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "34",
+      "40",
+      "39",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "210",
+      "104",
+      "107",
+      "112"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 51% density, total edges = 107."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 18, 18, 14, 18, 10, 12, 1], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "54",
+      "49",
+      "36",
+      "67"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 49."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 5 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "10",
+      "11",
+      "3",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 5*(4)/2 = 10. At 69% density, total edges = 6."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 8, 12, 3, 10, 11, 3, 7], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "43",
+      "23",
+      "46",
+      "48"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][26] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][5]?",
+    "options": [
+      "1156",
+      "1130",
+      "1160",
+      "1148"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (5 * 10 + 6) * 1 = 1156."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "42",
+      "45",
+      "78",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 58% density, total edges = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 2, 5, 2, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "39",
+      "33",
+      "15",
+      "38"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 33."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 7, 19, 11, 13], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "50",
+      "62",
+      "57",
+      "70"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "9",
+      "14",
+      "6",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 63% density, total edges = 9."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 7, 19, 14, 20], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "36",
+      "31",
+      "26",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 3, 6, 19, 13, 20, 16, 11, 1], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "59",
+      "40",
+      "28",
+      "45"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 40."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 4, 12, 1, 7, 10, 4], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "56",
+      "57",
+      "38",
+      "52"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "58",
+      "66",
+      "61",
+      "136"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 45% density, total edges = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][27] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[4][14]?",
+    "options": [
+      "1180",
+      "1188",
+      "1156",
+      "1192"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (14 * 6 + 4) * 1 = 1188."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 1, 19, 4, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "24",
+      "35",
+      "36",
+      "31"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 17, 5, 13, 1, 5, 9], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "60",
+      "55",
+      "56",
+      "36"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 4, 10, 16, 10], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "34",
+      "44",
+      "39",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "406",
+      "133",
+      "138",
+      "130"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 33% density, total edges = 133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][19] starts at base address 1000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][5]?",
+    "options": [
+      "1010",
+      "1037",
+      "1029",
+      "1041"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (5 * 7 + 2) * 1 = 1037."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][25] starts at base address 1500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][2]?",
+    "options": [
+      "1664",
+      "1540",
+      "1676",
+      "1672"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (2 * 19 + 5) * 4 = 1672."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 8, 5, 20, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "39",
+      "33",
+      "34",
+      "54"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "171",
+      "89",
+      "97",
+      "92"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 54% density, total edges = 92."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 20, 12, 20, 8, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "72",
+      "64",
+      "60",
+      "69"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 16, 12, 18, 2, 5, 14, 17], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "86",
+      "67",
+      "100",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 16, 6, 17, 9, 6, 10], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "64",
+      "75",
+      "70",
+      "65"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 5, 18, 12, 20, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "39",
+      "57",
+      "23",
+      "44"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 6, 19, 5, 19, 6, 4, 3, 20], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "49",
+      "60",
+      "74",
+      "55"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][15] starts at base address 1500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][8]?",
+    "options": [
+      "1844",
+      "1660",
+      "1832",
+      "1840"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (8 * 10 + 5) * 4 = 1840."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 20, 8, 1, 19, 4, 7, 7, 20], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "41",
+      "49",
+      "28",
+      "46"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 41."
   },
   {
     "subject": "DSA",
     "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is the auxiliary space of quicksort (average)? (Set 40) (Set 746)",
-    "options": [
-      "O(n²)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 3,
-    "explanation": "Recursion stack depth is log n on average."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the best case time complexity of performing a 'Access' operation on a Stack? (Set 747)",
+    "question": "What is the time complexity of performing a 'Access' operation on a Singly Linked List?",
     "options": [
       "O(1)",
-      "O(log n)",
       "O(n log n)",
+      "O(log n)",
       "O(n)"
     ],
     "answer": 3,
-    "explanation": "For Stack, a Access under Best Case takes O(n)."
+    "explanation": "For Singly Linked List, performing a 'Access' takes O(n)."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Easy",
-    "question": "In DSA, what is the average case time complexity of performing a 'Access' operation on a Array (sorted)? (Set 748)",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
     "options": [
-      "O(n log n)",
-      "O(n)",
-      "O(1)",
-      "O(log n)"
+      "21",
+      "29",
+      "24",
+      "55"
     ],
     "answer": 2,
-    "explanation": "For Array (sorted), a Access under Average Case takes O(1)."
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 45% density, total edges = 24."
   },
   {
     "subject": "DSA",
-    "topic": "Complexities",
-    "difficulty": "Medium",
-    "question": "In DSA, what is the average case time complexity of performing a 'Search' operation on a Singly Linked List? (Set 749)",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][29] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[4][2]?",
     "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
+      "1308",
+      "1324",
+      "1332",
+      "1336"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (2 * 14 + 4) * 1 = 1332."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 2, 13, 9, 15, 19, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "83",
+      "58",
+      "64",
+      "69"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][24] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][13]?",
+    "options": [
+      "1880",
+      "1868",
+      "1504",
+      "1876"
     ],
     "answer": 3,
-    "explanation": "For Singly Linked List, a Search under Average Case takes O(n)."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (13 * 18 + 4) * 2 = 1876."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "14",
+      "28",
+      "17",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 61% density, total edges = 17."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 13, 13, 14, 8, 5, 10, 3, 10], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "66",
+      "78",
+      "75",
+      "80"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 75."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][20] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[6][10]?",
+    "options": [
+      "1884",
+      "1888",
+      "1540",
+      "1876"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (10 * 14 + 6) * 4 = 1884."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][10] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][3]?",
+    "options": [
+      "1922",
+      "1909",
+      "1930",
+      "1934"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (3 * 9 + 3) * 1 = 1930."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][11] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][6]?",
+    "options": [
+      "1528",
+      "1424",
+      "1516",
+      "1524"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (6 * 10 + 2) * 2 = 1524."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "435",
+      "257",
+      "249",
+      "252"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 58% density, total edges = 252."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 19, 12, 12, 10, 19, 7, 11, 19], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "60",
+      "48",
+      "53",
+      "43"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 6, 20, 3, 11, 17, 15, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "36",
+      "34",
+      "29",
+      "31"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 11, 5, 2, 17], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "48",
+      "65",
+      "53",
+      "35"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "13",
+      "8",
+      "15",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 56% density, total edges = 8."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "107",
+      "102",
+      "99",
+      "276"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 37% density, total edges = 102."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 6, 19, 12, 5, 14, 5, 19, 16, 7], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "56",
+      "61",
+      "42",
+      "61"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 56."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 17, 17, 10, 17], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "57",
+      "52",
+      "44",
+      "62"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "351",
+      "208",
+      "203",
+      "200"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 58% density, total edges = 203."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][29] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[11][17]?",
+    "options": [
+      "2274",
+      "2572",
+      "2576",
+      "2564"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (11 * 29 + 17) * 2 = 2572."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 17, 11, 8, 6, 19, 5, 5, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "55",
+      "36",
+      "60",
+      "63"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "83",
+      "86",
+      "210",
+      "91"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 41% density, total edges = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "325",
+      "203",
+      "195",
+      "198"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 61% density, total edges = 198."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "435",
+      "221",
+      "226",
+      "218"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 51% density, total edges = 221."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 1, 6, 14, 20, 13, 11, 2, 4, 6], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "92",
+      "86",
+      "81",
+      "65"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 81."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 2, 18, 6, 10, 8, 7, 8, 3], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "55",
+      "20",
+      "42",
+      "37"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][20] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][4]?",
+    "options": [
+      "1876",
+      "1816",
+      "1884",
+      "1888"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (4 * 20 + 4) * 1 = 1884."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "287",
+      "435",
+      "284",
+      "292"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 66% density, total edges = 287."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 8, 20, 15, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "55",
+      "65",
+      "50",
+      "43"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 17, 13, 15, 3, 15, 6, 13], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "102",
+      "89",
+      "82",
+      "94"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 89."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][29] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[16][6]?",
+    "options": [
+      "2972",
+      "2980",
+      "1484",
+      "2984"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (16 * 29 + 6) * 4 = 2980."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
+    "options": [
+      "465",
+      "136",
+      "144",
+      "139"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 30% density, total edges = 139."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][12] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][3]?",
+    "options": [
+      "1268",
+      "1264",
+      "1256",
+      "1144"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (3 * 9 + 6) * 8 = 1264."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 12, 19, 3, 3, 3, 4], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "64",
+      "65",
+      "60",
+      "44"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][19] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][7]?",
+    "options": [
+      "1396",
+      "1328",
+      "1404",
+      "1408"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (1 * 19 + 7) * 4 = 1404."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][17] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][7]?",
+    "options": [
+      "2124",
+      "2500",
+      "2504",
+      "2492"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (4 * 17 + 7) * 8 = 2500."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "57",
+      "65",
+      "60",
+      "120"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 50% density, total edges = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][11] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[15][2]?",
+    "options": [
+      "1398",
+      "1360",
+      "1402",
+      "1390"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (2 * 17 + 15) * 2 = 1398."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 16, 15, 16, 16, 5, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "47",
+      "57",
+      "68",
+      "52"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][16] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][5]?",
+    "options": [
+      "1508",
+      "1516",
+      "1480",
+      "1520"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (5 * 10 + 8) * 2 = 1516."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "29",
+      "66",
+      "37",
+      "32"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 49% density, total edges = 32."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 16, 12, 4, 14, 20], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "68",
+      "63",
+      "77",
+      "46"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 63."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][28] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[7][17]?",
+    "options": [
+      "2113",
+      "2105",
+      "2117",
+      "2019"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (7 * 28 + 17) * 1 = 2113."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][26] starts at base address 1600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][18]?",
+    "options": [
+      "1648",
+      "1618",
+      "1636",
+      "1644"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (1 * 26 + 18) * 1 = 1644."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 19, 7, 10, 17, 1, 16], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "75",
+      "74",
+      "54",
+      "79"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 74."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "122",
+      "351",
+      "119",
+      "127"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 35% density, total edges = 122."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "325",
+      "206",
+      "198",
+      "201"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 62% density, total edges = 201."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 7, 18, 20, 4, 7, 20, 5, 12, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "45",
+      "83",
+      "63",
+      "68"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 63."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][22] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[12][11]?",
+    "options": [
+      "1984",
+      "1628",
+      "1988",
+      "1976"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (11 * 19 + 12) * 4 = 1984."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "190",
+      "185",
+      "378",
+      "182"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 49% density, total edges = 185."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "249",
+      "378",
+      "254",
+      "246"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 66% density, total edges = 249."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 12, 16, 16, 4, 12, 10, 8], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "48",
+      "28",
+      "59",
+      "43"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 16, 15, 8, 13, 17, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "81",
+      "86",
+      "74",
+      "86"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 81."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][13] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[10][1]?",
+    "options": [
+      "1942",
+      "1950",
+      "1954",
+      "1920"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (1 * 15 + 10) * 2 = 1950."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][22] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][8]?",
+    "options": [
+      "1460",
+      "1776",
+      "1772",
+      "1764"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (5 * 22 + 8) * 4 = 1772."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "18",
+      "21",
+      "66",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 33% density, total edges = 21."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 7, 8, 7, 9, 17, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "45",
+      "31",
+      "41",
+      "36"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 3, 14, 20, 14], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "63",
+      "58",
+      "72",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "36",
+      "28",
+      "45",
+      "31"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 69% density, total edges = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "53",
+      "120",
+      "48",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 40% density, total edges = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 6, 7, 16, 5, 5, 7, 4], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "61",
+      "61",
+      "39",
+      "56"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 56."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 16, 7, 8, 5, 14, 20, 5, 15, 13], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "86",
+      "75",
+      "81",
+      "86"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 81."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "186",
+      "178",
+      "465",
+      "181"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 39% density, total edges = 181."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][19] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][7]?",
+    "options": [
+      "2004",
+      "2008",
+      "1870",
+      "1996"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (5 * 19 + 7) * 2 = 2004."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 20, 8, 11, 16, 16, 2], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "49",
+      "55",
+      "39",
+      "44"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][13] starts at base address 1800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][5]?",
+    "options": [
+      "1896",
+      "1884",
+      "1892",
+      "1810"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (5 * 18 + 2) * 1 = 1892."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 5, 15, 11, 16, 14], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "67",
+      "62",
+      "76",
+      "61"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 20, 3, 11, 5, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "39",
+      "50",
+      "34",
+      "44"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "84",
+      "231",
+      "92",
+      "87"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 38% density, total edges = 87."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][12] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][6]?",
+    "options": [
+      "1248",
+      "1344",
+      "1348",
+      "1336"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (1 * 12 + 6) * 8 = 1344."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "11",
+      "8",
+      "16",
+      "28"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 40% density, total edges = 11."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 3, 7, 7, 11, 16, 17, 11, 15], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "71",
+      "66",
+      "83",
+      "61"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 66."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 18, 6, 16, 16, 12, 16], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "90",
+      "97",
+      "68",
+      "85"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 85."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "89",
+      "190",
+      "86",
+      "94"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 47% density, total edges = 89."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "155",
+      "147",
+      "231",
+      "150"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 65% density, total edges = 150."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 2, 6, 18, 7, 7, 19, 18, 11, 8], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "25",
+      "30",
+      "31",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 25."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "25",
+      "17",
+      "20",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 57% density, total edges = 20."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "23",
+      "31",
+      "26",
+      "78"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 34% density, total edges = 26."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 2, 15, 1, 15, 7, 11, 17, 2, 17], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "53",
+      "48",
+      "63",
+      "33"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 15, 20, 12, 17, 16, 14, 9, 1, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "77",
+      "70",
+      "65",
+      "47"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][27] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[10][14]?",
+    "options": [
+      "1380",
+      "1672",
+      "1668",
+      "1660"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (10 * 27 + 14) * 2 = 1668."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 9, 20, 19, 3, 20, 7, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "29",
+      "46",
+      "66",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][24] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
+    "options": [
+      "1393",
+      "1320",
+      "1401",
+      "1405"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (4 * 24 + 5) * 1 = 1401."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 17, 9, 18, 2, 10, 18, 5, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "74",
+      "79",
+      "84",
+      "56"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 74."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 1, 3, 3, 1, 15, 1, 15, 12], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "48",
+      "43",
+      "58",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "133",
+      "210",
+      "136",
+      "141"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 65% density, total edges = 136."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][24] starts at base address 1000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][13]?",
+    "options": [
+      "1123",
+      "1078",
+      "1127",
+      "1115"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (13 * 9 + 6) * 1 = 1123."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "59",
+      "67",
+      "62",
+      "190"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 33% density, total edges = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "28",
+      "20",
+      "23",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 64% density, total edges = 23."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 4, 18, 5, 10, 16, 18, 19, 7], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "104",
+      "91",
+      "86",
+      "71"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
+    "options": [
+      "253",
+      "106",
+      "111",
+      "103"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 42% density, total edges = 106."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 8, 8, 2, 5, 9, 16, 8], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "68",
+      "48",
+      "57",
+      "52"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 18, 18, 13, 15, 12, 10, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "68",
+      "76",
+      "63",
+      "49"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 63."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 5, 19, 10, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "45",
+      "52",
+      "57",
+      "63"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][15] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][13]?",
+    "options": [
+      "2476",
+      "2316",
+      "2484",
+      "2488"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (4 * 15 + 13) * 8 = 2484."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "34",
+      "31",
+      "78",
+      "39"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 44% density, total edges = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 17, 9, 1, 9, 6, 2, 11, 7], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "62",
+      "67",
+      "72",
+      "74"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 2, 2, 3, 12, 2, 1, 7], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "35",
+      "21",
+      "33",
+      "38"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 33."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 17, 12, 19, 11, 2, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "55",
+      "43",
+      "48",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][13] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][11]?",
+    "options": [
+      "2200",
+      "2208",
+      "2040",
+      "2212"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (5 * 13 + 11) * 8 = 2208."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][26] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[7][20]?",
+    "options": [
+      "2060",
+      "1560",
+      "2072",
+      "2068"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (20 * 13 + 7) * 4 = 2068."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][27] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[12][20]?",
+    "options": [
+      "2668",
+      "2680",
+      "2676",
+      "2260"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (12 * 27 + 20) * 4 = 2676."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "42",
+      "34",
+      "37",
+      "55"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 68% density, total edges = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 17, 6, 13, 15, 5, 17, 4, 1, 18], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "69",
+      "69",
+      "64",
+      "56"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "25",
+      "22",
+      "45",
+      "30"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 57% density, total edges = 25."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][26] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[13][21]?",
+    "options": [
+      "2432",
+      "2440",
+      "2444",
+      "2246"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (21 * 17 + 13) * 2 = 2440."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 19, 17, 10, 18], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "64",
+      "93",
+      "80",
+      "75"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 75."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][20] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][1]?",
+    "options": [
+      "1405",
+      "1505",
+      "1501",
+      "1493"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (5 * 20 + 1) * 1 = 1501."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 7, 1, 3, 15, 14, 11, 18, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "61",
+      "26",
+      "46",
+      "51"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 12, 3, 15, 20, 13], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "71",
+      "51",
+      "56",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][22] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[7][16]?",
+    "options": [
+      "1448",
+      "1864",
+      "1860",
+      "1852"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (16 * 13 + 7) * 4 = 1860."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][11] starts at base address 1300 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[11][2]?",
+    "options": [
+      "1538",
+      "1546",
+      "1550",
+      "1344"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (11 * 11 + 2) * 2 = 1546."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][11] starts at base address 1600 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][1]?",
+    "options": [
+      "1606",
+      "1604",
+      "1618",
+      "1614"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (1 * 5 + 2) * 2 = 1614."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "12",
+      "17",
+      "9",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 59% density, total edges = 12."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 20, 8, 16, 9, 5, 17, 9, 13, 2], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "84",
+      "103",
+      "107",
+      "98"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 98."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
+    "options": [
+      "118",
+      "126",
+      "406",
+      "121"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 30% density, total edges = 121."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][22] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[10][20]?",
+    "options": [
+      "1900",
+      "2500",
+      "2504",
+      "2492"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (20 * 17 + 10) * 4 = 2500."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][25] starts at base address 1600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][20]?",
+    "options": [
+      "1749",
+      "1700",
+      "1737",
+      "1745"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (5 * 25 + 20) * 1 = 1745."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 5, 5, 19, 3, 13, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "41",
+      "32",
+      "39",
+      "36"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][28] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][26]?",
+    "options": [
+      "3052",
+      "2316",
+      "3060",
+      "3064"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (26 * 11 + 4) * 4 = 3060."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 5 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "0",
+      "8",
+      "10",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 5*(4)/2 = 10. At 35% density, total edges = 3."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][15] starts at base address 1700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][13]?",
+    "options": [
+      "1908",
+      "3072",
+      "3068",
+      "3060"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (13 * 13 + 2) * 8 = 3068."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 12, 13, 2, 7, 14], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "44",
+      "31",
+      "36",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 31."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 13, 18, 16, 9], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "66",
+      "71",
+      "56",
+      "75"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 66."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "options": [
+      "165",
+      "173",
+      "528",
+      "168"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 32% density, total edges = 168."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 8, 3, 16, 10, 20, 12, 20], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "72",
+      "67",
+      "57",
+      "87"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 3, 17, 7, 11, 12, 15, 18, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "20",
+      "38",
+      "43",
+      "55"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 3, 3, 5, 14], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "27",
+      "22",
+      "6",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 22."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][19] starts at base address 1200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][6]?",
+    "options": [
+      "1296",
+      "1580",
+      "1568",
+      "1576"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (6 * 15 + 4) * 4 = 1576."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][24] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][10]?",
+    "options": [
+      "2132",
+      "2136",
+      "1980",
+      "2124"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (2 * 24 + 10) * 4 = 2132."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][29] starts at base address 1700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][8]?",
+    "options": [
+      "2228",
+      "2240",
+      "2236",
+      "1892"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (8 * 8 + 3) * 8 = 2236."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "63",
+      "66",
+      "71",
+      "120"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 55% density, total edges = 66."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][23] starts at base address 1100 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[9][8]?",
+    "options": [
+      "1244",
+      "1414",
+      "1422",
+      "1426"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (8 * 19 + 9) * 2 = 1422."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 11, 12, 1, 18, 12, 14, 18], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "54",
+      "62",
+      "57",
+      "69"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][12] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[5][2]?",
+    "options": [
+      "1521",
+      "1510",
+      "1513",
+      "1525"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (2 * 8 + 5) * 1 = 1521."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][28] starts at base address 1200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[11][10]?",
+    "options": [
+      "1518",
+      "1522",
+      "1310",
+      "1510"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (11 * 28 + 10) * 1 = 1518."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "118",
+      "210",
+      "126",
+      "121"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 58% density, total edges = 121."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 18, 20, 15, 2, 12, 4, 13], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "95",
+      "96",
+      "91",
+      "71"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 91."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "102",
+      "99",
+      "171",
+      "107"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 60% density, total edges = 102."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "64",
+      "56",
+      "153",
+      "59"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 39% density, total edges = 59."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 16, 10, 12, 2, 8, 4, 20, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "69",
+      "52",
+      "64",
+      "68"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "290",
+      "528",
+      "282",
+      "285"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 54% density, total edges = 285."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 18, 8, 14, 7], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "46",
+      "49",
+      "26",
+      "41"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 41."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 1, 13, 13, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "27",
+      "50",
+      "45",
+      "58"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 6, 6, 19, 18, 15, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "49",
+      "68",
+      "50",
+      "55"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 20, 14, 5, 5, 5, 8], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "50",
+      "50",
+      "44",
+      "45"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][12] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][2]?",
+    "options": [
+      "1408",
+      "1400",
+      "1412",
+      "1340"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (2 * 11 + 5) * 4 = 1408."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][15] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][3]?",
+    "options": [
+      "1421",
+      "1413",
+      "1409",
+      "1425"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (3 * 6 + 3) * 1 = 1421."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "136",
+      "65",
+      "73",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 50% density, total edges = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][17] starts at base address 1800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][14]?",
+    "options": [
+      "1842",
+      "1977",
+      "1985",
+      "1989"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (14 * 13 + 3) * 1 = 1985."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][13] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][9]?",
+    "options": [
+      "1824",
+      "1480",
+      "1828",
+      "1816"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (9 * 14 + 5) * 4 = 1824."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 18, 1, 20, 12, 20, 11, 14, 20, 14], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "98",
+      "71",
+      "78",
+      "83"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][14] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[11][11]?",
+    "options": [
+      "1612",
+      "1542",
+      "1608",
+      "1600"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (11 * 13 + 11) * 2 = 1608."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 18, 20, 17, 8, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "71",
+      "56",
+      "51",
+      "38"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][18] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[4][5]?",
+    "options": [
+      "1946",
+      "1920",
+      "1954",
+      "1958"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (5 * 10 + 4) * 1 = 1954."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][27] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][25]?",
+    "options": [
+      "2050",
+      "2104",
+      "2116",
+      "2112"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (3 * 27 + 25) * 2 = 2112."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "528",
+      "253",
+      "245",
+      "248"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 47% density, total edges = 248."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 10, 5, 19, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "32",
+      "15",
+      "27",
+      "32"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 20, 7, 2, 20, 10, 11, 17, 10, 9], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "114",
+      "123",
+      "106",
+      "119"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 114."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][26] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][3]?",
+    "options": [
+      "1507",
+      "1499",
+      "1412",
+      "1511"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (4 * 26 + 3) * 1 = 1507."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "80",
+      "83",
+      "88",
+      "231"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 36% density, total edges = 83."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 6 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "4",
+      "1",
+      "9",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 6*(5)/2 = 15. At 33% density, total edges = 4."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][14] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][6]?",
+    "options": [
+      "1848",
+      "1544",
+      "1856",
+      "1860"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (6 * 9 + 3) * 8 = 1856."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "203",
+      "211",
+      "300",
+      "206"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 69% density, total edges = 206."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "7",
+      "12",
+      "4",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 37% density, total edges = 7."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "300",
+      "90",
+      "93",
+      "98"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 31% density, total edges = 93."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 6, 9, 10, 14, 10, 9, 5, 2], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "41",
+      "46",
+      "25",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 41."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "154",
+      "159",
+      "151",
+      "378"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 41% density, total edges = 154."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][13] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][7]?",
+    "options": [
+      "1870",
+      "1940",
+      "1928",
+      "1936"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (7 * 9 + 5) * 2 = 1936."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][26] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[7][3]?",
+    "options": [
+      "2872",
+      "1568",
+      "2884",
+      "2880"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (7 * 26 + 3) * 8 = 2880."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][27] starts at base address 1800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][7]?",
+    "options": [
+      "1926",
+      "1807",
+      "1934",
+      "1938"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (7 * 19 + 1) * 1 = 1934."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][29] starts at base address 1500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][21]?",
+    "options": [
+      "2388",
+      "2396",
+      "2400",
+      "2088"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (7 * 29 + 21) * 4 = 2396."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][28] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][23]?",
+    "options": [
+      "2270",
+      "2130",
+      "2278",
+      "2282"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (23 * 8 + 5) * 2 = 2278."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][21] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][5]?",
+    "options": [
+      "1908",
+      "1916",
+      "1580",
+      "1920"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (5 * 10 + 2) * 8 = 1916."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][26] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[16][2]?",
+    "options": [
+      "2008",
+      "1928",
+      "2000",
+      "2012"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (2 * 18 + 16) * 4 = 2008."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 18, 3, 13, 18, 13, 7], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "85",
+      "80",
+      "65",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 80."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 17, 19, 19, 11, 8, 8, 12, 2, 11], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "65",
+      "60",
+      "55",
+      "79"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 10, 2, 5, 8, 11, 18, 16, 5, 16], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "50",
+      "36",
+      "45",
+      "56"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "32",
+      "24",
+      "27",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 60% density, total edges = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 20, 18, 3, 5, 1], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "49",
+      "46",
+      "51",
+      "41"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 10, 15, 2, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "52",
+      "25",
+      "37",
+      "42"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][28] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][24]?",
+    "options": [
+      "1960",
+      "2312",
+      "2304",
+      "2316"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (5 * 28 + 24) * 8 = 2312."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 18, 10, 4, 9], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "53",
+      "58",
+      "62",
+      "41"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 53."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "174",
+      "171",
+      "179",
+      "406"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 43% density, total edges = 174."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "139",
+      "144",
+      "325",
+      "136"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 43% density, total edges = 139."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][15] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][13]?",
+    "options": [
+      "2968",
+      "1504",
+      "2972",
+      "2960"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (13 * 15 + 1) * 8 = 2968."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][10] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[12][3]?",
+    "options": [
+      "1488",
+      "2188",
+      "2184",
+      "2176"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (12 * 10 + 3) * 8 = 2184."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "231",
+      "76",
+      "81",
+      "73"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 33% density, total edges = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][27] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[6][5]?",
+    "options": [
+      "2940",
+      "2936",
+      "2928",
+      "1840"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (6 * 27 + 5) * 8 = 2936."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 13, 11, 4, 11, 8, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "59",
+      "54",
+      "59",
+      "52"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 54."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "117",
+      "114",
+      "122",
+      "231"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 51% density, total edges = 117."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "406",
+      "175",
+      "183",
+      "178"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 44% density, total edges = 178."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][21] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[4][17]?",
+    "options": [
+      "1704",
+      "1572",
+      "1708",
+      "1696"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (4 * 21 + 17) * 4 = 1704."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][28] starts at base address 1900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[9][26]?",
+    "options": [
+      "4472",
+      "3772",
+      "4460",
+      "4468"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (26 * 12 + 9) * 8 = 4468."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][21] starts at base address 1600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][12]?",
+    "options": [
+      "1633",
+      "1612",
+      "1637",
+      "1625"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (1 * 21 + 12) * 1 = 1633."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 14, 8, 17, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "40",
+      "22",
+      "48",
+      "45"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 40."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 11, 6, 13, 6, 19], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "33",
+      "17",
+      "27",
+      "32"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 15, 18, 20, 14, 15, 17], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "117",
+      "100",
+      "105",
+      "99"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][27] starts at base address 1000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][9]?",
+    "options": [
+      "1126",
+      "1130",
+      "1036",
+      "1118"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (2 * 27 + 9) * 2 = 1126."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][25] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[10][10]?",
+    "options": [
+      "2192",
+      "2204",
+      "2100",
+      "2200"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (10 * 14 + 10) * 2 = 2200."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 4, 1, 10, 13, 16, 9, 14], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "26",
+      "5",
+      "21",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 21."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 1, 20, 15, 20, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "69",
+      "64",
+      "56",
+      "84"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 6, 12, 7, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "18",
+      "34",
+      "29",
+      "41"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 29."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "496",
+      "317",
+      "314",
+      "322"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 64% density, total edges = 317."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "94",
+      "153",
+      "97",
+      "102"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 64% density, total edges = 97."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][26] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[9][11]?",
+    "options": [
+      "3072",
+      "3080",
+      "2392",
+      "3084"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (11 * 16 + 9) * 8 = 3080."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "23",
+      "26",
+      "45",
+      "31"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 58% density, total edges = 26."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][22] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][4]?",
+    "options": [
+      "2028",
+      "2040",
+      "1848",
+      "2036"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 14 + 3) * 4 = 2036."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 11, 12, 20, 8, 17, 17, 7, 17, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "41",
+      "53",
+      "46",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 41."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 14, 3, 8, 6, 9, 8], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "48",
+      "40",
+      "43",
+      "52"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "90",
+      "231",
+      "82",
+      "85"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 37% density, total edges = 85."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][14] starts at base address 1500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][11]?",
+    "options": [
+      "1812",
+      "1820",
+      "1824",
+      "1632"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (11 * 7 + 3) * 4 = 1820."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "181",
+      "184",
+      "189",
+      "276"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 67% density, total edges = 184."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 19, 18, 13, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "99",
+      "83",
+      "66",
+      "88"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 83."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 14, 2, 5, 1, 7, 5, 11, 6, 3], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "44",
+      "46",
+      "29",
+      "39"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][24] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][8]?",
+    "options": [
+      "1064",
+      "1332",
+      "1320",
+      "1328"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (8 * 5 + 1) * 8 = 1328."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][11] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][8]?",
+    "options": [
+      "1928",
+      "2320",
+      "2332",
+      "2328"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (8 * 16 + 4) * 4 = 2328."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][21] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][14]?",
+    "options": [
+      "2160",
+      "2168",
+      "1672",
+      "2172"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (14 * 10 + 6) * 8 = 2168."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][24] starts at base address 1400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][22]?",
+    "options": [
+      "1576",
+      "1640",
+      "1636",
+      "1628"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (4 * 24 + 22) * 2 = 1636."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][22] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[14][14]?",
+    "options": [
+      "4168",
+      "3168",
+      "4176",
+      "4180"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (14 * 22 + 14) * 8 = 4176."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][21] starts at base address 1800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][9]?",
+    "options": [
+      "2016",
+      "2376",
+      "2380",
+      "2368"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (3 * 21 + 9) * 8 = 2376."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "110",
+      "113",
+      "118",
+      "210"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 54% density, total edges = 113."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][28] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][15]?",
+    "options": [
+      "1660",
+      "2524",
+      "2516",
+      "2528"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (15 * 10 + 3) * 8 = 2524."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "10",
+      "7",
+      "15",
+      "28"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 39% density, total edges = 10."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "75",
+      "80",
+      "72",
+      "210"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 36% density, total edges = 75."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][18] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][4]?",
+    "options": [
+      "1108",
+      "1144",
+      "1136",
+      "1148"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (1 * 18 + 4) * 2 = 1144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 20, 6, 8, 7, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "61",
+      "58",
+      "53",
+      "34"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 53."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 2, 9, 6, 20], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "46",
+      "66",
+      "37",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 9, 9, 17, 9, 6, 1, 12, 14, 9], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "62",
+      "45",
+      "35",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 17, 11, 12, 17, 9, 15], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "91",
+      "101",
+      "81",
+      "86"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][12] starts at base address 1500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][10]?",
+    "options": [
+      "1598",
+      "1606",
+      "1610",
+      "1560"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (10 * 5 + 3) * 2 = 1606."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 16, 19, 19, 20, 7], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "74",
+      "60",
+      "55",
+      "54"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 18, 3, 8, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "26",
+      "23",
+      "28",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 23."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 15, 14, 14, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "59",
+      "80",
+      "69",
+      "64"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "165",
+      "170",
+      "162",
+      "325"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 51% density, total edges = 165."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][28] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][22]?",
+    "options": [
+      "1832",
+      "1974",
+      "1970",
+      "1962"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (22 * 6 + 3) * 2 = 1970."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][22] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][10]?",
+    "options": [
+      "2524",
+      "2512",
+      "2520",
+      "1600"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (10 * 16 + 5) * 8 = 2520."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "118",
+      "253",
+      "126",
+      "121"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 48% density, total edges = 121."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][12] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][8]?",
+    "options": [
+      "1460",
+      "1452",
+      "1464",
+      "1164"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (8 * 11 + 2) * 4 = 1460."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][20] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[4][12]?",
+    "options": [
+      "1368",
+      "1376",
+      "1380",
+      "1348"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (12 * 6 + 4) * 1 = 1376."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "222",
+      "217",
+      "214",
+      "325"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 67% density, total edges = 217."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 10, 20, 4, 19, 12, 2, 2, 3], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "68",
+      "73",
+      "70",
+      "67"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "210",
+      "140",
+      "137",
+      "145"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 67% density, total edges = 140."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "43",
+      "105",
+      "35",
+      "38"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 37% density, total edges = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 17, 8, 16, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "25",
+      "40",
+      "43",
+      "35"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 35."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 11, 15, 20, 11, 19, 3, 19, 4, 15], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "86",
+      "91",
+      "76",
+      "105"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 9, 16, 13, 20, 1, 3], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "25",
+      "38",
+      "54",
+      "43"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 38."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][29] starts at base address 1800 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[9][23]?",
+    "options": [
+      "2940",
+      "2928",
+      "2628",
+      "2936"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (9 * 29 + 23) * 4 = 2936."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "92",
+      "84",
+      "87",
+      "190"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 46% density, total edges = 87."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][10] starts at base address 1700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][1]?",
+    "options": [
+      "1704",
+      "1732",
+      "1744",
+      "1740"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (1 * 9 + 1) * 4 = 1740."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][14] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][12]?",
+    "options": [
+      "1196",
+      "1260",
+      "1252",
+      "1264"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (2 * 14 + 12) * 4 = 1260."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "51",
+      "120",
+      "56",
+      "48"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 43% density, total edges = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 19, 16, 8, 20, 2, 4, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "58",
+      "43",
+      "50",
+      "55"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 4, 14, 17, 12, 2, 14, 2, 18], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "66",
+      "49",
+      "68",
+      "71"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 66."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][18] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][13]?",
+    "options": [
+      "1612",
+      "1836",
+      "1828",
+      "1840"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (3 * 18 + 13) * 8 = 1836."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][15] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][9]?",
+    "options": [
+      "1890",
+      "2116",
+      "2120",
+      "2108"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (9 * 17 + 5) * 2 = 2116."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 3, 14, 9, 13, 1, 5, 17, 15], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "40",
+      "53",
+      "48",
+      "49"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][14] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[14][11]?",
+    "options": [
+      "1908",
+      "1896",
+      "1904",
+      "1716"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (11 * 17 + 14) * 4 = 1904."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 13, 10, 14, 9, 4, 6], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "52",
+      "57",
+      "56",
+      "50"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][15] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[14][6]?",
+    "options": [
+      "1608",
+      "1620",
+      "1616",
+      "1484"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (14 * 15 + 6) * 1 = 1616."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 1, 17, 9, 2, 20, 12, 10, 17, 8], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "55",
+      "75",
+      "60",
+      "49"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "14",
+      "9",
+      "21",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 44% density, total edges = 9."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][22] starts at base address 1200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][9]?",
+    "options": [
+      "1380",
+      "1688",
+      "1680",
+      "1692"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (9 * 13 + 5) * 4 = 1688."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 5, 8, 17, 5, 5, 14, 14], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "32",
+      "35",
+      "27",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 7 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "3",
+      "11",
+      "21",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 7*(6)/2 = 21. At 33% density, total edges = 6."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "45",
+      "13",
+      "21",
+      "16"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 37% density, total edges = 16."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][28] starts at base address 1000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][17]?",
+    "options": [
+      "1090",
+      "1017",
+      "1086",
+      "1078"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (17 * 5 + 1) * 1 = 1086."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 12, 16, 8, 2, 9, 2, 13, 10], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "99",
+      "72",
+      "94",
+      "89"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 89."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][17] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][8]?",
+    "options": [
+      "1372",
+      "1360",
+      "1264",
+      "1368"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 17 + 8) * 4 = 1368."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 13, 13, 9, 10, 1, 9], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "51",
+      "50",
+      "55",
+      "46"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 3, 4, 3, 12, 5, 6], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "40",
+      "33",
+      "34",
+      "39"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "167",
+      "465",
+      "164",
+      "172"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 36% density, total edges = 167."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 18, 16, 18, 18, 10], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "44",
+      "60",
+      "49",
+      "34"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "260",
+      "263",
+      "268",
+      "561"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 47% density, total edges = 263."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "48",
+      "53",
+      "78",
+      "45"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 62% density, total edges = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 19, 7, 11, 14, 16, 8, 3, 16, 20], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "67",
+      "76",
+      "92",
+      "81"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][10] starts at base address 1100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][8]?",
+    "options": [
+      "1228",
+      "1504",
+      "1500",
+      "1492"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (8 * 6 + 2) * 8 = 1500."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][10] starts at base address 1000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][8]?",
+    "options": [
+      "1024",
+      "1030",
+      "1038",
+      "1042"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (3 * 10 + 8) * 1 = 1038."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "85",
+      "93",
+      "153",
+      "88"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 58% density, total edges = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][26] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][15]?",
+    "options": [
+      "2736",
+      "2744",
+      "1760",
+      "2748"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (15 * 11 + 3) * 8 = 2744."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][24] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][15]?",
+    "options": [
+      "2784",
+      "2772",
+      "2300",
+      "2780"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (5 * 24 + 15) * 8 = 2780."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "103",
+      "108",
+      "253",
+      "100"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 41% density, total edges = 103."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 8 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "options": [
+      "8",
+      "28",
+      "5",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 8*(7)/2 = 28. At 32% density, total edges = 8."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 1, 13, 10, 15, 10, 3, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "14",
+      "30",
+      "22",
+      "17"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 17."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 7, 18, 8, 13, 19, 12, 16, 6], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "112",
+      "111",
+      "99",
+      "106"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 106."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 6, 15, 3, 7, 10, 4], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "67",
+      "63",
+      "45",
+      "68"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 63."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "88",
+      "93",
+      "253",
+      "85"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 35% density, total edges = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "42",
+      "120",
+      "39",
+      "47"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 35% density, total edges = 42."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][26] starts at base address 1400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][3]?",
+    "options": [
+      "1614",
+      "1424",
+      "1618",
+      "1606"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (4 * 26 + 3) * 2 = 1614."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][21] starts at base address 1200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[8][13]?",
+    "options": [
+      "1566",
+      "1562",
+      "1554",
+      "1408"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (8 * 21 + 13) * 2 = 1562."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][23] starts at base address 1100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][4]?",
+    "options": [
+      "1592",
+      "1588",
+      "1132",
+      "1580"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (4 * 15 + 1) * 8 = 1588."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 4, 16, 11, 9, 7, 6, 5, 16], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "60",
+      "65",
+      "65",
+      "58"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "49",
+      "44",
+      "41",
+      "66"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 68% density, total edges = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 2, 7, 5, 16, 10, 9], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "31",
+      "33",
+      "9",
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 26."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "79",
+      "82",
+      "87",
+      "136"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 61% density, total edges = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 14, 9, 15, 2, 2, 3, 8, 11], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "78",
+      "72",
+      "67",
+      "64"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][23] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[6][13]?",
+    "options": [
+      "1406",
+      "1256",
+      "1394",
+      "1402"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (6 * 23 + 13) * 2 = 1402."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][20] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[7][4]?",
+    "options": [
+      "2112",
+      "2012",
+      "2120",
+      "2124"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (4 * 12 + 7) * 4 = 2120."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 17, 3, 8, 5, 19, 2, 3], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "54",
+      "64",
+      "69",
+      "66"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 10, 17, 16, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "54",
+      "76",
+      "65",
+      "70"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "372",
+      "380",
+      "375",
+      "561"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 67% density, total edges = 375."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 7, 18, 13, 4, 17, 4, 6, 6], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "68",
+      "80",
+      "59",
+      "63"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 63."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "72",
+      "75",
+      "171",
+      "80"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 44% density, total edges = 75."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 2, 15, 8, 11, 2, 18, 15], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "42",
+      "53",
+      "47",
+      "36"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 42."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][15] starts at base address 1700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][8]?",
+    "options": [
+      "1858",
+      "1780",
+      "1870",
+      "1866"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (5 * 15 + 8) * 2 = 1866."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][26] starts at base address 1600 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[8][13]?",
+    "options": [
+      "1742",
+      "1704",
+      "1738",
+      "1730"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (13 * 10 + 8) * 1 = 1738."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "114",
+      "111",
+      "119",
+      "300"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 38% density, total edges = 114."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][22] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][1]?",
+    "options": [
+      "1352",
+      "1348",
+      "1340",
+      "1316"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (1 * 8 + 4) * 4 = 1348."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 20, 13, 6, 16, 11, 12, 6, 11, 3], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "76",
+      "65",
+      "55",
+      "60"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 60."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 19, 9, 16, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "80",
+      "44",
+      "69",
+      "64"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 7, 8, 5, 11, 6, 6, 18, 14], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "43",
+      "54",
+      "48",
+      "31"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 43."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "364",
+      "361",
+      "369",
+      "561"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 65% density, total edges = 364."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][29] starts at base address 1200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][10]?",
+    "options": [
+      "1220",
+      "1272",
+      "1268",
+      "1260"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 29 + 10) * 1 = 1268."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "148",
+      "143",
+      "351",
+      "140"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 41% density, total edges = 143."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 13, 5, 20, 8, 11, 14, 7], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "56",
+      "61",
+      "64",
+      "46"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 56."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 17, 5, 4, 7, 5, 4, 5, 19, 15], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "47",
+      "66",
+      "66",
+      "61"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "252",
+      "260",
+      "465",
+      "255"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 55% density, total edges = 255."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 19, 8, 3, 6, 19, 9, 19, 12], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "65",
+      "74",
+      "64",
+      "70"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][24] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][15]?",
+    "options": [
+      "2080",
+      "2332",
+      "2336",
+      "2324"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (15 * 7 + 3) * 4 = 2332."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 9 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "28",
+      "36",
+      "20",
+      "23"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 9*(8)/2 = 36. At 66% density, total edges = 23."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 2, 5, 12, 19, 14, 9, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "19",
+      "42",
+      "30",
+      "35"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "78",
+      "120",
+      "75",
+      "83"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 65% density, total edges = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][14] starts at base address 1700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[10][3]?",
+    "options": [
+      "2188",
+      "2180",
+      "2192",
+      "1940"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (3 * 17 + 10) * 8 = 2188."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][24] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
+    "options": [
+      "1504",
+      "1516",
+      "1440",
+      "1512"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (1 * 9 + 5) * 8 = 1512."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 15, 18, 1, 8, 20, 16, 10, 14, 7], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "49",
+      "44",
+      "33",
+      "62"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 44."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 14, 18, 10, 18, 4, 1, 18], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "60",
+      "67",
+      "80",
+      "62"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 14, 1, 3, 6, 14, 6, 16, 16], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "38",
+      "42",
+      "56",
+      "47"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 42."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "35",
+      "30",
+      "91",
+      "27"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 33% density, total edges = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 16, 7, 5, 11, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "33",
+      "23",
+      "35",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 28."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "94",
+      "171",
+      "99",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 55% density, total edges = 94."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][22] starts at base address 1400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[13][2]?",
+    "options": [
+      "2544",
+      "2552",
+      "1504",
+      "2556"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (13 * 22 + 2) * 4 = 2552."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 8, 14, 4, 14, 6], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "40",
+      "59",
+      "68",
+      "54"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 54."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][14] starts at base address 1600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][6]?",
+    "options": [
+      "1952",
+      "1964",
+      "1960",
+      "1744"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (6 * 14 + 6) * 4 = 1960."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][28] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][2]?",
+    "options": [
+      "1544",
+      "1532",
+      "1316",
+      "1540"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (1 * 28 + 2) * 8 = 1540."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][23] starts at base address 1900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][4]?",
+    "options": [
+      "2140",
+      "2152",
+      "1996",
+      "2148"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (4 * 7 + 3) * 8 = 2148."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "185",
+      "182",
+      "190",
+      "325"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 57% density, total edges = 185."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][16] starts at base address 1700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[5][2]?",
+    "options": [
+      "1735",
+      "1710",
+      "1727",
+      "1739"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (2 * 15 + 5) * 1 = 1735."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][18] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[15][3]?",
+    "options": [
+      "3176",
+      "1360",
+      "3188",
+      "3184"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (15 * 18 + 3) * 8 = 3184."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 6, 7, 16, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "26",
+      "13",
+      "28",
+      "21"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 21."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][21] starts at base address 1800 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][13]?",
+    "options": [
+      "2112",
+      "2348",
+      "2356",
+      "2360"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (6 * 21 + 13) * 4 = 2356."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 5, 1, 15, 20, 6, 11, 19], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "47",
+      "72",
+      "71",
+      "66"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 66."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][14] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][1]?",
+    "options": [
+      "1604",
+      "1508",
+      "1608",
+      "1596"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (1 * 12 + 1) * 8 = 1604."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 10, 17, 12, 16, 5, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "67",
+      "78",
+      "62",
+      "55"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "69",
+      "77",
+      "72",
+      "190"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 38% density, total edges = 72."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][20] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][9]?",
+    "options": [
+      "1333",
+      "1309",
+      "1329",
+      "1321"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (1 * 20 + 9) * 1 = 1329."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][24] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][12]?",
+    "options": [
+      "1272",
+      "1446",
+      "1438",
+      "1450"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (12 * 10 + 3) * 2 = 1446."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "190",
+      "106",
+      "111",
+      "103"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 56% density, total edges = 106."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "51",
+      "91",
+      "54",
+      "59"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 60% density, total edges = 54."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 18, 17, 1, 18, 9], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "45",
+      "36",
+      "46",
+      "50"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][13] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][10]?",
+    "options": [
+      "1849",
+      "1841",
+      "1830",
+      "1853"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (3 * 13 + 10) * 1 = 1849."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 12, 3, 2, 19, 15, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "35",
+      "30",
+      "33",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][27] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][2]?",
+    "options": [
+      "2168",
+      "1548",
+      "2164",
+      "2156"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (3 * 27 + 2) * 8 = 2164."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][29] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[6][4]?",
+    "options": [
+      "1984",
+      "1988",
+      "1976",
+      "1896"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 10 + 6) * 4 = 1984."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][11] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][4]?",
+    "options": [
+      "1396",
+      "1392",
+      "1032",
+      "1384"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (4 * 12 + 1) * 8 = 1392."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 12, 5, 12, 19, 18, 2, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "29",
+      "34",
+      "17",
+      "34"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 29."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][29] starts at base address 1200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][24]?",
+    "options": [
+      "1315",
+      "1303",
+      "1311",
+      "1272"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (3 * 29 + 24) * 1 = 1311."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 5, 8, 3, 16, 3, 20, 5, 1], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "76",
+      "61",
+      "72",
+      "71"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][20] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][13]?",
+    "options": [
+      "1870",
+      "1826",
+      "1866",
+      "1858"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (1 * 20 + 13) * 2 = 1866."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 7, 3, 14, 7, 1, 10, 2, 12], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "71",
+      "64",
+      "59",
+      "56"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 59."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 16, 19, 19, 3, 16, 8, 3], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "105",
+      "94",
+      "89",
+      "73"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 89."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][15] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[8][4]?",
+    "options": [
+      "1552",
+      "1532",
+      "1548",
+      "1540"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (4 * 10 + 8) * 1 = 1548."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 3, 6, 13, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "25",
+      "19",
+      "24",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 19."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][10] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[10][4]?",
+    "options": [
+      "1140",
+      "1144",
+      "1080",
+      "1132"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (4 * 15 + 10) * 2 = 1140."
   }
 ];

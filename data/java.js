@@ -8,7 +8,7 @@ window.quizData.java = [
     "options": [
       "Procedural only",
       "Functional only",
-      "Assembly by design",
+      "Assembly in most cases",
       "Object-Oriented"
     ],
     "answer": 3,
@@ -20,12 +20,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "JVM stands for?",
     "options": [
-      "Java Virtual Machine",
       "Java Visual Maker",
       "Java Variable Manager",
-      "Java Version Module"
+      "Java Version Module",
+      "Java Virtual Machine"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "JVM executes Java bytecode on any platform."
   },
   {
@@ -34,12 +34,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "JDK includes?",
     "options": [
-      "Only editor in typical implementations",
       "Only libraries in typical implementations",
+      "JRE + development tools (compiler, debugger)",
       "Only JVM in typical implementations",
-      "JRE + development tools (compiler, debugger)"
+      "Only editor in typical implementations"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "JDK is the full development kit."
   },
   {
@@ -48,12 +48,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "JRE includes?",
     "options": [
-      "Only compiler in practice",
-      "Only source code",
       "Only debugger in practice",
-      "JVM + core libraries"
+      "JVM + core libraries",
+      "Only compiler by design",
+      "Only source code"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "JRE is needed to run Java applications."
   },
   {
@@ -62,12 +62,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Encapsulation is achieved by?",
     "options": [
+      "Abstract classes in typical implementations",
       "Private fields with public getters/setters",
-      "Abstract classes under normal conditions",
-      "Public fields in typical implementations",
-      "Static methods only (default behavior)"
+      "Public fields under normal conditions",
+      "Static methods only (primary approach)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Data hiding protects internal state."
   },
   {
@@ -76,12 +76,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Inheritance allows?",
     "options": [
-      "Thread creation under normal conditions",
-      "Handling exceptions in typical implementations",
+      "Handling exceptions based on convention",
       "A class to inherit properties of another class",
+      "Thread creation under normal conditions",
       "Creating objects under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Child class extends parent class."
   },
   {
@@ -90,12 +90,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Polymorphism means?",
     "options": [
-      "Static binding always (standard definition)",
-      "One method one behavior based on convention",
-      "Same method behaves differently based on context",
-      "No methods in typical implementations"
+      "Static binding always in typical implementations",
+      "No methods in typical implementations",
+      "One method one behavior under normal conditions",
+      "Same method behaves differently based on context"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Achieved via overloading and overriding."
   },
   {
@@ -104,12 +104,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Abstraction is implemented using?",
     "options": [
-      "Concrete classes only (commonly used)",
       "Variables (general case)",
       "Abstract classes and interfaces",
-      "Loops based on convention"
+      "Loops (default behavior)",
+      "Concrete classes only in practice"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Hides implementation, shows only functionality."
   },
   {
@@ -118,9 +118,9 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Method overloading is?",
     "options": [
-      "Different classes based on convention",
-      "Different return type only in most cases",
-      "Same name same parameters under normal conditions",
+      "Different return type only by design",
+      "Same name same parameters (standard definition)",
+      "Different classes under normal conditions",
       "Same method name with different parameters"
     ],
     "answer": 3,
@@ -132,12 +132,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Method overriding is?",
     "options": [
-      "Same class different params as per specification",
-      "Static methods in typical implementations",
       "Child class redefines parent method with same signature",
+      "Static methods in typical implementations",
+      "Same class different params (standard definition)",
       "Different method name in typical implementations"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Runtime (dynamic) polymorphism."
   },
   {
@@ -146,12 +146,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Constructor is called when?",
     "options": [
-      "Method is called in standard usage",
-      "Variable is declared (general case)",
+      "Method is called (general case)",
       "Object is created using new keyword",
-      "Class is loaded (commonly used)"
+      "Variable is declared (commonly used)",
+      "Class is loaded as per specification"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Constructors initialize object state."
   },
   {
@@ -161,9 +161,9 @@ window.quizData.java = [
     "question": "Interface in Java contains?",
     "options": [
       "Abstract methods (and default/static in Java 8+)",
+      "Instance variables in typical implementations",
       "Constructors in typical implementations",
-      "Main method in typical implementations",
-      "Instance variables under normal conditions"
+      "Main method in typical implementations"
     ],
     "answer": 0,
     "explanation": "Interface defines a contract for implementing classes."
@@ -174,12 +174,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "ArrayList vs LinkedList: random access?",
     "options": [
-      "ArrayList is O(1), LinkedList is O(n)",
-      "Both O(n) in typical implementations",
-      "Both O(1) as per specification",
-      "LinkedList is faster (default behavior)"
+      "LinkedList is faster (standard definition)",
+      "Both O(n) as per specification",
+      "Both O(1) in typical implementations",
+      "ArrayList is O(1), LinkedList is O(n)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
   },
   {
@@ -188,9 +188,9 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "HashMap allows?",
     "options": [
-      "Multiple null keys (commonly used)",
+      "Multiple null keys (typical scenario)",
+      "Only null values (default behavior)",
       "No nulls under normal conditions",
-      "Only null values (typical scenario)",
       "One null key and multiple null values"
     ],
     "answer": 3,
@@ -202,12 +202,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "HashSet stores?",
     "options": [
-      "Key-value pairs (standard definition)",
-      "Duplicates allowed as per specification",
-      "Sorted elements in most cases",
-      "Unique elements only, no duplicates"
+      "Sorted elements (standard definition)",
+      "Key-value pairs (widely accepted)",
+      "Unique elements only, no duplicates",
+      "Duplicates allowed (commonly used)"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Internally uses HashMap; add returns false for duplicates."
   },
   {
@@ -216,12 +216,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "TreeMap stores keys in?",
     "options": [
+      "Sorted (natural) order",
+      "Random order by design",
       "Reverse order in practice",
-      "Insertion order in most cases",
-      "Random order (commonly used)",
-      "Sorted (natural) order"
+      "Insertion order in most cases"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Red-black tree implementation maintains sorted keys."
   },
   {
@@ -230,12 +230,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "PriorityQueue orders elements by?",
     "options": [
-      "Insertion order (widely accepted)",
       "Alphabetical only as per specification",
       "Natural ordering or custom Comparator",
-      "Random in typical implementations"
+      "Insertion order in standard usage",
+      "Random under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Min-heap by default in Java."
   },
   {
@@ -244,12 +244,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "try-catch-finally: finally block runs?",
     "options": [
-      "Only on success (default behavior)",
-      "Never as per specification",
-      "Only on exception by design",
-      "Always (except System.exit)"
+      "Never (default behavior)",
+      "Always (except System.exit)",
+      "Only on success (typical scenario)",
+      "Only on exception in practice"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Finally ensures cleanup code executes."
   },
   {
@@ -258,12 +258,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Checked exceptions are?",
     "options": [
-      "OS-level errors in most cases",
-      "Never checked by design",
-      "Runtime only (typical scenario)",
-      "Verified at compile time"
+      "Runtime only (commonly used)",
+      "Verified at compile time",
+      "OS-level errors in practice",
+      "Never checked (commonly used)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Must be caught or declared with throws."
   },
   {
@@ -272,10 +272,10 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Custom exception extends?",
     "options": [
-      "String (standard definition)",
-      "Object in typical implementations",
+      "Object based on convention",
+      "Thread in typical implementations",
       "Exception or RuntimeException",
-      "Thread (default behavior)"
+      "String (standard definition)"
     ],
     "answer": 2,
     "explanation": "Custom exceptions inherit from exception hierarchy."
@@ -286,12 +286,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "throw vs throws?",
     "options": [
-      "Same thing in typical implementations",
-      "throws catches exception in typical implementations",
       "throw creates exception; throws declares it in method signature",
-      "throw is for classes in typical implementations"
+      "throws catches exception in typical implementations",
+      "throw is for classes in typical implementations",
+      "Same thing in typical implementations"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "throw is used in body; throws in declaration."
   },
   {
@@ -300,9 +300,9 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "String is immutable in Java because?",
     "options": [
-      "It has no methods (standard definition)",
-      "It uses char array as per specification",
+      "It uses char array (widely accepted)",
       "It is final class in typical implementations",
+      "It has no methods based on convention",
       "Its value cannot be changed after creation"
     ],
     "answer": 3,
@@ -315,9 +315,9 @@ window.quizData.java = [
     "question": "StringBuilder vs StringBuffer?",
     "options": [
       "StringBuilder is not thread-safe but faster",
-      "Both thread-safe in typical implementations",
-      "StringBuffer is faster (default behavior)",
-      "Both not thread-safe based on convention"
+      "StringBuffer is faster under normal conditions",
+      "Both not thread-safe in typical implementations",
+      "Both thread-safe as per specification"
     ],
     "answer": 0,
     "explanation": "StringBuffer is synchronized; StringBuilder is not."
@@ -328,12 +328,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Thread can be created by?",
     "options": [
-      "Extending Thread class or implementing Runnable",
       "Only Runnable in typical implementations",
-      "Only extending Thread (typical scenario)",
-      "Using String class (standard definition)"
+      "Extending Thread class or implementing Runnable",
+      "Using String class in typical implementations",
+      "Only extending Thread (standard definition)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Two standard approaches to multithreading."
   },
   {
@@ -342,12 +342,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "synchronized keyword ensures?",
     "options": [
-      "All threads run simultaneously (commonly used)",
       "Memory is freed in typical implementations",
-      "Thread is stopped under normal conditions",
-      "Only one thread accesses block/method at a time"
+      "Only one thread accesses block/method at a time",
+      "All threads run simultaneously based on convention",
+      "Thread is stopped in typical implementations"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Mutual exclusion for thread safety."
   },
   {
@@ -356,10 +356,10 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Executor framework provides?",
     "options": [
-      "Network calls in most cases",
+      "Network calls (commonly used)",
       "Thread pool management",
-      "Database access by design",
-      "File handling in practice"
+      "File handling (commonly used)",
+      "Database access by design"
     ],
     "answer": 1,
     "explanation": "Manages thread lifecycle efficiently."
@@ -370,12 +370,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Lambda expression syntax?",
     "options": [
+      "function(){} in most cases",
+      "def func(): in most cases",
       "(parameters) -> expression/body",
-      "method => param as per specification",
-      "def func(): under normal conditions",
-      "function(){} in standard usage"
+      "method => param (default behavior)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Java 8 functional programming feature."
   },
   {
@@ -384,12 +384,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Stream API is used for?",
     "options": [
-      "Audio streaming as per specification",
-      "Network streaming based on convention",
-      "File I/O streaming under normal conditions",
-      "Functional-style operations on collections"
+      "Functional-style operations on collections",
+      "File I/O streaming (default behavior)",
+      "Network streaming under normal conditions",
+      "Audio streaming (standard definition)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "map, filter, reduce operations on data."
   },
   {
@@ -398,12 +398,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Functional interface has?",
     "options": [
-      "No methods in practice",
-      "Only default methods in practice",
       "Exactly one abstract method",
+      "No methods by design",
+      "Only default methods in practice",
       "Multiple abstract methods"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "@FunctionalInterface annotation enforces this."
   },
   {
@@ -412,12 +412,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Garbage collection in Java?",
     "options": [
+      "Programmer must free memory (primary approach)",
       "No memory management based on convention",
-      "Programmer must free memory in standard usage",
-      "JVM automatically reclaims unused object memory",
-      "OS handles it in typical implementations"
+      "OS handles it in typical implementations",
+      "JVM automatically reclaims unused object memory"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "GC runs in background; objects without references are collected."
   },
   {
@@ -426,12 +426,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Stack memory stores?",
     "options": [
-      "Class definitions (commonly used)",
-      "Method calls and local variables",
-      "Static variables only in practice",
-      "Objects only in standard usage"
+      "Static variables only in standard usage",
+      "Objects only (default behavior)",
+      "Class definitions in most cases",
+      "Method calls and local variables"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Stack is LIFO; each thread has its own."
   },
   {
@@ -440,12 +440,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Heap memory stores?",
     "options": [
-      "Method calls (general case)",
-      "Primitives only in most cases",
+      "Method calls (commonly used)",
       "Objects and instance variables",
-      "Local variables only (general case)"
+      "Local variables only in most cases",
+      "Primitives only (commonly used)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Shared heap stores dynamically allocated objects."
   },
   {
@@ -455,11 +455,11 @@ window.quizData.java = [
     "question": "File class in Java represents?",
     "options": [
       "Database connection",
-      "File or directory path",
+      "File contents in practice",
       "Network socket by design",
-      "File contents in most cases"
+      "File or directory path"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "java.io.File for file system operations."
   },
   {
@@ -468,12 +468,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "BufferedReader is faster than Scanner because?",
     "options": [
-      "Larger internal buffer reduces I/O operations",
       "It is newer in typical implementations",
-      "It skips characters (primary approach)",
-      "It uses less memory (default behavior)"
+      "It skips characters (typical scenario)",
+      "Larger internal buffer reduces I/O operations",
+      "It uses less memory in typical implementations"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "BufferedReader reads large chunks at once."
   },
   {
@@ -482,12 +482,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Serialization converts object to?",
     "options": [
+      "String format (primary approach)",
       "HTML page under normal conditions",
       "XML only under normal conditions",
-      "Byte stream for storage or transmission",
-      "String format in typical implementations"
+      "Byte stream for storage or transmission"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Implements Serializable interface."
   },
   {
@@ -496,12 +496,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "static keyword means?",
     "options": [
+      "Is private based on convention",
       "Belongs to class, not instance",
-      "Cannot be accessed (typical scenario)",
-      "Belongs to instance by design",
-      "Is private under normal conditions"
+      "Belongs to instance in practice",
+      "Cannot be accessed (primary approach)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Static members shared across all instances."
   },
   {
@@ -510,12 +510,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "final class cannot be?",
     "options": [
-      "Instantiated in practice",
-      "Extended/inherited",
-      "Used (primary approach)",
-      "Imported (commonly used)"
+      "Instantiated by design",
+      "Imported by design",
+      "Used (typical scenario)",
+      "Extended/inherited"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "final prevents subclassing."
   },
   {
@@ -524,12 +524,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "abstract class can have?",
     "options": [
-      "Only concrete methods by design",
-      "Only abstract methods (general case)",
-      "No methods in typical implementations",
-      "Both abstract and concrete methods"
+      "Only concrete methods in standard usage",
+      "Both abstract and concrete methods",
+      "No methods under normal conditions",
+      "Only abstract methods in standard usage"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Abstract classes provide partial implementation."
   },
   {
@@ -538,9 +538,9 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "this keyword refers to?",
     "options": [
-      "Parent class in most cases",
       "Previous object in most cases",
-      "Static context in practice",
+      "Static context in most cases",
+      "Parent class (commonly used)",
       "Current object instance"
     ],
     "answer": 3,
@@ -552,12 +552,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "super keyword is used to?",
     "options": [
+      "Handle exception as per specification",
       "Create new object (standard definition)",
-      "Define variable based on convention",
-      "Call parent class constructor or method",
-      "Handle exception in standard usage"
+      "Define variable (primary approach)",
+      "Call parent class constructor or method"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "super() invokes parent constructor."
   },
   {
@@ -567,11 +567,11 @@ window.quizData.java = [
     "question": "Dynamic method dispatch is?",
     "options": [
       "Constructor call under normal conditions",
-      "Static method call based on convention",
       "Runtime resolution of overridden method call",
-      "Compile-time resolution in most cases"
+      "Static method call in typical implementations",
+      "Compile-time resolution in standard usage"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "JVM determines which overridden method to call at runtime."
   },
   {
@@ -580,12 +580,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Optional class in Java 8 helps avoid?",
     "options": [
+      "ClassCast in standard usage",
       "NullPointerException",
       "ArrayIndexOutOfBounds",
-      "ClassCast by design",
       "StackOverflow in practice"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Optional wraps nullable value with safe methods."
   },
   {
@@ -594,12 +594,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Comparator interface is used for?",
     "options": [
-      "Hashing (default behavior)",
+      "Equality checking",
+      "Hashing (widely accepted)",
       "Custom sorting logic",
-      "Serialization by design",
-      "Equality checking"
+      "Serialization by design"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "compare() method defines custom ordering."
   },
   {
@@ -608,12 +608,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "equals() vs == in Java?",
     "options": [
-      "equals() checks content equality; == checks reference",
-      "Both check reference in typical implementations",
+      "No difference in typical implementations",
       "Both check content in typical implementations",
-      "No difference in typical implementations"
+      "Both check reference in typical implementations",
+      "equals() checks content equality; == checks reference"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "== compares memory addresses for objects."
   },
   {
@@ -622,12 +622,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Autoboxing in Java is?",
     "options": [
+      "Object to primitive only under normal conditions",
+      "Automatic conversion of primitive to wrapper class",
       "String to int in typical implementations",
-      "Manual casting in typical implementations",
-      "Object to primitive only in typical implementations",
-      "Automatic conversion of primitive to wrapper class"
+      "Manual casting in typical implementations"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "int to Integer happens automatically."
   },
   {
@@ -636,12 +636,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Design pattern: Singleton ensures?",
     "options": [
-      "No instances based on convention",
-      "Abstract class (primary approach)",
-      "Multiple instances (general case)",
-      "Only one instance of a class exists"
+      "Only one instance of a class exists",
+      "Abstract class (commonly used)",
+      "Multiple instances (default behavior)",
+      "No instances (typical scenario)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Private constructor + static instance."
   },
   {
@@ -651,11 +651,11 @@ window.quizData.java = [
     "question": "Design pattern: Factory provides?",
     "options": [
       "Memory allocation in typical implementations",
-      "Object creation without exposing instantiation logic",
       "Sorting algorithm in typical implementations",
+      "Object creation without exposing instantiation logic",
       "Thread management in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Factory method returns appropriate subclass instance."
   },
   {
@@ -664,12 +664,12 @@ window.quizData.java = [
     "difficulty": "Hard",
     "question": "Design pattern: Observer implements?",
     "options": [
-      "Sorting as per specification",
       "One-to-many dependency notification",
-      "Tree traversal (default behavior)",
-      "Singleton pattern (typical scenario)"
+      "Sorting under normal conditions",
+      "Tree traversal as per specification",
+      "Singleton pattern as per specification"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "When subject changes, all observers are notified."
   },
   {
@@ -678,9 +678,9 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "Design pattern: Builder is used for?",
     "options": [
-      "Destroying objects (primary approach)",
-      "Threading in typical implementations",
+      "Destroying objects (default behavior)",
       "Sorting in typical implementations",
+      "Threading in typical implementations",
       "Constructing complex objects step by step"
     ],
     "answer": 3,
@@ -692,12 +692,12 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "What is classpath in Java?",
     "options": [
-      "Database URL in typical implementations",
       "File system root (standard definition)",
       "Path where JVM looks for classes and packages",
-      "Network path in typical implementations"
+      "Network path in typical implementations",
+      "Database URL in typical implementations"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Set via -cp flag or CLASSPATH environment variable."
   },
   {
@@ -706,12 +706,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "What is the default value of an int in Java?",
     "options": [
-      "-1",
-      "null",
+      "undefined",
       "0",
-      "undefined"
+      "-1",
+      "null"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Primitive int defaults to 0 in Java."
   },
   {
@@ -720,12 +720,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "What is the default value of an Object reference?",
     "options": [
-      "empty string",
-      "undefined",
       "0",
-      "null"
+      "empty string",
+      "null",
+      "undefined"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Uninitialized object references default to null."
   },
   {
@@ -736,8 +736,8 @@ window.quizData.java = [
     "options": [
       "Interfaces only",
       "Constructors",
-      "Classes in most cases",
-      "Abstract classes"
+      "Abstract classes",
+      "Classes in practice"
     ],
     "answer": 0,
     "explanation": "Java avoids diamond problem by restricting class inheritance."
@@ -748,12 +748,12 @@ window.quizData.java = [
     "difficulty": "Easy",
     "question": "Enum in Java is?",
     "options": [
-      "A special class representing a fixed set of constants",
-      "A method in typical implementations",
+      "A variable type in typical implementations",
       "A loop construct in typical implementations",
-      "A variable type in typical implementations"
+      "A method in typical implementations",
+      "A special class representing a fixed set of constants"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Enums provide type-safe constant definitions."
   },
   {
@@ -762,13242 +762,13242 @@ window.quizData.java = [
     "difficulty": "Medium",
     "question": "var keyword in Java 10+?",
     "options": [
+      "Dynamic typing in practice",
       "Local variable type inference",
-      "Constant declaration by design",
-      "Dynamic typing in standard usage",
-      "Global variable (default behavior)"
+      "Constant declaration (general case)",
+      "Global variable (commonly used)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Compiler infers type from initializer."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 >> 1);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 13; int z = (x > y) ? x + 11 : y - 11;?",
     "options": [
-      "4",
-      "8",
-      "5",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 6);?",
-    "options": [
+      "13",
+      "25",
       "3",
-      "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 3);?",
-    "options": [
-      "15",
-      "16",
-      "19",
-      "32"
+      "14"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
+    "explanation": "Condition (14 > 13) evaluates to true. Thus z is assigned to 14 + 11 which equals 25."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 % 3);?",
-    "options": [
-      "76",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 5);?",
+    "question": "What is the printed output of the Java expression: System.out.println(28 % 7);?",
     "options": [
       "12",
+      "2",
+      "4",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 28 / 7 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 & 5);",
+    "options": [
       "11",
-      "15",
+      "6",
+      "4",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 110 and 101 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(64 % 9);?",
+    "options": [
+      "0",
+      "1",
+      "7",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 64 / 9 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(36 % 10);?",
+    "options": [
+      "3",
+      "8",
+      "0",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 36 / 10 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 4);",
+    "options": [
+      "21",
+      "30",
+      "22",
       "24"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 | 6);?",
-    "options": [
-      "29",
-      "33",
-      "60",
-      "30"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 30."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 | 3);?",
-    "options": [
-      "26",
-      "46",
-      "23",
-      "22"
-    ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
+    "explanation": "Applying bitwise ^ between binary 10010 and 100 yields decimal 22."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 6);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 17; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
-      "-1",
-      "3",
-      "72",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 << 1);?",
-    "options": [
-      "38",
-      "37",
-      "76",
-      "41"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 38."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 2);?",
-    "options": [
-      "82",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 4);?",
-    "options": [
-      "0",
-      "83",
-      "3",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 6);?",
-    "options": [
-      "25",
       "21",
-      "44",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 >> 1);?",
-    "options": [
-      "13",
-      "10",
-      "20",
-      "9"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 5);?",
-    "options": [
-      "0",
-      "-1",
-      "3",
-      "88"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 3);?",
-    "options": [
-      "34",
-      "20",
-      "16",
-      "17"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 2);?",
-    "options": [
-      "5",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 5);?",
-    "options": [
-      "-1",
-      "84",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 5);?",
-    "options": [
-      "2",
-      "0",
-      "1",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 >> 1);?",
-    "options": [
-      "4",
-      "5",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 3);?",
-    "options": [
-      "1",
-      "0",
-      "4",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 >> 1);?",
-    "options": [
-      "13",
-      "20",
-      "9",
-      "10"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 2);?",
-    "options": [
-      "6",
-      "9",
-      "5",
-      "12"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 2);?",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 2);?",
-    "options": [
-      "58",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 >> 1);?",
-    "options": [
-      "7",
-      "8",
-      "11",
-      "16"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 >> 1);?",
-    "options": [
-      "15",
-      "24",
-      "11",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 4);?",
-    "options": [
-      "24",
-      "20",
-      "42",
-      "21"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 6);?",
-    "options": [
-      "22",
-      "25",
-      "21",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 >> 1);?",
-    "options": [
-      "3",
-      "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 6);?",
-    "options": [
-      "14",
-      "13",
-      "28",
-      "17"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 << 1);?",
-    "options": [
-      "96",
-      "47",
-      "48",
-      "51"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 48."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 5);?",
-    "options": [
-      "2",
-      "3",
-      "6",
-      "6"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 5);?",
-    "options": [
-      "13",
-      "12",
-      "16",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 >> 1);?",
-    "options": [
-      "4",
-      "8",
-      "3",
-      "7"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 % 3);?",
-    "options": [
-      "4",
-      "2",
-      "0",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 2);?",
-    "options": [
-      "52",
-      "3",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 4);?",
-    "options": [
-      "7",
-      "16",
-      "8",
-      "11"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 & 5);?",
-    "options": [
-      "56",
-      "3",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 4);?",
-    "options": [
-      "7",
-      "8",
-      "3",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 4);?",
-    "options": [
-      "14",
-      "30",
-      "18",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 6);?",
-    "options": [
-      "18",
-      "38",
+      "17",
       "19",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 ^ 6);?",
-    "options": [
-      "4",
-      "2",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 % 5);?",
-    "options": [
-      "4",
-      "3",
-      "7",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 3);?",
-    "options": [
-      "3",
-      "53",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 6);?",
-    "options": [
-      "5",
-      "4",
-      "8",
-      "10"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 5);?",
-    "options": [
-      "18",
-      "14",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 << 1);?",
-    "options": [
-      "80",
-      "40",
-      "39",
-      "43"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 40."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 6);?",
-    "options": [
-      "15",
-      "14",
-      "18",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 >> 1);?",
-    "options": [
-      "8",
-      "16",
-      "7",
-      "11"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 & 4);?",
-    "options": [
-      "-1",
-      "3",
-      "66",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 >> 1);?",
-    "options": [
-      "9",
-      "12",
-      "8",
-      "18"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 << 1);?",
-    "options": [
-      "19",
-      "40",
-      "23",
-      "20"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 4);?",
-    "options": [
-      "26",
-      "16",
-      "12",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 << 1);?",
-    "options": [
-      "84",
-      "41",
-      "42",
-      "45"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 42."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 << 1);?",
-    "options": [
-      "60",
-      "29",
-      "30",
-      "33"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 30."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 6);?",
-    "options": [
-      "14",
-      "13",
-      "28",
-      "17"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 | 4);?",
-    "options": [
-      "14",
-      "18",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 << 1);?",
-    "options": [
-      "88",
-      "47",
-      "44",
-      "43"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 44."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 4);?",
-    "options": [
-      "2",
-      "4",
-      "1",
-      "5"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 % 6);?",
-    "options": [
-      "3",
-      "6",
-      "6",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 2);?",
-    "options": [
-      "14",
-      "10",
-      "22",
-      "11"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 4);?",
-    "options": [
-      "3",
-      "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 6);?",
-    "options": [
-      "26",
-      "22",
-      "23",
-      "46"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 5);?",
-    "options": [
-      "-1",
-      "58",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 3);?",
-    "options": [
-      "10",
-      "14",
-      "11",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 & 2);?",
-    "options": [
-      "0",
-      "3",
-      "68",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 6);?",
-    "options": [
-      "15",
-      "30",
-      "18",
-      "14"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);?",
-    "options": [
-      "3",
-      "6",
-      "6",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 << 1);?",
-    "options": [
-      "36",
-      "72",
-      "35",
-      "39"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 36."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 6);?",
-    "options": [
-      "15",
-      "11",
-      "24",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 4);?",
-    "options": [
-      "13",
-      "17",
-      "14",
-      "28"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 >> 1);?",
-    "options": [
-      "10",
-      "14",
-      "22",
-      "11"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 << 1);?",
-    "options": [
-      "33",
-      "34",
-      "68",
-      "37"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 34."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 >> 1);?",
-    "options": [
-      "3",
-      "7",
-      "4",
-      "8"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 5);?",
-    "options": [
-      "-1",
-      "0",
-      "71",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 3);?",
-    "options": [
-      "25",
-      "21",
-      "44",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 2);?",
-    "options": [
-      "84",
-      "0",
-      "-1",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 3);?",
-    "options": [
-      "36",
-      "18",
-      "17",
-      "21"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 3);?",
-    "options": [
-      "18",
-      "22",
-      "38",
-      "19"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 % 4);?",
-    "options": [
-      "3",
-      "6",
-      "6",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 << 1);?",
-    "options": [
-      "31",
-      "64",
-      "35",
-      "32"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 32."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 << 1);?",
-    "options": [
-      "21",
-      "17",
-      "36",
-      "18"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 5);?",
-    "options": [
-      "8",
-      "3",
-      "7",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 5);?",
-    "options": [
-      "6",
-      "2",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 6);?",
-    "options": [
-      "17",
-      "36",
-      "18",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 2);?",
-    "options": [
-      "5",
-      "2",
-      "4",
-      "1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 5);?",
-    "options": [
-      "10",
-      "22",
-      "14",
-      "11"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 6);?",
-    "options": [
-      "3",
-      "4",
-      "8",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 4);?",
-    "options": [
-      "20",
-      "19",
-      "23",
-      "40"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 >> 1);?",
-    "options": [
-      "10",
-      "8",
-      "5",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 6);?",
-    "options": [
-      "7",
-      "3",
-      "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 >> 1);?",
-    "options": [
-      "6",
-      "7",
-      "14",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 | 6);?",
-    "options": [
-      "26",
-      "46",
-      "23",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 << 1);?",
-    "options": [
-      "52",
-      "25",
-      "29",
-      "26"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 26."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 << 1);?",
-    "options": [
-      "92",
-      "45",
-      "49",
-      "46"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 46."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 5);?",
-    "options": [
-      "8",
-      "3",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 << 1);?",
-    "options": [
-      "11",
-      "15",
-      "24",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 6);?",
-    "options": [
-      "10",
-      "6",
-      "7",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 | 3);?",
-    "options": [
-      "14",
-      "30",
-      "15",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 5);?",
-    "options": [
-      "18",
-      "14",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 << 1);?",
-    "options": [
-      "20",
-      "13",
-      "10",
-      "9"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 5);?",
-    "options": [
-      "4",
-      "3",
-      "7",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 3);?",
-    "options": [
-      "11",
-      "14",
-      "10",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 % 5);?",
-    "options": [
-      "2",
-      "1",
-      "0",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 3);?",
-    "options": [
-      "22",
-      "26",
-      "46",
       "23"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
+    "explanation": "Condition (21 > 17) evaluates to true. Thus z is assigned to 21 + 2 which equals 23."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 << 1);?",
+    "question": "What is the printed output of the Java expression: System.out.println(28 % 5);?",
     "options": [
-      "56",
-      "28",
-      "27",
-      "31"
+      "0",
+      "5",
+      "5",
+      "3"
     ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 28."
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 28 / 5 leaves remainder 3."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 3);?",
+    "question": "What is the printed output of the Java expression: System.out.println(47 % 5);?",
     "options": [
-      "2",
+      "0",
       "4",
-      "1",
-      "0"
+      "9",
+      "2"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 47 / 5 leaves remainder 2."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 3);?",
+    "question": "What is the printed output of the Java expression: System.out.println(38 % 7);?",
     "options": [
       "5",
-      "2",
-      "4",
-      "1"
+      "0",
+      "3",
+      "5"
     ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 38 / 7 leaves remainder 3."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 >> 1);?",
+    "question": "What is the printed output of the Java expression: System.out.println(63 % 10);?",
     "options": [
-      "9",
+      "6",
+      "3",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 63 / 10 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 8; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "8",
+      "8",
+      "6",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Condition (8 > 8) evaluates to false. Thus z is assigned to 8 - 2 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 ^ 9);",
+    "options": [
+      "1",
+      "3",
+      "0",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1000 and 1001 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 5);",
+    "options": [
+      "20",
       "12",
+      "10",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1111 and 101 yields decimal 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(59 % 6);?",
+    "options": [
+      "7",
+      "0",
+      "9",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 59 / 6 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 7);",
+    "options": [
+      "22",
+      "17",
+      "15",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1111 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 ^ 7);",
+    "options": [
+      "12",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 101 and 111 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 18; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "14",
+      "26",
+      "10",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (14 > 18) evaluates to false. Thus z is assigned to 18 - 8 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(23 % 5);?",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 23 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 9; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "19",
+      "17",
+      "9",
+      "21"
+    ],
+    "answer": 3,
+    "explanation": "Condition (19 > 9) evaluates to true. Thus z is assigned to 19 + 2 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 3);",
+    "options": [
+      "0",
+      "-1",
+      "2",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1100 and 11 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 18; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "18",
+      "24",
+      "30",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (24 > 18) evaluates to true. Thus z is assigned to 24 + 6 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 ^ 8);",
+    "options": [
+      "5",
+      "22",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1110 and 1000 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(57 % 5);?",
+    "options": [
+      "4",
+      "0",
+      "11",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 57 / 5 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 12; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "12",
+      "5",
+      "13",
+      "21"
+    ],
+    "answer": 3,
+    "explanation": "Condition (13 > 12) evaluates to true. Thus z is assigned to 13 + 8 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(44 % 10);?",
+    "options": [
+      "16",
+      "0",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 44 / 10 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 ^ 2);",
+    "options": [
+      "8",
+      "50",
       "6",
       "5"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 6."
+    "explanation": "Applying bitwise ^ between binary 100 and 10 yields decimal 6."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 5);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 19; int z = (x > y) ? x + 6 : y - 6;?",
     "options": [
+      "19",
+      "14",
       "20",
-      "24",
-      "21",
-      "42"
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "Condition (20 > 19) evaluates to true. Thus z is assigned to 20 + 6 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 9);",
+    "options": [
+      "14",
+      "12",
+      "13",
+      "15"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
+    "explanation": "Applying bitwise | between binary 101 and 1001 yields decimal 13."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 4);?",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 11);?",
     "options": [
-      "17",
-      "16",
-      "34",
-      "20"
+      "7",
+      "9",
+      "0",
+      "2"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 11 leaves remainder 7."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 5);?",
+    "question": "What is the printed output of the Java expression: System.out.println(19 % 8);?",
     "options": [
-      "20",
-      "42",
-      "21",
-      "24"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 2);?",
-    "options": [
-      "29",
-      "52",
-      "26",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 26."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 2);?",
-    "options": [
-      "11",
-      "12",
-      "15",
-      "24"
+      "0",
+      "3",
+      "5",
+      "2"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
+    "explanation": "Modulo operator (%) returns the division remainder: 19 / 8 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 & 2);",
+    "options": [
+      "2",
+      "0",
+      "-1",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1000 and 10 yields decimal 0."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 4);?",
+    "question": "What is the printed output of the Java expression: System.out.println(58 % 10);?",
+    "options": [
+      "5",
+      "10",
+      "0",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 58 / 10 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 9; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "5",
+      "9",
+      "15",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Condition (5 > 9) evaluates to false. Thus z is assigned to 9 - 6 which equals 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 & 3);",
+    "options": [
+      "14",
+      "5",
+      "2",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1011 and 11 yields decimal 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 7);?",
+    "options": [
+      "6",
+      "8",
+      "0",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 7 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 6);",
+    "options": [
+      "6",
+      "3",
+      "4",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1100 and 110 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 | 4);",
+    "options": [
+      "8",
+      "10",
+      "5",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 110 and 100 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(18 % 4);?",
+    "options": [
+      "2",
+      "0",
+      "4",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 18 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 3);",
+    "options": [
+      "17",
+      "21",
+      "19",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 10010 and 11 yields decimal 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 5; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "17",
+      "28",
+      "6",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 5) evaluates to true. Thus z is assigned to 17 + 11 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(33 % 10);?",
+    "options": [
+      "18",
+      "3",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 33 / 10 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 | 9);",
+    "options": [
+      "15",
+      "13",
+      "41",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 100 and 1001 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 & 5);",
+    "options": [
+      "13",
+      "0",
+      "-1",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1000 and 101 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 ^ 6);",
+    "options": [
+      "25",
+      "39",
+      "23",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10001 and 110 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 12; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "12",
+      "15",
+      "12",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Condition (12 > 12) evaluates to false. Thus z is assigned to 12 - 3 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(57 % 6);?",
     "options": [
       "3",
       "0",
-      "79",
-      "-1"
+      "9",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 57 / 6 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 7);",
+    "options": [
+      "17",
+      "16",
+      "14",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 1001 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 7);",
+    "options": [
+      "0",
+      "-1",
+      "23",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10000 and 111 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 7; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "23",
+      "18",
+      "7",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Condition (23 > 7) evaluates to true. Thus z is assigned to 23 + 5 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 19; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "28",
+      "59",
+      "19",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Condition (10 > 19) evaluates to false. Thus z is assigned to 19 - 9 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 | 7);",
+    "options": [
+      "17",
+      "14",
+      "15",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1010 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 | 6);",
+    "options": [
+      "15",
+      "19",
+      "17",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1101 and 110 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 5);",
+    "options": [
+      "17",
+      "9",
+      "8",
+      "11"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Applying bitwise ^ between binary 1100 and 101 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 21; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "14",
+      "28",
+      "6",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Condition (6 > 21) evaluates to false. Thus z is assigned to 21 - 7 which equals 14."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 6);?",
+    "question": "What is the printed output of the Java expression: System.out.println(60 % 6);?",
     "options": [
       "0",
+      "2",
+      "16",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 60 / 6 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 11);?",
+    "options": [
+      "0",
+      "3",
+      "5",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 11 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 5; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "19",
+      "15",
+      "5",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Condition (17 > 5) evaluates to true. Thus z is assigned to 17 + 2 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 18; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "12",
+      "5",
+      "24",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Condition (5 > 18) evaluates to false. Thus z is assigned to 18 - 6 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 7);?",
+    "options": [
+      "0",
+      "4",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 7 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(23 % 6);?",
+    "options": [
+      "3",
+      "0",
+      "5",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 23 / 6 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 ^ 4);",
+    "options": [
+      "10",
       "4",
       "2",
       "1"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 110 and 100 yields decimal 2."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 5);?",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 7);?",
     "options": [
+      "0",
       "8",
-      "7",
-      "11",
-      "16"
+      "3",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 7 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(63 % 9);?",
+    "options": [
+      "2",
+      "0",
+      "13",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 63 / 9 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(48 % 8);?",
+    "options": [
+      "2",
+      "19",
+      "6",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 48 / 8 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 19; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "19",
+      "21",
+      "12",
+      "30"
+    ],
+    "answer": 3,
+    "explanation": "Condition (21 > 19) evaluates to true. Thus z is assigned to 21 + 9 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(19 % 5);?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 19 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 2);",
+    "options": [
+      "16",
+      "18",
+      "15",
+      "20"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
+    "explanation": "Applying bitwise ^ between binary 10010 and 10 yields decimal 16."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 2);?",
+    "question": "What is the printed output of the Java expression: System.out.println(21 % 7);?",
+    "options": [
+      "3",
+      "20",
+      "2",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 21 / 7 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 & 2);",
+    "options": [
+      "13",
+      "2",
+      "4",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1011 and 10 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 5; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "14",
+      "18",
+      "5",
+      "22"
+    ],
+    "answer": 3,
+    "explanation": "Condition (18 > 5) evaluates to true. Thus z is assigned to 18 + 4 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(38 % 9);?",
+    "options": [
+      "0",
+      "4",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 38 / 9 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(18 % 8);?",
+    "options": [
+      "14",
+      "4",
+      "2",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 18 / 8 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(64 % 5);?",
+    "options": [
+      "6",
+      "0",
+      "12",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 64 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 | 8);",
+    "options": [
+      "14",
+      "13",
+      "16",
+      "47"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 110 and 1000 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(17 % 11);?",
+    "options": [
+      "8",
+      "0",
+      "1",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 17 / 11 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 12; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "31",
+      "22",
+      "13",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 12) evaluates to true. Thus z is assigned to 22 + 9 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 19; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "19",
+      "10",
+      "28",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Condition (14 > 19) evaluates to false. Thus z is assigned to 19 - 9 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 11);?",
+    "options": [
+      "3",
+      "1",
+      "0",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 11 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 ^ 8);",
+    "options": [
+      "2",
+      "16",
+      "0",
+      "-1"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1000 and 1000 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 17; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
       "16",
       "20",
+      "18",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Condition (18 > 17) evaluates to true. Thus z is assigned to 18 + 2 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 21; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "23",
+      "15",
+      "31",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "Condition (23 > 21) evaluates to true. Thus z is assigned to 23 + 8 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(30 % 9);?",
+    "options": [
+      "3",
+      "14",
+      "0",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 30 / 9 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 13; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "13",
+      "6",
       "17",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 13) evaluates to false. Thus z is assigned to 13 - 4 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 20; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "18",
+      "10",
+      "22",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (10 > 20) evaluates to false. Thus z is assigned to 20 - 2 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 | 8);",
+    "options": [
+      "8",
+      "16",
+      "10",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1000 and 1000 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 8; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "8",
+      "13",
+      "19",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Condition (19 > 8) evaluates to true. Thus z is assigned to 19 + 6 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 | 6);",
+    "options": [
+      "22",
+      "46",
+      "25",
+      "23"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 10001 and 110 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "21",
+      "19",
+      "23",
+      "11"
+    ],
+    "answer": 2,
+    "explanation": "Condition (21 > 11) evaluates to true. Thus z is assigned to 21 + 2 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 & 7);",
+    "options": [
+      "3",
+      "6",
+      "11",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 100 and 111 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 5; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "12",
+      "5",
+      "17",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 5) evaluates to true. Thus z is assigned to 12 + 5 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 & 5);",
+    "options": [
+      "14",
+      "3",
+      "1",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1001 and 101 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 & 3);",
+    "options": [
+      "-1",
+      "0",
+      "7",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 100 and 11 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 5; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "8",
+      "17",
+      "5",
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "Condition (17 > 5) evaluates to true. Thus z is assigned to 17 + 9 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 | 3);",
+    "options": [
+      "7",
+      "6",
+      "9",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 110 and 11 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 9);?",
+    "options": [
+      "0",
+      "4",
+      "3",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 9 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 3);",
+    "options": [
+      "17",
+      "28",
+      "15",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1100 and 11 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 5; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "31",
+      "13",
+      "22",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 5) evaluates to true. Thus z is assigned to 22 + 9 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 12; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "12",
+      "19",
+      "5",
+      "69"
+    ],
+    "answer": 2,
+    "explanation": "Condition (5 > 12) evaluates to false. Thus z is assigned to 12 - 7 which equals 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(48 % 11);?",
+    "options": [
+      "4",
+      "0",
+      "6",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 48 / 11 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 15; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "6",
+      "22",
+      "8",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Condition (6 > 15) evaluates to false. Thus z is assigned to 15 - 7 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 12; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "8",
+      "12",
+      "55",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Condition (8 > 12) evaluates to false. Thus z is assigned to 12 - 4 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(52 % 5);?",
+    "options": [
+      "2",
+      "4",
+      "0",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 52 / 5 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 11);?",
+    "options": [
+      "3",
+      "12",
+      "0",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 11 leaves remainder 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 9);?",
+    "options": [
+      "6",
+      "1",
+      "3",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 9 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(23 % 7);?",
+    "options": [
+      "4",
+      "0",
+      "3",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 23 / 7 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(61 % 5);?",
+    "options": [
+      "1",
+      "12",
+      "3",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 61 / 5 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 ^ 3);",
+    "options": [
+      "9",
+      "7",
+      "6",
+      "53"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 100 and 11 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(57 % 11);?",
+    "options": [
+      "5",
+      "2",
+      "4",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 57 / 11 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 12; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "26",
+      "17",
+      "12",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Condition (17 > 12) evaluates to true. Thus z is assigned to 17 + 9 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 10);?",
+    "options": [
+      "0",
+      "11",
+      "2",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 10 leaves remainder 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 9);?",
+    "options": [
+      "6",
+      "0",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 9 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 19; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "22",
+      "16",
+      "19",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Condition (22 > 19) evaluates to true. Thus z is assigned to 22 + 6 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 6);",
+    "options": [
+      "0",
+      "2",
+      "22",
+      "-1"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10000 and 110 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 ^ 4);",
+    "options": [
+      "0",
+      "1",
+      "9",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 101 and 100 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 11; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "11",
+      "10",
+      "32",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "Condition (21 > 11) evaluates to true. Thus z is assigned to 21 + 11 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 11);?",
+    "options": [
+      "7",
+      "0",
+      "9",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 11 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(62 % 8);?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 62 / 8 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 8);",
+    "options": [
+      "10",
+      "7",
+      "23",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1111 and 1000 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 9);?",
+    "options": [
+      "0",
+      "4",
+      "7",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 9 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 7; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "7",
+      "9",
+      "21",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Condition (15 > 7) evaluates to true. Thus z is assigned to 15 + 6 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(47 % 4);?",
+    "options": [
+      "11",
+      "5",
+      "3",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 47 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 9);?",
+    "options": [
+      "0",
+      "9",
+      "7",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 9 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(36 % 8);?",
+    "options": [
+      "0",
+      "4",
+      "21",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 36 / 8 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(60 % 8);?",
+    "options": [
+      "7",
+      "4",
+      "6",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 60 / 8 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 13; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "28",
+      "13",
+      "23",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Condition (23 > 13) evaluates to true. Thus z is assigned to 23 + 5 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 19; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "31",
+      "20",
+      "19",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Condition (20 > 19) evaluates to true. Thus z is assigned to 20 + 11 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 12; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "34",
+      "12",
+      "24",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (24 > 12) evaluates to true. Thus z is assigned to 24 + 10 which equals 34."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "11",
+      "16",
+      "20",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (18 > 11) evaluates to true. Thus z is assigned to 18 + 2 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 & 8);",
+    "options": [
+      "2",
+      "-1",
+      "27",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 10011 and 1000 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(48 % 10);?",
+    "options": [
+      "10",
+      "8",
+      "0",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 48 / 10 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 8);?",
+    "options": [
+      "8",
+      "2",
+      "0",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 8 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(53 % 11);?",
+    "options": [
+      "11",
+      "9",
+      "4",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 53 / 11 leaves remainder 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(30 % 7);?",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 30 / 7 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(31 % 5);?",
+    "options": [
+      "3",
+      "6",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 31 / 5 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 23; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "28",
+      "7",
+      "23",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Condition (7 > 23) evaluates to false. Thus z is assigned to 23 - 5 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 3);",
+    "options": [
+      "3",
+      "18",
+      "5",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1111 and 11 yields decimal 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 8; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "8",
+      "14",
+      "20",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Condition (14 > 8) evaluates to true. Thus z is assigned to 14 + 6 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 ^ 7);",
+    "options": [
+      "-1",
+      "0",
+      "2",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 111 and 111 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 24; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "24",
+      "33",
+      "15",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Condition (9 > 24) evaluates to false. Thus z is assigned to 24 - 9 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 4);?",
+    "options": [
+      "0",
+      "2",
+      "8",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 | 7);",
+    "options": [
+      "20",
+      "17",
+      "14",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 1101 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 & 5);",
+    "options": [
+      "9",
+      "6",
+      "4",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 100 and 101 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 & 7);",
+    "options": [
+      "7",
+      "14",
+      "6",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 111 and 111 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 17; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "21",
+      "17",
+      "25",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (21 > 17) evaluates to true. Thus z is assigned to 21 + 4 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 ^ 4);",
+    "options": [
+      "8",
+      "-1",
+      "0",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 100 and 100 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 & 4);",
+    "options": [
+      "0",
+      "21",
+      "-1",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10001 and 100 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 | 8);",
+    "options": [
+      "18",
+      "9",
+      "10",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1010 and 1000 yields decimal 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 10);?",
+    "options": [
+      "18",
+      "7",
+      "0",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 10 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(58 % 5);?",
+    "options": [
+      "0",
+      "11",
+      "3",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 58 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(15 % 5);?",
+    "options": [
+      "3",
+      "0",
+      "13",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 15 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 2);",
+    "options": [
+      "13",
+      "46",
+      "14",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1100 and 10 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(15 % 4);?",
+    "options": [
+      "0",
+      "17",
+      "5",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 15 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(31 % 4);?",
+    "options": [
+      "7",
+      "0",
+      "3",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 31 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 21; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "28",
+      "21",
+      "14",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Condition (5 > 21) evaluates to false. Thus z is assigned to 21 - 7 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 2);",
+    "options": [
+      "17",
+      "15",
+      "14",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1111 and 10 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 13; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "7",
+      "16",
+      "13",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 13) evaluates to true. Thus z is assigned to 16 + 9 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 ^ 3);",
+    "options": [
+      "11",
+      "9",
+      "13",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1010 and 11 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(46 % 4);?",
+    "options": [
+      "4",
+      "11",
+      "0",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 46 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 12; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "4",
+      "12",
+      "24",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (14 > 12) evaluates to true. Thus z is assigned to 14 + 10 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 24; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "30",
+      "54",
+      "24",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Condition (18 > 24) evaluates to false. Thus z is assigned to 24 - 6 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 7);",
+    "options": [
+      "26",
+      "23",
+      "25",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10000 and 111 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(59 % 7);?",
+    "options": [
+      "0",
+      "8",
+      "5",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 59 / 7 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 14; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "25",
+      "14",
+      "3",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Condition (7 > 14) evaluates to false. Thus z is assigned to 14 - 11 which equals 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 13; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "13",
+      "23",
+      "15",
+      "31"
+    ],
+    "answer": 3,
+    "explanation": "Condition (23 > 13) evaluates to true. Thus z is assigned to 23 + 8 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 | 3);",
+    "options": [
+      "17",
+      "14",
+      "17",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 1110 and 11 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 | 7);",
+    "options": [
+      "9",
+      "7",
+      "14",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 111 and 111 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 12; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "13",
+      "7",
+      "12",
+      "19"
+    ],
+    "answer": 3,
+    "explanation": "Condition (13 > 12) evaluates to true. Thus z is assigned to 13 + 6 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 ^ 9);",
+    "options": [
+      "17",
+      "14",
+      "15",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 110 and 1001 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 20; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "17",
+      "9",
+      "31",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 20) evaluates to false. Thus z is assigned to 20 - 11 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 9);",
+    "options": [
+      "17",
+      "14",
+      "15",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1111 and 1001 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 | 8);",
+    "options": [
+      "24",
+      "23",
+      "41",
+      "26"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 10000 and 1000 yields decimal 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 ^ 5);",
+    "options": [
+      "16",
+      "13",
+      "16",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1011 and 101 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 21; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "5",
+      "21",
+      "27",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Condition (5 > 21) evaluates to false. Thus z is assigned to 21 - 6 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 5; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "31",
+      "17",
+      "24",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Condition (24 > 5) evaluates to true. Thus z is assigned to 24 + 7 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 7; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "13",
+      "19",
+      "16",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Condition (16 > 7) evaluates to true. Thus z is assigned to 16 + 3 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(49 % 4);?",
+    "options": [
+      "0",
+      "1",
+      "12",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 49 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 7);?",
+    "options": [
+      "0",
+      "3",
+      "3",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 7 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 9);",
+    "options": [
+      "5",
+      "4",
+      "7",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1100 and 1001 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 ^ 5);",
+    "options": [
+      "12",
+      "30",
+      "13",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1000 and 101 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 12; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "6",
+      "12",
+      "14",
+      "22"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 12) evaluates to true. Thus z is assigned to 14 + 8 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 2);",
+    "options": [
+      "0",
+      "14",
+      "-1",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1100 and 10 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 | 3);",
+    "options": [
+      "21",
+      "19",
+      "35",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 10000 and 11 yields decimal 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 & 4);",
+    "options": [
+      "4",
+      "18",
+      "6",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1110 and 100 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 20; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "30",
+      "20",
+      "5",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Condition (5 > 20) evaluates to false. Thus z is assigned to 20 - 10 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 17; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "20",
+      "14",
+      "17",
+      "57"
+    ],
+    "answer": 1,
+    "explanation": "Condition (14 > 17) evaluates to false. Thus z is assigned to 17 - 3 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 ^ 6);",
+    "options": [
+      "5",
+      "3",
+      "2",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 101 and 110 yields decimal 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 17; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "17",
+      "27",
+      "7",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Condition (6 > 17) evaluates to false. Thus z is assigned to 17 - 10 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 11; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "8",
+      "11",
+      "13",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Condition (13 > 11) evaluates to true. Thus z is assigned to 13 + 5 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 5);",
+    "options": [
+      "2",
+      "15",
+      "0",
+      "-1"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1010 and 101 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 | 7);",
+    "options": [
+      "19",
+      "15",
+      "14",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1100 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(25 % 5);?",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 25 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(24 % 7);?",
+    "options": [
+      "3",
+      "0",
+      "5",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 24 / 7 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 8);",
+    "options": [
+      "27",
+      "25",
+      "26",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10010 and 1000 yields decimal 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 8);",
+    "options": [
+      "23",
+      "7",
+      "6",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1111 and 1000 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 17; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "17",
+      "20",
+      "16",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 17) evaluates to false. Thus z is assigned to 17 - 3 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(28 % 4);?",
+    "options": [
+      "2",
+      "12",
+      "0",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 28 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 & 3);",
+    "options": [
+      "3",
+      "0",
+      "12",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1001 and 11 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 10; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "10",
+      "13",
+      "20",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Condition (13 > 10) evaluates to true. Thus z is assigned to 13 + 7 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 13; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "6",
+      "7",
+      "13",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (7 > 13) evaluates to false. Thus z is assigned to 13 - 7 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(16 % 5);?",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 16 / 5 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 8);?",
+    "options": [
+      "15",
+      "2",
+      "5",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 8 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 22; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "32",
+      "22",
+      "23",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (23 > 22) evaluates to true. Thus z is assigned to 23 + 9 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 8);?",
+    "options": [
+      "3",
+      "0",
+      "5",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 8 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 5);",
+    "options": [
+      "23",
+      "21",
+      "20",
+      "32"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10000 and 101 yields decimal 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 | 3);",
+    "options": [
+      "6",
+      "50",
+      "7",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 100 and 11 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 5; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "11",
+      "4",
+      "18",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Condition (11 > 5) evaluates to true. Thus z is assigned to 11 + 7 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 | 8);",
+    "options": [
+      "15",
+      "13",
+      "21",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1101 and 1000 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 8);?",
+    "options": [
+      "4",
+      "2",
+      "0",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 8 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(59 % 4);?",
+    "options": [
+      "5",
+      "3",
+      "0",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 59 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 19; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "19",
+      "10",
+      "27",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Condition (10 > 19) evaluates to false. Thus z is assigned to 19 - 8 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 23; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "20",
+      "13",
+      "26",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 23) evaluates to false. Thus z is assigned to 23 - 3 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 11; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "17",
+      "27",
+      "11",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 11) evaluates to true. Thus z is assigned to 17 + 10 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(41 % 4);?",
+    "options": [
+      "3",
+      "10",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 41 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 ^ 6);",
+    "options": [
+      "13",
+      "10",
+      "19",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1101 and 110 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 10; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "24",
+      "10",
+      "20",
+      "22"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 10) evaluates to true. Thus z is assigned to 22 + 2 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 9);",
+    "options": [
+      "26",
+      "27",
+      "34",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10010 and 1001 yields decimal 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(63 % 7);?",
+    "options": [
+      "2",
+      "9",
+      "0",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 63 / 7 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 19; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "6",
+      "23",
+      "19",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 19) evaluates to false. Thus z is assigned to 19 - 4 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 24; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "24",
+      "14",
+      "34",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Condition (18 > 24) evaluates to false. Thus z is assigned to 24 - 10 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 6);",
+    "options": [
+      "5",
+      "21",
+      "8",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1111 and 110 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 9);",
+    "options": [
+      "8",
+      "7",
+      "21",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1100 and 1001 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 2);",
+    "options": [
+      "17",
+      "18",
+      "52",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10000 and 10 yields decimal 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 11; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "21",
+      "27",
+      "11",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Condition (21 > 11) evaluates to true. Thus z is assigned to 21 + 6 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 5; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "3",
+      "14",
+      "5",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 5) evaluates to true. Thus z is assigned to 14 + 11 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 23; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "27",
+      "19",
+      "7",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Condition (7 > 23) evaluates to false. Thus z is assigned to 23 - 4 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 | 4);",
+    "options": [
+      "21",
+      "28",
+      "24",
+      "22"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 10010 and 100 yields decimal 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(58 % 7);?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 58 / 7 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 2);",
+    "options": [
+      "54",
+      "10",
+      "11",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1001 and 10 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 14; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "11",
+      "29",
+      "14",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Condition (20 > 14) evaluates to true. Thus z is assigned to 20 + 9 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 ^ 7);",
+    "options": [
+      "14",
+      "15",
+      "17",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1000 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 8; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "18",
+      "8",
+      "8",
+      "-2"
+    ],
+    "answer": 3,
+    "explanation": "Condition (8 > 8) evaluates to false. Thus z is assigned to 8 - 10 which equals -2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 15; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "15",
+      "25",
+      "5",
+      "11"
+    ],
+    "answer": 2,
+    "explanation": "Condition (11 > 15) evaluates to false. Thus z is assigned to 15 - 10 which equals 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 17; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "17",
+      "10",
+      "16",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (16 > 17) evaluates to false. Thus z is assigned to 17 - 7 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(15 % 9);?",
+    "options": [
+      "8",
+      "1",
+      "6",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 15 / 9 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 3);",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 101 and 11 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(15 % 6);?",
+    "options": [
+      "5",
+      "3",
+      "0",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 15 / 6 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 13; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "25",
+      "18",
+      "11",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (18 > 13) evaluates to true. Thus z is assigned to 18 + 7 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 8);?",
+    "options": [
+      "7",
+      "4",
+      "9",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 8 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 23; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "23",
+      "13",
+      "12",
       "34"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
+    "explanation": "Condition (13 > 23) evaluates to false. Thus z is assigned to 23 - 11 which equals 12."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 3);?",
-    "options": [
-      "0",
-      "2",
-      "4",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 % 3);?",
-    "options": [
-      "1",
-      "2",
-      "4",
-      "5"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 2);?",
-    "options": [
-      "1",
-      "2",
-      "4",
-      "5"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 6);?",
-    "options": [
-      "40",
-      "20",
-      "19",
-      "23"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 3);?",
-    "options": [
-      "2",
-      "6",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 2);?",
-    "options": [
-      "-1",
-      "83",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 & 5);?",
-    "options": [
-      "77",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 2);?",
-    "options": [
-      "51",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 4);?",
-    "options": [
-      "0",
-      "2",
-      "4",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 2);?",
-    "options": [
-      "18",
-      "12",
-      "9",
-      "8"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 | 2);?",
-    "options": [
-      "23",
-      "26",
-      "46",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 3);?",
-    "options": [
-      "2",
-      "1",
-      "4",
-      "0"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 << 1);?",
-    "options": [
-      "44",
-      "22",
-      "21",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 << 1);?",
-    "options": [
-      "23",
-      "27",
-      "24",
-      "48"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 24."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 4);?",
-    "options": [
-      "40",
-      "20",
-      "23",
-      "19"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 6);?",
-    "options": [
-      "4",
-      "7",
-      "8",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 5);?",
-    "options": [
-      "4",
-      "8",
-      "10",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 3);?",
-    "options": [
-      "11",
-      "22",
-      "10",
-      "14"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 & 6);?",
-    "options": [
-      "2",
-      "1",
-      "5",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 3);?",
-    "options": [
-      "9",
-      "12",
-      "18",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 6);?",
-    "options": [
-      "5",
-      "8",
-      "10",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 5);?",
-    "options": [
-      "34",
-      "17",
-      "16",
-      "20"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 4);?",
-    "options": [
-      "-1",
-      "3",
-      "0",
-      "73"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 5);?",
-    "options": [
-      "36",
-      "17",
-      "18",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 << 1);?",
-    "options": [
-      "14",
-      "17",
-      "13",
-      "28"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 6);?",
-    "options": [
-      "87",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 3);?",
-    "options": [
-      "6",
-      "2",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 >> 1);?",
-    "options": [
-      "9",
-      "12",
-      "6",
-      "5"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 & 3);?",
-    "options": [
-      "3",
-      "78",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 | 4);?",
-    "options": [
-      "46",
-      "22",
-      "26",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 2);?",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "50"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 & 6);?",
-    "options": [
-      "5",
-      "6",
-      "12",
-      "9"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 6);?",
-    "options": [
-      "14",
-      "15",
-      "30",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 5);?",
-    "options": [
-      "2",
-      "0",
-      "4",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 >> 1);?",
-    "options": [
-      "14",
-      "10",
-      "7",
-      "6"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 ^ 5);?",
-    "options": [
-      "5",
-      "1",
-      "2",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 4);?",
-    "options": [
-      "56",
-      "27",
-      "31",
-      "28"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 28."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 5);?",
-    "options": [
-      "26",
-      "46",
-      "23",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);?",
-    "options": [
-      "22",
-      "46",
-      "23",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 2);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 16; int z = (x > y) ? x + 10 : y - 10;?",
     "options": [
       "16",
-      "8",
-      "7",
-      "11"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 2);?",
-    "options": [
-      "5",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 3);?",
-    "options": [
-      "0",
-      "4",
-      "2",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 | 5);?",
-    "options": [
-      "29",
-      "28",
-      "32",
-      "58"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 29."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 4);?",
-    "options": [
-      "10",
-      "20",
-      "9",
-      "13"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 5);?",
-    "options": [
-      "12",
-      "16",
-      "13",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 4);?",
-    "options": [
-      "12",
-      "8",
-      "18",
-      "9"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 5);?",
-    "options": [
-      "7",
-      "6",
-      "14",
-      "10"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 5);?",
-    "options": [
-      "52",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 5);?",
-    "options": [
-      "3",
-      "6",
-      "2",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 6);?",
-    "options": [
-      "-1",
-      "0",
-      "66",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 2);?",
-    "options": [
-      "9",
-      "13",
-      "20",
-      "10"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 2);?",
-    "options": [
-      "21",
-      "18",
-      "36",
-      "17"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 4);?",
-    "options": [
-      "16",
-      "12",
-      "13",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 2);?",
-    "options": [
-      "-1",
-      "3",
-      "0",
-      "61"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 2);?",
-    "options": [
-      "4",
-      "0",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 3);?",
-    "options": [
-      "7",
-      "6",
-      "10",
-      "14"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 3);?",
-    "options": [
-      "19",
-      "18",
-      "38",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 >> 1);?",
-    "options": [
-      "6",
-      "6",
-      "2",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 5);?",
-    "options": [
-      "30",
-      "15",
-      "14",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 & 2);?",
-    "options": [
-      "2",
-      "1",
-      "4",
-      "5"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 3);?",
-    "options": [
-      "2",
-      "1",
-      "5",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 5);?",
-    "options": [
-      "-1",
-      "0",
-      "67",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 5);?",
-    "options": [
-      "8",
-      "5",
-      "10",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 4);?",
-    "options": [
-      "54",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 4);?",
-    "options": [
-      "26",
-      "16",
-      "12",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 3);?",
-    "options": [
-      "-1",
-      "3",
-      "0",
-      "79"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 % 3);?",
-    "options": [
-      "66",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 >> 1);?",
-    "options": [
-      "10",
-      "22",
-      "11",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 4);?",
-    "options": [
-      "44",
-      "25",
-      "21",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 4);?",
-    "options": [
-      "6",
-      "12",
-      "9",
-      "5"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 4);?",
-    "options": [
-      "7",
-      "3",
-      "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 | 5);?",
-    "options": [
-      "22",
       "23",
-      "46",
-      "26"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 6);?",
-    "options": [
-      "0",
-      "-1",
-      "3",
-      "60"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 6);?",
-    "options": [
-      "32",
-      "15",
-      "19",
-      "16"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 4);?",
-    "options": [
-      "2",
-      "6",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 4);?",
-    "options": [
-      "8",
-      "7",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 4);?",
-    "options": [
-      "44",
-      "22",
-      "21",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 6);?",
-    "options": [
-      "11",
-      "8",
-      "16",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 % 2);?",
-    "options": [
-      "1",
-      "2",
-      "4",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 6);?",
-    "options": [
-      "12",
-      "5",
-      "6",
-      "9"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 4);?",
-    "options": [
-      "21",
-      "42",
-      "20",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 5);?",
-    "options": [
-      "21",
-      "42",
-      "24",
-      "20"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 6);?",
-    "options": [
-      "12",
-      "16",
-      "13",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 6);?",
-    "options": [
-      "22",
-      "46",
-      "23",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 3);?",
-    "options": [
-      "-1",
-      "0",
-      "51",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 2);?",
-    "options": [
-      "18",
-      "36",
-      "17",
-      "21"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 % 6);?",
-    "options": [
-      "2",
-      "3",
-      "6",
-      "6"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 2);?",
-    "options": [
-      "3",
-      "-1",
-      "0",
-      "50"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 6);?",
-    "options": [
-      "0",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 2);?",
-    "options": [
-      "8",
-      "3",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);?",
-    "options": [
-      "3",
-      "-1",
-      "0",
-      "72"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 % 3);?",
-    "options": [
-      "-1",
-      "3",
-      "57",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 4);?",
-    "options": [
-      "3",
-      "8",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 4);?",
-    "options": [
-      "28",
-      "13",
-      "14",
-      "17"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 3);?",
-    "options": [
-      "12",
-      "15",
-      "11",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 ^ 4);?",
-    "options": [
-      "3",
-      "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 6);?",
-    "options": [
-      "14",
-      "17",
-      "28",
-      "13"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 4);?",
-    "options": [
-      "4",
-      "5",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 2);?",
-    "options": [
-      "11",
-      "22",
-      "10",
-      "14"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 3);?",
-    "options": [
-      "5",
-      "12",
-      "6",
-      "9"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 4);?",
-    "options": [
-      "24",
-      "12",
-      "15",
-      "11"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 6);?",
-    "options": [
-      "4",
-      "10",
-      "5",
-      "8"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 2);?",
-    "options": [
-      "5",
-      "1",
-      "2",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 | 3);?",
-    "options": [
-      "30",
-      "26",
-      "54",
-      "27"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 27."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 % 4);?",
-    "options": [
-      "0",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 5);?",
-    "options": [
-      "1",
-      "2",
-      "4",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 3);?",
-    "options": [
-      "9",
-      "13",
-      "20",
-      "10"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 6);?",
-    "options": [
-      "7",
-      "6",
-      "14",
-      "10"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 | 2);?",
-    "options": [
-      "26",
-      "25",
-      "29",
-      "52"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 26."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 5);?",
-    "options": [
-      "14",
-      "13",
-      "28",
-      "17"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 4);?",
-    "options": [
-      "6",
-      "7",
-      "14",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 4);?",
-    "options": [
-      "16",
-      "19",
-      "15",
-      "32"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 5);?",
-    "options": [
-      "26",
-      "12",
-      "13",
-      "16"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 3);?",
-    "options": [
-      "38",
-      "18",
-      "22",
-      "19"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 6);?",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "78"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 >> 1);?",
-    "options": [
-      "8",
-      "12",
-      "9",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 3);?",
-    "options": [
-      "-1",
-      "0",
-      "74",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 4);?",
-    "options": [
-      "-1",
-      "77",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 5);?",
-    "options": [
-      "9",
-      "12",
-      "18",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 2);?",
-    "options": [
-      "46",
-      "23",
-      "26",
-      "22"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 4);?",
-    "options": [
-      "81",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 5);?",
-    "options": [
-      "4",
-      "8",
-      "10",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 2);?",
-    "options": [
-      "-1",
-      "3",
-      "88",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 | 4);?",
-    "options": [
-      "56",
-      "28",
-      "27",
-      "31"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 28."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 | 5);?",
-    "options": [
-      "18",
-      "14",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 3);?",
-    "options": [
-      "22",
-      "23",
-      "46",
-      "26"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 6);?",
-    "options": [
-      "5",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 5);?",
-    "options": [
-      "5",
-      "10",
-      "8",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 3);?",
-    "options": [
-      "6",
-      "10",
-      "7",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 4);?",
-    "options": [
-      "64",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 2);?",
-    "options": [
-      "52",
-      "3",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 6);?",
-    "options": [
-      "5",
-      "9",
-      "6",
-      "12"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 4);?",
-    "options": [
-      "8",
-      "4",
-      "7",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 5);?",
-    "options": [
-      "40",
-      "19",
-      "23",
-      "20"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 3);?",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 2);?",
-    "options": [
-      "-1",
-      "3",
-      "61",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 2);?",
-    "options": [
-      "44",
-      "21",
-      "22",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 5);?",
-    "options": [
-      "10",
-      "9",
-      "20",
-      "13"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 5);?",
-    "options": [
-      "42",
-      "20",
-      "21",
-      "24"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 4);?",
-    "options": [
-      "7",
-      "3",
-      "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 5);?",
-    "options": [
-      "26",
-      "13",
-      "16",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 3);?",
-    "options": [
-      "16",
-      "11",
-      "7",
-      "8"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 3);?",
-    "options": [
-      "1",
-      "4",
-      "2",
-      "5"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 6);?",
-    "options": [
-      "21",
-      "44",
-      "22",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 4);?",
-    "options": [
-      "-1",
-      "0",
-      "64",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 6);?",
-    "options": [
-      "3",
-      "8",
-      "7",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 5);?",
-    "options": [
-      "6",
-      "3",
-      "2",
-      "6"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 3);?",
-    "options": [
-      "6",
-      "3",
-      "2",
-      "6"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 6);?",
-    "options": [
-      "18",
-      "30",
-      "14",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 % 6);?",
-    "options": [
-      "2",
-      "4",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 4);?",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 6);?",
-    "options": [
-      "20",
-      "10",
-      "13",
-      "9"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 5);?",
-    "options": [
-      "0",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 % 6);?",
-    "options": [
-      "8",
-      "10",
-      "4",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 4);?",
-    "options": [
-      "24",
-      "12",
-      "11",
-      "15"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 2);?",
-    "options": [
-      "13",
-      "16",
-      "12",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 % 4);?",
-    "options": [
-      "3",
-      "6",
-      "2",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 3);?",
-    "options": [
-      "46",
-      "26",
-      "22",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 3);?",
-    "options": [
-      "14",
-      "18",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 4);?",
-    "options": [
-      "3",
-      "8",
-      "7",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 2);?",
-    "options": [
-      "85",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 2);?",
-    "options": [
-      "22",
-      "25",
-      "44",
-      "21"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 4);?",
-    "options": [
-      "2",
-      "4",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 ^ 3);?",
-    "options": [
-      "3",
-      "8",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 6);?",
-    "options": [
-      "14",
-      "13",
-      "28",
-      "17"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 6);?",
-    "options": [
-      "5",
-      "1",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 2);?",
-    "options": [
-      "6",
-      "10",
-      "7",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 3);?",
-    "options": [
-      "0",
-      "1",
-      "4",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 6);?",
-    "options": [
-      "7",
-      "3",
-      "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 2);?",
-    "options": [
-      "1",
-      "4",
-      "0",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 5);?",
-    "options": [
-      "22",
-      "44",
-      "21",
-      "25"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 5);?",
-    "options": [
-      "8",
-      "4",
-      "10",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 5);?",
-    "options": [
-      "58",
-      "32",
-      "29",
-      "28"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 29."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 5);?",
-    "options": [
-      "4",
-      "0",
-      "2",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 3);?",
-    "options": [
-      "46",
-      "23",
-      "22",
-      "26"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 3);?",
-    "options": [
-      "4",
-      "2",
-      "5",
-      "1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 2);?",
-    "options": [
-      "22",
-      "38",
-      "18",
-      "19"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 4);?",
-    "options": [
-      "-1",
-      "0",
-      "3",
-      "87"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 6);?",
-    "options": [
-      "22",
-      "46",
-      "26",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 2);?",
-    "options": [
-      "63",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 5);?",
-    "options": [
-      "5",
-      "10",
-      "4",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 3);?",
-    "options": [
-      "22",
-      "18",
-      "19",
-      "38"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);?",
-    "options": [
-      "24",
-      "42",
-      "21",
-      "20"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 & 5);?",
-    "options": [
-      "3",
-      "4",
-      "8",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 % 2);?",
-    "options": [
-      "1",
-      "2",
-      "0",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 5);?",
-    "options": [
-      "5",
-      "8",
-      "4",
-      "10"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 4);?",
-    "options": [
-      "8",
-      "7",
-      "3",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 5);?",
-    "options": [
-      "26",
-      "23",
-      "46",
-      "22"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 2);?",
-    "options": [
-      "2",
-      "5",
-      "4",
-      "1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 & 3);?",
-    "options": [
-      "5",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 6);?",
-    "options": [
-      "21",
-      "24",
-      "42",
-      "20"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 2);?",
-    "options": [
-      "14",
-      "7",
-      "6",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 6);?",
-    "options": [
-      "4",
-      "8",
-      "7",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 5);?",
-    "options": [
-      "15",
-      "14",
-      "30",
-      "18"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 2);?",
-    "options": [
-      "19",
-      "18",
-      "38",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 6);?",
-    "options": [
-      "7",
-      "8",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);?",
-    "options": [
-      "22",
-      "14",
-      "10",
-      "11"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 2);?",
-    "options": [
-      "30",
-      "14",
-      "18",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 2);?",
-    "options": [
-      "13",
-      "20",
-      "9",
-      "10"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 3);?",
-    "options": [
-      "0",
-      "4",
-      "2",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 2);?",
-    "options": [
-      "21",
-      "17",
-      "18",
-      "36"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 2);?",
-    "options": [
-      "19",
-      "32",
-      "16",
-      "15"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 6);?",
-    "options": [
-      "4",
-      "5",
-      "2",
-      "1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 4);?",
-    "options": [
-      "17",
-      "18",
-      "21",
-      "36"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 6);?",
-    "options": [
-      "22",
-      "26",
-      "46",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 % 4);?",
-    "options": [
-      "1",
-      "0",
-      "4",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 & 6);?",
-    "options": [
-      "68",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 2);?",
-    "options": [
-      "44",
-      "21",
-      "22",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 5);?",
-    "options": [
-      "26",
-      "46",
-      "22",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 5);?",
-    "options": [
-      "8",
-      "3",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 % 2);?",
-    "options": [
-      "0",
-      "86",
-      "3",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 3);?",
-    "options": [
-      "14",
-      "7",
-      "6",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);?",
-    "options": [
-      "14",
-      "6",
-      "7",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 % 5);?",
-    "options": [
-      "3",
-      "4",
-      "8",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 5);?",
-    "options": [
-      "4",
-      "5",
-      "2",
-      "1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 5);?",
-    "options": [
-      "19",
-      "18",
-      "38",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 << 1);?",
-    "options": [
-      "32",
-      "15",
-      "19",
-      "16"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 ^ 2);?",
-    "options": [
-      "5",
-      "4",
-      "8",
-      "10"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 5);?",
-    "options": [
-      "6",
-      "2",
-      "3",
-      "6"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 % 5);?",
-    "options": [
-      "2",
-      "1",
-      "4",
-      "5"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 5);?",
-    "options": [
-      "2",
-      "5",
-      "1",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 3);?",
-    "options": [
-      "19",
-      "23",
-      "40",
-      "20"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 % 5);?",
-    "options": [
-      "2",
-      "0",
-      "1",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 | 6);?",
-    "options": [
-      "15",
-      "14",
-      "18",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 6);?",
-    "options": [
-      "18",
-      "9",
-      "8",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 3);?",
-    "options": [
-      "22",
-      "19",
-      "18",
-      "38"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 3);?",
-    "options": [
-      "27",
-      "54",
-      "30",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 27."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 3);?",
-    "options": [
-      "1",
-      "4",
-      "2",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 % 6);?",
-    "options": [
-      "74",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 6);?",
-    "options": [
-      "3",
-      "0",
-      "82",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 5);?",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "81"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 2);?",
-    "options": [
-      "0",
-      "84",
-      "-1",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 4);?",
-    "options": [
-      "3",
-      "7",
-      "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 2);?",
-    "options": [
-      "28",
-      "13",
-      "14",
-      "17"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 % 2);?",
-    "options": [
-      "1",
-      "2",
-      "4",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 4);?",
-    "options": [
-      "46",
-      "22",
-      "23",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 & 3);?",
-    "options": [
-      "5",
-      "1",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 4);?",
-    "options": [
-      "1",
-      "4",
-      "5",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 2);?",
-    "options": [
-      "14",
-      "10",
-      "6",
-      "7"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 2);?",
-    "options": [
-      "38",
-      "19",
-      "22",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 & 2);?",
-    "options": [
-      "4",
-      "1",
-      "5",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 2);?",
-    "options": [
-      "1",
-      "2",
-      "0",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 2);?",
-    "options": [
-      "50",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 2);?",
-    "options": [
-      "23",
-      "26",
-      "46",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 3);?",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 4);?",
-    "options": [
-      "15",
-      "24",
-      "12",
-      "11"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 2);?",
-    "options": [
-      "2",
-      "1",
-      "4",
-      "0"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 6);?",
-    "options": [
-      "17",
-      "34",
-      "16",
-      "20"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 3);?",
-    "options": [
-      "30",
-      "14",
-      "15",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);?",
-    "options": [
-      "3",
-      "-1",
-      "0",
-      "53"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 5);?",
-    "options": [
-      "3",
-      "-1",
-      "84",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 4);?",
-    "options": [
-      "10",
-      "11",
-      "22",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 6);?",
-    "options": [
-      "5",
-      "4",
-      "2",
-      "1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 5);?",
-    "options": [
-      "5",
-      "4",
-      "2",
-      "1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);?",
-    "options": [
-      "2",
-      "1",
-      "5",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 2);?",
-    "options": [
-      "14",
-      "11",
-      "22",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 4);?",
-    "options": [
-      "3",
-      "7",
-      "4",
-      "8"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 4);?",
-    "options": [
-      "42",
-      "20",
-      "21",
-      "24"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 6);?",
-    "options": [
-      "7",
-      "8",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 6);?",
-    "options": [
-      "13",
-      "17",
-      "28",
-      "14"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 3);?",
-    "options": [
-      "5",
-      "1",
-      "2",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 5);?",
-    "options": [
-      "3",
-      "8",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 6);?",
-    "options": [
-      "2",
-      "5",
-      "1",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 3);?",
-    "options": [
-      "14",
-      "30",
-      "15",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 3);?",
-    "options": [
-      "68",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 % 2);?",
-    "options": [
-      "2",
-      "0",
-      "4",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 2);?",
-    "options": [
-      "4",
-      "1",
-      "0",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 5);?",
-    "options": [
-      "7",
-      "4",
-      "8",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 6);?",
-    "options": [
-      "5",
-      "6",
-      "9",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 3);?",
-    "options": [
-      "0",
-      "-1",
-      "85",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 6);?",
-    "options": [
-      "30",
-      "29",
       "33",
-      "60"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 30."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 3);?",
-    "options": [
-      "28",
-      "13",
-      "14",
-      "17"
+      "13"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Condition (23 > 16) evaluates to true. Thus z is assigned to 23 + 10 which equals 33."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 4);?",
-    "options": [
-      "13",
-      "28",
-      "17",
-      "14"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 2);?",
-    "options": [
-      "2",
-      "4",
-      "0",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 3);?",
-    "options": [
-      "4",
-      "2",
-      "0",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 6);?",
-    "options": [
-      "0",
-      "-1",
-      "84",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 & 4);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 19; int z = (x > y) ? x + 11 : y - 11;?",
     "options": [
       "8",
-      "4",
-      "7",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 6);?",
-    "options": [
-      "4",
-      "1",
-      "2",
-      "5"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 4);?",
-    "options": [
-      "2",
-      "4",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 4);?",
-    "options": [
-      "3",
-      "-1",
-      "67",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 3);?",
-    "options": [
-      "2",
-      "5",
-      "4",
-      "1"
+      "30",
+      "18",
+      "19"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
+    "explanation": "Condition (18 > 19) evaluates to false. Thus z is assigned to 19 - 11 which equals 8."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 3);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 23; int z = (x > y) ? x + 11 : y - 11;?",
     "options": [
-      "42",
-      "24",
-      "21",
-      "20"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 2);?",
-    "options": [
-      "17",
-      "13",
-      "28",
-      "14"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 3);?",
-    "options": [
-      "6",
-      "2",
-      "3",
+      "12",
+      "23",
+      "34",
       "6"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 4);?",
-    "options": [
-      "23",
-      "19",
-      "20",
-      "40"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 6);?",
-    "options": [
-      "44",
-      "22",
-      "21",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 4);?",
-    "options": [
-      "2",
-      "1",
-      "4",
-      "0"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 2);?",
-    "options": [
-      "9",
-      "13",
-      "20",
-      "10"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 4);?",
-    "options": [
-      "14",
-      "18",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 6);?",
-    "options": [
-      "22",
-      "44",
-      "21",
-      "25"
-    ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
+    "explanation": "Condition (6 > 23) evaluates to false. Thus z is assigned to 23 - 11 which equals 12."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 6);?",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 10);?",
     "options": [
       "5",
-      "12",
-      "6",
-      "9"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 3);?",
-    "options": [
-      "10",
-      "4",
-      "8",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 4);?",
-    "options": [
-      "0",
-      "-1",
-      "3",
-      "51"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 4);?",
-    "options": [
-      "18",
-      "19",
-      "22",
-      "38"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 2);?",
-    "options": [
-      "20",
-      "21",
-      "42",
-      "24"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 5);?",
-    "options": [
-      "15",
-      "19",
-      "32",
-      "16"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 2);?",
-    "options": [
-      "18",
-      "14",
-      "15",
-      "30"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 | 2);?",
-    "options": [
-      "14",
-      "30",
-      "15",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 6);?",
-    "options": [
-      "6",
-      "12",
-      "5",
-      "9"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 3);?",
-    "options": [
-      "11",
-      "10",
-      "22",
-      "14"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 6);?",
-    "options": [
-      "86",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 4);?",
-    "options": [
-      "5",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 4);?",
-    "options": [
-      "4",
-      "10",
-      "8",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 4);?",
-    "options": [
-      "26",
-      "46",
-      "22",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 3);?",
-    "options": [
-      "58",
       "3",
       "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 4);?",
-    "options": [
-      "6",
-      "3",
-      "6",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 2);?",
-    "options": [
-      "13",
-      "17",
-      "28",
-      "14"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 6);?",
-    "options": [
-      "2",
-      "6",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 3);?",
-    "options": [
-      "0",
-      "86",
-      "-1",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 3);?",
-    "options": [
-      "13",
-      "26",
-      "12",
-      "16"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 4);?",
-    "options": [
-      "4",
-      "1",
-      "5",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 3);?",
-    "options": [
-      "22",
-      "14",
-      "11",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 % 4);?",
-    "options": [
-      "53",
-      "0",
-      "-1",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 5);?",
-    "options": [
-      "0",
-      "1",
-      "2",
       "4"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 10 leaves remainder 3."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);?",
+    "question": "What is the printed output of the Java expression: System.out.println(44 % 7);?",
     "options": [
-      "25",
-      "44",
-      "22",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 6);?",
-    "options": [
+      "0",
       "6",
-      "9",
-      "5",
-      "12"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 2);?",
-    "options": [
-      "40",
-      "19",
-      "23",
-      "20"
+      "4",
+      "2"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
+    "explanation": "Modulo operator (%) returns the division remainder: 44 / 7 leaves remainder 2."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 2);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 24; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
-      "2",
-      "4",
-      "1",
-      "5"
+      "13",
+      "24",
+      "32",
+      "16"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
+    "answer": 3,
+    "explanation": "Condition (13 > 24) evaluates to false. Thus z is assigned to 24 - 8 which equals 16."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 3);?",
+    "question": "What is the printed output of the Java expression: System.out.println(54 % 11);?",
     "options": [
-      "4",
+      "12",
+      "0",
+      "10",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 54 / 11 leaves remainder 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 4);?",
+    "options": [
+      "14",
+      "16",
       "2",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(17 % 5);?",
+    "options": [
+      "3",
+      "2",
+      "0",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 17 / 5 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(57 % 4);?",
+    "options": [
+      "3",
+      "14",
       "0",
       "1"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
+    "explanation": "Modulo operator (%) returns the division remainder: 57 / 4 leaves remainder 1."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 & 4);?",
+    "question": "What is the printed output of the Java expression: System.out.println(44 % 11);?",
     "options": [
-      "3",
-      "51",
-      "-1",
+      "2",
+      "20",
+      "4",
       "0"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Modulo operator (%) returns the division remainder: 44 / 11 leaves remainder 0."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 3);?",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 22; int z = (x > y) ? x + 6 : y - 6;?",
     "options": [
-      "18",
-      "15",
-      "14",
-      "30"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 5);?",
-    "options": [
-      "16",
-      "12",
-      "26",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 & 4);? (Set 1)",
-    "options": [
-      "4",
-      "7",
-      "8",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Garbage collection in Java? (Set 2)",
-    "options": [
-      "OS handles it in typical implementations",
-      "Programmer must free memory (standard definition)",
-      "JVM automatically reclaims unused object memory",
-      "No memory management based on convention"
-    ],
-    "answer": 2,
-    "explanation": "GC runs in background; objects without references are collected."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 << 1);? (Set 3)",
-    "options": [
-      "56",
-      "31",
-      "28",
-      "27"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 28."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 6);? (Set 4)",
-    "options": [
-      "19",
-      "16",
-      "15",
-      "32"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Enum in Java is? (Set 5)",
-    "options": [
-      "A special class representing a fixed set of constants",
-      "A loop construct in typical implementations",
-      "A variable type in typical implementations",
-      "A method in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Enums provide type-safe constant definitions."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Method overriding is? (Set 6)",
-    "options": [
-      "Different method name in typical implementations",
-      "Child class redefines parent method with same signature",
-      "Static methods in typical implementations",
-      "Same class different params as per specification"
-    ],
-    "answer": 1,
-    "explanation": "Runtime (dynamic) polymorphism."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 5);? (Set 7)",
-    "options": [
-      "0",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 2);? (Set 8)",
-    "options": [
-      "7",
-      "16",
-      "11",
-      "8"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 6);? (Set 9)",
-    "options": [
-      "8",
-      "18",
-      "9",
-      "12"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 5);? (Set 10)",
-    "options": [
-      "32",
       "29",
-      "28",
-      "58"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 29."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 2);? (Set 11)",
-    "options": [
-      "3",
-      "-1",
-      "0",
-      "52"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 6);? (Set 12)",
-    "options": [
-      "18",
-      "30",
-      "14",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "static keyword means? (Set 13)",
-    "options": [
-      "Belongs to class, not instance",
-      "Belongs to instance by design",
-      "Is private (general case)",
-      "Cannot be accessed (primary approach)"
+      "22",
+      "23",
+      "17"
     ],
     "answer": 0,
-    "explanation": "Static members shared across all instances."
+    "explanation": "Condition (23 > 22) evaluates to true. Thus z is assigned to 23 + 6 which equals 29."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 % 4);? (Set 14)",
-    "options": [
-      "4",
-      "2",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 6);? (Set 15)",
-    "options": [
-      "2",
-      "3",
-      "6",
-      "6"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 2);? (Set 16)",
-    "options": [
-      "18",
-      "8",
-      "12",
-      "9"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 4);? (Set 17)",
-    "options": [
-      "16",
-      "26",
-      "12",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 5);? (Set 18)",
-    "options": [
-      "20",
-      "24",
-      "42",
-      "21"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 4);? (Set 19)",
-    "options": [
-      "-1",
-      "81",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 6);? (Set 20)",
-    "options": [
-      "1",
-      "4",
-      "2",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 5);? (Set 21)",
-    "options": [
-      "13",
-      "26",
-      "12",
-      "16"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 3);? (Set 22)",
-    "options": [
-      "2",
-      "0",
-      "4",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 2);? (Set 23)",
-    "options": [
-      "24",
-      "12",
-      "11",
-      "15"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 24)",
-    "options": [
-      "6",
-      "7",
-      "10",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 4);? (Set 25)",
-    "options": [
-      "15",
-      "14",
-      "18",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 4);? (Set 26)",
-    "options": [
-      "2",
-      "0",
-      "1",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 6);? (Set 27)",
-    "options": [
-      "3",
-      "-1",
-      "78",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 5);? (Set 28)",
-    "options": [
-      "8",
-      "4",
-      "5",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 % 6);? (Set 29)",
-    "options": [
-      "-1",
-      "0",
-      "3",
-      "74"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 5);? (Set 30)",
-    "options": [
-      "8",
-      "7",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 5);? (Set 31)",
-    "options": [
-      "13",
-      "16",
-      "12",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 6);? (Set 32)",
-    "options": [
-      "3",
-      "4",
-      "8",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Ternary Operator",
     "difficulty": "Medium",
-    "question": "Checked exceptions are? (Set 33)",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 14; int z = (x > y) ? x + 6 : y - 6;?",
     "options": [
-      "Verified at compile time",
-      "OS-level errors (commonly used)",
-      "Runtime only in most cases",
-      "Never checked by design"
-    ],
-    "answer": 0,
-    "explanation": "Must be caught or declared with throws."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 4);? (Set 34)",
-    "options": [
-      "64",
-      "0",
-      "-1",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 4);? (Set 35)",
-    "options": [
-      "3",
-      "7",
       "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 4);? (Set 36)",
-    "options": [
-      "12",
-      "16",
-      "26",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 4);? (Set 37)",
-    "options": [
-      "1",
-      "0",
-      "2",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 2);? (Set 38)",
-    "options": [
-      "17",
-      "14",
-      "28",
-      "13"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 39)",
-    "options": [
-      "46",
-      "22",
-      "23",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 2);? (Set 40)",
-    "options": [
-      "3",
-      "-1",
-      "51",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 41)",
-    "options": [
-      "3",
-      "6",
-      "6",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 42)",
-    "options": [
-      "3",
-      "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 6);? (Set 43)",
-    "options": [
-      "3",
-      "4",
-      "7",
-      "8"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 4);? (Set 44)",
-    "options": [
-      "26",
-      "12",
-      "16",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 45)",
-    "options": [
-      "-1",
-      "3",
-      "72",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 << 1);? (Set 46)",
-    "options": [
-      "84",
-      "45",
-      "41",
-      "42"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 42."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 6);? (Set 47)",
-    "options": [
-      "3",
-      "7",
-      "4",
-      "8"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 5);? (Set 48)",
-    "options": [
-      "26",
-      "22",
-      "23",
-      "46"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 2);? (Set 49)",
-    "options": [
-      "14",
-      "10",
-      "7",
-      "6"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 3);? (Set 50)",
-    "options": [
-      "6",
-      "6",
-      "2",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 4);? (Set 51)",
-    "options": [
-      "7",
-      "4",
-      "8",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 2);? (Set 52)",
-    "options": [
       "20",
-      "13",
-      "10",
-      "9"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 5);? (Set 53)",
-    "options": [
-      "11",
-      "7",
-      "16",
-      "8"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 5);? (Set 54)",
-    "options": [
-      "6",
-      "6",
-      "3",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 6);? (Set 55)",
-    "options": [
-      "18",
-      "14",
-      "30",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 3);? (Set 56)",
-    "options": [
       "5",
-      "2",
-      "1",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 3);? (Set 57)",
-    "options": [
-      "4",
-      "5",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Medium",
-    "question": "Functional interface has? (Set 58)",
-    "options": [
-      "No methods (widely accepted)",
-      "Exactly one abstract method",
-      "Only default methods in practice",
-      "Multiple abstract methods"
-    ],
-    "answer": 1,
-    "explanation": "@FunctionalInterface annotation enforces this."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 6);? (Set 59)",
-    "options": [
-      "2",
-      "0",
-      "4",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 5);? (Set 60)",
-    "options": [
-      "22",
-      "26",
-      "46",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 6);? (Set 61)",
-    "options": [
-      "23",
-      "22",
-      "26",
-      "46"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 2);? (Set 62)",
-    "options": [
-      "11",
-      "12",
-      "15",
-      "24"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "ArrayList vs LinkedList: random access? (Set 63)",
-    "options": [
-      "LinkedList is faster (general case)",
-      "ArrayList is O(1), LinkedList is O(n)",
-      "Both O(n) under normal conditions",
-      "Both O(1) (standard definition)"
-    ],
-    "answer": 1,
-    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 2);? (Set 64)",
-    "options": [
-      "22",
-      "19",
-      "38",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 6);? (Set 4) (Set 65)",
-    "options": [
-      "15",
-      "19",
-      "16",
-      "32"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 2);? (Set 40) (Set 66)",
-    "options": [
-      "-1",
-      "51",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 2);? (Set 67)",
-    "options": [
-      "14",
-      "17",
-      "13",
-      "28"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 4);? (Set 19) (Set 68)",
-    "options": [
-      "81",
-      "0",
-      "-1",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 3);? (Set 69)",
-    "options": [
-      "27",
-      "26",
-      "30",
-      "54"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 27."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 4);? (Set 70)",
-    "options": [
-      "5",
-      "2",
-      "4",
-      "1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 5);? (Set 71)",
-    "options": [
-      "20",
-      "19",
-      "23",
-      "40"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 5);? (Set 72)",
-    "options": [
-      "4",
-      "8",
-      "7",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 5);? (Set 73)",
-    "options": [
-      "18",
-      "8",
-      "12",
-      "9"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "ArrayList vs LinkedList: random access? (Set 74)",
-    "options": [
-      "LinkedList is faster (primary approach)",
-      "Both O(n) (standard definition)",
-      "Both O(1) under normal conditions",
-      "ArrayList is O(1), LinkedList is O(n)"
-    ],
-    "answer": 3,
-    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 6);? (Set 75)",
-    "options": [
-      "4",
-      "0",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 | 5);? (Set 76)",
-    "options": [
-      "23",
-      "22",
-      "46",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 2);? (Set 77)",
-    "options": [
-      "21",
-      "44",
-      "22",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 6);? (Set 78)",
-    "options": [
-      "86",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 3);? (Set 79)",
-    "options": [
-      "5",
-      "1",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 >> 1);? (Set 80)",
-    "options": [
-      "14",
-      "22",
-      "10",
-      "11"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 3);? (Set 81)",
-    "options": [
-      "-1",
-      "0",
-      "85",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 5);? (Set 82)",
-    "options": [
-      "3",
-      "67",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 83)",
-    "options": [
-      "14",
-      "22",
-      "11",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 4);? (Set 84)",
-    "options": [
-      "1",
-      "5",
-      "2",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 2);? (Set 85)",
-    "options": [
-      "23",
-      "22",
-      "26",
-      "46"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 5);? (Set 86)",
-    "options": [
-      "81",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 2);? (Set 87)",
-    "options": [
-      "1",
-      "4",
-      "2",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 4);? (Set 88)",
-    "options": [
-      "31",
-      "27",
-      "28",
-      "56"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 28."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 3);? (Set 89)",
-    "options": [
-      "1",
-      "4",
-      "0",
-      "2"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 2);? (Set 90)",
-    "options": [
-      "3",
-      "0",
-      "63",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 5);? (Set 71) (Set 91)",
-    "options": [
-      "23",
-      "19",
-      "20",
-      "40"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 92)",
-    "options": [
-      "6",
-      "7",
-      "14",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 4);? (Set 93)",
-    "options": [
-      "44",
-      "22",
-      "25",
-      "21"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 5);? (Set 71) (Set 91) (Set 94)",
-    "options": [
-      "23",
-      "40",
-      "19",
-      "20"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 >> 1);? (Set 95)",
-    "options": [
-      "10",
-      "20",
-      "13",
-      "9"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96)",
-    "options": [
-      "22",
-      "21",
-      "25",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "Checked exceptions are? (Set 97)",
-    "options": [
-      "OS-level errors by design",
-      "Runtime only in standard usage",
-      "Never checked (commonly used)",
-      "Verified at compile time"
-    ],
-    "answer": 3,
-    "explanation": "Must be caught or declared with throws."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 4);? (Set 98)",
-    "options": [
-      "28",
-      "14",
-      "17",
-      "13"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 2);? (Set 99)",
-    "options": [
-      "10",
-      "7",
-      "6",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 | 4);? (Set 100)",
-    "options": [
-      "24",
-      "20",
-      "42",
-      "21"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 101)",
-    "options": [
-      "24",
-      "42",
-      "21",
-      "20"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 4);? (Set 102)",
-    "options": [
-      "11",
-      "24",
-      "15",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 5);? (Set 103)",
-    "options": [
-      "18",
-      "15",
-      "14",
-      "30"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 4);? (Set 104)",
-    "options": [
-      "4",
-      "7",
-      "8",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 105)",
-    "options": [
-      "14",
-      "10",
-      "11",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 6);? (Set 106)",
-    "options": [
-      "3",
-      "8",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 6);? (Set 55) (Set 107)",
-    "options": [
-      "15",
-      "18",
-      "30",
       "14"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
+    "explanation": "Condition (5 > 14) evaluates to false. Thus z is assigned to 14 - 6 which equals 8."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 6);? (Set 108)",
-    "options": [
-      "22",
-      "46",
-      "23",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Method overriding is? (Set 6) (Set 109)",
-    "options": [
-      "Child class redefines parent method with same signature",
-      "Static methods in typical implementations",
-      "Same class different params in typical implementations",
-      "Different method name in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Runtime (dynamic) polymorphism."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 24) (Set 110)",
-    "options": [
-      "14",
-      "6",
-      "7",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 2);? (Set 111)",
-    "options": [
-      "6",
-      "12",
-      "5",
-      "9"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 83) (Set 112)",
-    "options": [
-      "11",
-      "10",
-      "14",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 5);? (Set 30) (Set 113)",
-    "options": [
-      "3",
-      "8",
-      "7",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Bitwise Operators",
     "difficulty": "Medium",
-    "question": "HashMap allows? (Set 114)",
+    "question": "What will be the output of following statement in Java? System.out.println(19 & 3);",
     "options": [
-      "No nulls under normal conditions",
-      "Multiple null keys (primary approach)",
-      "Only null values (typical scenario)",
-      "One null key and multiple null values"
-    ],
-    "answer": 3,
-    "explanation": "HashMap permits one null key in its implementation."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 115)",
-    "options": [
-      "0",
-      "-1",
       "3",
-      "72"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 116)",
-    "options": [
       "2",
-      "3",
-      "6",
-      "6"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 105) (Set 117)",
-    "options": [
-      "14",
-      "10",
       "22",
-      "11"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);? (Set 118)",
-    "options": [
-      "2",
-      "4",
-      "1",
       "5"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
+    "explanation": "Applying bitwise & between binary 10011 and 11 yields decimal 3."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 >> 1);? (Set 119)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 17; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
-      "6",
-      "2",
-      "6",
-      "3"
+      "15",
+      "25",
+      "17",
+      "9"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 3."
+    "explanation": "Condition (15 > 17) evaluates to false. Thus z is assigned to 17 - 8 which equals 9."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 5);? (Set 120)",
-    "options": [
-      "26",
-      "13",
-      "16",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 6);? (Set 121)",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 4);?",
     "options": [
       "3",
-      "72",
+      "7",
+      "1",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 8);?",
+    "options": [
+      "9",
+      "6",
+      "7",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 8 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 ^ 6);",
+    "options": [
+      "25",
+      "21",
+      "23",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10011 and 110 yields decimal 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 18; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "10",
+      "18",
+      "16",
+      "26"
+    ],
+    "answer": 0,
+    "explanation": "Condition (16 > 18) evaluates to false. Thus z is assigned to 18 - 8 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 13; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "30",
+      "14",
+      "13",
+      "22"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 13) evaluates to true. Thus z is assigned to 22 + 8 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(37 % 4);?",
+    "options": [
+      "9",
+      "3",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 37 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 8);?",
+    "options": [
+      "3",
+      "0",
+      "5",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 8 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 11);?",
+    "options": [
+      "6",
+      "3",
+      "8",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 11 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 ^ 5);",
+    "options": [
+      "24",
+      "22",
+      "21",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10011 and 101 yields decimal 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 6);?",
+    "options": [
+      "4",
+      "0",
+      "6",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 6 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(60 % 4);?",
+    "options": [
+      "20",
+      "0",
+      "2",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 60 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 & 8);",
+    "options": [
+      "2",
+      "0",
       "-1",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 10001 and 1000 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 5);?",
+    "options": [
+      "20",
+      "2",
+      "8",
       "0"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 5 leaves remainder 0."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 3);? (Set 122)",
-    "options": [
-      "6",
-      "10",
-      "14",
-      "7"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Multithreading",
+    "topic": "Bitwise Operators",
     "difficulty": "Medium",
-    "question": "Executor framework provides? (Set 123)",
+    "question": "What will be the output of following statement in Java? System.out.println(7 ^ 9);",
     "options": [
-      "File handling (commonly used)",
-      "Thread pool management",
-      "Network calls in most cases",
-      "Database access in practice"
-    ],
-    "answer": 1,
-    "explanation": "Manages thread lifecycle efficiently."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 124)",
-    "options": [
-      "3",
-      "-1",
-      "0",
-      "72"
+      "13",
+      "16",
+      "14",
+      "16"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Applying bitwise ^ between binary 111 and 1001 yields decimal 14."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 125)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 17; int z = (x > y) ? x + 7 : y - 7;?",
     "options": [
-      "10",
-      "6",
-      "14",
-      "7"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 << 1);? (Set 126)",
-    "options": [
-      "28",
-      "14",
-      "13",
-      "17"
+      "11",
+      "25",
+      "17",
+      "18"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Condition (18 > 17) evaluates to true. Thus z is assigned to 18 + 7 which equals 25."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);? (Set 127)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 13; int z = (x > y) ? x + 3 : y - 3;?",
     "options": [
-      "0",
-      "53",
-      "-1",
-      "3"
+      "21",
+      "27",
+      "13",
+      "24"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "answer": 1,
+    "explanation": "Condition (24 > 13) evaluates to true. Thus z is assigned to 24 + 3 which equals 27."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 6);? (Set 128)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 8);",
     "options": [
-      "17",
-      "18",
       "36",
-      "21"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 2);? (Set 129)",
-    "options": [
       "26",
-      "22",
-      "46",
+      "24",
       "23"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 3);? (Set 130)",
-    "options": [
-      "4",
-      "5",
-      "2",
-      "1"
-    ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
+    "explanation": "Applying bitwise ^ between binary 10000 and 1000 yields decimal 24."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 4);? (Set 131)",
-    "options": [
-      "0",
-      "-1",
-      "64",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Garbage collection in Java? (Set 132)",
-    "options": [
-      "Programmer must free memory (standard definition)",
-      "OS handles it in typical implementations",
-      "JVM automatically reclaims unused object memory",
-      "No memory management as per specification"
-    ],
-    "answer": 2,
-    "explanation": "GC runs in background; objects without references are collected."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 125) (Set 133)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 13; int z = (x > y) ? x + 7 : y - 7;?",
     "options": [
       "6",
-      "14",
-      "10",
+      "20",
+      "13",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Condition (5 > 13) evaluates to false. Thus z is assigned to 13 - 7 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 7);?",
+    "options": [
+      "21",
+      "0",
+      "5",
       "7"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 % 2);? (Set 134)",
-    "options": [
-      "61",
-      "0",
-      "-1",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 2);? (Set 135)",
-    "options": [
-      "3",
-      "-1",
-      "0",
-      "51"
-    ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 12; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "4",
+      "12",
+      "9",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 12) evaluates to false. Thus z is assigned to 12 - 8 which equals 4."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 >> 1);? (Set 136)",
+    "question": "What is the printed output of the Java expression: System.out.println(47 % 8);?",
     "options": [
       "9",
-      "13",
+      "7",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 47 / 8 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(50 % 11);?",
+    "options": [
+      "0",
+      "8",
+      "4",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 50 / 11 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 15; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "15",
+      "9",
+      "24",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Condition (9 > 15) evaluates to false. Thus z is assigned to 15 - 9 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 20; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "9",
+      "31",
       "10",
       "20"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 10."
+    "answer": 0,
+    "explanation": "Condition (10 > 20) evaluates to false. Thus z is assigned to 20 - 11 which equals 9."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 3);? (Set 137)",
-    "options": [
-      "11",
-      "12",
-      "15",
-      "24"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);? (Set 138)",
-    "options": [
-      "4",
-      "5",
-      "2",
-      "1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);? (Set 139)",
+    "question": "What is the printed output of the Java expression: System.out.println(21 % 10);?",
     "options": [
       "0",
-      "-1",
       "3",
-      "53"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 4);? (Set 140)",
-    "options": [
-      "23",
-      "20",
-      "19",
-      "40"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 4);? (Set 141)",
-    "options": [
-      "6",
-      "6",
-      "3",
+      "1",
       "2"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
+    "explanation": "Modulo operator (%) returns the division remainder: 21 / 10 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 & 2);",
+    "options": [
+      "-1",
+      "0",
+      "2",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 101 and 10 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 | 8);",
+    "options": [
+      "14",
+      "12",
+      "35",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 100 and 1000 yields decimal 12."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 6);? (Set 142)",
+    "question": "What is the printed output of the Java expression: System.out.println(38 % 6);?",
     "options": [
-      "30",
-      "29",
-      "60",
+      "2",
+      "0",
+      "4",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 38 / 6 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 8; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "8",
+      "25",
+      "22",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 8) evaluates to true. Thus z is assigned to 22 + 3 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(42 % 5);?",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 42 / 5 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(16 % 4);?",
+    "options": [
+      "16",
+      "0",
+      "2",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 16 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 15; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "26",
+      "8",
+      "15",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Condition (8 > 15) evaluates to false. Thus z is assigned to 15 - 11 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(24 % 8);?",
+    "options": [
+      "2",
+      "0",
+      "20",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 24 / 8 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 21; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "27",
+      "15",
+      "11",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "Condition (11 > 21) evaluates to false. Thus z is assigned to 21 - 6 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 7);",
+    "options": [
+      "12",
+      "7",
+      "9",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 101 and 111 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 4);",
+    "options": [
+      "10",
+      "16",
+      "8",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1100 and 100 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(26 % 8);?",
+    "options": [
+      "2",
+      "4",
+      "0",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 26 / 8 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 2);",
+    "options": [
+      "15",
+      "-1",
+      "2",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1101 and 10 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 5; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "18",
+      "8",
+      "28",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Condition (18 > 5) evaluates to true. Thus z is assigned to 18 + 10 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(61 % 7);?",
+    "options": [
+      "7",
+      "5",
+      "0",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 61 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 21; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "21",
+      "26",
+      "22",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 21) evaluates to true. Thus z is assigned to 22 + 4 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 24; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "11",
+      "19",
+      "24",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Condition (11 > 24) evaluates to false. Thus z is assigned to 24 - 5 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 | 4);",
+    "options": [
+      "11",
+      "14",
+      "12",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1100 and 100 yields decimal 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 16; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "20",
+      "58",
+      "12",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 16) evaluates to false. Thus z is assigned to 16 - 4 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(24 % 10);?",
+    "options": [
+      "6",
+      "4",
+      "0",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 24 / 10 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(32 % 4);?",
+    "options": [
+      "0",
+      "8",
+      "2",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 32 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 | 7);",
+    "options": [
+      "23",
+      "22",
+      "42",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 10000 and 111 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 24; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "24",
+      "19",
+      "21",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Condition (21 > 24) evaluates to false. Thus z is assigned to 24 - 5 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 9);",
+    "options": [
+      "24",
+      "8",
+      "11",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1111 and 1001 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 | 8);",
+    "options": [
+      "27",
+      "51",
+      "24",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 10001 and 1000 yields decimal 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 | 5);",
+    "options": [
+      "47",
+      "22",
+      "23",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 10010 and 101 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 10);?",
+    "options": [
+      "2",
+      "0",
+      "19",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 10 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 ^ 3);",
+    "options": [
+      "14",
+      "16",
+      "13",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1101 and 11 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 6);?",
+    "options": [
+      "6",
+      "5",
+      "3",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 6 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(46 % 10);?",
+    "options": [
+      "0",
+      "8",
+      "4",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 46 / 10 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(41 % 5);?",
+    "options": [
+      "0",
+      "3",
+      "1",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 41 / 5 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 23; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "8",
+      "13",
+      "23",
       "33"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 30."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "JDK includes? (Set 143)",
-    "options": [
-      "Only libraries under normal conditions",
-      "JRE + development tools (compiler, debugger)",
-      "Only editor in typical implementations",
-      "Only JVM in typical implementations"
-    ],
     "answer": 1,
-    "explanation": "JDK is the full development kit."
+    "explanation": "Condition (8 > 23) evaluates to false. Thus z is assigned to 23 - 10 which equals 13."
   },
   {
     "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Constructor is called when? (Set 144)",
-    "options": [
-      "Method is called (primary approach)",
-      "Class is loaded under normal conditions",
-      "Variable is declared (typical scenario)",
-      "Object is created using new keyword"
-    ],
-    "answer": 3,
-    "explanation": "Constructors initialize object state."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 3);? (Set 145)",
-    "options": [
-      "23",
-      "26",
-      "22",
-      "46"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 2);? (Set 146)",
-    "options": [
-      "58",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 2);? (Set 147)",
-    "options": [
-      "36",
-      "17",
-      "18",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 5);? (Set 148)",
-    "options": [
-      "12",
-      "26",
-      "13",
-      "16"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 4);? (Set 149)",
-    "options": [
-      "12",
-      "24",
-      "15",
-      "11"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 6);? (Set 150)",
-    "options": [
-      "28",
-      "14",
-      "13",
-      "17"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 125) (Set 151)",
-    "options": [
-      "6",
-      "14",
-      "10",
-      "7"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "JVM stands for? (Set 152)",
-    "options": [
-      "Java Virtual Machine",
-      "Java Visual Maker",
-      "Java Version Module",
-      "Java Variable Manager"
-    ],
-    "answer": 0,
-    "explanation": "JVM executes Java bytecode on any platform."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 2);? (Set 90) (Set 153)",
-    "options": [
-      "63",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 << 1);? (Set 154)",
-    "options": [
-      "45",
-      "42",
-      "84",
-      "41"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 42."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 124) (Set 155)",
-    "options": [
-      "0",
-      "3",
-      "72",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 % 5);? (Set 156)",
-    "options": [
-      "1",
-      "4",
-      "2",
-      "5"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 4);? (Set 34) (Set 157)",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "64"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 3);? (Set 158)",
-    "options": [
-      "11",
-      "22",
-      "14",
-      "10"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 2);? (Set 159)",
-    "options": [
-      "14",
-      "10",
-      "6",
-      "7"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 ^ 6);? (Set 160)",
-    "options": [
-      "1",
-      "0",
-      "2",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 2);? (Set 161)",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "50"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 4);? (Set 162)",
-    "options": [
-      "25",
-      "21",
-      "44",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 92) (Set 163)",
-    "options": [
-      "6",
-      "14",
-      "7",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 2);? (Set 164)",
-    "options": [
-      "-1",
-      "0",
-      "3",
-      "83"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 5);? (Set 71) (Set 91) (Set 165)",
-    "options": [
-      "20",
-      "19",
-      "23",
-      "40"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 6);? (Set 166)",
-    "options": [
-      "87",
-      "-1",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 << 1);? (Set 167)",
-    "options": [
-      "28",
-      "27",
-      "56",
-      "31"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 28."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 3);? (Set 168)",
-    "options": [
-      "18",
-      "19",
-      "38",
-      "22"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 5);? (Set 103) (Set 169)",
-    "options": [
-      "30",
-      "18",
-      "14",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 4);? (Set 26) (Set 170)",
-    "options": [
-      "0",
-      "1",
-      "2",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 2);? (Set 52) (Set 171)",
-    "options": [
-      "20",
-      "13",
-      "10",
-      "9"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 | 2);? (Set 172)",
-    "options": [
-      "52",
-      "29",
-      "25",
-      "26"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 26."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 173)",
-    "options": [
-      "22",
-      "26",
-      "46",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 2);? (Set 67) (Set 174)",
-    "options": [
-      "13",
-      "28",
-      "14",
-      "17"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 5);? (Set 31) (Set 175)",
-    "options": [
-      "16",
-      "13",
-      "26",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "JVM stands for? (Set 152) (Set 176)",
-    "options": [
-      "Java Variable Manager",
-      "Java Virtual Machine",
-      "Java Version Module",
-      "Java Visual Maker"
-    ],
-    "answer": 1,
-    "explanation": "JVM executes Java bytecode on any platform."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Polymorphism means? (Set 177)",
-    "options": [
-      "No methods in typical implementations",
-      "Static binding always based on convention",
-      "One method one behavior as per specification",
-      "Same method behaves differently based on context"
-    ],
-    "answer": 3,
-    "explanation": "Achieved via overloading and overriding."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 6);? (Set 178)",
-    "options": [
-      "4",
-      "3",
-      "7",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Multithreading",
+    "topic": "Ternary Operator",
     "difficulty": "Medium",
-    "question": "Executor framework provides? (Set 123) (Set 179)",
-    "options": [
-      "Thread pool management",
-      "File handling (general case)",
-      "Network calls (general case)",
-      "Database access in practice"
-    ],
-    "answer": 0,
-    "explanation": "Manages thread lifecycle efficiently."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 6);? (Set 180)",
-    "options": [
-      "7",
-      "8",
-      "3",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 4);? (Set 181)",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 17; int z = (x > y) ? x + 4 : y - 4;?",
     "options": [
       "20",
-      "19",
-      "23",
-      "40"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 >> 1);? (Set 182)",
-    "options": [
-      "6",
-      "9",
-      "5",
-      "12"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 6);? (Set 12) (Set 183)",
-    "options": [
-      "30",
-      "18",
-      "15",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 2);? (Set 184)",
-    "options": [
-      "32",
-      "16",
-      "15",
-      "19"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 5);? (Set 185)",
-    "options": [
-      "16",
-      "13",
-      "26",
-      "12"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 6);? (Set 186)",
-    "options": [
-      "5",
-      "1",
-      "2",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 6);? (Set 187)",
-    "options": [
-      "2",
-      "5",
-      "1",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 2);? (Set 188)",
-    "options": [
-      "3",
-      "85",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 4);? (Set 189)",
-    "options": [
       "24",
-      "11",
-      "15",
-      "12"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 4);? (Set 141) (Set 190)",
-    "options": [
-      "6",
-      "3",
-      "6",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Polymorphism means? (Set 191)",
-    "options": [
-      "One method one behavior in typical implementations",
-      "Static binding always (standard definition)",
-      "Same method behaves differently based on context",
-      "No methods in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "Achieved via overloading and overriding."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 4);? (Set 192)",
-    "options": [
-      "18",
-      "14",
-      "30",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 6);? (Set 193)",
-    "options": [
-      "2",
-      "6",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 6);? (Set 194)",
-    "options": [
-      "3",
-      "-1",
-      "66",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 5);? (Set 195)",
-    "options": [
-      "6",
-      "2",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 % 2);? (Set 40) (Set 196)",
-    "options": [
-      "-1",
-      "51",
-      "0",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Enum in Java is? (Set 197)",
-    "options": [
-      "A special class representing a fixed set of constants",
-      "A variable type in typical implementations",
-      "A method in typical implementations",
-      "A loop construct in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Enums provide type-safe constant definitions."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 6);? (Set 198)",
-    "options": [
-      "0",
-      "84",
-      "3",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 45) (Set 199)",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "72"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 4);? (Set 36) (Set 200)",
-    "options": [
-      "12",
-      "13",
-      "16",
-      "26"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 2);? (Set 201)",
-    "options": [
-      "-1",
-      "3",
-      "0",
-      "52"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 2);? (Set 202)",
-    "options": [
-      "36",
       "17",
-      "18",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 6);? (Set 203)",
-    "options": [
-      "20",
-      "34",
-      "16",
-      "17"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 4);? (Set 204)",
-    "options": [
-      "3",
-      "4",
-      "8",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 6);? (Set 205)",
-    "options": [
-      "3",
-      "82",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 2);? (Set 87) (Set 206)",
-    "options": [
-      "0",
-      "1",
-      "4",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 2);? (Set 85) (Set 207)",
-    "options": [
-      "23",
-      "46",
-      "22",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 5);? (Set 208)",
-    "options": [
-      "24",
-      "21",
-      "42",
-      "20"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 2);? (Set 209)",
-    "options": [
-      "12",
-      "5",
-      "9",
-      "6"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 3);? (Set 210)",
-    "options": [
-      "2",
-      "6",
-      "3",
-      "6"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Inheritance allows? (Set 211)",
-    "options": [
-      "A class to inherit properties of another class",
-      "Creating objects in typical implementations",
-      "Thread creation in typical implementations",
-      "Handling exceptions (standard definition)"
-    ],
-    "answer": 0,
-    "explanation": "Child class extends parent class."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "static keyword means? (Set 13) (Set 212)",
-    "options": [
-      "Is private (widely accepted)",
-      "Belongs to class, not instance",
-      "Cannot be accessed (general case)",
-      "Belongs to instance (commonly used)"
-    ],
-    "answer": 1,
-    "explanation": "Static members shared across all instances."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 4);? (Set 162) (Set 213)",
-    "options": [
-      "22",
-      "21",
-      "25",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 4);? (Set 44) (Set 214)",
-    "options": [
-      "16",
-      "12",
-      "13",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 39) (Set 215)",
-    "options": [
-      "46",
-      "22",
-      "26",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 6);? (Set 180) (Set 216)",
-    "options": [
-      "8",
-      "7",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 << 1);? (Set 217)",
-    "options": [
-      "17",
-      "21",
-      "18",
-      "36"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 5);? (Set 218)",
-    "options": [
-      "2",
-      "1",
-      "4",
-      "0"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 << 1);? (Set 3) (Set 219)",
-    "options": [
-      "28",
-      "31",
-      "27",
-      "56"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 28."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 % 2);? (Set 220)",
-    "options": [
-      "4",
-      "1",
-      "0",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 3);? (Set 221)",
-    "options": [
-      "5",
-      "2",
-      "4",
-      "1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 2);? (Set 147) (Set 222)",
-    "options": [
-      "18",
-      "17",
-      "21",
-      "36"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 223)",
-    "options": [
-      "26",
-      "22",
-      "46",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 6);? (Set 78) (Set 224)",
-    "options": [
-      "-1",
-      "3",
-      "86",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 ^ 4);? (Set 26) (Set 170) (Set 225)",
-    "options": [
-      "1",
-      "4",
-      "2",
-      "0"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 & 3);? (Set 226)",
-    "options": [
-      "6",
-      "6",
-      "2",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 3);? (Set 56) (Set 227)",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 << 1);? (Set 228)",
-    "options": [
-      "11",
-      "12",
-      "15",
-      "24"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 229)",
-    "options": [
-      "22",
-      "21",
-      "25",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 >> 1);? (Set 136) (Set 230)",
-    "options": [
-      "10",
-      "9",
-      "20",
-      "13"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 >> 1);? (Set 231)",
-    "options": [
-      "16",
-      "7",
-      "11",
-      "8"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 >> 1);? (Set 232)",
-    "options": [
-      "7",
-      "10",
-      "14",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 5);? (Set 233)",
-    "options": [
-      "8",
-      "10",
-      "5",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 6);? (Set 234)",
-    "options": [
-      "8",
-      "3",
-      "4",
-      "7"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 4);? (Set 235)",
-    "options": [
-      "30",
-      "15",
-      "18",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 6);? (Set 236)",
-    "options": [
-      "22",
-      "21",
-      "44",
-      "25"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 4);? (Set 237)",
-    "options": [
-      "18",
-      "15",
-      "30",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 83) (Set 238)",
-    "options": [
-      "14",
-      "22",
-      "11",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 3);? (Set 239)",
-    "options": [
-      "25",
-      "44",
-      "22",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "ArrayList vs LinkedList: random access? (Set 63) (Set 240)",
-    "options": [
-      "LinkedList is faster (default behavior)",
-      "Both O(1) under normal conditions",
-      "ArrayList is O(1), LinkedList is O(n)",
-      "Both O(n) in typical implementations"
-    ],
-    "answer": 2,
-    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 4);? (Set 241)",
-    "options": [
-      "10",
-      "14",
-      "6",
-      "7"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 % 2);? (Set 242)",
-    "options": [
-      "84",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Abstraction is implemented using? (Set 243)",
-    "options": [
-      "Variables (typical scenario)",
-      "Concrete classes only by design",
-      "Abstract classes and interfaces",
-      "Loops (default behavior)"
-    ],
-    "answer": 2,
-    "explanation": "Hides implementation, shows only functionality."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);? (Set 138) (Set 244)",
-    "options": [
-      "1",
-      "4",
-      "5",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 2);? (Set 245)",
-    "options": [
-      "-1",
-      "3",
-      "58",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 3);? (Set 246)",
-    "options": [
-      "38",
-      "18",
-      "19",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 4);? (Set 247)",
-    "options": [
-      "51",
-      "0",
-      "-1",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 5);? (Set 248)",
-    "options": [
-      "46",
-      "22",
-      "26",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 3);? (Set 145) (Set 249)",
-    "options": [
-      "23",
-      "46",
-      "26",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 3);? (Set 250)",
-    "options": [
-      "2",
-      "6",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 6);? (Set 9) (Set 251)",
-    "options": [
-      "9",
-      "18",
-      "12",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 4);? (Set 192) (Set 252)",
-    "options": [
-      "18",
-      "15",
-      "30",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 3);? (Set 122) (Set 253)",
-    "options": [
-      "7",
-      "10",
-      "14",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 4);? (Set 254)",
-    "options": [
-      "4",
-      "2",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 2);? (Set 255)",
-    "options": [
-      "0",
-      "-1",
-      "3",
-      "85"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 3);? (Set 168) (Set 256)",
-    "options": [
-      "19",
-      "18",
-      "22",
-      "38"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 4);? (Set 257)",
-    "options": [
-      "22",
-      "25",
-      "21",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "ArrayList vs LinkedList: random access? (Set 74) (Set 258)",
-    "options": [
-      "ArrayList is O(1), LinkedList is O(n)",
-      "LinkedList is faster (typical scenario)",
-      "Both O(n) as per specification",
-      "Both O(1) (standard definition)"
-    ],
-    "answer": 0,
-    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 3);? (Set 239) (Set 259)",
-    "options": [
-      "21",
-      "22",
-      "25",
-      "44"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Garbage collection in Java? (Set 132) (Set 260)",
-    "options": [
-      "JVM automatically reclaims unused object memory",
-      "Programmer must free memory (standard definition)",
-      "No memory management (standard definition)",
-      "OS handles it in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "GC runs in background; objects without references are collected."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 6);? (Set 108) (Set 261)",
-    "options": [
-      "26",
-      "23",
-      "46",
-      "22"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "JVM stands for? (Set 262)",
-    "options": [
-      "Java Variable Manager",
-      "Java Version Module",
-      "Java Virtual Machine",
-      "Java Visual Maker"
-    ],
-    "answer": 2,
-    "explanation": "JVM executes Java bytecode on any platform."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 2);? (Set 263)",
-    "options": [
-      "52",
-      "3",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 3);? (Set 264)",
-    "options": [
-      "4",
-      "1",
-      "5",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 42) (Set 265)",
-    "options": [
-      "3",
-      "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 3);? (Set 266)",
-    "options": [
-      "2",
-      "1",
-      "0",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 4);? (Set 51) (Set 267)",
-    "options": [
-      "8",
-      "7",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 2);? (Set 87) (Set 268)",
-    "options": [
-      "2",
-      "0",
-      "1",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 | 2);? (Set 269)",
-    "options": [
-      "44",
-      "25",
-      "22",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 6);? (Set 198) (Set 270)",
-    "options": [
-      "-1",
-      "0",
-      "3",
-      "84"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 6);? (Set 178) (Set 271)",
-    "options": [
-      "7",
-      "3",
-      "8",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 3);? (Set 272)",
-    "options": [
-      "20",
-      "9",
-      "10",
-      "13"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 6);? (Set 273)",
-    "options": [
-      "44",
-      "22",
-      "21",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 6);? (Set 203) (Set 274)",
-    "options": [
-      "16",
-      "20",
-      "34",
-      "17"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 3);? (Set 79) (Set 275)",
-    "options": [
-      "2",
-      "4",
-      "5",
-      "1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 6);? (Set 32) (Set 276)",
-    "options": [
-      "4",
-      "8",
-      "3",
-      "7"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 6);? (Set 47) (Set 277)",
-    "options": [
-      "8",
-      "3",
-      "7",
-      "4"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "this keyword refers to? (Set 278)",
-    "options": [
-      "Previous object by design",
-      "Static context in most cases",
-      "Parent class in standard usage",
-      "Current object instance"
-    ],
-    "answer": 3,
-    "explanation": "this resolves ambiguity between fields and parameters."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 << 1);? (Set 279)",
-    "options": [
-      "56",
-      "27",
-      "31",
       "28"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 28."
+    "explanation": "Condition (24 > 17) evaluates to true. Thus z is assigned to 24 + 4 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 17; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "26",
+      "18",
+      "22",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 17) evaluates to true. Thus z is assigned to 22 + 4 which equals 26."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 2);? (Set 280)",
+    "question": "What is the printed output of the Java expression: System.out.println(16 % 11);?",
     "options": [
-      "13",
-      "28",
+      "5",
+      "0",
+      "7",
+      "1"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 16 / 11 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 13; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
       "17",
+      "13",
+      "15",
+      "19"
+    ],
+    "answer": 3,
+    "explanation": "Condition (17 > 13) evaluates to true. Thus z is assigned to 17 + 2 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(49 % 7);?",
+    "options": [
+      "0",
+      "21",
+      "7",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 49 / 7 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 14; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "9",
+      "16",
+      "14",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Condition (9 > 14) evaluates to false. Thus z is assigned to 14 - 2 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(45 % 7);?",
+    "options": [
+      "3",
+      "6",
+      "0",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 45 / 7 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(62 % 9);?",
+    "options": [
+      "8",
+      "10",
+      "6",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 62 / 9 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "9",
+      "11",
+      "11",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (11 > 11) evaluates to false. Thus z is assigned to 11 - 2 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 10; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "20",
+      "14",
+      "17",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Condition (17 > 10) evaluates to true. Thus z is assigned to 17 + 3 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 | 4);",
+    "options": [
+      "38",
+      "22",
+      "19",
+      "20"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 10000 and 100 yields decimal 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 9; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "9",
+      "9",
+      "15",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 9) evaluates to true. Thus z is assigned to 12 + 3 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 22; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "22",
+      "9",
+      "30",
       "14"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Condition (9 > 22) evaluates to false. Thus z is assigned to 22 - 8 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 & 4);",
+    "options": [
+      "0",
+      "-1",
+      "15",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1011 and 100 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 18; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "18",
+      "9",
+      "27",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Condition (5 > 18) evaluates to false. Thus z is assigned to 18 - 9 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 6; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "6",
+      "25",
+      "19",
+      "13"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 6) evaluates to true. Thus z is assigned to 19 + 6 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 16; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "10",
+      "13",
+      "16",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 16) evaluates to false. Thus z is assigned to 16 - 3 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 | 2);",
+    "options": [
+      "9",
+      "12",
+      "10",
+      "54"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1000 and 10 yields decimal 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 12; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "17",
+      "8",
+      "12",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Condition (8 > 12) evaluates to false. Thus z is assigned to 12 - 5 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 23; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "30",
+      "16",
+      "23",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Condition (5 > 23) evaluates to false. Thus z is assigned to 23 - 7 which equals 16."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 6);? (Set 142) (Set 281)",
+    "question": "What is the printed output of the Java expression: System.out.println(58 % 6);?",
     "options": [
-      "33",
-      "60",
+      "0",
+      "9",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 58 / 6 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 13; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "6",
+      "11",
+      "15",
+      "13"
+    ],
+    "answer": 1,
+    "explanation": "Condition (6 > 13) evaluates to false. Thus z is assigned to 13 - 2 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 & 2);",
+    "options": [
+      "1",
+      "2",
+      "21",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 10011 and 10 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 ^ 2);",
+    "options": [
+      "9",
+      "13",
+      "11",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1011 and 10 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(41 % 8);?",
+    "options": [
+      "0",
+      "5",
+      "1",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 41 / 8 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 18; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "14",
+      "25",
+      "18",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 18) evaluates to false. Thus z is assigned to 18 - 7 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(28 % 8);?",
+    "options": [
+      "0",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 28 / 8 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 9);",
+    "options": [
+      "11",
+      "9",
+      "8",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1101 and 1001 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(62 % 4);?",
+    "options": [
+      "2",
+      "0",
+      "15",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 62 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 12; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "14",
+      "12",
+      "10",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Condition (7 > 12) evaluates to false. Thus z is assigned to 12 - 2 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(20 % 8);?",
+    "options": [
+      "6",
+      "4",
+      "0",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 20 / 8 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 12; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "6",
+      "12",
+      "18",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Condition (12 > 12) evaluates to false. Thus z is assigned to 12 - 6 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(31 % 11);?",
+    "options": [
+      "0",
+      "2",
+      "11",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 31 / 11 leaves remainder 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(19 % 7);?",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 19 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 4);",
+    "options": [
+      "6",
+      "4",
+      "3",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1111 and 100 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(44 % 9);?",
+    "options": [
+      "10",
+      "0",
+      "4",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 44 / 9 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 22; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "24",
       "30",
+      "18",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Condition (24 > 22) evaluates to true. Thus z is assigned to 24 + 6 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 ^ 3);",
+    "options": [
+      "5",
+      "6",
+      "8",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 101 and 11 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 4);",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 101 and 100 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 10; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "4",
+      "24",
+      "10",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Condition (14 > 10) evaluates to true. Thus z is assigned to 14 + 10 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 23; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "19",
+      "23",
+      "42",
+      "27"
+    ],
+    "answer": 0,
+    "explanation": "Condition (19 > 23) evaluates to false. Thus z is assigned to 23 - 4 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 & 3);",
+    "options": [
+      "21",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 10010 and 11 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 18; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "18",
+      "21",
+      "32",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Condition (21 > 18) evaluates to true. Thus z is assigned to 21 + 11 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 18; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "22",
+      "18",
+      "18",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (20 > 18) evaluates to true. Thus z is assigned to 20 + 2 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 24; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "20",
+      "14",
+      "28",
+      "24"
+    ],
+    "answer": 0,
+    "explanation": "Condition (14 > 24) evaluates to false. Thus z is assigned to 24 - 4 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 8);",
+    "options": [
+      "9",
+      "11",
+      "17",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1001 and 1000 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 7);",
+    "options": [
+      "23",
+      "20",
+      "21",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10010 and 111 yields decimal 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 & 6);",
+    "options": [
+      "0",
+      "-1",
+      "2",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10001 and 110 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(15 % 10);?",
+    "options": [
+      "5",
+      "7",
+      "1",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 15 / 10 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 8);?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 8 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 19; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "24",
+      "19",
+      "14",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Condition (13 > 19) evaluates to false. Thus z is assigned to 19 - 5 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 7);",
+    "options": [
+      "4",
+      "5",
+      "20",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1101 and 111 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 ^ 5);",
+    "options": [
+      "11",
+      "14",
+      "14",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1001 and 101 yields decimal 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 9);",
+    "options": [
+      "8",
+      "6",
+      "24",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1111 and 1001 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 & 8);",
+    "options": [
+      "8",
+      "7",
+      "10",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1000 and 1000 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 15; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "15",
+      "14",
+      "19",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Condition (19 > 15) evaluates to true. Thus z is assigned to 19 + 5 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 7);?",
+    "options": [
+      "5",
+      "6",
+      "0",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 7 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 | 8);",
+    "options": [
+      "11",
+      "12",
+      "20",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1100 and 1000 yields decimal 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 22; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "17",
+      "16",
+      "22",
+      "27"
+    ],
+    "answer": 0,
+    "explanation": "Condition (16 > 22) evaluates to false. Thus z is assigned to 22 - 5 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 & 4);",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 111 and 100 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 6);",
+    "options": [
+      "9",
+      "12",
+      "10",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1100 and 110 yields decimal 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "13",
+      "11",
+      "6",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 11) evaluates to false. Thus z is assigned to 11 - 2 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(33 % 11);?",
+    "options": [
+      "2",
+      "3",
+      "15",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 33 / 11 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 11; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "1",
+      "11",
+      "21",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Condition (8 > 11) evaluates to false. Thus z is assigned to 11 - 10 which equals 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 5; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "14",
+      "7",
+      "5",
+      "21"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 5) evaluates to true. Thus z is assigned to 14 + 7 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 21; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "18",
+      "5",
+      "21",
+      "24"
+    ],
+    "answer": 0,
+    "explanation": "Condition (5 > 21) evaluates to false. Thus z is assigned to 21 - 3 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 & 7);",
+    "options": [
+      "3",
+      "1",
+      "0",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 10001 and 111 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 | 8);",
+    "options": [
+      "48",
+      "28",
+      "25",
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 10010 and 1000 yields decimal 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 9; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "24",
+      "15",
+      "9",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Condition (15 > 9) evaluates to true. Thus z is assigned to 15 + 9 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 21; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "11",
+      "21",
+      "31",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 21) evaluates to false. Thus z is assigned to 21 - 10 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(18 % 6);?",
+    "options": [
+      "2",
+      "3",
+      "17",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 18 / 6 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 | 2);",
+    "options": [
+      "26",
+      "20",
+      "18",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 10000 and 10 yields decimal 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 & 4);",
+    "options": [
+      "3",
+      "4",
+      "9",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 101 and 100 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 5);",
+    "options": [
+      "0",
+      "2",
+      "-1",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10000 and 101 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(44 % 8);?",
+    "options": [
+      "5",
+      "0",
+      "6",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 44 / 8 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 5);?",
+    "options": [
+      "6",
+      "4",
+      "6",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 22; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "11",
+      "22",
+      "30",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Condition (11 > 22) evaluates to false. Thus z is assigned to 22 - 8 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(47 % 6);?",
+    "options": [
+      "5",
+      "0",
+      "7",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 47 / 6 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(64 % 7);?",
+    "options": [
+      "3",
+      "0",
+      "9",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 64 / 7 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 24; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "9",
+      "28",
+      "20",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Condition (9 > 24) evaluates to false. Thus z is assigned to 24 - 4 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 ^ 5);",
+    "options": [
+      "3",
+      "11",
+      "5",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 110 and 101 yields decimal 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 | 6);",
+    "options": [
+      "16",
+      "48",
+      "14",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1000 and 110 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 & 6);",
+    "options": [
+      "2",
+      "25",
+      "1",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10011 and 110 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 ^ 3);",
+    "options": [
+      "45",
+      "10",
+      "13",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1000 and 11 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(50 % 5);?",
+    "options": [
+      "10",
+      "13",
+      "2",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 50 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 7; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "12",
+      "23",
+      "34",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Condition (23 > 7) evaluates to true. Thus z is assigned to 23 + 11 which equals 34."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(26 % 9);?",
+    "options": [
+      "8",
+      "0",
+      "2",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 26 / 9 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(25 % 11);?",
+    "options": [
+      "5",
+      "3",
+      "2",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 25 / 11 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 & 4);",
+    "options": [
+      "-1",
+      "2",
+      "0",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1000 and 100 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(54 % 7);?",
+    "options": [
+      "5",
+      "0",
+      "7",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 54 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(41 % 9);?",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 41 / 9 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 13; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "21",
+      "13",
+      "13",
+      "29"
+    ],
+    "answer": 3,
+    "explanation": "Condition (21 > 13) evaluates to true. Thus z is assigned to 21 + 8 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 5; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "5",
+      "15",
+      "25",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Condition (15 > 5) evaluates to true. Thus z is assigned to 15 + 10 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 23; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "23",
+      "21",
+      "25",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 23) evaluates to false. Thus z is assigned to 23 - 2 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(52 % 9);?",
+    "options": [
+      "7",
+      "5",
+      "9",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 52 / 9 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 6);",
+    "options": [
+      "11",
+      "7",
+      "9",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 101 and 110 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 8);?",
+    "options": [
+      "5",
+      "0",
+      "3",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 8 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 & 7);",
+    "options": [
+      "5",
+      "4",
+      "7",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 101 and 111 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 & 6);",
+    "options": [
+      "1",
+      "24",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 10010 and 110 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 5; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "4",
+      "5",
+      "15",
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "Condition (15 > 5) evaluates to true. Thus z is assigned to 15 + 11 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(46 % 11);?",
+    "options": [
+      "2",
+      "4",
+      "0",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 46 / 11 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 ^ 9);",
+    "options": [
+      "26",
+      "28",
+      "28",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 10011 and 1001 yields decimal 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 ^ 3);",
+    "options": [
+      "3",
+      "10",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 111 and 11 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 7; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "6",
+      "7",
+      "1",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Condition (6 > 7) evaluates to false. Thus z is assigned to 7 - 6 which equals 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 20; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "17",
+      "20",
+      "19",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Condition (19 > 20) evaluates to false. Thus z is assigned to 20 - 3 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(38 % 4);?",
+    "options": [
+      "9",
+      "4",
+      "2",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 38 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 23; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "23",
+      "25",
+      "21",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "Condition (23 > 23) evaluates to false. Thus z is assigned to 23 - 2 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 | 2);",
+    "options": [
+      "21",
+      "19",
+      "21",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 10011 and 10 yields decimal 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(59 % 10);?",
+    "options": [
+      "9",
+      "5",
+      "11",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 59 / 10 leaves remainder 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 ^ 2);",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 110 and 10 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 9; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "5",
+      "9",
+      "11",
+      "17"
+    ],
+    "answer": 3,
+    "explanation": "Condition (11 > 9) evaluates to true. Thus z is assigned to 11 + 6 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 6; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "24",
+      "6",
+      "21",
+      "27"
+    ],
+    "answer": 3,
+    "explanation": "Condition (24 > 6) evaluates to true. Thus z is assigned to 24 + 3 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 & 5);",
+    "options": [
+      "4",
+      "12",
+      "7",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 111 and 101 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 24; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "18",
+      "24",
+      "20",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Condition (18 > 24) evaluates to false. Thus z is assigned to 24 - 4 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 21; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "15",
+      "31",
+      "11",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "Condition (15 > 21) evaluates to false. Thus z is assigned to 21 - 10 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 10; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "10",
+      "-1",
+      "21",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Condition (5 > 10) evaluates to false. Thus z is assigned to 10 - 11 which equals -1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 ^ 3);",
+    "options": [
+      "20",
+      "18",
+      "20",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10001 and 11 yields decimal 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 | 9);",
+    "options": [
+      "11",
+      "13",
+      "10",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1010 and 1001 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 13; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "13",
+      "13",
+      "6",
+      "20"
+    ],
+    "answer": 2,
+    "explanation": "Condition (13 > 13) evaluates to false. Thus z is assigned to 13 - 7 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(19 % 9);?",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 19 / 9 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(50 % 7);?",
+    "options": [
+      "1",
+      "0",
+      "3",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 50 / 7 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 24; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "24",
+      "28",
+      "20",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Condition (10 > 24) evaluates to false. Thus z is assigned to 24 - 4 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 ^ 5);",
+    "options": [
+      "48",
+      "15",
+      "14",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1010 and 101 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(62 % 6);?",
+    "options": [
+      "4",
+      "0",
+      "10",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 62 / 6 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(33 % 5);?",
+    "options": [
+      "5",
+      "3",
+      "0",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 33 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(26 % 11);?",
+    "options": [
+      "2",
+      "4",
+      "0",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 26 / 11 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 15; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "23",
+      "17",
+      "29",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Condition (23 > 15) evaluates to true. Thus z is assigned to 23 + 6 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 22; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "26",
+      "18",
+      "22",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Condition (9 > 22) evaluates to false. Thus z is assigned to 22 - 4 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 23; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "20",
+      "15",
+      "31",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Condition (20 > 23) evaluates to false. Thus z is assigned to 23 - 8 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 | 7);",
+    "options": [
+      "48",
+      "14",
+      "15",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1000 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "22",
+      "24",
+      "11",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 11) evaluates to true. Thus z is assigned to 22 + 2 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 19; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "19",
+      "17",
+      "21",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Condition (7 > 19) evaluates to false. Thus z is assigned to 19 - 2 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 5; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "15",
+      "5",
+      "11",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 5) evaluates to true. Thus z is assigned to 13 + 2 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 19; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "29",
+      "9",
+      "19",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Condition (11 > 19) evaluates to false. Thus z is assigned to 19 - 10 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 6);?",
+    "options": [
+      "0",
+      "4",
+      "9",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 6 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(42 % 7);?",
+    "options": [
+      "17",
+      "0",
+      "2",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 42 / 7 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 16; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "16",
+      "22",
+      "19",
+      "16"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 16) evaluates to true. Thus z is assigned to 19 + 3 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(15 % 8);?",
+    "options": [
+      "7",
+      "1",
+      "9",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 15 / 8 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 16; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "18",
+      "8",
+      "16",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Condition (18 > 16) evaluates to true. Thus z is assigned to 18 + 10 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(50 % 6);?",
+    "options": [
+      "0",
+      "2",
+      "8",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 50 / 6 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(62 % 11);?",
+    "options": [
+      "9",
+      "0",
+      "7",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 62 / 11 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 7; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "14",
+      "12",
+      "10",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Condition (12 > 7) evaluates to true. Thus z is assigned to 12 + 2 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(61 % 6);?",
+    "options": [
+      "1",
+      "0",
+      "10",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 61 / 6 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 2);",
+    "options": [
+      "1",
+      "17",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1111 and 10 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(32 % 5);?",
+    "options": [
+      "2",
+      "6",
+      "4",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 32 / 5 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 19; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "15",
+      "17",
+      "21",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (15 > 19) evaluates to false. Thus z is assigned to 19 - 2 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(25 % 9);?",
+    "options": [
+      "0",
+      "9",
+      "2",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 25 / 9 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 | 4);",
+    "options": [
+      "23",
+      "22",
+      "25",
+      "41"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 10011 and 100 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 20; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "6",
+      "14",
+      "20",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "Condition (6 > 20) evaluates to false. Thus z is assigned to 20 - 6 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 4);?",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 17; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "8",
+      "17",
+      "17",
+      "26"
+    ],
+    "answer": 0,
+    "explanation": "Condition (17 > 17) evaluates to false. Thus z is assigned to 17 - 9 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 13; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "20",
+      "11",
+      "6",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Condition (11 > 13) evaluates to false. Thus z is assigned to 13 - 7 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 | 5);",
+    "options": [
+      "12",
+      "7",
+      "6",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 111 and 101 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(24 % 4);?",
+    "options": [
+      "0",
+      "15",
+      "6",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 24 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(47 % 7);?",
+    "options": [
+      "0",
+      "5",
+      "7",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 47 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 5; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "5",
+      "22",
+      "16",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Condition (22 > 5) evaluates to true. Thus z is assigned to 22 + 6 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 ^ 7);",
+    "options": [
+      "0",
+      "13",
+      "1",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 110 and 111 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 22; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "22",
+      "16",
+      "15",
       "29"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 30."
+    "explanation": "Condition (16 > 22) evaluates to false. Thus z is assigned to 22 - 7 which equals 15."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 282)",
+    "question": "What is the printed output of the Java expression: System.out.println(51 % 9);?",
     "options": [
-      "44",
-      "22",
-      "21",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 5);? (Set 283)",
-    "options": [
-      "6",
-      "6",
-      "2",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 284)",
-    "options": [
-      "42",
-      "24",
-      "21",
-      "20"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 6);? (Set 285)",
-    "options": [
-      "4",
-      "5",
       "8",
-      "10"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 ^ 5);? (Set 195) (Set 286)",
-    "options": [
-      "3",
+      "5",
       "6",
-      "2",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 3);? (Set 287)",
-    "options": [
-      "-1",
-      "3",
-      "58",
       "0"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 51 / 9 leaves remainder 6."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 5);? (Set 288)",
+    "question": "What is the printed output of the Java expression: System.out.println(37 % 10);?",
     "options": [
-      "46",
-      "22",
-      "23",
-      "26"
+      "3",
+      "0",
+      "7",
+      "9"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
+    "explanation": "Modulo operator (%) returns the division remainder: 37 / 10 leaves remainder 7."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 39) (Set 289)",
+    "question": "What is the printed output of the Java expression: System.out.println(38 % 8);?",
     "options": [
-      "46",
-      "23",
-      "26",
-      "22"
+      "4",
+      "6",
+      "0",
+      "8"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
+    "explanation": "Modulo operator (%) returns the division remainder: 38 / 8 leaves remainder 6."
   },
   {
     "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "JVM stands for? (Set 290)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 | 4);",
     "options": [
-      "Java Visual Maker",
-      "Java Version Module",
-      "Java Variable Manager",
-      "Java Virtual Machine"
-    ],
-    "answer": 3,
-    "explanation": "JVM executes Java bytecode on any platform."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 3);? (Set 291)",
-    "options": [
-      "38",
-      "18",
-      "19",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "What is the default value of an int in Java? (Set 292)",
-    "options": [
-      "undefined",
-      "-1",
-      "0",
-      "null"
-    ],
-    "answer": 2,
-    "explanation": "Primitive int defaults to 0 in Java."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 2);? (Set 8) (Set 293)",
-    "options": [
-      "7",
-      "8",
       "11",
+      "6",
+      "7",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 111 and 100 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(58 % 11);?",
+    "options": [
+      "5",
+      "5",
+      "3",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 58 / 11 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 & 7);",
+    "options": [
+      "5",
+      "8",
+      "6",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 110 and 111 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 | 4);",
+    "options": [
+      "13",
+      "14",
+      "42",
       "16"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
+    "explanation": "Applying bitwise | between binary 1010 and 100 yields decimal 14."
   },
   {
     "subject": "Java",
-    "topic": "OOP",
+    "topic": "Bitwise Operators",
     "difficulty": "Medium",
-    "question": "Functional interface has? (Set 58) (Set 294)",
+    "question": "What will be the output of following statement in Java? System.out.println(6 | 9);",
     "options": [
-      "Multiple abstract methods",
-      "Exactly one abstract method",
-      "Only default methods by design",
-      "No methods in standard usage"
+      "14",
+      "51",
+      "15",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 110 and 1001 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 14; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "8",
+      "20",
+      "14",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (14 > 14) evaluates to false. Thus z is assigned to 14 - 6 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(53 % 10);?",
+    "options": [
+      "3",
+      "0",
+      "5",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 53 / 10 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 4);",
+    "options": [
+      "15",
+      "13",
+      "12",
+      "39"
     ],
     "answer": 1,
-    "explanation": "@FunctionalInterface annotation enforces this."
+    "explanation": "Applying bitwise | between binary 1001 and 100 yields decimal 13."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 2);? (Set 295)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 ^ 9);",
     "options": [
-      "12",
-      "26",
-      "16",
-      "13"
+      "19",
+      "3",
+      "2",
+      "5"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1010 and 1001 yields decimal 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 8);",
+    "options": [
+      "8",
+      "10",
+      "21",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1101 and 1000 yields decimal 8."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 >> 1);? (Set 296)",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 5);?",
     "options": [
-      "10",
-      "5",
-      "8",
+      "0",
+      "2",
+      "4",
       "4"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 5."
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 5 leaves remainder 2."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 116) (Set 297)",
+    "question": "What is the printed output of the Java expression: System.out.println(30 % 8);?",
     "options": [
+      "3",
+      "0",
       "6",
-      "6",
-      "2",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 2);? (Set 67) (Set 298)",
-    "options": [
-      "17",
-      "28",
-      "14",
-      "13"
+      "8"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Modulo operator (%) returns the division remainder: 30 / 8 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 ^ 4);",
+    "options": [
+      "23",
+      "22",
+      "38",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 10011 and 100 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 9);",
+    "options": [
+      "48",
+      "24",
+      "25",
+      "27"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10000 and 1001 yields decimal 25."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 2);? (Set 299)",
+    "question": "What is the printed output of the Java expression: System.out.println(30 % 5);?",
     "options": [
-      "34",
-      "16",
+      "2",
+      "0",
+      "6",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 30 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(24 % 6);?",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 24 / 6 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 9; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "13",
+      "24",
+      "2",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Condition (13 > 9) evaluates to true. Thus z is assigned to 13 + 11 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 9; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
       "20",
-      "17"
+      "9",
+      "16",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Condition (18 > 9) evaluates to true. Thus z is assigned to 18 + 2 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 7; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "17",
+      "7",
+      "23",
+      "11"
+    ],
+    "answer": 2,
+    "explanation": "Condition (17 > 7) evaluates to true. Thus z is assigned to 17 + 6 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 | 7);",
+    "options": [
+      "17",
+      "21",
+      "14",
+      "15"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
+    "explanation": "Applying bitwise | between binary 1110 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 18; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "18",
+      "18",
+      "26",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Condition (22 > 18) evaluates to true. Thus z is assigned to 22 + 4 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 14; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "14",
+      "14",
+      "22",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 14) evaluates to false. Thus z is assigned to 14 - 8 which equals 6."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 4);? (Set 300)",
+    "question": "What is the printed output of the Java expression: System.out.println(20 % 4);?",
     "options": [
-      "26",
-      "16",
-      "12",
+      "14",
+      "2",
+      "0",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 20 / 4 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 22; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "17",
+      "22",
+      "31",
       "13"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
+    "explanation": "Condition (17 > 22) evaluates to false. Thus z is assigned to 22 - 9 which equals 13."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 4);? (Set 192) (Set 301)",
+    "question": "What is the printed output of the Java expression: System.out.println(47 % 9);?",
+    "options": [
+      "2",
+      "4",
+      "0",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 47 / 9 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 | 5);",
+    "options": [
+      "36",
+      "15",
+      "13",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1000 and 101 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(20 % 6);?",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 20 / 6 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 6);",
+    "options": [
+      "4",
+      "3",
+      "6",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1101 and 110 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 5);",
+    "options": [
+      "7",
+      "5",
+      "10",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 101 and 101 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 24; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "24",
+      "18",
+      "30",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 24) evaluates to false. Thus z is assigned to 24 - 6 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 & 2);",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10010 and 10 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(53 % 5);?",
+    "options": [
+      "3",
+      "0",
+      "10",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 53 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 7);",
+    "options": [
+      "9",
+      "6",
+      "22",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1111 and 111 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 3);",
+    "options": [
+      "13",
+      "12",
+      "10",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 1001 and 11 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 ^ 4);",
+    "options": [
+      "12",
+      "27",
+      "15",
+      "13"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1001 and 100 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 15; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
       "30",
       "14",
       "15",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 282) (Set 302)",
-    "options": [
-      "22",
-      "25",
-      "44",
-      "21"
+      "22"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
+    "explanation": "Condition (22 > 15) evaluates to true. Thus z is assigned to 22 + 8 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 21; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "31",
+      "8",
+      "21",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Condition (8 > 21) evaluates to false. Thus z is assigned to 21 - 10 which equals 11."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 116) (Set 303)",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 6);?",
     "options": [
-      "6",
+      "0",
+      "1",
       "3",
-      "6",
-      "2"
+      "9"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 6 leaves remainder 1."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 6);? (Set 304)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 ^ 7);",
+    "options": [
+      "16",
+      "13",
+      "16",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1001 and 111 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 | 2);",
+    "options": [
+      "14",
+      "15",
+      "17",
+      "47"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1101 and 10 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 23; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "17",
+      "23",
+      "6",
+      "29"
+    ],
+    "answer": 0,
+    "explanation": "Condition (6 > 23) evaluates to false. Thus z is assigned to 23 - 6 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 10; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
       "19",
+      "10",
+      "11",
+      "27"
+    ],
+    "answer": 3,
+    "explanation": "Condition (19 > 10) evaluates to true. Thus z is assigned to 19 + 8 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 17; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "12",
       "23",
-      "40",
+      "11",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 17) evaluates to false. Thus z is assigned to 17 - 6 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 12; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "12",
+      "16",
+      "18",
       "20"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
+    "explanation": "Condition (18 > 12) evaluates to true. Thus z is assigned to 18 + 2 which equals 20."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 39) (Set 305)",
+    "question": "What is the printed output of the Java expression: System.out.println(23 % 4);?",
     "options": [
-      "26",
-      "23",
-      "22",
-      "46"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 5);? (Set 306)",
-    "options": [
-      "8",
-      "4",
-      "10",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 2);? (Set 307)",
-    "options": [
-      "19",
-      "22",
-      "18",
-      "38"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 % 6);? (Set 75) (Set 308)",
-    "options": [
-      "0",
-      "1",
-      "4",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 6);? (Set 309)",
-    "options": [
-      "0",
+      "5",
+      "5",
       "3",
-      "84",
-      "-1"
+      "0"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 23 / 4 leaves remainder 3."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 5);? (Set 148) (Set 310)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 22; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
-      "26",
-      "13",
-      "12",
-      "16"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 2);? (Set 311)",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "JVM stands for? (Set 262) (Set 312)",
-    "options": [
-      "Java Version Module",
-      "Java Virtual Machine",
-      "Java Visual Maker",
-      "Java Variable Manager"
-    ],
-    "answer": 1,
-    "explanation": "JVM executes Java bytecode on any platform."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 << 1);? (Set 313)",
-    "options": [
-      "36",
-      "21",
-      "17",
-      "18"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 4);? (Set 314)",
-    "options": [
-      "17",
-      "28",
+      "22",
       "14",
-      "13"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 2);? (Set 315)",
-    "options": [
-      "36",
-      "21",
       "17",
-      "18"
+      "30"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 18."
+    "answer": 1,
+    "explanation": "Condition (17 > 22) evaluates to false. Thus z is assigned to 22 - 8 which equals 14."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 3);? (Set 57) (Set 316)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 11; int z = (x > y) ? x + 4 : y - 4;?",
     "options": [
-      "1",
-      "4",
-      "2",
-      "5"
+      "11",
+      "21",
+      "25",
+      "17"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
+    "explanation": "Condition (21 > 11) evaluates to true. Thus z is assigned to 21 + 4 which equals 25."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 2);? (Set 311) (Set 317)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 | 3);",
     "options": [
-      "1",
-      "4",
-      "5",
-      "2"
+      "21",
+      "21",
+      "18",
+      "19"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
+    "explanation": "Applying bitwise | between binary 10010 and 11 yields decimal 19."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 5);? (Set 53) (Set 318)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 17; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
-      "8",
-      "16",
-      "11",
-      "7"
+      "22",
+      "14",
+      "17",
+      "30"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
+    "answer": 3,
+    "explanation": "Condition (22 > 17) evaluates to true. Thus z is assigned to 22 + 8 which equals 30."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 2);? (Set 319)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 23; int z = (x > y) ? x + 9 : y - 9;?",
     "options": [
+      "23",
+      "14",
       "16",
-      "19",
-      "15",
       "32"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
+    "answer": 1,
+    "explanation": "Condition (16 > 23) evaluates to false. Thus z is assigned to 23 - 9 which equals 14."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 6);? (Set 4) (Set 65) (Set 320)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 19; int z = (x > y) ? x + 5 : y - 5;?",
     "options": [
-      "16",
+      "14",
+      "24",
       "19",
-      "32",
-      "15"
+      "19"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
+    "explanation": "Condition (19 > 19) evaluates to false. Thus z is assigned to 19 - 5 which equals 14."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 6);? (Set 43) (Set 321)",
+    "question": "What is the printed output of the Java expression: System.out.println(64 % 6);?",
     "options": [
-      "8",
-      "7",
-      "3",
-      "4"
+      "4",
+      "10",
+      "6",
+      "0"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 64 / 6 leaves remainder 4."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 6);? (Set 273) (Set 322)",
+    "question": "What is the printed output of the Java expression: System.out.println(57 % 8);?",
     "options": [
-      "21",
-      "44",
-      "22",
-      "25"
+      "0",
+      "3",
+      "1",
+      "7"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
+    "explanation": "Modulo operator (%) returns the division remainder: 57 / 8 leaves remainder 1."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 3);? (Set 246) (Set 323)",
-    "options": [
-      "22",
-      "19",
-      "38",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 101) (Set 324)",
-    "options": [
-      "20",
-      "42",
-      "24",
-      "21"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 5);? (Set 325)",
-    "options": [
-      "25",
-      "44",
-      "21",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 6);? (Set 326)",
-    "options": [
-      "5",
-      "10",
-      "8",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 5."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 4);? (Set 327)",
-    "options": [
-      "16",
-      "32",
-      "19",
-      "15"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 6);? (Set 328)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 | 2);",
     "options": [
       "7",
+      "6",
+      "49",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 101 and 10 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 4);",
+    "options": [
+      "19",
+      "14",
+      "15",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1111 and 100 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 17; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "27",
+      "21",
+      "15",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Condition (21 > 17) evaluates to true. Thus z is assigned to 21 + 6 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 7);",
+    "options": [
+      "10",
       "8",
+      "7",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1111 and 111 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 ^ 3);",
+    "options": [
+      "14",
+      "10",
+      "8",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1011 and 11 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(31 % 7);?",
+    "options": [
+      "5",
+      "0",
       "4",
       "3"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 31 / 7 leaves remainder 3."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 % 2);? (Set 329)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 16; int z = (x > y) ? x + 9 : y - 9;?",
     "options": [
-      "4",
-      "1",
-      "2",
-      "0"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 116) (Set 297) (Set 330)",
-    "options": [
-      "6",
-      "3",
-      "6",
-      "2"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 >> 1);? (Set 331)",
-    "options": [
-      "11",
       "16",
+      "7",
+      "15",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Condition (15 > 16) evaluates to false. Thus z is assigned to 16 - 9 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 13; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "16",
+      "13",
+      "9",
+      "23"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 13) evaluates to true. Thus z is assigned to 16 + 7 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 24; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "33",
+      "24",
+      "16",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 24) evaluates to false. Thus z is assigned to 24 - 9 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(36 % 11);?",
+    "options": [
+      "0",
+      "3",
+      "5",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 36 / 11 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 & 9);",
+    "options": [
+      "23",
+      "10",
       "8",
       "7"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 8."
+    "explanation": "Applying bitwise & between binary 1110 and 1001 yields decimal 8."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 << 1);? (Set 332)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 13; int z = (x > y) ? x + 5 : y - 5;?",
     "options": [
-      "96",
-      "47",
-      "51",
-      "48"
+      "13",
+      "24",
+      "29",
+      "19"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 48."
+    "answer": 2,
+    "explanation": "Condition (24 > 13) evaluates to true. Thus z is assigned to 24 + 5 which equals 29."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 6);? (Set 333)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 5; int z = (x > y) ? x + 3 : y - 3;?",
     "options": [
-      "8",
+      "17",
+      "5",
+      "20",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (17 > 5) evaluates to true. Thus z is assigned to 17 + 3 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 3);",
+    "options": [
       "12",
-      "9",
+      "11",
+      "14",
       "18"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1111 and 11 yields decimal 12."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 ^ 5);? (Set 71) (Set 91) (Set 165) (Set 334)",
+    "question": "What is the printed output of the Java expression: System.out.println(52 % 8);?",
     "options": [
-      "23",
-      "19",
-      "20",
-      "40"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 124) (Set 155) (Set 335)",
-    "options": [
-      "72",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Method overriding is? (Set 336)",
-    "options": [
-      "Static methods in typical implementations",
-      "Same class different params (standard definition)",
-      "Different method name in typical implementations",
-      "Child class redefines parent method with same signature"
-    ],
-    "answer": 3,
-    "explanation": "Runtime (dynamic) polymorphism."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 24) (Set 337)",
-    "options": [
-      "14",
-      "7",
-      "10",
+      "0",
+      "4",
+      "6",
       "6"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
+    "explanation": "Modulo operator (%) returns the division remainder: 52 / 8 leaves remainder 4."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 6);? (Set 338)",
+    "question": "What is the printed output of the Java expression: System.out.println(60 % 11);?",
+    "options": [
+      "17",
+      "5",
+      "7",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 60 / 11 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 18; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "15",
+      "13",
+      "18",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Condition (15 > 18) evaluates to false. Thus z is assigned to 18 - 5 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 14; int z = (x > y) ? x + 10 : y - 10;?",
     "options": [
       "6",
+      "14",
+      "24",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 14) evaluates to false. Thus z is assigned to 14 - 10 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 7);",
+    "options": [
+      "4",
+      "6",
+      "3",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1100 and 111 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 20; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "11",
+      "6",
+      "20",
+      "29"
+    ],
+    "answer": 0,
+    "explanation": "Condition (6 > 20) evaluates to false. Thus z is assigned to 20 - 9 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 19; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "19",
+      "6",
+      "16",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Condition (6 > 19) evaluates to false. Thus z is assigned to 19 - 3 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(16 % 6);?",
+    "options": [
+      "6",
+      "0",
+      "2",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 16 / 6 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 23; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "28",
+      "20",
+      "18",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "Condition (20 > 23) evaluates to false. Thus z is assigned to 23 - 5 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 ^ 7);",
+    "options": [
+      "24",
+      "22",
+      "21",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10001 and 111 yields decimal 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(41 % 11);?",
+    "options": [
+      "8",
+      "3",
+      "0",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 41 / 11 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(52 % 11);?",
+    "options": [
+      "0",
+      "10",
+      "8",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 52 / 11 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 6; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "8",
+      "6",
+      "16",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 6) evaluates to true. Thus z is assigned to 16 + 8 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 3);",
+    "options": [
+      "1",
+      "13",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1010 and 11 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(18 % 11);?",
+    "options": [
       "9",
-      "5",
+      "7",
+      "0",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 18 / 11 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 & 2);",
+    "options": [
+      "6",
+      "0",
+      "2",
+      "-1"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 100 and 10 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 16; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "21",
+      "11",
+      "16",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 16) evaluates to false. Thus z is assigned to 16 - 5 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 19; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "28",
+      "18",
+      "23",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Condition (23 > 19) evaluates to true. Thus z is assigned to 23 + 5 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 & 8);",
+    "options": [
+      "8",
+      "22",
+      "7",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1110 and 1000 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(44 % 5);?",
+    "options": [
+      "8",
+      "4",
+      "0",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 44 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 | 8);",
+    "options": [
+      "27",
+      "26",
+      "29",
+      "52"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 10011 and 1000 yields decimal 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 17; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "17",
+      "26",
+      "15",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Condition (15 > 17) evaluates to false. Thus z is assigned to 17 - 9 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 5);",
+    "options": [
+      "13",
+      "14",
+      "15",
       "12"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
+    "explanation": "Applying bitwise | between binary 1001 and 101 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 16; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "10",
+      "16",
+      "22",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 16) evaluates to false. Thus z is assigned to 16 - 6 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 ^ 5);",
+    "options": [
+      "9",
+      "3",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 100 and 101 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 14; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "8",
+      "18",
+      "14",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Condition (18 > 14) evaluates to true. Thus z is assigned to 18 + 10 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 9; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "17",
+      "25",
+      "21",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Condition (21 > 9) evaluates to true. Thus z is assigned to 21 + 4 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 | 7);",
+    "options": [
+      "23",
+      "25",
+      "25",
+      "22"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 10010 and 111 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 9);",
+    "options": [
+      "7",
+      "19",
+      "8",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1010 and 1001 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 11; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "6",
+      "11",
+      "20",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 11) evaluates to false. Thus z is assigned to 11 - 9 which equals 2."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 124) (Set 155) (Set 335) (Set 339)",
+    "question": "What is the printed output of the Java expression: System.out.println(60 % 9);?",
     "options": [
-      "72",
-      "3",
+      "0",
+      "6",
+      "8",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 60 / 9 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 | 5);",
+    "options": [
+      "7",
+      "9",
+      "11",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 110 and 101 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(21 % 11);?",
+    "options": [
+      "0",
+      "12",
+      "1",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 21 / 11 leaves remainder 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 4);",
+    "options": [
       "-1",
+      "2",
+      "20",
       "0"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Applying bitwise & between binary 10000 and 100 yields decimal 0."
   },
   {
     "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Ternary Operator",
     "difficulty": "Medium",
-    "question": "Heap memory stores? (Set 340)",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 12; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
-      "Method calls (primary approach)",
-      "Primitives only (standard definition)",
-      "Objects and instance variables",
-      "Local variables only (general case)"
-    ],
-    "answer": 2,
-    "explanation": "Shared heap stores dynamically allocated objects."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 & 5);? (Set 341)",
-    "options": [
-      "0",
-      "3",
-      "-1",
-      "56"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "Java is which type of language? (Set 342)",
-    "options": [
-      "Functional only",
-      "Object-Oriented",
-      "Assembly by design",
-      "Procedural only"
+      "12",
+      "10",
+      "6",
+      "14"
     ],
     "answer": 1,
-    "explanation": "Java follows OOP principles: encapsulation, inheritance, polymorphism, abstraction."
+    "explanation": "Condition (6 > 12) evaluates to false. Thus z is assigned to 12 - 2 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 | 5);",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 10001 and 101 yields decimal 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 8; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "16",
+      "26",
+      "8",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Condition (16 > 8) evaluates to true. Thus z is assigned to 16 + 10 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 19; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "12",
+      "5",
+      "26",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Condition (5 > 19) evaluates to false. Thus z is assigned to 19 - 7 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 16; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "22",
+      "32",
+      "16",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 16) evaluates to true. Thus z is assigned to 22 + 10 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 7; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "17",
+      "7",
+      "31",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Condition (24 > 7) evaluates to true. Thus z is assigned to 24 + 7 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 11; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "21",
+      "11",
+      "3",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Condition (12 > 11) evaluates to true. Thus z is assigned to 12 + 9 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 6);",
+    "options": [
+      "24",
+      "21",
+      "22",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10000 and 110 yields decimal 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 5; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "8",
+      "-3",
+      "19",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Condition (8 > 5) evaluates to true. Thus z is assigned to 8 + 11 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 & 6);",
+    "options": [
+      "0",
+      "14",
+      "-1",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1000 and 110 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 23; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "13",
+      "15",
+      "23",
+      "33"
+    ],
+    "answer": 0,
+    "explanation": "Condition (15 > 23) evaluates to false. Thus z is assigned to 23 - 10 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 15; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "15",
+      "6",
+      "19",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 15) evaluates to false. Thus z is assigned to 15 - 4 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 2);",
+    "options": [
+      "2",
+      "18",
+      "0",
+      "-1"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 10000 and 10 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 19; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "26",
+      "8",
+      "19",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Condition (8 > 19) evaluates to false. Thus z is assigned to 19 - 7 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 23; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "20",
+      "13",
+      "23",
+      "33"
+    ],
+    "answer": 1,
+    "explanation": "Condition (20 > 23) evaluates to false. Thus z is assigned to 23 - 10 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 ^ 8);",
+    "options": [
+      "4",
+      "6",
+      "3",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1100 and 1000 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 & 4);",
+    "options": [
+      "-1",
+      "2",
+      "0",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 10011 and 100 yields decimal 0."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 2);? (Set 52) (Set 171) (Set 343)",
+    "question": "What is the printed output of the Java expression: System.out.println(59 % 8);?",
+    "options": [
+      "5",
+      "0",
+      "7",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 59 / 8 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 24; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "8",
+      "16",
+      "32",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (8 > 24) evaluates to false. Thus z is assigned to 24 - 8 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 4);?",
+    "options": [
+      "10",
+      "3",
+      "0",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 19; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "20",
+      "24",
+      "28",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Condition (24 > 19) evaluates to true. Thus z is assigned to 24 + 4 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(58 % 4);?",
+    "options": [
+      "2",
+      "0",
+      "14",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 58 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 6);?",
+    "options": [
+      "6",
+      "4",
+      "3",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 6 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 18; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "18",
+      "16",
+      "13",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Condition (13 > 18) evaluates to false. Thus z is assigned to 18 - 2 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(26 % 7);?",
+    "options": [
+      "5",
+      "0",
+      "3",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 26 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 & 5);",
+    "options": [
+      "5",
+      "20",
+      "4",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1111 and 101 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 18; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "22",
+      "14",
+      "18",
+      "44"
+    ],
+    "answer": 1,
+    "explanation": "Condition (14 > 18) evaluates to false. Thus z is assigned to 18 - 4 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 23; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "28",
+      "14",
+      "23",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 23) evaluates to false. Thus z is assigned to 23 - 5 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 14; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "12",
+      "28",
+      "20",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Condition (20 > 14) evaluates to true. Thus z is assigned to 20 + 8 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 5; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "17",
+      "23",
+      "5",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Condition (20 > 5) evaluates to true. Thus z is assigned to 20 + 3 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 18; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "9",
+      "18",
+      "8",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Condition (9 > 18) evaluates to false. Thus z is assigned to 18 - 10 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(33 % 4);?",
+    "options": [
+      "0",
+      "8",
+      "1",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 33 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 ^ 6);",
+    "options": [
+      "20",
+      "7",
+      "10",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1110 and 110 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 6; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "1",
+      "6",
+      "19",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Condition (10 > 6) evaluates to true. Thus z is assigned to 10 + 9 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 20; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "26",
+      "20",
+      "14",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Condition (7 > 20) evaluates to false. Thus z is assigned to 20 - 6 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 18; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "18",
+      "30",
+      "19",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 18) evaluates to true. Thus z is assigned to 19 + 11 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 13; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
       "13",
+      "32",
+      "24",
+      "16"
+    ],
+    "answer": 1,
+    "explanation": "Condition (24 > 13) evaluates to true. Thus z is assigned to 24 + 8 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "14",
       "10",
+      "11",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Condition (12 > 11) evaluates to true. Thus z is assigned to 12 + 2 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(53 % 7);?",
+    "options": [
+      "7",
+      "6",
+      "4",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 53 / 7 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 6; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "19",
+      "-1",
+      "6",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 6) evaluates to true. Thus z is assigned to 9 + 10 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 10; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "12",
+      "6",
+      "10",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 10) evaluates to false. Thus z is assigned to 10 - 2 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 | 5);",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 100 and 101 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 20; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "31",
+      "24",
+      "20",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Condition (24 > 20) evaluates to true. Thus z is assigned to 24 + 7 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 10);?",
+    "options": [
+      "0",
+      "5",
+      "3",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 10 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 6; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "12",
+      "0",
+      "6",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Condition (6 > 6) evaluates to false. Thus z is assigned to 6 - 6 which equals 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(42 % 10);?",
+    "options": [
+      "0",
+      "4",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 42 / 10 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 5);?",
+    "options": [
+      "8",
+      "0",
+      "5",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 18; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "14",
+      "18",
+      "28",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 18) evaluates to false. Thus z is assigned to 18 - 10 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(63 % 11);?",
+    "options": [
+      "10",
+      "5",
+      "8",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 63 / 11 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 14; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "5",
+      "23",
+      "14",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 14) evaluates to false. Thus z is assigned to 14 - 9 which equals 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 19; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "21",
+      "19",
+      "18",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Condition (21 > 19) evaluates to true. Thus z is assigned to 21 + 3 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 11);?",
+    "options": [
+      "2",
+      "5",
+      "0",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 11 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 16; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "13",
+      "16",
+      "14",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (13 > 16) evaluates to false. Thus z is assigned to 16 - 2 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(52 % 10);?",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 52 / 10 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 10; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "1",
+      "9",
+      "10",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 10) evaluates to false. Thus z is assigned to 10 - 9 which equals 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 8; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "8",
+      "14",
+      "6",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 8) evaluates to true. Thus z is assigned to 10 + 4 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 21; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "10",
+      "21",
+      "30",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Condition (10 > 21) evaluates to false. Thus z is assigned to 21 - 9 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 | 6);",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 100 and 110 yields decimal 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 17; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "17",
+      "28",
+      "7",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Condition (7 > 17) evaluates to false. Thus z is assigned to 17 - 11 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 ^ 2);",
+    "options": [
+      "8",
+      "12",
+      "7",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1010 and 10 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 11);?",
+    "options": [
+      "5",
+      "19",
+      "0",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 11 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 6);",
+    "options": [
+      "11",
+      "21",
+      "9",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1111 and 110 yields decimal 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(33 % 7);?",
+    "options": [
+      "4",
+      "0",
+      "7",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 33 / 7 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 7; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "4",
+      "7",
+      "12",
+      "20"
+    ],
+    "answer": 3,
+    "explanation": "Condition (12 > 7) evaluates to true. Thus z is assigned to 12 + 8 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 | 3);",
+    "options": [
+      "36",
+      "13",
+      "10",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 1000 and 11 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 4);?",
+    "options": [
+      "3",
+      "0",
+      "5",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 5; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "19",
+      "5",
+      "24",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (19 > 5) evaluates to true. Thus z is assigned to 19 + 5 which equals 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 5);",
+    "options": [
+      "14",
+      "20",
+      "15",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1111 and 101 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 18; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "18",
+      "24",
+      "10",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Condition (10 > 18) evaluates to false. Thus z is assigned to 18 - 6 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 6; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "-3",
+      "17",
+      "7",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Condition (7 > 6) evaluates to true. Thus z is assigned to 7 + 10 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(8 & 9);",
+    "options": [
+      "7",
+      "10",
+      "17",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1000 and 1001 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 12; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "15",
+      "31",
+      "23",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Condition (23 > 12) evaluates to true. Thus z is assigned to 23 + 8 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 15; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "13",
+      "23",
+      "18",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Condition (18 > 15) evaluates to true. Thus z is assigned to 18 + 5 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(20 % 10);?",
+    "options": [
+      "0",
+      "19",
+      "2",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 20 / 10 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 12; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "12",
+      "31",
+      "11",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "Condition (21 > 12) evaluates to true. Thus z is assigned to 21 + 10 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 5);?",
+    "options": [
+      "7",
+      "6",
+      "0",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(33 % 9);?",
+    "options": [
+      "3",
+      "0",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 33 / 9 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 21; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "5",
+      "13",
+      "21",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Condition (5 > 21) evaluates to false. Thus z is assigned to 21 - 8 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 8; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "8",
+      "12",
+      "15",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 8) evaluates to true. Thus z is assigned to 12 + 3 which equals 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 | 5);",
+    "options": [
+      "14",
+      "15",
+      "19",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1110 and 101 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 & 5);",
+    "options": [
+      "3",
+      "0",
+      "1",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 10001 and 101 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(36 % 9);?",
+    "options": [
+      "0",
+      "15",
+      "2",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 36 / 9 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 & 8);",
+    "options": [
+      "0",
+      "-1",
+      "26",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 10010 and 1000 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 21; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "21",
+      "25",
+      "17",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Condition (13 > 21) evaluates to false. Thus z is assigned to 21 - 4 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 17; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "14",
+      "17",
+      "23",
+      "32"
+    ],
+    "answer": 3,
+    "explanation": "Condition (23 > 17) evaluates to true. Thus z is assigned to 23 + 9 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 ^ 5);",
+    "options": [
+      "18",
+      "10",
+      "8",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1101 and 101 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 12; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "12",
+      "12",
+      "3",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 12) evaluates to false. Thus z is assigned to 12 - 9 which equals 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 9; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "14",
+      "7",
+      "21",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Condition (14 > 9) evaluates to true. Thus z is assigned to 14 + 7 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 10; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "6",
+      "10",
+      "28",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (17 > 10) evaluates to true. Thus z is assigned to 17 + 11 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 ^ 8);",
+    "options": [
+      "17",
+      "15",
+      "44",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 111 and 1000 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 9; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "12",
+      "28",
       "20",
       "9"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 10."
+    "explanation": "Condition (20 > 9) evaluates to true. Thus z is assigned to 20 + 8 which equals 28."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 6);? (Set 344)",
-    "options": [
-      "18",
-      "17",
-      "36",
-      "21"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 18."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Ternary Operator",
     "difficulty": "Medium",
-    "question": "ArrayList vs LinkedList: random access? (Set 63) (Set 240) (Set 345)",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 13; int z = (x > y) ? x + 11 : y - 11;?",
     "options": [
-      "Both O(n) (standard definition)",
-      "LinkedList is faster in practice",
-      "Both O(1) under normal conditions",
-      "ArrayList is O(1), LinkedList is O(n)"
-    ],
-    "answer": 3,
-    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 4);? (Set 300) (Set 346)",
-    "options": [
-      "16",
-      "26",
-      "12",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 105) (Set 117) (Set 347)",
-    "options": [
-      "14",
-      "10",
-      "11",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 5);? (Set 30) (Set 348)",
-    "options": [
-      "7",
-      "4",
-      "8",
-      "3"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "this keyword refers to? (Set 278) (Set 349)",
-    "options": [
-      "Previous object by design",
-      "Parent class in most cases",
-      "Current object instance",
-      "Static context in most cases"
-    ],
-    "answer": 2,
-    "explanation": "this resolves ambiguity between fields and parameters."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "Design pattern: Builder is used for? (Set 350)",
-    "options": [
-      "Destroying objects in standard usage",
-      "Constructing complex objects step by step",
-      "Sorting in typical implementations",
-      "Threading in typical implementations"
-    ],
-    "answer": 1,
-    "explanation": "Builder separates construction from representation."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 4);? (Set 351)",
-    "options": [
-      "15",
-      "12",
-      "11",
-      "24"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 4);? (Set 141) (Set 352)",
-    "options": [
-      "3",
       "2",
-      "6",
-      "6"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 4);? (Set 19) (Set 353)",
-    "options": [
-      "0",
-      "81",
-      "3",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 | 4);? (Set 354)",
-    "options": [
-      "26",
-      "16",
       "13",
-      "12"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 << 1);? (Set 332) (Set 355)",
-    "options": [
-      "48",
-      "96",
-      "47",
-      "51"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 48."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 4);? (Set 356)",
-    "options": [
-      "0",
-      "-1",
-      "3",
-      "81"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 3);? (Set 357)",
-    "options": [
-      "11",
-      "10",
-      "14",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 3);? (Set 358)",
-    "options": [
-      "4",
-      "2",
-      "1",
-      "5"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);? (Set 127) (Set 359)",
-    "options": [
-      "53",
-      "0",
-      "3",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);? (Set 360)",
-    "options": [
-      "0",
-      "3",
-      "53",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 3);? (Set 266) (Set 361)",
-    "options": [
-      "2",
-      "4",
-      "1",
-      "0"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 6);? (Set 362)",
-    "options": [
-      "13",
-      "17",
-      "28",
-      "14"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 6);? (Set 363)",
-    "options": [
-      "28",
-      "17",
-      "14",
-      "13"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);? (Set 360) (Set 364)",
-    "options": [
-      "3",
-      "0",
-      "53",
-      "-1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 6);? (Set 365)",
-    "options": [
-      "3",
-      "-1",
-      "87",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 & 3);? (Set 57) (Set 316) (Set 366)",
-    "options": [
-      "2",
-      "5",
-      "1",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 367)",
-    "options": [
       "24",
-      "42",
-      "21",
-      "20"
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 13) evaluates to false. Thus z is assigned to 13 - 11 which equals 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 23; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "34",
+      "23",
+      "12",
+      "10"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
+    "explanation": "Condition (10 > 23) evaluates to false. Thus z is assigned to 23 - 11 which equals 12."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 2);? (Set 263) (Set 368)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 18; int z = (x > y) ? x + 3 : y - 3;?",
     "options": [
-      "-1",
-      "3",
-      "0",
-      "52"
+      "22",
+      "18",
+      "25",
+      "19"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Condition (22 > 18) evaluates to true. Thus z is assigned to 22 + 3 which equals 25."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 >> 1);? (Set 369)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 24; int z = (x > y) ? x + 7 : y - 7;?",
     "options": [
-      "8",
-      "4",
-      "3",
-      "7"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 4);? (Set 327) (Set 370)",
-    "options": [
-      "32",
-      "19",
       "16",
-      "15"
+      "24",
+      "31",
+      "17"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
+    "answer": 3,
+    "explanation": "Condition (16 > 24) evaluates to false. Thus z is assigned to 24 - 7 which equals 17."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 2);? (Set 371)",
+    "question": "What is the printed output of the Java expression: System.out.println(28 % 11);?",
     "options": [
-      "28",
-      "14",
+      "6",
+      "0",
+      "2",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 28 / 11 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 17; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "19",
+      "25",
       "13",
       "17"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Condition (19 > 17) evaluates to true. Thus z is assigned to 19 + 6 which equals 25."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 & 2);? (Set 201) (Set 372)",
-    "options": [
-      "52",
-      "3",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 2);? (Set 373)",
-    "options": [
-      "0",
-      "1",
-      "2",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 6);? (Set 273) (Set 322) (Set 374)",
-    "options": [
-      "44",
-      "21",
-      "25",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 3);? (Set 56) (Set 227) (Set 375)",
-    "options": [
-      "5",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 | 6);? (Set 12) (Set 183) (Set 376)",
-    "options": [
-      "18",
-      "15",
-      "30",
-      "14"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 2);? (Set 299) (Set 377)",
-    "options": [
-      "17",
-      "34",
-      "20",
-      "16"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 17."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 ^ 3);? (Set 378)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 8; int z = (x > y) ? x + 4 : y - 4;?",
     "options": [
       "14",
-      "22",
-      "11",
-      "10"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Method overriding is? (Set 6) (Set 109) (Set 379)",
-    "options": [
-      "Child class redefines parent method with same signature",
-      "Same class different params under normal conditions",
-      "Static methods in typical implementations",
-      "Different method name in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "Runtime (dynamic) polymorphism."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "this keyword refers to? (Set 278) (Set 349) (Set 380)",
-    "options": [
-      "Static context (commonly used)",
-      "Current object instance",
-      "Parent class in standard usage",
-      "Previous object (general case)"
-    ],
-    "answer": 1,
-    "explanation": "this resolves ambiguity between fields and parameters."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 | 6);? (Set 381)",
-    "options": [
-      "7",
       "10",
-      "14",
-      "6"
+      "8",
+      "18"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
+    "answer": 3,
+    "explanation": "Condition (14 > 8) evaluates to true. Thus z is assigned to 14 + 4 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 12; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "6",
+      "23",
+      "12",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 12) evaluates to false. Thus z is assigned to 12 - 11 which equals 1."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 ^ 5);? (Set 382)",
+    "question": "What is the printed output of the Java expression: System.out.println(64 % 4);?",
     "options": [
-      "44",
-      "21",
-      "22",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 2);? (Set 383)",
-    "options": [
-      "-1",
       "0",
-      "3",
-      "50"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);? (Set 384)",
-    "options": [
-      "4",
       "2",
-      "1",
-      "5"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 << 1);? (Set 332) (Set 355) (Set 385)",
-    "options": [
-      "48",
-      "96",
-      "47",
-      "51"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 48."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 5);? (Set 103) (Set 386)",
-    "options": [
-      "18",
-      "30",
-      "14",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 ^ 4);? (Set 36) (Set 200) (Set 387)",
-    "options": [
-      "26",
-      "12",
-      "13",
-      "16"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 ^ 6);? (Set 388)",
-    "options": [
-      "18",
-      "22",
-      "19",
-      "38"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 19."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 4);? (Set 189) (Set 389)",
-    "options": [
-      "12",
-      "15",
-      "11",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 4);? (Set 104) (Set 390)",
-    "options": [
-      "4",
-      "8",
-      "3",
-      "7"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 ^ 6);? (Set 391)",
-    "options": [
-      "8",
-      "7",
-      "11",
-      "16"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 8."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 2);? (Set 245) (Set 392)",
-    "options": [
-      "58",
-      "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 4);? (Set 356) (Set 393)",
-    "options": [
-      "0",
-      "3",
-      "-1",
-      "81"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 2);? (Set 394)",
-    "options": [
-      "25",
-      "44",
-      "21",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);? (Set 138) (Set 244) (Set 395)",
-    "options": [
-      "1",
-      "5",
-      "4",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 | 6);? (Set 396)",
-    "options": [
-      "14",
-      "17",
-      "28",
+      "16",
       "13"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Modulo operator (%) returns the division remainder: 64 / 4 leaves remainder 0."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 101) (Set 397)",
+    "question": "What is the printed output of the Java expression: System.out.println(21 % 4);?",
     "options": [
-      "21",
-      "24",
-      "20",
-      "42"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 3);? (Set 398)",
-    "options": [
-      "5",
-      "2",
       "1",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 223) (Set 399)",
-    "options": [
-      "22",
-      "23",
-      "26",
-      "46"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 5);? (Set 173) (Set 400)",
-    "options": [
-      "46",
-      "23",
-      "26",
-      "22"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 | 3);? (Set 401)",
-    "options": [
-      "18",
-      "30",
-      "14",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "ArrayList vs LinkedList: random access? (Set 402)",
-    "options": [
-      "LinkedList is faster (primary approach)",
-      "Both O(n) in typical implementations",
-      "Both O(1) under normal conditions",
-      "ArrayList is O(1), LinkedList is O(n)"
-    ],
-    "answer": 3,
-    "explanation": "ArrayList uses contiguous array; LinkedList traverses nodes."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 284) (Set 403)",
-    "options": [
-      "21",
-      "20",
-      "42",
-      "24"
+      "3",
+      "0",
+      "5"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
+    "explanation": "Modulo operator (%) returns the division remainder: 21 / 4 leaves remainder 1."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 6);? (Set 404)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 21; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
-      "11",
-      "24",
-      "15",
+      "13",
+      "21",
+      "29",
       "12"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
+    "answer": 0,
+    "explanation": "Condition (12 > 21) evaluates to false. Thus z is assigned to 21 - 8 which equals 13."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 3);? (Set 405)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 8; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "8",
+      "6",
+      "28",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (17 > 8) evaluates to true. Thus z is assigned to 17 + 11 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 8; int z = (x > y) ? x + 9 : y - 9;?",
     "options": [
       "1",
-      "4",
-      "2",
-      "5"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 % 3);? (Set 406)",
-    "options": [
-      "5",
-      "2",
-      "4",
-      "1"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 % 2);? (Set 87) (Set 407)",
-    "options": [
-      "0",
-      "4",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 6);? (Set 408)",
-    "options": [
-      "30",
-      "60",
-      "29",
-      "33"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 30."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 4);? (Set 34) (Set 409)",
-    "options": [
-      "0",
-      "3",
-      "64",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 >> 1);? (Set 410)",
-    "options": [
-      "9",
-      "20",
-      "10",
-      "13"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 10."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 367) (Set 411)",
-    "options": [
-      "21",
-      "20",
-      "42",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 5);? (Set 412)",
-    "options": [
-      "13",
-      "16",
-      "12",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 13."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 | 5);? (Set 208) (Set 413)",
-    "options": [
-      "24",
-      "21",
-      "20",
-      "42"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 5);? (Set 414)",
-    "options": [
-      "0",
-      "81",
-      "3",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 2);? (Set 415)",
-    "options": [
-      "-1",
-      "3",
-      "0",
-      "72"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 2);? (Set 416)",
-    "options": [
-      "7",
-      "6",
-      "10",
-      "14"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 3);? (Set 122) (Set 417)",
-    "options": [
-      "6",
-      "7",
-      "14",
+      "19",
+      "8",
       "10"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
+    "explanation": "Condition (10 > 8) evaluates to true. Thus z is assigned to 10 + 9 which equals 19."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 5);? (Set 418)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 17; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
-      "4",
-      "0",
-      "1",
-      "2"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 % 6);? (Set 419)",
-    "options": [
-      "1",
-      "2",
+      "15",
+      "19",
       "5",
-      "4"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 4);? (Set 420)",
-    "options": [
-      "0",
-      "73",
-      "-1",
-      "3"
+      "17"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Condition (5 > 17) evaluates to false. Thus z is assigned to 17 - 2 which equals 15."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 ^ 2);? (Set 77) (Set 421)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 6; int z = (x > y) ? x + 8 : y - 8;?",
     "options": [
-      "25",
-      "22",
-      "44",
-      "21"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 << 1);? (Set 422)",
-    "options": [
-      "37",
-      "33",
-      "34",
-      "68"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 34."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "static keyword means? (Set 423)",
-    "options": [
-      "Is private (standard definition)",
-      "Belongs to class, not instance",
-      "Cannot be accessed (primary approach)",
-      "Belongs to instance (widely accepted)"
-    ],
-    "answer": 1,
-    "explanation": "Static members shared across all instances."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 282) (Set 302) (Set 424)",
-    "options": [
-      "21",
-      "44",
-      "22",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 229) (Set 425)",
-    "options": [
-      "44",
-      "22",
-      "21",
-      "25"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(9 & 6);? (Set 121) (Set 426)",
-    "options": [
-      "0",
-      "3",
-      "72",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 3);? (Set 69) (Set 427)",
-    "options": [
-      "30",
-      "54",
-      "26",
-      "27"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 27."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 & 6);? (Set 428)",
-    "options": [
-      "84",
+      "15",
       "-1",
-      "3",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 3);? (Set 429)",
-    "options": [
-      "5",
-      "4",
-      "2",
-      "1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 | 6);? (Set 430)",
-    "options": [
-      "46",
-      "23",
-      "22",
-      "26"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 ^ 3);? (Set 431)",
-    "options": [
-      "12",
-      "11",
-      "24",
-      "15"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 % 4);? (Set 420) (Set 432)",
-    "options": [
-      "3",
-      "73",
-      "-1",
-      "0"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 >> 1);? (Set 433)",
-    "options": [
-      "16",
-      "11",
-      "8",
+      "6",
       "7"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 8."
+    "answer": 0,
+    "explanation": "Condition (7 > 6) evaluates to true. Thus z is assigned to 7 + 8 which equals 15."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 3);? (Set 130) (Set 434)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 15; int z = (x > y) ? x + 7 : y - 7;?",
     "options": [
-      "1",
-      "2",
-      "5",
+      "15",
+      "7",
+      "22",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Condition (7 > 15) evaluates to false. Thus z is assigned to 15 - 7 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 9; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "14",
+      "9",
+      "9",
       "4"
     ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 4);? (Set 93) (Set 435)",
-    "options": [
-      "22",
-      "44",
-      "25",
-      "21"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 << 1);? (Set 436)",
-    "options": [
-      "22",
-      "25",
-      "44",
-      "21"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 6);? (Set 362) (Set 437)",
-    "options": [
-      "13",
-      "17",
-      "28",
-      "14"
-    ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Condition (9 > 9) evaluates to false. Thus z is assigned to 9 - 5 which equals 4."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(17 & 5);? (Set 438)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 | 2);",
     "options": [
-      "1",
-      "2",
-      "4",
-      "0"
+      "10",
+      "11",
+      "13",
+      "13"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1011 and 10 yields decimal 11."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 & 3);? (Set 116) (Set 303) (Set 439)",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 9);?",
     "options": [
-      "3",
+      "0",
       "6",
-      "6",
+      "4",
       "2"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 4);? (Set 351) (Set 440)",
-    "options": [
-      "11",
-      "15",
-      "12",
-      "24"
-    ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 9 leaves remainder 4."
   },
   {
     "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Ternary Operator",
     "difficulty": "Medium",
-    "question": "Design pattern: Builder is used for? (Set 441)",
-    "options": [
-      "Destroying objects as per specification",
-      "Constructing complex objects step by step",
-      "Threading in typical implementations",
-      "Sorting in typical implementations"
-    ],
-    "answer": 1,
-    "explanation": "Builder separates construction from representation."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 & 2);? (Set 188) (Set 442)",
-    "options": [
-      "0",
-      "-1",
-      "3",
-      "85"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 229) (Set 443)",
-    "options": [
-      "25",
-      "44",
-      "21",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 | 5);? (Set 248) (Set 444)",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 20; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
       "22",
-      "46",
-      "23",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 23."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 2);? (Set 90) (Set 153) (Set 445)",
-    "options": [
-      "0",
-      "63",
-      "-1",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 << 1);? (Set 332) (Set 446)",
-    "options": [
-      "51",
-      "48",
-      "47",
-      "96"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 48."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "Heap memory stores? (Set 340) (Set 447)",
-    "options": [
-      "Local variables only by design",
-      "Method calls in practice",
-      "Objects and instance variables",
-      "Primitives only (widely accepted)"
-    ],
-    "answer": 2,
-    "explanation": "Shared heap stores dynamically allocated objects."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Medium",
-    "question": "throw vs throws? (Set 448)",
-    "options": [
-      "throw creates exception; throws declares it in method signature",
-      "throw is for classes in typical implementations",
-      "Same thing in typical implementations",
-      "throws catches exception in typical implementations"
-    ],
-    "answer": 0,
-    "explanation": "throw is used in body; throws in declaration."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(8 | 6);? (Set 150) (Set 449)",
-    "options": [
-      "28",
-      "17",
-      "13",
-      "14"
+      "7",
+      "20",
+      "18"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
+    "explanation": "Condition (7 > 20) evaluates to false. Thus z is assigned to 20 - 2 which equals 18."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 5);? (Set 73) (Set 450)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 18; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
-      "18",
-      "9",
-      "12",
+      "21",
+      "23",
+      "25",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (23 > 18) evaluates to true. Thus z is assigned to 23 + 2 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 22; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "22",
+      "33",
+      "15",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (24 > 22) evaluates to true. Thus z is assigned to 24 + 9 which equals 33."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 14; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "4",
+      "24",
+      "8",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (8 > 14) evaluates to false. Thus z is assigned to 14 - 10 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 & 6);",
+    "options": [
+      "5",
+      "6",
+      "13",
       "8"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 9."
+    "explanation": "Applying bitwise & between binary 111 and 110 yields decimal 6."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 ^ 2);? (Set 451)",
+    "question": "What is the printed output of the Java expression: System.out.println(39 % 4);?",
     "options": [
-      "26",
-      "52",
-      "29",
-      "25"
+      "3",
+      "5",
+      "0",
+      "9"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 26."
+    "explanation": "Modulo operator (%) returns the division remainder: 39 / 4 leaves remainder 3."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 3);? (Set 452)",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 5);?",
     "options": [
-      "1",
-      "4",
+      "0",
+      "17",
       "2",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 6);?",
+    "options": [
+      "3",
+      "4",
+      "0",
       "5"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 6 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 | 9);",
+    "options": [
+      "17",
+      "15",
+      "16",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 111 and 1001 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 19; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "13",
+      "35",
+      "19",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (24 > 19) evaluates to true. Thus z is assigned to 24 + 11 which equals 35."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 4);? (Set 51) (Set 453)",
+    "question": "What is the printed output of the Java expression: System.out.println(36 % 7);?",
     "options": [
-      "7",
+      "5",
       "3",
+      "1",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 36 / 7 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 5; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "10",
+      "30",
+      "5",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Condition (20 > 5) evaluates to true. Thus z is assigned to 20 + 10 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 16; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "12",
+      "7",
+      "20",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Condition (7 > 16) evaluates to false. Thus z is assigned to 16 - 4 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 | 7);",
+    "options": [
+      "9",
+      "6",
+      "11",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 100 and 111 yields decimal 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 & 9);",
+    "options": [
+      "3",
+      "0",
+      "26",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 10001 and 1001 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(42 % 6);?",
+    "options": [
+      "0",
+      "2",
+      "7",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 42 / 6 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 | 3);",
+    "options": [
+      "15",
+      "17",
+      "14",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1101 and 11 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 20; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "20",
+      "12",
+      "28",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 20) evaluates to false. Thus z is assigned to 20 - 8 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 17; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "20",
+      "17",
+      "14",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (17 > 17) evaluates to false. Thus z is assigned to 17 - 3 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(60 % 5);?",
+    "options": [
+      "0",
+      "2",
+      "19",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 60 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 ^ 9);",
+    "options": [
+      "23",
+      "24",
+      "26",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 10001 and 1001 yields decimal 24."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(49 % 9);?",
+    "options": [
+      "6",
+      "4",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 49 / 9 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 12; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "12",
+      "4",
+      "20",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Condition (12 > 12) evaluates to false. Thus z is assigned to 12 - 8 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 5; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "5",
+      "15",
+      "18",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Condition (15 > 5) evaluates to true. Thus z is assigned to 15 + 3 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 3);",
+    "options": [
+      "16",
+      "3",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1101 and 11 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 15; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "6",
+      "23",
+      "15",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 15) evaluates to false. Thus z is assigned to 15 - 8 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 13; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "23",
+      "15",
+      "19",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (19 > 13) evaluates to true. Thus z is assigned to 19 + 4 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 24; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "17",
+      "24",
+      "31",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (14 > 24) evaluates to false. Thus z is assigned to 24 - 7 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 ^ 7);",
+    "options": [
+      "15",
+      "17",
+      "12",
+      "13"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 1010 and 111 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 14; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "19",
+      "9",
+      "14",
+      "29"
+    ],
+    "answer": 3,
+    "explanation": "Condition (19 > 14) evaluates to true. Thus z is assigned to 19 + 10 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 22; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "58",
+      "11",
+      "33",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Condition (11 > 22) evaluates to false. Thus z is assigned to 22 - 11 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(62 % 7);?",
+    "options": [
       "8",
+      "8",
+      "6",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 62 / 7 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 22; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "10",
+      "22",
+      "33",
+      "11"
+    ],
+    "answer": 3,
+    "explanation": "Condition (10 > 22) evaluates to false. Thus z is assigned to 22 - 11 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 5);",
+    "options": [
+      "25",
+      "54",
+      "23",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10010 and 101 yields decimal 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 21; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "17",
+      "25",
+      "21",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Condition (10 > 21) evaluates to false. Thus z is assigned to 21 - 4 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 12; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "13",
+      "12",
+      "4",
+      "22"
+    ],
+    "answer": 3,
+    "explanation": "Condition (13 > 12) evaluates to true. Thus z is assigned to 13 + 9 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 22; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "14",
+      "22",
+      "6",
+      "30"
+    ],
+    "answer": 0,
+    "explanation": "Condition (6 > 22) evaluates to false. Thus z is assigned to 22 - 8 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 8; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "12",
+      "8",
+      "4",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Condition (8 > 8) evaluates to false. Thus z is assigned to 8 - 4 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 | 9);",
+    "options": [
+      "26",
+      "27",
+      "28",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 10011 and 1001 yields decimal 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 23; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "23",
+      "22",
+      "20",
+      "26"
+    ],
+    "answer": 2,
+    "explanation": "Condition (22 > 23) evaluates to false. Thus z is assigned to 23 - 3 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 | 6);",
+    "options": [
+      "20",
+      "16",
+      "14",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1110 and 110 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 13; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "29",
+      "13",
+      "7",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Condition (18 > 13) evaluates to true. Thus z is assigned to 18 + 11 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 12; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "11",
+      "12",
+      "29",
+      "20"
+    ],
+    "answer": 2,
+    "explanation": "Condition (20 > 12) evaluates to true. Thus z is assigned to 20 + 9 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 14; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "19",
+      "14",
+      "26",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Condition (19 > 14) evaluates to true. Thus z is assigned to 19 + 7 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 18; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "25",
+      "8",
+      "11",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (8 > 18) evaluates to false. Thus z is assigned to 18 - 7 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 8; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "8",
+      "30",
+      "21",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Condition (21 > 8) evaluates to true. Thus z is assigned to 21 + 9 which equals 30."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 6; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "29",
+      "24",
+      "19",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Condition (24 > 6) evaluates to true. Thus z is assigned to 24 + 5 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 ^ 4);",
+    "options": [
+      "16",
+      "13",
+      "14",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 1010 and 100 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 ^ 4);",
+    "options": [
+      "15",
+      "42",
+      "14",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1011 and 100 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(25 % 7);?",
+    "options": [
+      "0",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 25 / 7 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 19; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "27",
+      "11",
+      "19",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 19) evaluates to false. Thus z is assigned to 19 - 8 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 15; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "15",
+      "8",
+      "13",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (8 > 15) evaluates to false. Thus z is assigned to 15 - 2 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 13; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "13",
+      "24",
+      "2",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Condition (9 > 13) evaluates to false. Thus z is assigned to 13 - 11 which equals 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 5);?",
+    "options": [
+      "4",
+      "0",
+      "6",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 6; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "8",
+      "6",
+      "14",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Condition (8 > 6) evaluates to true. Thus z is assigned to 8 + 6 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 14; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "33",
+      "22",
+      "14",
+      "11"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 14) evaluates to true. Thus z is assigned to 22 + 11 which equals 33."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 20; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "23",
+      "10",
+      "20",
+      "17"
+    ],
+    "answer": 3,
+    "explanation": "Condition (10 > 20) evaluates to false. Thus z is assigned to 20 - 3 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 11);?",
+    "options": [
+      "0",
+      "19",
+      "2",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 11 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 23; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "15",
+      "29",
+      "17",
+      "23"
+    ],
+    "answer": 2,
+    "explanation": "Condition (15 > 23) evaluates to false. Thus z is assigned to 23 - 6 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 21; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "16",
+      "18",
+      "24",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "Condition (16 > 21) evaluates to false. Thus z is assigned to 21 - 3 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 21; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "21",
+      "16",
+      "15",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "Condition (15 > 21) evaluates to false. Thus z is assigned to 21 - 5 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 ^ 2);",
+    "options": [
+      "15",
+      "13",
+      "12",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1111 and 10 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(38 % 5);?",
+    "options": [
+      "3",
+      "5",
+      "0",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 38 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 24; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "24",
+      "17",
+      "6",
+      "31"
+    ],
+    "answer": 1,
+    "explanation": "Condition (6 > 24) evaluates to false. Thus z is assigned to 24 - 7 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 18; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "25",
+      "6",
+      "11",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (6 > 18) evaluates to false. Thus z is assigned to 18 - 7 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(31 % 9);?",
+    "options": [
+      "4",
+      "3",
+      "6",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 31 / 9 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(19 % 4);?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 19 / 4 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 & 6);",
+    "options": [
+      "-1",
+      "15",
+      "0",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1001 and 110 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 ^ 9);",
+    "options": [
+      "6",
+      "3",
+      "22",
       "4"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
+    "explanation": "Applying bitwise ^ between binary 1101 and 1001 yields decimal 4."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 & 6);? (Set 187) (Set 454)",
-    "options": [
-      "4",
-      "5",
-      "1",
-      "2"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 ^ 3);? (Set 455)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 12; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
       "14",
-      "15",
-      "18",
-      "30"
+      "10",
+      "12",
+      "12"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
+    "explanation": "Condition (12 > 12) evaluates to false. Thus z is assigned to 12 - 2 which equals 10."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 282) (Set 456)",
+    "question": "What is the printed output of the Java expression: System.out.println(54 % 4);?",
     "options": [
-      "22",
-      "44",
-      "25",
-      "21"
+      "4",
+      "0",
+      "2",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 54 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 10; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "10",
+      "7",
+      "1",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Condition (7 > 10) evaluates to false. Thus z is assigned to 10 - 9 which equals 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 11; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "11",
+      "5",
+      "19",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Condition (5 > 11) evaluates to false. Thus z is assigned to 11 - 8 which equals 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 14; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "12",
+      "4",
+      "14",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (12 > 14) evaluates to false. Thus z is assigned to 14 - 10 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 24; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "32",
+      "50",
+      "16",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Condition (16 > 24) evaluates to false. Thus z is assigned to 24 - 8 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 21; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "14",
+      "21",
+      "23",
+      "32"
+    ],
+    "answer": 3,
+    "explanation": "Condition (23 > 21) evaluates to true. Thus z is assigned to 23 + 9 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(4 ^ 8);",
+    "options": [
+      "12",
+      "45",
+      "11",
+      "14"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
+    "explanation": "Applying bitwise ^ between binary 100 and 1000 yields decimal 12."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 & 2);? (Set 127) (Set 457)",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 6);?",
     "options": [
-      "-1",
-      "53",
+      "7",
+      "1",
       "0",
       "3"
     ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 6 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 10; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "10",
+      "18",
+      "8",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Condition (8 > 10) evaluates to false. Thus z is assigned to 10 - 8 which equals 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 15; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "9",
+      "21",
+      "15",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "Condition (15 > 15) evaluates to false. Thus z is assigned to 15 - 6 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 9; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "7",
+      "16",
+      "9",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 9) evaluates to true. Thus z is assigned to 16 + 9 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 ^ 6);",
+    "options": [
+      "12",
+      "13",
+      "17",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1011 and 110 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 & 5);",
+    "options": [
+      "4",
+      "18",
+      "5",
+      "7"
+    ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
+    "explanation": "Applying bitwise & between binary 1101 and 101 yields decimal 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 8);",
+    "options": [
+      "7",
+      "8",
+      "10",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1010 and 1000 yields decimal 8."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 % 4);? (Set 458)",
+    "question": "What is the printed output of the Java expression: System.out.println(48 % 5);?",
     "options": [
-      "1",
-      "2",
-      "5",
+      "0",
+      "3",
+      "9",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 48 / 5 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 14; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "18",
+      "14",
+      "9",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Condition (9 > 14) evaluates to false. Thus z is assigned to 14 - 4 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 13; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "13",
+      "11",
+      "22",
       "4"
     ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
+    "answer": 3,
+    "explanation": "Condition (11 > 13) evaluates to false. Thus z is assigned to 13 - 9 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 ^ 2);",
+    "options": [
+      "21",
+      "16",
+      "17",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10011 and 10 yields decimal 17."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 | 5);? (Set 284) (Set 403) (Set 459)",
+    "question": "What is the printed output of the Java expression: System.out.println(32 % 6);?",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 32 / 6 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 | 3);",
+    "options": [
+      "13",
+      "11",
+      "10",
+      "14"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1011 and 11 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 18; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "29",
+      "15",
+      "7",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (15 > 18) evaluates to false. Thus z is assigned to 18 - 11 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 11; int z = (x > y) ? x + 5 : y - 5;?",
     "options": [
       "20",
-      "21",
-      "24",
-      "42"
+      "25",
+      "15",
+      "11"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 21."
+    "explanation": "Condition (20 > 11) evaluates to true. Thus z is assigned to 20 + 5 which equals 25."
   },
   {
     "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Ternary Operator",
     "difficulty": "Medium",
-    "question": "Stack memory stores? (Set 460)",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 18; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
-      "Class definitions (widely accepted)",
-      "Method calls and local variables",
-      "Static variables only in practice",
-      "Objects only (standard definition)"
+      "18",
+      "16",
+      "10",
+      "20"
     ],
     "answer": 1,
-    "explanation": "Stack is LIFO; each thread has its own."
+    "explanation": "Condition (10 > 18) evaluates to false. Thus z is assigned to 18 - 2 which equals 16."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(19 % 5);? (Set 461)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 24; int z = (x > y) ? x + 11 : y - 11;?",
     "options": [
-      "8",
-      "4",
-      "3",
+      "35",
+      "13",
+      "24",
       "7"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 4."
+    "explanation": "Condition (7 > 24) evaluates to false. Thus z is assigned to 24 - 11 which equals 13."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 83) (Set 238) (Set 462)",
+    "question": "What is the printed output of the Java expression: System.out.println(49 % 5);?",
+    "options": [
+      "9",
+      "6",
+      "0",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 49 / 5 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 11; int z = (x > y) ? x + 3 : y - 3;?",
     "options": [
       "11",
-      "10",
-      "14",
-      "22"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 << 1);? (Set 463)",
-    "options": [
-      "27",
-      "24",
-      "23",
-      "48"
+      "15",
+      "12",
+      "9"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 24."
+    "explanation": "Condition (12 > 11) evaluates to true. Thus z is assigned to 12 + 3 which equals 15."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(22 ^ 6);? (Set 4) (Set 65) (Set 464)",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 | 9);",
     "options": [
-      "15",
-      "19",
-      "16",
-      "32"
+      "24",
+      "26",
+      "25",
+      "27"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
+    "explanation": "Applying bitwise | between binary 10001 and 1001 yields decimal 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 15; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "15",
+      "10",
+      "6",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Condition (10 > 15) evaluates to false. Thus z is assigned to 15 - 9 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 22; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "22",
+      "17",
+      "27",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 22) evaluates to false. Thus z is assigned to 22 - 5 which equals 17."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 | 4);? (Set 235) (Set 465)",
+    "question": "What is the printed output of the Java expression: System.out.println(40 % 9);?",
     "options": [
       "14",
-      "18",
-      "15",
-      "30"
+      "0",
+      "6",
+      "4"
     ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 15."
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 40 / 9 leaves remainder 4."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 ^ 2);? (Set 184) (Set 466)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 6; int z = (x > y) ? x + 7 : y - 7;?",
     "options": [
-      "16",
-      "32",
-      "15",
+      "24",
+      "6",
+      "31",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Condition (24 > 6) evaluates to true. Thus z is assigned to 24 + 7 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 7; int y = 13; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "7",
+      "13",
+      "69",
       "19"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 16."
+    "explanation": "Condition (7 > 13) evaluates to false. Thus z is assigned to 13 - 6 which equals 7."
   },
   {
     "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "static keyword means? (Set 13) (Set 467)",
-    "options": [
-      "Is private (primary approach)",
-      "Cannot be accessed (commonly used)",
-      "Belongs to class, not instance",
-      "Belongs to instance in practice"
-    ],
-    "answer": 2,
-    "explanation": "Static members shared across all instances."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
-    "difficulty": "Easy",
-    "question": "File class in Java represents? (Set 468)",
-    "options": [
-      "Database connection",
-      "File contents by design",
-      "File or directory path",
-      "Network socket (general case)"
-    ],
-    "answer": 2,
-    "explanation": "java.io.File for file system operations."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 6);? (Set 469)",
-    "options": [
-      "6",
-      "2",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 % 2);? (Set 383) (Set 470)",
-    "options": [
-      "50",
-      "3",
-      "0",
-      "-1"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 | 2);? (Set 471)",
-    "options": [
-      "14",
-      "10",
-      "7",
-      "6"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 % 4);? (Set 141) (Set 352) (Set 472)",
-    "options": [
-      "6",
-      "2",
-      "6",
-      "3"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 3);? (Set 405) (Set 473)",
-    "options": [
-      "2",
-      "5",
-      "1",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 2."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(18 | 4);? (Set 96) (Set 282) (Set 302) (Set 424) (Set 474)",
-    "options": [
-      "22",
-      "44",
-      "21",
-      "25"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 3);? (Set 475)",
-    "options": [
-      "2",
-      "0",
-      "1",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 6);? (Set 476)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 9; int z = (x > y) ? x + 2 : y - 2;?",
     "options": [
       "9",
-      "12",
       "5",
+      "11",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Condition (5 > 9) evaluates to false. Thus z is assigned to 9 - 2 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(17 % 4);?",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 17 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 12; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "12",
+      "18",
+      "10",
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "Condition (18 > 12) evaluates to true. Thus z is assigned to 18 + 8 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 9);?",
+    "options": [
+      "0",
+      "3",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 9 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(54 % 5);?",
+    "options": [
+      "4",
+      "0",
+      "10",
       "6"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(24 >> 1);? (Set 477)",
-    "options": [
-      "15",
-      "24",
-      "12",
-      "11"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 12."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 << 1);? (Set 228) (Set 478)",
-    "options": [
-      "12",
-      "11",
-      "15",
-      "24"
-    ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 12."
+    "explanation": "Modulo operator (%) returns the division remainder: 54 / 5 leaves remainder 4."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 % 6);? (Set 469) (Set 479)",
+    "question": "What is the printed output of the Java expression: System.out.println(51 % 4);?",
     "options": [
-      "6",
-      "6",
-      "2",
+      "5",
+      "0",
+      "12",
       "3"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 3."
+    "explanation": "Modulo operator (%) returns the division remainder: 51 / 4 leaves remainder 3."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 | 2);? (Set 480)",
-    "options": [
-      "13",
-      "17",
-      "28",
-      "14"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 14."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 4);? (Set 37) (Set 481)",
+    "question": "What is the printed output of the Java expression: System.out.println(46 % 6);?",
     "options": [
       "4",
-      "0",
-      "2",
-      "1"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 5);? (Set 482)",
-    "options": [
-      "8",
       "7",
-      "4",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 ^ 4);? (Set 483)",
-    "options": [
-      "14",
-      "18",
-      "30",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 & 3);? (Set 484)",
-    "options": [
-      "3",
-      "0",
-      "-1",
-      "58"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 0."
-  },
-  {
-    "subject": "Java",
-    "topic": "OOP",
-    "difficulty": "Easy",
-    "question": "Method overloading is? (Set 485)",
-    "options": [
-      "Same name same parameters under normal conditions",
-      "Same method name with different parameters",
-      "Different return type only by design",
-      "Different classes (standard definition)"
-    ],
-    "answer": 1,
-    "explanation": "Compile-time (static) polymorphism."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 << 1);? (Set 486)",
-    "options": [
-      "32",
-      "31",
-      "64",
-      "35"
+      "6",
+      "0"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 32."
+    "explanation": "Modulo operator (%) returns the division remainder: 46 / 6 leaves remainder 4."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(16 ^ 6);? (Set 273) (Set 322) (Set 374) (Set 487)",
-    "options": [
-      "25",
-      "21",
-      "22",
-      "44"
-    ],
-    "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 22."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(11 & 5);? (Set 218) (Set 488)",
-    "options": [
-      "1",
-      "0",
-      "2",
-      "4"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(20 & 4);? (Set 104) (Set 390) (Set 489)",
-    "options": [
-      "4",
-      "3",
-      "7",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 4."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Core",
+    "topic": "Bitwise Operators",
     "difficulty": "Medium",
-    "question": "Serialization converts object to? (Set 490)",
+    "question": "What will be the output of following statement in Java? System.out.println(19 & 5);",
     "options": [
-      "Byte stream for storage or transmission",
-      "String format (default behavior)",
-      "XML only under normal conditions",
-      "HTML page under normal conditions"
-    ],
-    "answer": 0,
-    "explanation": "Implements Serializable interface."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(10 ^ 6);? (Set 491)",
-    "options": [
+      "3",
+      "1",
       "24",
-      "11",
-      "15",
-      "12"
+      "0"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 12."
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 10011 and 101 yields decimal 1."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(23 ^ 3);? (Set 492)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 12; int z = (x > y) ? x + 3 : y - 3;?",
     "options": [
       "20",
       "23",
-      "19",
-      "40"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 20."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(21 << 1);? (Set 154) (Set 493)",
-    "options": [
-      "84",
-      "41",
-      "45",
-      "42"
+      "12",
+      "26"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator << on targets matches standard Java JVM specification. Result is 42."
+    "explanation": "Condition (23 > 12) evaluates to true. Thus z is assigned to 23 + 3 which equals 26."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 2);? (Set 494)",
+    "question": "What is the printed output of the Java expression: System.out.println(32 % 8);?",
     "options": [
-      "15",
-      "18",
-      "14",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 15."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 ^ 6);? (Set 495)",
-    "options": [
-      "14",
-      "11",
-      "10",
-      "22"
-    ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator ^ on targets matches standard Java JVM specification. Result is 11."
-  },
-  {
-    "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 >> 1);? (Set 496)",
-    "options": [
-      "6",
-      "3",
-      "6",
+      "16",
+      "4",
+      "0",
       "2"
     ],
-    "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator >> on targets matches standard Java JVM specification. Result is 3."
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 32 / 8 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 12; int y = 10; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "5",
+      "10",
+      "19",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Condition (12 > 10) evaluates to true. Thus z is assigned to 12 + 7 which equals 19."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 % 4);? (Set 497)",
+    "question": "What is the printed output of the Java expression: System.out.println(54 % 8);?",
+    "options": [
+      "6",
+      "8",
+      "0",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 54 / 8 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(24 % 9);?",
+    "options": [
+      "8",
+      "0",
+      "2",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 24 / 9 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 15; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "15",
+      "16",
+      "22",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Condition (22 > 15) evaluates to true. Thus z is assigned to 22 + 6 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 5; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "21",
+      "13",
+      "5",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 5) evaluates to true. Thus z is assigned to 13 + 8 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 & 6);",
+    "options": [
+      "6",
+      "4",
+      "3",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 101 and 110 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(5 & 3);",
+    "options": [
+      "3",
+      "0",
+      "1",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 101 and 11 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 19; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "26",
+      "12",
+      "19",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Condition (6 > 19) evaluates to false. Thus z is assigned to 19 - 7 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 13; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "8",
+      "13",
+      "28",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Condition (18 > 13) evaluates to true. Thus z is assigned to 18 + 10 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 24; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "19",
+      "22",
+      "26",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 24) evaluates to false. Thus z is assigned to 24 - 2 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(17 ^ 2);",
+    "options": [
+      "18",
+      "21",
+      "19",
+      "28"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10001 and 10 yields decimal 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 6);",
+    "options": [
+      "21",
+      "17",
+      "15",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1111 and 110 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 18; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "18",
+      "24",
+      "34",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (24 > 18) evaluates to true. Thus z is assigned to 24 + 10 which equals 34."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 18; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "29",
+      "7",
+      "18",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 18) evaluates to false. Thus z is assigned to 18 - 11 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 12; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "29",
+      "22",
+      "15",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Condition (22 > 12) evaluates to true. Thus z is assigned to 22 + 7 which equals 29."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 20; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "26",
+      "20",
+      "14",
+      "20"
+    ],
+    "answer": 2,
+    "explanation": "Condition (20 > 20) evaluates to false. Thus z is assigned to 20 - 6 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 ^ 4);",
+    "options": [
+      "12",
+      "10",
+      "9",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise ^ between binary 1110 and 100 yields decimal 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(43 % 7);?",
     "options": [
       "1",
+      "3",
+      "6",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 43 / 7 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(25 % 4);?",
+    "options": [
+      "1",
+      "0",
+      "3",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 25 / 4 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 4);?",
+    "options": [
       "4",
+      "5",
+      "0",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 4 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 & 8);",
+    "options": [
+      "14",
+      "2",
+      "-1",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 110 and 1000 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 20; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "13",
+      "27",
+      "9",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 20) evaluates to false. Thus z is assigned to 20 - 7 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 7);?",
+    "options": [
+      "0",
+      "19",
       "5",
       "2"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 2."
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 7 leaves remainder 0."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 92) (Set 163) (Set 498)",
+    "question": "What is the printed output of the Java expression: System.out.println(45 % 4);?",
     "options": [
-      "14",
-      "6",
-      "10",
-      "7"
+      "0",
+      "1",
+      "11",
+      "3"
     ],
-    "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 45 / 4 leaves remainder 1."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(7 & 3);? (Set 499)",
+    "question": "What is the printed output of the Java expression: System.out.println(46 % 7);?",
     "options": [
-      "3",
-      "2",
+      "4",
       "6",
+      "0",
       "6"
     ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
+    "explanation": "Modulo operator (%) returns the division remainder: 46 / 7 leaves remainder 4."
   },
   {
     "subject": "Java",
-    "topic": "Java Operators",
-    "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(6 | 5);? (Set 125) (Set 151) (Set 500)",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 22; int z = (x > y) ? x + 10 : y - 10;?",
     "options": [
-      "6",
-      "10",
-      "14",
-      "7"
+      "18",
+      "32",
+      "22",
+      "12"
     ],
     "answer": 3,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 7."
+    "explanation": "Condition (18 > 22) evaluates to false. Thus z is assigned to 22 - 10 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 11; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "11",
+      "10",
+      "3",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Condition (10 > 11) evaluates to false. Thus z is assigned to 11 - 8 which equals 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 20; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "9",
+      "15",
+      "31",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (15 > 20) evaluates to false. Thus z is assigned to 20 - 11 which equals 9."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(15 & 3);? (Set 250) (Set 501)",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 7);?",
     "options": [
       "2",
+      "8",
+      "12",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 7 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 13; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "16",
+      "9",
+      "13",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Condition (9 > 13) evaluates to false. Thus z is assigned to 13 - 3 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(59 % 11);?",
+    "options": [
+      "5",
+      "4",
       "6",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 59 / 11 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(51 % 7);?",
+    "options": [
+      "7",
+      "4",
+      "2",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 51 / 7 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 24; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "28",
+      "19",
+      "20",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Condition (19 > 24) evaluates to false. Thus z is assigned to 24 - 4 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(15 | 8);",
+    "options": [
+      "15",
+      "17",
+      "23",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1111 and 1000 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 19; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "9",
+      "13",
+      "19",
+      "29"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 19) evaluates to false. Thus z is assigned to 19 - 10 which equals 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 | 6);",
+    "options": [
+      "17",
+      "14",
+      "17",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 1011 and 110 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 14; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "18",
+      "14",
+      "14",
+      "10"
+    ],
+    "answer": 3,
+    "explanation": "Condition (14 > 14) evaluates to false. Thus z is assigned to 14 - 4 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 | 8);",
+    "options": [
+      "17",
+      "14",
+      "33",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise | between binary 111 and 1000 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(37 % 11);?",
+    "options": [
+      "4",
+      "6",
+      "0",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 37 / 11 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(19 | 3);",
+    "options": [
+      "21",
+      "19",
+      "22",
+      "18"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 10011 and 11 yields decimal 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(23 % 10);?",
+    "options": [
       "3",
+      "0",
+      "2",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 23 / 10 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(6 ^ 6);",
+    "options": [
+      "2",
+      "-1",
+      "12",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 110 and 110 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(49 % 10);?",
+    "options": [
+      "0",
+      "11",
+      "9",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 49 / 10 leaves remainder 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(29 % 7);?",
+    "options": [
+      "3",
+      "0",
+      "1",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 29 / 7 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(64 % 10);?",
+    "options": [
+      "6",
+      "4",
+      "6",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 64 / 10 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 11; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "17",
+      "21",
+      "11",
+      "19"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 11) evaluates to true. Thus z is assigned to 19 + 2 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 14; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "6",
+      "16",
+      "14",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Condition (6 > 14) evaluates to false. Thus z is assigned to 14 - 2 which equals 12."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 6; int y = 20; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "20",
+      "30",
+      "10",
       "6"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 3."
+    "explanation": "Condition (6 > 20) evaluates to false. Thus z is assigned to 20 - 10 which equals 10."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(14 & 6);? (Set 476) (Set 502)",
+    "question": "What is the printed output of the Java expression: System.out.println(25 % 10);?",
     "options": [
-      "12",
+      "5",
+      "0",
+      "2",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 25 / 10 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 6);?",
+    "options": [
+      "14",
+      "5",
+      "7",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 6 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 7);",
+    "options": [
+      "4",
+      "2",
+      "1",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise & between binary 1010 and 111 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 10; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "10",
+      "27",
+      "21",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (24 > 10) evaluates to true. Thus z is assigned to 24 + 3 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 24; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "26",
+      "16",
+      "24",
+      "22"
+    ],
+    "answer": 3,
+    "explanation": "Condition (16 > 24) evaluates to false. Thus z is assigned to 24 - 2 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 20; int y = 8; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "8",
+      "20",
+      "27",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Condition (20 > 8) evaluates to true. Thus z is assigned to 20 + 7 which equals 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 7; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "19",
+      "21",
+      "7",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Condition (19 > 7) evaluates to true. Thus z is assigned to 19 + 2 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 22; int z = (x > y) ? x + 2 : y - 2;?",
+    "options": [
+      "24",
+      "20",
+      "22",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 22) evaluates to false. Thus z is assigned to 22 - 2 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 3);",
+    "options": [
+      "-1",
+      "2",
+      "0",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 10000 and 11 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 15; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "15",
+      "11",
+      "23",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "Condition (11 > 15) evaluates to false. Thus z is assigned to 15 - 8 which equals 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(22 % 10);?",
+    "options": [
+      "4",
+      "2",
+      "18",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 22 / 10 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 16; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "16",
+      "19",
+      "13",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Condition (16 > 16) evaluates to false. Thus z is assigned to 16 - 3 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(19 % 11);?",
+    "options": [
+      "10",
+      "0",
+      "8",
+      "1"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 19 / 11 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 21; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "19",
+      "21",
+      "16",
+      "26"
+    ],
+    "answer": 2,
+    "explanation": "Condition (19 > 21) evaluates to false. Thus z is assigned to 21 - 5 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 14; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "4",
+      "24",
       "9",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 14) evaluates to false. Thus z is assigned to 14 - 10 which equals 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 6; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "10",
+      "14",
+      "6",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 6) evaluates to true. Thus z is assigned to 10 + 4 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 ^ 3);",
+    "options": [
+      "10",
+      "12",
+      "12",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise ^ between binary 1001 and 11 yields decimal 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 | 8);",
+    "options": [
+      "10",
+      "13",
+      "11",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise | between binary 1011 and 1000 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(23 % 9);?",
+    "options": [
+      "0",
+      "5",
+      "2",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 23 / 9 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 7; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "7",
+      "11",
+      "4",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Condition (11 > 7) evaluates to true. Thus z is assigned to 11 + 7 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 6);",
+    "options": [
+      "2",
+      "4",
+      "16",
+      "1"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1010 and 110 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 6; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "14",
+      "11",
+      "8",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Condition (11 > 6) evaluates to true. Thus z is assigned to 11 + 3 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 13; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "16",
+      "13",
+      "28",
+      "22"
+    ],
+    "answer": 2,
+    "explanation": "Condition (22 > 13) evaluates to true. Thus z is assigned to 22 + 6 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(48 % 6);?",
+    "options": [
+      "0",
+      "8",
+      "2",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 48 / 6 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 24; int y = 17; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "31",
+      "17",
+      "24",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Condition (24 > 17) evaluates to true. Thus z is assigned to 24 + 7 which equals 31."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(50 % 8);?",
+    "options": [
+      "6",
+      "0",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 50 / 8 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 8);",
+    "options": [
+      "7",
+      "10",
+      "20",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1100 and 1000 yields decimal 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(14 & 2);",
+    "options": [
+      "4",
+      "1",
+      "16",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 1110 and 10 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(57 % 9);?",
+    "options": [
+      "0",
+      "5",
+      "6",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 57 / 9 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 24; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "24",
+      "69",
+      "19",
+      "29"
+    ],
+    "answer": 2,
+    "explanation": "Condition (19 > 24) evaluates to false. Thus z is assigned to 24 - 5 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 19; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "24",
+      "10",
+      "14",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Condition (10 > 19) evaluates to false. Thus z is assigned to 19 - 5 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(17 % 6);?",
+    "options": [
+      "0",
+      "7",
+      "5",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 17 / 6 leaves remainder 5."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(55 % 5);?",
+    "options": [
+      "11",
+      "0",
+      "2",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 55 / 5 leaves remainder 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 | 9);",
+    "options": [
+      "27",
+      "26",
+      "34",
+      "29"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 10010 and 1001 yields decimal 27."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(16 % 9);?",
+    "options": [
+      "0",
+      "7",
+      "9",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 16 / 9 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 6; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "22",
+      "6",
+      "4",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 6) evaluates to true. Thus z is assigned to 13 + 9 which equals 22."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 | 5);",
+    "options": [
+      "41",
+      "21",
+      "20",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 10000 and 101 yields decimal 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(41 % 7);?",
+    "options": [
+      "0",
+      "8",
       "6",
       "5"
     ],
     "answer": 2,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 6."
+    "explanation": "Modulo operator (%) returns the division remainder: 41 / 7 leaves remainder 6."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(12 | 4);? (Set 351) (Set 503)",
+    "question": "What is the printed output of the Java expression: System.out.println(48 % 9);?",
     "options": [
-      "12",
-      "11",
-      "15",
-      "24"
+      "5",
+      "5",
+      "0",
+      "3"
     ],
-    "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator | on targets matches standard Java JVM specification. Result is 12."
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 48 / 9 leaves remainder 3."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(13 & 3);? (Set 475) (Set 504)",
+    "question": "What is the printed output of the Java expression: System.out.println(61 % 9);?",
     "options": [
-      "4",
-      "1",
+      "0",
+      "9",
+      "7",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 61 / 9 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 5; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "5",
+      "8",
+      "13",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Condition (13 > 5) evaluates to true. Thus z is assigned to 13 + 5 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 10);?",
+    "options": [
+      "9",
+      "7",
       "0",
       "2"
     ],
     "answer": 1,
-    "explanation": "Running bitwise/arithmetic operator & on targets matches standard Java JVM specification. Result is 1."
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 10 leaves remainder 7."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 6; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "6",
+      "22",
+      "19",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Condition (22 > 6) evaluates to true. Thus z is assigned to 22 + 3 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 7; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "7",
+      "28",
+      "17",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 7) evaluates to true. Thus z is assigned to 17 + 11 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 10; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "26",
+      "12",
+      "19",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Condition (19 > 10) evaluates to true. Thus z is assigned to 19 + 7 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 14; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "9",
+      "20",
+      "14",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Condition (9 > 14) evaluates to false. Thus z is assigned to 14 - 6 which equals 8."
   },
   {
     "subject": "Java",
     "topic": "Java Operators",
     "difficulty": "Easy",
-    "question": "What will be the output of the Java printing statement: System.out.println(5 % 4);? (Set 505)",
+    "question": "What is the printed output of the Java expression: System.out.println(27 % 5);?",
     "options": [
-      "1",
-      "4",
       "0",
+      "4",
+      "5",
       "2"
     ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 27 / 5 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 7; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "-1",
+      "5",
+      "7",
+      "15"
+    ],
     "answer": 0,
-    "explanation": "Running bitwise/arithmetic operator % on targets matches standard Java JVM specification. Result is 1."
+    "explanation": "Condition (5 > 7) evaluates to false. Thus z is assigned to 7 - 8 which equals -1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 24; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "23",
+      "20",
+      "28",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Condition (23 > 24) evaluates to false. Thus z is assigned to 24 - 4 which equals 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 11);?",
+    "options": [
+      "3",
+      "2",
+      "0",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 11 leaves remainder 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 16; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "16",
+      "28",
+      "18",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Condition (23 > 16) evaluates to true. Thus z is assigned to 23 + 5 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(20 % 11);?",
+    "options": [
+      "1",
+      "0",
+      "9",
+      "11"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 20 / 11 leaves remainder 9."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 | 7);",
+    "options": [
+      "14",
+      "15",
+      "18",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1011 and 111 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 16; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "16",
+      "16",
+      "8",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Condition (16 > 16) evaluates to false. Thus z is assigned to 16 - 8 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(35 % 9);?",
+    "options": [
+      "3",
+      "8",
+      "0",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 35 / 9 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 8; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "3",
+      "11",
+      "8",
+      "19"
+    ],
+    "answer": 3,
+    "explanation": "Condition (11 > 8) evaluates to true. Thus z is assigned to 11 + 8 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 21; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "26",
+      "21",
+      "17",
+      "16"
+    ],
+    "answer": 3,
+    "explanation": "Condition (17 > 21) evaluates to false. Thus z is assigned to 21 - 5 which equals 16."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(9 | 6);",
+    "options": [
+      "14",
+      "15",
+      "33",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1001 and 110 yields decimal 15."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 24; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "24",
+      "21",
+      "17",
+      "31"
+    ],
+    "answer": 2,
+    "explanation": "Condition (21 > 24) evaluates to false. Thus z is assigned to 24 - 7 which equals 17."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 4);",
+    "options": [
+      "19",
+      "22",
+      "20",
+      "53"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10000 and 100 yields decimal 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 10);?",
+    "options": [
+      "0",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 10 leaves remainder 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 23; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "23",
+      "18",
+      "28",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 23) evaluates to false. Thus z is assigned to 23 - 5 which equals 18."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 24; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "27",
+      "21",
+      "24",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 24) evaluates to false. Thus z is assigned to 24 - 3 which equals 21."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(34 % 6);?",
+    "options": [
+      "4",
+      "6",
+      "0",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Modulo operator (%) returns the division remainder: 34 / 6 leaves remainder 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 6; int z = (x > y) ? x + 10 : y - 10;?",
+    "options": [
+      "23",
+      "13",
+      "3",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 6) evaluates to true. Thus z is assigned to 13 + 10 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(18 % 10);?",
+    "options": [
+      "0",
+      "10",
+      "1",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 18 / 10 leaves remainder 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 & 8);",
+    "options": [
+      "24",
+      "-1",
+      "2",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise & between binary 10000 and 1000 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 7; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "8",
+      "26",
+      "7",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 7) evaluates to true. Thus z is assigned to 17 + 9 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 16; int y = 19; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "16",
+      "25",
+      "13",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Condition (16 > 19) evaluates to false. Thus z is assigned to 19 - 6 which equals 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 23; int y = 10; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "23",
+      "10",
+      "32",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (23 > 10) evaluates to true. Thus z is assigned to 23 + 9 which equals 32."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 ^ 6);",
+    "options": [
+      "24",
+      "22",
+      "20",
+      "19"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise ^ between binary 10010 and 110 yields decimal 20."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 15; int y = 16; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "8",
+      "15",
+      "16",
+      "24"
+    ],
+    "answer": 0,
+    "explanation": "Condition (15 > 16) evaluates to false. Thus z is assigned to 16 - 8 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(45 % 11);?",
+    "options": [
+      "4",
+      "1",
+      "0",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Modulo operator (%) returns the division remainder: 45 / 11 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 11; int y = 20; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "11",
+      "29",
+      "48",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Condition (11 > 20) evaluates to false. Thus z is assigned to 20 - 9 which equals 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(37 % 6);?",
+    "options": [
+      "6",
+      "0",
+      "3",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 37 / 6 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(18 & 5);",
+    "options": [
+      "23",
+      "2",
+      "0",
+      "-1"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 10010 and 101 yields decimal 0."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 11; int z = (x > y) ? x + 11 : y - 11;?",
+    "options": [
+      "25",
+      "3",
+      "11",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Condition (14 > 11) evaluates to true. Thus z is assigned to 14 + 11 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 | 6);",
+    "options": [
+      "16",
+      "14",
+      "13",
+      "16"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1010 and 110 yields decimal 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 8; int y = 11; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "6",
+      "8",
+      "16",
+      "11"
+    ],
+    "answer": 0,
+    "explanation": "Condition (8 > 11) evaluates to false. Thus z is assigned to 11 - 5 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 15; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "20",
+      "15",
+      "10",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (14 > 15) evaluates to false. Thus z is assigned to 15 - 5 which equals 10."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(56 % 5);?",
+    "options": [
+      "3",
+      "11",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 56 / 5 leaves remainder 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 10; int y = 17; int z = (x > y) ? x + 9 : y - 9;?",
+    "options": [
+      "26",
+      "8",
+      "17",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Condition (10 > 17) evaluates to false. Thus z is assigned to 17 - 9 which equals 8."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 17; int y = 15; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "17",
+      "23",
+      "15",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Condition (17 > 15) evaluates to true. Thus z is assigned to 17 + 6 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(13 | 9);",
+    "options": [
+      "13",
+      "15",
+      "22",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise | between binary 1101 and 1001 yields decimal 13."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 15; int z = (x > y) ? x + 8 : y - 8;?",
+    "options": [
+      "18",
+      "15",
+      "26",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Condition (18 > 15) evaluates to true. Thus z is assigned to 18 + 8 which equals 26."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(12 & 4);",
+    "options": [
+      "16",
+      "6",
+      "4",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Applying bitwise & between binary 1100 and 100 yields decimal 4."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(7 & 9);",
+    "options": [
+      "1",
+      "0",
+      "3",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 111 and 1001 yields decimal 1."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(11 | 9);",
+    "options": [
+      "20",
+      "11",
+      "13",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "Applying bitwise | between binary 1011 and 1001 yields decimal 11."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 22; int y = 11; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "19",
+      "25",
+      "11",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Condition (22 > 11) evaluates to true. Thus z is assigned to 22 + 3 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 19; int y = 16; int z = (x > y) ? x + 6 : y - 6;?",
+    "options": [
+      "25",
+      "19",
+      "13",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Condition (19 > 16) evaluates to true. Thus z is assigned to 19 + 6 which equals 25."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 18; int y = 16; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "23",
+      "13",
+      "18",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Condition (18 > 16) evaluates to true. Thus z is assigned to 18 + 5 which equals 23."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(51 % 8);?",
+    "options": [
+      "6",
+      "5",
+      "3",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Modulo operator (%) returns the division remainder: 51 / 8 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 9; int y = 11; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "6",
+      "11",
+      "9",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Condition (9 > 11) evaluates to false. Thus z is assigned to 11 - 5 which equals 6."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 5; int y = 10; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "17",
+      "5",
+      "3",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Condition (5 > 10) evaluates to false. Thus z is assigned to 10 - 7 which equals 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 14; int y = 19; int z = (x > y) ? x + 5 : y - 5;?",
+    "options": [
+      "19",
+      "14",
+      "24",
+      "62"
+    ],
+    "answer": 1,
+    "explanation": "Condition (14 > 19) evaluates to false. Thus z is assigned to 19 - 5 which equals 14."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(16 ^ 3);",
+    "options": [
+      "21",
+      "30",
+      "18",
+      "19"
+    ],
+    "answer": 3,
+    "explanation": "Applying bitwise ^ between binary 10000 and 11 yields decimal 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Java Operators",
+    "difficulty": "Easy",
+    "question": "What is the printed output of the Java expression: System.out.println(45 % 6);?",
+    "options": [
+      "7",
+      "0",
+      "5",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Modulo operator (%) returns the division remainder: 45 / 6 leaves remainder 3."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 21; int y = 11; int z = (x > y) ? x + 7 : y - 7;?",
+    "options": [
+      "11",
+      "21",
+      "28",
+      "14"
+    ],
+    "answer": 2,
+    "explanation": "Condition (21 > 11) evaluates to true. Thus z is assigned to 21 + 7 which equals 28."
+  },
+  {
+    "subject": "Java",
+    "topic": "Bitwise Operators",
+    "difficulty": "Medium",
+    "question": "What will be the output of following statement in Java? System.out.println(10 & 2);",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Applying bitwise & between binary 1010 and 10 yields decimal 2."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 22; int z = (x > y) ? x + 3 : y - 3;?",
+    "options": [
+      "22",
+      "25",
+      "19",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "Condition (13 > 22) evaluates to false. Thus z is assigned to 22 - 3 which equals 19."
+  },
+  {
+    "subject": "Java",
+    "topic": "Ternary Operator",
+    "difficulty": "Medium",
+    "question": "In Java, what is the value of variable 'z' after execution of: int x = 13; int y = 13; int z = (x > y) ? x + 4 : y - 4;?",
+    "options": [
+      "9",
+      "13",
+      "17",
+      "13"
+    ],
+    "answer": 0,
+    "explanation": "Condition (13 > 13) evaluates to false. Thus z is assigned to 13 - 4 which equals 9."
   }
 ];
