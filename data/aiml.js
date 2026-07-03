@@ -6,12 +6,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Supervised learning uses?",
     "options": [
-      "Unlabeled data",
       "Labeled data",
-      "No data",
-      "Random data"
+      "Unlabeled data",
+      "Random data",
+      "No data"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Supervised learning maps input to known output labels."
   },
   {
@@ -20,12 +20,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Unsupervised learning is used for?",
     "options": [
-      "Regression with targets",
-      "Classification with labels",
-      "Predicting known outputs",
-      "Finding hidden patterns without labels"
+      "Classification with labels in most cases",
+      "Regression with targets (commonly used)",
+      "Finding hidden patterns without labels",
+      "Predicting known outputs in standard usage"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "No target variable; discovers structure in data."
   },
   {
@@ -34,12 +34,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Reinforcement learning learns through?",
     "options": [
-      "Clustering",
-      "Labeled datasets",
       "Backpropagation only",
-      "Rewards and penalties"
+      "Clustering (commonly used)",
+      "Rewards and penalties",
+      "Labeled datasets"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Agent maximizes cumulative reward via trial and error."
   },
   {
@@ -48,12 +48,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Linear regression predicts?",
     "options": [
+      "Clusters (commonly used)",
       "Continuous numerical values",
-      "Categories",
-      "Clusters",
-      "Binary classes"
+      "Categories based on convention",
+      "Binary classes in practice"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Fits a line to minimize squared errors."
   },
   {
@@ -62,12 +62,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Logistic regression is used for?",
     "options": [
-      "Regression",
-      "Dimensionality reduction",
+      "Regression (commonly used)",
       "Binary classification",
-      "Clustering"
+      "Clustering (widely accepted)",
+      "Dimensionality reduction"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Outputs probability via sigmoid function."
   },
   {
@@ -76,12 +76,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Decision tree splits data based on?",
     "options": [
-      "All features equally",
       "Feature that gives best information gain",
-      "Target variable only",
-      "Random features"
+      "Random features as per specification",
+      "All features equally (typical scenario)",
+      "Target variable only under normal conditions"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Greedy splits maximize purity of child nodes."
   },
   {
@@ -90,12 +90,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Random forest is?",
     "options": [
-      "Ensemble of decision trees",
-      "Single deep tree",
-      "Neural network",
-      "Clustering method"
+      "Single deep tree by design",
+      "Neural network in most cases",
+      "Clustering method in most cases",
+      "Ensemble of decision trees"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Aggregates predictions from multiple trees."
   },
   {
@@ -104,12 +104,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "K-Nearest Neighbors classifies by?",
     "options": [
-      "Tree splitting",
-      "Majority vote of K nearest points",
-      "Feature elimination",
-      "Gradient descent"
+      "Tree splitting in practice",
+      "Gradient descent (general case)",
+      "Feature elimination (default behavior)",
+      "Majority vote of K nearest points"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Distance-based lazy learner."
   },
   {
@@ -118,12 +118,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "SVM finds?",
     "options": [
-      "Principal components",
       "Maximum margin hyperplane",
-      "Cluster centers",
-      "Minimum distance"
+      "Principal components",
+      "Minimum distance (general case)",
+      "Cluster centers (commonly used)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Support vectors define the decision boundary."
   },
   {
@@ -132,12 +132,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Naive Bayes assumes?",
     "options": [
-      "No prior probability",
       "Feature independence given class",
-      "Linear separability",
-      "All features are correlated"
+      "All features are correlated",
+      "Linear separability by design",
+      "No prior probability by design"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Conditional independence assumption simplifies computation."
   },
   {
@@ -146,12 +146,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "K-Means clustering minimizes?",
     "options": [
-      "Between-cluster distance",
-      "Number of features",
+      "Entropy (widely accepted)",
       "Within-cluster sum of squares",
-      "Entropy"
+      "Number of features (widely accepted)",
+      "Between-cluster distance"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Iteratively assigns points to nearest centroid."
   },
   {
@@ -160,12 +160,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Hierarchical clustering produces?",
     "options": [
-      "Confusion matrix",
       "Dendrogram",
-      "ROC curve",
-      "Decision boundary"
+      "Confusion matrix",
+      "Decision boundary",
+      "ROC curve"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Agglomerative or divisive approach builds tree."
   },
   {
@@ -174,9 +174,9 @@ window.quizData.aiml = [
     "difficulty": "Hard",
     "question": "DBSCAN clusters based on?",
     "options": [
+      "Random assignment",
       "Feature importance",
       "Distance to centroid only",
-      "Random assignment",
       "Density of points"
     ],
     "answer": 3,
@@ -188,9 +188,9 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Perceptron is?",
     "options": [
-      "Unsupervised method",
-      "Clustering algorithm",
-      "Regression only",
+      "Unsupervised method in typical implementations",
+      "Regression only in typical implementations",
+      "Clustering algorithm in typical implementations",
       "Single-layer neural network for linear classification"
     ],
     "answer": 3,
@@ -202,10 +202,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Backpropagation computes?",
     "options": [
-      "Cluster assignments",
-      "Forward pass only",
+      "Feature importance (commonly used)",
+      "Forward pass only in practice",
       "Gradients of loss w.r.t. weights",
-      "Feature importance"
+      "Cluster assignments (commonly used)"
     ],
     "answer": 2,
     "explanation": "Chain rule propagates error backwards through layers."
@@ -216,12 +216,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Activation function introduces?",
     "options": [
-      "Linearity",
-      "Non-linearity into neural networks",
-      "Overfitting",
-      "Randomness"
+      "Linearity (primary approach)",
+      "Overfitting (primary approach)",
+      "Randomness as per specification",
+      "Non-linearity into neural networks"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Without activation, network is just linear transformation."
   },
   {
@@ -231,9 +231,9 @@ window.quizData.aiml = [
     "question": "CNN is best for?",
     "options": [
       "Sequential text data",
-      "Tabular data only",
+      "Tabular data only in practice",
       "Image recognition tasks",
-      "Audio only"
+      "Audio only in most cases"
     ],
     "answer": 2,
     "explanation": "Convolutional layers detect spatial patterns."
@@ -244,12 +244,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "RNN is designed for?",
     "options": [
-      "Image data",
       "Sequential/time-series data",
-      "Clustering",
-      "Static tabular data"
+      "Static tabular data by design",
+      "Image data in practice",
+      "Clustering (standard definition)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Recurrent connections maintain hidden state across time steps."
   },
   {
@@ -258,12 +258,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "LSTM solves?",
     "options": [
-      "Data imbalance",
+      "Data imbalance (commonly used)",
+      "Overfitting (standard definition)",
       "Vanishing gradient in standard RNNs",
-      "Underfitting",
-      "Overfitting"
+      "Underfitting under normal conditions"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Gates control information flow through memory cell."
   },
   {
@@ -272,12 +272,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Transformers use?",
     "options": [
-      "Random forests",
-      "Convolutional filters",
+      "Self-attention mechanism",
+      "Random forests in practice",
       "Recurrent connections",
-      "Self-attention mechanism"
+      "Convolutional filters"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Attention scores capture relationships regardless of distance."
   },
   {
@@ -286,12 +286,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Accuracy = ?",
     "options": [
-      "TP/FP",
       "TP/(TP+FN)",
-      "2*P*R/(P+R)",
-      "(TP+TN) / Total"
+      "(TP+TN) / Total",
+      "TP/FP in practice",
+      "2*P*R/(P+R)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Correct predictions divided by total."
   },
   {
@@ -300,12 +300,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Precision = ?",
     "options": [
-      "FP/(FP+TN)",
       "TP / (TP + FP)",
-      "TP / (TP+FN)",
-      "(TP+TN)/Total"
+      "(TP+TN)/Total",
+      "FP/(FP+TN)",
+      "TP / (TP+FN)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Of predicted positives, how many are actually positive."
   },
   {
@@ -328,12 +328,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "F1 Score is?",
     "options": [
-      "Simple average of accuracy",
-      "Arithmetic mean",
       "Harmonic mean of Precision and Recall",
-      "Geometric mean"
+      "Arithmetic mean (primary approach)",
+      "Simple average of accuracy (commonly used)",
+      "Geometric mean as per specification"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "F1 = 2*P*R/(P+R), balances precision and recall."
   },
   {
@@ -342,10 +342,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "ROC curve plots?",
     "options": [
-      "Accuracy vs Loss",
-      "Error vs Epochs",
+      "Error vs Epochs (typical scenario)",
+      "Precision vs Recall in standard usage",
       "True Positive Rate vs False Positive Rate",
-      "Precision vs Recall"
+      "Accuracy vs Loss in standard usage"
     ],
     "answer": 2,
     "explanation": "Shows classifier performance across all thresholds."
@@ -356,7 +356,7 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Confusion matrix shows?",
     "options": [
-      "Learning rate",
+      "Learning rate in practice",
       "Cluster assignments",
       "Feature importance",
       "TP, TN, FP, FN counts"
@@ -370,12 +370,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Overfitting means?",
     "options": [
-      "Model has no parameters",
-      "Model performs well on training but poorly on test data",
-      "Model is too simple",
-      "Model fails on both"
+      "Model has no parameters in typical implementations",
+      "Model fails on both in typical implementations",
+      "Model is too simple in typical implementations",
+      "Model performs well on training but poorly on test data"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Model memorizes noise instead of learning patterns."
   },
   {
@@ -384,10 +384,10 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Underfitting means?",
     "options": [
-      "Model memorizes data",
-      "Perfect generalization",
+      "Model overfits (primary approach)",
+      "Model memorizes data (standard definition)",
       "Model is too simple to capture patterns",
-      "Model overfits"
+      "Perfect generalization in most cases"
     ],
     "answer": 2,
     "explanation": "High bias, low variance; needs more complexity."
@@ -398,10 +398,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Cross-validation purpose?",
     "options": [
-      "Reduce dataset size",
+      "Speed up training in typical implementations",
       "Assess model generalization on unseen data",
-      "Increase features",
-      "Speed up training"
+      "Increase features in typical implementations",
+      "Reduce dataset size in standard usage"
     ],
     "answer": 1,
     "explanation": "K-fold splits data into train/validate partitions."
@@ -412,12 +412,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Feature scaling is needed because?",
     "options": [
-      "It reduces accuracy",
+      "It reduces accuracy in typical implementations",
+      "It adds noise in typical implementations",
       "Algorithms sensitive to magnitude perform poorly without it",
-      "It removes features",
-      "It adds noise"
+      "It removes features in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Normalization/standardization ensures equal feature contribution."
   },
   {
@@ -426,12 +426,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "One-Hot Encoding is used for?",
     "options": [
-      "Reducing dimensions",
-      "Removing outliers",
+      "Scaling numerical features (widely accepted)",
       "Converting categorical variables to binary vectors",
-      "Scaling numerical features"
+      "Removing outliers in typical implementations",
+      "Reducing dimensions under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Each category becomes a binary column."
   },
   {
@@ -440,12 +440,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Label Encoding assigns?",
     "options": [
-      "Binary vectors",
+      "Binary vectors in most cases",
+      "Random floats as per specification",
       "Integer values to categories",
-      "Random floats",
-      "String hashes"
+      "String hashes in most cases"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Each unique category gets a unique integer."
   },
   {
@@ -454,10 +454,10 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Missing values can be handled by?",
     "options": [
-      "Setting all to zero",
+      "Setting all to zero (typical scenario)",
       "Imputation (mean, median, mode) or deletion",
-      "Multiplying by -1",
-      "Ignoring them always"
+      "Ignoring them always (widely accepted)",
+      "Multiplying by -1 (default behavior)"
     ],
     "answer": 1,
     "explanation": "Strategy depends on data distribution and missingness pattern."
@@ -468,12 +468,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Gradient descent minimizes?",
     "options": [
+      "Accuracy by design",
       "Number of features",
-      "Accuracy",
-      "Data size",
-      "Loss/cost function"
+      "Loss/cost function",
+      "Data size in most cases"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Iteratively updates parameters in direction of steepest descent."
   },
   {
@@ -482,12 +482,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Learning rate controls?",
     "options": [
-      "Data augmentation",
-      "Number of features",
-      "Step size in gradient descent",
-      "Dropout rate"
+      "Number of features in most cases",
+      "Dropout rate in most cases",
+      "Data augmentation (typical scenario)",
+      "Step size in gradient descent"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Too high: overshoots; too low: slow convergence."
   },
   {
@@ -496,12 +496,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Regularization reduces?",
     "options": [
+      "Training time in typical implementations",
       "Overfitting by penalizing large weights",
-      "Underfitting",
-      "Training time",
-      "Dataset size"
+      "Underfitting in typical implementations",
+      "Dataset size in typical implementations"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "L1/L2 add penalty term to loss function."
   },
   {
@@ -510,12 +510,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "NumPy is used for?",
     "options": [
-      "Web scraping",
+      "File compression by design",
+      "Web scraping (typical scenario)",
       "Numerical array operations",
-      "Database queries",
-      "File compression"
+      "Database queries in practice"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Efficient multidimensional array computations."
   },
   {
@@ -524,12 +524,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Pandas provides?",
     "options": [
-      "Neural network layers",
-      "Image processing",
-      "DataFrame for structured data manipulation",
-      "GPU computing"
+      "Neural network layers in standard usage",
+      "Image processing as per specification",
+      "GPU computing under normal conditions",
+      "DataFrame for structured data manipulation"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Tabular data analysis tool in Python."
   },
   {
@@ -538,12 +538,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Scikit-learn provides?",
     "options": [
-      "Database ORM",
-      "Deep learning only",
       "Machine learning algorithms and utilities",
-      "Web framework"
+      "Deep learning only as per specification",
+      "Database ORM in typical implementations",
+      "Web framework as per specification"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Preprocessing, models, metrics all in one library."
   },
   {
@@ -552,10 +552,10 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Matplotlib is used for?",
     "options": [
-      "ML training",
+      "ML training in standard usage",
       "Data visualization and plotting",
-      "Data storage",
-      "Web development"
+      "Data storage (general case)",
+      "Web development (typical scenario)"
     ],
     "answer": 1,
     "explanation": "Creates charts, graphs, and visual representations."
@@ -566,12 +566,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Train-test split typically uses?",
     "options": [
-      "50-50 always",
-      "99-1",
       "No split needed",
-      "80-20 or 70-30 ratio"
+      "50-50 always (general case)",
+      "80-20 or 70-30 ratio",
+      "99-1 in practice"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Majority for training, held-out portion for evaluation."
   },
   {
@@ -580,9 +580,9 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Bias in ML refers to?",
     "options": [
-      "Error from noise",
-      "Dataset size",
-      "Feature count",
+      "Dataset size (default behavior)",
+      "Feature count in standard usage",
+      "Error from noise as per specification",
       "Error from oversimplified assumptions"
     ],
     "answer": 3,
@@ -594,12 +594,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Variance in ML refers to?",
     "options": [
-      "Constant error",
       "Sensitivity to fluctuations in training data",
-      "Average error",
-      "Zero error"
+      "Average error in typical implementations",
+      "Zero error in typical implementations",
+      "Constant error under normal conditions"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "High variance = overfitting to training data."
   },
   {
@@ -608,12 +608,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Principal Component Analysis (PCA) does?",
     "options": [
-      "Regression",
-      "Dimensionality reduction",
-      "Classification",
-      "Clustering"
+      "Regression as per specification",
+      "Classification by design",
+      "Clustering (commonly used)",
+      "Dimensionality reduction"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Projects data onto directions of maximum variance."
   },
   {
@@ -622,12 +622,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Dropout in neural networks?",
     "options": [
-      "Adds more neurons",
-      "Speeds up inference",
+      "Removes layers permanently (typical scenario)",
       "Randomly deactivates neurons during training",
-      "Removes layers permanently"
+      "Speeds up inference in typical implementations",
+      "Adds more neurons in typical implementations"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Regularization technique preventing co-adaptation."
   },
   {
@@ -636,12 +636,12 @@ window.quizData.aiml = [
     "difficulty": "Hard",
     "question": "Batch normalization does?",
     "options": [
+      "Removes all layers in standard usage",
+      "Increases batch size in practice",
       "Normalizes layer inputs during training",
-      "Increases batch size",
-      "Reduces features",
-      "Removes all layers"
+      "Reduces features in standard usage"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Stabilizes learning and allows higher learning rates."
   },
   {
@@ -650,12 +650,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Transfer learning means?",
     "options": [
-      "Feature deletion",
-      "Unsupervised clustering",
-      "Training from scratch",
-      "Using pre-trained model for a new task"
+      "Unsupervised clustering (general case)",
+      "Using pre-trained model for a new task",
+      "Feature deletion in typical implementations",
+      "Training from scratch (standard definition)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Fine-tune existing model on new domain data."
   },
   {
@@ -664,9 +664,9 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Epoch means?",
     "options": [
-      "One sample",
-      "One layer update",
-      "One batch",
+      "One sample in typical implementations",
+      "One batch in typical implementations",
+      "One layer update in typical implementations",
       "One complete pass through the entire training dataset"
     ],
     "answer": 3,
@@ -678,10 +678,10 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Batch size is?",
     "options": [
-      "Number of features",
+      "Number of features in typical implementations",
       "Number of samples processed before updating weights",
-      "Number of epochs",
-      "Total dataset size"
+      "Number of epochs in typical implementations",
+      "Total dataset size in typical implementations"
     ],
     "answer": 1,
     "explanation": "Larger batch = more stable gradient, more memory."
@@ -692,12 +692,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "A* search algorithm uses?",
     "options": [
+      "Only path cost based on convention",
       "Heuristic + path cost (f = g + h)",
-      "Random selection",
-      "Only heuristic",
-      "Only path cost"
+      "Random selection in most cases",
+      "Only heuristic (general case)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Combines actual cost and heuristic estimate."
   },
   {
@@ -706,12 +706,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Minimax algorithm is used for?",
     "options": [
-      "Clustering",
-      "Game playing (adversarial search)",
-      "Data preprocessing",
-      "Regression"
+      "Regression (widely accepted)",
+      "Clustering in typical implementations",
+      "Data preprocessing as per specification",
+      "Game playing (adversarial search)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Maximizes own score while minimizing opponent's."
   },
   {
@@ -720,12 +720,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Types of AI include?",
     "options": [
+      "Only Narrow AI (standard definition)",
       "Narrow AI, General AI, Super AI",
-      "Only Narrow AI",
-      "Hardware and Software",
-      "Only Deep Learning"
+      "Only Deep Learning (widely accepted)",
+      "Hardware and Software (commonly used)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Classification by capability level."
   },
   {
@@ -734,12 +734,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Intelligent agent in AI?",
     "options": [
+      "Simple calculator in typical implementations",
+      "Static program in typical implementations",
       "Entity that perceives environment and acts to maximize goals",
-      "Static program",
-      "Passive data store",
-      "Simple calculator"
+      "Passive data store in typical implementations"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Agents sense, decide, and act in their environment."
   },
   {
@@ -748,10 +748,10 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Knowledge representation in AI uses?",
     "options": [
-      "Only images",
-      "Only numbers",
+      "Only text in typical implementations",
+      "Only images in typical implementations",
       "Logic, semantic networks, frames, ontologies",
-      "Only text"
+      "Only numbers in typical implementations"
     ],
     "answer": 2,
     "explanation": "Structures to encode knowledge for reasoning."
@@ -762,12 +762,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Polynomial regression fits?",
     "options": [
-      "Only straight lines",
-      "Curved relationships using polynomial terms",
-      "Categorical data",
-      "No relationships"
+      "No relationships based on convention",
+      "Categorical data under normal conditions",
+      "Only straight lines in standard usage",
+      "Curved relationships using polynomial terms"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Transforms features to polynomial degree."
   },
   {
@@ -776,12 +776,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Multiple regression uses?",
     "options": [
-      "Only categorical",
-      "No variables",
-      "One independent variable",
-      "Multiple independent variables to predict one dependent"
+      "Multiple independent variables to predict one dependent",
+      "One independent variable in typical implementations",
+      "No variables in typical implementations",
+      "Only categorical in typical implementations"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Extends simple linear regression to multiple predictors."
   },
   {
@@ -790,12 +790,12 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Ethics in AI includes?",
     "options": [
-      "Only speed optimization",
-      "Only profit",
-      "Only accuracy",
-      "Bias mitigation, privacy, transparency, accountability"
+      "Only speed optimization under normal conditions",
+      "Bias mitigation, privacy, transparency, accountability",
+      "Only accuracy in typical implementations",
+      "Only profit in typical implementations"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Responsible AI development considers societal impact."
   },
   {
@@ -804,12 +804,12 @@ window.quizData.aiml = [
     "difficulty": "Medium",
     "question": "Data augmentation is?",
     "options": [
-      "Normalizing only",
+      "Deleting data in typical implementations",
+      "Normalizing only in typical implementations",
       "Creating modified copies of data to increase dataset size",
-      "Reducing features",
-      "Deleting data"
+      "Reducing features in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Flips, rotations, crops etc. for image data."
   },
   {
@@ -818,484 +818,316 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "TensorFlow is?",
     "options": [
-      "Database system",
-      "Web framework",
+      "Web framework in typical implementations",
       "Open-source deep learning framework by Google",
-      "Operating system"
+      "Operating system in typical implementations",
+      "Database system under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Enables building and training neural networks at scale."
   },
   {
     "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-4), what is the predicted value of y when x = 26?",
-    "options": [
-      "32",
-      "22",
-      "74",
-      "30"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 1(26) + -4 to get 22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 7) and point B(7, 7) in a 2D space?",
+    "question": "Given a classification report with TP = 169, FP = 10, FN = 25, and TN = 191, what is the exact Recall?",
     "options": [
-      "6.00",
-      "9.50",
-      "9.00",
-      "3.90"
+      "72.11%",
+      "69.69%",
+      "97.11%",
+      "87.11%"
     ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 6.00."
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=169, FP=10, FN=25, TN=191."
   },
   {
     "subject": "AI / ML",
-    "topic": "Clustering & KNN",
+    "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 12) and point B(23, 8) in a 2D space?",
+    "question": "Given a classification report with TP = 104, FP = 28, FN = 14, and TN = 256, what is the exact Recall?",
     "options": [
-      "23.00",
-      "34.50",
-      "26.50",
-      "20.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-3), what is the predicted value of y when x = 19?",
-    "options": [
-      "35",
-      "45",
-      "41",
-      "73"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=19 into y = 2(19) + -3 to get 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 16) and point B(19, 5) in a 2D space?",
-    "options": [
-      "23.00",
-      "20.90",
-      "34.50",
-      "26.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (8), what is the predicted value of y when x = 0?",
-    "options": [
-      "8",
-      "-8",
-      "18",
-      "8"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=0 into y = 4(0) + 8 to get 8."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 6?",
-    "options": [
-      "14",
-      "-2",
-      "26",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=6 into y = 1(6) + 8 to get 14."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 1) and point B(8, 23) in a 2D space?",
-    "options": [
-      "26.50",
-      "34.50",
-      "23.00",
-      "20.90"
+      "70.51%",
+      "73.14%",
+      "88.14%",
+      "98.14%"
     ],
     "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (0), what is the predicted value of y when x = 14?",
-    "options": [
-      "84",
-      "84",
-      "94",
-      "112"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=14 into y = 6(14) + 0 to get 84."
+    "explanation": "Recall is calculated by standard formula using counts: TP=104, FP=28, FN=14, TN=256."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 81, FP = 36, FN = 14, and TN = 255, what is the exact Precision?",
+    "question": "Given a classification report with TP = 85, FP = 22, FN = 22, and TN = 131, what is the exact Recall?",
     "options": [
-      "54.23%",
-      "55.38%",
-      "79.23%",
-      "69.23%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=81, FP=36, FN=14, TN=255."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 145, FP = 36, FN = 10, and TN = 112, what is the exact Precision?",
-    "options": [
-      "80.11%",
-      "65.11%",
-      "90.11%",
-      "64.09%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=145, FP=36, FN=10, TN=112."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (6), what is the predicted value of y when x = 4?",
-    "options": [
-      "46",
-      "34",
-      "54",
-      "56"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=4 into y = 10(4) + 6 to get 46."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 2) and point B(7, 18) in a 2D space?",
-    "options": [
-      "23.90",
-      "29.50",
-      "39.00",
-      "26.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 5) and point B(5, 13) in a 2D space?",
-    "options": [
-      "12.00",
-      "8.00",
-      "11.50",
-      "5.90"
+      "89.44%",
+      "79.44%",
+      "63.55%",
+      "64.44%"
     ],
     "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 187, FP = 44, FN = 17, and TN = 101, what is the exact Precision?",
-    "options": [
-      "90.95%",
-      "64.76%",
-      "80.95%",
-      "65.95%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=187, FP=44, FN=17, TN=101."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 8) and point B(6, 9) in a 2D space?",
-    "options": [
-      "6.66",
-      "1.06",
-      "4.74",
-      "3.16"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 3.16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 6) and point B(18, 10) in a 2D space?",
-    "options": [
-      "9.00",
-      "9.50",
-      "6.00",
-      "3.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 109, FP = 8, FN = 16, and TN = 120, what is the exact Accuracy?",
-    "options": [
-      "75.51%",
-      "72.41%",
-      "100.51%",
-      "90.51%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=109, FP=8, FN=16, TN=120."
+    "explanation": "Recall is calculated by standard formula using counts: TP=85, FP=22, FN=22, TN=131."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (7), what is the predicted value of y when x = 28?",
+    "question": "Assuming a simple linear regression equation is y = 1x + (-4), what is the predicted value of y when x = 25?",
     "options": [
-      "101",
-      "91",
-      "77",
-      "147"
+      "31",
+      "29",
+      "71",
+      "21"
     ],
-    "answer": 1,
-    "explanation": "Plug x=28 into y = 3(28) + 7 to get 91."
+    "answer": 3,
+    "explanation": "Plug x=25 into y = 1(25) + -4 to get 21."
   },
   {
     "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-5), what is the predicted value of y when x = 15?",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 181, FP = 17, FN = 40, and TN = 285, what is the exact Precision?",
     "options": [
-      "140",
-      "130",
-      "140",
-      "160"
+      "91.41%",
+      "73.13%",
+      "76.41%",
+      "101.41%"
     ],
-    "answer": 1,
-    "explanation": "Plug x=15 into y = 9(15) + -5 to get 130."
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=181, FP=17, FN=40, TN=285."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 4) and point B(18, 23) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(18, 0) and point B(18, 22) in a 2D space?",
     "options": [
-      "19.90",
-      "33.00",
       "22.00",
+      "33.00",
+      "19.90",
       "25.50"
     ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 22.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 5) and point B(10, 7) in a 2D space?",
-    "options": [
-      "8.10",
-      "13.70",
-      "10.20",
-      "15.30"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (1), what is the predicted value of y when x = 13?",
-    "options": [
-      "103",
-      "105",
-      "131",
-      "115"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=13 into y = 8(13) + 1 to get 105."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 127, FP = 8, FN = 22, and TN = 117, what is the exact Accuracy?",
-    "options": [
-      "99.05%",
-      "89.05%",
-      "71.24%",
-      "74.05%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=127, FP=8, FN=22, TN=117."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 7) and point B(13, 17) in a 2D space?",
-    "options": [
-      "17.00",
-      "25.50",
-      "14.90",
-      "20.50"
-    ],
     "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 17.00."
+    "explanation": "Euclidean distance formula resolves to 22.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-4), what is the predicted value of y when x = 8?",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-3), what is the predicted value of y when x = 3?",
     "options": [
-      "28",
-      "20",
+      "6",
       "12",
-      "22"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=8 into y = 2(8) + -4 to get 12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (4), what is the predicted value of y when x = 12?",
-    "options": [
-      "38",
-      "28",
-      "20",
-      "52"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=12 into y = 2(12) + 4 to get 28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 14?",
-    "options": [
-      "128",
-      "156",
-      "124",
-      "138"
+      "16",
+      "12"
     ],
     "answer": 0,
-    "explanation": "Plug x=14 into y = 9(14) + 2 to get 128."
+    "explanation": "Plug x=3 into y = 3(3) + -3 to get 6."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-3), what is the predicted value of y when x = 14?",
+    "options": [
+      "73",
+      "95",
+      "67",
+      "77"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=14 into y = 5(14) + -3 to get 67."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 97, FP = 42, FN = 35, and TN = 177, what is the exact Accuracy?",
+    "question": "Given a classification report with TP = 189, FP = 43, FN = 29, and TN = 116, what is the exact Recall?",
     "options": [
-      "63.06%",
-      "88.06%",
-      "78.06%",
-      "62.45%"
+      "71.70%",
+      "69.36%",
+      "86.70%",
+      "96.70%"
     ],
     "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=97, FP=42, FN=35, TN=177."
+    "explanation": "Recall is calculated by standard formula using counts: TP=189, FP=43, FN=29, TN=116."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 119, FP = 37, FN = 8, and TN = 269, what is the exact Accuracy?",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 21?",
     "options": [
-      "74.61%",
-      "99.61%",
-      "89.61%",
-      "71.69%"
+      "105",
+      "105",
+      "115",
+      "147"
     ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=119, FP=37, FN=8, TN=269."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 85, FP = 13, FN = 31, and TN = 270, what is the exact Precision?",
-    "options": [
-      "69.39%",
-      "96.73%",
-      "86.73%",
-      "71.73%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=85, FP=13, FN=31, TN=270."
+    "answer": 0,
+    "explanation": "Plug x=21 into y = 5(21) + 0 to get 105."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 14) and point B(5, 23) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(6, 5) and point B(6, 23) in a 2D space?",
     "options": [
-      "8.20",
-      "15.44",
-      "10.30",
-      "13.80"
+      "27.00",
+      "18.00",
+      "15.90",
+      "21.50"
     ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.30."
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 18.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-3), what is the predicted value of y when x = 25?",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-3), what is the predicted value of y when x = 27?",
     "options": [
-      "147",
-      "107",
-      "103",
-      "97"
+      "84",
+      "132",
+      "88",
+      "78"
     ],
     "answer": 3,
-    "explanation": "Plug x=25 into y = 4(25) + -3 to get 97."
+    "explanation": "Plug x=27 into y = 3(27) + -3 to get 78."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 19) and point B(18, 22) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(16, 11) and point B(10, 23) in a 2D space?",
     "options": [
-      "20.01",
+      "20.12",
+      "11.32",
+      "16.92",
+      "13.42"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 13.42."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(19, 13) and point B(16, 5) in a 2D space?",
+    "options": [
+      "12.04",
+      "8.54",
+      "12.82",
+      "6.44"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 8.54."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-3), what is the predicted value of y when x = 8?",
+    "options": [
+      "37",
+      "31",
+      "21",
+      "27"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=8 into y = 3(8) + -3 to get 21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-3), what is the predicted value of y when x = 15?",
+    "options": [
+      "162",
+      "142",
+      "138",
+      "132"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=15 into y = 9(15) + -3 to get 132."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 162, FP = 33, FN = 23, and TN = 179, what is the exact Accuracy?",
+    "options": [
+      "95.89%",
+      "85.89%",
+      "70.89%",
+      "68.72%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=162, FP=33, FN=23, TN=179."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(19, 18) and point B(16, 18) in a 2D space?",
+    "options": [
+      "3.00",
+      "6.50",
+      "0.90",
+      "4.50"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 3.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 116, FP = 25, FN = 38, and TN = 197, what is the exact Recall?",
+    "options": [
+      "60.32%",
+      "75.32%",
+      "60.26%",
+      "85.32%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=116, FP=25, FN=38, TN=197."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (4), what is the predicted value of y when x = 12?",
+    "options": [
+      "110",
+      "100",
+      "124",
+      "92"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=12 into y = 8(12) + 4 to get 100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (1), what is the predicted value of y when x = 9?",
+    "options": [
+      "20",
+      "28",
+      "10",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=9 into y = 1(9) + 1 to get 10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 19) and point B(16, 6) in a 2D space?",
+    "options": [
       "11.24",
+      "20.01",
       "16.84",
       "13.34"
     ],
@@ -1306,207 +1138,67 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-1), what is the predicted value of y when x = 6?",
+    "question": "Assuming a simple linear regression equation is y = 8x + (8), what is the predicted value of y when x = 6?",
     "options": [
-      "59",
-      "47",
-      "49",
-      "57"
+      "68",
+      "56",
+      "40",
+      "66"
     ],
     "answer": 1,
-    "explanation": "Plug x=6 into y = 8(6) + -1 to get 47."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (6), what is the predicted value of y when x = 4?",
-    "options": [
-      "42",
-      "52",
-      "50",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=4 into y = 9(4) + 6 to get 42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (7), what is the predicted value of y when x = 16?",
-    "options": [
-      "121",
-      "135",
-      "145",
-      "167"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=16 into y = 8(16) + 7 to get 135."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (2), what is the predicted value of y when x = 23?",
-    "options": [
-      "127",
-      "117",
-      "163",
-      "113"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=23 into y = 5(23) + 2 to get 117."
+    "explanation": "Plug x=6 into y = 8(6) + 8 to get 56."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 138, FP = 36, FN = 12, and TN = 166, what is the exact Recall?",
+    "question": "Given a classification report with TP = 91, FP = 21, FN = 36, and TN = 283, what is the exact Precision?",
     "options": [
-      "77.00%",
-      "102.00%",
-      "73.60%",
-      "92.00%"
+      "81.25%",
+      "66.25%",
+      "91.25%",
+      "65.00%"
     ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=138, FP=36, FN=12, TN=166."
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=91, FP=21, FN=36, TN=283."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 16?",
+    "question": "Assuming a simple linear regression equation is y = 9x + (0), what is the predicted value of y when x = 15?",
     "options": [
-      "112",
-      "90",
-      "80",
-      "80"
+      "135",
+      "165",
+      "135",
+      "145"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=15 into y = 9(15) + 0 to get 135."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 14) and point B(22, 15) in a 2D space?",
+    "options": [
+      "24.00",
+      "19.50",
+      "16.00",
+      "13.90"
     ],
     "answer": 2,
-    "explanation": "Plug x=16 into y = 5(16) + 0 to get 80."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 160, FP = 30, FN = 36, and TN = 206, what is the exact Recall?",
-    "options": [
-      "91.63%",
-      "65.31%",
-      "66.63%",
-      "81.63%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=160, FP=30, FN=36, TN=206."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 167, FP = 44, FN = 28, and TN = 233, what is the exact Recall?",
-    "options": [
-      "68.51%",
-      "70.64%",
-      "95.64%",
-      "85.64%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=167, FP=44, FN=28, TN=233."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 119, FP = 6, FN = 42, and TN = 274, what is the exact Precision?",
-    "options": [
-      "95.20%",
-      "105.20%",
-      "80.20%",
-      "76.16%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=119, FP=6, FN=42, TN=274."
+    "explanation": "Manhattan distance formula resolves to 16.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 3) and point B(13, 21) in a 2D space?",
-    "options": [
-      "18.44",
-      "16.34",
-      "27.66",
-      "21.94"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 18) and point B(24, 22) in a 2D space?",
-    "options": [
-      "33.00",
-      "25.50",
-      "19.90",
-      "22.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 22.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-2), what is the predicted value of y when x = 23?",
-    "options": [
-      "90",
-      "94",
-      "136",
-      "100"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=23 into y = 4(23) + -2 to get 90."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 166, FP = 16, FN = 33, and TN = 158, what is the exact Accuracy?",
-    "options": [
-      "71.86%",
-      "96.86%",
-      "69.49%",
-      "86.86%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=166, FP=16, FN=33, TN=158."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (8), what is the predicted value of y when x = 3?",
-    "options": [
-      "17",
-      "27",
-      "23",
-      "1"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=3 into y = 3(3) + 8 to get 17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(1, 7) and point B(6, 15) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(9, 10) and point B(5, 19) in a 2D space?",
     "options": [
       "16.50",
-      "19.50",
       "10.90",
+      "19.50",
       "13.00"
     ],
     "answer": 3,
@@ -1514,10027 +1206,31 @@ window.quizData.aiml = [
   },
   {
     "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (2), what is the predicted value of y when x = 11?",
-    "options": [
-      "90",
-      "68",
-      "64",
-      "78"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=11 into y = 6(11) + 2 to get 68."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 2?",
-    "options": [
-      "16",
-      "10",
-      "6",
-      "-2"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=2 into y = 1(2) + 4 to get 6."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 126, FP = 18, FN = 31, and TN = 197, what is the exact Accuracy?",
-    "options": [
-      "69.46%",
-      "86.83%",
-      "96.83%",
-      "71.83%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=126, FP=18, FN=31, TN=197."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 82, FP = 26, FN = 29, and TN = 273, what is the exact Recall?",
-    "options": [
-      "58.87%",
-      "73.87%",
-      "59.10%",
-      "83.87%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=82, FP=26, FN=29, TN=273."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-5), what is the predicted value of y when x = 27?",
-    "options": [
-      "113",
-      "103",
-      "113",
-      "157"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 4(27) + -5 to get 103."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 19?",
-    "options": [
-      "55",
-      "31",
-      "45",
-      "83"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=19 into y = 2(19) + 7 to get 45."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (8), what is the predicted value of y when x = 26?",
-    "options": [
-      "138",
-      "86",
-      "70",
-      "96"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 3(26) + 8 to get 86."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 191, FP = 12, FN = 36, and TN = 222, what is the exact Accuracy?",
-    "options": [
-      "99.59%",
-      "89.59%",
-      "71.67%",
-      "74.59%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=191, FP=12, FN=36, TN=222."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 76, FP = 18, FN = 9, and TN = 221, what is the exact Precision?",
-    "options": [
-      "64.68%",
-      "65.85%",
-      "80.85%",
-      "90.85%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=76, FP=18, FN=9, TN=221."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-4), what is the predicted value of y when x = 11?",
-    "options": [
-      "62",
-      "84",
-      "72",
-      "70"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=11 into y = 6(11) + -4 to get 62."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 70, FP = 25, FN = 12, and TN = 286, what is the exact Precision?",
-    "options": [
-      "58.68%",
-      "58.95%",
-      "83.68%",
-      "73.68%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=70, FP=25, FN=12, TN=286."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (1), what is the predicted value of y when x = 0?",
-    "options": [
-      "1",
-      "1",
-      "11",
-      "-1"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=0 into y = 4(0) + 1 to get 1."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 7) and point B(8, 13) in a 2D space?",
-    "options": [
-      "13.50",
-      "7.90",
-      "10.00",
-      "15.00"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (0), what is the predicted value of y when x = 17?",
-    "options": [
-      "119",
-      "153",
-      "129",
-      "119"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=17 into y = 7(17) + 0 to get 119."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 132, FP = 21, FN = 31, and TN = 286, what is the exact Precision?",
-    "options": [
-      "69.02%",
-      "71.27%",
-      "96.27%",
-      "86.27%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=132, FP=21, FN=31, TN=286."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 169, FP = 36, FN = 41, and TN = 153, what is the exact Precision?",
-    "options": [
-      "65.95%",
-      "92.44%",
-      "67.44%",
-      "82.44%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=36, FN=41, TN=153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (1), what is the predicted value of y when x = 21?",
-    "options": [
-      "20",
-      "22",
-      "32",
-      "64"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=21 into y = 1(21) + 1 to get 22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 184, FP = 33, FN = 33, and TN = 280, what is the exact Accuracy?",
-    "options": [
-      "70.04%",
-      "72.55%",
-      "97.55%",
-      "87.55%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=184, FP=33, FN=33, TN=280."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 16) and point B(9, 19) in a 2D space?",
-    "options": [
-      "3.90",
-      "9.00",
-      "9.50",
-      "6.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 72, FP = 13, FN = 31, and TN = 123, what is the exact Precision?",
-    "options": [
-      "69.71%",
-      "84.71%",
-      "67.76%",
-      "94.71%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=72, FP=13, FN=31, TN=123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(10, 16) and point B(21, 24) in a 2D space?",
-    "options": [
-      "16.90",
-      "22.50",
-      "19.00",
-      "28.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 13) and point B(14, 20) in a 2D space?",
-    "options": [
-      "13.50",
-      "12.50",
-      "6.90",
-      "9.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 9) and point B(11, 17) in a 2D space?",
-    "options": [
-      "5.90",
-      "12.00",
-      "11.50",
-      "8.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 6) and point B(24, 6) in a 2D space?",
-    "options": [
-      "9.00",
-      "9.50",
-      "6.00",
-      "3.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 0) and point B(16, 9) in a 2D space?",
-    "options": [
-      "17.10",
-      "9.30",
-      "11.40",
-      "14.90"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 11.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 87, FP = 41, FN = 41, and TN = 279, what is the exact Recall?",
-    "options": [
-      "52.97%",
-      "77.97%",
-      "54.38%",
-      "67.97%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=87, FP=41, FN=41, TN=279."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 57, FP = 35, FN = 10, and TN = 295, what is the exact Accuracy?",
-    "options": [
-      "70.93%",
-      "98.66%",
-      "73.66%",
-      "88.66%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=57, FP=35, FN=10, TN=295."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (2), what is the predicted value of y when x = 10?",
-    "options": [
-      "102",
-      "92",
-      "78",
-      "82"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=10 into y = 8(10) + 2 to get 82."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 189, FP = 36, FN = 8, and TN = 130, what is the exact Recall?",
-    "options": [
-      "95.94%",
-      "105.94%",
-      "80.94%",
-      "76.75%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=189, FP=36, FN=8, TN=130."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 13) and point B(19, 17) in a 2D space?",
-    "options": [
-      "15.00",
-      "22.50",
-      "18.50",
-      "12.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(14, 0) and point B(6, 11) in a 2D space?",
-    "options": [
-      "19.00",
-      "28.50",
-      "16.90",
-      "22.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 126, FP = 18, FN = 19, and TN = 159, what is the exact Accuracy?",
-    "options": [
-      "70.81%",
-      "73.51%",
-      "98.51%",
-      "88.51%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=126, FP=18, FN=19, TN=159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(14, 8) and point B(19, 7) in a 2D space?",
-    "options": [
-      "9.50",
-      "9.00",
-      "6.00",
-      "3.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 160, FP = 10, FN = 11, and TN = 113, what is the exact Accuracy?",
-    "options": [
-      "102.86%",
-      "74.29%",
-      "92.86%",
-      "77.86%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=160, FP=10, FN=11, TN=113."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 55, FP = 7, FN = 35, and TN = 103, what is the exact Accuracy?",
-    "options": [
-      "79.00%",
-      "89.00%",
-      "63.20%",
-      "64.00%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=55, FP=7, FN=35, TN=103."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 12) and point B(7, 16) in a 2D space?",
-    "options": [
-      "5.66",
-      "3.56",
-      "9.16",
-      "8.49"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 5.66."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 2) and point B(14, 7) in a 2D space?",
-    "options": [
-      "7.90",
-      "15.00",
-      "10.00",
-      "13.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 24?",
-    "options": [
-      "214",
-      "266",
-      "228",
-      "218"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=24 into y = 9(24) + 2 to get 218."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(11, 11) and point B(5, 7) in a 2D space?",
-    "options": [
-      "10.82",
-      "5.11",
-      "10.71",
-      "7.21"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 7.21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 112, FP = 25, FN = 42, and TN = 290, what is the exact Precision?",
-    "options": [
-      "91.75%",
-      "65.40%",
-      "81.75%",
-      "66.75%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=112, FP=25, FN=42, TN=290."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 12) and point B(16, 9) in a 2D space?",
-    "options": [
-      "6.36",
-      "4.24",
-      "2.14",
-      "7.74"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 4.24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 103, FP = 22, FN = 15, and TN = 166, what is the exact Accuracy?",
-    "options": [
-      "97.91%",
-      "72.91%",
-      "87.91%",
-      "70.33%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=103, FP=22, FN=15, TN=166."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 7?",
-    "options": [
-      "63",
-      "45",
-      "53",
-      "67"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=7 into y = 7(7) + 4 to get 53."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-1), what is the predicted value of y when x = 24?",
-    "options": [
-      "97",
-      "143",
-      "105",
-      "95"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=24 into y = 4(24) + -1 to get 95."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 15) and point B(8, 6) in a 2D space?",
-    "options": [
-      "30.00",
-      "17.90",
-      "20.00",
-      "23.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 15?",
-    "options": [
-      "158",
-      "152",
-      "178",
-      "148"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=15 into y = 10(15) + -2 to get 148."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 167, FP = 19, FN = 19, and TN = 206, what is the exact Accuracy?",
-    "options": [
-      "90.75%",
-      "100.75%",
-      "72.60%",
-      "75.75%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=167, FP=19, FN=19, TN=206."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 2) and point B(12, 14) in a 2D space?",
-    "options": [
-      "17.39",
-      "20.84",
-      "13.89",
-      "11.79"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 13.89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 1) and point B(11, 16) in a 2D space?",
-    "options": [
-      "23.50",
-      "30.00",
-      "17.90",
-      "20.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 14?",
-    "options": [
-      "128",
-      "118",
-      "146",
-      "106"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=14 into y = 8(14) + 6 to get 118."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 3) and point B(14, 11) in a 2D space?",
-    "options": [
-      "8.00",
-      "5.90",
-      "12.00",
-      "11.50"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (8), what is the predicted value of y when x = 13?",
-    "options": [
-      "148",
-      "122",
-      "164",
-      "138"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=13 into y = 10(13) + 8 to get 138."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (2), what is the predicted value of y when x = 24?",
-    "options": [
-      "170",
-      "218",
-      "166",
-      "180"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=24 into y = 7(24) + 2 to get 170."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 22?",
-    "options": [
-      "212",
-      "202",
-      "246",
-      "194"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=22 into y = 9(22) + 4 to get 202."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 15) and point B(21, 20) in a 2D space?",
-    "options": [
-      "34.50",
-      "23.00",
-      "26.50",
-      "20.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 168, FP = 29, FN = 17, and TN = 158, what is the exact Precision?",
-    "options": [
-      "95.28%",
-      "68.22%",
-      "70.28%",
-      "85.28%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=168, FP=29, FN=17, TN=158."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 17) and point B(18, 23) in a 2D space?",
-    "options": [
-      "9.12",
-      "6.08",
-      "3.98",
-      "9.58"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (0), what is the predicted value of y when x = 14?",
-    "options": [
-      "98",
-      "98",
-      "108",
-      "126"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=14 into y = 7(14) + 0 to get 98."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 146, FP = 40, FN = 28, and TN = 112, what is the exact Accuracy?",
-    "options": [
-      "89.14%",
-      "63.31%",
-      "79.14%",
-      "64.14%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=146, FP=40, FN=28, TN=112."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 7) and point B(18, 5) in a 2D space?",
-    "options": [
-      "15.13",
-      "13.03",
-      "22.70",
-      "18.63"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 15.13."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-1), what is the predicted value of y when x = 9?",
-    "options": [
-      "99",
-      "89",
-      "91",
-      "107"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=9 into y = 10(9) + -1 to get 89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 6) and point B(17, 8) in a 2D space?",
-    "options": [
-      "2.24",
-      "3.35",
-      "0.14",
-      "5.74"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 2.24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 5) and point B(21, 17) in a 2D space?",
-    "options": [
-      "18.55",
-      "15.87",
-      "10.27",
-      "12.37"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 12.37."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-1), what is the predicted value of y when x = 14?",
-    "options": [
-      "125",
-      "107",
-      "99",
-      "97"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=14 into y = 7(14) + -1 to get 97."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 7) and point B(13, 18) in a 2D space?",
-    "options": [
-      "17.03",
-      "14.93",
-      "25.54",
-      "20.53"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 17.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (1), what is the predicted value of y when x = 28?",
-    "options": [
-      "167",
-      "169",
-      "179",
-      "225"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=28 into y = 6(28) + 1 to get 169."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (8), what is the predicted value of y when x = 10?",
-    "options": [
-      "12",
-      "48",
-      "38",
-      "28"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=10 into y = 2(10) + 8 to get 28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 4) and point B(14, 5) in a 2D space?",
-    "options": [
-      "13.55",
-      "15.07",
-      "7.95",
-      "10.05"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 10.05."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-1), what is the predicted value of y when x = 1?",
-    "options": [
-      "9",
-      "9",
-      "7",
-      "17"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=1 into y = 8(1) + -1 to get 7."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-1), what is the predicted value of y when x = 8?",
-    "options": [
-      "49",
-      "63",
-      "47",
-      "57"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=8 into y = 6(8) + -1 to get 47."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (2), what is the predicted value of y when x = 12?",
-    "options": [
-      "96",
-      "86",
-      "82",
-      "110"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=12 into y = 7(12) + 2 to get 86."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(2, 2) and point B(10, 5) in a 2D space?",
-    "options": [
-      "8.90",
-      "16.50",
-      "14.50",
-      "11.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 11) and point B(6, 16) in a 2D space?",
-    "options": [
-      "8.89",
-      "8.08",
-      "5.39",
-      "3.29"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 5.39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (3), what is the predicted value of y when x = 15?",
-    "options": [
-      "78",
-      "58",
-      "48",
-      "42"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=15 into y = 3(15) + 3 to get 48."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 69, FP = 42, FN = 34, and TN = 250, what is the exact Accuracy?",
-    "options": [
-      "80.76%",
-      "64.61%",
-      "65.76%",
-      "90.76%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=69, FP=42, FN=34, TN=250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (8), what is the predicted value of y when x = 16?",
-    "options": [
-      "130",
-      "152",
-      "104",
-      "120"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=16 into y = 7(16) + 8 to get 120."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (8), what is the predicted value of y when x = 20?",
-    "options": [
-      "92",
-      "148",
-      "118",
-      "108"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=20 into y = 5(20) + 8 to get 108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(1, 17) and point B(19, 5) in a 2D space?",
-    "options": [
-      "25.13",
-      "21.63",
-      "32.45",
-      "19.53"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 21.63."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 167, FP = 33, FN = 8, and TN = 246, what is the exact Recall?",
-    "options": [
-      "80.43%",
-      "95.43%",
-      "105.43%",
-      "76.34%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=167, FP=33, FN=8, TN=246."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 5) and point B(23, 8) in a 2D space?",
-    "options": [
-      "17.50",
-      "11.90",
-      "14.00",
-      "21.00"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (4), what is the predicted value of y when x = 25?",
-    "options": [
-      "204",
-      "154",
-      "146",
-      "164"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=25 into y = 6(25) + 4 to get 154."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 17) and point B(8, 8) in a 2D space?",
-    "options": [
-      "10.30",
-      "8.20",
-      "13.80",
-      "15.44"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 10.30."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 72, FP = 28, FN = 13, and TN = 187, what is the exact Accuracy?",
-    "options": [
-      "69.07%",
-      "71.33%",
-      "96.33%",
-      "86.33%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=72, FP=28, FN=13, TN=187."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 9) and point B(12, 9) in a 2D space?",
-    "options": [
-      "5.00",
-      "8.50",
-      "2.90",
-      "7.50"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 144, FP = 20, FN = 42, and TN = 270, what is the exact Precision?",
-    "options": [
-      "70.24%",
-      "72.80%",
-      "97.80%",
-      "87.80%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=144, FP=20, FN=42, TN=270."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (6), what is the predicted value of y when x = 22?",
-    "options": [
-      "72",
-      "116",
-      "60",
-      "82"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=22 into y = 3(22) + 6 to get 72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (5), what is the predicted value of y when x = 29?",
-    "options": [
-      "237",
-      "227",
-      "295",
-      "247"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=29 into y = 8(29) + 5 to get 237."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (1), what is the predicted value of y when x = 10?",
-    "options": [
-      "89",
-      "91",
-      "101",
-      "111"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=10 into y = 9(10) + 1 to get 91."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 122, FP = 12, FN = 21, and TN = 108, what is the exact Accuracy?",
-    "options": [
-      "97.45%",
-      "69.96%",
-      "87.45%",
-      "72.45%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=122, FP=12, FN=21, TN=108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (6), what is the predicted value of y when x = 2?",
-    "options": [
-      "14",
-      "2",
-      "18",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=2 into y = 4(2) + 6 to get 14."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-4), what is the predicted value of y when x = 24?",
-    "options": [
-      "20",
-      "68",
-      "28",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=24 into y = 1(24) + -4 to get 20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 19) and point B(18, 7) in a 2D space?",
-    "options": [
-      "19.50",
-      "13.00",
-      "16.50",
-      "10.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (5), what is the predicted value of y when x = 8?",
-    "options": [
-      "87",
-      "77",
-      "67",
-      "93"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=8 into y = 9(8) + 5 to get 77."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (2), what is the predicted value of y when x = 17?",
-    "options": [
-      "15",
-      "53",
-      "29",
-      "19"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=17 into y = 1(17) + 2 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 0?",
-    "options": [
-      "-4",
-      "14",
-      "4",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=0 into y = 9(0) + 4 to get 4."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-2), what is the predicted value of y when x = 18?",
-    "options": [
-      "160",
-      "164",
-      "196",
-      "170"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=18 into y = 9(18) + -2 to get 160."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (2), what is the predicted value of y when x = 19?",
-    "options": [
-      "230",
-      "188",
-      "202",
-      "192"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=19 into y = 10(19) + 2 to get 192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 68, FP = 35, FN = 20, and TN = 272, what is the exact Precision?",
-    "options": [
-      "52.82%",
-      "76.02%",
-      "51.02%",
-      "66.02%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=68, FP=35, FN=20, TN=272."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 17) and point B(14, 6) in a 2D space?",
-    "options": [
-      "22.50",
-      "15.00",
-      "18.50",
-      "12.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 14) and point B(6, 5) in a 2D space?",
-    "options": [
-      "23.72",
-      "15.81",
-      "13.71",
-      "19.31"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 15.81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 32, FN = 37, and TN = 255, what is the exact Recall?",
-    "options": [
-      "82.99%",
-      "58.39%",
-      "72.99%",
-      "57.99%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=100, FP=32, FN=37, TN=255."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 1) and point B(12, 17) in a 2D space?",
-    "options": [
-      "17.09",
-      "14.99",
-      "20.59",
-      "25.63"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 17.09."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 77, FP = 34, FN = 13, and TN = 231, what is the exact Recall?",
-    "options": [
-      "95.56%",
-      "68.44%",
-      "85.56%",
-      "70.56%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=77, FP=34, FN=13, TN=231."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 25?",
-    "options": [
-      "246",
-      "264",
-      "304",
-      "254"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=25 into y = 10(25) + 4 to get 254."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 101, FP = 23, FN = 29, and TN = 166, what is the exact Recall?",
-    "options": [
-      "62.69%",
-      "77.69%",
-      "62.15%",
-      "87.69%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=101, FP=23, FN=29, TN=166."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 182, FP = 41, FN = 6, and TN = 195, what is the exact Recall?",
-    "options": [
-      "106.81%",
-      "77.45%",
-      "96.81%",
-      "81.81%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=182, FP=41, FN=6, TN=195."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-4), what is the predicted value of y when x = 24?",
-    "options": [
-      "100",
-      "92",
-      "102",
-      "140"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=24 into y = 4(24) + -4 to get 92."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 10) and point B(13, 6) in a 2D space?",
-    "options": [
-      "14.77",
-      "13.35",
-      "7.75",
-      "9.85"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 9) and point B(24, 9) in a 2D space?",
-    "options": [
-      "20.00",
-      "23.50",
-      "30.00",
-      "17.90"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 18) and point B(19, 8) in a 2D space?",
-    "options": [
-      "37.50",
-      "25.00",
-      "22.90",
-      "28.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 196, FP = 42, FN = 33, and TN = 138, what is the exact Accuracy?",
-    "options": [
-      "65.33%",
-      "81.66%",
-      "91.66%",
-      "66.66%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=196, FP=42, FN=33, TN=138."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 13) and point B(5, 13) in a 2D space?",
-    "options": [
-      "6.50",
-      "0.90",
-      "4.50",
-      "3.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 9) and point B(17, 24) in a 2D space?",
-    "options": [
-      "14.90",
-      "25.50",
-      "20.50",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (6), what is the predicted value of y when x = 5?",
-    "options": [
-      "66",
-      "56",
-      "66",
-      "44"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=5 into y = 10(5) + 6 to get 56."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 165, FP = 42, FN = 13, and TN = 229, what is the exact Precision?",
-    "options": [
-      "79.71%",
-      "63.77%",
-      "64.71%",
-      "89.71%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=165, FP=42, FN=13, TN=229."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 185, FP = 15, FN = 20, and TN = 202, what is the exact Recall?",
-    "options": [
-      "75.24%",
-      "90.24%",
-      "100.24%",
-      "72.20%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=185, FP=15, FN=20, TN=202."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 199, FP = 30, FN = 40, and TN = 102, what is the exact Precision?",
-    "options": [
-      "69.52%",
-      "96.90%",
-      "86.90%",
-      "71.90%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=199, FP=30, FN=40, TN=102."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 7?",
-    "options": [
-      "29",
-      "19",
-      "33",
-      "9"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=7 into y = 2(7) + 5 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 20?",
-    "options": [
-      "247",
-      "207",
-      "193",
-      "217"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=20 into y = 10(20) + 7 to get 207."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 110, FP = 8, FN = 30, and TN = 281, what is the exact Accuracy?",
-    "options": [
-      "101.14%",
-      "76.14%",
-      "72.91%",
-      "91.14%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=110, FP=8, FN=30, TN=281."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 136, FP = 22, FN = 35, and TN = 178, what is the exact Recall?",
-    "options": [
-      "79.53%",
-      "64.53%",
-      "63.63%",
-      "89.53%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=136, FP=22, FN=35, TN=178."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 71, FP = 37, FN = 6, and TN = 129, what is the exact Recall?",
-    "options": [
-      "73.77%",
-      "77.21%",
-      "102.21%",
-      "92.21%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=71, FP=37, FN=6, TN=129."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 4) and point B(5, 22) in a 2D space?",
-    "options": [
-      "26.90",
-      "43.50",
-      "32.50",
-      "29.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 29.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 102, FP = 10, FN = 27, and TN = 289, what is the exact Recall?",
-    "options": [
-      "64.07%",
-      "79.07%",
-      "63.26%",
-      "89.07%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=102, FP=10, FN=27, TN=289."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 149, FP = 39, FN = 43, and TN = 188, what is the exact Accuracy?",
-    "options": [
-      "90.43%",
-      "65.43%",
-      "80.43%",
-      "64.34%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=149, FP=39, FN=43, TN=188."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 56, FP = 13, FN = 20, and TN = 194, what is the exact Precision?",
-    "options": [
-      "81.16%",
-      "91.16%",
-      "66.16%",
-      "64.93%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=56, FP=13, FN=20, TN=194."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 12) and point B(17, 10) in a 2D space?",
-    "options": [
-      "24.00",
-      "16.00",
-      "19.50",
-      "13.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 129, FP = 44, FN = 5, and TN = 278, what is the exact Recall?",
-    "options": [
-      "81.27%",
-      "96.27%",
-      "106.27%",
-      "77.01%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=129, FP=44, FN=5, TN=278."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (5), what is the predicted value of y when x = 2?",
-    "options": [
-      "11",
-      "15",
-      "1",
-      "21"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=2 into y = 3(2) + 5 to get 11."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 145, FP = 34, FN = 32, and TN = 101, what is the exact Precision?",
-    "options": [
-      "81.01%",
-      "64.80%",
-      "91.01%",
-      "66.01%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=145, FP=34, FN=32, TN=101."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 11) and point B(20, 16) in a 2D space?",
-    "options": [
-      "9.08",
-      "11.18",
-      "14.68",
-      "16.77"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 11.18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 178, FP = 36, FN = 32, and TN = 281, what is the exact Recall?",
-    "options": [
-      "94.76%",
-      "67.81%",
-      "69.76%",
-      "84.76%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=178, FP=36, FN=32, TN=281."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-2), what is the predicted value of y when x = 11?",
-    "options": [
-      "79",
-      "75",
-      "97",
-      "85"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=11 into y = 7(11) + -2 to get 75."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (9), what is the predicted value of y when x = 16?",
-    "options": [
-      "163",
-      "135",
-      "185",
-      "153"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=16 into y = 9(16) + 9 to get 153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (9), what is the predicted value of y when x = 19?",
-    "options": [
-      "237",
-      "181",
-      "199",
-      "209"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=19 into y = 10(19) + 9 to get 199."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 59, FP = 7, FN = 26, and TN = 153, what is the exact Precision?",
-    "options": [
-      "99.39%",
-      "74.39%",
-      "71.52%",
-      "89.39%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=59, FP=7, FN=26, TN=153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 29?",
-    "options": [
-      "263",
-      "321",
-      "273",
-      "259"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=29 into y = 9(29) + 2 to get 263."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 50, FP = 35, FN = 9, and TN = 127, what is the exact Accuracy?",
-    "options": [
-      "90.09%",
-      "64.07%",
-      "80.09%",
-      "65.09%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=50, FP=35, FN=9, TN=127."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 187, FP = 11, FN = 13, and TN = 231, what is the exact Precision?",
-    "options": [
-      "75.56%",
-      "79.44%",
-      "104.44%",
-      "94.44%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=187, FP=11, FN=13, TN=231."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (1), what is the predicted value of y when x = 2?",
-    "options": [
-      "25",
-      "13",
-      "19",
-      "15"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=2 into y = 7(2) + 1 to get 15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 4) and point B(17, 16) in a 2D space?",
-    "options": [
-      "17.11",
-      "22.71",
-      "19.21",
-      "28.81"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 19.21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 11) and point B(9, 13) in a 2D space?",
-    "options": [
-      "5.50",
-      "2.00",
-      "3.00",
-      "0.10"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 2.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 17) and point B(11, 10) in a 2D space?",
-    "options": [
-      "14.50",
-      "11.00",
-      "8.90",
-      "16.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 148, FP = 42, FN = 27, and TN = 283, what is the exact Accuracy?",
-    "options": [
-      "71.20%",
-      "96.20%",
-      "68.96%",
-      "86.20%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=148, FP=42, FN=27, TN=283."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (3), what is the predicted value of y when x = 8?",
-    "options": [
-      "75",
-      "85",
-      "91",
-      "69"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=8 into y = 9(8) + 3 to get 75."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 80, FP = 13, FN = 10, and TN = 121, what is the exact Recall?",
-    "options": [
-      "73.89%",
-      "71.11%",
-      "88.89%",
-      "98.89%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=80, FP=13, FN=10, TN=121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (7), what is the predicted value of y when x = 26?",
-    "options": [
-      "215",
-      "163",
-      "173",
-      "149"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 6(26) + 7 to get 163."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-4), what is the predicted value of y when x = 27?",
-    "options": [
-      "249",
-      "293",
-      "239",
-      "247"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=27 into y = 9(27) + -4 to get 239."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(14, 5) and point B(7, 14) in a 2D space?",
-    "options": [
-      "16.00",
-      "24.00",
-      "19.50",
-      "13.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 147, FP = 28, FN = 15, and TN = 160, what is the exact Accuracy?",
-    "options": [
-      "72.71%",
-      "70.17%",
-      "87.71%",
-      "97.71%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=147, FP=28, FN=15, TN=160."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 7) and point B(23, 6) in a 2D space?",
-    "options": [
-      "23.50",
-      "30.00",
-      "17.90",
-      "20.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 17) and point B(23, 10) in a 2D space?",
-    "options": [
-      "15.90",
-      "18.00",
-      "27.00",
-      "21.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 18.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 29?",
-    "options": [
-      "292",
-      "298",
-      "288",
-      "346"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=29 into y = 10(29) + -2 to get 288."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 0) and point B(12, 20) in a 2D space?",
-    "options": [
-      "18.12",
-      "23.72",
-      "30.34",
-      "20.22"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 20.22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 7) and point B(9, 14) in a 2D space?",
-    "options": [
-      "5.96",
-      "11.56",
-      "8.06",
-      "12.09"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 8.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 6) and point B(6, 23) in a 2D space?",
-    "options": [
-      "20.62",
-      "15.02",
-      "17.12",
-      "25.68"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(9, 7) and point B(13, 11) in a 2D space?",
-    "options": [
-      "12.00",
-      "5.90",
-      "8.00",
-      "11.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 22?",
-    "options": [
-      "28",
-      "16",
-      "72",
-      "38"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=22 into y = 1(22) + 6 to get 28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (5), what is the predicted value of y when x = 21?",
-    "options": [
-      "89",
-      "131",
-      "79",
-      "99"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=21 into y = 4(21) + 5 to get 89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (1), what is the predicted value of y when x = 17?",
-    "options": [
-      "67",
-      "79",
-      "69",
-      "103"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=17 into y = 4(17) + 1 to get 69."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-1), what is the predicted value of y when x = 21?",
-    "options": [
-      "41",
-      "43",
-      "83",
-      "51"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=21 into y = 2(21) + -1 to get 41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-2), what is the predicted value of y when x = 18?",
-    "options": [
-      "52",
-      "88",
-      "56",
-      "62"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=18 into y = 3(18) + -2 to get 52."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 87, FP = 36, FN = 41, and TN = 153, what is the exact Accuracy?",
-    "options": [
-      "60.57%",
-      "60.71%",
-      "75.71%",
-      "85.71%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=87, FP=36, FN=41, TN=153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-1), what is the predicted value of y when x = 10?",
-    "options": [
-      "39",
-      "49",
-      "31",
-      "29"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=10 into y = 3(10) + -1 to get 29."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (9), what is the predicted value of y when x = 2?",
-    "options": [
-      "23",
-      "1",
-      "19",
-      "29"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=2 into y = 5(2) + 9 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 0) and point B(9, 15) in a 2D space?",
-    "options": [
-      "18.53",
-      "12.93",
-      "15.03",
-      "22.55"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 15.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 16) and point B(14, 9) in a 2D space?",
-    "options": [
-      "25.50",
-      "17.00",
-      "20.50",
-      "14.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (1), what is the predicted value of y when x = 7?",
-    "options": [
-      "6",
-      "22",
-      "18",
-      "8"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=7 into y = 1(7) + 1 to get 8."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 5) and point B(5, 6) in a 2D space?",
-    "options": [
-      "11.05",
-      "8.95",
-      "16.57",
-      "14.55"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 11.05."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 2) and point B(11, 13) in a 2D space?",
-    "options": [
-      "14.90",
-      "11.40",
-      "17.10",
-      "9.30"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 11.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (0), what is the predicted value of y when x = 1?",
-    "options": [
-      "3",
-      "3",
-      "13",
-      "5"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=1 into y = 3(1) + 0 to get 3."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 0) and point B(21, 8) in a 2D space?",
-    "options": [
-      "25.00",
-      "37.50",
-      "22.90",
-      "28.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 135, FP = 36, FN = 43, and TN = 282, what is the exact Recall?",
-    "options": [
-      "85.84%",
-      "60.67%",
-      "75.84%",
-      "60.84%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=135, FP=36, FN=43, TN=282."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 13) and point B(20, 7) in a 2D space?",
-    "options": [
-      "9.58",
-      "6.08",
-      "9.12",
-      "3.98"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (3), what is the predicted value of y when x = 11?",
-    "options": [
-      "91",
-      "85",
-      "113",
-      "101"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=11 into y = 8(11) + 3 to get 91."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 142, FP = 18, FN = 10, and TN = 237, what is the exact Accuracy?",
-    "options": [
-      "93.12%",
-      "74.50%",
-      "103.12%",
-      "78.12%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=142, FP=18, FN=10, TN=237."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 55, FP = 9, FN = 19, and TN = 258, what is the exact Accuracy?",
-    "options": [
-      "76.79%",
-      "91.79%",
-      "101.79%",
-      "73.43%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=55, FP=9, FN=19, TN=258."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 194, FP = 42, FN = 7, and TN = 290, what is the exact Precision?",
-    "options": [
-      "67.20%",
-      "82.20%",
-      "92.20%",
-      "65.76%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=194, FP=42, FN=7, TN=290."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 26?",
-    "options": [
-      "214",
-      "224",
-      "266",
-      "202"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=26 into y = 8(26) + 6 to get 214."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 133, FP = 20, FN = 9, and TN = 235, what is the exact Accuracy?",
-    "options": [
-      "74.16%",
-      "92.70%",
-      "77.70%",
-      "102.70%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=133, FP=20, FN=9, TN=235."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 0) and point B(23, 14) in a 2D space?",
-    "options": [
-      "36.50",
-      "49.50",
-      "30.90",
-      "33.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 33.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 12) and point B(22, 18) in a 2D space?",
-    "options": [
-      "7.90",
-      "13.50",
-      "10.00",
-      "15.00"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 7) and point B(7, 8) in a 2D space?",
-    "options": [
-      "7.50",
-      "5.00",
-      "8.50",
-      "2.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 0) and point B(20, 21) in a 2D space?",
-    "options": [
-      "24.88",
-      "21.38",
-      "19.28",
-      "32.07"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 21.38."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (3), what is the predicted value of y when x = 16?",
-    "options": [
-      "99",
-      "67",
-      "77",
-      "61"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=16 into y = 4(16) + 3 to get 67."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(15, 5) and point B(24, 9) in a 2D space?",
-    "options": [
-      "13.35",
-      "14.77",
-      "9.85",
-      "7.75"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 9.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 16) and point B(18, 23) in a 2D space?",
-    "options": [
-      "18.31",
-      "15.71",
-      "10.11",
-      "12.21"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 12.21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 160, FP = 40, FN = 42, and TN = 206, what is the exact Accuracy?",
-    "options": [
-      "66.70%",
-      "65.36%",
-      "91.70%",
-      "81.70%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=160, FP=40, FN=42, TN=206."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-4), what is the predicted value of y when x = 22?",
-    "options": [
-      "136",
-      "128",
-      "138",
-      "172"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=22 into y = 6(22) + -4 to get 128."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 2) and point B(14, 22) in a 2D space?",
-    "options": [
-      "25.50",
-      "22.00",
-      "19.90",
-      "33.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 22.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (9), what is the predicted value of y when x = 3?",
-    "options": [
-      "34",
-      "30",
-      "6",
-      "24"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=3 into y = 5(3) + 9 to get 24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (5), what is the predicted value of y when x = 5?",
-    "options": [
-      "55",
-      "45",
-      "55",
-      "35"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=5 into y = 8(5) + 5 to get 45."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 25?",
-    "options": [
-      "194",
-      "206",
-      "216",
-      "256"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=25 into y = 8(25) + 6 to get 206."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 18?",
-    "options": [
-      "79",
-      "29",
-      "43",
-      "53"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=18 into y = 2(18) + 7 to get 43."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 16?",
-    "options": [
-      "109",
-      "141",
-      "115",
-      "119"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=16 into y = 7(16) + -3 to get 109."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (0), what is the predicted value of y when x = 22?",
-    "options": [
-      "198",
-      "164",
-      "154",
-      "154"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=22 into y = 7(22) + 0 to get 154."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 14) and point B(11, 9) in a 2D space?",
-    "options": [
-      "7.07",
-      "10.57",
-      "10.61",
-      "4.97"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 7.07."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 191, FP = 11, FN = 36, and TN = 106, what is the exact Precision?",
-    "options": [
-      "94.55%",
-      "75.64%",
-      "79.55%",
-      "104.55%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=191, FP=11, FN=36, TN=106."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (4), what is the predicted value of y when x = 6?",
-    "options": [
-      "32",
-      "40",
-      "52",
-      "50"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=6 into y = 6(6) + 4 to get 40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 7) and point B(14, 10) in a 2D space?",
-    "options": [
-      "0.90",
-      "3.00",
-      "4.50",
-      "6.50"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 4) and point B(22, 21) in a 2D space?",
-    "options": [
-      "19.92",
-      "22.02",
-      "25.52",
-      "33.03"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 22.02."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (5), what is the predicted value of y when x = 21?",
-    "options": [
-      "183",
-      "215",
-      "173",
-      "163"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=21 into y = 8(21) + 5 to get 173."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 0) and point B(11, 19) in a 2D space?",
-    "options": [
-      "20.90",
-      "23.00",
-      "34.50",
-      "26.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 14) and point B(22, 9) in a 2D space?",
-    "options": [
-      "15.44",
-      "10.30",
-      "8.20",
-      "13.80"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 10.30."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(2, 12) and point B(20, 19) in a 2D space?",
-    "options": [
-      "28.50",
-      "22.90",
-      "25.00",
-      "37.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 25.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 14) and point B(22, 8) in a 2D space?",
-    "options": [
-      "13.50",
-      "6.90",
-      "9.00",
-      "12.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 19, FN = 33, and TN = 287, what is the exact Precision?",
-    "options": [
-      "75.00%",
-      "100.00%",
-      "72.00%",
-      "90.00%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=171, FP=19, FN=33, TN=287."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 110, FP = 39, FN = 37, and TN = 134, what is the exact Accuracy?",
-    "options": [
-      "61.25%",
-      "61.00%",
-      "76.25%",
-      "86.25%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=110, FP=39, FN=37, TN=134."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (1), what is the predicted value of y when x = 15?",
-    "options": [
-      "151",
-      "119",
-      "131",
-      "121"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=15 into y = 8(15) + 1 to get 121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 9) and point B(17, 5) in a 2D space?",
-    "options": [
-      "6.90",
-      "12.50",
-      "9.00",
-      "13.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 6) and point B(11, 17) in a 2D space?",
-    "options": [
-      "13.00",
-      "10.90",
-      "16.50",
-      "19.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 7) and point B(19, 23) in a 2D space?",
-    "options": [
-      "25.50",
-      "20.50",
-      "17.00",
-      "14.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 0) and point B(10, 9) in a 2D space?",
-    "options": [
-      "19.50",
-      "24.00",
-      "16.00",
-      "13.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 115, FP = 23, FN = 29, and TN = 280, what is the exact Precision?",
-    "options": [
-      "68.33%",
-      "83.33%",
-      "66.67%",
-      "93.33%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=115, FP=23, FN=29, TN=280."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 168, FP = 34, FN = 9, and TN = 155, what is the exact Precision?",
-    "options": [
-      "93.17%",
-      "66.53%",
-      "68.17%",
-      "83.17%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=168, FP=34, FN=9, TN=155."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 76, FP = 39, FN = 14, and TN = 147, what is the exact Accuracy?",
-    "options": [
-      "64.64%",
-      "90.80%",
-      "65.80%",
-      "80.80%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=76, FP=39, FN=14, TN=147."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 2) and point B(18, 24) in a 2D space?",
-    "options": [
-      "35.11",
-      "26.91",
-      "21.31",
-      "23.41"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 23.41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (1), what is the predicted value of y when x = 22?",
-    "options": [
-      "23",
-      "21",
-      "67",
-      "33"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=22 into y = 1(22) + 1 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 8) and point B(11, 12) in a 2D space?",
-    "options": [
-      "6.71",
-      "4.47",
-      "2.37",
-      "7.97"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 4.47."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 50, FP = 7, FN = 24, and TN = 161, what is the exact Accuracy?",
-    "options": [
-      "87.19%",
-      "69.75%",
-      "97.19%",
-      "72.19%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=50, FP=7, FN=24, TN=161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 22?",
-    "options": [
-      "171",
-      "181",
-      "181",
-      "215"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=22 into y = 8(22) + -5 to get 171."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 190, FP = 6, FN = 20, and TN = 223, what is the exact Accuracy?",
-    "options": [
-      "79.08%",
-      "94.08%",
-      "104.08%",
-      "75.26%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=190, FP=6, FN=20, TN=223."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 0) and point B(13, 11) in a 2D space?",
-    "options": [
-      "17.71",
-      "14.21",
-      "12.11",
-      "21.32"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 14.21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 135, FP = 28, FN = 20, and TN = 121, what is the exact Precision?",
-    "options": [
-      "66.26%",
-      "67.82%",
-      "92.82%",
-      "82.82%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=135, FP=28, FN=20, TN=121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 2) and point B(18, 18) in a 2D space?",
-    "options": [
-      "22.50",
-      "19.00",
-      "28.50",
-      "16.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (8), what is the predicted value of y when x = 7?",
-    "options": [
-      "46",
-      "36",
-      "50",
-      "20"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=7 into y = 4(7) + 8 to get 36."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 154, FP = 44, FN = 40, and TN = 213, what is the exact Precision?",
-    "options": [
-      "62.78%",
-      "62.22%",
-      "77.78%",
-      "87.78%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=154, FP=44, FN=40, TN=213."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(1, 5) and point B(24, 14) in a 2D space?",
-    "options": [
-      "37.05",
-      "22.60",
-      "24.70",
-      "28.20"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 24.70."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 17) and point B(6, 17) in a 2D space?",
-    "options": [
-      "15.50",
-      "12.00",
-      "9.90",
-      "18.00"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(1, 12) and point B(19, 9) in a 2D space?",
-    "options": [
-      "24.50",
-      "18.90",
-      "31.50",
-      "21.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 9) and point B(7, 8) in a 2D space?",
-    "options": [
-      "6.08",
-      "9.12",
-      "3.98",
-      "9.58"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 91, FP = 33, FN = 19, and TN = 172, what is the exact Accuracy?",
-    "options": [
-      "66.79%",
-      "68.49%",
-      "83.49%",
-      "93.49%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=91, FP=33, FN=19, TN=172."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (1), what is the predicted value of y when x = 3?",
-    "options": [
-      "20",
-      "32",
-      "28",
-      "22"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=3 into y = 7(3) + 1 to get 22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 5) and point B(17, 5) in a 2D space?",
-    "options": [
-      "18.00",
-      "9.90",
-      "12.00",
-      "15.50"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 13) and point B(10, 9) in a 2D space?",
-    "options": [
-      "6.00",
-      "7.50",
-      "4.00",
-      "1.90"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 68, FP = 32, FN = 38, and TN = 143, what is the exact Recall?",
-    "options": [
-      "74.15%",
-      "64.15%",
-      "51.32%",
-      "49.15%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=68, FP=32, FN=38, TN=143."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 11) and point B(19, 7) in a 2D space?",
-    "options": [
-      "16.90",
-      "28.50",
-      "22.50",
-      "19.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 90, FP = 13, FN = 30, and TN = 148, what is the exact Recall?",
-    "options": [
-      "60.00%",
-      "60.00%",
-      "75.00%",
-      "85.00%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=90, FP=13, FN=30, TN=148."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 8) and point B(24, 20) in a 2D space?",
-    "options": [
-      "13.42",
-      "16.92",
-      "20.12",
-      "11.32"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 13.42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (4), what is the predicted value of y when x = 5?",
-    "options": [
-      "44",
-      "34",
-      "44",
-      "26"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=5 into y = 6(5) + 4 to get 34."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 18) and point B(22, 21) in a 2D space?",
-    "options": [
-      "18.12",
-      "30.34",
-      "20.22",
-      "23.72"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 20.22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 3) and point B(7, 18) in a 2D space?",
-    "options": [
-      "15.30",
-      "13.20",
-      "18.80",
-      "22.95"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 15.30."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 7) and point B(14, 16) in a 2D space?",
-    "options": [
-      "13.58",
-      "12.56",
-      "6.96",
-      "9.06"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 119, FP = 18, FN = 8, and TN = 123, what is the exact Accuracy?",
-    "options": [
-      "75.30%",
-      "72.24%",
-      "100.30%",
-      "90.30%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=119, FP=18, FN=8, TN=123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 41, FN = 36, and TN = 142, what is the exact Recall?",
-    "options": [
-      "62.00%",
-      "62.50%",
-      "87.50%",
-      "77.50%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=124, FP=41, FN=36, TN=142."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (9), what is the predicted value of y when x = 14?",
-    "options": [
-      "23",
-      "33",
-      "51",
-      "5"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=14 into y = 1(14) + 9 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 18) and point B(17, 24) in a 2D space?",
-    "options": [
-      "5.90",
-      "8.00",
-      "11.50",
-      "12.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 5) and point B(8, 9) in a 2D space?",
-    "options": [
-      "14.00",
-      "21.00",
-      "11.90",
-      "17.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 14) and point B(10, 19) in a 2D space?",
-    "options": [
-      "4.90",
-      "10.50",
-      "7.00",
-      "10.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-3), what is the predicted value of y when x = 9?",
-    "options": [
-      "24",
-      "34",
-      "42",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=9 into y = 3(9) + -3 to get 24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 105, FP = 30, FN = 36, and TN = 271, what is the exact Precision?",
-    "options": [
-      "62.78%",
-      "62.22%",
-      "77.78%",
-      "87.78%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=105, FP=30, FN=36, TN=271."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 6) and point B(11, 15) in a 2D space?",
-    "options": [
-      "14.90",
-      "25.50",
-      "20.50",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 15) and point B(13, 17) in a 2D space?",
-    "options": [
-      "5.90",
-      "12.00",
-      "11.50",
-      "8.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(15, 5) and point B(6, 17) in a 2D space?",
-    "options": [
-      "15.00",
-      "22.50",
-      "12.90",
-      "18.50"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 0?",
-    "options": [
-      "16",
-      "6",
-      "6",
-      "-6"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=0 into y = 8(0) + 6 to get 6."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (1), what is the predicted value of y when x = 25?",
-    "options": [
-      "51",
-      "61",
-      "101",
-      "49"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=25 into y = 2(25) + 1 to get 51."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 17) and point B(17, 16) in a 2D space?",
-    "options": [
-      "0.90",
-      "6.50",
-      "3.00",
-      "4.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 1?",
-    "options": [
-      "19",
-      "11",
-      "-5",
-      "9"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=1 into y = 2(1) + 7 to get 9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 5?",
-    "options": [
-      "38",
-      "42",
-      "32",
-      "42"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=5 into y = 7(5) + -3 to get 32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-4), what is the predicted value of y when x = 22?",
-    "options": [
-      "116",
-      "106",
-      "114",
-      "150"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=22 into y = 5(22) + -4 to get 106."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (0), what is the predicted value of y when x = 23?",
-    "options": [
-      "23",
-      "69",
-      "33",
-      "23"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=23 into y = 1(23) + 0 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 128, FP = 8, FN = 42, and TN = 179, what is the exact Accuracy?",
-    "options": [
-      "95.99%",
-      "70.99%",
-      "85.99%",
-      "68.80%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=128, FP=8, FN=42, TN=179."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 86, FP = 25, FN = 8, and TN = 114, what is the exact Precision?",
-    "options": [
-      "87.48%",
-      "61.98%",
-      "62.48%",
-      "77.48%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=86, FP=25, FN=8, TN=114."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 9?",
-    "options": [
-      "92",
-      "88",
-      "98",
-      "106"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=9 into y = 10(9) + -2 to get 88."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 4) and point B(5, 6) in a 2D space?",
-    "options": [
-      "1.51",
-      "7.11",
-      "5.41",
-      "3.61"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 3.61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 145, FP = 32, FN = 23, and TN = 151, what is the exact Accuracy?",
-    "options": [
-      "69.33%",
-      "84.33%",
-      "67.46%",
-      "94.33%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=145, FP=32, FN=23, TN=151."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 11) and point B(11, 7) in a 2D space?",
-    "options": [
-      "11.56",
-      "8.06",
-      "5.96",
-      "12.09"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 8.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 61, FP = 14, FN = 25, and TN = 159, what is the exact Precision?",
-    "options": [
-      "65.07%",
-      "66.33%",
-      "81.33%",
-      "91.33%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=61, FP=14, FN=25, TN=159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 133, FP = 21, FN = 35, and TN = 165, what is the exact Precision?",
-    "options": [
-      "96.36%",
-      "86.36%",
-      "69.09%",
-      "71.36%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=133, FP=21, FN=35, TN=165."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 12) and point B(8, 13) in a 2D space?",
-    "options": [
-      "6.00",
-      "1.90",
-      "7.50",
-      "4.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 7) and point B(18, 9) in a 2D space?",
-    "options": [
-      "21.00",
-      "11.90",
-      "17.50",
-      "14.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (4), what is the predicted value of y when x = 8?",
-    "options": [
-      "52",
-      "46",
-      "28",
-      "36"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=8 into y = 4(8) + 4 to get 36."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 9) and point B(8, 12) in a 2D space?",
-    "options": [
-      "6.66",
-      "4.74",
-      "3.16",
-      "1.06"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 3.16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 15) and point B(17, 22) in a 2D space?",
-    "options": [
-      "18.00",
-      "9.90",
-      "12.00",
-      "15.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 161, FP = 37, FN = 15, and TN = 282, what is the exact Accuracy?",
-    "options": [
-      "71.60%",
-      "89.49%",
-      "74.49%",
-      "99.49%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=161, FP=37, FN=15, TN=282."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 9?",
-    "options": [
-      "15",
-      "33",
-      "25",
-      "3"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=9 into y = 1(9) + 6 to get 15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 3?",
-    "options": [
-      "35",
-      "39",
-      "29",
-      "25"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=3 into y = 9(3) + 2 to get 29."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 11) and point B(5, 6) in a 2D space?",
-    "options": [
-      "8.60",
-      "3.00",
-      "5.10",
-      "7.65"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 5.10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 17?",
-    "options": [
-      "29",
-      "39",
-      "49",
-      "73"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=17 into y = 2(17) + 5 to get 39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 199, FP = 26, FN = 17, and TN = 161, what is the exact Accuracy?",
-    "options": [
-      "89.33%",
-      "99.33%",
-      "71.46%",
-      "74.33%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=199, FP=26, FN=17, TN=161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 18?",
-    "options": [
-      "126",
-      "90",
-      "100",
-      "90"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=18 into y = 5(18) + 0 to get 90."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (8), what is the predicted value of y when x = 17?",
-    "options": [
-      "52",
-      "26",
-      "42",
-      "76"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=17 into y = 2(17) + 8 to get 42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-1), what is the predicted value of y when x = 13?",
-    "options": [
-      "74",
-      "66",
-      "64",
-      "90"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=13 into y = 5(13) + -1 to get 64."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 155, FP = 31, FN = 34, and TN = 138, what is the exact Accuracy?",
-    "options": [
-      "91.84%",
-      "81.84%",
-      "66.84%",
-      "65.47%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=155, FP=31, FN=34, TN=138."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 108, FP = 8, FN = 33, and TN = 265, what is the exact Recall?",
-    "options": [
-      "61.28%",
-      "76.60%",
-      "61.60%",
-      "86.60%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=108, FP=8, FN=33, TN=265."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (6), what is the predicted value of y when x = 21?",
-    "options": [
-      "195",
-      "163",
-      "153",
-      "141"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=21 into y = 7(21) + 6 to get 153."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(11, 5) and point B(24, 6) in a 2D space?",
-    "options": [
-      "19.56",
-      "13.04",
-      "10.94",
-      "16.54"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 13.04."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 118, FP = 35, FN = 33, and TN = 158, what is the exact Accuracy?",
-    "options": [
-      "65.23%",
-      "80.23%",
-      "64.19%",
-      "90.23%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=35, FN=33, TN=158."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(5, 19) and point B(16, 8) in a 2D space?",
-    "options": [
-      "25.50",
-      "22.00",
-      "33.00",
-      "19.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 22.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 199, FP = 26, FN = 14, and TN = 131, what is the exact Recall?",
-    "options": [
-      "78.43%",
-      "103.43%",
-      "74.74%",
-      "93.43%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=199, FP=26, FN=14, TN=131."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(1, 9) and point B(15, 17) in a 2D space?",
-    "options": [
-      "19.90",
-      "33.00",
-      "22.00",
-      "25.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 22.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 16) and point B(21, 22) in a 2D space?",
-    "options": [
-      "12.50",
-      "9.00",
-      "13.50",
-      "6.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (3), what is the predicted value of y when x = 5?",
-    "options": [
-      "17",
-      "33",
-      "33",
-      "23"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=5 into y = 4(5) + 3 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (4), what is the predicted value of y when x = 21?",
-    "options": [
-      "109",
-      "77",
-      "67",
-      "59"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=21 into y = 3(21) + 4 to get 67."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 10?",
-    "options": [
-      "51",
-      "71",
-      "61",
-      "49"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=10 into y = 5(10) + 1 to get 51."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 11) and point B(13, 22) in a 2D space?",
-    "options": [
-      "25.54",
-      "17.03",
-      "14.93",
-      "20.53"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 17.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 195, FP = 7, FN = 13, and TN = 137, what is the exact Precision?",
-    "options": [
-      "77.23%",
-      "81.53%",
-      "106.53%",
-      "96.53%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=195, FP=7, FN=13, TN=137."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (9), what is the predicted value of y when x = 1?",
-    "options": [
-      "23",
-      "15",
-      "13",
-      "-5"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=1 into y = 4(1) + 9 to get 13."
-  },
-  {
-    "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 181, FP = 39, FN = 33, and TN = 284, what is the exact Recall?",
+    "question": "Given a classification report with TP = 62, FP = 28, FN = 7, and TN = 130, what is the exact Accuracy?",
     "options": [
-      "67.66%",
-      "69.58%",
       "84.58%",
-      "94.58%"
+      "69.58%",
+      "94.58%",
+      "67.67%"
     ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=181, FP=39, FN=33, TN=284."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 153, FP = 44, FN = 29, and TN = 177, what is the exact Recall?",
-    "options": [
-      "84.07%",
-      "67.25%",
-      "94.07%",
-      "69.07%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=153, FP=44, FN=29, TN=177."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (9), what is the predicted value of y when x = 6?",
-    "options": [
-      "15",
-      "33",
-      "45",
-      "43"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=6 into y = 4(6) + 9 to get 33."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 64, FP = 5, FN = 33, and TN = 102, what is the exact Accuracy?",
-    "options": [
-      "81.37%",
-      "91.37%",
-      "66.37%",
-      "65.10%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=64, FP=5, FN=33, TN=102."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-1), what is the predicted value of y when x = 15?",
-    "options": [
-      "14",
-      "16",
-      "24",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=15 into y = 1(15) + -1 to get 14."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-3), what is the predicted value of y when x = 28?",
-    "options": [
-      "109",
-      "53",
-      "63",
-      "59"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=28 into y = 2(28) + -3 to get 53."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 18) and point B(6, 6) in a 2D space?",
-    "options": [
-      "18.90",
-      "24.50",
-      "31.50",
-      "21.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 62, FP = 36, FN = 36, and TN = 259, what is the exact Precision?",
-    "options": [
-      "73.27%",
-      "63.27%",
-      "48.27%",
-      "50.61%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=62, FP=36, FN=36, TN=259."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 183, FP = 35, FN = 21, and TN = 223, what is the exact Accuracy?",
-    "options": [
-      "87.88%",
-      "70.30%",
-      "97.88%",
-      "72.88%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=183, FP=35, FN=21, TN=223."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 109, FP = 35, FN = 43, and TN = 193, what is the exact Recall?",
-    "options": [
-      "71.71%",
-      "56.71%",
-      "81.71%",
-      "57.37%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=109, FP=35, FN=43, TN=193."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 18) and point B(10, 21) in a 2D space?",
-    "options": [
-      "6.36",
-      "4.24",
-      "2.14",
-      "7.74"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 4.24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 4?",
-    "options": [
-      "3",
-      "21",
-      "23",
-      "13"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=4 into y = 2(4) + 5 to get 13."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 10) and point B(18, 9) in a 2D space?",
-    "options": [
-      "2.00",
-      "5.50",
-      "0.10",
-      "3.00"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 2.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 15) and point B(7, 7) in a 2D space?",
-    "options": [
-      "9.00",
-      "13.50",
-      "6.90",
-      "12.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (8), what is the predicted value of y when x = 9?",
-    "options": [
-      "19",
-      "53",
-      "45",
-      "35"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=9 into y = 3(9) + 8 to get 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 9?",
-    "options": [
-      "85",
-      "77",
-      "103",
-      "95"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=9 into y = 9(9) + 4 to get 85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 17) and point B(16, 16) in a 2D space?",
-    "options": [
-      "1.41",
-      "2.12",
-      "0.69",
-      "4.91"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 1.41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 5) and point B(18, 7) in a 2D space?",
-    "options": [
-      "8.89",
-      "3.29",
-      "8.08",
-      "5.39"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 5.39."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 122, FP = 15, FN = 16, and TN = 230, what is the exact Precision?",
-    "options": [
-      "74.05%",
-      "71.24%",
-      "89.05%",
-      "99.05%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=122, FP=15, FN=16, TN=230."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 162, FP = 38, FN = 34, and TN = 252, what is the exact Precision?",
-    "options": [
-      "81.00%",
-      "91.00%",
-      "64.80%",
-      "66.00%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=162, FP=38, FN=34, TN=252."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-3), what is the predicted value of y when x = 19?",
-    "options": [
-      "92",
-      "102",
-      "130",
-      "98"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=19 into y = 5(19) + -3 to get 92."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 0) and point B(5, 17) in a 2D space?",
-    "options": [
-      "17.03",
-      "14.93",
-      "25.54",
-      "20.53"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 17.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 7) and point B(19, 23) in a 2D space?",
-    "options": [
-      "23.50",
-      "17.90",
-      "30.00",
-      "20.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 20.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 112, FP = 8, FN = 9, and TN = 175, what is the exact Accuracy?",
-    "options": [
-      "75.53%",
-      "104.41%",
-      "79.41%",
-      "94.41%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=112, FP=8, FN=9, TN=175."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (3), what is the predicted value of y when x = 7?",
-    "options": [
-      "59",
-      "39",
-      "55",
-      "45"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=7 into y = 6(7) + 3 to get 45."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-1), what is the predicted value of y when x = 16?",
-    "options": [
-      "95",
-      "63",
-      "73",
-      "65"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=16 into y = 4(16) + -1 to get 63."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 18) and point B(10, 19) in a 2D space?",
-    "options": [
-      "10.50",
-      "10.50",
-      "7.00",
-      "4.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (6), what is the predicted value of y when x = 11?",
-    "options": [
-      "83",
-      "105",
-      "71",
-      "93"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=11 into y = 7(11) + 6 to get 83."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (6), what is the predicted value of y when x = 1?",
-    "options": [
-      "-3",
-      "9",
-      "19",
-      "11"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=1 into y = 3(1) + 6 to get 9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 2) and point B(20, 15) in a 2D space?",
-    "options": [
-      "11.05",
-      "19.73",
-      "16.65",
-      "13.15"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 13.15."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 12) and point B(5, 24) in a 2D space?",
-    "options": [
-      "17.50",
-      "14.00",
-      "21.00",
-      "11.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 101, FP = 28, FN = 21, and TN = 142, what is the exact Recall?",
-    "options": [
-      "66.23%",
-      "92.79%",
-      "82.79%",
-      "67.79%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=101, FP=28, FN=21, TN=142."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 0) and point B(5, 15) in a 2D space?",
-    "options": [
-      "18.90",
-      "31.50",
-      "21.00",
-      "24.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(15, 3) and point B(5, 14) in a 2D space?",
-    "options": [
-      "18.37",
-      "14.87",
-      "12.77",
-      "22.30"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 14.87."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (6), what is the predicted value of y when x = 25?",
-    "options": [
-      "131",
-      "119",
-      "141",
-      "181"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=25 into y = 5(25) + 6 to get 131."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 3) and point B(19, 20) in a 2D space?",
-    "options": [
-      "32.00",
-      "48.00",
-      "29.90",
-      "35.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 32.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 13) and point B(9, 15) in a 2D space?",
-    "options": [
-      "8.90",
-      "16.50",
-      "11.00",
-      "14.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 182, FP = 21, FN = 25, and TN = 152, what is the exact Recall?",
-    "options": [
-      "72.92%",
-      "70.34%",
-      "87.92%",
-      "97.92%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=182, FP=21, FN=25, TN=152."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 178, FP = 34, FN = 34, and TN = 115, what is the exact Accuracy?",
-    "options": [
-      "91.16%",
-      "81.16%",
-      "66.16%",
-      "64.93%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=178, FP=34, FN=34, TN=115."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 78, FP = 43, FN = 21, and TN = 259, what is the exact Precision?",
-    "options": [
-      "51.57%",
-      "74.46%",
-      "49.46%",
-      "64.46%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=78, FP=43, FN=21, TN=259."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-2), what is the predicted value of y when x = 21?",
-    "options": [
-      "71",
-      "61",
-      "103",
-      "65"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=21 into y = 3(21) + -2 to get 61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 172, FP = 36, FN = 13, and TN = 239, what is the exact Accuracy?",
-    "options": [
-      "99.35%",
-      "74.35%",
-      "89.35%",
-      "71.48%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=172, FP=36, FN=13, TN=239."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 93, FP = 38, FN = 30, and TN = 219, what is the exact Accuracy?",
-    "options": [
-      "82.11%",
-      "92.11%",
-      "65.68%",
-      "67.11%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=93, FP=38, FN=30, TN=219."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 77, FP = 7, FN = 35, and TN = 241, what is the exact Precision?",
-    "options": [
-      "76.67%",
-      "73.33%",
-      "91.67%",
-      "101.67%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=77, FP=7, FN=35, TN=241."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 5) and point B(15, 12) in a 2D space?",
-    "options": [
-      "12.90",
-      "12.10",
-      "6.50",
-      "8.60"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 8.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 71, FP = 19, FN = 15, and TN = 205, what is the exact Accuracy?",
-    "options": [
-      "74.03%",
-      "89.03%",
-      "71.23%",
-      "99.03%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=71, FP=19, FN=15, TN=205."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-3), what is the predicted value of y when x = 1?",
-    "options": [
-      "3",
-      "5",
-      "9",
-      "13"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=1 into y = 6(1) + -3 to get 3."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 6) and point B(15, 12) in a 2D space?",
-    "options": [
-      "4.22",
-      "6.32",
-      "9.82",
-      "9.49"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 6.32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 95, FP = 15, FN = 6, and TN = 231, what is the exact Precision?",
-    "options": [
-      "96.36%",
-      "86.36%",
-      "69.09%",
-      "71.36%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=95, FP=15, FN=6, TN=231."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-5), what is the predicted value of y when x = 15?",
-    "options": [
-      "55",
-      "65",
-      "85",
-      "65"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=15 into y = 4(15) + -5 to get 55."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-1), what is the predicted value of y when x = 21?",
-    "options": [
-      "104",
-      "146",
-      "114",
-      "106"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=21 into y = 5(21) + -1 to get 104."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 114, FP = 11, FN = 28, and TN = 126, what is the exact Recall?",
-    "options": [
-      "64.23%",
-      "80.28%",
-      "90.28%",
-      "65.28%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=114, FP=11, FN=28, TN=126."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(10, 1) and point B(21, 23) in a 2D space?",
-    "options": [
-      "49.50",
-      "33.00",
-      "30.90",
-      "36.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 33.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(2, 11) and point B(21, 24) in a 2D space?",
-    "options": [
-      "48.00",
-      "29.90",
-      "32.00",
-      "35.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 32.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-3), what is the predicted value of y when x = 13?",
-    "options": [
-      "68",
-      "72",
-      "88",
-      "62"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=13 into y = 5(13) + -3 to get 62."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 1) and point B(10, 19) in a 2D space?",
-    "options": [
-      "18.25",
-      "16.15",
-      "27.37",
-      "21.75"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 3) and point B(21, 5) in a 2D space?",
-    "options": [
-      "12.37",
-      "6.15",
-      "11.75",
-      "8.25"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 8.25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 136, FP = 19, FN = 14, and TN = 240, what is the exact Precision?",
-    "options": [
-      "87.74%",
-      "70.19%",
-      "97.74%",
-      "72.74%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=136, FP=19, FN=14, TN=240."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 106, FP = 13, FN = 10, and TN = 180, what is the exact Recall?",
-    "options": [
-      "101.38%",
-      "76.38%",
-      "91.38%",
-      "73.10%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=106, FP=13, FN=10, TN=180."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 18) and point B(24, 17) in a 2D space?",
-    "options": [
-      "10.50",
-      "10.50",
-      "7.00",
-      "4.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-4), what is the predicted value of y when x = 9?",
-    "options": [
-      "23",
-      "5",
-      "15",
-      "13"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=9 into y = 1(9) + -4 to get 5."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 3) and point B(23, 24) in a 2D space?",
-    "options": [
-      "32.50",
-      "29.00",
-      "26.90",
-      "43.50"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 29.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 17) and point B(17, 22) in a 2D space?",
-    "options": [
-      "15.58",
-      "18.12",
-      "12.08",
-      "9.98"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 12.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 166, FP = 16, FN = 9, and TN = 285, what is the exact Precision?",
-    "options": [
-      "101.21%",
-      "91.21%",
-      "76.21%",
-      "72.97%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=166, FP=16, FN=9, TN=285."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (6), what is the predicted value of y when x = 20?",
-    "options": [
-      "186",
-      "156",
-      "134",
-      "146"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=20 into y = 7(20) + 6 to get 146."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (4), what is the predicted value of y when x = 3?",
-    "options": [
-      "29",
-      "25",
-      "11",
-      "19"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=3 into y = 5(3) + 4 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 111, FP = 42, FN = 28, and TN = 272, what is the exact Precision?",
-    "options": [
-      "57.55%",
-      "72.55%",
-      "82.55%",
-      "58.04%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=111, FP=42, FN=28, TN=272."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (6), what is the predicted value of y when x = 12?",
-    "options": [
-      "102",
-      "124",
-      "138",
-      "114"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=12 into y = 9(12) + 6 to get 114."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 106, FP = 23, FN = 24, and TN = 112, what is the exact Precision?",
-    "options": [
-      "67.17%",
-      "65.74%",
-      "82.17%",
-      "92.17%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=106, FP=23, FN=24, TN=112."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 95, FP = 43, FN = 26, and TN = 148, what is the exact Precision?",
-    "options": [
-      "53.84%",
-      "55.07%",
-      "68.84%",
-      "78.84%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=95, FP=43, FN=26, TN=148."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 27?",
-    "options": [
-      "146",
-      "136",
-      "190",
-      "134"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 5(27) + 1 to get 136."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (7), what is the predicted value of y when x = 3?",
-    "options": [
-      "20",
-      "40",
-      "34",
-      "44"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=3 into y = 9(3) + 7 to get 34."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 82, FP = 40, FN = 35, and TN = 284, what is the exact Precision?",
-    "options": [
-      "52.21%",
-      "77.21%",
-      "53.77%",
-      "67.21%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=82, FP=40, FN=35, TN=284."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 8, FN = 44, and TN = 103, what is the exact Recall?",
-    "options": [
-      "59.86%",
-      "84.86%",
-      "74.86%",
-      "59.89%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=131, FP=8, FN=44, TN=103."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (2), what is the predicted value of y when x = 18?",
-    "options": [
-      "66",
-      "56",
-      "52",
-      "92"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=18 into y = 3(18) + 2 to get 56."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 13) and point B(22, 22) in a 2D space?",
-    "options": [
-      "18.92",
-      "31.54",
-      "21.02",
-      "24.52"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 21.02."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (3), what is the predicted value of y when x = 17?",
-    "options": [
-      "14",
-      "30",
-      "20",
-      "54"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=17 into y = 1(17) + 3 to get 20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-5), what is the predicted value of y when x = 29?",
-    "options": [
-      "169",
-      "121",
-      "121",
-      "111"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=29 into y = 4(29) + -5 to get 111."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 14) and point B(6, 11) in a 2D space?",
-    "options": [
-      "13.50",
-      "15.00",
-      "10.00",
-      "7.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-2), what is the predicted value of y when x = 0?",
-    "options": [
-      "8",
-      "-2",
-      "2",
-      "-2"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=0 into y = 4(0) + -2 to get -2."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (0), what is the predicted value of y when x = 20?",
-    "options": [
-      "60",
-      "100",
-      "70",
-      "60"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=20 into y = 3(20) + 0 to get 60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 93, FP = 6, FN = 44, and TN = 214, what is the exact Accuracy?",
-    "options": [
-      "68.80%",
-      "85.99%",
-      "95.99%",
-      "70.99%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=93, FP=6, FN=44, TN=214."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 198, FP = 43, FN = 33, and TN = 232, what is the exact Accuracy?",
-    "options": [
-      "67.98%",
-      "84.98%",
-      "94.98%",
-      "69.98%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=198, FP=43, FN=33, TN=232."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-5), what is the predicted value of y when x = 20?",
-    "options": [
-      "235",
-      "205",
-      "205",
-      "195"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=20 into y = 10(20) + -5 to get 195."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (4), what is the predicted value of y when x = 7?",
-    "options": [
-      "28",
-      "10",
-      "18",
-      "32"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=7 into y = 2(7) + 4 to get 18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 193, FP = 31, FN = 25, and TN = 123, what is the exact Recall?",
-    "options": [
-      "98.53%",
-      "73.53%",
-      "70.83%",
-      "88.53%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=193, FP=31, FN=25, TN=123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (6), what is the predicted value of y when x = 19?",
-    "options": [
-      "70",
-      "82",
-      "120",
-      "92"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=19 into y = 4(19) + 6 to get 82."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 35, FN = 24, and TN = 285, what is the exact Precision?",
-    "options": [
-      "63.92%",
-      "63.13%",
-      "88.92%",
-      "78.92%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=131, FP=35, FN=24, TN=285."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (9), what is the predicted value of y when x = 8?",
-    "options": [
-      "57",
-      "39",
-      "67",
-      "73"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=8 into y = 6(8) + 9 to get 57."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-4), what is the predicted value of y when x = 5?",
-    "options": [
-      "41",
-      "31",
-      "41",
-      "39"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=5 into y = 7(5) + -4 to get 31."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 2) and point B(14, 17) in a 2D space?",
-    "options": [
-      "22.70",
-      "15.13",
-      "18.63",
-      "13.03"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 15.13."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 7, FN = 15, and TN = 297, what is the exact Accuracy?",
-    "options": [
-      "76.03%",
-      "105.03%",
-      "80.03%",
-      "95.03%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=124, FP=7, FN=15, TN=297."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 8) and point B(9, 24) in a 2D space?",
-    "options": [
-      "21.86",
-      "27.54",
-      "16.26",
-      "18.36"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 18.36."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 196, FP = 30, FN = 9, and TN = 175, what is the exact Recall?",
-    "options": [
-      "95.61%",
-      "105.61%",
-      "80.61%",
-      "76.49%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=196, FP=30, FN=9, TN=175."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (6), what is the predicted value of y when x = 27?",
-    "options": [
-      "183",
-      "195",
-      "249",
-      "205"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 7(27) + 6 to get 195."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 13, FN = 11, and TN = 123, what is the exact Precision?",
-    "options": [
-      "75.51%",
-      "90.51%",
-      "100.51%",
-      "72.41%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=124, FP=13, FN=11, TN=123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 19) and point B(23, 13) in a 2D space?",
-    "options": [
-      "17.50",
-      "21.00",
-      "14.00",
-      "11.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 5?",
-    "options": [
-      "28",
-      "32",
-      "38",
-      "38"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=5 into y = 6(5) + -2 to get 28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 14) and point B(7, 7) in a 2D space?",
-    "options": [
-      "13.00",
-      "19.50",
-      "10.90",
-      "16.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 10, FN = 8, and TN = 149, what is the exact Recall?",
-    "options": [
-      "76.42%",
-      "95.53%",
-      "105.53%",
-      "80.53%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=171, FP=10, FN=8, TN=149."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 14) and point B(21, 6) in a 2D space?",
-    "options": [
-      "26.00",
-      "23.90",
-      "39.00",
-      "29.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 135, FP = 41, FN = 40, and TN = 267, what is the exact Recall?",
-    "options": [
-      "62.14%",
-      "77.14%",
-      "87.14%",
-      "61.71%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=135, FP=41, FN=40, TN=267."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 73, FP = 42, FN = 44, and TN = 227, what is the exact Recall?",
-    "options": [
-      "72.39%",
-      "49.91%",
-      "47.39%",
-      "62.39%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=73, FP=42, FN=44, TN=227."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 14) and point B(14, 20) in a 2D space?",
-    "options": [
-      "5.11",
-      "10.82",
-      "10.71",
-      "7.21"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 7.21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 8) and point B(14, 13) in a 2D space?",
-    "options": [
-      "6.00",
-      "9.50",
-      "9.00",
-      "3.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 5) and point B(5, 15) in a 2D space?",
-    "options": [
-      "13.45",
-      "20.18",
-      "16.95",
-      "11.35"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 13.45."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 14) and point B(19, 24) in a 2D space?",
-    "options": [
-      "10.05",
-      "13.55",
-      "15.07",
-      "7.95"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 10.05."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-2), what is the predicted value of y when x = 15?",
-    "options": [
-      "143",
-      "137",
-      "163",
-      "133"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=15 into y = 9(15) + -2 to get 133."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 18) and point B(14, 22) in a 2D space?",
-    "options": [
-      "9.60",
-      "6.40",
-      "4.30",
-      "9.90"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 6.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 41, FN = 39, and TN = 235, what is the exact Precision?",
-    "options": [
-      "56.74%",
-      "55.92%",
-      "80.92%",
-      "70.92%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=100, FP=41, FN=39, TN=235."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-1), what is the predicted value of y when x = 24?",
-    "options": [
-      "225",
-      "263",
-      "217",
-      "215"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=24 into y = 9(24) + -1 to get 215."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 9) and point B(9, 20) in a 2D space?",
-    "options": [
-      "9.60",
-      "15.20",
-      "11.70",
-      "17.56"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 11.70."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 5?",
-    "options": [
-      "48",
-      "58",
-      "58",
-      "52"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=5 into y = 10(5) + -2 to get 48."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 6) and point B(5, 11) in a 2D space?",
-    "options": [
-      "20.89",
-      "11.83",
-      "17.43",
-      "13.93"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 13.93."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (9), what is the predicted value of y when x = 8?",
-    "options": [
-      "73",
-      "55",
-      "89",
-      "83"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=8 into y = 8(8) + 9 to get 73."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 79, FP = 38, FN = 42, and TN = 258, what is the exact Recall?",
-    "options": [
-      "65.29%",
-      "52.23%",
-      "50.29%",
-      "75.29%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=79, FP=38, FN=42, TN=258."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (8), what is the predicted value of y when x = 3?",
-    "options": [
-      "10",
-      "36",
-      "32",
-      "26"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=3 into y = 6(3) + 8 to get 26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 7) and point B(5, 24) in a 2D space?",
-    "options": [
-      "24.31",
-      "20.81",
-      "18.71",
-      "31.21"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 20.81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (7), what is the predicted value of y when x = 27?",
-    "options": [
-      "223",
-      "169",
-      "179",
-      "155"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 6(27) + 7 to get 169."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 196, FP = 33, FN = 10, and TN = 197, what is the exact Accuracy?",
-    "options": [
-      "75.14%",
-      "100.14%",
-      "72.11%",
-      "90.14%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=196, FP=33, FN=10, TN=197."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (6), what is the predicted value of y when x = 13?",
-    "options": [
-      "20",
-      "42",
-      "58",
-      "32"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=13 into y = 2(13) + 6 to get 32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (7), what is the predicted value of y when x = 19?",
-    "options": [
-      "112",
-      "140",
-      "88",
-      "102"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=19 into y = 5(19) + 7 to get 102."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (9), what is the predicted value of y when x = 16?",
-    "options": [
-      "25",
-      "35",
-      "57",
-      "7"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=16 into y = 1(16) + 9 to get 25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 153, FP = 24, FN = 37, and TN = 229, what is the exact Recall?",
-    "options": [
-      "90.53%",
-      "64.42%",
-      "65.53%",
-      "80.53%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=153, FP=24, FN=37, TN=229."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 16) and point B(8, 9) in a 2D space?",
-    "options": [
-      "25.50",
-      "14.90",
-      "20.50",
-      "17.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 197, FP = 33, FN = 16, and TN = 262, what is the exact Precision?",
-    "options": [
-      "70.65%",
-      "95.65%",
-      "68.52%",
-      "85.65%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=197, FP=33, FN=16, TN=262."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 1) and point B(9, 13) in a 2D space?",
-    "options": [
-      "13.00",
-      "10.90",
-      "16.50",
-      "19.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 69, FP = 26, FN = 19, and TN = 188, what is the exact Accuracy?",
-    "options": [
-      "70.10%",
-      "85.10%",
-      "68.08%",
-      "95.10%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=69, FP=26, FN=19, TN=188."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 14) and point B(13, 8) in a 2D space?",
-    "options": [
-      "18.00",
-      "15.50",
-      "12.00",
-      "9.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 55, FP = 26, FN = 22, and TN = 205, what is the exact Precision?",
-    "options": [
-      "77.90%",
-      "67.90%",
-      "52.90%",
-      "54.32%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=55, FP=26, FN=22, TN=205."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 11, FN = 35, and TN = 276, what is the exact Precision?",
-    "options": [
-      "72.07%",
-      "75.09%",
-      "100.09%",
-      "90.09%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=100, FP=11, FN=35, TN=276."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 22?",
-    "options": [
-      "36",
-      "70",
-      "18",
-      "26"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=22 into y = 1(22) + 4 to get 26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 15) and point B(15, 6) in a 2D space?",
-    "options": [
-      "17.10",
-      "9.30",
-      "11.40",
-      "14.90"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 11.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 83, FP = 39, FN = 15, and TN = 136, what is the exact Recall?",
-    "options": [
-      "67.76%",
-      "94.69%",
-      "84.69%",
-      "69.69%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=83, FP=39, FN=15, TN=136."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 160, FP = 11, FN = 6, and TN = 274, what is the exact Accuracy?",
-    "options": [
-      "106.23%",
-      "81.23%",
-      "96.23%",
-      "76.98%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=160, FP=11, FN=6, TN=274."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-4), what is the predicted value of y when x = 27?",
-    "options": [
-      "60",
-      "58",
-      "104",
-      "50"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=27 into y = 2(27) + -4 to get 50."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (2), what is the predicted value of y when x = 16?",
-    "options": [
-      "114",
-      "82",
-      "92",
-      "78"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=16 into y = 5(16) + 2 to get 82."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 15) and point B(18, 23) in a 2D space?",
-    "options": [
-      "18.76",
-      "15.26",
-      "13.16",
-      "22.90"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 15.26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (8), what is the predicted value of y when x = 13?",
-    "options": [
-      "57",
-      "99",
-      "73",
-      "83"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=13 into y = 5(13) + 8 to get 73."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-1), what is the predicted value of y when x = 26?",
-    "options": [
-      "87",
-      "79",
-      "77",
-      "129"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=26 into y = 3(26) + -1 to get 77."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 94, FP = 41, FN = 36, and TN = 179, what is the exact Accuracy?",
-    "options": [
-      "62.40%",
-      "88.00%",
-      "63.00%",
-      "78.00%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=94, FP=41, FN=36, TN=179."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 10) and point B(5, 17) in a 2D space?",
-    "options": [
-      "10.94",
-      "19.56",
-      "16.54",
-      "13.04"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 13.04."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (9), what is the predicted value of y when x = 29?",
-    "options": [
-      "106",
-      "154",
-      "78",
-      "96"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=29 into y = 3(29) + 9 to get 96."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 11) and point B(7, 24) in a 2D space?",
-    "options": [
-      "17.50",
-      "11.90",
-      "14.00",
-      "21.00"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 144, FP = 7, FN = 7, and TN = 170, what is the exact Recall?",
-    "options": [
-      "76.29%",
-      "95.36%",
-      "105.36%",
-      "80.36%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=144, FP=7, FN=7, TN=170."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (3), what is the predicted value of y when x = 26?",
-    "options": [
-      "101",
-      "107",
-      "117",
-      "159"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 4(26) + 3 to get 107."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 0) and point B(15, 18) in a 2D space?",
-    "options": [
-      "18.11",
-      "16.01",
-      "27.17",
-      "21.61"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.11."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (9), what is the predicted value of y when x = 1?",
-    "options": [
-      "13",
-      "-7",
-      "11",
-      "21"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=1 into y = 2(1) + 9 to get 11."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 14) and point B(9, 17) in a 2D space?",
-    "options": [
-      "12.00",
-      "8.00",
-      "11.50",
-      "5.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 164, FP = 43, FN = 8, and TN = 249, what is the exact Recall?",
-    "options": [
-      "76.28%",
-      "80.35%",
-      "105.35%",
-      "95.35%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=164, FP=43, FN=8, TN=249."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 27?",
-    "options": [
-      "214",
-      "170",
-      "164",
-      "160"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=27 into y = 6(27) + -2 to get 160."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 6) and point B(17, 24) in a 2D space?",
-    "options": [
-      "21.90",
-      "36.00",
-      "24.00",
-      "27.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 1) and point B(6, 15) in a 2D space?",
-    "options": [
-      "22.50",
-      "16.90",
-      "19.00",
-      "28.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-1), what is the predicted value of y when x = 12?",
-    "options": [
-      "81",
-      "71",
-      "73",
-      "95"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=12 into y = 6(12) + -1 to get 71."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 15) and point B(6, 24) in a 2D space?",
-    "options": [
-      "9.22",
-      "13.83",
-      "12.72",
-      "7.12"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 9.22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (4), what is the predicted value of y when x = 29?",
-    "options": [
-      "62",
-      "54",
-      "72",
-      "120"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=29 into y = 2(29) + 4 to get 62."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 2) and point B(22, 23) in a 2D space?",
-    "options": [
-      "24.19",
-      "27.69",
-      "36.28",
-      "22.09"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 24.19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 165, FP = 10, FN = 24, and TN = 284, what is the exact Precision?",
-    "options": [
-      "104.29%",
-      "79.29%",
-      "94.29%",
-      "75.43%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=165, FP=10, FN=24, TN=284."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 6) and point B(7, 5) in a 2D space?",
-    "options": [
-      "14.50",
-      "8.90",
-      "16.50",
-      "11.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-3), what is the predicted value of y when x = 1?",
-    "options": [
-      "7",
-      "9",
-      "13",
-      "17"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=1 into y = 10(1) + -3 to get 7."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 13?",
-    "options": [
-      "147",
-      "131",
-      "113",
-      "121"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=13 into y = 9(13) + 4 to get 121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 0) and point B(5, 5) in a 2D space?",
-    "options": [
-      "8.60",
-      "12.10",
-      "12.90",
-      "6.50"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(0, 2) and point B(6, 14) in a 2D space?",
-    "options": [
-      "21.50",
-      "18.00",
-      "15.90",
-      "27.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 18.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (9), what is the predicted value of y when x = 18?",
-    "options": [
-      "171",
-      "153",
-      "207",
-      "181"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=18 into y = 9(18) + 9 to get 171."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-3), what is the predicted value of y when x = 17?",
-    "options": [
-      "99",
-      "133",
-      "109",
-      "105"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=17 into y = 6(17) + -3 to get 99."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 5) and point B(20, 14) in a 2D space?",
-    "options": [
-      "9.85",
-      "13.35",
-      "14.77",
-      "7.75"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 9.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 17?",
-    "options": [
-      "59",
-      "35",
-      "9",
-      "25"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=17 into y = 1(17) + 8 to get 25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 94, FP = 29, FN = 20, and TN = 280, what is the exact Accuracy?",
-    "options": [
-      "70.73%",
-      "73.42%",
-      "98.42%",
-      "88.42%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=94, FP=29, FN=20, TN=280."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 195, FP = 21, FN = 8, and TN = 227, what is the exact Recall?",
-    "options": [
-      "96.06%",
-      "106.06%",
-      "76.85%",
-      "81.06%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=195, FP=21, FN=8, TN=227."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 53, FP = 6, FN = 24, and TN = 149, what is the exact Recall?",
-    "options": [
-      "68.83%",
-      "53.83%",
-      "78.83%",
-      "55.06%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=53, FP=6, FN=24, TN=149."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 179, FP = 19, FN = 38, and TN = 159, what is the exact Recall?",
-    "options": [
-      "65.99%",
-      "67.49%",
-      "82.49%",
-      "92.49%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=179, FP=19, FN=38, TN=159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-1), what is the predicted value of y when x = 24?",
-    "options": [
-      "95",
-      "47",
-      "57",
-      "49"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=24 into y = 2(24) + -1 to get 47."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 74, FP = 29, FN = 10, and TN = 195, what is the exact Precision?",
-    "options": [
-      "56.84%",
-      "71.84%",
-      "57.48%",
-      "81.84%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=74, FP=29, FN=10, TN=195."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 0) and point B(21, 18) in a 2D space?",
-    "options": [
-      "38.50",
-      "35.00",
-      "32.90",
-      "52.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 35.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 7) and point B(22, 12) in a 2D space?",
-    "options": [
-      "34.50",
-      "23.00",
-      "20.90",
-      "26.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-5), what is the predicted value of y when x = 28?",
-    "options": [
-      "79",
-      "23",
-      "33",
-      "33"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=28 into y = 1(28) + -5 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 83, FP = 24, FN = 21, and TN = 286, what is the exact Accuracy?",
-    "options": [
-      "71.30%",
-      "89.13%",
-      "74.13%",
-      "99.13%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=83, FP=24, FN=21, TN=286."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 44, FN = 40, and TN = 182, what is the exact Recall?",
-    "options": [
-      "76.61%",
-      "61.29%",
-      "86.61%",
-      "61.61%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=131, FP=44, FN=40, TN=182."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 0) and point B(10, 9) in a 2D space?",
-    "options": [
-      "11.90",
-      "21.00",
-      "14.00",
-      "17.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (9), what is the predicted value of y when x = 1?",
-    "options": [
-      "0",
-      "20",
-      "28",
-      "18"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=1 into y = 9(1) + 9 to get 18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (9), what is the predicted value of y when x = 14?",
-    "options": [
-      "47",
-      "37",
-      "19",
-      "65"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=14 into y = 2(14) + 9 to get 37."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 19?",
-    "options": [
-      "116",
-      "112",
-      "150",
-      "122"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=19 into y = 6(19) + -2 to get 112."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 95, FP = 27, FN = 42, and TN = 162, what is the exact Recall?",
-    "options": [
-      "79.34%",
-      "54.34%",
-      "55.47%",
-      "69.34%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=95, FP=27, FN=42, TN=162."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 29?",
-    "options": [
-      "286",
-      "304",
-      "352",
-      "294"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=29 into y = 10(29) + 4 to get 294."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 118, FP = 41, FN = 35, and TN = 201, what is the exact Accuracy?",
-    "options": [
-      "80.76%",
-      "65.76%",
-      "90.76%",
-      "64.61%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=41, FN=35, TN=201."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 81, FP = 12, FN = 42, and TN = 233, what is the exact Accuracy?",
-    "options": [
-      "95.33%",
-      "68.26%",
-      "70.33%",
-      "85.33%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=81, FP=12, FN=42, TN=233."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (8), what is the predicted value of y when x = 17?",
-    "options": [
-      "144",
-      "154",
-      "178",
-      "128"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=17 into y = 8(17) + 8 to get 144."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(9, 2) and point B(16, 21) in a 2D space?",
-    "options": [
-      "26.00",
-      "39.00",
-      "29.50",
-      "23.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 18) and point B(23, 16) in a 2D space?",
-    "options": [
-      "18.11",
-      "16.01",
-      "27.17",
-      "21.61"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 18.11."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (3), what is the predicted value of y when x = 25?",
-    "options": [
-      "22",
-      "78",
-      "38",
-      "28"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=25 into y = 1(25) + 3 to get 28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (0), what is the predicted value of y when x = 6?",
-    "options": [
-      "72",
-      "60",
-      "70",
-      "60"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=6 into y = 10(6) + 0 to get 60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 4) and point B(22, 22) in a 2D space?",
-    "options": [
-      "23.00",
-      "34.50",
-      "26.50",
-      "20.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 190, FP = 15, FN = 38, and TN = 143, what is the exact Accuracy?",
-    "options": [
-      "96.27%",
-      "69.02%",
-      "86.27%",
-      "71.27%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=190, FP=15, FN=38, TN=143."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 26?",
-    "options": [
-      "86",
-      "44",
-      "34",
-      "18"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=26 into y = 1(26) + 8 to get 34."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 54, FP = 11, FN = 34, and TN = 230, what is the exact Accuracy?",
-    "options": [
-      "71.32%",
-      "69.06%",
-      "86.32%",
-      "96.32%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=54, FP=11, FN=34, TN=230."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 69, FP = 41, FN = 13, and TN = 280, what is the exact Accuracy?",
-    "options": [
-      "69.28%",
-      "96.60%",
-      "71.60%",
-      "86.60%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=69, FP=41, FN=13, TN=280."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (5), what is the predicted value of y when x = 23?",
-    "options": [
-      "222",
-      "202",
-      "258",
-      "212"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=23 into y = 9(23) + 5 to get 212."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 5) and point B(20, 23) in a 2D space?",
-    "options": [
-      "30.41",
-      "40.36",
-      "24.81",
-      "26.91"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 26.91."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 18) and point B(14, 19) in a 2D space?",
-    "options": [
-      "7.65",
-      "8.60",
-      "5.10",
-      "3.00"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 5.10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (7), what is the predicted value of y when x = 15?",
-    "options": [
-      "112",
-      "82",
-      "68",
-      "92"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=15 into y = 5(15) + 7 to get 82."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (4), what is the predicted value of y when x = 19?",
-    "options": [
-      "137",
-      "99",
-      "91",
-      "109"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=19 into y = 5(19) + 4 to get 99."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (8), what is the predicted value of y when x = 5?",
-    "options": [
-      "68",
-      "68",
-      "58",
-      "42"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=5 into y = 10(5) + 8 to get 58."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 13) and point B(12, 8) in a 2D space?",
-    "options": [
-      "14.68",
-      "11.18",
-      "9.08",
-      "16.77"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 11.18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 10) and point B(17, 6) in a 2D space?",
-    "options": [
-      "11.50",
-      "8.00",
-      "12.00",
-      "5.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (6), what is the predicted value of y when x = 17?",
-    "options": [
-      "57",
-      "91",
-      "45",
-      "67"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=17 into y = 3(17) + 6 to get 57."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 2) and point B(19, 10) in a 2D space?",
-    "options": [
-      "12.37",
-      "6.15",
-      "8.25",
-      "11.75"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 8.25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(15, 19) and point B(7, 14) in a 2D space?",
-    "options": [
-      "14.15",
-      "7.33",
-      "9.43",
-      "12.93"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 9.43."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 41, FN = 11, and TN = 285, what is the exact Accuracy?",
-    "options": [
-      "71.33%",
-      "89.17%",
-      "74.17%",
-      "99.17%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=143, FP=41, FN=11, TN=285."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 15) and point B(11, 22) in a 2D space?",
-    "options": [
-      "10.57",
-      "7.07",
-      "4.97",
-      "10.61"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 7.07."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 13) and point B(12, 22) in a 2D space?",
-    "options": [
-      "16.22",
-      "8.72",
-      "10.82",
-      "14.32"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 10.82."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (5), what is the predicted value of y when x = 22?",
-    "options": [
-      "193",
-      "203",
-      "247",
-      "213"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=22 into y = 9(22) + 5 to get 203."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (3), what is the predicted value of y when x = 5?",
-    "options": [
-      "37",
-      "53",
-      "53",
-      "43"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=5 into y = 8(5) + 3 to get 43."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 74, FP = 24, FN = 35, and TN = 254, what is the exact Recall?",
-    "options": [
-      "52.89%",
-      "77.89%",
-      "67.89%",
-      "54.31%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=74, FP=24, FN=35, TN=254."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (3), what is the predicted value of y when x = 14?",
-    "options": [
-      "41",
-      "59",
-      "25",
-      "31"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=14 into y = 2(14) + 3 to get 31."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 19) and point B(20, 21) in a 2D space?",
-    "options": [
-      "1.90",
-      "6.00",
-      "4.00",
-      "7.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (5), what is the predicted value of y when x = 10?",
-    "options": [
-      "75",
-      "85",
-      "65",
-      "95"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=10 into y = 7(10) + 5 to get 75."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 27?",
-    "options": [
-      "240",
-      "192",
-      "186",
-      "196"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=27 into y = 7(27) + -3 to get 186."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 105, FP = 11, FN = 15, and TN = 101, what is the exact Recall?",
-    "options": [
-      "97.50%",
-      "70.00%",
-      "87.50%",
-      "72.50%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=105, FP=11, FN=15, TN=101."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 10) and point B(18, 18) in a 2D space?",
-    "options": [
-      "26.83",
-      "21.39",
-      "17.89",
-      "15.79"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 17.89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(5, 1) and point B(19, 24) in a 2D space?",
-    "options": [
-      "34.90",
-      "37.00",
-      "40.50",
-      "55.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 37.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (7), what is the predicted value of y when x = 1?",
-    "options": [
-      "14",
-      "16",
-      "0",
-      "24"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=1 into y = 7(1) + 7 to get 14."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (3), what is the predicted value of y when x = 26?",
-    "options": [
-      "247",
-      "237",
-      "289",
-      "231"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 9(26) + 3 to get 237."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(15, 11) and point B(15, 13) in a 2D space?",
-    "options": [
-      "0.10",
-      "3.00",
-      "2.00",
-      "5.50"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 2.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 16) and point B(15, 16) in a 2D space?",
-    "options": [
-      "5.90",
-      "12.00",
-      "11.50",
-      "8.00"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-4), what is the predicted value of y when x = 20?",
-    "options": [
-      "116",
-      "76",
-      "84",
-      "86"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=20 into y = 4(20) + -4 to get 76."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-1), what is the predicted value of y when x = 11?",
-    "options": [
-      "76",
-      "54",
-      "56",
-      "64"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=11 into y = 5(11) + -1 to get 54."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 102, FP = 39, FN = 11, and TN = 110, what is the exact Recall?",
-    "options": [
-      "72.21%",
-      "75.27%",
-      "90.27%",
-      "100.27%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=102, FP=39, FN=11, TN=110."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 186, FP = 10, FN = 9, and TN = 245, what is the exact Accuracy?",
-    "options": [
-      "105.78%",
-      "76.62%",
-      "95.78%",
-      "80.78%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=186, FP=10, FN=9, TN=245."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 17) and point B(13, 16) in a 2D space?",
-    "options": [
-      "10.50",
-      "4.90",
-      "7.00",
-      "10.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 5) and point B(9, 24) in a 2D space?",
-    "options": [
-      "20.90",
-      "34.50",
-      "26.50",
-      "23.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (3), what is the predicted value of y when x = 11?",
-    "options": [
-      "52",
-      "68",
-      "58",
-      "80"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=11 into y = 5(11) + 3 to get 58."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (7), what is the predicted value of y when x = 10?",
-    "options": [
-      "67",
-      "33",
-      "47",
-      "57"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=10 into y = 4(10) + 7 to get 47."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 190, FP = 41, FN = 23, and TN = 171, what is the exact Precision?",
-    "options": [
-      "67.25%",
-      "92.25%",
-      "65.80%",
-      "82.25%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=190, FP=41, FN=23, TN=171."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 10) and point B(17, 7) in a 2D space?",
-    "options": [
-      "15.66",
-      "10.44",
-      "13.94",
-      "8.34"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 10.44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 2) and point B(16, 9) in a 2D space?",
-    "options": [
-      "13.90",
-      "19.50",
-      "16.00",
-      "24.00"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 16.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 2) and point B(8, 23) in a 2D space?",
-    "options": [
-      "39.00",
-      "26.00",
-      "29.50",
-      "23.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(1, 18) and point B(17, 14) in a 2D space?",
-    "options": [
-      "24.74",
-      "19.99",
-      "14.39",
-      "16.49"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 16.49."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(1, 10) and point B(21, 6) in a 2D space?",
-    "options": [
-      "18.30",
-      "30.59",
-      "23.90",
-      "20.40"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 20.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (7), what is the predicted value of y when x = 14?",
-    "options": [
-      "133",
-      "105",
-      "115",
-      "91"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=14 into y = 7(14) + 7 to get 105."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (1), what is the predicted value of y when x = 8?",
-    "options": [
-      "49",
-      "31",
-      "43",
-      "33"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=8 into y = 4(8) + 1 to get 33."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-3), what is the predicted value of y when x = 18?",
-    "options": [
-      "147",
-      "151",
-      "141",
-      "177"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=18 into y = 8(18) + -3 to get 141."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 173, FP = 34, FN = 24, and TN = 194, what is the exact Recall?",
-    "options": [
-      "97.82%",
-      "87.82%",
-      "72.82%",
-      "70.25%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=173, FP=34, FN=24, TN=194."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(2, 1) and point B(6, 21) in a 2D space?",
-    "options": [
-      "27.50",
-      "36.00",
-      "24.00",
-      "21.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 8) and point B(14, 18) in a 2D space?",
-    "options": [
-      "15.71",
-      "10.11",
-      "18.31",
-      "12.21"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 12.21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 10?",
-    "options": [
-      "25",
-      "45",
-      "15",
-      "35"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=10 into y = 2(10) + 5 to get 25."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 7) and point B(12, 15) in a 2D space?",
-    "options": [
-      "14.50",
-      "8.90",
-      "16.50",
-      "11.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 29, FN = 16, and TN = 110, what is the exact Recall?",
-    "options": [
-      "74.94%",
-      "71.95%",
-      "89.94%",
-      "99.94%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=143, FP=29, FN=16, TN=110."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 138, FP = 20, FN = 24, and TN = 177, what is the exact Precision?",
-    "options": [
-      "87.34%",
-      "72.34%",
-      "97.34%",
-      "69.87%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=138, FP=20, FN=24, TN=177."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 4?",
-    "options": [
-      "30",
-      "28",
-      "20",
-      "20"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=4 into y = 5(4) + 0 to get 20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-5), what is the predicted value of y when x = 2?",
-    "options": [
-      "1",
-      "7",
-      "7",
-      "-3"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=2 into y = 1(2) + -5 to get -3."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-2), what is the predicted value of y when x = 11?",
-    "options": [
-      "20",
-      "24",
-      "42",
-      "30"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=11 into y = 2(11) + -2 to get 20."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 16) and point B(13, 7) in a 2D space?",
-    "options": [
-      "11.00",
-      "8.90",
-      "16.50",
-      "14.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 2) and point B(21, 20) in a 2D space?",
-    "options": [
-      "26.00",
-      "29.50",
-      "23.90",
-      "39.00"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 28?",
-    "options": [
-      "51",
-      "71",
-      "61",
-      "117"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=28 into y = 2(28) + 5 to get 61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 19) and point B(6, 16) in a 2D space?",
-    "options": [
-      "8.54",
-      "6.44",
-      "12.04",
-      "12.82"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.54."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 146, FP = 41, FN = 29, and TN = 225, what is the exact Precision?",
-    "options": [
-      "62.46%",
-      "63.07%",
-      "78.07%",
-      "88.07%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=146, FP=41, FN=29, TN=225."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 113, FP = 39, FN = 34, and TN = 127, what is the exact Precision?",
-    "options": [
-      "84.34%",
-      "59.47%",
-      "59.34%",
-      "74.34%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=113, FP=39, FN=34, TN=127."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 19) and point B(5, 13) in a 2D space?",
-    "options": [
-      "16.50",
-      "19.50",
-      "13.00",
-      "10.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 12) and point B(8, 24) in a 2D space?",
-    "options": [
-      "12.17",
-      "15.67",
-      "18.25",
-      "10.07"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 12.17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 177, FP = 12, FN = 25, and TN = 160, what is the exact Accuracy?",
-    "options": [
-      "75.11%",
-      "72.09%",
-      "100.11%",
-      "90.11%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=177, FP=12, FN=25, TN=160."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 127, FP = 26, FN = 35, and TN = 254, what is the exact Accuracy?",
-    "options": [
-      "68.96%",
-      "96.20%",
-      "71.20%",
-      "86.20%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=127, FP=26, FN=35, TN=254."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (9), what is the predicted value of y when x = 12?",
-    "options": [
-      "103",
-      "117",
-      "93",
-      "75"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=12 into y = 7(12) + 9 to get 93."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 178, FP = 5, FN = 39, and TN = 222, what is the exact Recall?",
-    "options": [
-      "82.03%",
-      "65.62%",
-      "67.03%",
-      "92.03%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=178, FP=5, FN=39, TN=222."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 70, FP = 10, FN = 18, and TN = 240, what is the exact Accuracy?",
-    "options": [
-      "101.72%",
-      "91.72%",
-      "76.72%",
-      "73.37%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=70, FP=10, FN=18, TN=240."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(11, 13) and point B(15, 6) in a 2D space?",
-    "options": [
-      "8.06",
-      "12.09",
-      "11.56",
-      "5.96"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 79, FP = 16, FN = 31, and TN = 251, what is the exact Precision?",
-    "options": [
-      "66.53%",
-      "83.16%",
-      "93.16%",
-      "68.16%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=79, FP=16, FN=31, TN=251."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 109, FP = 9, FN = 17, and TN = 133, what is the exact Precision?",
-    "options": [
-      "102.37%",
-      "77.37%",
-      "92.37%",
-      "73.90%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=109, FP=9, FN=17, TN=133."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-5), what is the predicted value of y when x = 21?",
-    "options": [
-      "184",
-      "142",
-      "152",
-      "152"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=21 into y = 7(21) + -5 to get 142."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 85, FP = 42, FN = 41, and TN = 278, what is the exact Accuracy?",
-    "options": [
-      "81.39%",
-      "91.39%",
-      "65.11%",
-      "66.39%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=85, FP=42, FN=41, TN=278."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(5, 15) and point B(8, 15) in a 2D space?",
-    "options": [
-      "6.50",
-      "0.90",
-      "3.00",
-      "4.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 187, FP = 9, FN = 14, and TN = 130, what is the exact Recall?",
-    "options": [
-      "74.43%",
-      "78.03%",
-      "103.03%",
-      "93.03%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=187, FP=9, FN=14, TN=130."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 17) and point B(8, 10) in a 2D space?",
-    "options": [
-      "10.00",
-      "13.50",
-      "7.90",
-      "15.00"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 12) and point B(18, 16) in a 2D space?",
-    "options": [
-      "2.02",
-      "4.12",
-      "7.62",
-      "6.18"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 4.12."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 56, FP = 16, FN = 26, and TN = 255, what is the exact Accuracy?",
-    "options": [
-      "98.10%",
-      "73.10%",
-      "70.48%",
-      "88.10%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=56, FP=16, FN=26, TN=255."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 7) and point B(13, 16) in a 2D space?",
-    "options": [
-      "18.00",
-      "27.00",
-      "21.50",
-      "15.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 18.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 19) and point B(16, 21) in a 2D space?",
-    "options": [
-      "2.90",
-      "8.50",
-      "5.00",
-      "7.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 177, FP = 42, FN = 8, and TN = 288, what is the exact Recall?",
-    "options": [
-      "80.68%",
-      "105.68%",
-      "95.68%",
-      "76.54%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=177, FP=42, FN=8, TN=288."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (3), what is the predicted value of y when x = 19?",
-    "options": [
-      "136",
-      "108",
-      "98",
-      "92"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=19 into y = 5(19) + 3 to get 98."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (9), what is the predicted value of y when x = 29?",
-    "options": [
-      "222",
-      "212",
-      "194",
-      "270"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=29 into y = 7(29) + 9 to get 212."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 70, FP = 28, FN = 30, and TN = 274, what is the exact Precision?",
-    "options": [
-      "57.14%",
-      "71.43%",
-      "56.43%",
-      "81.43%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=70, FP=28, FN=30, TN=274."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 17) and point B(11, 20) in a 2D space?",
-    "options": [
-      "5.83",
-      "8.75",
-      "3.73",
-      "9.33"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 5.83."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (6), what is the predicted value of y when x = 5?",
-    "options": [
-      "26",
-      "4",
-      "16",
-      "26"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=5 into y = 2(5) + 6 to get 16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (5), what is the predicted value of y when x = 4?",
-    "options": [
-      "29",
-      "21",
-      "31",
-      "11"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=4 into y = 4(4) + 5 to get 21."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (1), what is the predicted value of y when x = 23?",
-    "options": [
-      "70",
-      "80",
-      "68",
-      "116"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=23 into y = 3(23) + 1 to get 70."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 28?",
-    "options": [
-      "44",
-      "90",
-      "22",
-      "34"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=28 into y = 1(28) + 6 to get 34."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 61, FP = 24, FN = 32, and TN = 146, what is the exact Accuracy?",
-    "options": [
-      "78.71%",
-      "63.71%",
-      "88.71%",
-      "62.97%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=61, FP=24, FN=32, TN=146."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 2?",
-    "options": [
-      "21",
-      "11",
-      "15",
-      "17"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=2 into y = 7(2) + -3 to get 11."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 8?",
-    "options": [
-      "57",
-      "39",
-      "51",
-      "41"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=8 into y = 5(8) + 1 to get 41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-2), what is the predicted value of y when x = 10?",
-    "options": [
-      "18",
-      "38",
-      "22",
-      "28"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=10 into y = 2(10) + -2 to get 18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (0), what is the predicted value of y when x = 4?",
-    "options": [
-      "8",
-      "8",
-      "16",
-      "18"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=4 into y = 2(4) + 0 to get 8."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 17) and point B(11, 15) in a 2D space?",
-    "options": [
-      "7.28",
-      "10.78",
-      "10.92",
-      "5.18"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 7.28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-4), what is the predicted value of y when x = 1?",
-    "options": [
-      "6",
-      "8",
-      "0",
-      "-2"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=1 into y = 2(1) + -4 to get -2."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 20?",
-    "options": [
-      "244",
-      "196",
-      "214",
-      "204"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=20 into y = 10(20) + 4 to get 204."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 63, FP = 20, FN = 44, and TN = 101, what is the exact Precision?",
-    "options": [
-      "75.90%",
-      "60.90%",
-      "85.90%",
-      "60.72%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=63, FP=20, FN=44, TN=101."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 17) and point B(5, 19) in a 2D space?",
-    "options": [
-      "7.11",
-      "5.41",
-      "3.61",
-      "1.51"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 3.61."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 193, FP = 25, FN = 42, and TN = 292, what is the exact Recall?",
-    "options": [
-      "67.13%",
-      "82.13%",
-      "92.13%",
-      "65.70%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=193, FP=25, FN=42, TN=292."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 2) and point B(17, 23) in a 2D space?",
-    "options": [
-      "19.49",
-      "32.38",
-      "21.59",
-      "25.09"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 21.59."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 164, FP = 42, FN = 36, and TN = 292, what is the exact Recall?",
-    "options": [
-      "67.00%",
-      "92.00%",
-      "65.60%",
-      "82.00%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=164, FP=42, FN=36, TN=292."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 15) and point B(22, 24) in a 2D space?",
-    "options": [
-      "19.50",
-      "16.50",
-      "10.90",
-      "13.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 190, FP = 37, FN = 5, and TN = 212, what is the exact Precision?",
-    "options": [
-      "66.96%",
-      "68.70%",
-      "93.70%",
-      "83.70%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=190, FP=37, FN=5, TN=212."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-2), what is the predicted value of y when x = 26?",
-    "options": [
-      "236",
-      "232",
-      "284",
-      "242"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 9(26) + -2 to get 232."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 19?",
-    "options": [
-      "43",
-      "53",
-      "81",
-      "33"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=19 into y = 2(19) + 5 to get 43."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 110, FP = 24, FN = 29, and TN = 132, what is the exact Precision?",
-    "options": [
-      "65.67%",
-      "82.09%",
-      "67.09%",
-      "92.09%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=110, FP=24, FN=29, TN=132."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (1), what is the predicted value of y when x = 16?",
-    "options": [
-      "43",
-      "65",
-      "31",
-      "33"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=16 into y = 2(16) + 1 to get 33."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 19) and point B(18, 5) in a 2D space?",
-    "options": [
-      "18.50",
-      "22.50",
-      "12.90",
-      "15.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 15.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 164, FP = 40, FN = 29, and TN = 188, what is the exact Accuracy?",
-    "options": [
-      "93.61%",
-      "66.89%",
-      "83.61%",
-      "68.61%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=164, FP=40, FN=29, TN=188."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-5), what is the predicted value of y when x = 21?",
-    "options": [
-      "26",
-      "16",
-      "26",
-      "58"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=21 into y = 1(21) + -5 to get 16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(1, 8) and point B(9, 17) in a 2D space?",
-    "options": [
-      "12.04",
-      "18.06",
-      "15.54",
-      "9.94"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 12.04."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (9), what is the predicted value of y when x = 10?",
-    "options": [
-      "49",
-      "11",
-      "39",
-      "29"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=10 into y = 2(10) + 9 to get 29."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 2) and point B(24, 10) in a 2D space?",
-    "options": [
-      "21.39",
-      "17.89",
-      "15.79",
-      "26.83"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 17.89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 10) and point B(13, 22) in a 2D space?",
-    "options": [
-      "16.92",
-      "13.42",
-      "20.12",
-      "11.32"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 13.42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-4), what is the predicted value of y when x = 5?",
-    "options": [
-      "44",
-      "36",
-      "46",
-      "46"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=5 into y = 8(5) + -4 to get 36."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 15?",
-    "options": [
-      "115",
-      "145",
-      "125",
-      "125"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=15 into y = 8(15) + -5 to get 115."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 6) and point B(19, 21) in a 2D space?",
-    "options": [
-      "24.83",
-      "20.05",
-      "14.45",
-      "16.55"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 16.55."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 13) and point B(20, 8) in a 2D space?",
-    "options": [
-      "17.72",
-      "15.62",
-      "21.22",
-      "26.58"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 17.72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (2), what is the predicted value of y when x = 28?",
-    "options": [
-      "222",
-      "282",
-      "236",
-      "226"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=28 into y = 8(28) + 2 to get 226."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (1), what is the predicted value of y when x = 10?",
-    "options": [
-      "81",
-      "71",
-      "91",
-      "69"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=10 into y = 7(10) + 1 to get 71."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 4) and point B(20, 20) in a 2D space?",
-    "options": [
-      "32.90",
-      "25.43",
-      "19.83",
-      "21.93"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 21.93."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 1) and point B(6, 20) in a 2D space?",
-    "options": [
-      "27.50",
-      "36.00",
-      "21.90",
-      "24.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 24.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (3), what is the predicted value of y when x = 21?",
-    "options": [
-      "207",
-      "255",
-      "213",
-      "223"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=21 into y = 10(21) + 3 to get 213."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-2), what is the predicted value of y when x = 28?",
-    "options": [
-      "226",
-      "222",
-      "278",
-      "232"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=28 into y = 8(28) + -2 to get 222."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 2?",
-    "options": [
-      "14",
-      "14",
-      "10",
-      "20"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=2 into y = 6(2) + -2 to get 10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 186, FP = 42, FN = 21, and TN = 176, what is the exact Recall?",
-    "options": [
-      "99.86%",
-      "71.88%",
-      "89.86%",
-      "74.86%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=186, FP=42, FN=21, TN=176."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 105, FP = 11, FN = 13, and TN = 233, what is the exact Accuracy?",
-    "options": [
-      "74.70%",
-      "78.37%",
-      "103.37%",
-      "93.37%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=105, FP=11, FN=13, TN=233."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (1), what is the predicted value of y when x = 11?",
-    "options": [
-      "78",
-      "88",
-      "76",
-      "100"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=11 into y = 7(11) + 1 to get 78."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-1), what is the predicted value of y when x = 2?",
-    "options": [
-      "13",
-      "15",
-      "23",
-      "17"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=2 into y = 7(2) + -1 to get 13."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 15) and point B(16, 13) in a 2D space?",
-    "options": [
-      "17.64",
-      "21.21",
-      "14.14",
-      "12.04"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 14.14."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 4) and point B(8, 14) in a 2D space?",
-    "options": [
-      "13.00",
-      "10.90",
-      "19.50",
-      "16.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 13.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(2, 10) and point B(18, 7) in a 2D space?",
-    "options": [
-      "28.50",
-      "16.90",
-      "22.50",
-      "19.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 19.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (1), what is the predicted value of y when x = 18?",
-    "options": [
-      "35",
-      "47",
-      "73",
-      "37"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=18 into y = 2(18) + 1 to get 37."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 7) and point B(10, 17) in a 2D space?",
-    "options": [
-      "25.50",
-      "17.00",
-      "20.50",
-      "14.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 6) and point B(22, 9) in a 2D space?",
-    "options": [
-      "12.22",
-      "14.32",
-      "21.48",
-      "17.82"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 14.32."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 137, FP = 33, FN = 20, and TN = 259, what is the exact Recall?",
-    "options": [
-      "97.26%",
-      "72.26%",
-      "87.26%",
-      "69.81%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=137, FP=33, FN=20, TN=259."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 60, FP = 43, FN = 29, and TN = 185, what is the exact Recall?",
-    "options": [
-      "52.42%",
-      "53.93%",
-      "77.42%",
-      "67.42%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=60, FP=43, FN=29, TN=185."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 177, FP = 29, FN = 6, and TN = 139, what is the exact Precision?",
-    "options": [
-      "70.92%",
-      "68.74%",
-      "85.92%",
-      "95.92%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=177, FP=29, FN=6, TN=139."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 118, FP = 24, FN = 37, and TN = 238, what is the exact Accuracy?",
-    "options": [
-      "85.37%",
-      "70.37%",
-      "68.30%",
-      "95.37%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=24, FN=37, TN=238."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 105, FP = 34, FN = 24, and TN = 292, what is the exact Precision?",
-    "options": [
-      "75.54%",
-      "85.54%",
-      "60.54%",
-      "60.43%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=105, FP=34, FN=24, TN=292."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 25?",
-    "options": [
-      "229",
-      "239",
-      "221",
-      "279"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=25 into y = 9(25) + 4 to get 229."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (3), what is the predicted value of y when x = 3?",
-    "options": [
-      "43",
-      "39",
-      "33",
-      "27"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=3 into y = 10(3) + 3 to get 33."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(15, 9) and point B(10, 16) in a 2D space?",
-    "options": [
-      "12.90",
-      "8.60",
-      "12.10",
-      "6.50"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 8.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (8), what is the predicted value of y when x = 8?",
-    "options": [
-      "48",
-      "80",
-      "74",
-      "64"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=8 into y = 7(8) + 8 to get 64."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 134, FP = 36, FN = 29, and TN = 143, what is the exact Accuracy?",
-    "options": [
-      "90.99%",
-      "64.80%",
-      "65.99%",
-      "80.99%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=134, FP=36, FN=29, TN=143."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 147, FP = 36, FN = 34, and TN = 193, what is the exact Recall?",
-    "options": [
-      "64.97%",
-      "66.22%",
-      "91.22%",
-      "81.22%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=147, FP=36, FN=34, TN=193."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 72, FP = 13, FN = 29, and TN = 128, what is the exact Accuracy?",
-    "options": [
-      "92.64%",
-      "82.64%",
-      "66.12%",
-      "67.64%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=72, FP=13, FN=29, TN=128."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-4), what is the predicted value of y when x = 16?",
-    "options": [
-      "132",
-      "134",
-      "124",
-      "156"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=16 into y = 8(16) + -4 to get 124."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 21?",
-    "options": [
-      "124",
-      "166",
-      "128",
-      "134"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=21 into y = 6(21) + -2 to get 124."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (6), what is the predicted value of y when x = 23?",
-    "options": [
-      "121",
-      "167",
-      "131",
-      "109"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=23 into y = 5(23) + 6 to get 121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (1), what is the predicted value of y when x = 28?",
-    "options": [
-      "207",
-      "195",
-      "197",
-      "253"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=28 into y = 7(28) + 1 to get 197."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 6) and point B(11, 18) in a 2D space?",
-    "options": [
-      "21.63",
-      "17.92",
-      "14.42",
-      "12.32"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 14.42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(11, 14) and point B(12, 22) in a 2D space?",
-    "options": [
-      "12.09",
-      "11.56",
-      "8.06",
-      "5.96"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 8.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 76, FP = 31, FN = 22, and TN = 207, what is the exact Accuracy?",
-    "options": [
-      "69.23%",
-      "94.23%",
-      "84.23%",
-      "67.38%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=76, FP=31, FN=22, TN=207."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 125, FP = 27, FN = 29, and TN = 247, what is the exact Recall?",
-    "options": [
-      "91.17%",
-      "64.94%",
-      "66.17%",
-      "81.17%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=125, FP=27, FN=29, TN=247."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 184, FP = 14, FN = 34, and TN = 124, what is the exact Recall?",
-    "options": [
-      "94.40%",
-      "69.40%",
-      "67.52%",
-      "84.40%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=184, FP=14, FN=34, TN=124."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 11?",
-    "options": [
-      "6",
-      "38",
-      "26",
-      "16"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=11 into y = 1(11) + 5 to get 16."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 102, FP = 30, FN = 7, and TN = 293, what is the exact Accuracy?",
-    "options": [
-      "76.44%",
-      "91.44%",
-      "101.44%",
-      "73.15%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=102, FP=30, FN=7, TN=293."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 88, FP = 43, FN = 6, and TN = 246, what is the exact Precision?",
-    "options": [
-      "53.74%",
-      "77.18%",
-      "52.18%",
-      "67.18%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=88, FP=43, FN=6, TN=246."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-1), what is the predicted value of y when x = 16?",
-    "options": [
-      "137",
-      "159",
-      "129",
-      "127"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=16 into y = 8(16) + -1 to get 127."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-2), what is the predicted value of y when x = 4?",
-    "options": [
-      "36",
-      "26",
-      "34",
-      "30"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=4 into y = 7(4) + -2 to get 26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 7) and point B(19, 12) in a 2D space?",
-    "options": [
-      "21.00",
-      "18.90",
-      "31.50",
-      "24.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 21.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 62, FP = 28, FN = 27, and TN = 297, what is the exact Recall?",
-    "options": [
-      "54.66%",
-      "55.73%",
-      "69.66%",
-      "79.66%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=62, FP=28, FN=27, TN=297."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 12) and point B(5, 20) in a 2D space?",
-    "options": [
-      "9.00",
-      "6.90",
-      "13.50",
-      "12.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 175, FP = 32, FN = 7, and TN = 114, what is the exact Accuracy?",
-    "options": [
-      "88.11%",
-      "73.11%",
-      "98.11%",
-      "70.49%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=175, FP=32, FN=7, TN=114."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 9) and point B(21, 10) in a 2D space?",
-    "options": [
-      "12.93",
-      "18.53",
-      "22.55",
-      "15.03"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 15.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 90, FP = 18, FN = 33, and TN = 155, what is the exact Precision?",
-    "options": [
-      "68.33%",
-      "83.33%",
-      "93.33%",
-      "66.67%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=90, FP=18, FN=33, TN=155."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (4), what is the predicted value of y when x = 19?",
-    "options": [
-      "90",
-      "118",
-      "80",
-      "72"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=19 into y = 4(19) + 4 to get 80."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (6), what is the predicted value of y when x = 14?",
-    "options": [
-      "90",
-      "118",
-      "78",
-      "100"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=14 into y = 6(14) + 6 to get 90."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (0), what is the predicted value of y when x = 27?",
-    "options": [
-      "64",
-      "54",
-      "54",
-      "108"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 2(27) + 0 to get 54."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 14) and point B(14, 19) in a 2D space?",
-    "options": [
-      "4.30",
-      "9.60",
-      "6.40",
-      "9.90"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 6.40."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 18) and point B(17, 13) in a 2D space?",
-    "options": [
-      "15.90",
-      "18.00",
-      "21.50",
-      "27.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 18.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (0), what is the predicted value of y when x = 7?",
-    "options": [
-      "56",
-      "42",
-      "42",
-      "52"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=7 into y = 6(7) + 0 to get 42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 5) and point B(9, 13) in a 2D space?",
-    "options": [
-      "10.00",
-      "13.50",
-      "7.90",
-      "15.00"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 93, FP = 19, FN = 35, and TN = 202, what is the exact Accuracy?",
-    "options": [
-      "67.62%",
-      "69.53%",
-      "84.53%",
-      "94.53%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=93, FP=19, FN=35, TN=202."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 19) and point B(15, 20) in a 2D space?",
-    "options": [
-      "2.12",
-      "4.91",
-      "0.69",
-      "1.41"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 1.41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 7?",
-    "options": [
-      "49",
-      "35",
-      "35",
-      "45"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=7 into y = 5(7) + 0 to get 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 108, FP = 34, FN = 5, and TN = 200, what is the exact Precision?",
-    "options": [
-      "60.85%",
-      "76.06%",
-      "61.06%",
-      "86.06%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=108, FP=34, FN=5, TN=200."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 5) and point B(12, 5) in a 2D space?",
-    "options": [
-      "1.00",
-      "4.50",
-      "1.50",
-      "1.10"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 1.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 16?",
-    "options": [
-      "156",
-      "174",
-      "196",
-      "164"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=16 into y = 10(16) + 4 to get 164."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-5), what is the predicted value of y when x = 21?",
-    "options": [
-      "121",
-      "131",
-      "131",
-      "163"
-    ],
     "answer": 0,
-    "explanation": "Plug x=21 into y = 6(21) + -5 to get 121."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=62, FP=28, FN=7, TN=130."
   },
   {
     "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(13, 7) and point B(10, 24) in a 2D space?",
-    "options": [
-      "25.89",
-      "17.26",
-      "15.16",
-      "20.76"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 17.26."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 99, FP = 26, FN = 41, and TN = 203, what is the exact Precision?",
-    "options": [
-      "64.20%",
-      "79.20%",
-      "89.20%",
-      "63.36%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=99, FP=26, FN=41, TN=203."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (8), what is the predicted value of y when x = 11?",
-    "options": [
-      "118",
-      "106",
-      "96",
-      "80"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=11 into y = 8(11) + 8 to get 96."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 2) and point B(12, 6) in a 2D space?",
-    "options": [
-      "10.55",
-      "12.65",
-      "16.15",
-      "18.97"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 12.65."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(14, 17) and point B(10, 24) in a 2D space?",
-    "options": [
-      "14.50",
-      "11.00",
-      "8.90",
-      "16.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 94, FP = 26, FN = 13, and TN = 202, what is the exact Precision?",
-    "options": [
-      "78.33%",
-      "62.67%",
-      "63.33%",
-      "88.33%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=94, FP=26, FN=13, TN=202."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (8), what is the predicted value of y when x = 3?",
-    "options": [
-      "23",
-      "29",
-      "7",
-      "33"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=3 into y = 5(3) + 8 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 37, FN = 21, and TN = 174, what is the exact Accuracy?",
-    "options": [
-      "85.61%",
-      "70.61%",
-      "95.61%",
-      "68.49%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=171, FP=37, FN=21, TN=174."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 15) and point B(21, 23) in a 2D space?",
-    "options": [
-      "20.40",
-      "11.50",
-      "13.60",
-      "17.10"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 13.60."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 127, FP = 7, FN = 35, and TN = 182, what is the exact Precision?",
-    "options": [
-      "75.82%",
-      "104.78%",
-      "79.78%",
-      "94.78%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=127, FP=7, FN=35, TN=182."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 126, FP = 36, FN = 31, and TN = 294, what is the exact Accuracy?",
-    "options": [
-      "68.99%",
-      "86.24%",
-      "96.24%",
-      "71.24%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=126, FP=36, FN=31, TN=294."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 181, FP = 13, FN = 17, and TN = 150, what is the exact Accuracy?",
-    "options": [
-      "91.69%",
-      "76.69%",
-      "73.35%",
-      "101.69%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=181, FP=13, FN=17, TN=150."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (9), what is the predicted value of y when x = 13?",
-    "options": [
-      "17",
-      "61",
-      "35",
-      "45"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=13 into y = 2(13) + 9 to get 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 17) and point B(7, 6) in a 2D space?",
-    "options": [
-      "15.50",
-      "12.00",
-      "9.90",
-      "18.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 123, FP = 20, FN = 20, and TN = 122, what is the exact Precision?",
-    "options": [
-      "68.81%",
-      "86.01%",
-      "71.01%",
-      "96.01%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=123, FP=20, FN=20, TN=122."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 2) and point B(5, 10) in a 2D space?",
-    "options": [
-      "12.44",
-      "6.84",
-      "8.94",
-      "13.42"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 8.94."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 101, FP = 31, FN = 20, and TN = 228, what is the exact Accuracy?",
-    "options": [
-      "71.58%",
-      "86.58%",
-      "69.26%",
-      "96.58%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=101, FP=31, FN=20, TN=228."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 8) and point B(10, 9) in a 2D space?",
-    "options": [
-      "8.50",
-      "2.90",
-      "7.50",
-      "5.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 156, FP = 19, FN = 33, and TN = 203, what is the exact Precision?",
-    "options": [
-      "71.31%",
-      "99.14%",
-      "74.14%",
-      "89.14%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=156, FP=19, FN=33, TN=203."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 83, FP = 25, FN = 21, and TN = 183, what is the exact Accuracy?",
-    "options": [
-      "68.21%",
-      "95.26%",
-      "70.26%",
-      "85.26%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=83, FP=25, FN=21, TN=183."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 110, FP = 7, FN = 35, and TN = 267, what is the exact Precision?",
-    "options": [
-      "75.21%",
-      "94.02%",
-      "104.02%",
-      "79.02%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=110, FP=7, FN=35, TN=267."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 77, FP = 21, FN = 14, and TN = 115, what is the exact Precision?",
-    "options": [
-      "88.57%",
-      "78.57%",
-      "62.86%",
-      "63.57%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=77, FP=21, FN=14, TN=115."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (3), what is the predicted value of y when x = 29?",
-    "options": [
-      "264",
-      "216",
-      "206",
-      "200"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=29 into y = 7(29) + 3 to get 206."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 17) and point B(22, 7) in a 2D space?",
-    "options": [
-      "19.72",
-      "17.62",
-      "29.58",
-      "23.22"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 19.72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 27?",
-    "options": [
-      "331",
-      "277",
-      "287",
-      "263"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 10(27) + 7 to get 277."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(0, 0) and point B(23, 24) in a 2D space?",
-    "options": [
-      "44.90",
-      "50.50",
-      "70.50",
-      "47.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 47.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-3), what is the predicted value of y when x = 11?",
-    "options": [
-      "63",
-      "41",
-      "47",
-      "51"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=11 into y = 4(11) + -3 to get 41."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 1) and point B(11, 6) in a 2D space?",
-    "options": [
-      "11.00",
-      "16.50",
-      "8.90",
-      "14.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 108, FP = 19, FN = 35, and TN = 235, what is the exact Precision?",
-    "options": [
-      "70.04%",
-      "85.04%",
-      "68.03%",
-      "95.04%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=108, FP=19, FN=35, TN=235."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 14) and point B(19, 8) in a 2D space?",
-    "options": [
-      "18.73",
-      "15.23",
-      "13.13",
-      "22.85"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 15.23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 1) and point B(22, 19) in a 2D space?",
-    "options": [
-      "43.50",
-      "29.00",
-      "32.50",
-      "26.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 29.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 97, FP = 10, FN = 20, and TN = 149, what is the exact Recall?",
-    "options": [
-      "67.91%",
-      "92.91%",
-      "66.32%",
-      "82.91%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=97, FP=10, FN=20, TN=149."
-  },
-  {
-    "subject": "AI / ML",
     "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 118, FP = 28, FN = 7, and TN = 172, what is the exact Accuracy?",
-    "options": [
-      "74.23%",
-      "99.23%",
-      "71.38%",
-      "89.23%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=28, FN=7, TN=172."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(6, 16) and point B(9, 20) in a 2D space?",
-    "options": [
-      "10.50",
-      "7.00",
-      "4.90",
-      "10.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 7.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 12?",
+    "question": "Given a classification report with TP = 142, FP = 6, FN = 5, and TN = 249, what is the exact Accuracy?",
     "options": [
-      "55",
-      "17",
-      "31",
-      "41"
+      "77.81%",
+      "107.26%",
+      "82.26%",
+      "97.26%"
     ],
-    "answer": 2,
-    "explanation": "Plug x=12 into y = 2(12) + 7 to get 31."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 13?",
-    "options": [
-      "8",
-      "44",
-      "28",
-      "18"
-    ],
     "answer": 3,
-    "explanation": "Plug x=13 into y = 1(13) + 5 to get 18."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(14, 14) and point B(12, 22) in a 2D space?",
-    "options": [
-      "7.90",
-      "10.00",
-      "15.00",
-      "13.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 35, FN = 9, and TN = 120, what is the exact Precision?",
-    "options": [
-      "77.99%",
-      "87.99%",
-      "62.39%",
-      "62.99%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=124, FP=35, FN=9, TN=120."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 143, FP = 6, FN = 32, and TN = 220, what is the exact Precision?",
-    "options": [
-      "95.97%",
-      "105.97%",
-      "76.78%",
-      "80.97%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=143, FP=6, FN=32, TN=220."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (4), what is the predicted value of y when x = 9?",
-    "options": [
-      "31",
-      "49",
-      "23",
-      "41"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=9 into y = 3(9) + 4 to get 31."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=142, FP=6, FN=5, TN=249."
   },
   {
     "subject": "AI / ML",
@@ -11554,1645 +1250,693 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(4, 7) and point B(9, 8) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(1, 17) and point B(9, 8) in a 2D space?",
     "options": [
-      "9.50",
-      "6.00",
-      "3.90",
-      "9.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 6.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(10, 16) and point B(9, 13) in a 2D space?",
-    "options": [
-      "1.90",
-      "4.00",
-      "6.00",
-      "7.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (9), what is the predicted value of y when x = 29?",
-    "options": [
-      "281",
-      "299",
-      "309",
-      "357"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=29 into y = 10(29) + 9 to get 299."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 75, FP = 11, FN = 16, and TN = 104, what is the exact Accuracy?",
-    "options": [
-      "69.51%",
-      "96.89%",
-      "86.89%",
-      "71.89%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=75, FP=11, FN=16, TN=104."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 21?",
-    "options": [
-      "205",
-      "173",
-      "173",
-      "163"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=21 into y = 8(21) + -5 to get 163."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 1) and point B(13, 6) in a 2D space?",
-    "options": [
-      "14.15",
-      "12.93",
-      "9.43",
-      "7.33"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 9.43."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 8) and point B(21, 6) in a 2D space?",
-    "options": [
-      "7.50",
-      "2.90",
-      "8.50",
-      "5.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 163, FP = 29, FN = 17, and TN = 209, what is the exact Accuracy?",
-    "options": [
-      "99.00%",
-      "74.00%",
-      "71.20%",
-      "89.00%"
-    ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=163, FP=29, FN=17, TN=209."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(16, 0) and point B(18, 7) in a 2D space?",
-    "options": [
-      "5.18",
-      "10.78",
-      "10.92",
-      "7.28"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 7.28."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-3), what is the predicted value of y when x = 0?",
-    "options": [
-      "-3",
-      "-3",
-      "7",
-      "3"
+      "17.00",
+      "20.50",
+      "14.90",
+      "25.50"
     ],
     "answer": 0,
-    "explanation": "Plug x=0 into y = 3(0) + -3 to get -3."
+    "explanation": "Manhattan distance formula resolves to 17.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 19) and point B(11, 20) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(16, 8) and point B(9, 22) in a 2D space?",
     "options": [
-      "9.00",
-      "9.50",
-      "6.00",
-      "3.90"
+      "15.65",
+      "19.15",
+      "13.55",
+      "23.48"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 15.65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 17) and point B(6, 9) in a 2D space?",
+    "options": [
+      "5.90",
+      "12.00",
+      "11.50",
+      "8.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 22?",
+    "options": [
+      "16",
+      "72",
+      "38",
+      "28"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=22 into y = 1(22) + 6 to get 28."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (0), what is the predicted value of y when x = 21?",
+    "options": [
+      "52",
+      "42",
+      "84",
+      "42"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=21 into y = 2(21) + 0 to get 42."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 15) and point B(19, 21) in a 2D space?",
+    "options": [
+      "22.85",
+      "15.23",
+      "18.73",
+      "13.13"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 15.23."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 182, FP = 28, FN = 32, and TN = 220, what is the exact Recall?",
+    "options": [
+      "85.05%",
+      "68.04%",
+      "70.05%",
+      "95.05%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=182, FP=28, FN=32, TN=220."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 13) and point B(16, 24) in a 2D space?",
+    "options": [
+      "8.90",
+      "11.00",
+      "14.50",
+      "16.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 150, FP = 43, FN = 12, and TN = 119, what is the exact Accuracy?",
+    "options": [
+      "93.02%",
+      "66.42%",
+      "68.02%",
+      "83.02%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=150, FP=43, FN=12, TN=119."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 162, FP = 7, FN = 18, and TN = 240, what is the exact Precision?",
+    "options": [
+      "95.86%",
+      "80.86%",
+      "105.86%",
+      "76.69%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=162, FP=7, FN=18, TN=240."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (2), what is the predicted value of y when x = 13?",
+    "options": [
+      "116",
+      "102",
+      "132",
+      "106"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=13 into y = 8(13) + 2 to get 106."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(6, 6) and point B(19, 10) in a 2D space?",
+    "options": [
+      "20.50",
+      "14.90",
+      "25.50",
+      "17.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 19) and point B(18, 17) in a 2D space?",
+    "options": [
+      "5.50",
+      "3.00",
+      "0.10",
+      "2.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 2.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-1), what is the predicted value of y when x = 3?",
+    "options": [
+      "32",
+      "36",
+      "26",
+      "28"
     ],
     "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 6.00."
+    "explanation": "Plug x=3 into y = 9(3) + -1 to get 26."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 8) and point B(21, 19) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(17, 19) and point B(20, 5) in a 2D space?",
     "options": [
-      "25.00",
+      "14.32",
+      "17.82",
+      "12.22",
+      "21.48"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 14.32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 15) and point B(19, 12) in a 2D space?",
+    "options": [
+      "21.50",
+      "18.00",
+      "15.90",
+      "27.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 79, FP = 12, FN = 31, and TN = 258, what is the exact Recall?",
+    "options": [
+      "71.82%",
+      "81.82%",
+      "56.82%",
+      "57.45%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=79, FP=12, FN=31, TN=258."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 88, FP = 35, FN = 41, and TN = 223, what is the exact Precision?",
+    "options": [
+      "81.54%",
+      "57.24%",
+      "56.54%",
+      "71.54%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=88, FP=35, FN=41, TN=223."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (5), what is the predicted value of y when x = 26?",
+    "options": [
+      "119",
+      "99",
+      "109",
+      "161"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=26 into y = 4(26) + 5 to get 109."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 55, FP = 6, FN = 20, and TN = 213, what is the exact Accuracy?",
+    "options": [
+      "101.16%",
+      "72.93%",
+      "91.16%",
+      "76.16%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=55, FP=6, FN=20, TN=213."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 68, FP = 37, FN = 27, and TN = 136, what is the exact Accuracy?",
+    "options": [
+      "60.90%",
+      "76.12%",
+      "86.12%",
+      "61.12%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=68, FP=37, FN=27, TN=136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 2) and point B(18, 9) in a 2D space?",
+    "options": [
+      "26.50",
+      "34.50",
+      "20.90",
+      "23.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-5), what is the predicted value of y when x = 3?",
+    "options": [
+      "20",
+      "10",
+      "16",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=3 into y = 5(3) + -5 to get 10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 125, FP = 26, FN = 35, and TN = 227, what is the exact Accuracy?",
+    "options": [
+      "70.23%",
+      "68.18%",
+      "85.23%",
+      "95.23%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=125, FP=26, FN=35, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(12, 0) and point B(19, 11) in a 2D space?",
+    "options": [
+      "13.04",
+      "19.56",
+      "16.54",
+      "10.94"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 13.04."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 13) and point B(8, 13) in a 2D space?",
+    "options": [
+      "0.00",
+      "0.00",
+      "2.10",
+      "3.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 0.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 160, FP = 16, FN = 34, and TN = 247, what is the exact Recall?",
+    "options": [
+      "92.47%",
+      "82.47%",
+      "65.98%",
+      "67.47%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=160, FP=16, FN=34, TN=247."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 152, FP = 40, FN = 19, and TN = 220, what is the exact Precision?",
+    "options": [
+      "64.17%",
+      "63.33%",
+      "89.17%",
+      "79.17%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=152, FP=40, FN=19, TN=220."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 4) and point B(20, 7) in a 2D space?",
+    "options": [
+      "22.50",
+      "15.00",
+      "18.50",
+      "12.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-5), what is the predicted value of y when x = 19?",
+    "options": [
+      "119",
+      "109",
+      "147",
+      "119"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 6(19) + -5 to get 109."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 19) and point B(8, 22) in a 2D space?",
+    "options": [
+      "15.66",
+      "8.34",
+      "10.44",
+      "13.94"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 10.44."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 94, FP = 35, FN = 35, and TN = 140, what is the exact Precision?",
+    "options": [
+      "72.87%",
+      "58.29%",
+      "57.87%",
+      "82.87%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=94, FP=35, FN=35, TN=140."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 92, FP = 33, FN = 7, and TN = 163, what is the exact Precision?",
+    "options": [
+      "83.60%",
+      "58.88%",
+      "58.60%",
+      "73.60%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=92, FP=33, FN=7, TN=163."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(5, 13) and point B(5, 5) in a 2D space?",
+    "options": [
+      "11.50",
+      "5.90",
+      "12.00",
+      "8.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(13, 3) and point B(10, 23) in a 2D space?",
+    "options": [
+      "34.50",
+      "20.90",
+      "23.00",
+      "26.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 14) and point B(18, 8) in a 2D space?",
+    "options": [
+      "20.50",
+      "25.50",
+      "14.90",
+      "17.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-5), what is the predicted value of y when x = 22?",
+    "options": [
+      "159",
+      "149",
+      "159",
+      "193"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=22 into y = 7(22) + -5 to get 149."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 83, FP = 23, FN = 32, and TN = 290, what is the exact Recall?",
+    "options": [
+      "82.17%",
+      "57.74%",
+      "72.17%",
+      "57.17%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=83, FP=23, FN=32, TN=290."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 151, FP = 25, FN = 20, and TN = 183, what is the exact Recall?",
+    "options": [
+      "88.30%",
+      "70.64%",
+      "73.30%",
+      "98.30%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=151, FP=25, FN=20, TN=183."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (9), what is the predicted value of y when x = 1?",
+    "options": [
+      "24",
+      "-4",
+      "16",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=1 into y = 5(1) + 9 to get 14."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(6, 17) and point B(23, 9) in a 2D space?",
+    "options": [
       "37.50",
       "28.50",
+      "25.00",
       "22.90"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Manhattan distance formula resolves to 25.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 129, FP = 28, FN = 13, and TN = 247, what is the exact Recall?",
+    "question": "Given a classification report with TP = 199, FP = 13, FN = 12, and TN = 165, what is the exact Recall?",
     "options": [
-      "90.85%",
-      "75.85%",
-      "100.85%",
-      "72.68%"
+      "94.31%",
+      "75.45%",
+      "104.31%",
+      "79.31%"
     ],
     "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=129, FP=28, FN=13, TN=247."
+    "explanation": "Recall is calculated by standard formula using counts: TP=199, FP=13, FN=12, TN=165."
   },
   {
     "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
+    "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 148, FP = 14, FN = 44, and TN = 286, what is the exact Accuracy?",
+    "question": "What is the Euclidean distance between point A(19, 2) and point B(24, 13) in a 2D space?",
     "options": [
-      "70.57%",
-      "98.21%",
-      "73.21%",
-      "88.21%"
+      "18.12",
+      "9.98",
+      "15.58",
+      "12.08"
     ],
     "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=148, FP=14, FN=44, TN=286."
+    "explanation": "Euclidean distance formula resolves to 12.08."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 156, FP = 29, FN = 32, and TN = 250, what is the exact Recall?",
+    "question": "Given a classification report with TP = 56, FP = 31, FN = 9, and TN = 159, what is the exact Accuracy?",
     "options": [
-      "82.98%",
-      "67.98%",
-      "66.38%",
-      "92.98%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=156, FP=29, FN=32, TN=250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 60, FP = 10, FN = 24, and TN = 104, what is the exact Precision?",
-    "options": [
-      "70.71%",
-      "85.71%",
-      "68.57%",
-      "95.71%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=60, FP=10, FN=24, TN=104."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 196, FP = 36, FN = 25, and TN = 154, what is the exact Precision?",
-    "options": [
-      "69.48%",
-      "94.48%",
-      "84.48%",
-      "67.59%"
+      "94.31%",
+      "67.45%",
+      "84.31%",
+      "69.31%"
     ],
     "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=196, FP=36, FN=25, TN=154."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=56, FP=31, FN=9, TN=159."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(11, 5) and point B(23, 7) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(6, 17) and point B(6, 10) in a 2D space?",
     "options": [
-      "15.67",
-      "10.07",
-      "12.17",
-      "18.25"
+      "4.90",
+      "10.50",
+      "7.00",
+      "10.50"
     ],
     "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 12.17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 170, FP = 37, FN = 10, and TN = 291, what is the exact Accuracy?",
-    "options": [
-      "75.75%",
-      "100.75%",
-      "90.75%",
-      "72.60%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=170, FP=37, FN=10, TN=291."
+    "explanation": "Euclidean distance formula resolves to 7.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 18) and point B(16, 13) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(19, 18) and point B(23, 21) in a 2D space?",
     "options": [
-      "7.90",
-      "10.00",
-      "15.00",
-      "13.50"
+      "4.90",
+      "10.50",
+      "10.50",
+      "7.00"
     ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 10.00."
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 7.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-5), what is the predicted value of y when x = 13?",
+    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 10?",
     "options": [
-      "86",
-      "96",
       "112",
-      "96"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=13 into y = 7(13) + -5 to get 86."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 4) and point B(17, 5) in a 2D space?",
-    "options": [
-      "0.90",
-      "6.50",
-      "4.50",
-      "3.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 67, FP = 38, FN = 17, and TN = 161, what is the exact Accuracy?",
-    "options": [
-      "80.57%",
-      "90.57%",
-      "64.45%",
-      "65.57%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=67, FP=38, FN=17, TN=161."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 192, FP = 18, FN = 38, and TN = 192, what is the exact Accuracy?",
-    "options": [
-      "87.27%",
-      "69.82%",
-      "72.27%",
-      "97.27%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=192, FP=18, FN=38, TN=192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 12) and point B(19, 17) in a 2D space?",
-    "options": [
-      "21.22",
-      "15.62",
-      "26.58",
-      "17.72"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-3), what is the predicted value of y when x = 11?",
-    "options": [
-      "19",
-      "41",
-      "29",
-      "25"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=11 into y = 2(11) + -3 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (1), what is the predicted value of y when x = 29?",
-    "options": [
+      "92",
       "88",
-      "40",
-      "28",
-      "30"
+      "102"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=10 into y = 9(10) + 2 to get 92."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 172, FP = 33, FN = 27, and TN = 283, what is the exact Precision?",
+    "options": [
+      "67.12%",
+      "83.90%",
+      "68.90%",
+      "93.90%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=172, FP=33, FN=27, TN=283."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 44, FN = 42, and TN = 126, what is the exact Accuracy?",
+    "options": [
+      "56.28%",
+      "55.34%",
+      "80.34%",
+      "70.34%"
     ],
     "answer": 3,
-    "explanation": "Plug x=29 into y = 1(29) + 1 to get 30."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 16?",
-    "options": [
-      "52",
-      "30",
-      "12",
-      "20"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=16 into y = 1(16) + 4 to get 20."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=78, FP=44, FN=42, TN=126."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(2, 11) and point B(20, 16) in a 2D space?",
-    "options": [
-      "22.18",
-      "16.58",
-      "28.02",
-      "18.68"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 18.68."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(1, 7) and point B(20, 14) in a 2D space?",
-    "options": [
-      "23.90",
-      "26.00",
-      "29.50",
-      "39.00"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 26.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(16, 11) and point B(16, 22) in a 2D space?",
-    "options": [
-      "16.50",
-      "8.90",
-      "14.50",
-      "11.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(14, 10) and point B(19, 11) in a 2D space?",
-    "options": [
-      "8.60",
-      "3.00",
-      "7.65",
-      "5.10"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 5.10."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 159, FP = 27, FN = 20, and TN = 296, what is the exact Recall?",
-    "options": [
-      "73.83%",
-      "88.83%",
-      "98.83%",
-      "71.06%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=159, FP=27, FN=20, TN=296."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 9) and point B(10, 24) in a 2D space?",
-    "options": [
-      "15.13",
-      "13.03",
-      "18.63",
-      "22.70"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 15.13."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 119, FP = 29, FN = 42, and TN = 227, what is the exact Accuracy?",
-    "options": [
-      "82.97%",
-      "92.97%",
-      "67.97%",
-      "66.38%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=119, FP=29, FN=42, TN=227."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (-4), what is the predicted value of y when x = 26?",
-    "options": [
-      "82",
-      "126",
-      "74",
-      "84"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=26 into y = 3(26) + -4 to get 74."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 12) and point B(24, 11) in a 2D space?",
-    "options": [
-      "19.03",
-      "16.93",
-      "28.54",
-      "22.53"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 19.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-2), what is the predicted value of y when x = 25?",
-    "options": [
-      "173",
-      "133",
-      "123",
-      "127"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=25 into y = 5(25) + -2 to get 123."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 11, FN = 43, and TN = 136, what is the exact Recall?",
-    "options": [
-      "59.40%",
-      "74.25%",
-      "84.25%",
-      "59.25%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=124, FP=11, FN=43, TN=136."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 7) and point B(24, 7) in a 2D space?",
-    "options": [
-      "25.50",
-      "17.00",
-      "14.90",
-      "20.50"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(4, 13) and point B(14, 7) in a 2D space?",
-    "options": [
-      "11.66",
-      "15.16",
-      "17.49",
-      "9.56"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 11.66."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 73, FP = 27, FN = 28, and TN = 117, what is the exact Accuracy?",
-    "options": [
-      "62.55%",
-      "77.55%",
-      "62.04%",
-      "87.55%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=73, FP=27, FN=28, TN=117."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 23, FN = 24, and TN = 199, what is the exact Accuracy?",
-    "options": [
-      "70.98%",
-      "98.73%",
-      "88.73%",
-      "73.73%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=171, FP=23, FN=24, TN=199."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 50, FP = 12, FN = 27, and TN = 204, what is the exact Precision?",
-    "options": [
-      "64.52%",
-      "65.65%",
-      "90.65%",
-      "80.65%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=50, FP=12, FN=27, TN=204."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (2), what is the predicted value of y when x = 9?",
-    "options": [
-      "52",
-      "56",
-      "74",
-      "66"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=9 into y = 6(9) + 2 to get 56."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 69, FP = 28, FN = 8, and TN = 284, what is the exact Recall?",
-    "options": [
-      "89.61%",
-      "74.61%",
-      "71.69%",
-      "99.61%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=69, FP=28, FN=8, TN=284."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (9), what is the predicted value of y when x = 12?",
-    "options": [
-      "141",
-      "117",
-      "127",
-      "99"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=12 into y = 9(12) + 9 to get 117."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 77, FP = 36, FN = 40, and TN = 288, what is the exact Recall?",
-    "options": [
-      "52.65%",
-      "50.81%",
-      "65.81%",
-      "75.81%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=77, FP=36, FN=40, TN=288."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 7) and point B(13, 22) in a 2D space?",
-    "options": [
-      "13.71",
-      "15.81",
-      "23.72",
-      "19.31"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 15.81."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (9), what is the predicted value of y when x = 18?",
-    "options": [
-      "135",
-      "117",
-      "145",
-      "171"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=18 into y = 7(18) + 9 to get 135."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-2), what is the predicted value of y when x = 2?",
-    "options": [
-      "12",
-      "6",
-      "2",
-      "6"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=2 into y = 2(2) + -2 to get 2."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(6, 18) and point B(23, 19) in a 2D space?",
-    "options": [
-      "20.53",
-      "14.93",
-      "25.54",
-      "17.03"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 17.03."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 121, FP = 28, FN = 9, and TN = 108, what is the exact Precision?",
-    "options": [
-      "66.21%",
-      "81.21%",
-      "91.21%",
-      "64.97%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=121, FP=28, FN=9, TN=108."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 16) and point B(12, 12) in a 2D space?",
-    "options": [
-      "5.00",
-      "8.50",
-      "7.50",
-      "2.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 5.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (-5), what is the predicted value of y when x = 3?",
-    "options": [
-      "17",
-      "7",
-      "13",
-      "17"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=3 into y = 4(3) + -5 to get 7."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 4x + (5), what is the predicted value of y when x = 3?",
-    "options": [
-      "17",
-      "7",
-      "23",
-      "27"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=3 into y = 4(3) + 5 to get 17."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 140, FP = 5, FN = 39, and TN = 174, what is the exact Recall?",
-    "options": [
-      "62.57%",
-      "88.21%",
-      "63.21%",
-      "78.21%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=140, FP=5, FN=39, TN=174."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 195, FP = 25, FN = 28, and TN = 149, what is the exact Accuracy?",
-    "options": [
-      "69.32%",
-      "86.65%",
-      "71.65%",
-      "96.65%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=195, FP=25, FN=28, TN=149."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 7) and point B(24, 6) in a 2D space?",
-    "options": [
-      "12.04",
-      "15.54",
-      "9.94",
-      "18.06"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 12.04."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 24?",
-    "options": [
-      "63",
-      "101",
-      "53",
-      "43"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=24 into y = 2(24) + 5 to get 53."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 124, FP = 18, FN = 18, and TN = 148, what is the exact Accuracy?",
-    "options": [
-      "70.65%",
-      "73.31%",
-      "88.31%",
-      "98.31%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=124, FP=18, FN=18, TN=148."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (3), what is the predicted value of y when x = 2?",
-    "options": [
-      "29",
-      "19",
-      "13",
-      "23"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=2 into y = 8(2) + 3 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (6), what is the predicted value of y when x = 29?",
-    "options": [
-      "64",
-      "52",
-      "122",
-      "74"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=29 into y = 2(29) + 6 to get 64."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 141, FP = 25, FN = 44, and TN = 289, what is the exact Recall?",
-    "options": [
-      "61.22%",
-      "76.22%",
-      "60.97%",
-      "86.22%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=141, FP=25, FN=44, TN=289."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 8?",
-    "options": [
-      "73",
-      "103",
-      "97",
-      "87"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=8 into y = 10(8) + 7 to get 87."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 130, FP = 44, FN = 9, and TN = 193, what is the exact Accuracy?",
-    "options": [
-      "68.72%",
-      "85.90%",
-      "95.90%",
-      "70.90%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=130, FP=44, FN=9, TN=193."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(10, 18) and point B(18, 19) in a 2D space?",
-    "options": [
-      "8.06",
-      "5.96",
-      "11.56",
-      "12.09"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 8.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 11?",
-    "options": [
-      "96",
-      "84",
-      "80",
-      "74"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=11 into y = 7(11) + -3 to get 74."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 114, FP = 9, FN = 20, and TN = 145, what is the exact Precision?",
-    "options": [
-      "74.15%",
-      "92.68%",
-      "102.68%",
-      "77.68%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=114, FP=9, FN=20, TN=145."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 89, FP = 32, FN = 35, and TN = 118, what is the exact Accuracy?",
-    "options": [
-      "60.55%",
-      "60.44%",
-      "75.55%",
-      "85.55%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=89, FP=32, FN=35, TN=118."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 18) and point B(18, 22) in a 2D space?",
-    "options": [
-      "16.50",
-      "14.50",
-      "11.00",
-      "8.90"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 11.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (-2), what is the predicted value of y when x = 26?",
-    "options": [
-      "76",
-      "24",
-      "34",
-      "28"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=26 into y = 1(26) + -2 to get 24."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 3x + (2), what is the predicted value of y when x = 0?",
-    "options": [
-      "2",
-      "2",
-      "12",
-      "-2"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=0 into y = 3(0) + 2 to get 2."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 125, FP = 17, FN = 37, and TN = 299, what is the exact Precision?",
-    "options": [
-      "98.03%",
-      "88.03%",
-      "70.42%",
-      "73.03%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=125, FP=17, FN=37, TN=299."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 11?",
-    "options": [
-      "29",
-      "41",
-      "19",
-      "3"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=11 into y = 1(11) + 8 to get 19."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 6) and point B(17, 9) in a 2D space?",
-    "options": [
-      "4.00",
-      "6.00",
-      "7.50",
-      "1.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (8), what is the predicted value of y when x = 15?",
-    "options": [
-      "128",
-      "138",
-      "112",
-      "158"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=15 into y = 8(15) + 8 to get 128."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 168, FP = 41, FN = 26, and TN = 164, what is the exact Recall?",
-    "options": [
-      "86.60%",
-      "71.60%",
-      "69.28%",
-      "96.60%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=168, FP=41, FN=26, TN=164."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 13) and point B(9, 7) in a 2D space?",
-    "options": [
-      "10.00",
-      "13.50",
-      "15.00",
-      "7.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 12) and point B(22, 20) in a 2D space?",
-    "options": [
-      "23.00",
-      "20.90",
-      "26.50",
-      "34.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 100, FP = 42, FN = 35, and TN = 179, what is the exact Accuracy?",
-    "options": [
-      "62.70%",
-      "78.37%",
-      "63.37%",
-      "88.37%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=100, FP=42, FN=35, TN=179."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 148, FP = 28, FN = 33, and TN = 135, what is the exact Accuracy?",
-    "options": [
-      "92.27%",
-      "67.27%",
-      "82.27%",
-      "65.81%"
-    ],
-    "answer": 2,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=148, FP=28, FN=33, TN=135."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(19, 19) and point B(17, 17) in a 2D space?",
-    "options": [
-      "4.00",
-      "7.50",
-      "1.90",
-      "6.00"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 4.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 14) and point B(13, 24) in a 2D space?",
-    "options": [
-      "7.95",
-      "13.55",
-      "15.07",
-      "10.05"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 10.05."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (0), what is the predicted value of y when x = 6?",
-    "options": [
-      "42",
-      "52",
-      "54",
-      "42"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=6 into y = 7(6) + 0 to get 42."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (-3), what is the predicted value of y when x = 4?",
-    "options": [
-      "47",
-      "43",
-      "45",
-      "37"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=4 into y = 10(4) + -3 to get 37."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 8?",
-    "options": [
-      "39",
-      "23",
-      "9",
-      "33"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=8 into y = 2(8) + 7 to get 23."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (3), what is the predicted value of y when x = 14?",
-    "options": [
-      "115",
-      "125",
-      "143",
-      "109"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=14 into y = 8(14) + 3 to get 115."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-4), what is the predicted value of y when x = 13?",
-    "options": [
-      "48",
-      "30",
-      "22",
-      "32"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=13 into y = 2(13) + -4 to get 22."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 6?",
-    "options": [
-      "66",
-      "64",
-      "54",
-      "42"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=6 into y = 8(6) + 6 to get 54."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(3, 6) and point B(8, 10) in a 2D space?",
-    "options": [
-      "12.50",
-      "9.00",
-      "13.50",
-      "6.90"
-    ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 6x + (-3), what is the predicted value of y when x = 20?",
-    "options": [
-      "157",
-      "127",
-      "123",
-      "117"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=20 into y = 6(20) + -3 to get 117."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 144, FP = 23, FN = 16, and TN = 121, what is the exact Recall?",
-    "options": [
-      "90.00%",
-      "72.00%",
-      "100.00%",
-      "75.00%"
-    ],
-    "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=144, FP=23, FN=16, TN=121."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(1, 17) and point B(13, 19) in a 2D space?",
-    "options": [
-      "14.00",
-      "11.90",
-      "21.00",
-      "17.50"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 14.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 13) and point B(13, 22) in a 2D space?",
-    "options": [
-      "14.77",
-      "9.85",
-      "13.35",
-      "7.75"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 9.85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 179, FP = 27, FN = 29, and TN = 212, what is the exact Accuracy?",
-    "options": [
-      "87.47%",
-      "72.47%",
-      "97.47%",
-      "69.98%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=179, FP=27, FN=29, TN=212."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 0?",
-    "options": [
-      "5",
-      "-5",
-      "5",
-      "-5"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=0 into y = 8(0) + -5 to get -5."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 12) and point B(24, 22) in a 2D space?",
-    "options": [
-      "19.72",
-      "29.58",
-      "17.62",
-      "23.22"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 19.72."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 122, FP = 15, FN = 15, and TN = 218, what is the exact Recall?",
-    "options": [
-      "99.05%",
-      "89.05%",
-      "71.24%",
-      "74.05%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=122, FP=15, FN=15, TN=218."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 18) and point B(18, 21) in a 2D space?",
-    "options": [
-      "4.50",
-      "0.90",
-      "3.00",
-      "6.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 3.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 8) and point B(11, 22) in a 2D space?",
-    "options": [
-      "20.50",
-      "14.90",
-      "17.00",
-      "25.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 17.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (5), what is the predicted value of y when x = 3?",
-    "options": [
-      "41",
-      "45",
-      "25",
-      "35"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=3 into y = 10(3) + 5 to get 35."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 147, FP = 40, FN = 39, and TN = 192, what is the exact Precision?",
-    "options": [
-      "62.89%",
-      "63.61%",
-      "88.61%",
-      "78.61%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=147, FP=40, FN=39, TN=192."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 5) and point B(7, 11) in a 2D space?",
-    "options": [
-      "3.98",
-      "9.58",
-      "9.12",
-      "6.08"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 122, FP = 25, FN = 26, and TN = 233, what is the exact Recall?",
-    "options": [
-      "67.43%",
-      "92.43%",
-      "82.43%",
-      "65.95%"
-    ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=122, FP=25, FN=26, TN=233."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 171, FP = 23, FN = 5, and TN = 143, what is the exact Precision?",
-    "options": [
-      "73.14%",
-      "88.14%",
-      "70.52%",
-      "98.14%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=171, FP=23, FN=5, TN=143."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 145, FP = 41, FN = 28, and TN = 118, what is the exact Precision?",
-    "options": [
-      "62.37%",
-      "87.96%",
-      "62.96%",
-      "77.96%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=145, FP=41, FN=28, TN=118."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 88, FP = 23, FN = 42, and TN = 215, what is the exact Precision?",
-    "options": [
-      "89.28%",
-      "79.28%",
-      "64.28%",
-      "63.42%"
-    ],
-    "answer": 1,
-    "explanation": "Precision is calculated by standard formula using counts: TP=88, FP=23, FN=42, TN=215."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (7), what is the predicted value of y when x = 27?",
-    "options": [
-      "152",
-      "142",
-      "128",
-      "196"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=27 into y = 5(27) + 7 to get 142."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(0, 11) and point B(8, 11) in a 2D space?",
-    "options": [
-      "8.00",
-      "12.00",
-      "11.50",
-      "5.90"
-    ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 8.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (9), what is the predicted value of y when x = 10?",
-    "options": [
-      "89",
-      "99",
-      "109",
-      "71"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=10 into y = 8(10) + 9 to get 89."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(8, 19) and point B(7, 10) in a 2D space?",
-    "options": [
-      "6.96",
-      "13.58",
-      "12.56",
-      "9.06"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 9.06."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 1) and point B(5, 8) in a 2D space?",
-    "options": [
-      "15.00",
-      "7.90",
-      "10.00",
-      "13.50"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 10.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (1), what is the predicted value of y when x = 12?",
-    "options": [
-      "109",
-      "85",
-      "83",
-      "95"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=12 into y = 7(12) + 1 to get 85."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(17, 4) and point B(21, 22) in a 2D space?",
-    "options": [
-      "27.66",
-      "21.94",
-      "18.44",
-      "16.34"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 18.44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (6), what is the predicted value of y when x = 20?",
-    "options": [
-      "106",
-      "94",
-      "116",
-      "146"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=20 into y = 5(20) + 6 to get 106."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 183, FP = 32, FN = 24, and TN = 294, what is the exact Accuracy?",
-    "options": [
-      "99.49%",
-      "89.49%",
-      "74.49%",
-      "71.59%"
-    ],
-    "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=183, FP=32, FN=24, TN=294."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(18, 12) and point B(11, 18) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(18, 10) and point B(7, 12) in a 2D space?",
     "options": [
       "19.50",
       "16.50",
@@ -13206,123 +1950,851 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(3, 7) and point B(16, 10) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(11, 16) and point B(7, 17) in a 2D space?",
     "options": [
-      "13.34",
-      "16.84",
-      "20.01",
-      "11.24"
-    ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 13.34."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(5, 19) and point B(10, 23) in a 2D space?",
-    "options": [
-      "12.50",
-      "6.90",
-      "13.50",
-      "9.00"
-    ],
-    "answer": 3,
-    "explanation": "Manhattan distance formula resolves to 9.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 164, FP = 29, FN = 16, and TN = 141, what is the exact Recall?",
-    "options": [
-      "72.89%",
-      "76.11%",
-      "101.11%",
-      "91.11%"
-    ],
-    "answer": 3,
-    "explanation": "Recall is calculated by standard formula using counts: TP=164, FP=29, FN=16, TN=141."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (7), what is the predicted value of y when x = 19?",
-    "options": [
-      "169",
-      "197",
-      "159",
-      "145"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=19 into y = 8(19) + 7 to get 159."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 129, FP = 42, FN = 23, and TN = 137, what is the exact Accuracy?",
-    "options": [
-      "90.36%",
-      "80.36%",
-      "65.36%",
-      "64.29%"
+      "2.90",
+      "5.00",
+      "8.50",
+      "7.50"
     ],
     "answer": 1,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=129, FP=42, FN=23, TN=137."
+    "explanation": "Manhattan distance formula resolves to 5.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (-4), what is the predicted value of y when x = 0?",
+    "question": "Assuming a simple linear regression equation is y = 3x + (5), what is the predicted value of y when x = 15?",
     "options": [
-      "6",
-      "4",
-      "-4",
-      "-4"
+      "80",
+      "60",
+      "50",
+      "40"
     ],
     "answer": 2,
-    "explanation": "Plug x=0 into y = 2(0) + -4 to get -4."
+    "explanation": "Plug x=15 into y = 3(15) + 5 to get 50."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (0), what is the predicted value of y when x = 0?",
+    "options": [
+      "0",
+      "10",
+      "0",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=0 into y = 3(0) + 0 to get 0."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 126, FP = 7, FN = 40, and TN = 289, what is the exact Recall?",
+    "options": [
+      "60.90%",
+      "85.90%",
+      "60.72%",
+      "75.90%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=126, FP=7, FN=40, TN=289."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(12, 12) and point B(14, 5) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(5, 8) and point B(17, 22) in a 2D space?",
     "options": [
-      "9.00",
+      "23.90",
+      "29.50",
+      "26.00",
+      "39.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 26.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 135, FP = 31, FN = 38, and TN = 265, what is the exact Accuracy?",
+    "options": [
+      "68.23%",
+      "95.29%",
+      "85.29%",
+      "70.29%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=135, FP=31, FN=38, TN=265."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-3), what is the predicted value of y when x = 29?",
+    "options": [
+      "264",
+      "316",
+      "268",
+      "258"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=29 into y = 9(29) + -3 to get 258."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (6), what is the predicted value of y when x = 18?",
+    "options": [
+      "78",
+      "52",
+      "42",
+      "30"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=18 into y = 2(18) + 6 to get 42."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(7, 7) and point B(18, 24) in a 2D space?",
+    "options": [
+      "30.37",
+      "20.25",
+      "18.15",
+      "23.75"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 20.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 12) and point B(21, 24) in a 2D space?",
+    "options": [
+      "21.90",
+      "27.50",
+      "24.00",
+      "36.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-5), what is the predicted value of y when x = 11?",
+    "options": [
+      "39",
+      "49",
+      "61",
+      "49"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=11 into y = 4(11) + -5 to get 39."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 114, FP = 34, FN = 8, and TN = 128, what is the exact Accuracy?",
+    "options": [
+      "68.17%",
+      "95.21%",
+      "70.21%",
+      "85.21%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=114, FP=34, FN=8, TN=128."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (4), what is the predicted value of y when x = 22?",
+    "options": [
+      "146",
+      "180",
+      "136",
+      "128"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=22 into y = 6(22) + 4 to get 136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-4), what is the predicted value of y when x = 23?",
+    "options": [
+      "272",
+      "234",
+      "226",
+      "236"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 10(23) + -4 to get 226."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 84, FP = 16, FN = 16, and TN = 222, what is the exact Recall?",
+    "options": [
+      "67.20%",
+      "94.00%",
+      "84.00%",
+      "69.00%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=84, FP=16, FN=16, TN=222."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 50, FP = 35, FN = 14, and TN = 169, what is the exact Precision?",
+    "options": [
+      "58.82%",
+      "68.82%",
+      "47.06%",
+      "43.82%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=50, FP=35, FN=14, TN=169."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 0) and point B(13, 7) in a 2D space?",
+    "options": [
+      "10.92",
+      "10.78",
+      "5.18",
+      "7.28"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 7.28."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 103, FP = 7, FN = 44, and TN = 281, what is the exact Recall?",
+    "options": [
+      "55.07%",
+      "70.07%",
+      "56.05%",
+      "80.07%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=103, FP=7, FN=44, TN=281."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 191, FP = 17, FN = 36, and TN = 223, what is the exact Accuracy?",
+    "options": [
+      "88.65%",
+      "73.65%",
+      "98.65%",
+      "70.92%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=191, FP=17, FN=36, TN=223."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 87, FP = 38, FN = 5, and TN = 175, what is the exact Precision?",
+    "options": [
+      "54.60%",
+      "55.68%",
+      "69.60%",
+      "79.60%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=87, FP=38, FN=5, TN=175."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 77, FP = 32, FN = 39, and TN = 207, what is the exact Accuracy?",
+    "options": [
+      "65.00%",
+      "64.00%",
+      "80.00%",
+      "90.00%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=77, FP=32, FN=39, TN=207."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 0) and point B(23, 9) in a 2D space?",
+    "options": [
+      "18.00",
+      "21.50",
+      "15.90",
+      "27.00"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 0) and point B(12, 15) in a 2D space?",
+    "options": [
+      "24.00",
+      "27.50",
+      "21.90",
+      "36.00"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 1) and point B(7, 16) in a 2D space?",
+    "options": [
+      "21.50",
+      "15.90",
+      "18.00",
+      "27.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (0), what is the predicted value of y when x = 27?",
+    "options": [
+      "216",
+      "226",
+      "270",
+      "216"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=27 into y = 8(27) + 0 to get 216."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 0) and point B(22, 16) in a 2D space?",
+    "options": [
+      "21.90",
+      "36.00",
+      "24.00",
+      "27.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 181, FP = 42, FN = 20, and TN = 145, what is the exact Recall?",
+    "options": [
+      "75.05%",
+      "100.05%",
+      "72.04%",
+      "90.05%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=181, FP=42, FN=20, TN=145."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(1, 16) and point B(15, 13) in a 2D space?",
+    "options": [
+      "12.22",
+      "21.48",
+      "17.82",
+      "14.32"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 14.32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 11) and point B(6, 24) in a 2D space?",
+    "options": [
+      "20.40",
+      "11.50",
+      "13.60",
+      "17.10"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 13.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (2), what is the predicted value of y when x = 4?",
+    "options": [
+      "22",
+      "34",
+      "26",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=4 into y = 6(4) + 2 to get 26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 16) and point B(20, 22) in a 2D space?",
+    "options": [
+      "25.50",
+      "19.90",
+      "33.00",
+      "22.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 4?",
+    "options": [
+      "48",
+      "38",
+      "34",
+      "46"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=4 into y = 9(4) + 2 to get 38."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 189, FP = 11, FN = 20, and TN = 192, what is the exact Precision?",
+    "options": [
+      "94.50%",
+      "104.50%",
+      "79.50%",
+      "75.60%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=189, FP=11, FN=20, TN=192."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (1), what is the predicted value of y when x = 13?",
+    "options": [
+      "51",
+      "79",
+      "63",
+      "53"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=13 into y = 4(13) + 1 to get 53."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 108, FP = 23, FN = 24, and TN = 254, what is the exact Accuracy?",
+    "options": [
+      "88.51%",
+      "98.51%",
+      "70.81%",
+      "73.51%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=108, FP=23, FN=24, TN=254."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 178, FP = 19, FN = 36, and TN = 255, what is the exact Precision?",
+    "options": [
+      "100.36%",
+      "90.36%",
+      "72.28%",
+      "75.36%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=178, FP=19, FN=36, TN=255."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 25?",
+    "options": [
+      "17",
+      "83",
+      "33",
+      "43"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=25 into y = 1(25) + 8 to get 33."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 146, FP = 12, FN = 24, and TN = 258, what is the exact Accuracy?",
+    "options": [
+      "101.82%",
+      "73.45%",
+      "91.82%",
+      "76.82%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=146, FP=12, FN=24, TN=258."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 23?",
+    "options": [
+      "157",
+      "211",
+      "165",
+      "175"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 7(23) + 4 to get 165."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 16) and point B(18, 23) in a 2D space?",
+    "options": [
+      "13.00",
+      "10.90",
+      "16.50",
+      "19.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 19) and point B(6, 10) in a 2D space?",
+    "options": [
+      "14.00",
+      "11.90",
+      "17.50",
+      "21.00"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (-3), what is the predicted value of y when x = 9?",
+    "options": [
+      "12",
+      "6",
+      "24",
+      "16"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=9 into y = 1(9) + -3 to get 6."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 3) and point B(16, 16) in a 2D space?",
+    "options": [
+      "22.15",
+      "18.26",
+      "14.76",
+      "12.66"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 14.76."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (7), what is the predicted value of y when x = 11?",
+    "options": [
+      "81",
+      "117",
+      "95",
+      "105"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=11 into y = 8(11) + 7 to get 95."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 16) and point B(24, 12) in a 2D space?",
+    "options": [
+      "20.50",
+      "14.90",
+      "17.00",
+      "25.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 19) and point B(5, 14) in a 2D space?",
+    "options": [
+      "20.89",
+      "11.83",
+      "17.43",
+      "13.93"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 13.93."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 12?",
+    "options": [
+      "101",
+      "91",
+      "115",
+      "101"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=12 into y = 8(12) + -5 to get 91."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (0), what is the predicted value of y when x = 9?",
+    "options": [
+      "99",
+      "91",
+      "81",
+      "81"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=9 into y = 9(9) + 0 to get 81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-4), what is the predicted value of y when x = 7?",
+    "options": [
+      "46",
+      "52",
+      "38",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=7 into y = 6(7) + -4 to get 38."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 0) and point B(11, 15) in a 2D space?",
+    "options": [
+      "25.50",
+      "17.00",
+      "20.50",
+      "14.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 19) and point B(10, 10) in a 2D space?",
+    "options": [
       "12.50",
+      "9.00",
       "6.90",
       "13.50"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Manhattan distance formula resolves to 9.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(0, 1) and point B(7, 11) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(1, 4) and point B(23, 13) in a 2D space?",
     "options": [
-      "12.21",
-      "18.31",
-      "10.11",
-      "15.71"
+      "27.27",
+      "21.67",
+      "23.77",
+      "35.65"
     ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 12.21."
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 23.77."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 174, FP = 39, FN = 12, and TN = 261, what is the exact Accuracy?",
+    "options": [
+      "71.60%",
+      "99.51%",
+      "74.51%",
+      "89.51%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=174, FP=39, FN=12, TN=261."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 187, FP = 33, FN = 19, and TN = 160, what is the exact Accuracy?",
+    "options": [
+      "71.97%",
+      "86.97%",
+      "96.97%",
+      "69.57%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=187, FP=33, FN=19, TN=160."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (9), what is the predicted value of y when x = 2?",
+    "options": [
+      "25",
+      "19",
+      "-3",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=2 into y = 3(2) + 9 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 118, FP = 13, FN = 35, and TN = 235, what is the exact Accuracy?",
+    "options": [
+      "70.42%",
+      "73.03%",
+      "88.03%",
+      "98.03%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=13, FN=35, TN=235."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-4), what is the predicted value of y when x = 16?",
+    "options": [
+      "92",
+      "60",
+      "68",
+      "70"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=16 into y = 4(16) + -4 to get 60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (9), what is the predicted value of y when x = 7?",
+    "options": [
+      "47",
+      "65",
+      "75",
+      "79"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=7 into y = 8(7) + 9 to get 65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (8), what is the predicted value of y when x = 23?",
+    "options": [
+      "87",
+      "77",
+      "123",
+      "61"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=23 into y = 3(23) + 8 to get 77."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 75, FP = 27, FN = 37, and TN = 195, what is the exact Recall?",
+    "options": [
+      "76.96%",
+      "51.96%",
+      "53.57%",
+      "66.96%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=75, FP=27, FN=37, TN=195."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(11, 16) and point B(17, 20) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(15, 6) and point B(7, 8) in a 2D space?",
     "options": [
-      "13.50",
       "7.90",
       "15.00",
+      "13.50",
       "10.00"
     ],
     "answer": 3,
@@ -13332,57 +2804,4579 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(8, 2) and point B(13, 20) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(5, 14) and point B(23, 15) in a 2D space?",
     "options": [
-      "23.00",
-      "20.90",
-      "34.50",
-      "26.50"
+      "18.03",
+      "27.04",
+      "21.53",
+      "15.93"
     ],
     "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 23.00."
+    "explanation": "Euclidean distance formula resolves to 18.03."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-3), what is the predicted value of y when x = 23?",
+    "options": [
+      "250",
+      "210",
+      "204",
+      "214"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 9(23) + -3 to get 204."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(10, 19) and point B(19, 14) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(7, 1) and point B(12, 20) in a 2D space?",
     "options": [
-      "14.00",
+      "19.65",
+      "23.15",
+      "17.55",
+      "29.47"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 19.65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (5), what is the predicted value of y when x = 17?",
+    "options": [
+      "124",
+      "134",
+      "158",
+      "114"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=17 into y = 7(17) + 5 to get 124."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 191, FP = 26, FN = 23, and TN = 120, what is the exact Accuracy?",
+    "options": [
+      "69.11%",
+      "96.39%",
+      "71.39%",
+      "86.39%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=191, FP=26, FN=23, TN=120."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 21?",
+    "options": [
+      "16",
+      "36",
+      "26",
+      "68"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=21 into y = 1(21) + 5 to get 26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (0), what is the predicted value of y when x = 17?",
+    "options": [
+      "17",
+      "17",
+      "27",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=17 into y = 1(17) + 0 to get 17."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(8, 0) and point B(7, 11) in a 2D space?",
+    "options": [
+      "14.55",
+      "8.95",
+      "16.57",
+      "11.05"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 11.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-3), what is the predicted value of y when x = 20?",
+    "options": [
+      "127",
+      "117",
+      "157",
+      "123"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=20 into y = 6(20) + -3 to get 117."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 101, FP = 40, FN = 20, and TN = 132, what is the exact Accuracy?",
+    "options": [
+      "79.52%",
+      "89.52%",
+      "64.52%",
+      "63.62%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=101, FP=40, FN=20, TN=132."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (4), what is the predicted value of y when x = 23?",
+    "options": [
+      "165",
+      "129",
+      "119",
+      "111"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 5(23) + 4 to get 119."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-4), what is the predicted value of y when x = 27?",
+    "options": [
+      "131",
+      "141",
+      "185",
+      "139"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=27 into y = 5(27) + -4 to get 131."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 3) and point B(17, 17) in a 2D space?",
+    "options": [
+      "21.21",
+      "12.04",
+      "14.14",
+      "17.64"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 14.14."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (6), what is the predicted value of y when x = 16?",
+    "options": [
+      "198",
+      "154",
+      "176",
+      "166"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=16 into y = 10(16) + 6 to get 166."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(4, 18) and point B(23, 23) in a 2D space?",
+    "options": [
+      "17.55",
+      "23.15",
+      "29.47",
+      "19.65"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 19.65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 41, FN = 6, and TN = 110, what is the exact Accuracy?",
+    "options": [
+      "80.00%",
+      "65.00%",
+      "90.00%",
+      "64.00%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=78, FP=41, FN=6, TN=110."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(2, 15) and point B(24, 23) in a 2D space?",
+    "options": [
+      "26.91",
+      "21.31",
+      "35.11",
+      "23.41"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 23.41."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(7, 15) and point B(13, 13) in a 2D space?",
+    "options": [
+      "4.22",
+      "9.49",
+      "9.82",
+      "6.32"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 6.32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 10?",
+    "options": [
+      "18",
+      "2",
+      "38",
+      "28"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=10 into y = 1(10) + 8 to get 18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 60, FP = 20, FN = 42, and TN = 194, what is the exact Precision?",
+    "options": [
+      "60.00%",
+      "75.00%",
+      "85.00%",
+      "60.00%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=60, FP=20, FN=42, TN=194."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(14, 4) and point B(17, 22) in a 2D space?",
+    "options": [
+      "21.75",
+      "18.25",
+      "27.37",
+      "16.15"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 18.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(1, 19) and point B(6, 18) in a 2D space?",
+    "options": [
+      "9.50",
+      "3.90",
+      "6.00",
+      "9.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 186, FP = 25, FN = 19, and TN = 227, what is the exact Recall?",
+    "options": [
+      "75.73%",
+      "72.59%",
+      "90.73%",
+      "100.73%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=186, FP=25, FN=19, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 15) and point B(7, 13) in a 2D space?",
+    "options": [
+      "7.12",
+      "9.22",
+      "13.83",
+      "12.72"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 9.22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-4), what is the predicted value of y when x = 1?",
+    "options": [
+      "13",
+      "5",
+      "7",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=1 into y = 9(1) + -4 to get 5."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (2), what is the predicted value of y when x = 26?",
+    "options": [
+      "50",
+      "54",
+      "106",
+      "64"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=26 into y = 2(26) + 2 to get 54."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 13) and point B(24, 19) in a 2D space?",
+    "options": [
+      "18.00",
+      "27.00",
+      "15.90",
+      "21.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 127, FP = 9, FN = 35, and TN = 258, what is the exact Recall?",
+    "options": [
+      "78.40%",
+      "62.72%",
+      "88.40%",
+      "63.40%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=127, FP=9, FN=35, TN=258."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 61, FP = 44, FN = 39, and TN = 133, what is the exact Accuracy?",
+    "options": [
+      "55.04%",
+      "80.04%",
+      "70.04%",
+      "56.03%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=61, FP=44, FN=39, TN=133."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-2), what is the predicted value of y when x = 23?",
+    "options": [
+      "54",
+      "44",
+      "90",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=23 into y = 2(23) + -2 to get 44."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-2), what is the predicted value of y when x = 17?",
+    "options": [
+      "76",
+      "100",
+      "66",
+      "70"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=17 into y = 4(17) + -2 to get 66."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 170, FP = 37, FN = 33, and TN = 183, what is the exact Recall?",
+    "options": [
+      "68.74%",
+      "67.00%",
+      "93.74%",
+      "83.74%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=170, FP=37, FN=33, TN=183."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 14) and point B(23, 14) in a 2D space?",
+    "options": [
+      "17.00",
+      "20.50",
+      "25.50",
+      "14.90"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (9), what is the predicted value of y when x = 15?",
+    "options": [
+      "21",
+      "49",
+      "69",
+      "39"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=15 into y = 2(15) + 9 to get 39."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 58, FP = 19, FN = 27, and TN = 201, what is the exact Precision?",
+    "options": [
+      "85.32%",
+      "60.32%",
+      "75.32%",
+      "60.26%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=58, FP=19, FN=27, TN=201."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 113, FP = 22, FN = 19, and TN = 215, what is the exact Accuracy?",
+    "options": [
+      "88.89%",
+      "98.89%",
+      "73.89%",
+      "71.11%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=113, FP=22, FN=19, TN=215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(2, 18) and point B(14, 18) in a 2D space?",
+    "options": [
+      "9.90",
+      "18.00",
+      "12.00",
+      "15.50"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (0), what is the predicted value of y when x = 6?",
+    "options": [
+      "36",
+      "24",
+      "34",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=6 into y = 4(6) + 0 to get 24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 145, FP = 31, FN = 15, and TN = 174, what is the exact Precision?",
+    "options": [
+      "82.39%",
+      "65.91%",
+      "92.39%",
+      "67.39%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=145, FP=31, FN=15, TN=174."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (3), what is the predicted value of y when x = 22?",
+    "options": [
+      "151",
+      "157",
+      "201",
+      "167"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=22 into y = 7(22) + 3 to get 157."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-2), what is the predicted value of y when x = 23?",
+    "options": [
+      "228",
+      "182",
+      "186",
+      "192"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=23 into y = 8(23) + -2 to get 182."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 17, FN = 14, and TN = 191, what is the exact Precision?",
+    "options": [
+      "102.09%",
+      "73.67%",
+      "92.09%",
+      "77.09%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=198, FP=17, FN=14, TN=191."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 56, FP = 10, FN = 19, and TN = 110, what is the exact Precision?",
+    "options": [
+      "84.85%",
+      "94.85%",
+      "69.85%",
+      "67.88%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=56, FP=10, FN=19, TN=110."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(2, 8) and point B(8, 18) in a 2D space?",
+    "options": [
+      "11.66",
+      "15.16",
+      "9.56",
+      "17.49"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 11.66."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 26?",
+    "options": [
+      "186",
+      "238",
+      "196",
+      "178"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=26 into y = 7(26) + 4 to get 186."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 16?",
+    "options": [
+      "81",
+      "79",
+      "91",
+      "113"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=16 into y = 5(16) + 1 to get 81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 3) and point B(24, 17) in a 2D space?",
+    "options": [
+      "24.96",
+      "16.64",
+      "14.54",
+      "20.14"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 16.64."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (1), what is the predicted value of y when x = 3?",
+    "options": [
+      "29",
+      "41",
+      "31",
+      "37"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=3 into y = 10(3) + 1 to get 31."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (9), what is the predicted value of y when x = 22?",
+    "options": [
+      "273",
+      "239",
+      "211",
+      "229"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=22 into y = 10(22) + 9 to get 229."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 135, FP = 25, FN = 35, and TN = 204, what is the exact Recall?",
+    "options": [
+      "64.41%",
+      "89.41%",
+      "63.53%",
+      "79.41%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=135, FP=25, FN=35, TN=204."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 17) and point B(14, 14) in a 2D space?",
+    "options": [
+      "9.50",
+      "6.00",
+      "9.00",
+      "3.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(2, 7) and point B(14, 17) in a 2D space?",
+    "options": [
+      "13.52",
+      "15.62",
+      "19.12",
+      "23.43"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 15.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 53, FP = 21, FN = 41, and TN = 230, what is the exact Recall?",
+    "options": [
+      "56.38%",
+      "66.38%",
+      "41.38%",
+      "45.11%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=53, FP=21, FN=41, TN=230."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (2), what is the predicted value of y when x = 23?",
+    "options": [
+      "81",
+      "117",
+      "71",
+      "67"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 3(23) + 2 to get 71."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 190, FP = 17, FN = 17, and TN = 239, what is the exact Recall?",
+    "options": [
+      "91.79%",
+      "101.79%",
+      "76.79%",
+      "73.43%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=190, FP=17, FN=17, TN=239."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 168, FP = 22, FN = 37, and TN = 298, what is the exact Accuracy?",
+    "options": [
+      "73.76%",
+      "71.01%",
+      "98.76%",
+      "88.76%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=168, FP=22, FN=37, TN=298."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 12) and point B(9, 16) in a 2D space?",
+    "options": [
+      "12.09",
+      "11.56",
+      "8.06",
+      "5.96"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 8.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-1), what is the predicted value of y when x = 5?",
+    "options": [
+      "19",
+      "11",
+      "19",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=5 into y = 2(5) + -1 to get 9."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (5), what is the predicted value of y when x = 2?",
+    "options": [
+      "31",
+      "21",
+      "25",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=2 into y = 8(2) + 5 to get 21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 69, FP = 28, FN = 7, and TN = 124, what is the exact Recall?",
+    "options": [
+      "72.63%",
+      "90.79%",
+      "100.79%",
+      "75.79%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=69, FP=28, FN=7, TN=124."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 192, FP = 30, FN = 13, and TN = 189, what is the exact Precision?",
+    "options": [
+      "69.19%",
+      "71.49%",
+      "96.49%",
+      "86.49%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=192, FP=30, FN=13, TN=189."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 14) and point B(17, 8) in a 2D space?",
+    "options": [
+      "10.00",
+      "15.00",
+      "13.50",
+      "7.90"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 10.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 138, FP = 29, FN = 44, and TN = 160, what is the exact Precision?",
+    "options": [
+      "67.63%",
+      "66.11%",
+      "92.63%",
+      "82.63%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=138, FP=29, FN=44, TN=160."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 169, FP = 8, FN = 10, and TN = 155, what is the exact Accuracy?",
+    "options": [
+      "79.74%",
+      "104.74%",
+      "75.79%",
+      "94.74%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=169, FP=8, FN=10, TN=155."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-4), what is the predicted value of y when x = 0?",
+    "options": [
+      "6",
+      "-4",
+      "4",
+      "-4"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=0 into y = 9(0) + -4 to get -4."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 165, FP = 21, FN = 28, and TN = 272, what is the exact Recall?",
+    "options": [
+      "70.49%",
+      "85.49%",
+      "95.49%",
+      "68.39%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=165, FP=21, FN=28, TN=272."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 51, FP = 23, FN = 25, and TN = 222, what is the exact Accuracy?",
+    "options": [
+      "68.04%",
+      "85.05%",
+      "95.05%",
+      "70.05%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=51, FP=23, FN=25, TN=222."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 126, FP = 20, FN = 16, and TN = 126, what is the exact Accuracy?",
+    "options": [
+      "72.50%",
+      "97.50%",
+      "87.50%",
+      "70.00%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=126, FP=20, FN=16, TN=126."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 3) and point B(7, 22) in a 2D space?",
+    "options": [
+      "20.25",
+      "18.15",
+      "23.75",
+      "30.37"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 20.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-3), what is the predicted value of y when x = 18?",
+    "options": [
+      "105",
+      "141",
+      "115",
+      "111"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=18 into y = 6(18) + -3 to get 105."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 82, FP = 41, FN = 41, and TN = 154, what is the exact Precision?",
+    "options": [
+      "76.67%",
+      "66.67%",
+      "53.33%",
+      "51.67%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=82, FP=41, FN=41, TN=154."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 101, FP = 17, FN = 17, and TN = 138, what is the exact Recall?",
+    "options": [
+      "85.59%",
+      "95.59%",
+      "70.59%",
+      "68.47%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=101, FP=17, FN=17, TN=138."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 153, FP = 32, FN = 42, and TN = 114, what is the exact Accuracy?",
+    "options": [
+      "78.30%",
+      "63.30%",
+      "88.30%",
+      "62.64%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=153, FP=32, FN=42, TN=114."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 8) and point B(20, 9) in a 2D space?",
+    "options": [
+      "1.06",
+      "6.66",
+      "3.16",
+      "4.74"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 3.16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (1), what is the predicted value of y when x = 29?",
+    "options": [
+      "289",
+      "291",
+      "301",
+      "349"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=29 into y = 10(29) + 1 to get 291."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-1), what is the predicted value of y when x = 5?",
+    "options": [
+      "44",
+      "34",
+      "44",
+      "36"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=5 into y = 7(5) + -1 to get 34."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 12) and point B(19, 13) in a 2D space?",
+    "options": [
+      "5.96",
+      "11.56",
+      "8.06",
+      "12.09"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 8.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (9), what is the predicted value of y when x = 12?",
+    "options": [
+      "43",
+      "33",
+      "57",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=12 into y = 2(12) + 9 to get 33."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(12, 17) and point B(17, 20) in a 2D space?",
+    "options": [
+      "8.75",
+      "9.33",
+      "3.73",
+      "5.83"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 5.83."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 194, FP = 14, FN = 15, and TN = 142, what is the exact Accuracy?",
+    "options": [
+      "102.05%",
+      "92.05%",
+      "73.64%",
+      "77.05%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=194, FP=14, FN=15, TN=142."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-3), what is the predicted value of y when x = 24?",
+    "options": [
+      "141",
+      "103",
+      "99",
+      "93"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=24 into y = 4(24) + -3 to get 93."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 6) and point B(23, 21) in a 2D space?",
+    "options": [
+      "28.50",
+      "19.00",
+      "22.50",
+      "16.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 19.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 3?",
+    "options": [
+      "29",
+      "35",
+      "39",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=3 into y = 9(3) + 2 to get 29."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 177, FP = 31, FN = 15, and TN = 115, what is the exact Accuracy?",
+    "options": [
+      "86.39%",
+      "71.39%",
+      "96.39%",
+      "69.11%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=177, FP=31, FN=15, TN=115."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 187, FP = 27, FN = 36, and TN = 160, what is the exact Recall?",
+    "options": [
+      "68.86%",
+      "93.86%",
+      "83.86%",
+      "67.09%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=187, FP=27, FN=36, TN=160."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 161, FP = 42, FN = 34, and TN = 114, what is the exact Precision?",
+    "options": [
+      "63.45%",
+      "64.31%",
+      "89.31%",
+      "79.31%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=161, FP=42, FN=34, TN=114."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 2) and point B(22, 6) in a 2D space?",
+    "options": [
+      "20.40",
+      "13.60",
+      "17.10",
+      "11.50"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 13.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 182, FP = 8, FN = 36, and TN = 108, what is the exact Recall?",
+    "options": [
+      "68.49%",
+      "93.49%",
+      "83.49%",
+      "66.79%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=182, FP=8, FN=36, TN=108."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 92, FP = 14, FN = 28, and TN = 254, what is the exact Accuracy?",
+    "options": [
+      "89.18%",
+      "74.18%",
+      "71.34%",
+      "99.18%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=92, FP=14, FN=28, TN=254."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (3), what is the predicted value of y when x = 17?",
+    "options": [
+      "167",
+      "173",
+      "207",
+      "183"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=17 into y = 10(17) + 3 to get 173."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 172, FP = 42, FN = 39, and TN = 254, what is the exact Accuracy?",
+    "options": [
+      "84.02%",
+      "69.02%",
+      "67.22%",
+      "94.02%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=172, FP=42, FN=39, TN=254."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 0) and point B(10, 21) in a 2D space?",
+    "options": [
+      "32.76",
+      "25.34",
+      "21.84",
+      "19.74"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 21.84."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 3) and point B(21, 13) in a 2D space?",
+    "options": [
+      "30.89",
+      "18.49",
+      "24.09",
+      "20.59"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 20.59."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 67, FP = 8, FN = 7, and TN = 177, what is the exact Precision?",
+    "options": [
+      "99.33%",
+      "71.47%",
+      "89.33%",
+      "74.33%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=67, FP=8, FN=7, TN=177."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 13?",
+    "options": [
+      "75",
+      "91",
+      "65",
+      "65"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=13 into y = 5(13) + 0 to get 65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (-4), what is the predicted value of y when x = 17?",
+    "options": [
+      "23",
+      "21",
+      "13",
+      "47"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=17 into y = 1(17) + -4 to get 13."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 120, FP = 41, FN = 42, and TN = 141, what is the exact Precision?",
+    "options": [
+      "59.53%",
+      "84.53%",
+      "74.53%",
+      "59.63%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=120, FP=41, FN=42, TN=141."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(8, 18) and point B(10, 16) in a 2D space?",
+    "options": [
+      "0.73",
+      "2.83",
+      "4.24",
+      "6.33"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 2.83."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 8?",
+    "options": [
+      "78",
+      "82",
+      "94",
+      "88"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=8 into y = 10(8) + -2 to get 78."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 27, FN = 29, and TN = 294, what is the exact Precision?",
+    "options": [
+      "65.99%",
+      "80.99%",
+      "64.79%",
+      "90.99%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=115, FP=27, FN=29, TN=294."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 18, FN = 11, and TN = 244, what is the exact Precision?",
+    "options": [
+      "91.25%",
+      "66.25%",
+      "65.00%",
+      "81.25%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=78, FP=18, FN=11, TN=244."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 15) and point B(20, 19) in a 2D space?",
+    "options": [
+      "6.40",
+      "4.30",
+      "9.90",
+      "9.60"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 6.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 50, FP = 34, FN = 44, and TN = 115, what is the exact Accuracy?",
+    "options": [
+      "54.32%",
+      "67.90%",
+      "52.90%",
+      "77.90%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=50, FP=34, FN=44, TN=115."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 40, FN = 34, and TN = 268, what is the exact Precision?",
+    "options": [
+      "66.55%",
+      "83.19%",
+      "68.19%",
+      "93.19%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=198, FP=40, FN=34, TN=268."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 14) and point B(12, 17) in a 2D space?",
+    "options": [
+      "5.90",
+      "12.00",
+      "8.00",
+      "11.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-2), what is the predicted value of y when x = 22?",
+    "options": [
+      "68",
+      "108",
+      "64",
+      "74"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=22 into y = 3(22) + -2 to get 64."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 148, FP = 40, FN = 30, and TN = 115, what is the exact Accuracy?",
+    "options": [
+      "78.98%",
+      "63.18%",
+      "63.98%",
+      "88.98%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=148, FP=40, FN=30, TN=115."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 15) and point B(9, 24) in a 2D space?",
+    "options": [
+      "15.00",
+      "7.90",
+      "10.00",
+      "13.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 10.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-4), what is the predicted value of y when x = 28?",
+    "options": [
+      "332",
+      "284",
+      "286",
+      "276"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=28 into y = 10(28) + -4 to get 276."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 12) and point B(21, 5) in a 2D space?",
+    "options": [
+      "15.36",
+      "17.46",
+      "20.96",
+      "26.20"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 17.46."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-2), what is the predicted value of y when x = 24?",
+    "options": [
+      "190",
+      "194",
+      "200",
+      "238"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=24 into y = 8(24) + -2 to get 190."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 18) and point B(21, 22) in a 2D space?",
+    "options": [
+      "22.50",
+      "15.00",
+      "18.50",
+      "12.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(1, 17) and point B(8, 10) in a 2D space?",
+    "options": [
       "21.00",
+      "14.00",
       "17.50",
       "11.90"
     ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 14) and point B(24, 7) in a 2D space?",
+    "options": [
+      "30.37",
+      "18.15",
+      "23.75",
+      "20.25"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 20.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 89, FP = 13, FN = 7, and TN = 270, what is the exact Accuracy?",
+    "options": [
+      "94.72%",
+      "79.72%",
+      "104.72%",
+      "75.78%"
+    ],
     "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=89, FP=13, FN=7, TN=270."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 189, FP = 25, FN = 10, and TN = 133, what is the exact Accuracy?",
+    "options": [
+      "72.16%",
+      "75.20%",
+      "100.20%",
+      "90.20%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=189, FP=25, FN=10, TN=133."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 177, FP = 28, FN = 26, and TN = 118, what is the exact Precision?",
+    "options": [
+      "96.34%",
+      "69.07%",
+      "71.34%",
+      "86.34%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=177, FP=28, FN=26, TN=118."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 7) and point B(21, 18) in a 2D space?",
+    "options": [
+      "36.00",
+      "21.90",
+      "24.00",
+      "27.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (3), what is the predicted value of y when x = 13?",
+    "options": [
+      "68",
+      "94",
+      "62",
+      "78"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=13 into y = 5(13) + 3 to get 68."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 76, FP = 16, FN = 14, and TN = 163, what is the exact Recall?",
+    "options": [
+      "67.56%",
+      "69.44%",
+      "84.44%",
+      "94.44%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=76, FP=16, FN=14, TN=163."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 2) and point B(15, 13) in a 2D space?",
+    "options": [
+      "21.00",
+      "14.00",
+      "11.90",
+      "17.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-1), what is the predicted value of y when x = 12?",
+    "options": [
+      "81",
+      "95",
+      "71",
+      "73"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=12 into y = 6(12) + -1 to get 71."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 86, FP = 23, FN = 35, and TN = 239, what is the exact Recall?",
+    "options": [
+      "81.07%",
+      "71.07%",
+      "56.86%",
+      "56.07%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=86, FP=23, FN=35, TN=239."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 21?",
+    "options": [
+      "161",
+      "151",
+      "143",
+      "193"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=21 into y = 7(21) + 4 to get 151."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 15) and point B(13, 19) in a 2D space?",
+    "options": [
+      "17.00",
+      "20.50",
+      "14.90",
+      "25.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 19?",
+    "options": [
+      "213",
+      "185",
+      "175",
+      "167"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=19 into y = 9(19) + 4 to get 175."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(7, 12) and point B(23, 19) in a 2D space?",
+    "options": [
+      "26.20",
+      "15.36",
+      "20.96",
+      "17.46"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 17.46."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (6), what is the predicted value of y when x = 24?",
+    "options": [
+      "174",
+      "162",
+      "184",
+      "222"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=24 into y = 7(24) + 6 to get 174."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(14, 1) and point B(6, 14) in a 2D space?",
+    "options": [
+      "22.90",
+      "18.76",
+      "13.16",
+      "15.26"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 15.26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (8), what is the predicted value of y when x = 17?",
+    "options": [
+      "60",
+      "76",
+      "86",
+      "110"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=17 into y = 4(17) + 8 to get 76."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 17) and point B(13, 12) in a 2D space?",
+    "options": [
+      "20.89",
+      "17.43",
+      "13.93",
+      "11.83"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 13.93."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(15, 1) and point B(21, 7) in a 2D space?",
+    "options": [
+      "12.00",
+      "15.50",
+      "9.90",
+      "18.00"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 12) and point B(9, 23) in a 2D space?",
+    "options": [
+      "19.50",
+      "10.90",
+      "13.00",
+      "16.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-2), what is the predicted value of y when x = 10?",
+    "options": [
+      "38",
+      "18",
+      "22",
+      "28"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=10 into y = 2(10) + -2 to get 18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 180, FP = 28, FN = 41, and TN = 214, what is the exact Precision?",
+    "options": [
+      "71.54%",
+      "96.54%",
+      "69.23%",
+      "86.54%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=180, FP=28, FN=41, TN=214."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 66, FP = 28, FN = 33, and TN = 194, what is the exact Recall?",
+    "options": [
+      "66.67%",
+      "51.67%",
+      "76.67%",
+      "53.33%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=66, FP=28, FN=33, TN=194."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 16) and point B(6, 20) in a 2D space?",
+    "options": [
+      "4.90",
+      "10.50",
+      "10.50",
+      "7.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 7.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(14, 19) and point B(11, 15) in a 2D space?",
+    "options": [
+      "5.00",
+      "2.90",
+      "8.50",
+      "7.50"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 9) and point B(19, 19) in a 2D space?",
+    "options": [
+      "24.97",
+      "21.47",
+      "19.37",
+      "32.21"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 21.47."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 137, FP = 31, FN = 41, and TN = 108, what is the exact Accuracy?",
+    "options": [
+      "62.29%",
+      "87.29%",
+      "61.83%",
+      "77.29%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=137, FP=31, FN=41, TN=108."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-5), what is the predicted value of y when x = 5?",
+    "options": [
+      "55",
+      "55",
+      "45",
+      "55"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=5 into y = 10(5) + -5 to get 45."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (8), what is the predicted value of y when x = 12?",
+    "options": [
+      "28",
+      "68",
+      "44",
+      "54"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=12 into y = 3(12) + 8 to get 44."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 19) and point B(19, 15) in a 2D space?",
+    "options": [
+      "22.92",
+      "19.42",
+      "29.12",
+      "17.32"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 19.42."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (8), what is the predicted value of y when x = 3?",
+    "options": [
+      "26",
+      "30",
+      "20",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=3 into y = 4(3) + 8 to get 20."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 57, FP = 42, FN = 14, and TN = 129, what is the exact Recall?",
+    "options": [
+      "65.28%",
+      "90.28%",
+      "80.28%",
+      "64.23%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=57, FP=42, FN=14, TN=129."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 12) and point B(7, 19) in a 2D space?",
+    "options": [
+      "14.13",
+      "10.63",
+      "15.95",
+      "8.53"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 10.63."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 0) and point B(21, 5) in a 2D space?",
+    "options": [
+      "20.26",
+      "25.14",
+      "14.66",
+      "16.76"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 16.76."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 7?",
+    "options": [
+      "26",
+      "22",
+      "12",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=7 into y = 1(7) + 5 to get 12."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 113, FP = 39, FN = 8, and TN = 104, what is the exact Precision?",
+    "options": [
+      "74.34%",
+      "59.34%",
+      "59.47%",
+      "84.34%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=113, FP=39, FN=8, TN=104."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-3), what is the predicted value of y when x = 24?",
+    "options": [
+      "51",
+      "45",
+      "55",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=24 into y = 2(24) + -3 to get 45."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 11?",
+    "options": [
+      "136",
+      "114",
+      "124",
+      "106"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=11 into y = 10(11) + 4 to get 114."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 11) and point B(24, 22) in a 2D space?",
+    "options": [
+      "29.90",
+      "48.00",
+      "35.50",
+      "32.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 32.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 2) and point B(23, 23) in a 2D space?",
+    "options": [
+      "33.90",
+      "36.00",
+      "39.50",
+      "54.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 36.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 10) and point B(20, 9) in a 2D space?",
+    "options": [
+      "13.00",
+      "16.50",
+      "19.50",
+      "10.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 12) and point B(7, 9) in a 2D space?",
+    "options": [
+      "12.82",
+      "12.04",
+      "6.44",
+      "8.54"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 8.54."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 9) and point B(17, 17) in a 2D space?",
+    "options": [
+      "8.00",
+      "12.00",
+      "11.50",
+      "5.90"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 1) and point B(21, 7) in a 2D space?",
+    "options": [
+      "18.97",
+      "16.87",
+      "22.47",
+      "28.46"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 18.97."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 20?",
+    "options": [
+      "154",
+      "176",
+      "166",
+      "206"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=20 into y = 8(20) + 6 to get 166."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 178, FP = 5, FN = 22, and TN = 241, what is the exact Precision?",
+    "options": [
+      "97.27%",
+      "107.27%",
+      "77.81%",
+      "82.27%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=178, FP=5, FN=22, TN=241."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-1), what is the predicted value of y when x = 11?",
+    "options": [
+      "89",
+      "87",
+      "97",
+      "109"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=11 into y = 8(11) + -1 to get 87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(8, 15) and point B(12, 16) in a 2D space?",
+    "options": [
+      "7.62",
+      "2.02",
+      "4.12",
+      "6.18"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 4.12."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 158, FP = 35, FN = 25, and TN = 252, what is the exact Recall?",
+    "options": [
+      "86.34%",
+      "96.34%",
+      "69.07%",
+      "71.34%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=158, FP=35, FN=25, TN=252."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 4) and point B(24, 21) in a 2D space?",
+    "options": [
+      "23.40",
+      "29.00",
+      "25.50",
+      "38.24"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 25.50."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 176, FP = 29, FN = 8, and TN = 187, what is the exact Precision?",
+    "options": [
+      "68.68%",
+      "95.85%",
+      "70.85%",
+      "85.85%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=176, FP=29, FN=8, TN=187."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 7) and point B(24, 23) in a 2D space?",
+    "options": [
+      "48.00",
+      "35.50",
+      "32.00",
+      "29.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 32.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 199, FP = 37, FN = 41, and TN = 215, what is the exact Recall?",
+    "options": [
+      "66.33%",
+      "82.92%",
+      "67.92%",
+      "92.92%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=199, FP=37, FN=41, TN=215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 4) and point B(7, 17) in a 2D space?",
+    "options": [
+      "14.93",
+      "25.54",
+      "20.53",
+      "17.03"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 17.03."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 158, FP = 25, FN = 30, and TN = 297, what is the exact Accuracy?",
+    "options": [
+      "71.37%",
+      "99.22%",
+      "89.22%",
+      "74.22%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=158, FP=25, FN=30, TN=297."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(12, 16) and point B(19, 24) in a 2D space?",
+    "options": [
+      "10.63",
+      "8.53",
+      "14.13",
+      "15.95"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 10.63."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 10) and point B(6, 12) in a 2D space?",
+    "options": [
+      "9.50",
+      "6.00",
+      "3.90",
+      "9.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 19) and point B(23, 10) in a 2D space?",
+    "options": [
+      "24.50",
+      "21.00",
+      "18.90",
+      "31.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(17, 19) and point B(19, 9) in a 2D space?",
+    "options": [
+      "9.90",
+      "18.00",
+      "15.50",
+      "12.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 10) and point B(7, 24) in a 2D space?",
+    "options": [
+      "15.70",
+      "26.71",
+      "17.80",
+      "21.30"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 17.80."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (8), what is the predicted value of y when x = 9?",
+    "options": [
+      "80",
+      "90",
+      "98",
+      "64"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=9 into y = 8(9) + 8 to get 80."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 15) and point B(19, 15) in a 2D space?",
+    "options": [
+      "16.50",
+      "19.50",
+      "10.90",
+      "13.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 26?",
+    "options": [
+      "154",
+      "158",
+      "206",
+      "164"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=26 into y = 6(26) + -2 to get 154."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 97, FP = 19, FN = 28, and TN = 152, what is the exact Accuracy?",
+    "options": [
+      "69.12%",
+      "84.12%",
+      "94.12%",
+      "67.30%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=97, FP=19, FN=28, TN=152."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 119, FP = 7, FN = 29, and TN = 168, what is the exact Accuracy?",
+    "options": [
+      "71.08%",
+      "73.85%",
+      "98.85%",
+      "88.85%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=119, FP=7, FN=29, TN=168."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 144, FP = 8, FN = 10, and TN = 123, what is the exact Accuracy?",
+    "options": [
+      "103.68%",
+      "74.95%",
+      "78.68%",
+      "93.68%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=144, FP=8, FN=10, TN=123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 10) and point B(13, 23) in a 2D space?",
+    "options": [
+      "22.90",
+      "18.76",
+      "13.16",
+      "15.26"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 15.26."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (9), what is the predicted value of y when x = 27?",
+    "options": [
+      "99",
+      "171",
+      "127",
+      "117"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=27 into y = 4(27) + 9 to get 117."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 11) and point B(19, 15) in a 2D space?",
+    "options": [
+      "13.50",
+      "9.00",
+      "12.50",
+      "6.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (8), what is the predicted value of y when x = 11?",
+    "options": [
+      "85",
+      "69",
+      "107",
+      "95"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=11 into y = 7(11) + 8 to get 85."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 23?",
+    "options": [
+      "39",
+      "63",
+      "99",
+      "53"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=23 into y = 2(23) + 7 to get 53."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(7, 18) and point B(12, 10) in a 2D space?",
+    "options": [
+      "9.43",
+      "7.33",
+      "12.93",
+      "14.15"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 9.43."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 129, FP = 35, FN = 18, and TN = 195, what is the exact Recall?",
+    "options": [
+      "70.20%",
+      "97.76%",
+      "87.76%",
+      "72.76%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=129, FP=35, FN=18, TN=195."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(7, 13) and point B(10, 14) in a 2D space?",
+    "options": [
+      "1.06",
+      "3.16",
+      "4.74",
+      "6.66"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 3.16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (8), what is the predicted value of y when x = 16?",
+    "options": [
+      "146",
+      "120",
+      "136",
+      "168"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=16 into y = 8(16) + 8 to get 136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 2) and point B(14, 8) in a 2D space?",
+    "options": [
+      "10.82",
+      "7.21",
+      "5.11",
+      "10.71"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 7.21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 18?",
+    "options": [
+      "214",
+      "178",
+      "182",
+      "188"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=18 into y = 10(18) + -2 to get 178."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (6), what is the predicted value of y when x = 4?",
+    "options": [
+      "42",
+      "34",
+      "22",
+      "44"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=4 into y = 7(4) + 6 to get 34."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 60, FP = 22, FN = 35, and TN = 213, what is the exact Precision?",
+    "options": [
+      "58.17%",
+      "83.17%",
+      "58.54%",
+      "73.17%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=60, FP=22, FN=35, TN=213."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 6?",
+    "options": [
+      "1",
+      "23",
+      "11",
+      "21"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=6 into y = 1(6) + 5 to get 11."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 12?",
+    "options": [
+      "134",
+      "106",
+      "120",
+      "110"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=12 into y = 9(12) + 2 to get 110."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 16) and point B(23, 24) in a 2D space?",
+    "options": [
+      "12.81",
+      "10.71",
+      "19.21",
+      "16.31"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 12.81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(5, 3) and point B(12, 23) in a 2D space?",
+    "options": [
+      "24.90",
+      "30.50",
+      "40.50",
+      "27.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 34, FN = 35, and TN = 108, what is the exact Precision?",
+    "options": [
+      "87.18%",
+      "77.18%",
+      "61.74%",
+      "62.18%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=115, FP=34, FN=35, TN=108."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 14) and point B(23, 16) in a 2D space?",
+    "options": [
+      "27.00",
+      "21.50",
+      "15.90",
+      "18.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 0) and point B(5, 13) in a 2D space?",
+    "options": [
+      "15.90",
+      "21.50",
+      "18.00",
+      "27.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 28?",
+    "options": [
+      "42",
+      "32",
+      "88",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=28 into y = 1(28) + 4 to get 32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 181, FP = 40, FN = 21, and TN = 191, what is the exact Precision?",
+    "options": [
+      "91.90%",
+      "65.52%",
+      "66.90%",
+      "81.90%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=181, FP=40, FN=21, TN=191."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 75, FP = 12, FN = 8, and TN = 227, what is the exact Accuracy?",
+    "options": [
+      "103.79%",
+      "75.03%",
+      "78.79%",
+      "93.79%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=75, FP=12, FN=8, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 3) and point B(22, 24) in a 2D space?",
+    "options": [
+      "27.69",
+      "24.19",
+      "22.09",
+      "36.28"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 24.19."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(13, 7) and point B(7, 19) in a 2D space?",
+    "options": [
+      "15.90",
+      "27.00",
+      "18.00",
+      "21.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 19) and point B(24, 23) in a 2D space?",
+    "options": [
+      "15.52",
+      "13.42",
+      "19.02",
+      "23.29"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 15.52."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-1), what is the predicted value of y when x = 7?",
+    "options": [
+      "41",
+      "29",
+      "27",
+      "37"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=7 into y = 4(7) + -1 to get 27."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-1), what is the predicted value of y when x = 10?",
+    "options": [
+      "99",
+      "91",
+      "109",
+      "89"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=10 into y = 9(10) + -1 to get 89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 3) and point B(18, 18) in a 2D space?",
+    "options": [
+      "16.55",
+      "20.05",
+      "14.45",
+      "24.83"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 16.55."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 113, FP = 15, FN = 22, and TN = 107, what is the exact Recall?",
+    "options": [
+      "68.70%",
+      "66.96%",
+      "93.70%",
+      "83.70%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=113, FP=15, FN=22, TN=107."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 164, FP = 8, FN = 40, and TN = 256, what is the exact Accuracy?",
+    "options": [
+      "89.74%",
+      "71.79%",
+      "74.74%",
+      "99.74%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=164, FP=8, FN=40, TN=256."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 132, FP = 38, FN = 26, and TN = 285, what is the exact Accuracy?",
+    "options": [
+      "71.69%",
+      "96.69%",
+      "69.36%",
+      "86.69%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=132, FP=38, FN=26, TN=285."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (6), what is the predicted value of y when x = 17?",
+    "options": [
+      "28",
+      "74",
+      "50",
+      "40"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=17 into y = 2(17) + 6 to get 40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (8), what is the predicted value of y when x = 12?",
+    "options": [
+      "112",
+      "128",
+      "138",
+      "152"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=12 into y = 10(12) + 8 to get 128."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(1, 15) and point B(21, 10) in a 2D space?",
+    "options": [
+      "18.52",
+      "24.12",
+      "20.62",
+      "30.92"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 20.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (1), what is the predicted value of y when x = 14?",
+    "options": [
+      "85",
+      "83",
+      "95",
+      "113"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=14 into y = 6(14) + 1 to get 85."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 138, FP = 36, FN = 41, and TN = 175, what is the exact Recall?",
+    "options": [
+      "62.09%",
+      "61.68%",
+      "87.09%",
+      "77.09%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=138, FP=36, FN=41, TN=175."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 1) and point B(11, 24) in a 2D space?",
+    "options": [
+      "27.54",
+      "24.04",
+      "21.94",
+      "36.06"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 24.04."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (9), what is the predicted value of y when x = 21?",
+    "options": [
+      "12",
+      "72",
+      "30",
+      "40"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=21 into y = 1(21) + 9 to get 30."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 3) and point B(16, 21) in a 2D space?",
+    "options": [
+      "31.64",
+      "24.60",
+      "19.00",
+      "21.10"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 21.10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 151, FP = 26, FN = 34, and TN = 277, what is the exact Recall?",
+    "options": [
+      "66.62%",
+      "65.30%",
+      "91.62%",
+      "81.62%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=151, FP=26, FN=34, TN=277."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 4) and point B(14, 14) in a 2D space?",
+    "options": [
+      "25.50",
+      "19.90",
+      "33.00",
+      "22.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 16) and point B(18, 10) in a 2D space?",
+    "options": [
+      "3.90",
+      "9.00",
+      "9.50",
+      "6.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 19) and point B(13, 20) in a 2D space?",
+    "options": [
+      "2.24",
+      "5.74",
+      "3.35",
+      "0.14"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 2.24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 192, FP = 12, FN = 34, and TN = 267, what is the exact Precision?",
+    "options": [
+      "75.29%",
+      "104.12%",
+      "79.12%",
+      "94.12%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=192, FP=12, FN=34, TN=267."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 15) and point B(8, 14) in a 2D space?",
+    "options": [
+      "2.90",
+      "7.50",
+      "8.50",
+      "5.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-2), what is the predicted value of y when x = 23?",
+    "options": [
+      "205",
+      "163",
+      "169",
+      "159"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=23 into y = 7(23) + -2 to get 159."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (4), what is the predicted value of y when x = 21?",
+    "options": [
+      "151",
+      "119",
+      "101",
+      "109"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=21 into y = 5(21) + 4 to get 109."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 145, FP = 42, FN = 30, and TN = 150, what is the exact Accuracy?",
+    "options": [
+      "65.38%",
+      "64.31%",
+      "80.38%",
+      "90.38%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=145, FP=42, FN=30, TN=150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (7), what is the predicted value of y when x = 24?",
+    "options": [
+      "223",
+      "185",
+      "175",
+      "161"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=24 into y = 7(24) + 7 to get 175."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 179, FP = 14, FN = 37, and TN = 270, what is the exact Precision?",
+    "options": [
+      "74.20%",
+      "77.75%",
+      "102.75%",
+      "92.75%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=179, FP=14, FN=37, TN=270."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 81, FP = 9, FN = 12, and TN = 121, what is the exact Recall?",
+    "options": [
+      "72.10%",
+      "69.68%",
+      "97.10%",
+      "87.10%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=81, FP=9, FN=12, TN=121."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (0), what is the predicted value of y when x = 25?",
+    "options": [
+      "125",
+      "75",
+      "75",
+      "85"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=25 into y = 3(25) + 0 to get 75."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 35, FN = 5, and TN = 287, what is the exact Precision?",
+    "options": [
+      "84.98%",
+      "67.98%",
+      "94.98%",
+      "69.98%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=198, FP=35, FN=5, TN=287."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 54, FP = 5, FN = 19, and TN = 264, what is the exact Precision?",
+    "options": [
+      "73.22%",
+      "101.53%",
+      "91.53%",
+      "76.53%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=54, FP=5, FN=19, TN=264."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 90, FP = 6, FN = 20, and TN = 244, what is the exact Precision?",
+    "options": [
+      "103.75%",
+      "93.75%",
+      "78.75%",
+      "75.00%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=90, FP=6, FN=20, TN=244."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (9), what is the predicted value of y when x = 6?",
+    "options": [
+      "57",
+      "45",
+      "27",
+      "55"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=6 into y = 6(6) + 9 to get 45."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 95, FP = 16, FN = 42, and TN = 130, what is the exact Recall?",
+    "options": [
+      "69.34%",
+      "55.47%",
+      "79.34%",
+      "54.34%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=95, FP=16, FN=42, TN=130."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 143, FP = 25, FN = 32, and TN = 216, what is the exact Recall?",
+    "options": [
+      "66.71%",
+      "81.71%",
+      "91.71%",
+      "65.37%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=143, FP=25, FN=32, TN=216."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (0), what is the predicted value of y when x = 17?",
+    "options": [
+      "78",
+      "68",
+      "102",
+      "68"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=17 into y = 4(17) + 0 to get 68."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-3), what is the predicted value of y when x = 9?",
+    "options": [
+      "97",
+      "93",
+      "105",
+      "87"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=9 into y = 10(9) + -3 to get 87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 4) and point B(16, 23) in a 2D space?",
+    "options": [
+      "16.93",
+      "22.53",
+      "28.54",
+      "19.03"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 19.03."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 68, FP = 39, FN = 35, and TN = 153, what is the exact Recall?",
+    "options": [
+      "76.02%",
+      "66.02%",
+      "52.82%",
+      "51.02%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=68, FP=39, FN=35, TN=153."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 121, FP = 31, FN = 30, and TN = 232, what is the exact Accuracy?",
+    "options": [
+      "95.27%",
+      "70.27%",
+      "85.27%",
+      "68.21%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=121, FP=31, FN=30, TN=232."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 14) and point B(10, 11) in a 2D space?",
+    "options": [
+      "5.52",
+      "7.62",
+      "11.12",
+      "11.42"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 7.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-4), what is the predicted value of y when x = 17?",
+    "options": [
+      "55",
+      "81",
+      "47",
+      "57"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=17 into y = 3(17) + -4 to get 47."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 5) and point B(18, 21) in a 2D space?",
+    "options": [
+      "34.00",
+      "51.00",
+      "37.50",
+      "31.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 34.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 11) and point B(9, 6) in a 2D space?",
+    "options": [
+      "7.65",
+      "8.60",
+      "5.10",
+      "3.00"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 5.10."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (1), what is the predicted value of y when x = 26?",
+    "options": [
+      "207",
+      "219",
+      "261",
+      "209"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=26 into y = 8(26) + 1 to get 209."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 13) and point B(22, 22) in a 2D space?",
+    "options": [
+      "15.00",
+      "12.90",
+      "18.50",
+      "22.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 152, FP = 31, FN = 23, and TN = 291, what is the exact Accuracy?",
+    "options": [
+      "71.31%",
+      "74.13%",
+      "99.13%",
+      "89.13%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=152, FP=31, FN=23, TN=291."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (3), what is the predicted value of y when x = 26?",
+    "options": [
+      "195",
+      "185",
+      "179",
+      "237"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=26 into y = 7(26) + 3 to get 185."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (7), what is the predicted value of y when x = 26?",
+    "options": [
+      "173",
+      "215",
+      "149",
+      "163"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=26 into y = 6(26) + 7 to get 163."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 126, FP = 33, FN = 12, and TN = 199, what is the exact Accuracy?",
+    "options": [
+      "70.27%",
+      "72.84%",
+      "97.84%",
+      "87.84%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=126, FP=33, FN=12, TN=199."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 11) and point B(7, 18) in a 2D space?",
+    "options": [
+      "15.50",
+      "9.90",
+      "18.00",
+      "12.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 188, FP = 27, FN = 39, and TN = 278, what is the exact Recall?",
+    "options": [
+      "82.82%",
+      "92.82%",
+      "67.82%",
+      "66.26%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=188, FP=27, FN=39, TN=278."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 72, FP = 21, FN = 11, and TN = 276, what is the exact Precision?",
+    "options": [
+      "87.42%",
+      "61.94%",
+      "62.42%",
+      "77.42%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=72, FP=21, FN=11, TN=276."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (5), what is the predicted value of y when x = 21?",
+    "options": [
+      "142",
+      "194",
+      "152",
+      "162"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=21 into y = 7(21) + 5 to get 152."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (5), what is the predicted value of y when x = 9?",
+    "options": [
+      "32",
+      "42",
+      "50",
+      "22"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=9 into y = 3(9) + 5 to get 32."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 189, FP = 6, FN = 27, and TN = 111, what is the exact Accuracy?",
+    "options": [
+      "90.09%",
+      "75.09%",
+      "72.07%",
+      "100.09%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=189, FP=6, FN=27, TN=111."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (7), what is the predicted value of y when x = 5?",
+    "options": [
+      "37",
+      "13",
+      "27",
+      "37"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=5 into y = 4(5) + 7 to get 27."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 8) and point B(19, 17) in a 2D space?",
+    "options": [
+      "31.50",
+      "18.90",
+      "21.00",
+      "24.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 63, FP = 21, FN = 15, and TN = 255, what is the exact Recall?",
+    "options": [
+      "80.77%",
+      "90.77%",
+      "65.77%",
+      "64.62%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=63, FP=21, FN=15, TN=255."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (2), what is the predicted value of y when x = 6?",
+    "options": [
+      "62",
+      "72",
+      "74",
+      "58"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=6 into y = 10(6) + 2 to get 62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (2), what is the predicted value of y when x = 22?",
+    "options": [
+      "200",
+      "210",
+      "196",
+      "244"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=22 into y = 9(22) + 2 to get 200."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 58, FP = 41, FN = 16, and TN = 152, what is the exact Accuracy?",
+    "options": [
+      "63.65%",
+      "88.65%",
+      "62.92%",
+      "78.65%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=58, FP=41, FN=16, TN=152."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 15) and point B(24, 11) in a 2D space?",
+    "options": [
+      "30.00",
+      "23.50",
+      "20.00",
+      "17.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 20.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-2), what is the predicted value of y when x = 28?",
+    "options": [
+      "250",
+      "198",
+      "194",
+      "204"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=28 into y = 7(28) + -2 to get 194."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 14) and point B(7, 9) in a 2D space?",
+    "options": [
+      "4.30",
+      "6.40",
+      "9.60",
+      "9.90"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 6.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 17) and point B(7, 9) in a 2D space?",
+    "options": [
+      "8.00",
+      "12.00",
+      "5.90",
+      "11.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 14) and point B(6, 9) in a 2D space?",
+    "options": [
+      "5.90",
+      "12.00",
+      "11.50",
+      "8.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 51, FP = 41, FN = 40, and TN = 197, what is the exact Precision?",
+    "options": [
+      "44.35%",
+      "55.43%",
+      "40.43%",
+      "65.43%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=51, FP=41, FN=40, TN=197."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (4), what is the predicted value of y when x = 22?",
+    "options": [
+      "80",
+      "114",
+      "70",
+      "62"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=22 into y = 3(22) + 4 to get 70."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 194, FP = 30, FN = 22, and TN = 273, what is the exact Recall?",
+    "options": [
+      "99.81%",
+      "71.85%",
+      "89.81%",
+      "74.81%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=194, FP=30, FN=22, TN=273."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 14) and point B(12, 15) in a 2D space?",
+    "options": [
+      "14.50",
+      "11.00",
+      "16.50",
+      "8.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(1, 10) and point B(6, 13) in a 2D space?",
+    "options": [
+      "8.75",
+      "3.73",
+      "5.83",
+      "9.33"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 5.83."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 171, FP = 26, FN = 20, and TN = 157, what is the exact Recall?",
+    "options": [
+      "74.53%",
+      "71.62%",
+      "89.53%",
+      "99.53%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=171, FP=26, FN=20, TN=157."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (6), what is the predicted value of y when x = 12?",
+    "options": [
+      "114",
+      "150",
+      "136",
+      "126"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=12 into y = 10(12) + 6 to get 126."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(15, 6) and point B(21, 22) in a 2D space?",
+    "options": [
+      "25.50",
+      "19.90",
+      "33.00",
+      "22.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (5), what is the predicted value of y when x = 22?",
+    "options": [
+      "225",
+      "269",
+      "235",
+      "215"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=22 into y = 10(22) + 5 to get 225."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 12) and point B(8, 14) in a 2D space?",
+    "options": [
+      "3.00",
+      "5.50",
+      "0.10",
+      "2.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 2.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 190, FP = 18, FN = 35, and TN = 167, what is the exact Accuracy?",
+    "options": [
+      "87.07%",
+      "97.07%",
+      "69.66%",
+      "72.07%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=190, FP=18, FN=35, TN=167."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 9) and point B(10, 16) in a 2D space?",
+    "options": [
+      "6.90",
+      "12.50",
+      "9.00",
+      "13.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (0), what is the predicted value of y when x = 29?",
+    "options": [
+      "319",
+      "271",
+      "261",
+      "261"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=29 into y = 9(29) + 0 to get 261."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-2), what is the predicted value of y when x = 14?",
+    "options": [
+      "50",
+      "44",
+      "40",
+      "68"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=14 into y = 3(14) + -2 to get 40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 16, FN = 33, and TN = 212, what is the exact Accuracy?",
+    "options": [
+      "74.32%",
+      "99.32%",
+      "89.32%",
+      "71.46%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=198, FP=16, FN=33, TN=212."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (6), what is the predicted value of y when x = 25?",
+    "options": [
+      "256",
+      "266",
+      "306",
+      "244"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=25 into y = 10(25) + 6 to get 256."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (2), what is the predicted value of y when x = 25?",
+    "options": [
+      "212",
+      "198",
+      "252",
+      "202"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=25 into y = 8(25) + 2 to get 202."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 172, FP = 6, FN = 33, and TN = 235, what is the exact Accuracy?",
+    "options": [
+      "91.26%",
+      "73.00%",
+      "76.26%",
+      "101.26%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=172, FP=6, FN=33, TN=235."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 147, FP = 17, FN = 43, and TN = 286, what is the exact Precision?",
+    "options": [
+      "74.63%",
+      "89.63%",
+      "71.71%",
+      "99.63%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=147, FP=17, FN=43, TN=286."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 96, FP = 20, FN = 22, and TN = 232, what is the exact Recall?",
+    "options": [
+      "81.36%",
+      "65.08%",
+      "66.36%",
+      "91.36%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=96, FP=20, FN=22, TN=232."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 98, FP = 8, FN = 41, and TN = 172, what is the exact Recall?",
+    "options": [
+      "70.50%",
+      "80.50%",
+      "55.50%",
+      "56.40%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=98, FP=8, FN=41, TN=172."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 6) and point B(5, 7) in a 2D space?",
+    "options": [
+      "10.05",
+      "15.07",
+      "13.55",
+      "7.95"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 10.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 7) and point B(16, 22) in a 2D space?",
+    "options": [
+      "21.93",
+      "19.83",
+      "25.43",
+      "32.90"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 21.93."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 17?",
+    "options": [
+      "116",
+      "122",
+      "126",
+      "150"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=17 into y = 7(17) + -3 to get 116."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (5), what is the predicted value of y when x = 18?",
+    "options": [
+      "221",
+      "175",
+      "185",
+      "195"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=18 into y = 10(18) + 5 to get 185."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-1), what is the predicted value of y when x = 3?",
+    "options": [
+      "23",
+      "25",
+      "33",
+      "29"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=3 into y = 8(3) + -1 to get 23."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (3), what is the predicted value of y when x = 23?",
+    "options": [
+      "141",
+      "151",
+      "135",
+      "187"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=23 into y = 6(23) + 3 to get 141."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 11) and point B(10, 11) in a 2D space?",
+    "options": [
+      "6.00",
+      "1.90",
+      "7.50",
+      "4.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 4.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (7), what is the predicted value of y when x = 21?",
+    "options": [
+      "28",
+      "38",
+      "14",
+      "70"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=21 into y = 1(21) + 7 to get 28."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (7), what is the predicted value of y when x = 5?",
+    "options": [
+      "28",
+      "42",
+      "52",
+      "52"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=5 into y = 7(5) + 7 to get 42."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 28?",
+    "options": [
+      "22",
+      "34",
+      "44",
+      "90"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=28 into y = 1(28) + 6 to get 34."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 135, FP = 41, FN = 21, and TN = 136, what is the exact Accuracy?",
+    "options": [
+      "91.38%",
+      "65.11%",
+      "81.38%",
+      "66.38%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=135, FP=41, FN=21, TN=136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 18) and point B(12, 8) in a 2D space?",
+    "options": [
+      "8.10",
+      "13.70",
+      "15.30",
+      "10.20"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 10.20."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 176, FP = 30, FN = 22, and TN = 197, what is the exact Recall?",
+    "options": [
+      "98.89%",
+      "88.89%",
+      "73.89%",
+      "71.11%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=176, FP=30, FN=22, TN=197."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(12, 3) and point B(17, 17) in a 2D space?",
+    "options": [
+      "12.77",
+      "14.87",
+      "18.37",
+      "22.30"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 14.87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (1), what is the predicted value of y when x = 23?",
+    "options": [
+      "22",
+      "24",
+      "34",
+      "70"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=23 into y = 1(23) + 1 to get 24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 8) and point B(13, 14) in a 2D space?",
+    "options": [
+      "18.00",
+      "15.50",
+      "12.00",
+      "9.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 199, FP = 20, FN = 12, and TN = 235, what is the exact Recall?",
+    "options": [
+      "79.31%",
+      "75.45%",
+      "104.31%",
+      "94.31%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=199, FP=20, FN=12, TN=235."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 119, FP = 41, FN = 28, and TN = 286, what is the exact Recall?",
+    "options": [
+      "64.76%",
+      "90.95%",
+      "80.95%",
+      "65.95%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=119, FP=41, FN=28, TN=286."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(19, 2) and point B(19, 23) in a 2D space?",
+    "options": [
+      "24.50",
+      "31.50",
+      "18.90",
+      "21.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 197, FP = 12, FN = 32, and TN = 227, what is the exact Precision?",
+    "options": [
+      "94.26%",
+      "104.26%",
+      "75.41%",
+      "79.26%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=197, FP=12, FN=32, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 50, FP = 9, FN = 12, and TN = 101, what is the exact Accuracy?",
+    "options": [
+      "70.23%",
+      "72.79%",
+      "87.79%",
+      "97.79%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=50, FP=9, FN=12, TN=101."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 157, FP = 9, FN = 23, and TN = 270, what is the exact Recall?",
+    "options": [
+      "97.22%",
+      "87.22%",
+      "72.22%",
+      "69.78%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=157, FP=9, FN=23, TN=270."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 186, FP = 29, FN = 33, and TN = 175, what is the exact Accuracy?",
+    "options": [
+      "68.27%",
+      "70.34%",
+      "95.34%",
+      "85.34%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=186, FP=29, FN=33, TN=175."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 29?",
+    "options": [
+      "43",
+      "91",
+      "33",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=29 into y = 1(29) + 4 to get 33."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 67, FP = 38, FN = 11, and TN = 177, what is the exact Precision?",
+    "options": [
+      "51.05%",
+      "48.81%",
+      "63.81%",
+      "73.81%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=67, FP=38, FN=11, TN=177."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 61, FP = 21, FN = 35, and TN = 179, what is the exact Precision?",
+    "options": [
+      "59.51%",
+      "59.39%",
+      "84.39%",
+      "74.39%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=61, FP=21, FN=35, TN=179."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 112, FP = 42, FN = 42, and TN = 173, what is the exact Precision?",
+    "options": [
+      "57.73%",
+      "72.73%",
+      "82.73%",
+      "58.18%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=112, FP=42, FN=42, TN=173."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 0) and point B(21, 6) in a 2D space?",
+    "options": [
+      "7.81",
+      "11.31",
+      "11.72",
+      "5.71"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 7.81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 153, FP = 41, FN = 20, and TN = 100, what is the exact Accuracy?",
+    "options": [
+      "65.57%",
+      "64.46%",
+      "80.57%",
+      "90.57%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=153, FP=41, FN=20, TN=100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 155, FP = 35, FN = 13, and TN = 227, what is the exact Precision?",
+    "options": [
+      "66.58%",
+      "81.58%",
+      "65.26%",
+      "91.58%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=155, FP=35, FN=13, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (9), what is the predicted value of y when x = 23?",
+    "options": [
+      "78",
+      "88",
+      "124",
+      "60"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=23 into y = 3(23) + 9 to get 78."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 108, FP = 40, FN = 38, and TN = 170, what is the exact Accuracy?",
+    "options": [
+      "88.09%",
+      "62.47%",
+      "63.09%",
+      "78.09%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=108, FP=40, FN=38, TN=170."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (6), what is the predicted value of y when x = 16?",
+    "options": [
+      "58",
+      "80",
+      "102",
+      "70"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=16 into y = 4(16) + 6 to get 70."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-5), what is the predicted value of y when x = 5?",
+    "options": [
+      "15",
+      "15",
+      "5",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=5 into y = 2(5) + -5 to get 5."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(18, 4) and point B(8, 8) in a 2D space?",
+    "options": [
+      "21.00",
+      "14.00",
+      "17.50",
+      "11.90"
+    ],
+    "answer": 1,
     "explanation": "Manhattan distance formula resolves to 14.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 117, FP = 40, FN = 13, and TN = 148, what is the exact Recall?",
+    "question": "Given a classification report with TP = 56, FP = 32, FN = 24, and TN = 140, what is the exact Recall?",
     "options": [
-      "100.00%",
-      "75.00%",
-      "90.00%",
-      "72.00%"
+      "56.00%",
+      "80.00%",
+      "70.00%",
+      "55.00%"
     ],
     "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=117, FP=40, FN=13, TN=148."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 28?",
-    "options": [
-      "297",
-      "273",
-      "343",
-      "287"
-    ],
-    "answer": 3,
-    "explanation": "Plug x=28 into y = 10(28) + 7 to get 287."
+    "explanation": "Recall is calculated by standard formula using counts: TP=56, FP=32, FN=24, TN=140."
   },
   {
     "subject": "AI / ML",
@@ -13402,119 +7396,1365 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(9, 13) and point B(6, 11) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(17, 5) and point B(21, 11) in a 2D space?",
     "options": [
-      "3.61",
-      "7.11",
-      "1.51",
-      "5.41"
+      "10.71",
+      "5.11",
+      "10.82",
+      "7.21"
     ],
-    "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 3.61."
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 7.21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(8, 2) and point B(21, 10) in a 2D space?",
+    "options": [
+      "18.76",
+      "22.90",
+      "15.26",
+      "13.16"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 15.26."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 56, FP = 17, FN = 9, and TN = 197, what is the exact Recall?",
+    "question": "Given a classification report with TP = 114, FP = 20, FN = 17, and TN = 126, what is the exact Precision?",
     "options": [
-      "71.15%",
-      "68.92%",
-      "86.15%",
-      "96.15%"
+      "85.07%",
+      "68.06%",
+      "70.07%",
+      "95.07%"
     ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=56, FP=17, FN=9, TN=197."
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=114, FP=20, FN=17, TN=126."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 8x + (-1), what is the predicted value of y when x = 18?",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-1), what is the predicted value of y when x = 18?",
     "options": [
-      "145",
-      "143",
-      "179",
-      "153"
+      "215",
+      "181",
+      "189",
+      "179"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=18 into y = 10(18) + -1 to get 179."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 118, FP = 19, FN = 17, and TN = 185, what is the exact Recall?",
+    "options": [
+      "72.41%",
+      "87.41%",
+      "69.93%",
+      "97.41%"
     ],
     "answer": 1,
-    "explanation": "Plug x=18 into y = 8(18) + -1 to get 143."
+    "explanation": "Recall is calculated by standard formula using counts: TP=118, FP=19, FN=17, TN=185."
   },
   {
     "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 1) and point B(14, 19) in a 2D space?",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (1), what is the predicted value of y when x = 15?",
     "options": [
-      "16.58",
-      "22.18",
-      "18.68",
-      "28.02"
+      "41",
+      "61",
+      "31",
+      "29"
     ],
     "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 18.68."
+    "explanation": "Plug x=15 into y = 2(15) + 1 to get 31."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 194, FP = 39, FN = 18, and TN = 179, what is the exact Recall?",
+    "question": "Given a classification report with TP = 139, FP = 28, FN = 14, and TN = 258, what is the exact Precision?",
     "options": [
-      "91.51%",
-      "73.21%",
-      "76.51%",
-      "101.51%"
+      "83.23%",
+      "93.23%",
+      "68.23%",
+      "66.59%"
     ],
     "answer": 0,
-    "explanation": "Recall is calculated by standard formula using counts: TP=194, FP=39, FN=18, TN=179."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(7, 3) and point B(11, 21) in a 2D space?",
-    "options": [
-      "21.94",
-      "27.66",
-      "18.44",
-      "16.34"
-    ],
-    "answer": 2,
-    "explanation": "Euclidean distance formula resolves to 18.44."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(18, 0) and point B(15, 14) in a 2D space?",
-    "options": [
-      "17.82",
-      "21.48",
-      "12.22",
-      "14.32"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 14.32."
+    "explanation": "Precision is calculated by standard formula using counts: TP=139, FP=28, FN=14, TN=258."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 128, FP = 36, FN = 25, and TN = 146, what is the exact Accuracy?",
+    "question": "Given a classification report with TP = 68, FP = 14, FN = 38, and TN = 228, what is the exact Recall?",
     "options": [
-      "91.79%",
-      "65.43%",
-      "66.79%",
-      "81.79%"
+      "64.15%",
+      "49.15%",
+      "51.32%",
+      "74.15%"
     ],
-    "answer": 3,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=128, FP=36, FN=25, TN=146."
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=68, FP=14, FN=38, TN=228."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 90, FP = 41, FN = 25, and TN = 244, what is the exact Precision?",
+    "options": [
+      "68.70%",
+      "53.70%",
+      "78.70%",
+      "54.96%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=90, FP=41, FN=25, TN=244."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-2), what is the predicted value of y when x = 5?",
+    "options": [
+      "33",
+      "23",
+      "33",
+      "27"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=5 into y = 5(5) + -2 to get 23."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (9), what is the predicted value of y when x = 1?",
+    "options": [
+      "-2",
+      "16",
+      "18",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=1 into y = 7(1) + 9 to get 16."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 19) and point B(8, 19) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(1, 13) and point B(15, 14) in a 2D space?",
+    "options": [
+      "15.00",
+      "18.50",
+      "22.50",
+      "12.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 11) and point B(7, 23) in a 2D space?",
+    "options": [
+      "10.90",
+      "19.50",
+      "13.00",
+      "16.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 71, FP = 22, FN = 42, and TN = 143, what is the exact Precision?",
+    "options": [
+      "61.08%",
+      "86.34%",
+      "61.34%",
+      "76.34%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=71, FP=22, FN=42, TN=143."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 176, FP = 20, FN = 27, and TN = 197, what is the exact Recall?",
+    "options": [
+      "71.70%",
+      "86.70%",
+      "96.70%",
+      "69.36%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=176, FP=20, FN=27, TN=197."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 9) and point B(5, 22) in a 2D space?",
+    "options": [
+      "17.50",
+      "11.90",
+      "21.00",
+      "14.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 118, FP = 35, FN = 5, and TN = 153, what is the exact Accuracy?",
+    "options": [
+      "87.14%",
+      "69.71%",
+      "97.14%",
+      "72.14%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=35, FN=5, TN=153."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 166, FP = 22, FN = 10, and TN = 105, what is the exact Recall?",
+    "options": [
+      "79.32%",
+      "94.32%",
+      "104.32%",
+      "75.45%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=166, FP=22, FN=10, TN=105."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (-5), what is the predicted value of y when x = 13?",
+    "options": [
+      "8",
+      "18",
+      "18",
+      "34"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=13 into y = 1(13) + -5 to get 8."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 141, FP = 19, FN = 33, and TN = 274, what is the exact Accuracy?",
+    "options": [
+      "71.09%",
+      "73.87%",
+      "88.87%",
+      "98.87%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=141, FP=19, FN=33, TN=274."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-5), what is the predicted value of y when x = 22?",
+    "options": [
+      "225",
+      "259",
+      "225",
+      "215"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=22 into y = 10(22) + -5 to get 215."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 72, FP = 40, FN = 40, and TN = 219, what is the exact Accuracy?",
+    "options": [
+      "63.44%",
+      "62.75%",
+      "78.44%",
+      "88.44%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=72, FP=40, FN=40, TN=219."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 162, FP = 43, FN = 32, and TN = 282, what is the exact Precision?",
+    "options": [
+      "79.02%",
+      "63.22%",
+      "89.02%",
+      "64.02%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=162, FP=43, FN=32, TN=282."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 112, FP = 9, FN = 27, and TN = 101, what is the exact Precision?",
+    "options": [
+      "77.56%",
+      "74.05%",
+      "92.56%",
+      "102.56%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=112, FP=9, FN=27, TN=101."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 19) and point B(6, 15) in a 2D space?",
+    "options": [
+      "7.50",
+      "4.00",
+      "6.00",
+      "1.90"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 4.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 17) and point B(22, 13) in a 2D space?",
+    "options": [
+      "29.50",
+      "26.00",
+      "39.00",
+      "23.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 26.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 14) and point B(16, 5) in a 2D space?",
+    "options": [
+      "24.50",
+      "21.00",
+      "31.50",
+      "18.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 19) and point B(7, 6) in a 2D space?",
+    "options": [
+      "30.00",
+      "17.90",
+      "20.00",
+      "23.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 20.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 1) and point B(6, 7) in a 2D space?",
+    "options": [
+      "5.71",
+      "11.31",
+      "11.72",
+      "7.81"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 7.81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (9), what is the predicted value of y when x = 26?",
+    "options": [
+      "45",
+      "17",
+      "35",
+      "87"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=26 into y = 1(26) + 9 to get 35."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (9), what is the predicted value of y when x = 24?",
+    "options": [
+      "81",
+      "91",
+      "63",
+      "129"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=24 into y = 3(24) + 9 to get 81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 168, FP = 30, FN = 11, and TN = 240, what is the exact Recall?",
+    "options": [
+      "93.85%",
+      "78.85%",
+      "103.85%",
+      "75.08%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=168, FP=30, FN=11, TN=240."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 148, FP = 11, FN = 25, and TN = 265, what is the exact Precision?",
+    "options": [
+      "78.08%",
+      "74.47%",
+      "103.08%",
+      "93.08%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=148, FP=11, FN=25, TN=265."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 18) and point B(21, 19) in a 2D space?",
+    "options": [
+      "6.08",
+      "9.12",
+      "3.98",
+      "9.58"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 6.08."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-4), what is the predicted value of y when x = 17?",
+    "options": [
+      "132",
+      "108",
+      "106",
+      "98"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=17 into y = 6(17) + -4 to get 98."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 148, FP = 31, FN = 23, and TN = 297, what is the exact Precision?",
+    "options": [
+      "66.15%",
+      "67.68%",
+      "92.68%",
+      "82.68%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=148, FP=31, FN=23, TN=297."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 16?",
+    "options": [
+      "31",
+      "53",
+      "11",
+      "21"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=16 into y = 1(16) + 5 to get 21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(4, 9) and point B(11, 14) in a 2D space?",
+    "options": [
+      "12.10",
+      "12.90",
+      "8.60",
+      "6.50"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 8.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(8, 9) and point B(13, 16) in a 2D space?",
+    "options": [
+      "6.50",
+      "12.10",
+      "8.60",
+      "12.90"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 8.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (5), what is the predicted value of y when x = 4?",
+    "options": [
+      "9",
+      "-1",
+      "19",
+      "17"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=4 into y = 1(4) + 5 to get 9."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 158, FP = 16, FN = 21, and TN = 216, what is the exact Recall?",
+    "options": [
+      "73.27%",
+      "98.27%",
+      "88.27%",
+      "70.61%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=158, FP=16, FN=21, TN=216."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 119, FP = 31, FN = 44, and TN = 199, what is the exact Accuracy?",
+    "options": [
+      "90.92%",
+      "80.92%",
+      "65.92%",
+      "64.73%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=119, FP=31, FN=44, TN=199."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 28?",
+    "options": [
+      "166",
+      "176",
+      "170",
+      "222"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=28 into y = 6(28) + -2 to get 166."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-2), what is the predicted value of y when x = 15?",
+    "options": [
+      "88",
+      "68",
+      "62",
+      "58"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=15 into y = 4(15) + -2 to get 58."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 51, FP = 38, FN = 27, and TN = 284, what is the exact Accuracy?",
+    "options": [
+      "83.75%",
+      "93.75%",
+      "67.00%",
+      "68.75%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=51, FP=38, FN=27, TN=284."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (3), what is the predicted value of y when x = 2?",
+    "options": [
+      "15",
+      "21",
+      "11",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=2 into y = 4(2) + 3 to get 11."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 98, FP = 30, FN = 44, and TN = 153, what is the exact Precision?",
+    "options": [
+      "61.25%",
+      "86.56%",
+      "61.56%",
+      "76.56%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=98, FP=30, FN=44, TN=153."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (3), what is the predicted value of y when x = 25?",
+    "options": [
+      "88",
+      "128",
+      "78",
+      "72"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=25 into y = 3(25) + 3 to get 78."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-2), what is the predicted value of y when x = 12?",
+    "options": [
+      "62",
+      "58",
+      "82",
+      "68"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=12 into y = 5(12) + -2 to get 58."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 125, FP = 42, FN = 8, and TN = 208, what is the exact Recall?",
+    "options": [
+      "75.19%",
+      "103.98%",
+      "78.98%",
+      "93.98%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=125, FP=42, FN=8, TN=208."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 139, FP = 19, FN = 35, and TN = 228, what is the exact Accuracy?",
+    "options": [
+      "69.74%",
+      "87.17%",
+      "72.17%",
+      "97.17%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=139, FP=19, FN=35, TN=228."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 146, FP = 15, FN = 7, and TN = 245, what is the exact Recall?",
+    "options": [
+      "80.42%",
+      "95.42%",
+      "76.34%",
+      "105.42%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=146, FP=15, FN=7, TN=245."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 123, FP = 29, FN = 41, and TN = 123, what is the exact Precision?",
+    "options": [
+      "90.92%",
+      "80.92%",
+      "65.92%",
+      "64.74%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=123, FP=29, FN=41, TN=123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 109, FP = 41, FN = 35, and TN = 196, what is the exact Accuracy?",
+    "options": [
+      "80.05%",
+      "65.05%",
+      "64.04%",
+      "90.05%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=109, FP=41, FN=35, TN=196."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(14, 1) and point B(23, 13) in a 2D space?",
+    "options": [
+      "18.50",
+      "12.90",
+      "22.50",
+      "15.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 119, FP = 42, FN = 40, and TN = 192, what is the exact Recall?",
+    "options": [
+      "59.87%",
+      "84.84%",
+      "74.84%",
+      "59.84%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=119, FP=42, FN=40, TN=192."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 139, FP = 44, FN = 43, and TN = 242, what is the exact Precision?",
+    "options": [
+      "85.96%",
+      "75.96%",
+      "60.96%",
+      "60.77%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=139, FP=44, FN=43, TN=242."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 114, FP = 24, FN = 29, and TN = 130, what is the exact Recall?",
+    "options": [
+      "79.72%",
+      "89.72%",
+      "63.78%",
+      "64.72%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=114, FP=24, FN=29, TN=130."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 17) and point B(15, 10) in a 2D space?",
+    "options": [
+      "10.92",
+      "5.18",
+      "10.78",
+      "7.28"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 7.28."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 80, FP = 25, FN = 23, and TN = 245, what is the exact Recall?",
+    "options": [
+      "62.14%",
+      "87.67%",
+      "77.67%",
+      "62.67%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=80, FP=25, FN=23, TN=245."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 17) and point B(23, 11) in a 2D space?",
+    "options": [
+      "15.23",
+      "18.73",
+      "22.85",
+      "13.13"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 15.23."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 77, FP = 43, FN = 44, and TN = 283, what is the exact Recall?",
+    "options": [
+      "73.64%",
+      "63.64%",
+      "48.64%",
+      "50.91%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=77, FP=43, FN=44, TN=283."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 53, FP = 43, FN = 43, and TN = 217, what is the exact Accuracy?",
+    "options": [
+      "85.84%",
+      "60.67%",
+      "60.84%",
+      "75.84%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=53, FP=43, FN=43, TN=217."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 18) and point B(15, 11) in a 2D space?",
+    "options": [
+      "14.90",
+      "17.10",
+      "9.30",
+      "11.40"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 11.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (0), what is the predicted value of y when x = 5?",
+    "options": [
+      "15",
+      "15",
+      "25",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=5 into y = 3(5) + 0 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (9), what is the predicted value of y when x = 1?",
+    "options": [
+      "28",
+      "18",
+      "20",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=1 into y = 9(1) + 9 to get 18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (7), what is the predicted value of y when x = 29?",
+    "options": [
+      "152",
+      "162",
+      "210",
+      "138"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=29 into y = 5(29) + 7 to get 152."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 137, FP = 34, FN = 9, and TN = 176, what is the exact Accuracy?",
+    "options": [
+      "87.92%",
+      "72.92%",
+      "97.92%",
+      "70.34%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=137, FP=34, FN=9, TN=176."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(19, 16) and point B(21, 19) in a 2D space?",
+    "options": [
+      "7.11",
+      "5.41",
+      "3.61",
+      "1.51"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 3.61."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 3?",
+    "options": [
+      "15",
+      "19",
+      "-3",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=3 into y = 1(3) + 6 to get 9."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 1) and point B(16, 10) in a 2D space?",
+    "options": [
+      "11.00",
+      "8.90",
+      "16.50",
+      "14.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 143, FP = 12, FN = 39, and TN = 257, what is the exact Accuracy?",
+    "options": [
+      "70.95%",
+      "73.69%",
+      "88.69%",
+      "98.69%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=143, FP=12, FN=39, TN=257."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 121, FP = 20, FN = 22, and TN = 234, what is the exact Precision?",
+    "options": [
+      "95.82%",
+      "85.82%",
+      "70.82%",
+      "68.65%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=121, FP=20, FN=22, TN=234."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 66, FP = 28, FN = 18, and TN = 167, what is the exact Accuracy?",
+    "options": [
+      "93.51%",
+      "66.81%",
+      "68.51%",
+      "83.51%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=66, FP=28, FN=18, TN=167."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 13) and point B(15, 24) in a 2D space?",
+    "options": [
+      "11.18",
+      "9.08",
+      "16.77",
+      "14.68"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 11.18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 89, FP = 32, FN = 42, and TN = 192, what is the exact Accuracy?",
+    "options": [
+      "79.15%",
+      "64.15%",
+      "63.32%",
+      "89.15%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=89, FP=32, FN=42, TN=192."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 128, FP = 7, FN = 9, and TN = 232, what is the exact Accuracy?",
+    "options": [
+      "95.74%",
+      "80.74%",
+      "105.74%",
+      "76.60%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=128, FP=7, FN=9, TN=232."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-1), what is the predicted value of y when x = 5?",
+    "options": [
+      "31",
+      "29",
+      "39",
+      "39"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=5 into y = 6(5) + -1 to get 29."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 8, FN = 31, and TN = 150, what is the exact Recall?",
+    "options": [
+      "69.17%",
+      "86.46%",
+      "96.46%",
+      "71.46%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=198, FP=8, FN=31, TN=150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 22?",
+    "options": [
+      "171",
+      "181",
+      "181",
+      "215"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=22 into y = 8(22) + -5 to get 171."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 5) and point B(8, 11) in a 2D space?",
+    "options": [
+      "11.00",
+      "8.90",
+      "16.50",
+      "14.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (1), what is the predicted value of y when x = 26?",
+    "options": [
+      "77",
+      "89",
+      "79",
+      "131"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=26 into y = 3(26) + 1 to get 79."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (3), what is the predicted value of y when x = 2?",
+    "options": [
+      "13",
+      "17",
+      "7",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=2 into y = 5(2) + 3 to get 13."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(7, 18) and point B(5, 19) in a 2D space?",
+    "options": [
+      "0.14",
+      "5.74",
+      "3.35",
+      "2.24"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 2.24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(14, 18) and point B(21, 6) in a 2D space?",
+    "options": [
+      "11.79",
+      "17.39",
+      "13.89",
+      "20.84"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 13.89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 10?",
+    "options": [
+      "95",
+      "85",
+      "75",
+      "85"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=10 into y = 8(10) + -5 to get 75."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 19) and point B(14, 17) in a 2D space?",
+    "options": [
+      "2.37",
+      "4.47",
+      "6.71",
+      "7.97"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 4.47."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 10) and point B(14, 9) in a 2D space?",
+    "options": [
+      "3.00",
+      "6.50",
+      "4.50",
+      "0.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 3.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (8), what is the predicted value of y when x = 2?",
+    "options": [
+      "24",
+      "20",
+      "30",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=2 into y = 6(2) + 8 to get 20."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 1) and point B(7, 8) in a 2D space?",
+    "options": [
+      "12.09",
+      "5.96",
+      "11.56",
+      "8.06"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 8.06."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 151, FP = 10, FN = 41, and TN = 214, what is the exact Accuracy?",
+    "options": [
+      "70.19%",
+      "87.74%",
+      "97.74%",
+      "72.74%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=151, FP=10, FN=41, TN=214."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 14) and point B(10, 21) in a 2D space?",
+    "options": [
+      "9.90",
+      "13.40",
+      "14.85",
+      "7.80"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 9.90."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 17) and point B(18, 23) in a 2D space?",
+    "options": [
+      "14.06",
+      "16.16",
+      "24.23",
+      "19.66"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 16.16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(18, 14) and point B(11, 16) in a 2D space?",
+    "options": [
+      "6.90",
+      "13.50",
+      "12.50",
+      "9.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 95, FP = 29, FN = 18, and TN = 223, what is the exact Accuracy?",
+    "options": [
+      "87.12%",
+      "69.70%",
+      "72.12%",
+      "97.12%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=95, FP=29, FN=18, TN=223."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (6), what is the predicted value of y when x = 7?",
+    "options": [
+      "41",
+      "29",
+      "55",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=7 into y = 5(7) + 6 to get 41."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(18, 5) and point B(9, 22) in a 2D space?",
+    "options": [
+      "26.00",
+      "39.00",
+      "23.90",
+      "29.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 26.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 13) and point B(12, 22) in a 2D space?",
     "options": [
       "12.50",
       "6.90",
@@ -13526,59 +8766,2075 @@ window.quizData.aiml = [
   },
   {
     "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(17, 11) and point B(19, 15) in a 2D space?",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (4), what is the predicted value of y when x = 8?",
     "options": [
-      "6.00",
-      "3.90",
-      "9.50",
-      "9.00"
+      "28",
+      "46",
+      "36",
+      "52"
     ],
-    "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 6.00."
+    "answer": 2,
+    "explanation": "Plug x=8 into y = 4(8) + 4 to get 36."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 131, FP = 7, FN = 40, and TN = 236, what is the exact Precision?",
+    "question": "Given a classification report with TP = 128, FP = 39, FN = 15, and TN = 180, what is the exact Accuracy?",
     "options": [
-      "94.93%",
-      "75.94%",
-      "79.93%",
-      "104.93%"
+      "95.08%",
+      "85.08%",
+      "70.08%",
+      "68.07%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=128, FP=39, FN=15, TN=180."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 192, FP = 5, FN = 6, and TN = 265, what is the exact Precision?",
+    "options": [
+      "97.46%",
+      "107.46%",
+      "82.46%",
+      "77.97%"
     ],
     "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=131, FP=7, FN=40, TN=236."
+    "explanation": "Precision is calculated by standard formula using counts: TP=192, FP=5, FN=6, TN=265."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 100, FP = 38, FN = 37, and TN = 173, what is the exact Precision?",
+    "options": [
+      "57.46%",
+      "72.46%",
+      "57.97%",
+      "82.46%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=100, FP=38, FN=37, TN=173."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(1, 12) and point B(17, 22) in a 2D space?",
+    "options": [
+      "22.37",
+      "16.77",
+      "28.30",
+      "18.87"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 18.87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 156, FP = 36, FN = 19, and TN = 277, what is the exact Recall?",
+    "options": [
+      "74.14%",
+      "71.31%",
+      "99.14%",
+      "89.14%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=156, FP=36, FN=19, TN=277."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 18) and point B(10, 15) in a 2D space?",
+    "options": [
+      "11.42",
+      "11.12",
+      "5.52",
+      "7.62"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 7.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 155, FP = 7, FN = 40, and TN = 299, what is the exact Recall?",
+    "options": [
+      "79.49%",
+      "89.49%",
+      "64.49%",
+      "63.59%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=155, FP=7, FN=40, TN=299."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 15) and point B(16, 5) in a 2D space?",
+    "options": [
+      "13.55",
+      "15.07",
+      "7.95",
+      "10.05"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 10.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 1) and point B(6, 13) in a 2D space?",
+    "options": [
+      "18.55",
+      "12.37",
+      "10.27",
+      "15.87"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 12.37."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 126, FP = 13, FN = 12, and TN = 120, what is the exact Recall?",
+    "options": [
+      "101.30%",
+      "76.30%",
+      "91.30%",
+      "73.04%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=126, FP=13, FN=12, TN=120."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (8), what is the predicted value of y when x = 4?",
+    "question": "Assuming a simple linear regression equation is y = 6x + (1), what is the predicted value of y when x = 8?",
     "options": [
-      "22",
-      "20",
-      "-4",
-      "12"
+      "47",
+      "65",
+      "49",
+      "59"
     ],
-    "answer": 3,
-    "explanation": "Plug x=4 into y = 1(4) + 8 to get 12."
+    "answer": 2,
+    "explanation": "Plug x=8 into y = 6(8) + 1 to get 49."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 19) and point B(5, 14) in a 2D space?",
+    "options": [
+      "22.50",
+      "16.90",
+      "19.00",
+      "28.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 19.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 151, FP = 24, FN = 42, and TN = 112, what is the exact Precision?",
+    "question": "Given a classification report with TP = 186, FP = 29, FN = 12, and TN = 198, what is the exact Accuracy?",
     "options": [
-      "86.29%",
-      "69.03%",
-      "96.29%",
-      "71.29%"
+      "100.35%",
+      "72.28%",
+      "90.35%",
+      "75.35%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=186, FP=29, FN=12, TN=198."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 16) and point B(10, 6) in a 2D space?",
+    "options": [
+      "19.50",
+      "16.00",
+      "13.90",
+      "24.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 17) and point B(23, 18) in a 2D space?",
+    "options": [
+      "15.07",
+      "7.95",
+      "10.05",
+      "13.55"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 10.05."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 13) and point B(6, 6) in a 2D space?",
+    "options": [
+      "11.79",
+      "17.39",
+      "13.89",
+      "20.84"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 13.89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 0) and point B(14, 15) in a 2D space?",
+    "options": [
+      "16.90",
+      "19.00",
+      "22.50",
+      "28.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 19.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 151, FP = 27, FN = 42, and TN = 154, what is the exact Accuracy?",
+    "options": [
+      "81.55%",
+      "65.24%",
+      "66.55%",
+      "91.55%"
     ],
     "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=151, FP=24, FN=42, TN=112."
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=151, FP=27, FN=42, TN=154."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (9), what is the predicted value of y when x = 20?",
+    "options": [
+      "129",
+      "71",
+      "89",
+      "99"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=20 into y = 4(20) + 9 to get 89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 181, FP = 29, FN = 36, and TN = 107, what is the exact Accuracy?",
+    "options": [
+      "65.27%",
+      "66.59%",
+      "91.59%",
+      "81.59%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=181, FP=29, FN=36, TN=107."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 87, FP = 43, FN = 25, and TN = 248, what is the exact Precision?",
+    "options": [
+      "76.92%",
+      "53.54%",
+      "66.92%",
+      "51.92%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=87, FP=43, FN=25, TN=248."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(4, 9) and point B(13, 11) in a 2D space?",
+    "options": [
+      "12.72",
+      "13.83",
+      "7.12",
+      "9.22"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 9.22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-3), what is the predicted value of y when x = 23?",
+    "options": [
+      "53",
+      "43",
+      "89",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=23 into y = 2(23) + -3 to get 43."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 13) and point B(19, 7) in a 2D space?",
+    "options": [
+      "14.32",
+      "8.72",
+      "16.22",
+      "10.82"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 10.82."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-5), what is the predicted value of y when x = 8?",
+    "options": [
+      "67",
+      "77",
+      "83",
+      "77"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=8 into y = 9(8) + -5 to get 67."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(6, 3) and point B(15, 8) in a 2D space?",
+    "options": [
+      "11.90",
+      "17.50",
+      "21.00",
+      "14.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 4) and point B(13, 17) in a 2D space?",
+    "options": [
+      "29.50",
+      "26.00",
+      "23.90",
+      "39.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 26.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 195, FP = 27, FN = 33, and TN = 227, what is the exact Accuracy?",
+    "options": [
+      "87.55%",
+      "70.04%",
+      "72.55%",
+      "97.55%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=195, FP=27, FN=33, TN=227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 114, FP = 15, FN = 21, and TN = 100, what is the exact Recall?",
+    "options": [
+      "69.44%",
+      "67.56%",
+      "94.44%",
+      "84.44%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=114, FP=15, FN=21, TN=100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 1) and point B(23, 15) in a 2D space?",
+    "options": [
+      "38.50",
+      "32.90",
+      "35.00",
+      "52.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 35.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-4), what is the predicted value of y when x = 3?",
+    "options": [
+      "26",
+      "30",
+      "28",
+      "20"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=3 into y = 8(3) + -4 to get 20."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(17, 6) and point B(21, 14) in a 2D space?",
+    "options": [
+      "18.00",
+      "12.00",
+      "9.90",
+      "15.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(4, 6) and point B(17, 23) in a 2D space?",
+    "options": [
+      "32.10",
+      "21.40",
+      "19.30",
+      "24.90"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 21.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 29?",
+    "options": [
+      "146",
+      "144",
+      "204",
+      "156"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=29 into y = 5(29) + 1 to get 146."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 17) and point B(11, 14) in a 2D space?",
+    "options": [
+      "13.50",
+      "15.00",
+      "10.00",
+      "7.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 10.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 0) and point B(5, 19) in a 2D space?",
+    "options": [
+      "22.00",
+      "19.90",
+      "25.50",
+      "33.00"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 164, FP = 27, FN = 8, and TN = 100, what is the exact Recall?",
+    "options": [
+      "105.35%",
+      "95.35%",
+      "80.35%",
+      "76.28%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=164, FP=27, FN=8, TN=100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (7), what is the predicted value of y when x = 8?",
+    "options": [
+      "31",
+      "15",
+      "25",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=8 into y = 1(8) + 7 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (7), what is the predicted value of y when x = 5?",
+    "options": [
+      "8",
+      "32",
+      "22",
+      "32"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=5 into y = 3(5) + 7 to get 22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 16) and point B(16, 9) in a 2D space?",
+    "options": [
+      "9.22",
+      "12.72",
+      "7.12",
+      "13.83"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 9.22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 85, FP = 43, FN = 32, and TN = 238, what is the exact Accuracy?",
+    "options": [
+      "66.16%",
+      "91.16%",
+      "64.92%",
+      "81.16%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=85, FP=43, FN=32, TN=238."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 19) and point B(20, 21) in a 2D space?",
+    "options": [
+      "15.13",
+      "22.70",
+      "13.03",
+      "18.63"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 15.13."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 51, FP = 15, FN = 37, and TN = 168, what is the exact Precision?",
+    "options": [
+      "77.27%",
+      "62.27%",
+      "61.82%",
+      "87.27%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=51, FP=15, FN=37, TN=168."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (-5), what is the predicted value of y when x = 11?",
+    "options": [
+      "6",
+      "16",
+      "28",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=11 into y = 1(11) + -5 to get 6."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 169, FP = 30, FN = 42, and TN = 146, what is the exact Precision?",
+    "options": [
+      "84.92%",
+      "67.94%",
+      "94.92%",
+      "69.92%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=30, FN=42, TN=146."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 19?",
+    "options": [
+      "83",
+      "31",
+      "55",
+      "45"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=19 into y = 2(19) + 7 to get 45."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 2) and point B(5, 13) in a 2D space?",
+    "options": [
+      "12.08",
+      "18.12",
+      "9.98",
+      "15.58"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 12.08."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-3), what is the predicted value of y when x = 25?",
+    "options": [
+      "172",
+      "128",
+      "132",
+      "122"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=25 into y = 5(25) + -3 to get 122."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 16, FN = 17, and TN = 191, what is the exact Recall?",
+    "options": [
+      "72.12%",
+      "69.70%",
+      "87.12%",
+      "97.12%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=115, FP=16, FN=17, TN=191."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 3?",
+    "options": [
+      "43",
+      "37",
+      "47",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=3 into y = 10(3) + 7 to get 37."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 60, FP = 25, FN = 42, and TN = 241, what is the exact Precision?",
+    "options": [
+      "55.59%",
+      "70.59%",
+      "80.59%",
+      "56.47%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=60, FP=25, FN=42, TN=241."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(1, 2) and point B(13, 5) in a 2D space?",
+    "options": [
+      "12.37",
+      "18.55",
+      "15.87",
+      "10.27"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 12.37."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (4), what is the predicted value of y when x = 27?",
+    "options": [
+      "139",
+      "77",
+      "85",
+      "95"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=27 into y = 3(27) + 4 to get 85."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-4), what is the predicted value of y when x = 6?",
+    "options": [
+      "66",
+      "68",
+      "64",
+      "56"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=6 into y = 10(6) + -4 to get 56."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (1), what is the predicted value of y when x = 4?",
+    "options": [
+      "31",
+      "41",
+      "33",
+      "43"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=4 into y = 8(4) + 1 to get 33."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 73, FP = 43, FN = 44, and TN = 150, what is the exact Recall?",
+    "options": [
+      "49.91%",
+      "72.39%",
+      "47.39%",
+      "62.39%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=73, FP=43, FN=44, TN=150."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 115, FP = 26, FN = 6, and TN = 276, what is the exact Precision?",
+    "options": [
+      "91.56%",
+      "66.56%",
+      "81.56%",
+      "65.25%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=115, FP=26, FN=6, TN=276."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 175, FP = 38, FN = 22, and TN = 171, what is the exact Precision?",
+    "options": [
+      "67.16%",
+      "92.16%",
+      "65.73%",
+      "82.16%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=175, FP=38, FN=22, TN=171."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-2), what is the predicted value of y when x = 4?",
+    "options": [
+      "48",
+      "42",
+      "38",
+      "46"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=4 into y = 10(4) + -2 to get 38."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (3), what is the predicted value of y when x = 21?",
+    "options": [
+      "129",
+      "97",
+      "87",
+      "81"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=21 into y = 4(21) + 3 to get 87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (4), what is the predicted value of y when x = 19?",
+    "options": [
+      "53",
+      "61",
+      "71",
+      "99"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 3(19) + 4 to get 61."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 85, FP = 26, FN = 25, and TN = 207, what is the exact Accuracy?",
+    "options": [
+      "70.13%",
+      "85.13%",
+      "95.13%",
+      "68.10%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=85, FP=26, FN=25, TN=207."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 11?",
+    "options": [
+      "127",
+      "117",
+      "103",
+      "139"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=11 into y = 10(11) + 7 to get 117."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (9), what is the predicted value of y when x = 3?",
+    "options": [
+      "49",
+      "39",
+      "21",
+      "45"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=3 into y = 10(3) + 9 to get 39."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 0?",
+    "options": [
+      "17",
+      "7",
+      "-7",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=0 into y = 10(0) + 7 to get 7."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 13) and point B(18, 18) in a 2D space?",
+    "options": [
+      "10.50",
+      "10.50",
+      "7.00",
+      "4.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 7.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 10) and point B(17, 14) in a 2D space?",
+    "options": [
+      "5.00",
+      "8.50",
+      "7.50",
+      "2.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (7), what is the predicted value of y when x = 20?",
+    "options": [
+      "147",
+      "117",
+      "93",
+      "107"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=20 into y = 5(20) + 7 to get 107."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 112, FP = 37, FN = 12, and TN = 253, what is the exact Recall?",
+    "options": [
+      "72.26%",
+      "90.32%",
+      "75.32%",
+      "100.32%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=112, FP=37, FN=12, TN=253."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 70, FP = 41, FN = 12, and TN = 281, what is the exact Precision?",
+    "options": [
+      "63.06%",
+      "48.06%",
+      "73.06%",
+      "50.45%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=70, FP=41, FN=12, TN=281."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (7), what is the predicted value of y when x = 28?",
+    "options": [
+      "147",
+      "101",
+      "77",
+      "91"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=28 into y = 3(28) + 7 to get 91."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 110, FP = 17, FN = 28, and TN = 210, what is the exact Accuracy?",
+    "options": [
+      "72.67%",
+      "87.67%",
+      "97.67%",
+      "70.14%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=110, FP=17, FN=28, TN=210."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 182, FP = 5, FN = 22, and TN = 205, what is the exact Accuracy?",
+    "options": [
+      "103.48%",
+      "78.48%",
+      "74.78%",
+      "93.48%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=182, FP=5, FN=22, TN=205."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 7) and point B(5, 23) in a 2D space?",
+    "options": [
+      "18.90",
+      "31.50",
+      "21.00",
+      "24.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 153, FP = 40, FN = 42, and TN = 148, what is the exact Accuracy?",
+    "options": [
+      "63.59%",
+      "78.59%",
+      "88.59%",
+      "62.87%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=153, FP=40, FN=42, TN=148."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 12) and point B(10, 16) in a 2D space?",
+    "options": [
+      "4.30",
+      "9.60",
+      "6.40",
+      "9.90"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 6.40."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 0) and point B(13, 9) in a 2D space?",
+    "options": [
+      "13.50",
+      "9.00",
+      "12.50",
+      "6.90"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 131, FP = 13, FN = 43, and TN = 108, what is the exact Recall?",
+    "options": [
+      "85.29%",
+      "75.29%",
+      "60.29%",
+      "60.23%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=131, FP=13, FN=43, TN=108."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 4) and point B(13, 24) in a 2D space?",
+    "options": [
+      "29.50",
+      "39.00",
+      "26.00",
+      "23.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 26.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-4), what is the predicted value of y when x = 5?",
+    "options": [
+      "44",
+      "46",
+      "36",
+      "46"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=5 into y = 8(5) + -4 to get 36."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 5, FN = 43, and TN = 229, what is the exact Accuracy?",
+    "options": [
+      "71.92%",
+      "89.89%",
+      "99.89%",
+      "74.89%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=198, FP=5, FN=43, TN=229."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (8), what is the predicted value of y when x = 19?",
+    "options": [
+      "198",
+      "236",
+      "208",
+      "182"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=19 into y = 10(19) + 8 to get 198."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 1?",
+    "options": [
+      "16",
+      "24",
+      "14",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=1 into y = 10(1) + 4 to get 14."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(1, 0) and point B(19, 6) in a 2D space?",
+    "options": [
+      "36.00",
+      "21.90",
+      "27.50",
+      "24.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 63, FP = 34, FN = 24, and TN = 128, what is the exact Recall?",
+    "options": [
+      "57.93%",
+      "57.41%",
+      "82.41%",
+      "72.41%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=63, FP=34, FN=24, TN=128."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 56, FP = 43, FN = 8, and TN = 272, what is the exact Recall?",
+    "options": [
+      "87.50%",
+      "97.50%",
+      "72.50%",
+      "70.00%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=56, FP=43, FN=8, TN=272."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 144, FP = 34, FN = 23, and TN = 195, what is the exact Accuracy?",
+    "options": [
+      "95.61%",
+      "85.61%",
+      "68.48%",
+      "70.61%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=144, FP=34, FN=23, TN=195."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 10) and point B(8, 20) in a 2D space?",
+    "options": [
+      "16.77",
+      "11.18",
+      "14.68",
+      "9.08"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 11.18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 12) and point B(17, 5) in a 2D space?",
+    "options": [
+      "11.79",
+      "13.89",
+      "20.84",
+      "17.39"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 13.89."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (9), what is the predicted value of y when x = 7?",
+    "options": [
+      "19",
+      "37",
+      "51",
+      "47"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=7 into y = 4(7) + 9 to get 37."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 25?",
+    "options": [
+      "182",
+      "172",
+      "178",
+      "222"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=25 into y = 7(25) + -3 to get 172."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 16) and point B(12, 7) in a 2D space?",
+    "options": [
+      "14.50",
+      "16.50",
+      "8.90",
+      "11.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 179, FP = 42, FN = 10, and TN = 167, what is the exact Accuracy?",
+    "options": [
+      "86.93%",
+      "69.55%",
+      "96.93%",
+      "71.93%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=179, FP=42, FN=10, TN=167."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 12) and point B(18, 8) in a 2D space?",
+    "options": [
+      "8.50",
+      "7.50",
+      "2.90",
+      "5.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 24?",
+    "options": [
+      "121",
+      "169",
+      "119",
+      "131"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=24 into y = 5(24) + 1 to get 121."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 130, FP = 40, FN = 37, and TN = 237, what is the exact Accuracy?",
+    "options": [
+      "82.66%",
+      "67.66%",
+      "66.13%",
+      "92.66%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=130, FP=40, FN=37, TN=237."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 13?",
+    "options": [
+      "120",
+      "136",
+      "110",
+      "98"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=13 into y = 8(13) + 6 to get 110."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (6), what is the predicted value of y when x = 19?",
+    "options": [
+      "51",
+      "63",
+      "73",
+      "101"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 3(19) + 6 to get 63."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 8) and point B(12, 24) in a 2D space?",
+    "options": [
+      "25.90",
+      "42.00",
+      "28.00",
+      "31.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 28.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (7), what is the predicted value of y when x = 26?",
+    "options": [
+      "137",
+      "147",
+      "189",
+      "123"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=26 into y = 5(26) + 7 to get 137."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 119, FP = 10, FN = 37, and TN = 105, what is the exact Recall?",
+    "options": [
+      "86.28%",
+      "61.28%",
+      "76.28%",
+      "61.03%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=119, FP=10, FN=37, TN=105."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 128, FP = 12, FN = 7, and TN = 200, what is the exact Recall?",
+    "options": [
+      "79.81%",
+      "75.85%",
+      "94.81%",
+      "104.81%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=128, FP=12, FN=7, TN=200."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (6), what is the predicted value of y when x = 29?",
+    "options": [
+      "52",
+      "74",
+      "64",
+      "122"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=29 into y = 2(29) + 6 to get 64."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 104, FP = 36, FN = 12, and TN = 214, what is the exact Accuracy?",
+    "options": [
+      "96.89%",
+      "69.51%",
+      "71.89%",
+      "86.89%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=104, FP=36, FN=12, TN=214."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 84, FP = 34, FN = 20, and TN = 132, what is the exact Accuracy?",
+    "options": [
+      "80.00%",
+      "90.00%",
+      "64.00%",
+      "65.00%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=84, FP=34, FN=20, TN=132."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 149, FP = 19, FN = 38, and TN = 139, what is the exact Recall?",
+    "options": [
+      "64.68%",
+      "89.68%",
+      "63.74%",
+      "79.68%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=149, FP=19, FN=38, TN=139."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 18) and point B(7, 10) in a 2D space?",
+    "options": [
+      "6.15",
+      "12.37",
+      "8.25",
+      "11.75"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 8.25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 19) and point B(6, 17) in a 2D space?",
+    "options": [
+      "5.00",
+      "2.90",
+      "7.50",
+      "8.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 174, FP = 11, FN = 27, and TN = 198, what is the exact Accuracy?",
+    "options": [
+      "90.73%",
+      "100.73%",
+      "72.59%",
+      "75.73%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=174, FP=11, FN=27, TN=198."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (-2), what is the predicted value of y when x = 11?",
+    "options": [
+      "97",
+      "79",
+      "75",
+      "85"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=11 into y = 7(11) + -2 to get 75."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(15, 9) and point B(9, 10) in a 2D space?",
+    "options": [
+      "7.00",
+      "10.50",
+      "10.50",
+      "4.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 7.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-4), what is the predicted value of y when x = 21?",
+    "options": [
+      "101",
+      "67",
+      "59",
+      "69"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=21 into y = 3(21) + -4 to get 59."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 57, FP = 38, FN = 37, and TN = 132, what is the exact Recall?",
+    "options": [
+      "60.64%",
+      "70.64%",
+      "48.51%",
+      "45.64%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=57, FP=38, FN=37, TN=132."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 15?",
+    "options": [
+      "119",
+      "109",
+      "101",
+      "139"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=15 into y = 7(15) + 4 to get 109."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-3), what is the predicted value of y when x = 18?",
+    "options": [
+      "147",
+      "141",
+      "177",
+      "151"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=18 into y = 8(18) + -3 to get 141."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 8) and point B(9, 18) in a 2D space?",
+    "options": [
+      "12.90",
+      "22.50",
+      "18.50",
+      "15.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 102, FP = 34, FN = 32, and TN = 286, what is the exact Recall?",
+    "options": [
+      "86.12%",
+      "76.12%",
+      "60.90%",
+      "61.12%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=102, FP=34, FN=32, TN=286."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(13, 0) and point B(16, 12) in a 2D space?",
+    "options": [
+      "15.00",
+      "12.90",
+      "22.50",
+      "18.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 13) and point B(15, 10) in a 2D space?",
+    "options": [
+      "4.90",
+      "10.50",
+      "7.00",
+      "10.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 7.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 29?",
+    "options": [
+      "285",
+      "237",
+      "227",
+      "237"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=29 into y = 8(29) + -5 to get 227."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (3), what is the predicted value of y when x = 9?",
+    "options": [
+      "60",
+      "76",
+      "84",
+      "66"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=9 into y = 7(9) + 3 to get 66."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 10) and point B(24, 21) in a 2D space?",
+    "options": [
+      "24.00",
+      "13.90",
+      "19.50",
+      "16.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 93, FP = 28, FN = 39, and TN = 181, what is the exact Accuracy?",
+    "options": [
+      "65.35%",
+      "64.28%",
+      "90.35%",
+      "80.35%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=93, FP=28, FN=39, TN=181."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 8) and point B(11, 19) in a 2D space?",
+    "options": [
+      "15.50",
+      "12.00",
+      "9.90",
+      "18.00"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 144, FP = 7, FN = 37, and TN = 285, what is the exact Accuracy?",
+    "options": [
+      "100.70%",
+      "75.70%",
+      "90.70%",
+      "72.56%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=144, FP=7, FN=37, TN=285."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (1), what is the predicted value of y when x = 19?",
+    "options": [
+      "37",
+      "39",
+      "77",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 2(19) + 1 to get 39."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 25?",
+    "options": [
+      "246",
+      "254",
+      "304",
+      "264"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=25 into y = 10(25) + 4 to get 254."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 170, FP = 41, FN = 6, and TN = 244, what is the exact Accuracy?",
+    "options": [
+      "89.80%",
+      "74.80%",
+      "99.80%",
+      "71.84%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=170, FP=41, FN=6, TN=244."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-1), what is the predicted value of y when x = 4?",
+    "options": [
+      "17",
+      "25",
+      "23",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=4 into y = 4(4) + -1 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (3), what is the predicted value of y when x = 1?",
+    "options": [
+      "14",
+      "6",
+      "4",
+      "-2"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=1 into y = 1(1) + 3 to get 4."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 146, FP = 23, FN = 23, and TN = 134, what is the exact Accuracy?",
+    "options": [
+      "95.89%",
+      "85.89%",
+      "70.89%",
+      "68.71%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=146, FP=23, FN=23, TN=134."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-5), what is the predicted value of y when x = 22?",
+    "options": [
+      "127",
+      "137",
+      "137",
+      "171"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=22 into y = 6(22) + -5 to get 127."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 178, FP = 5, FN = 37, and TN = 118, what is the exact Accuracy?",
+    "options": [
+      "87.57%",
+      "70.06%",
+      "97.57%",
+      "72.57%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=178, FP=5, FN=37, TN=118."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 11) and point B(15, 8) in a 2D space?",
+    "options": [
+      "4.90",
+      "10.50",
+      "7.00",
+      "10.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 7.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (5), what is the predicted value of y when x = 14?",
+    "options": [
+      "85",
+      "65",
+      "75",
+      "103"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=14 into y = 5(14) + 5 to get 75."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 84, FP = 32, FN = 26, and TN = 170, what is the exact Accuracy?",
+    "options": [
+      "81.41%",
+      "65.13%",
+      "66.41%",
+      "91.41%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=84, FP=32, FN=26, TN=170."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-3), what is the predicted value of y when x = 22?",
+    "options": [
+      "223",
+      "227",
+      "217",
+      "261"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=22 into y = 10(22) + -3 to get 217."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 175, FP = 39, FN = 33, and TN = 278, what is the exact Accuracy?",
+    "options": [
+      "69.03%",
+      "86.29%",
+      "71.29%",
+      "96.29%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=175, FP=39, FN=33, TN=278."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(17, 3) and point B(12, 14) in a 2D space?",
+    "options": [
+      "12.08",
+      "15.58",
+      "9.98",
+      "18.12"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 12.08."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 172, FP = 31, FN = 7, and TN = 189, what is the exact Recall?",
+    "options": [
+      "106.09%",
+      "76.87%",
+      "81.09%",
+      "96.09%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=172, FP=31, FN=7, TN=189."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 6) and point B(12, 17) in a 2D space?",
+    "options": [
+      "30.00",
+      "17.90",
+      "20.00",
+      "23.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 20.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (5), what is the predicted value of y when x = 14?",
+    "options": [
+      "23",
+      "61",
+      "43",
+      "33"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=14 into y = 2(14) + 5 to get 33."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 8) and point B(20, 24) in a 2D space?",
+    "options": [
+      "25.00",
+      "22.90",
+      "28.50",
+      "37.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 25.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 155, FP = 7, FN = 16, and TN = 183, what is the exact Accuracy?",
+    "options": [
+      "93.63%",
+      "78.63%",
+      "103.63%",
+      "74.90%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=155, FP=7, FN=16, TN=183."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (6), what is the predicted value of y when x = 1?",
+    "options": [
+      "3",
+      "25",
+      "17",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=1 into y = 9(1) + 6 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 14) and point B(12, 13) in a 2D space?",
+    "options": [
+      "10.57",
+      "7.07",
+      "10.61",
+      "4.97"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 7.07."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 9) and point B(16, 12) in a 2D space?",
+    "options": [
+      "10.44",
+      "13.94",
+      "8.34",
+      "15.66"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 10.44."
   },
   {
     "subject": "AI / ML",
@@ -13586,148 +10842,330 @@ window.quizData.aiml = [
     "difficulty": "Easy",
     "question": "Assuming a simple linear regression equation is y = 9x + (9), what is the predicted value of y when x = 27?",
     "options": [
-      "306",
       "252",
-      "262",
-      "234"
+      "306",
+      "234",
+      "262"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Plug x=27 into y = 9(27) + 9 to get 252."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(5, 12) and point B(6, 18) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(10, 0) and point B(13, 14) in a 2D space?",
     "options": [
-      "9.58",
-      "6.08",
-      "9.12",
-      "3.98"
-    ],
-    "answer": 1,
-    "explanation": "Euclidean distance formula resolves to 6.08."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 155, FP = 27, FN = 12, and TN = 135, what is the exact Recall?",
-    "options": [
-      "77.81%",
-      "92.81%",
-      "102.81%",
-      "74.25%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=155, FP=27, FN=12, TN=135."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 92, FP = 7, FN = 13, and TN = 164, what is the exact Recall?",
-    "options": [
-      "97.62%",
-      "72.62%",
-      "87.62%",
-      "70.10%"
+      "17.82",
+      "12.22",
+      "14.32",
+      "21.48"
     ],
     "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=92, FP=7, FN=13, TN=164."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 21?",
-    "options": [
-      "256",
-      "206",
-      "214",
-      "224"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=21 into y = 10(21) + 4 to get 214."
+    "explanation": "Euclidean distance formula resolves to 14.32."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(9, 12) and point B(14, 5) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(8, 14) and point B(20, 19) in a 2D space?",
     "options": [
-      "12.00",
-      "9.90",
-      "18.00",
-      "15.50"
+      "14.90",
+      "20.50",
+      "25.50",
+      "17.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 104, FP = 13, FN = 16, and TN = 246, what is the exact Precision?",
+    "options": [
+      "71.11%",
+      "98.89%",
+      "73.89%",
+      "88.89%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=104, FP=13, FN=16, TN=246."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 198, FP = 39, FN = 26, and TN = 259, what is the exact Precision?",
+    "options": [
+      "93.54%",
+      "66.84%",
+      "68.54%",
+      "83.54%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=198, FP=39, FN=26, TN=259."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 6) and point B(24, 19) in a 2D space?",
+    "options": [
+      "17.03",
+      "20.53",
+      "25.54",
+      "14.93"
     ],
     "answer": 0,
-    "explanation": "Manhattan distance formula resolves to 12.00."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(13, 14) and point B(24, 15) in a 2D space?",
-    "options": [
-      "15.50",
-      "9.90",
-      "12.00",
-      "18.00"
-    ],
-    "answer": 2,
-    "explanation": "Manhattan distance formula resolves to 12.00."
+    "explanation": "Euclidean distance formula resolves to 17.03."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 72, FP = 13, FN = 18, and TN = 206, what is the exact Precision?",
+    "question": "Given a classification report with TP = 66, FP = 19, FN = 10, and TN = 286, what is the exact Precision?",
     "options": [
-      "67.76%",
-      "69.71%",
-      "84.71%",
-      "94.71%"
+      "87.65%",
+      "62.12%",
+      "77.65%",
+      "62.65%"
     ],
     "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=72, FP=13, FN=18, TN=206."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 65, FP = 8, FN = 11, and TN = 164, what is the exact Precision?",
-    "options": [
-      "74.04%",
-      "71.23%",
-      "89.04%",
-      "99.04%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=65, FP=8, FN=11, TN=164."
+    "explanation": "Precision is calculated by standard formula using counts: TP=66, FP=19, FN=10, TN=286."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 5x + (-2), what is the predicted value of y when x = 5?",
+    "question": "Assuming a simple linear regression equation is y = 2x + (3), what is the predicted value of y when x = 8?",
     "options": [
-      "33",
-      "27",
-      "23",
-      "33"
+      "35",
+      "19",
+      "29",
+      "13"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=8 into y = 2(8) + 3 to get 19."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 10?",
+    "options": [
+      "114",
+      "86",
+      "94",
+      "104"
     ],
     "answer": 2,
-    "explanation": "Plug x=5 into y = 5(5) + -2 to get 23."
+    "explanation": "Plug x=10 into y = 9(10) + 4 to get 94."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 135, FP = 29, FN = 18, and TN = 200, what is the exact Precision?",
+    "options": [
+      "82.32%",
+      "92.32%",
+      "67.32%",
+      "65.85%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=135, FP=29, FN=18, TN=200."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 8) and point B(10, 13) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(13, 14) and point B(11, 6) in a 2D space?",
     "options": [
-      "3.29",
+      "10.00",
+      "7.90",
+      "15.00",
+      "13.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 10.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 163, FP = 12, FN = 33, and TN = 243, what is the exact Accuracy?",
+    "options": [
+      "90.02%",
+      "72.02%",
+      "75.02%",
+      "100.02%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=163, FP=12, FN=33, TN=243."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 186, FP = 5, FN = 23, and TN = 268, what is the exact Precision?",
+    "options": [
+      "107.38%",
+      "82.38%",
+      "77.91%",
+      "97.38%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=186, FP=5, FN=23, TN=268."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (5), what is the predicted value of y when x = 0?",
+    "options": [
+      "15",
+      "-5",
+      "5",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=0 into y = 3(0) + 5 to get 5."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 17) and point B(9, 12) in a 2D space?",
+    "options": [
+      "14.50",
+      "8.90",
+      "16.50",
+      "11.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 36, FN = 20, and TN = 152, what is the exact Accuracy?",
+    "options": [
+      "64.34%",
+      "65.42%",
+      "90.42%",
+      "80.42%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=78, FP=36, FN=20, TN=152."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-2), what is the predicted value of y when x = 18?",
+    "options": [
+      "164",
+      "160",
+      "170",
+      "196"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=18 into y = 9(18) + -2 to get 160."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 10) and point B(22, 10) in a 2D space?",
+    "options": [
+      "10.90",
+      "16.50",
+      "13.00",
+      "19.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 13.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 17) and point B(17, 19) in a 2D space?",
+    "options": [
+      "9.00",
+      "6.90",
+      "13.50",
+      "12.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 146, FP = 43, FN = 15, and TN = 293, what is the exact Precision?",
+    "options": [
+      "77.25%",
+      "61.80%",
+      "87.25%",
+      "62.25%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=146, FP=43, FN=15, TN=293."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 4) and point B(18, 24) in a 2D space?",
+    "options": [
+      "25.50",
+      "22.00",
+      "33.00",
+      "19.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(19, 15) and point B(7, 17) in a 2D space?",
+    "options": [
+      "10.07",
+      "12.17",
+      "15.67",
+      "18.25"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 12.17."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 14) and point B(19, 10) in a 2D space?",
+    "options": [
+      "12.44",
+      "6.84",
+      "13.42",
+      "8.94"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 8.94."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 16) and point B(11, 14) in a 2D space?",
+    "options": [
       "8.08",
+      "3.29",
       "5.39",
       "8.89"
     ],
@@ -13738,67 +11176,907 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(7, 11) and point B(23, 19) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(9, 3) and point B(13, 21) in a 2D space?",
     "options": [
-      "36.00",
-      "24.00",
-      "27.50",
-      "21.90"
+      "19.90",
+      "25.50",
+      "22.00",
+      "33.00"
     ],
-    "answer": 1,
-    "explanation": "Manhattan distance formula resolves to 24.00."
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 22.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Regression",
     "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 10x + (1), what is the predicted value of y when x = 26?",
+    "question": "Assuming a simple linear regression equation is y = 8x + (2), what is the predicted value of y when x = 26?",
     "options": [
-      "271",
-      "313",
-      "261",
-      "259"
+      "210",
+      "262",
+      "220",
+      "206"
     ],
-    "answer": 2,
-    "explanation": "Plug x=26 into y = 10(26) + 1 to get 261."
+    "answer": 0,
+    "explanation": "Plug x=26 into y = 8(26) + 2 to get 210."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 54, FP = 27, FN = 31, and TN = 115, what is the exact Recall?",
+    "question": "Given a classification report with TP = 153, FP = 38, FN = 18, and TN = 124, what is the exact Accuracy?",
     "options": [
-      "73.53%",
-      "50.82%",
-      "63.53%",
-      "48.53%"
+      "93.18%",
+      "83.18%",
+      "68.18%",
+      "66.55%"
     ],
-    "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=54, FP=27, FN=31, TN=115."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 102, FP = 17, FN = 43, and TN = 178, what is the exact Precision?",
-    "options": [
-      "95.71%",
-      "68.57%",
-      "70.71%",
-      "85.71%"
-    ],
-    "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=102, FP=17, FN=43, TN=178."
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=153, FP=38, FN=18, TN=124."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(15, 2) and point B(15, 9) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(1, 17) and point B(5, 15) in a 2D space?",
+    "options": [
+      "3.90",
+      "9.50",
+      "6.00",
+      "9.00"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 151, FP = 24, FN = 25, and TN = 282, what is the exact Precision?",
+    "options": [
+      "69.03%",
+      "71.29%",
+      "96.29%",
+      "86.29%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=151, FP=24, FN=25, TN=282."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 139, FP = 32, FN = 36, and TN = 151, what is the exact Precision?",
+    "options": [
+      "65.03%",
+      "91.29%",
+      "81.29%",
+      "66.29%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=139, FP=32, FN=36, TN=151."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 59, FP = 24, FN = 34, and TN = 239, what is the exact Recall?",
+    "options": [
+      "73.44%",
+      "50.75%",
+      "63.44%",
+      "48.44%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=59, FP=24, FN=34, TN=239."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (-5), what is the predicted value of y when x = 23?",
+    "options": [
+      "28",
+      "28",
+      "18",
+      "64"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 1(23) + -5 to get 18."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 14?",
+    "options": [
+      "106",
+      "146",
+      "128",
+      "118"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=14 into y = 8(14) + 6 to get 118."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 9) and point B(13, 21) in a 2D space?",
+    "options": [
+      "21.19",
+      "15.59",
+      "17.69",
+      "26.54"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 17.69."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 157, FP = 29, FN = 23, and TN = 183, what is the exact Recall?",
+    "options": [
+      "87.22%",
+      "69.78%",
+      "97.22%",
+      "72.22%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=157, FP=29, FN=23, TN=183."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 28, FN = 43, and TN = 155, what is the exact Precision?",
+    "options": [
+      "58.58%",
+      "83.58%",
+      "58.87%",
+      "73.58%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=78, FP=28, FN=43, TN=155."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 9) and point B(12, 8) in a 2D space?",
+    "options": [
+      "6.50",
+      "4.50",
+      "3.00",
+      "0.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 3.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-2), what is the predicted value of y when x = 21?",
+    "options": [
+      "124",
+      "128",
+      "134",
+      "166"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=21 into y = 6(21) + -2 to get 124."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 96, FP = 16, FN = 30, and TN = 225, what is the exact Precision?",
+    "options": [
+      "68.57%",
+      "85.71%",
+      "70.71%",
+      "95.71%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=96, FP=16, FN=30, TN=225."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 7) and point B(15, 19) in a 2D space?",
+    "options": [
+      "15.67",
+      "12.17",
+      "10.07",
+      "18.25"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 12.17."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (-1), what is the predicted value of y when x = 7?",
+    "options": [
+      "79",
+      "83",
+      "69",
+      "71"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=7 into y = 10(7) + -1 to get 69."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (0), what is the predicted value of y when x = 28?",
+    "options": [
+      "168",
+      "112",
+      "122",
+      "112"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=28 into y = 4(28) + 0 to get 112."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 110, FP = 40, FN = 8, and TN = 180, what is the exact Recall?",
+    "options": [
+      "74.58%",
+      "93.22%",
+      "78.22%",
+      "103.22%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=110, FP=40, FN=8, TN=180."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 2?",
+    "options": [
+      "22",
+      "32",
+      "26",
+      "14"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=2 into y = 9(2) + 4 to get 22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 10) and point B(17, 10) in a 2D space?",
+    "options": [
+      "21.00",
+      "11.90",
+      "17.50",
+      "14.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(14, 9) and point B(23, 6) in a 2D space?",
+    "options": [
+      "14.23",
+      "12.99",
+      "9.49",
+      "7.39"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 9.49."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 191, FP = 13, FN = 8, and TN = 141, what is the exact Accuracy?",
+    "options": [
+      "79.05%",
+      "75.24%",
+      "94.05%",
+      "104.05%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=191, FP=13, FN=8, TN=141."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 168, FP = 14, FN = 12, and TN = 154, what is the exact Accuracy?",
+    "options": [
+      "102.53%",
+      "77.53%",
+      "74.02%",
+      "92.53%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=168, FP=14, FN=12, TN=154."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (6), what is the predicted value of y when x = 29?",
+    "options": [
+      "180",
+      "238",
+      "168",
+      "190"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=29 into y = 6(29) + 6 to get 180."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(7, 2) and point B(17, 7) in a 2D space?",
+    "options": [
+      "22.50",
+      "15.00",
+      "18.50",
+      "12.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 130, FP = 44, FN = 39, and TN = 119, what is the exact Accuracy?",
+    "options": [
+      "75.00%",
+      "60.00%",
+      "60.00%",
+      "85.00%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=130, FP=44, FN=39, TN=119."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 137, FP = 15, FN = 13, and TN = 230, what is the exact Precision?",
+    "options": [
+      "100.13%",
+      "90.13%",
+      "75.13%",
+      "72.11%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=137, FP=15, FN=13, TN=230."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 161, FP = 15, FN = 20, and TN = 106, what is the exact Precision?",
+    "options": [
+      "73.18%",
+      "91.48%",
+      "101.48%",
+      "76.48%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=161, FP=15, FN=20, TN=106."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 9) and point B(18, 15) in a 2D space?",
+    "options": [
+      "13.50",
+      "10.00",
+      "7.90",
+      "15.00"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 10.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (5), what is the predicted value of y when x = 11?",
+    "options": [
+      "82",
+      "70",
+      "50",
+      "60"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=11 into y = 5(11) + 5 to get 60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (0), what is the predicted value of y when x = 18?",
+    "options": [
+      "90",
+      "90",
+      "126",
+      "100"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=18 into y = 5(18) + 0 to get 90."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 19) and point B(7, 18) in a 2D space?",
+    "options": [
+      "7.50",
+      "1.90",
+      "6.00",
+      "4.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 4.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (9), what is the predicted value of y when x = 22?",
+    "options": [
+      "31",
+      "13",
+      "41",
+      "75"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=22 into y = 1(22) + 9 to get 31."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(17, 14) and point B(9, 6) in a 2D space?",
+    "options": [
+      "16.00",
+      "13.90",
+      "24.00",
+      "19.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 88, FP = 33, FN = 33, and TN = 218, what is the exact Precision?",
+    "options": [
+      "57.73%",
+      "58.18%",
+      "72.73%",
+      "82.73%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=88, FP=33, FN=33, TN=218."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (0), what is the predicted value of y when x = 16?",
+    "options": [
+      "48",
+      "16",
+      "16",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=16 into y = 1(16) + 0 to get 16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 20?",
+    "options": [
+      "34",
+      "24",
+      "16",
+      "64"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=20 into y = 1(20) + 4 to get 24."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 18) and point B(6, 6) in a 2D space?",
+    "options": [
+      "16.00",
+      "13.90",
+      "24.00",
+      "19.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-4), what is the predicted value of y when x = 24?",
+    "options": [
+      "116",
+      "78",
+      "76",
+      "68"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=24 into y = 3(24) + -4 to get 68."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 74, FP = 24, FN = 18, and TN = 229, what is the exact Precision?",
+    "options": [
+      "60.51%",
+      "75.51%",
+      "85.51%",
+      "60.41%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=74, FP=24, FN=18, TN=229."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (0), what is the predicted value of y when x = 7?",
+    "options": [
+      "70",
+      "70",
+      "84",
+      "80"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=7 into y = 10(7) + 0 to get 70."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 165, FP = 7, FN = 17, and TN = 166, what is the exact Accuracy?",
+    "options": [
+      "93.24%",
+      "78.24%",
+      "103.24%",
+      "74.59%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=165, FP=7, FN=17, TN=166."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 15) and point B(19, 24) in a 2D space?",
+    "options": [
+      "21.50",
+      "27.00",
+      "15.90",
+      "18.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 18.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(16, 6) and point B(16, 23) in a 2D space?",
+    "options": [
+      "20.50",
+      "17.00",
+      "14.90",
+      "25.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 68, FP = 35, FN = 6, and TN = 268, what is the exact Recall?",
+    "options": [
+      "73.51%",
+      "101.89%",
+      "91.89%",
+      "76.89%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=68, FP=35, FN=6, TN=268."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 69, FP = 13, FN = 9, and TN = 286, what is the exact Accuracy?",
+    "options": [
+      "94.16%",
+      "79.16%",
+      "75.33%",
+      "104.16%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=69, FP=13, FN=9, TN=286."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(0, 13) and point B(18, 17) in a 2D space?",
+    "options": [
+      "27.66",
+      "21.94",
+      "16.34",
+      "18.44"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 18.44."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 118, FP = 12, FN = 13, and TN = 237, what is the exact Accuracy?",
+    "options": [
+      "93.42%",
+      "74.74%",
+      "78.42%",
+      "103.42%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=118, FP=12, FN=13, TN=237."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (7), what is the predicted value of y when x = 24?",
+    "options": [
+      "41",
+      "17",
+      "79",
+      "31"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=24 into y = 1(24) + 7 to get 31."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(6, 11) and point B(6, 7) in a 2D space?",
+    "options": [
+      "7.50",
+      "4.00",
+      "6.00",
+      "1.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 4.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 182, FP = 13, FN = 32, and TN = 109, what is the exact Recall?",
+    "options": [
+      "95.05%",
+      "70.05%",
+      "85.05%",
+      "68.04%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=182, FP=13, FN=32, TN=109."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 145, FP = 43, FN = 14, and TN = 111, what is the exact Accuracy?",
+    "options": [
+      "81.79%",
+      "66.79%",
+      "91.79%",
+      "65.43%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=145, FP=43, FN=14, TN=111."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 10) and point B(21, 8) in a 2D space?",
+    "options": [
+      "8.08",
+      "8.89",
+      "5.39",
+      "3.29"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 5.39."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(18, 6) and point B(8, 19) in a 2D space?",
+    "options": [
+      "23.00",
+      "20.90",
+      "26.50",
+      "34.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 0) and point B(6, 21) in a 2D space?",
+    "options": [
+      "31.50",
+      "24.50",
+      "18.90",
+      "21.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 21.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (4), what is the predicted value of y when x = 18?",
+    "options": [
+      "86",
+      "68",
+      "76",
+      "112"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=18 into y = 4(18) + 4 to get 76."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 62, FP = 36, FN = 24, and TN = 241, what is the exact Accuracy?",
+    "options": [
+      "93.47%",
+      "68.47%",
+      "83.47%",
+      "66.78%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=62, FP=36, FN=24, TN=241."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 7?",
+    "options": [
+      "63",
+      "45",
+      "67",
+      "53"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=7 into y = 7(7) + 4 to get 53."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (7), what is the predicted value of y when x = 14?",
+    "options": [
+      "119",
+      "105",
+      "129",
+      "147"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=14 into y = 8(14) + 7 to get 119."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 1) and point B(10, 19) in a 2D space?",
+    "options": [
+      "25.90",
+      "28.00",
+      "42.00",
+      "31.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 28.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 4) and point B(6, 18) in a 2D space?",
+    "options": [
+      "17.54",
+      "14.04",
+      "11.94",
+      "21.05"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 14.04."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (6), what is the predicted value of y when x = 13?",
+    "options": [
+      "133",
+      "111",
+      "149",
+      "123"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=13 into y = 9(13) + 6 to get 123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(2, 8) and point B(8, 23) in a 2D space?",
+    "options": [
+      "24.23",
+      "14.06",
+      "16.16",
+      "19.66"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 16.16."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(6, 16) and point B(7, 22) in a 2D space?",
     "options": [
       "10.50",
-      "4.90",
       "10.50",
+      "4.90",
       "7.00"
     ],
     "answer": 3,
@@ -13808,196 +12086,1918 @@ window.quizData.aiml = [
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 138, FP = 25, FN = 43, and TN = 165, what is the exact Precision?",
+    "question": "Given a classification report with TP = 182, FP = 36, FN = 16, and TN = 209, what is the exact Recall?",
     "options": [
-      "84.66%",
-      "94.66%",
-      "69.66%",
-      "67.73%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=138, FP=25, FN=43, TN=165."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 174, FP = 25, FN = 30, and TN = 298, what is the exact Recall?",
-    "options": [
-      "68.24%",
-      "70.29%",
-      "85.29%",
-      "95.29%"
+      "76.92%",
+      "101.92%",
+      "91.92%",
+      "73.54%"
     ],
     "answer": 2,
-    "explanation": "Recall is calculated by standard formula using counts: TP=174, FP=25, FN=30, TN=298."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 159, FP = 23, FN = 28, and TN = 151, what is the exact Accuracy?",
-    "options": [
-      "85.87%",
-      "70.87%",
-      "68.70%",
-      "95.87%"
-    ],
-    "answer": 0,
-    "explanation": "Accuracy is calculated by standard formula using counts: TP=159, FP=23, FN=28, TN=151."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 2x + (3), what is the predicted value of y when x = 17?",
-    "options": [
-      "37",
-      "47",
-      "71",
-      "31"
-    ],
-    "answer": 0,
-    "explanation": "Plug x=17 into y = 2(17) + 3 to get 37."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 9x + (-2), what is the predicted value of y when x = 22?",
-    "options": [
-      "206",
-      "240",
-      "196",
-      "200"
-    ],
-    "answer": 2,
-    "explanation": "Plug x=22 into y = 9(22) + -2 to get 196."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 129, FP = 39, FN = 38, and TN = 181, what is the exact Precision?",
-    "options": [
-      "76.79%",
-      "61.43%",
-      "86.79%",
-      "61.79%"
-    ],
-    "answer": 0,
-    "explanation": "Precision is calculated by standard formula using counts: TP=129, FP=39, FN=38, TN=181."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 1x + (4), what is the predicted value of y when x = 5?",
-    "options": [
-      "1",
-      "9",
-      "19",
-      "19"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=5 into y = 1(5) + 4 to get 9."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Regression",
-    "difficulty": "Easy",
-    "question": "Assuming a simple linear regression equation is y = 7x + (-3), what is the predicted value of y when x = 25?",
-    "options": [
-      "222",
-      "172",
-      "182",
-      "178"
-    ],
-    "answer": 1,
-    "explanation": "Plug x=25 into y = 7(25) + -3 to get 172."
+    "explanation": "Recall is calculated by standard formula using counts: TP=182, FP=36, FN=16, TN=209."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Manhattan distance between point A(10, 12) and point B(20, 10) in a 2D space?",
+    "question": "What is the Manhattan distance between point A(16, 10) and point B(23, 17) in a 2D space?",
     "options": [
-      "12.00",
-      "15.50",
-      "9.90",
-      "18.00"
+      "21.00",
+      "11.90",
+      "14.00",
+      "17.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 14.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 57, FP = 40, FN = 29, and TN = 230, what is the exact Precision?",
+    "options": [
+      "43.76%",
+      "58.76%",
+      "68.76%",
+      "47.01%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=57, FP=40, FN=29, TN=230."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 8) and point B(24, 18) in a 2D space?",
+    "options": [
+      "18.50",
+      "12.90",
+      "22.50",
+      "15.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(1, 5) and point B(7, 14) in a 2D space?",
+    "options": [
+      "18.50",
+      "15.00",
+      "22.50",
+      "12.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (1), what is the predicted value of y when x = 10?",
+    "options": [
+      "41",
+      "51",
+      "61",
+      "39"
     ],
     "answer": 0,
+    "explanation": "Plug x=10 into y = 4(10) + 1 to get 41."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 137, FP = 13, FN = 17, and TN = 287, what is the exact Accuracy?",
+    "options": [
+      "74.71%",
+      "78.39%",
+      "103.39%",
+      "93.39%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=137, FP=13, FN=17, TN=287."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 168, FP = 23, FN = 35, and TN = 241, what is the exact Recall?",
+    "options": [
+      "67.76%",
+      "82.76%",
+      "66.21%",
+      "92.76%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=168, FP=23, FN=35, TN=241."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 152, FP = 33, FN = 27, and TN = 258, what is the exact Recall?",
+    "options": [
+      "67.93%",
+      "84.92%",
+      "94.92%",
+      "69.92%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=152, FP=33, FN=27, TN=258."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 9) and point B(14, 19) in a 2D space?",
+    "options": [
+      "14.87",
+      "18.37",
+      "22.30",
+      "12.77"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 14.87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 19) and point B(13, 17) in a 2D space?",
+    "options": [
+      "3.90",
+      "9.50",
+      "9.00",
+      "6.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-1), what is the predicted value of y when x = 7?",
+    "options": [
+      "62",
+      "64",
+      "72",
+      "76"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=7 into y = 9(7) + -1 to get 62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 129, FP = 36, FN = 5, and TN = 128, what is the exact Accuracy?",
+    "options": [
+      "71.24%",
+      "86.24%",
+      "96.24%",
+      "68.99%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=129, FP=36, FN=5, TN=128."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 104, FP = 15, FN = 31, and TN = 207, what is the exact Recall?",
+    "options": [
+      "87.04%",
+      "62.04%",
+      "77.04%",
+      "61.63%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=104, FP=15, FN=31, TN=207."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 3) and point B(22, 19) in a 2D space?",
+    "options": [
+      "40.50",
+      "24.90",
+      "30.50",
+      "27.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (1), what is the predicted value of y when x = 25?",
+    "options": [
+      "211",
+      "201",
+      "251",
+      "199"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=25 into y = 8(25) + 1 to get 201."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 14) and point B(13, 22) in a 2D space?",
+    "options": [
+      "19.21",
+      "16.31",
+      "12.81",
+      "10.71"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 12.81."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 63, FP = 15, FN = 9, and TN = 125, what is the exact Accuracy?",
+    "options": [
+      "70.94%",
+      "88.68%",
+      "73.68%",
+      "98.68%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=63, FP=15, FN=9, TN=125."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (8), what is the predicted value of y when x = 3?",
+    "options": [
+      "19",
+      "41",
+      "35",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=3 into y = 9(3) + 8 to get 35."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 143, FP = 28, FN = 16, and TN = 283, what is the exact Precision?",
+    "options": [
+      "66.90%",
+      "68.63%",
+      "83.63%",
+      "93.63%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=143, FP=28, FN=16, TN=283."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 15) and point B(18, 16) in a 2D space?",
+    "options": [
+      "17.00",
+      "20.50",
+      "25.50",
+      "14.90"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 6) and point B(11, 20) in a 2D space?",
+    "options": [
+      "14.90",
+      "20.50",
+      "17.00",
+      "25.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 19) and point B(22, 22) in a 2D space?",
+    "options": [
+      "7.39",
+      "9.49",
+      "12.99",
+      "14.23"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 9.49."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 6) and point B(12, 16) in a 2D space?",
+    "options": [
+      "8.34",
+      "15.66",
+      "13.94",
+      "10.44"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 10.44."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 182, FP = 5, FN = 13, and TN = 100, what is the exact Accuracy?",
+    "options": [
+      "94.00%",
+      "75.20%",
+      "104.00%",
+      "79.00%"
+    ],
+    "answer": 0,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=182, FP=5, FN=13, TN=100."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(12, 19) and point B(19, 18) in a 2D space?",
+    "options": [
+      "8.00",
+      "5.90",
+      "12.00",
+      "11.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 83, FP = 36, FN = 39, and TN = 138, what is the exact Recall?",
+    "options": [
+      "53.03%",
+      "78.03%",
+      "68.03%",
+      "54.43%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=83, FP=36, FN=39, TN=138."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(0, 12) and point B(7, 7) in a 2D space?",
+    "options": [
+      "9.90",
+      "15.50",
+      "12.00",
+      "18.00"
+    ],
+    "answer": 2,
     "explanation": "Manhattan distance formula resolves to 12.00."
   },
   {
     "subject": "AI / ML",
     "topic": "Evaluation Metrics",
     "difficulty": "Medium",
-    "question": "Given a classification report with TP = 169, FP = 10, FN = 39, and TN = 276, what is the exact Precision?",
+    "question": "Given a classification report with TP = 84, FP = 31, FN = 33, and TN = 169, what is the exact Recall?",
     "options": [
-      "75.53%",
-      "104.41%",
-      "79.41%",
-      "94.41%"
+      "57.44%",
+      "56.79%",
+      "81.79%",
+      "71.79%"
     ],
     "answer": 3,
-    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=10, FN=39, TN=276."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 178, FP = 9, FN = 34, and TN = 184, what is the exact Recall?",
-    "options": [
-      "93.96%",
-      "83.96%",
-      "67.17%",
-      "68.96%"
-    ],
-    "answer": 1,
-    "explanation": "Recall is calculated by standard formula using counts: TP=178, FP=9, FN=34, TN=184."
+    "explanation": "Recall is calculated by standard formula using counts: TP=84, FP=31, FN=33, TN=169."
   },
   {
     "subject": "AI / ML",
     "topic": "Clustering & KNN",
     "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(12, 1) and point B(7, 22) in a 2D space?",
+    "question": "What is the Euclidean distance between point A(13, 13) and point B(22, 15) in a 2D space?",
     "options": [
-      "19.49",
-      "32.38",
-      "25.09",
-      "21.59"
-    ],
-    "answer": 3,
-    "explanation": "Euclidean distance formula resolves to 21.59."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Evaluation Metrics",
-    "difficulty": "Medium",
-    "question": "Given a classification report with TP = 193, FP = 40, FN = 9, and TN = 250, what is the exact Precision?",
-    "options": [
-      "67.83%",
-      "92.83%",
-      "82.83%",
-      "66.27%"
-    ],
-    "answer": 2,
-    "explanation": "Precision is calculated by standard formula using counts: TP=193, FP=40, FN=9, TN=250."
-  },
-  {
-    "subject": "AI / ML",
-    "topic": "Clustering & KNN",
-    "difficulty": "Medium",
-    "question": "What is the Euclidean distance between point A(19, 15) and point B(6, 21) in a 2D space?",
-    "options": [
-      "14.32",
-      "21.48",
-      "17.82",
-      "12.22"
+      "9.22",
+      "7.12",
+      "13.83",
+      "12.72"
     ],
     "answer": 0,
-    "explanation": "Euclidean distance formula resolves to 14.32."
+    "explanation": "Euclidean distance formula resolves to 9.22."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 2) and point B(5, 12) in a 2D space?",
+    "options": [
+      "15.00",
+      "22.50",
+      "12.90",
+      "18.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 15.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (0), what is the predicted value of y when x = 15?",
+    "options": [
+      "115",
+      "135",
+      "105",
+      "105"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=15 into y = 7(15) + 0 to get 105."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (1), what is the predicted value of y when x = 22?",
+    "options": [
+      "155",
+      "111",
+      "109",
+      "121"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=22 into y = 5(22) + 1 to get 111."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 17) and point B(14, 17) in a 2D space?",
+    "options": [
+      "8.50",
+      "2.90",
+      "5.00",
+      "7.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 148, FP = 12, FN = 37, and TN = 223, what is the exact Precision?",
+    "options": [
+      "74.00%",
+      "102.50%",
+      "92.50%",
+      "77.50%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=148, FP=12, FN=37, TN=223."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-5), what is the predicted value of y when x = 5?",
+    "options": [
+      "35",
+      "35",
+      "35",
+      "25"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=5 into y = 6(5) + -5 to get 25."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (3), what is the predicted value of y when x = 19?",
+    "options": [
+      "108",
+      "98",
+      "136",
+      "92"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 5(19) + 3 to get 98."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-1), what is the predicted value of y when x = 7?",
+    "options": [
+      "27",
+      "23",
+      "13",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=7 into y = 2(7) + -1 to get 13."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 103, FP = 29, FN = 12, and TN = 121, what is the exact Recall?",
+    "options": [
+      "71.65%",
+      "89.57%",
+      "99.57%",
+      "74.57%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=103, FP=29, FN=12, TN=121."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 169, FP = 13, FN = 23, and TN = 237, what is the exact Precision?",
+    "options": [
+      "102.86%",
+      "74.29%",
+      "77.86%",
+      "92.86%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=169, FP=13, FN=23, TN=237."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(5, 10) and point B(21, 21) in a 2D space?",
+    "options": [
+      "30.50",
+      "27.00",
+      "24.90",
+      "40.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-4), what is the predicted value of y when x = 26?",
+    "options": [
+      "56",
+      "48",
+      "58",
+      "100"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=26 into y = 2(26) + -4 to get 48."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-3), what is the predicted value of y when x = 29?",
+    "options": [
+      "90",
+      "94",
+      "142",
+      "84"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=29 into y = 3(29) + -3 to get 84."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(1, 19) and point B(21, 23) in a 2D space?",
+    "options": [
+      "24.00",
+      "21.90",
+      "36.00",
+      "27.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 24.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(6, 3) and point B(22, 9) in a 2D space?",
+    "options": [
+      "17.09",
+      "25.63",
+      "14.99",
+      "20.59"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 17.09."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-5), what is the predicted value of y when x = 23?",
+    "options": [
+      "87",
+      "51",
+      "41",
+      "51"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=23 into y = 2(23) + -5 to get 41."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-5), what is the predicted value of y when x = 14?",
+    "options": [
+      "107",
+      "117",
+      "117",
+      "135"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=14 into y = 8(14) + -5 to get 107."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 78, FP = 15, FN = 30, and TN = 136, what is the exact Recall?",
+    "options": [
+      "82.22%",
+      "57.22%",
+      "57.78%",
+      "72.22%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=78, FP=15, FN=30, TN=136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 55, FP = 17, FN = 37, and TN = 250, what is the exact Precision?",
+    "options": [
+      "61.11%",
+      "76.39%",
+      "61.39%",
+      "86.39%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=55, FP=17, FN=37, TN=250."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 1) and point B(23, 12) in a 2D space?",
+    "options": [
+      "18.37",
+      "12.77",
+      "14.87",
+      "22.30"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 14.87."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (3), what is the predicted value of y when x = 13?",
+    "options": [
+      "101",
+      "133",
+      "107",
+      "117"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=13 into y = 8(13) + 3 to get 107."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (-3), what is the predicted value of y when x = 21?",
+    "options": [
+      "112",
+      "108",
+      "102",
+      "144"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=21 into y = 5(21) + -3 to get 102."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 140, FP = 40, FN = 28, and TN = 128, what is the exact Precision?",
+    "options": [
+      "77.78%",
+      "62.78%",
+      "87.78%",
+      "62.22%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=140, FP=40, FN=28, TN=128."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (7), what is the predicted value of y when x = 29?",
+    "options": [
+      "75",
+      "51",
+      "123",
+      "65"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=29 into y = 2(29) + 7 to get 65."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(3, 4) and point B(12, 7) in a 2D space?",
+    "options": [
+      "15.50",
+      "18.00",
+      "12.00",
+      "9.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 12.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 142, FP = 32, FN = 21, and TN = 214, what is the exact Precision?",
+    "options": [
+      "81.61%",
+      "91.61%",
+      "66.61%",
+      "65.29%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=142, FP=32, FN=21, TN=214."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (7), what is the predicted value of y when x = 25?",
+    "options": [
+      "243",
+      "307",
+      "267",
+      "257"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=25 into y = 10(25) + 7 to get 257."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 145, FP = 26, FN = 41, and TN = 246, what is the exact Recall?",
+    "options": [
+      "87.96%",
+      "62.37%",
+      "77.96%",
+      "62.96%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=145, FP=26, FN=41, TN=246."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(9, 14) and point B(13, 18) in a 2D space?",
+    "options": [
+      "3.56",
+      "8.49",
+      "9.16",
+      "5.66"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 5.66."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 15) and point B(11, 20) in a 2D space?",
+    "options": [
+      "10.50",
+      "7.00",
+      "4.90",
+      "10.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 7.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (-4), what is the predicted value of y when x = 13?",
+    "options": [
+      "100",
+      "84",
+      "82",
+      "74"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=13 into y = 6(13) + -4 to get 74."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 144, FP = 40, FN = 36, and TN = 294, what is the exact Recall?",
+    "options": [
+      "90.00%",
+      "65.00%",
+      "64.00%",
+      "80.00%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=144, FP=40, FN=36, TN=294."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 159, FP = 41, FN = 5, and TN = 136, what is the exact Precision?",
+    "options": [
+      "79.50%",
+      "63.60%",
+      "64.50%",
+      "89.50%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=159, FP=41, FN=5, TN=136."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (2), what is the predicted value of y when x = 5?",
+    "options": [
+      "62",
+      "52",
+      "62",
+      "48"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=5 into y = 10(5) + 2 to get 52."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 7x + (4), what is the predicted value of y when x = 25?",
+    "options": [
+      "179",
+      "189",
+      "171",
+      "229"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=25 into y = 7(25) + 4 to get 179."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 0) and point B(15, 18) in a 2D space?",
+    "options": [
+      "19.90",
+      "22.00",
+      "33.00",
+      "25.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 22.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 12) and point B(11, 17) in a 2D space?",
+    "options": [
+      "8.60",
+      "12.10",
+      "12.90",
+      "6.50"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 8.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(18, 2) and point B(23, 13) in a 2D space?",
+    "options": [
+      "19.50",
+      "24.00",
+      "13.90",
+      "16.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 16.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-4), what is the predicted value of y when x = 7?",
+    "options": [
+      "69",
+      "67",
+      "59",
+      "73"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=7 into y = 9(7) + -4 to get 59."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 132, FP = 11, FN = 13, and TN = 192, what is the exact Accuracy?",
+    "options": [
+      "78.10%",
+      "93.10%",
+      "103.10%",
+      "74.48%"
+    ],
+    "answer": 1,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=132, FP=11, FN=13, TN=192."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 6) and point B(20, 6) in a 2D space?",
+    "options": [
+      "6.90",
+      "13.50",
+      "12.50",
+      "9.00"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 18) and point B(17, 17) in a 2D space?",
+    "options": [
+      "9.12",
+      "3.98",
+      "6.08",
+      "9.58"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 6.08."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 13) and point B(13, 9) in a 2D space?",
+    "options": [
+      "16.16",
+      "14.27",
+      "10.77",
+      "8.67"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 10.77."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (8), what is the predicted value of y when x = 2?",
+    "options": [
+      "-2",
+      "18",
+      "14",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=2 into y = 3(2) + 8 to get 14."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(11, 14) and point B(5, 19) in a 2D space?",
+    "options": [
+      "14.50",
+      "16.50",
+      "8.90",
+      "11.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 192, FP = 43, FN = 22, and TN = 155, what is the exact Recall?",
+    "options": [
+      "71.78%",
+      "74.72%",
+      "99.72%",
+      "89.72%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=192, FP=43, FN=22, TN=155."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-3), what is the predicted value of y when x = 6?",
+    "options": [
+      "27",
+      "31",
+      "21",
+      "33"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=6 into y = 4(6) + -3 to get 21."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(13, 3) and point B(8, 23) in a 2D space?",
+    "options": [
+      "24.12",
+      "18.52",
+      "20.62",
+      "30.92"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 20.62."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 56, FP = 23, FN = 37, and TN = 266, what is the exact Recall?",
+    "options": [
+      "70.22%",
+      "45.22%",
+      "60.22%",
+      "48.17%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=56, FP=23, FN=37, TN=266."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 100, FP = 8, FN = 31, and TN = 243, what is the exact Precision?",
+    "options": [
+      "92.59%",
+      "102.59%",
+      "77.59%",
+      "74.07%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=100, FP=8, FN=31, TN=243."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(8, 6) and point B(13, 24) in a 2D space?",
+    "options": [
+      "22.18",
+      "18.68",
+      "28.02",
+      "16.58"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 18.68."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(17, 4) and point B(8, 12) in a 2D space?",
+    "options": [
+      "20.50",
+      "14.90",
+      "17.00",
+      "25.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 17.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 86, FP = 9, FN = 25, and TN = 218, what is the exact Precision?",
+    "options": [
+      "90.53%",
+      "100.53%",
+      "72.42%",
+      "75.53%"
+    ],
+    "answer": 0,
+    "explanation": "Precision is calculated by standard formula using counts: TP=86, FP=9, FN=25, TN=218."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (4), what is the predicted value of y when x = 1?",
+    "options": [
+      "5",
+      "15",
+      "23",
+      "13"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=1 into y = 9(1) + 4 to get 13."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 168, FP = 30, FN = 42, and TN = 278, what is the exact Recall?",
+    "options": [
+      "90.00%",
+      "64.00%",
+      "80.00%",
+      "65.00%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=168, FP=30, FN=42, TN=278."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(5, 4) and point B(14, 8) in a 2D space?",
+    "options": [
+      "9.85",
+      "14.77",
+      "13.35",
+      "7.75"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 9.85."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 1x + (6), what is the predicted value of y when x = 9?",
+    "options": [
+      "3",
+      "25",
+      "33",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=9 into y = 1(9) + 6 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (5), what is the predicted value of y when x = 29?",
+    "options": [
+      "82",
+      "102",
+      "150",
+      "92"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=29 into y = 3(29) + 5 to get 92."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (5), what is the predicted value of y when x = 22?",
+    "options": [
+      "181",
+      "147",
+      "127",
+      "137"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=22 into y = 6(22) + 5 to get 137."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(10, 1) and point B(16, 10) in a 2D space?",
+    "options": [
+      "8.72",
+      "16.22",
+      "14.32",
+      "10.82"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 10.82."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(9, 17) and point B(6, 11) in a 2D space?",
+    "options": [
+      "13.50",
+      "6.90",
+      "9.00",
+      "12.50"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (1), what is the predicted value of y when x = 25?",
+    "options": [
+      "251",
+      "249",
+      "261",
+      "301"
+    ],
+    "answer": 0,
+    "explanation": "Plug x=25 into y = 10(25) + 1 to get 251."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 173, FP = 33, FN = 5, and TN = 233, what is the exact Precision?",
+    "options": [
+      "68.98%",
+      "83.98%",
+      "93.98%",
+      "67.18%"
+    ],
+    "answer": 1,
+    "explanation": "Precision is calculated by standard formula using counts: TP=173, FP=33, FN=5, TN=233."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 117, FP = 35, FN = 26, and TN = 120, what is the exact Recall?",
+    "options": [
+      "65.45%",
+      "91.82%",
+      "66.82%",
+      "81.82%"
+    ],
+    "answer": 3,
+    "explanation": "Recall is calculated by standard formula using counts: TP=117, FP=35, FN=26, TN=120."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(2, 2) and point B(15, 14) in a 2D space?",
+    "options": [
+      "15.59",
+      "26.54",
+      "21.19",
+      "17.69"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 17.69."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 2x + (-2), what is the predicted value of y when x = 25?",
+    "options": [
+      "52",
+      "58",
+      "98",
+      "48"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=25 into y = 2(25) + -2 to get 48."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 5x + (4), what is the predicted value of y when x = 19?",
+    "options": [
+      "91",
+      "99",
+      "137",
+      "109"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 5(19) + 4 to get 99."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 178, FP = 22, FN = 8, and TN = 291, what is the exact Precision?",
+    "options": [
+      "99.00%",
+      "74.00%",
+      "71.20%",
+      "89.00%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=178, FP=22, FN=8, TN=291."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (3), what is the predicted value of y when x = 3?",
+    "options": [
+      "21",
+      "25",
+      "15",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=3 into y = 4(3) + 3 to get 15."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(4, 17) and point B(17, 24) in a 2D space?",
+    "options": [
+      "20.00",
+      "17.90",
+      "30.00",
+      "23.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 20.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (6), what is the predicted value of y when x = 19?",
+    "options": [
+      "146",
+      "196",
+      "158",
+      "168"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=19 into y = 8(19) + 6 to get 158."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(8, 2) and point B(14, 23) in a 2D space?",
+    "options": [
+      "24.90",
+      "27.00",
+      "40.50",
+      "30.50"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 27.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 79, FP = 28, FN = 8, and TN = 154, what is the exact Accuracy?",
+    "options": [
+      "71.62%",
+      "69.29%",
+      "96.62%",
+      "86.62%"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=79, FP=28, FN=8, TN=154."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(15, 8) and point B(12, 11) in a 2D space?",
+    "options": [
+      "9.00",
+      "6.00",
+      "9.50",
+      "3.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 6.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 8x + (-2), what is the predicted value of y when x = 17?",
+    "options": [
+      "168",
+      "134",
+      "144",
+      "138"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=17 into y = 8(17) + -2 to get 134."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 6x + (3), what is the predicted value of y when x = 26?",
+    "options": [
+      "153",
+      "159",
+      "169",
+      "211"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=26 into y = 6(26) + 3 to get 159."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 9x + (-3), what is the predicted value of y when x = 19?",
+    "options": [
+      "206",
+      "168",
+      "174",
+      "178"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=19 into y = 9(19) + -3 to get 168."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-1), what is the predicted value of y when x = 24?",
+    "options": [
+      "105",
+      "95",
+      "97",
+      "143"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=24 into y = 4(24) + -1 to get 95."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 155, FP = 9, FN = 36, and TN = 281, what is the exact Precision?",
+    "options": [
+      "75.61%",
+      "79.51%",
+      "104.51%",
+      "94.51%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=155, FP=9, FN=36, TN=281."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 111, FP = 9, FN = 22, and TN = 123, what is the exact Recall?",
+    "options": [
+      "93.46%",
+      "68.46%",
+      "83.46%",
+      "66.77%"
+    ],
+    "answer": 2,
+    "explanation": "Recall is calculated by standard formula using counts: TP=111, FP=9, FN=22, TN=123."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (2), what is the predicted value of y when x = 21?",
+    "options": [
+      "96",
+      "86",
+      "128",
+      "82"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=21 into y = 4(21) + 2 to get 86."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(10, 17) and point B(17, 16) in a 2D space?",
+    "options": [
+      "12.00",
+      "8.00",
+      "11.50",
+      "5.90"
+    ],
+    "answer": 1,
+    "explanation": "Manhattan distance formula resolves to 8.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 137, FP = 41, FN = 44, and TN = 288, what is the exact Accuracy?",
+    "options": [
+      "68.33%",
+      "66.67%",
+      "83.33%",
+      "93.33%"
+    ],
+    "answer": 2,
+    "explanation": "Accuracy is calculated by standard formula using counts: TP=137, FP=41, FN=44, TN=288."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(15, 18) and point B(7, 21) in a 2D space?",
+    "options": [
+      "11.00",
+      "8.90",
+      "16.50",
+      "14.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 10x + (4), what is the predicted value of y when x = 8?",
+    "options": [
+      "94",
+      "76",
+      "100",
+      "84"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=8 into y = 10(8) + 4 to get 84."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 171, FP = 31, FN = 43, and TN = 137, what is the exact Precision?",
+    "options": [
+      "94.65%",
+      "67.72%",
+      "69.65%",
+      "84.65%"
+    ],
+    "answer": 3,
+    "explanation": "Precision is calculated by standard formula using counts: TP=171, FP=31, FN=43, TN=137."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(15, 12) and point B(8, 7) in a 2D space?",
+    "options": [
+      "6.50",
+      "12.90",
+      "12.10",
+      "8.60"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 8.60."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(3, 8) and point B(15, 9) in a 2D space?",
+    "options": [
+      "9.94",
+      "18.06",
+      "15.54",
+      "12.04"
+    ],
+    "answer": 3,
+    "explanation": "Euclidean distance formula resolves to 12.04."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 52, FP = 5, FN = 26, and TN = 233, what is the exact Recall?",
+    "options": [
+      "51.67%",
+      "66.67%",
+      "76.67%",
+      "53.33%"
+    ],
+    "answer": 1,
+    "explanation": "Recall is calculated by standard formula using counts: TP=52, FP=5, FN=26, TN=233."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(11, 14) and point B(8, 18) in a 2D space?",
+    "options": [
+      "5.00",
+      "7.50",
+      "8.50",
+      "2.90"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 172, FP = 42, FN = 44, and TN = 181, what is the exact Precision?",
+    "options": [
+      "65.37%",
+      "64.30%",
+      "80.37%",
+      "90.37%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=172, FP=42, FN=44, TN=181."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (-5), what is the predicted value of y when x = 25?",
+    "options": [
+      "80",
+      "120",
+      "80",
+      "70"
+    ],
+    "answer": 3,
+    "explanation": "Plug x=25 into y = 3(25) + -5 to get 70."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 153, FP = 35, FN = 11, and TN = 270, what is the exact Precision?",
+    "options": [
+      "91.38%",
+      "65.11%",
+      "81.38%",
+      "66.38%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=153, FP=35, FN=11, TN=270."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(19, 9) and point B(9, 11) in a 2D space?",
+    "options": [
+      "15.30",
+      "10.20",
+      "13.70",
+      "8.10"
+    ],
+    "answer": 1,
+    "explanation": "Euclidean distance formula resolves to 10.20."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 92, FP = 14, FN = 9, and TN = 247, what is the exact Precision?",
+    "options": [
+      "71.79%",
+      "69.43%",
+      "86.79%",
+      "96.79%"
+    ],
+    "answer": 2,
+    "explanation": "Precision is calculated by standard formula using counts: TP=92, FP=14, FN=9, TN=247."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(12, 19) and point B(21, 11) in a 2D space?",
+    "options": [
+      "12.04",
+      "9.94",
+      "15.54",
+      "18.06"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 12.04."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(4, 19) and point B(8, 19) in a 2D space?",
+    "options": [
+      "1.90",
+      "6.00",
+      "4.00",
+      "7.50"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 4.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 109, FP = 23, FN = 16, and TN = 190, what is the exact Recall?",
+    "options": [
+      "87.20%",
+      "72.20%",
+      "97.20%",
+      "69.76%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=109, FP=23, FN=16, TN=190."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(14, 14) and point B(6, 17) in a 2D space?",
+    "options": [
+      "11.00",
+      "8.90",
+      "16.50",
+      "14.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 11.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 3x + (1), what is the predicted value of y when x = 12?",
+    "options": [
+      "61",
+      "35",
+      "37",
+      "47"
+    ],
+    "answer": 2,
+    "explanation": "Plug x=12 into y = 3(12) + 1 to get 37."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Evaluation Metrics",
+    "difficulty": "Medium",
+    "question": "Given a classification report with TP = 84, FP = 14, FN = 10, and TN = 254, what is the exact Recall?",
+    "options": [
+      "89.36%",
+      "99.36%",
+      "71.49%",
+      "74.36%"
+    ],
+    "answer": 0,
+    "explanation": "Recall is calculated by standard formula using counts: TP=84, FP=14, FN=10, TN=254."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(2, 15) and point B(9, 17) in a 2D space?",
+    "options": [
+      "9.00",
+      "6.90",
+      "12.50",
+      "13.50"
+    ],
+    "answer": 0,
+    "explanation": "Manhattan distance formula resolves to 9.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(19, 3) and point B(16, 5) in a 2D space?",
+    "options": [
+      "2.90",
+      "7.50",
+      "8.50",
+      "5.00"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance formula resolves to 5.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Regression",
+    "difficulty": "Easy",
+    "question": "Assuming a simple linear regression equation is y = 4x + (-5), what is the predicted value of y when x = 12?",
+    "options": [
+      "53",
+      "43",
+      "67",
+      "53"
+    ],
+    "answer": 1,
+    "explanation": "Plug x=12 into y = 4(12) + -5 to get 43."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(16, 4) and point B(24, 12) in a 2D space?",
+    "options": [
+      "11.31",
+      "9.21",
+      "14.81",
+      "16.97"
+    ],
+    "answer": 0,
+    "explanation": "Euclidean distance formula resolves to 11.31."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Manhattan distance between point A(18, 8) and point B(9, 22) in a 2D space?",
+    "options": [
+      "34.50",
+      "26.50",
+      "23.00",
+      "20.90"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance formula resolves to 23.00."
+  },
+  {
+    "subject": "AI / ML",
+    "topic": "Clustering & KNN",
+    "difficulty": "Medium",
+    "question": "What is the Euclidean distance between point A(18, 9) and point B(19, 23) in a 2D space?",
+    "options": [
+      "11.94",
+      "17.54",
+      "14.04",
+      "21.05"
+    ],
+    "answer": 2,
+    "explanation": "Euclidean distance formula resolves to 14.04."
   }
 ];

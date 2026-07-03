@@ -6,12 +6,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "Which cloud service model provides OS, runtime, and tools directly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "SaaS (primary approach)",
+      "PaaS (Platform as a Service)",
+      "FaaS (typical scenario)",
+      "IaaS (typical scenario)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "PaaS lets you run apps without managing the OS."
   },
   {
@@ -20,12 +20,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "AWS EC2 stands for?",
     "options": [
-      "Easy Compute Center",
       "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "Easy Compute Center",
+      "Elastic Connection Cloud",
+      "Extended Core Engine"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "EC2 is Amazon's resizable virtual server service."
   },
   {
@@ -34,12 +34,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "Standard public cloud model means?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
+      "Resources are dedicated to a single enterprise (primary approach)",
       "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "Hosted on-premises only in typical implementations",
+      "Private network access only in typical implementations"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Public cloud uses multi-tenant shared infrastructure."
   },
   {
@@ -48,9 +48,9 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "Docker allows you to?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
+      "Store databases only in typical implementations",
+      "Emulate full hardware with an OS in typical implementations",
+      "Deploy physical servers in typical implementations",
       "Package an app with its dependencies into a lightweight container"
     ],
     "answer": 3,
@@ -62,10 +62,10 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "Kubernetes is used for?",
     "options": [
-      "Creating container images",
-      "Version control",
+      "Version control (standard definition)",
+      "Creating container images (typical scenario)",
       "Container orchestration and management",
-      "Web development"
+      "Web development as per specification"
     ],
     "answer": 2,
     "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
@@ -76,12 +76,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "AWS S3 is an example of?",
     "options": [
-      "Relational Database",
       "Object Storage",
+      "Block Storage",
       "File System Storage",
-      "Block Storage"
+      "Relational Database"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "S3 stores flat files/folders as objects with metadata."
   },
   {
@@ -90,12 +90,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "What is serverless computing?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "Physical servers are deleted in typical implementations",
+      "No servers are used at all in typical implementations",
+      "Running code offline in typical implementations",
+      "Developer writes code without worrying about server provisioning"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Cloud provider dynamically manages resource allocation and scaling."
   },
   {
@@ -104,10 +104,10 @@ window.quizData.cloud = [
     "difficulty": "Medium",
     "question": "Which AWS service provides load balancing across multiple targets?",
     "options": [
-      "CloudTrail",
-      "Route 53",
+      "CloudTrail (commonly used)",
+      "VPC under normal conditions",
       "ALB (Application Load Balancer)",
-      "VPC"
+      "Route 53 (default behavior)"
     ],
     "answer": 2,
     "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
@@ -118,12 +118,12 @@ window.quizData.cloud = [
     "difficulty": "Medium",
     "question": "What is the scope of a VPC (Virtual Private Cloud)?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "An encryption service in typical implementations",
+      "A physical storage array in typical implementations",
+      "A database instance in typical implementations",
+      "A logically isolated virtual network within an AWS account"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "VPC allows securing and provisioning a private network."
   },
   {
@@ -132,10 +132,10 @@ window.quizData.cloud = [
     "difficulty": "Medium",
     "question": "What does Auto Scaling do?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
+      "Speeds up connection latency in typical implementations",
+      "Optimizes query performance in typical implementations",
       "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "Resizes databases automatically under normal conditions"
     ],
     "answer": 2,
     "explanation": "Ensures application has enough resources to handle target load."
@@ -146,12 +146,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "What is IaaS (Infrastructure as a Service)?",
     "options": [
-      "Provides only database access",
       "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "Provides only database access in typical implementations",
+      "Provides code execution environments without servers in practice",
+      "Provides ready-to-run business applications under normal conditions"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Examples: AWS EC2, GCP Compute Engine."
   },
   {
@@ -160,12 +160,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "What is SaaS (Software as a Service)?",
     "options": [
+      "Database servers in typical implementations",
+      "Code execution runtimes in typical implementations",
       "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "Virtual servers in typical implementations"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Examples: Gmail, Office 365, Salesforce."
   },
   {
@@ -174,12 +174,12 @@ window.quizData.cloud = [
     "difficulty": "Easy",
     "question": "What is hybrid cloud deployment?",
     "options": [
-      "Using physical servers only",
+      "Offline storage only in typical implementations",
+      "Using physical servers only in typical implementations",
       "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "Using multiple public clouds in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Allows keeping critical data private while using public cloud scale."
   },
   {
@@ -188,12 +188,12 @@ window.quizData.cloud = [
     "difficulty": "Medium",
     "question": "What is the AWS Shared Responsibility Model?",
     "options": [
+      "AWS handles application code debugging based on convention",
+      "Both manage everything together in typical implementations",
       "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "Customer is responsible for physical host security based on convention"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
   },
   {
@@ -202,13802 +202,13802 @@ window.quizData.cloud = [
     "difficulty": "Medium",
     "question": "Infrastructure as Code (IaC) is represented by?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "Kubernetes based on convention",
+      "Terraform / AWS CloudFormation",
+      "Docker in standard usage",
+      "Git as per specification"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "IaC provisions resources using configuration files."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 5 running instances and a desired capacity of 9. How many instances will be launched?",
+    "options": [
+      "6 new instances",
+      "3 new instances",
+      "8 new instances",
+      "4 new instances"
+    ],
+    "answer": 3,
+    "explanation": "9 desired - 5 running = 4 new instances."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "AWS Regions",
+    "difficulty": "Easy",
+    "question": "Which geographic location does the AWS region code 'ap-southeast-1' correspond to?",
+    "options": [
+      "Singapore region",
+      "N. Virginia region",
+      "Oregon region",
+      "Ireland region"
+    ],
+    "answer": 0,
+    "explanation": "ap-southeast-1 is the Singapore region."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Compute Instances",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime?",
+    "question": "What are the default specifications of an AWS p3.2xlarge instance type?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "8 vCPU, 61 GB RAM",
+      "2 vCPU, 8 GB RAM",
+      "2 vCPU, 4 GB RAM",
+      "1 vCPU, 1 GB RAM"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "AWS p3.2xlarge provides 8 vCPU, 61 GB RAM."
   },
   {
     "subject": "Cloud",
     "topic": "SLA Calculations",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime?",
+    "question": "A cloud provider guarantees 99.999% uptime SLA. What is the maximum allowed annual downtime?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "52.56 minutes per year",
+      "365.25 minutes per year",
+      "8.76 hours per year",
+      "5.26 minutes per year"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "99.999% uptime allows 5.26 minutes per year of downtime."
   },
   {
     "subject": "Cloud",
     "topic": "SLA Calculations",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime?",
+    "question": "A cloud provider guarantees 99.9% uptime SLA. What is the maximum allowed annual downtime?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "5.26 minutes per year",
+      "52.56 minutes per year",
+      "8.76 hours per year",
+      "365.25 minutes per year"
     ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "99.9% uptime allows 8.76 hours per year of downtime."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "AWS Regions",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1)",
+    "question": "Which geographic location does the AWS region code 'ap-south-1' correspond to?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "Mumbai region",
+      "Ireland region",
+      "N. Virginia region",
+      "Oregon region"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "ap-south-1 is the Mumbai region."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Compute Instances",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2)",
+    "question": "What are the default specifications of an AWS t2.micro instance type?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "2 vCPU, 4 GB RAM",
+      "1 vCPU, 1 GB RAM",
+      "2 vCPU, 8 GB RAM",
+      "4 vCPU, 8 GB RAM"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "AWS t2.micro provides 1 vCPU, 1 GB RAM."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 355 hours at $0.173/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$76.91",
+      "$36.85",
+      "$103.41",
+      "$61.41"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "355 × $0.173 = $61.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4)",
+    "question": "An auto-scaling group has 4 running instances and a desired capacity of 10. How many instances will be launched?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "6 new instances",
+      "8 new instances",
+      "5 new instances",
+      "12 new instances"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "10 desired - 4 running = 6 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "AWS Regions",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5)",
+    "question": "Which geographic location does the AWS region code 'eu-west-1' correspond to?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "Ireland region",
+      "N. Virginia region",
+      "Oregon region",
+      "Mumbai region"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "eu-west-1 is the Ireland region."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6)",
+    "question": "An EC2 instance runs for 435 hours at $0.127/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$33.14",
+      "$97.24",
+      "$70.74",
+      "$55.24"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "435 × $0.127 = $55.24."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7)",
+    "question": "Storing 363 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$23.53",
+      "$18.32",
+      "$10.97",
+      "$13.07"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "363 × $0.036 = $13.07 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 337 hours at $0.111/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$37.41",
+      "$79.41",
+      "$52.91",
+      "$22.45"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "337 × $0.111 = $37.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9)",
+    "question": "An EC2 instance runs for 685 hours at $0.345/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$236.32",
+      "$278.32",
+      "$251.82",
+      "$141.79"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "685 × $0.345 = $236.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10)",
+    "topic": "Compute Instances",
+    "difficulty": "Medium",
+    "question": "What are the default specifications of an AWS c5.xlarge instance type?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "2 vCPU, 8 GB RAM",
+      "2 vCPU, 4 GB RAM",
+      "4 vCPU, 8 GB RAM",
+      "1 vCPU, 1 GB RAM"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "AWS c5.xlarge provides 4 vCPU, 8 GB RAM."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "AWS Regions",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11)",
+    "question": "Which geographic location does the AWS region code 'us-east-1' correspond to?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "N. Virginia region",
+      "Ireland region",
+      "Oregon region",
+      "Mumbai region"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "us-east-1 is the N. Virginia region."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12)",
+    "topic": "SLA Calculations",
+    "difficulty": "Medium",
+    "question": "A cloud provider guarantees 99.99% uptime SLA. What is the maximum allowed annual downtime?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "52.56 minutes per year",
+      "365.25 minutes per year",
+      "8.76 hours per year",
+      "5.26 minutes per year"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "99.99% uptime allows 52.56 minutes per year of downtime."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13)",
+    "question": "An EC2 instance runs for 455 hours at $0.365/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$166.07",
+      "$208.07",
+      "$99.64",
+      "$181.57"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "455 × $0.365 = $166.07."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14)",
+    "question": "An auto-scaling group has 4 running instances and a desired capacity of 9. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "10 new instances",
+      "7 new instances",
+      "4 new instances",
+      "5 new instances"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "9 desired - 4 running = 5 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15)",
+    "question": "An EC2 instance runs for 302 hours at $0.121/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$78.54",
+      "$21.92",
+      "$52.04",
+      "$36.54"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "302 × $0.121 = $36.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16)",
+    "question": "An auto-scaling group has 3 running instances and a desired capacity of 9. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "12 new instances",
+      "6 new instances",
+      "8 new instances",
+      "5 new instances"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "9 desired - 3 running = 6 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Compute Instances",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17)",
+    "question": "What are the default specifications of an AWS t3.medium instance type?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "4 vCPU, 8 GB RAM",
+      "2 vCPU, 4 GB RAM",
+      "1 vCPU, 1 GB RAM",
+      "2 vCPU, 8 GB RAM"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "AWS t3.medium provides 2 vCPU, 4 GB RAM."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18)",
+    "question": "An EC2 instance runs for 747 hours at $0.393/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$293.57",
+      "$176.14",
+      "$335.57",
+      "$309.07"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "747 × $0.393 = $293.57."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Compute Instances",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 19)",
+    "question": "What are the default specifications of an AWS r5.large instance type?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "2 vCPU, 16 GB RAM",
+      "2 vCPU, 4 GB RAM",
+      "2 vCPU, 8 GB RAM",
+      "1 vCPU, 1 GB RAM"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "AWS r5.large provides 2 vCPU, 16 GB RAM."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 20)",
+    "question": "Storing 468 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$3.52",
+      "$5.62",
+      "$10.87",
+      "$10.12"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "468 × $0.012 = $5.62 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Compute Instances",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21)",
+    "question": "What are the default specifications of an AWS m5.large instance type?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "2 vCPU, 8 GB RAM",
+      "4 vCPU, 8 GB RAM",
+      "2 vCPU, 4 GB RAM",
+      "1 vCPU, 1 GB RAM"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "AWS m5.large provides 2 vCPU, 8 GB RAM."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22)",
+    "question": "Storing 440 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$22.10",
+      "$29.45",
+      "$43.56",
+      "$24.20"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "440 × $0.055 = $24.20 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23)",
+    "question": "An EC2 instance runs for 460 hours at $0.214/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$140.44",
+      "$98.44",
+      "$113.94",
+      "$59.06"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24)",
-    "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
-    ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "460 × $0.214 = $98.44."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25)",
+    "question": "An EC2 instance runs for 385 hours at $0.289/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$66.76",
+      "$111.26",
+      "$153.26",
+      "$126.76"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "385 × $0.289 = $111.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26)",
+    "question": "An auto-scaling group has 2 running instances and a desired capacity of 8. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "12 new instances",
+      "6 new instances",
+      "8 new instances",
+      "5 new instances"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "8 desired - 2 running = 6 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 591 hours at $0.240/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$183.84",
+      "$157.34",
+      "$85.10",
+      "$141.84"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "591 × $0.240 = $141.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28)",
+    "question": "Storing 396 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$23.07",
+      "$15.72",
+      "$17.82",
+      "$32.08"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "396 × $0.045 = $17.82 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29)",
+    "question": "An auto-scaling group has 5 running instances and a desired capacity of 7. How many instances will be launched?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "2 new instances",
+      "4 new instances",
+      "4 new instances",
+      "1 new instances"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "7 desired - 5 running = 2 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 30)",
+    "question": "Storing 228 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$9.53",
+      "$20.93",
+      "$11.63",
+      "$16.88"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "228 × $0.051 = $11.63 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "AWS Regions",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 31)",
+    "question": "Which geographic location does the AWS region code 'us-west-2' correspond to?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "Mumbai region",
+      "Ireland region",
+      "N. Virginia region",
+      "Oregon region"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "us-west-2 is the Oregon region."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 190 GB in S3 Standard at $0.026/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$2.84",
+      "$4.94",
+      "$10.19",
+      "$8.89"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "190 × $0.026 = $4.94 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 33)",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 5 running instances and a desired capacity of 8. How many instances will be launched?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "5 new instances",
+      "3 new instances",
+      "6 new instances",
+      "2 new instances"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "8 desired - 5 running = 3 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34)",
+    "question": "Storing 449 GB in S3 Standard at $0.021/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$9.43",
+      "$16.97",
+      "$14.68",
+      "$7.33"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "449 × $0.021 = $9.43 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35)",
+    "question": "An auto-scaling group has 4 running instances and a desired capacity of 6. How many instances will be launched?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "4 new instances",
+      "2 new instances",
+      "4 new instances",
+      "1 new instances"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "6 desired - 4 running = 2 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "AWS Regions",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 36)",
+    "question": "Which geographic location does the AWS region code 'eu-central-1' correspond to?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "Oregon region",
+      "Ireland region",
+      "N. Virginia region",
+      "Frankfurt region"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "eu-central-1 is the Frankfurt region."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 37)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 510 GB in S3 Standard at $0.026/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$13.26",
+      "$18.51",
+      "$11.16",
+      "$23.87"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "510 × $0.026 = $13.26 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38)",
+    "question": "An EC2 instance runs for 411 hours at $0.435/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$220.78",
+      "$194.28",
+      "$107.27",
+      "$178.78"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "411 × $0.435 = $178.78."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 39)",
+    "question": "An auto-scaling group has 2 running instances and a desired capacity of 7. How many instances will be launched?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "5 new instances",
+      "4 new instances",
+      "10 new instances",
+      "7 new instances"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "7 desired - 2 running = 5 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40)",
+    "question": "An EC2 instance runs for 751 hours at $0.278/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$250.78",
+      "$208.78",
+      "$125.27",
+      "$224.28"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "751 × $0.278 = $208.78."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41)",
+    "question": "An EC2 instance runs for 223 hours at $0.444/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$99.01",
+      "$114.51",
+      "$59.41",
+      "$141.01"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "223 × $0.444 = $99.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 42)",
+    "question": "An auto-scaling group has 3 running instances and a desired capacity of 6. How many instances will be launched?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "5 new instances",
+      "3 new instances",
+      "2 new instances",
+      "6 new instances"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "6 desired - 3 running = 3 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 43)",
-    "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
-    ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44)",
+    "question": "An EC2 instance runs for 739 hours at $0.222/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$179.56",
+      "$164.06",
+      "$98.44",
+      "$206.06"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "739 × $0.222 = $164.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 45)",
+    "question": "Storing 531 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$20.12",
+      "$14.87",
+      "$12.77",
+      "$26.77"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "531 × $0.028 = $14.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 520 hours at $0.184/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$137.68",
+      "$95.68",
+      "$57.41",
+      "$111.18"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "520 × $0.184 = $95.68."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47)",
+    "question": "An EC2 instance runs for 722 hours at $0.317/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$228.87",
+      "$137.32",
+      "$270.87",
+      "$244.37"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "722 × $0.317 = $228.87."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 369 hours at $0.205/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$91.14",
+      "$117.64",
+      "$45.38",
+      "$75.64"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "369 × $0.205 = $75.64."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 49)",
+    "question": "An EC2 instance runs for 678 hours at $0.143/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$112.45",
+      "$138.95",
+      "$96.95",
+      "$58.17"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "678 × $0.143 = $96.95."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 50)",
+    "question": "An EC2 instance runs for 553 hours at $0.518/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$328.45",
+      "$301.95",
+      "$171.87",
+      "$286.45"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "553 × $0.518 = $286.45."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 477 hours at $0.508/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$257.82",
+      "$284.32",
+      "$145.39",
+      "$242.32"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "477 × $0.508 = $242.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52)",
+    "question": "Storing 491 GB in S3 Standard at $0.041/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$25.38",
+      "$20.13",
+      "$36.23",
+      "$18.03"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "491 × $0.041 = $20.13 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 393 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$24.77",
+      "$19.01",
+      "$11.66",
+      "$13.76"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "393 × $0.035 = $13.76 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 54)",
+    "question": "Storing 97 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$10.39",
+      "$3.04",
+      "$5.14",
+      "$9.25"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "97 × $0.053 = $5.14 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56)",
+    "question": "An auto-scaling group has 2 running instances and a desired capacity of 5. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "6 new instances",
+      "3 new instances",
+      "2 new instances",
+      "5 new instances"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "5 desired - 2 running = 3 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 57)",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 3 running instances and a desired capacity of 5. How many instances will be launched?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "4 new instances",
+      "1 new instances",
+      "4 new instances",
+      "2 new instances"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "5 desired - 3 running = 2 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58)",
+    "question": "An EC2 instance runs for 240 hours at $0.429/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$102.96",
+      "$118.46",
+      "$144.96",
+      "$61.78"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "240 × $0.429 = $102.96."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 59)",
+    "question": "An EC2 instance runs for 133 hours at $0.521/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$84.79",
+      "$69.29",
+      "$41.57",
+      "$111.29"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "133 × $0.521 = $69.29."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60)",
+    "question": "Storing 102 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$4.95",
+      "$0.65",
+      "$2.75",
+      "$8.00"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "102 × $0.027 = $2.75 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 241 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$2.65",
+      "$0.55",
+      "$4.77",
+      "$7.90"
     ],
     "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "explanation": "241 × $0.011 = $2.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 45) (Set 62)",
-    "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
-    ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63)",
+    "question": "Storing 126 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$7.31",
+      "$12.56",
+      "$5.21",
+      "$13.16"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "126 × $0.058 = $7.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 64)",
+    "question": "An EC2 instance runs for 713 hours at $0.084/hour. What is the total on-demand compute cost?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$101.89",
+      "$75.39",
+      "$35.93",
+      "$59.89"
     ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "answer": 3,
+    "explanation": "713 × $0.084 = $59.89."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65)",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 5 running instances and a desired capacity of 10. How many instances will be launched?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "4 new instances",
+      "7 new instances",
+      "5 new instances",
+      "10 new instances"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "10 desired - 5 running = 5 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 66)",
+    "question": "Storing 406 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$23.38",
+      "$10.89",
+      "$18.24",
+      "$12.99"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "406 × $0.032 = $12.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67)",
+    "question": "An EC2 instance runs for 706 hours at $0.283/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$241.80",
+      "$215.30",
+      "$119.88",
+      "$199.80"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "706 × $0.283 = $199.80."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 68)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 279 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$13.90",
+      "$15.57",
+      "$8.65",
+      "$6.55"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "279 × $0.031 = $8.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 69)",
+    "question": "Storing 171 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$4.30",
+      "$0.29",
+      "$7.64",
+      "$2.39"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "171 × $0.014 = $2.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70)",
+    "question": "An EC2 instance runs for 242 hours at $0.098/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$14.23",
+      "$23.72",
+      "$65.72",
+      "$39.22"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "242 × $0.098 = $23.72."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71)",
+    "question": "An EC2 instance runs for 536 hours at $0.491/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$157.91",
+      "$263.18",
+      "$305.18",
+      "$278.68"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "536 × $0.491 = $263.18."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72)",
+    "question": "An auto-scaling group has 2 running instances and a desired capacity of 9. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "6 new instances",
+      "14 new instances",
+      "7 new instances",
+      "9 new instances"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "9 desired - 2 running = 7 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73)",
+    "question": "An EC2 instance runs for 378 hours at $0.148/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$71.44",
+      "$55.94",
+      "$33.56",
+      "$97.94"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "378 × $0.148 = $55.94."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 74)",
+    "question": "Storing 425 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$35.19",
+      "$19.55",
+      "$17.45",
+      "$24.80"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "425 × $0.046 = $19.55 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75)",
+    "question": "Storing 521 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$10.31",
+      "$3.63",
+      "$10.98",
+      "$5.73"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "521 × $0.011 = $5.73 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 76)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 359 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$27.79",
+      "$15.44",
+      "$20.69",
+      "$13.34"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "359 × $0.043 = $15.44 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77)",
+    "question": "An EC2 instance runs for 515 hours at $0.298/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$153.47",
+      "$195.47",
+      "$92.08",
+      "$168.97"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "515 × $0.298 = $153.47."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 78)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 632 hours at $0.194/hour. What is the total on-demand compute cost?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$138.11",
+      "$122.61",
+      "$164.61",
+      "$73.57"
     ],
     "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "explanation": "632 × $0.194 = $122.61."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 79)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 229 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$2.52",
+      "$4.54",
+      "$7.77",
+      "$0.42"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "229 × $0.011 = $2.52 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 511 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$52.43",
+      "$29.13",
+      "$27.03",
+      "$34.38"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "511 × $0.057 = $29.13 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81)",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 5 running instances and a desired capacity of 12. How many instances will be launched?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "9 new instances",
+      "6 new instances",
+      "14 new instances",
+      "7 new instances"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "12 desired - 5 running = 7 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82)",
+    "question": "An EC2 instance runs for 287 hours at $0.376/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$107.91",
+      "$64.75",
+      "$149.91",
+      "$123.41"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "287 × $0.376 = $107.91."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 83)",
+    "question": "An EC2 instance runs for 678 hours at $0.128/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$52.07",
+      "$86.78",
+      "$128.78",
+      "$102.28"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "678 × $0.128 = $86.78."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84)",
+    "question": "An EC2 instance runs for 691 hours at $0.180/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$166.38",
+      "$139.88",
+      "$124.38",
+      "$74.63"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "691 × $0.180 = $124.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 457 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$14.17",
+      "$19.42",
+      "$12.07",
+      "$25.51"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "457 × $0.031 = $14.17 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86)",
+    "question": "An auto-scaling group has 3 running instances and a desired capacity of 7. How many instances will be launched?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "3 new instances",
+      "8 new instances",
+      "4 new instances",
+      "6 new instances"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "7 desired - 3 running = 4 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 232 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$15.46",
+      "$10.21",
+      "$8.11",
+      "$18.38"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "232 × $0.044 = $10.21 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 88)",
+    "question": "An EC2 instance runs for 666 hours at $0.242/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$203.17",
+      "$161.17",
+      "$176.67",
+      "$96.70"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "666 × $0.242 = $161.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 89)",
+    "question": "Storing 191 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$6.30",
+      "$13.65",
+      "$8.40",
+      "$15.12"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 2,
+    "explanation": "191 × $0.044 = $8.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90)",
+    "question": "An EC2 instance runs for 352 hours at $0.444/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$171.79",
+      "$156.29",
+      "$198.29",
+      "$93.77"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "352 × $0.444 = $156.29."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 98 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
+    "options": [
+      "$2.90",
+      "$10.25",
+      "$5.00",
+      "$9.00"
+    ],
+    "answer": 2,
+    "explanation": "98 × $0.051 = $5.00 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 91)",
+    "question": "An EC2 instance runs for 553 hours at $0.411/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$269.28",
+      "$136.37",
+      "$242.78",
+      "$227.28"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "553 × $0.411 = $227.28."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 92)",
+    "question": "An EC2 instance runs for 724 hours at $0.359/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$275.42",
+      "$155.95",
+      "$259.92",
+      "$301.92"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "724 × $0.359 = $259.92."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 93)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 759 hours at $0.160/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$163.44",
+      "$72.86",
+      "$121.44",
+      "$136.94"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "759 × $0.160 = $121.44."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 94)",
+    "question": "An auto-scaling group has 2 running instances and a desired capacity of 6. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "4 new instances",
+      "8 new instances",
+      "3 new instances",
+      "6 new instances"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "6 desired - 2 running = 4 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 95)",
+    "question": "An EC2 instance runs for 113 hours at $0.242/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$27.35",
+      "$69.35",
+      "$16.41",
+      "$42.85"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "113 × $0.242 = $27.35."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 96)",
+    "question": "Storing 278 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$16.02",
+      "$6.80",
+      "$8.90",
+      "$14.15"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "278 × $0.032 = $8.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 97)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 232 hours at $0.461/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$122.45",
+      "$148.95",
+      "$64.17",
+      "$106.95"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "232 × $0.461 = $106.95."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98)",
+    "question": "Storing 421 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$13.67",
+      "$15.16",
+      "$8.42",
+      "$6.32"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "421 × $0.020 = $8.42 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 393 hours at $0.311/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$122.22",
+      "$137.72",
+      "$164.22",
+      "$73.33"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "393 × $0.311 = $122.22."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 526 hours at $0.541/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$284.57",
+      "$326.57",
+      "$170.74",
+      "$300.07"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "526 × $0.541 = $284.57."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 74) (Set 101)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 273 hours at $0.160/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$43.68",
+      "$85.68",
+      "$26.21",
+      "$59.18"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "273 × $0.160 = $43.68."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 102)",
+    "question": "An EC2 instance runs for 385 hours at $0.479/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$199.91",
+      "$110.65",
+      "$226.41",
+      "$184.41"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "385 × $0.479 = $184.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 79) (Set 103)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 83 GB in S3 Standard at $0.059/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$10.15",
+      "$2.80",
+      "$4.90",
+      "$8.82"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "83 × $0.059 = $4.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 82 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$8.69",
+      "$1.34",
+      "$6.19",
+      "$3.44"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "82 × $0.042 = $3.44 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105)",
+    "question": "An EC2 instance runs for 388 hours at $0.497/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$234.84",
+      "$208.34",
+      "$192.84",
+      "$115.70"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "388 × $0.497 = $192.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 106)",
+    "question": "Storing 540 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$12.64",
+      "$7.02",
+      "$12.27",
+      "$4.92"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 1,
+    "explanation": "540 × $0.013 = $7.02 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 30) (Set 107)",
+    "question": "Storing 153 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$5.70",
+      "$7.80",
+      "$13.05",
+      "$14.04"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "153 × $0.051 = $7.80 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 108)",
+    "question": "An EC2 instance runs for 511 hours at $0.471/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$240.68",
+      "$282.68",
+      "$144.41",
+      "$256.18"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "511 × $0.471 = $240.68."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 93 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$2.70",
+      "$4.86",
+      "$0.60",
+      "$7.95"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "93 × $0.029 = $2.70 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 110)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 142 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$1.73",
+      "$6.89",
+      "$9.08",
+      "$3.83"
     ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "142 × $0.027 = $3.83 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 111)",
+    "question": "An EC2 instance runs for 535 hours at $0.422/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$225.77",
+      "$135.46",
+      "$241.27",
+      "$267.77"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "535 × $0.422 = $225.77."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 112)",
+    "question": "Storing 114 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$8.10",
+      "$2.85",
+      "$0.75",
+      "$5.13"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "114 × $0.025 = $2.85 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113)",
+    "question": "An auto-scaling group has 2 running instances and a desired capacity of 4. How many instances will be launched?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "1 new instances",
+      "4 new instances",
+      "4 new instances",
+      "2 new instances"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114)",
-    "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
-    ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 115)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "4 desired - 2 running = 2 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 116)",
+    "question": "An EC2 instance runs for 345 hours at $0.202/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$111.69",
+      "$69.69",
+      "$85.19",
+      "$41.81"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "345 × $0.202 = $69.69."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 414 hours at $0.372/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$196.01",
+      "$92.41",
+      "$169.51",
+      "$154.01"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "414 × $0.372 = $154.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 118)",
+    "question": "An EC2 instance runs for 406 hours at $0.442/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$107.67",
+      "$194.95",
+      "$221.45",
+      "$179.45"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "406 × $0.442 = $179.45."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 119)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 188 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$5.45",
+      "$9.81",
+      "$10.70",
+      "$3.35"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 120)",
-    "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
-    ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "188 × $0.029 = $5.45 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121)",
-    "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
-    ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 122)",
+    "question": "An auto-scaling group has 4 running instances and a desired capacity of 8. How many instances will be launched?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "8 new instances",
+      "6 new instances",
+      "4 new instances",
+      "3 new instances"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "8 desired - 4 running = 4 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123)",
+    "question": "An auto-scaling group has 4 running instances and a desired capacity of 7. How many instances will be launched?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "6 new instances",
+      "3 new instances",
+      "5 new instances",
+      "2 new instances"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "7 desired - 4 running = 3 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124)",
+    "question": "Storing 195 GB in S3 Standard at $0.060/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$16.95",
+      "$9.60",
+      "$11.70",
+      "$21.06"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "195 × $0.060 = $11.70 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 85 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$8.56",
+      "$1.21",
+      "$5.96",
+      "$3.31"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "85 × $0.039 = $3.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127)",
+    "question": "An EC2 instance runs for 759 hours at $0.089/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$109.55",
+      "$40.53",
+      "$67.55",
+      "$83.05"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "759 × $0.089 = $67.55."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 115) (Set 128)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 137 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$5.85",
+      "$14.31",
+      "$13.20",
+      "$7.95"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "137 × $0.058 = $7.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129)",
+    "question": "Storing 383 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$2.11",
+      "$9.46",
+      "$7.58",
+      "$4.21"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "383 × $0.011 = $4.21 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 130)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 455 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$10.66",
+      "$3.82",
+      "$5.92",
+      "$11.17"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 131)",
-    "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
-    ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "455 × $0.013 = $5.92 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132)",
+    "question": "Storing 380 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$13.61",
+      "$15.05",
+      "$8.36",
+      "$6.26"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "380 × $0.022 = $8.36 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 133)",
+    "question": "An EC2 instance runs for 223 hours at $0.060/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$55.38",
+      "$8.03",
+      "$28.88",
+      "$13.38"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "223 × $0.060 = $13.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134)",
+    "question": "An auto-scaling group has 3 running instances and a desired capacity of 10. How many instances will be launched?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "14 new instances",
+      "7 new instances",
+      "6 new instances",
+      "9 new instances"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 1,
+    "explanation": "10 desired - 3 running = 7 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 135)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 196 hours at $0.163/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$47.45",
+      "$31.95",
+      "$73.95",
+      "$19.17"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 1,
+    "explanation": "196 × $0.163 = $31.95."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136)",
+    "question": "Storing 207 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$12.29",
+      "$12.67",
+      "$4.94",
+      "$7.04"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 3,
+    "explanation": "207 × $0.034 = $7.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 137)",
+    "question": "An EC2 instance runs for 688 hours at $0.477/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$328.18",
+      "$370.18",
+      "$196.91",
+      "$343.68"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "688 × $0.477 = $328.18."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 138)",
+    "question": "Storing 426 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$14.48",
+      "$26.06",
+      "$19.73",
+      "$12.38"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "426 × $0.034 = $14.48 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 140)",
+    "question": "An EC2 instance runs for 484 hours at $0.437/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$253.51",
+      "$211.51",
+      "$126.91",
+      "$227.01"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "484 × $0.437 = $211.51."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 141)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 402 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$2.32",
+      "$7.96",
+      "$4.42",
+      "$9.67"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "402 × $0.011 = $4.42 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 142)",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 4 running instances and a desired capacity of 11. How many instances will be launched?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "7 new instances",
+      "14 new instances",
+      "9 new instances",
+      "6 new instances"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "11 desired - 4 running = 7 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 486 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$13.12",
+      "$12.54",
+      "$7.29",
+      "$5.19"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "486 × $0.015 = $7.29 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 142) (Set 144)",
+    "question": "An EC2 instance runs for 293 hours at $0.110/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$19.34",
+      "$47.73",
+      "$32.23",
+      "$74.23"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "293 × $0.110 = $32.23."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 145)",
-    "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
-    ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 146)",
+    "question": "An EC2 instance runs for 721 hours at $0.243/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$190.70",
+      "$217.20",
+      "$175.20",
+      "$105.12"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "721 × $0.243 = $175.20."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 147)",
-    "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
-    ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148)",
+    "question": "Storing 519 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$23.93",
+      "$33.62",
+      "$18.68",
+      "$16.58"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "519 × $0.036 = $18.68 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 149)",
+    "question": "An EC2 instance runs for 218 hours at $0.174/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$22.76",
+      "$79.93",
+      "$37.93",
+      "$53.43"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "218 × $0.174 = $37.93."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 150)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 408 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$16.67",
+      "$33.79",
+      "$18.77",
+      "$24.02"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "408 × $0.046 = $18.77 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 151)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 237 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$9.24",
+      "$14.49",
+      "$7.14",
+      "$16.63"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "237 × $0.039 = $9.24 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 152)",
+    "question": "Storing 240 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$6.96",
+      "$12.53",
+      "$12.21",
+      "$4.86"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "240 × $0.029 = $6.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 153)",
+    "question": "Storing 232 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$8.82",
+      "$14.07",
+      "$6.72",
+      "$15.88"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "232 × $0.038 = $8.82 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Auto Scaling",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 39) (Set 154)",
+    "question": "An auto-scaling group has 3 running instances and a desired capacity of 8. How many instances will be launched?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "5 new instances",
+      "4 new instances",
+      "10 new instances",
+      "7 new instances"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "8 desired - 3 running = 5 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 155)",
+    "question": "An EC2 instance runs for 153 hours at $0.196/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$17.99",
+      "$45.49",
+      "$71.99",
+      "$29.99"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "153 × $0.196 = $29.99."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139) (Set 156)",
+    "question": "An EC2 instance runs for 595 hours at $0.347/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$123.88",
+      "$206.46",
+      "$248.46",
+      "$221.96"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "595 × $0.347 = $206.46."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 157)",
+    "question": "An EC2 instance runs for 296 hours at $0.278/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$82.29",
+      "$97.79",
+      "$49.37",
+      "$124.29"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 130) (Set 158)",
-    "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
-    ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 159)",
-    "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
-    ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "296 × $0.278 = $82.29."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160)",
+    "question": "Storing 148 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$14.11",
+      "$5.74",
+      "$13.09",
+      "$7.84"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "148 × $0.053 = $7.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 111) (Set 161)",
+    "question": "An EC2 instance runs for 678 hours at $0.221/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$149.84",
+      "$89.90",
+      "$191.84",
+      "$165.34"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 162)",
-    "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
-    ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "678 × $0.221 = $149.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 45) (Set 163)",
+    "question": "Storing 443 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$23.15",
+      "$30.50",
+      "$45.45",
+      "$25.25"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "443 × $0.057 = $25.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160) (Set 164)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 251 hours at $0.419/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$63.10",
+      "$105.17",
+      "$120.67",
+      "$147.17"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "251 × $0.419 = $105.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 165)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 336 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$15.67",
+      "$18.76",
+      "$10.42",
+      "$8.32"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "336 × $0.031 = $10.42 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 166)",
+    "question": "An EC2 instance runs for 418 hours at $0.144/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$36.11",
+      "$75.69",
+      "$102.19",
+      "$60.19"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "418 × $0.144 = $60.19."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167)",
+    "question": "Storing 413 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$6.16",
+      "$8.26",
+      "$14.87",
+      "$13.51"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 1,
+    "explanation": "413 × $0.020 = $8.26 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 20) (Set 168)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 383 hours at $0.544/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$125.01",
+      "$208.35",
+      "$250.35",
+      "$223.85"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "383 × $0.544 = $208.35."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169)",
+    "question": "Storing 462 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$29.11",
+      "$21.42",
+      "$14.07",
+      "$16.17"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "462 × $0.035 = $16.17 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 170)",
+    "question": "An EC2 instance runs for 781 hours at $0.142/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$126.40",
+      "$66.54",
+      "$152.90",
+      "$110.90"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "781 × $0.142 = $110.90."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 68) (Set 171)",
+    "question": "An EC2 instance runs for 158 hours at $0.285/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$27.02",
+      "$60.53",
+      "$45.03",
+      "$87.03"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "158 × $0.285 = $45.03."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 172)",
+    "question": "An EC2 instance runs for 350 hours at $0.266/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$108.60",
+      "$55.86",
+      "$93.10",
+      "$135.10"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "350 × $0.266 = $93.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 173)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 609 hours at $0.477/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$174.29",
+      "$290.49",
+      "$332.49",
+      "$305.99"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "609 × $0.477 = $290.49."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 174)",
+    "question": "Storing 279 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$12.28",
+      "$22.10",
+      "$17.53",
+      "$10.18"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "279 × $0.044 = $12.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175)",
+    "question": "An EC2 instance runs for 451 hours at $0.371/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$100.39",
+      "$182.82",
+      "$209.32",
+      "$167.32"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "451 × $0.371 = $167.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 176)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 137 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$2.60",
+      "$0.50",
+      "$4.68",
+      "$7.85"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "137 × $0.019 = $2.60 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 177)",
+    "question": "Storing 307 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$16.92",
+      "$11.67",
+      "$9.57",
+      "$21.01"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "307 × $0.038 = $11.67 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 178)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 680 hours at $0.274/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$201.82",
+      "$228.32",
+      "$111.79",
+      "$186.32"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "680 × $0.274 = $186.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179)",
+    "question": "An EC2 instance runs for 580 hours at $0.074/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$42.92",
+      "$84.92",
+      "$25.75",
+      "$58.42"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "580 × $0.074 = $42.92."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 180)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 752 hours at $0.142/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$64.07",
+      "$106.78",
+      "$122.28",
+      "$148.78"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "752 × $0.142 = $106.78."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 157) (Set 181)",
+    "question": "An EC2 instance runs for 354 hours at $0.150/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$31.86",
+      "$95.10",
+      "$68.60",
+      "$53.10"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "354 × $0.150 = $53.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 172) (Set 182)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 165 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$14.26",
+      "$13.17",
+      "$5.82",
+      "$7.92"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "165 × $0.048 = $7.92 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 183)",
+    "question": "An EC2 instance runs for 794 hours at $0.500/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$439.00",
+      "$397.00",
+      "$412.50",
+      "$238.20"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "794 × $0.500 = $397.00."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184)",
+    "question": "Storing 131 GB in S3 Standard at $0.010/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$1.31",
+      "$-0.79",
+      "$2.36",
+      "$6.56"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "131 × $0.010 = $1.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 185)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 537 hours at $0.154/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$124.70",
+      "$49.62",
+      "$82.70",
+      "$98.20"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "537 × $0.154 = $82.70."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 186)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 409 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$40.50",
+      "$20.40",
+      "$27.75",
+      "$22.50"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "409 × $0.055 = $22.50 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 120) (Set 187)",
+    "topic": "Auto Scaling",
+    "difficulty": "Easy",
+    "question": "An auto-scaling group has 5 running instances and a desired capacity of 11. How many instances will be launched?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "12 new instances",
+      "6 new instances",
+      "5 new instances",
+      "8 new instances"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "11 desired - 5 running = 6 new instances."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 188)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 495 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$27.52",
+      "$40.09",
+      "$20.17",
+      "$22.27"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "495 × $0.045 = $22.27 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139) (Set 189)",
+    "question": "An EC2 instance runs for 791 hours at $0.055/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$85.51",
+      "$26.11",
+      "$43.51",
+      "$59.01"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "791 × $0.055 = $43.51."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 190)",
+    "question": "An EC2 instance runs for 769 hours at $0.347/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$266.84",
+      "$308.84",
+      "$282.34",
+      "$160.10"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 191)",
-    "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
-    ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "769 × $0.347 = $266.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192)",
+    "question": "An EC2 instance runs for 814 hours at $0.292/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$253.19",
+      "$142.61",
+      "$279.69",
+      "$237.69"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "814 × $0.292 = $237.69."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 429 hours at $0.174/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$44.79",
+      "$116.65",
+      "$74.65",
+      "$90.15"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "429 × $0.174 = $74.65."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 194)",
+    "question": "An EC2 instance runs for 679 hours at $0.311/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$226.67",
+      "$253.17",
+      "$211.17",
+      "$126.70"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "679 × $0.311 = $211.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 195)",
+    "question": "An EC2 instance runs for 324 hours at $0.194/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$104.86",
+      "$37.72",
+      "$78.36",
+      "$62.86"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "324 × $0.194 = $62.86."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 196)",
+    "question": "An EC2 instance runs for 563 hours at $0.447/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$151.00",
+      "$251.66",
+      "$267.16",
+      "$293.66"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "563 × $0.447 = $251.66."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 197)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 530 hours at $0.118/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$78.04",
+      "$104.54",
+      "$37.52",
+      "$62.54"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "530 × $0.118 = $62.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 198)",
+    "question": "Storing 491 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$25.63",
+      "$14.24",
+      "$19.49",
+      "$12.14"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "491 × $0.029 = $14.24 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 199)",
+    "question": "An EC2 instance runs for 529 hours at $0.482/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$270.48",
+      "$296.98",
+      "$152.99",
+      "$254.98"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "529 × $0.482 = $254.98."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139) (Set 156) (Set 200)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 512 GB in S3 Standard at $0.041/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$18.89",
+      "$26.24",
+      "$37.78",
+      "$20.99"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "512 × $0.041 = $20.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 221 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$3.87",
+      "$5.97",
+      "$10.75",
+      "$11.22"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "221 × $0.027 = $5.97 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 142) (Set 144) (Set 202)",
+    "question": "An EC2 instance runs for 494 hours at $0.116/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$72.80",
+      "$34.38",
+      "$57.30",
+      "$99.30"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "494 × $0.116 = $57.30."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 203)",
+    "question": "An EC2 instance runs for 347 hours at $0.404/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$140.19",
+      "$84.11",
+      "$182.19",
+      "$155.69"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "347 × $0.404 = $140.19."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 204)",
-    "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
-    ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 76) (Set 205)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 503 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$19.84",
+      "$12.49",
+      "$14.59",
+      "$26.26"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "503 × $0.029 = $14.59 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 206)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 545 hours at $0.345/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$203.52",
+      "$188.02",
+      "$230.02",
+      "$112.81"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "545 × $0.345 = $188.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 92) (Set 207)",
+    "question": "An EC2 instance runs for 775 hours at $0.539/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$417.73",
+      "$433.23",
+      "$250.64",
+      "$459.73"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117) (Set 208)",
-    "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
-    ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "775 × $0.539 = $417.73."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 209)",
+    "question": "Storing 337 GB in S3 Standard at $0.021/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$12.74",
+      "$12.33",
+      "$7.08",
+      "$4.98"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "337 × $0.021 = $7.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 210)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 487 hours at $0.451/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$235.14",
+      "$261.64",
+      "$219.64",
+      "$131.78"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "487 × $0.451 = $219.64."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139) (Set 156) (Set 211)",
+    "question": "An EC2 instance runs for 236 hours at $0.309/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$43.75",
+      "$114.92",
+      "$72.92",
+      "$88.42"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "236 × $0.309 = $72.92."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 66) (Set 212)",
+    "question": "Storing 267 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$11.05",
+      "$11.39",
+      "$4.04",
+      "$6.14"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "267 × $0.023 = $6.14 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 213)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 455 hours at $0.273/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$166.22",
+      "$124.22",
+      "$139.72",
+      "$74.53"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "455 × $0.273 = $124.22."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 214)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 283 hours at $0.499/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$141.22",
+      "$183.22",
+      "$156.72",
+      "$84.73"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "283 × $0.499 = $141.22."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 215)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 406 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$17.05",
+      "$30.69",
+      "$14.95",
+      "$22.30"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "406 × $0.042 = $17.05 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216)",
+    "question": "An EC2 instance runs for 598 hours at $0.517/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$351.17",
+      "$309.17",
+      "$324.67",
+      "$185.50"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "598 × $0.517 = $309.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 198) (Set 217)",
+    "question": "Storing 56 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$-1.26",
+      "$0.84",
+      "$6.09",
+      "$1.51"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "56 × $0.015 = $0.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 186) (Set 218)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 169 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$7.94",
+      "$14.29",
+      "$5.84",
+      "$13.19"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "169 × $0.047 = $7.94 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 219)",
+    "question": "Storing 178 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$8.01",
+      "$4.45",
+      "$2.35",
+      "$9.70"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 1,
+    "explanation": "178 × $0.025 = $4.45 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 220)",
+    "question": "An EC2 instance runs for 796 hours at $0.497/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$395.61",
+      "$237.37",
+      "$411.11",
+      "$437.61"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "796 × $0.497 = $395.61."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 221)",
+    "question": "Storing 149 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$6.17",
+      "$3.43",
+      "$8.68",
+      "$1.33"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "149 × $0.023 = $3.43 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 222)",
+    "question": "An EC2 instance runs for 491 hours at $0.185/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$106.33",
+      "$54.50",
+      "$90.83",
+      "$132.83"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "491 × $0.185 = $90.83."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 110) (Set 223)",
+    "question": "An EC2 instance runs for 197 hours at $0.518/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$102.05",
+      "$117.55",
+      "$144.05",
+      "$61.23"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "197 × $0.518 = $102.05."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 224)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 269 hours at $0.368/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$59.39",
+      "$140.99",
+      "$98.99",
+      "$114.49"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "269 × $0.368 = $98.99."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 147) (Set 225)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 677 hours at $0.470/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$318.19",
+      "$333.69",
+      "$360.19",
+      "$190.91"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "677 × $0.470 = $318.19."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 226)",
+    "question": "Storing 363 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$13.15",
+      "$27.45",
+      "$20.50",
+      "$15.25"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "363 × $0.042 = $15.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 227)",
+    "question": "Storing 418 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$25.31",
+      "$36.11",
+      "$20.06",
+      "$17.96"
     ],
-    "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "answer": 2,
+    "explanation": "418 × $0.048 = $20.06 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 228)",
+    "question": "An EC2 instance runs for 179 hours at $0.370/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$66.23",
+      "$108.23",
+      "$81.73",
+      "$39.74"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "179 × $0.370 = $66.23."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 227) (Set 229)",
+    "question": "Storing 125 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$7.20",
+      "$4.00",
+      "$9.25",
+      "$1.90"
     ],
     "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "explanation": "125 × $0.032 = $4.00 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 33) (Set 230)",
-    "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
-    ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 231)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 492 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$11.65",
+      "$6.40",
+      "$11.52",
+      "$4.30"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "492 × $0.013 = $6.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 232)",
+    "question": "Storing 241 GB in S3 Standard at $0.059/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$14.22",
+      "$12.12",
+      "$19.47",
+      "$25.60"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "241 × $0.059 = $14.22 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 509 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$25.65",
+      "$19.50",
+      "$14.25",
+      "$12.15"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "509 × $0.028 = $14.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 222) (Set 234)",
+    "question": "An EC2 instance runs for 289 hours at $0.194/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$56.07",
+      "$33.64",
+      "$98.07",
+      "$71.57"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "289 × $0.194 = $56.07."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235)",
+    "question": "An EC2 instance runs for 599 hours at $0.494/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$337.91",
+      "$177.55",
+      "$295.91",
+      "$311.41"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "599 × $0.494 = $295.91."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 236)",
+    "question": "An EC2 instance runs for 583 hours at $0.310/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$222.73",
+      "$108.44",
+      "$180.73",
+      "$196.23"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "583 × $0.310 = $180.73."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 237)",
+    "question": "Storing 403 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$26.84",
+      "$20.16",
+      "$14.91",
+      "$12.81"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 2,
+    "explanation": "403 × $0.037 = $14.91 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 106) (Set 238)",
+    "question": "Storing 378 GB in S3 Standard at $0.050/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$18.90",
+      "$34.02",
+      "$24.15",
+      "$16.80"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "378 × $0.050 = $18.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 239)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 557 hours at $0.522/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$290.75",
+      "$332.75",
+      "$174.45",
+      "$306.25"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "557 × $0.522 = $290.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 224) (Set 240)",
+    "question": "Storing 519 GB in S3 Standard at $0.041/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$26.53",
+      "$38.30",
+      "$21.28",
+      "$19.18"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "519 × $0.041 = $21.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241)",
+    "question": "An EC2 instance runs for 544 hours at $0.524/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$285.06",
+      "$171.04",
+      "$300.56",
+      "$327.06"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "544 × $0.524 = $285.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 226) (Set 242)",
+    "question": "Storing 80 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$8.29",
+      "$0.94",
+      "$5.47",
+      "$3.04"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "80 × $0.038 = $3.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 110) (Set 223) (Set 243)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 549 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$20.86",
+      "$26.11",
+      "$18.76",
+      "$37.55"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 244)",
-    "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
-    ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "549 × $0.038 = $20.86 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 245)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 50 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$7.55",
+      "$4.14",
+      "$0.20",
+      "$2.30"
     ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "answer": 3,
+    "explanation": "50 × $0.046 = $2.30 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 246)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 481 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$33.77",
+      "$18.76",
+      "$16.66",
+      "$24.01"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "481 × $0.039 = $18.76 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 247)",
+    "question": "Storing 217 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$5.93",
+      "$14.45",
+      "$8.03",
+      "$13.28"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "217 × $0.037 = $8.03 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 199) (Set 248)",
+    "question": "An EC2 instance runs for 395 hours at $0.334/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$131.93",
+      "$79.16",
+      "$147.43",
+      "$173.93"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "395 × $0.334 = $131.93."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 375 hours at $0.451/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$101.48",
+      "$169.13",
+      "$184.63",
+      "$211.13"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "375 × $0.451 = $169.13."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 146) (Set 250)",
+    "question": "Storing 461 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$22.79",
+      "$30.14",
+      "$24.89",
+      "$44.80"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 74) (Set 101) (Set 251)",
-    "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
-    ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 252)",
-    "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
-    ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "explanation": "461 × $0.054 = $24.89 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 201 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$10.49",
+      "$3.73",
+      "$11.08",
+      "$5.83"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "201 × $0.029 = $5.83 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 96) (Set 254)",
+    "question": "Storing 538 GB in S3 Standard at $0.050/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$24.80",
+      "$32.15",
+      "$26.90",
+      "$48.42"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "538 × $0.050 = $26.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 255)",
+    "question": "An EC2 instance runs for 450 hours at $0.070/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$18.90",
+      "$31.50",
+      "$73.50",
+      "$47.00"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "450 × $0.070 = $31.50."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 256)",
+    "question": "An EC2 instance runs for 754 hours at $0.266/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$216.06",
+      "$200.56",
+      "$120.34",
+      "$242.56"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "754 × $0.266 = $200.56."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 257)",
+    "question": "An EC2 instance runs for 639 hours at $0.423/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$270.30",
+      "$312.30",
+      "$162.18",
+      "$285.80"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "639 × $0.423 = $270.30."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 258)",
+    "question": "Storing 369 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$19.93",
+      "$35.87",
+      "$17.83",
+      "$25.18"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "369 × $0.054 = $19.93 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259)",
+    "question": "An EC2 instance runs for 138 hours at $0.405/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$55.89",
+      "$33.53",
+      "$97.89",
+      "$71.39"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "138 × $0.405 = $55.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 514 hours at $0.060/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$46.34",
+      "$18.50",
+      "$72.84",
+      "$30.84"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "514 × $0.060 = $30.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 261)",
+    "question": "Storing 503 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$47.09",
+      "$24.06",
+      "$31.41",
+      "$26.16"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "503 × $0.052 = $26.16 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 176) (Set 262)",
+    "question": "An EC2 instance runs for 433 hours at $0.067/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$44.51",
+      "$71.01",
+      "$29.01",
+      "$17.41"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "433 × $0.067 = $29.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 263)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 407 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$42.50",
+      "$23.61",
+      "$21.51",
+      "$28.86"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "407 × $0.058 = $23.61 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 135) (Set 264)",
+    "question": "Storing 471 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$19.49",
+      "$8.73",
+      "$10.83",
+      "$16.08"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 2,
+    "explanation": "471 × $0.023 = $10.83 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265)",
+    "question": "An EC2 instance runs for 616 hours at $0.440/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$286.54",
+      "$271.04",
+      "$162.62",
+      "$313.04"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "616 × $0.440 = $271.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 627 hours at $0.226/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$85.02",
+      "$183.70",
+      "$157.20",
+      "$141.70"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "627 × $0.226 = $141.70."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 267)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 473 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$10.41",
+      "$18.74",
+      "$15.66",
+      "$8.31"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "473 × $0.022 = $10.41 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 42) (Set 268)",
+    "question": "Storing 341 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$14.46",
+      "$7.11",
+      "$16.58",
+      "$9.21"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "341 × $0.027 = $9.21 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 643 hours at $0.121/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$93.30",
+      "$119.80",
+      "$77.80",
+      "$46.68"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "643 × $0.121 = $77.80."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 186) (Set 218) (Set 270)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 84 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$1.82",
+      "$1.01",
+      "$-1.09",
+      "$6.26"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 1,
+    "explanation": "84 × $0.012 = $1.01 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 129 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$11.57",
+      "$6.32",
+      "$11.38",
+      "$4.22"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "129 × $0.049 = $6.32 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 272)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 81 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$5.54",
+      "$3.08",
+      "$0.98",
+      "$8.33"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "81 × $0.038 = $3.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 236) (Set 273)",
+    "question": "An EC2 instance runs for 348 hours at $0.074/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$15.45",
+      "$67.75",
+      "$25.75",
+      "$41.25"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "348 × $0.074 = $25.75."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274)",
+    "question": "An EC2 instance runs for 608 hours at $0.207/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$167.86",
+      "$75.52",
+      "$125.86",
+      "$141.36"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "608 × $0.207 = $125.86."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275)",
+    "question": "An EC2 instance runs for 404 hours at $0.493/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$199.17",
+      "$119.50",
+      "$214.67",
+      "$241.17"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "404 × $0.493 = $199.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 276)",
+    "question": "An EC2 instance runs for 191 hours at $0.377/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$87.51",
+      "$114.01",
+      "$43.21",
+      "$72.01"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "191 × $0.377 = $72.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 277)",
+    "question": "An EC2 instance runs for 788 hours at $0.299/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$251.11",
+      "$141.37",
+      "$235.61",
+      "$277.61"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "788 × $0.299 = $235.61."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 389 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$19.29",
+      "$38.50",
+      "$21.39",
+      "$26.64"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "389 × $0.055 = $21.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279)",
+    "question": "Storing 80 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$6.69",
+      "$1.44",
+      "$2.59",
+      "$-0.66"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 1,
+    "explanation": "80 × $0.018 = $1.44 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 280)",
+    "question": "Storing 513 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$22.57",
+      "$27.82",
+      "$40.63",
+      "$20.47"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "513 × $0.044 = $22.57 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 281)",
+    "question": "Storing 438 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$41.78",
+      "$23.21",
+      "$21.11",
+      "$28.46"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "438 × $0.053 = $23.21 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 282)",
+    "question": "Storing 231 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$13.30",
+      "$7.39",
+      "$5.29",
+      "$12.64"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "231 × $0.032 = $7.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 403 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$14.52",
+      "$7.17",
+      "$16.69",
+      "$9.27"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "403 × $0.023 = $9.27 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 284)",
+    "question": "An EC2 instance runs for 281 hours at $0.218/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$103.26",
+      "$76.76",
+      "$61.26",
+      "$36.76"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "281 × $0.218 = $61.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 285)",
+    "question": "An EC2 instance runs for 195 hours at $0.204/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$81.78",
+      "$55.28",
+      "$39.78",
+      "$23.87"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "195 × $0.204 = $39.78."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 286)",
+    "question": "Storing 155 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$12.07",
+      "$12.28",
+      "$4.72",
+      "$6.82"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "155 × $0.044 = $6.82 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 287)",
+    "question": "Storing 502 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$31.86",
+      "$24.51",
+      "$47.90",
+      "$26.61"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "502 × $0.053 = $26.61 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 78 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$6.61",
+      "$8.92",
+      "$1.57",
+      "$3.67"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "78 × $0.047 = $3.67 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 289)",
+    "question": "Storing 256 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$8.83",
+      "$6.44",
+      "$1.48",
+      "$3.58"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 3,
+    "explanation": "256 × $0.014 = $3.58 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 263) (Set 290)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 245 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$6.48",
+      "$8.58",
+      "$15.44",
+      "$13.83"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "245 × $0.035 = $8.58 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291)",
+    "question": "An EC2 instance runs for 171 hours at $0.250/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$42.75",
+      "$84.75",
+      "$25.65",
+      "$58.25"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "171 × $0.250 = $42.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 185) (Set 292)",
+    "question": "Storing 53 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$0.28",
+      "$2.38",
+      "$7.63",
+      "$4.28"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "53 × $0.045 = $2.38 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 293)",
+    "question": "An EC2 instance runs for 539 hours at $0.424/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$137.12",
+      "$244.04",
+      "$228.54",
+      "$270.54"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "539 × $0.424 = $228.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 59) (Set 294)",
+    "question": "An EC2 instance runs for 277 hours at $0.125/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$34.63",
+      "$50.13",
+      "$20.78",
+      "$76.63"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "277 × $0.125 = $34.63."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 295)",
+    "question": "Storing 126 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$4.30",
+      "$7.64",
+      "$0.29",
+      "$2.39"
     ],
     "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "explanation": "126 × $0.019 = $2.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 296)",
+    "question": "Storing 138 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$-0.17",
+      "$7.18",
+      "$1.93",
+      "$3.47"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "138 × $0.014 = $1.93 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 297)",
+    "question": "An EC2 instance runs for 741 hours at $0.339/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$150.72",
+      "$251.20",
+      "$266.70",
+      "$293.20"
+    ],
+    "answer": 1,
+    "explanation": "741 × $0.339 = $251.20."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 103 GB in S3 Standard at $0.059/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$6.08",
+      "$10.94",
+      "$3.98",
+      "$11.33"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "103 × $0.059 = $6.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 298)",
+    "question": "Storing 519 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$26.99",
+      "$24.89",
+      "$32.24",
+      "$48.58"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "519 × $0.052 = $26.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 299)",
+    "question": "An EC2 instance runs for 729 hours at $0.059/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$85.01",
+      "$25.81",
+      "$58.51",
+      "$43.01"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "729 × $0.059 = $43.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 300)",
+    "question": "Storing 220 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$7.58",
+      "$9.68",
+      "$14.93",
+      "$17.42"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "220 × $0.044 = $9.68 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 301)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 525 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$12.60",
+      "$19.95",
+      "$26.46",
+      "$14.70"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "525 × $0.028 = $14.70 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 302)",
+    "question": "An EC2 instance runs for 329 hours at $0.491/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$203.54",
+      "$161.54",
+      "$96.92",
+      "$177.04"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "329 × $0.491 = $161.54."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 303)",
+    "question": "An EC2 instance runs for 270 hours at $0.068/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$18.36",
+      "$33.86",
+      "$60.36",
+      "$11.02"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "270 × $0.068 = $18.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124) (Set 304)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 506 hours at $0.480/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$145.73",
+      "$284.88",
+      "$258.38",
+      "$242.88"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "506 × $0.480 = $242.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 305)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 417 hours at $0.307/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$143.52",
+      "$170.02",
+      "$76.81",
+      "$128.02"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "417 × $0.307 = $128.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 306)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 157 hours at $0.534/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$125.84",
+      "$99.34",
+      "$83.84",
+      "$50.30"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "157 × $0.534 = $83.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 281) (Set 307)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 148 hours at $0.155/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$22.94",
+      "$64.94",
+      "$13.76",
+      "$38.44"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "148 × $0.155 = $22.94."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 308)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 664 hours at $0.057/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$53.35",
+      "$37.85",
+      "$79.85",
+      "$22.71"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "664 × $0.057 = $37.85."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 228) (Set 309)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 466 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$32.28",
+      "$48.65",
+      "$24.93",
+      "$27.03"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "466 × $0.058 = $27.03 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 310)",
+    "question": "An EC2 instance runs for 235 hours at $0.357/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$125.89",
+      "$83.89",
+      "$50.33",
+      "$99.39"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "235 × $0.357 = $83.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 285) (Set 311)",
+    "question": "An EC2 instance runs for 538 hours at $0.509/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$273.84",
+      "$164.30",
+      "$289.34",
+      "$315.84"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "538 × $0.509 = $273.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 255) (Set 312)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 152 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$-0.28",
+      "$7.07",
+      "$3.28",
+      "$1.82"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "152 × $0.012 = $1.82 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98) (Set 313)",
+    "question": "Storing 192 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$17.62",
+      "$9.79",
+      "$15.04",
+      "$7.69"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "192 × $0.051 = $9.79 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 149) (Set 314)",
+    "question": "An EC2 instance runs for 271 hours at $0.475/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$144.22",
+      "$170.72",
+      "$128.72",
+      "$77.23"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "271 × $0.475 = $128.72."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 315)",
+    "question": "Storing 455 GB in S3 Standard at $0.050/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$40.95",
+      "$20.65",
+      "$22.75",
+      "$28.00"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 2,
+    "explanation": "455 × $0.050 = $22.75 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 316)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 680 hours at $0.259/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$105.67",
+      "$176.12",
+      "$218.12",
+      "$191.62"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "680 × $0.259 = $176.12."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 317)",
+    "question": "An EC2 instance runs for 601 hours at $0.515/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$309.51",
+      "$325.01",
+      "$351.51",
+      "$185.71"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "601 × $0.515 = $309.51."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 318)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 70 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$-0.77",
+      "$6.58",
+      "$1.33",
+      "$2.39"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "70 × $0.019 = $1.33 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 319)",
+    "question": "An EC2 instance runs for 743 hours at $0.422/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$313.55",
+      "$329.05",
+      "$355.55",
+      "$188.13"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "743 × $0.422 = $313.55."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 261) (Set 320)",
+    "question": "Storing 415 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$16.46",
+      "$20.18",
+      "$9.11",
+      "$11.21"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98) (Set 313) (Set 321)",
-    "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
-    ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "415 × $0.027 = $11.21 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 79) (Set 322)",
+    "question": "An EC2 instance runs for 594 hours at $0.072/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$58.27",
+      "$25.66",
+      "$84.77",
+      "$42.77"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "594 × $0.072 = $42.77."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274) (Set 323)",
+    "question": "An EC2 instance runs for 200 hours at $0.307/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$76.90",
+      "$36.84",
+      "$61.40",
+      "$103.40"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "200 × $0.307 = $61.40."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 324)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 438 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$20.15",
+      "$25.40",
+      "$18.05",
+      "$36.27"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "438 × $0.046 = $20.15 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 325)",
+    "question": "An EC2 instance runs for 770 hours at $0.189/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$187.53",
+      "$87.32",
+      "$145.53",
+      "$161.03"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "770 × $0.189 = $145.53."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 326)",
+    "question": "An EC2 instance runs for 224 hours at $0.056/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$54.54",
+      "$12.54",
+      "$7.52",
+      "$28.04"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "224 × $0.056 = $12.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 327)",
+    "question": "An EC2 instance runs for 300 hours at $0.285/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$85.50",
+      "$101.00",
+      "$51.30",
+      "$127.50"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "300 × $0.285 = $85.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 227) (Set 229) (Set 328)",
+    "question": "Storing 223 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$7.22",
+      "$1.91",
+      "$9.26",
+      "$4.01"
     ],
-    "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "answer": 3,
+    "explanation": "223 × $0.018 = $4.01 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 166) (Set 329)",
+    "question": "An EC2 instance runs for 484 hours at $0.291/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$84.50",
+      "$156.34",
+      "$140.84",
+      "$182.84"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "484 × $0.291 = $140.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 330)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 274 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$11.34",
+      "$11.55",
+      "$4.20",
+      "$6.30"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "274 × $0.023 = $6.30 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 289) (Set 331)",
+    "question": "Storing 482 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$25.49",
+      "$18.14",
+      "$20.24",
+      "$36.43"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 2,
+    "explanation": "482 × $0.042 = $20.24 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 198) (Set 332)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 809 hours at $0.397/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$363.17",
+      "$192.70",
+      "$336.67",
+      "$321.17"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "809 × $0.397 = $321.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 197) (Set 333)",
+    "question": "Storing 471 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$19.38",
+      "$25.43",
+      "$14.13",
+      "$12.03"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "471 × $0.030 = $14.13 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 78) (Set 334)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 407 hours at $0.416/hour. What is the total on-demand compute cost?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$211.31",
+      "$184.81",
+      "$169.31",
+      "$101.59"
     ],
-    "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "answer": 2,
+    "explanation": "407 × $0.416 = $169.31."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124) (Set 304) (Set 335)",
+    "question": "Storing 512 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$20.43",
+      "$22.53",
+      "$40.55",
+      "$27.78"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "512 × $0.044 = $22.53 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 336)",
+    "question": "An EC2 instance runs for 598 hours at $0.541/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$339.02",
+      "$323.52",
+      "$365.52",
+      "$194.11"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "598 × $0.541 = $323.52."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 195) (Set 337)",
+    "question": "An EC2 instance runs for 638 hours at $0.157/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$60.10",
+      "$115.67",
+      "$142.17",
+      "$100.17"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "638 × $0.157 = $100.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 338)",
+    "question": "An EC2 instance runs for 512 hours at $0.263/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$176.66",
+      "$150.16",
+      "$80.80",
+      "$134.66"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "512 × $0.263 = $134.66."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339)",
+    "question": "An EC2 instance runs for 517 hours at $0.523/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$312.39",
+      "$270.39",
+      "$162.23",
+      "$285.89"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "517 × $0.523 = $270.39."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 305) (Set 340)",
+    "question": "Storing 209 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$19.57",
+      "$8.77",
+      "$10.87",
+      "$16.12"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 2,
+    "explanation": "209 × $0.052 = $10.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117) (Set 341)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 527 hours at $0.054/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$70.46",
+      "$17.08",
+      "$43.96",
+      "$28.46"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "527 × $0.054 = $28.46."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 342)",
+    "question": "Storing 476 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$23.13",
+      "$25.23",
+      "$45.41",
+      "$30.48"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "476 × $0.053 = $25.23 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 343)",
+    "question": "Storing 504 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$16.34",
+      "$8.99",
+      "$11.09",
+      "$19.96"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "504 × $0.022 = $11.09 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 281) (Set 307) (Set 344)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 230 hours at $0.133/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$46.09",
+      "$30.59",
+      "$72.59",
+      "$18.35"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "230 × $0.133 = $30.59."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 178) (Set 345)",
-    "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
-    ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 263) (Set 290) (Set 346)",
+    "question": "Storing 369 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$6.02",
+      "$8.12",
+      "$13.37",
+      "$14.62"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "369 × $0.022 = $8.12 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 347)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 327 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$20.62",
+      "$13.27",
+      "$15.37",
+      "$27.67"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "327 × $0.047 = $15.37 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348)",
+    "question": "An EC2 instance runs for 366 hours at $0.137/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$65.64",
+      "$92.14",
+      "$50.14",
+      "$30.08"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "366 × $0.137 = $50.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 349)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 189 hours at $0.265/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$30.05",
+      "$50.09",
+      "$65.59",
+      "$92.09"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "189 × $0.265 = $50.09."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 350)",
+    "question": "An EC2 instance runs for 690 hours at $0.121/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$83.49",
+      "$125.49",
+      "$98.99",
+      "$50.09"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "690 × $0.121 = $83.49."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 351)",
+    "question": "Storing 434 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$8.59",
+      "$10.02",
+      "$2.67",
+      "$4.77"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "434 × $0.011 = $4.77 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269) (Set 352)",
+    "question": "Storing 331 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$16.88",
+      "$22.13",
+      "$30.38",
+      "$14.78"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "331 × $0.051 = $16.88 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 353)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 370 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$12.65",
+      "$5.30",
+      "$13.32",
+      "$7.40"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "370 × $0.020 = $7.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 354)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 277 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$14.95",
+      "$17.46",
+      "$7.60",
+      "$9.70"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "277 × $0.035 = $9.70 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 221) (Set 355)",
+    "question": "Storing 206 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$9.02",
+      "$11.12",
+      "$20.02",
+      "$16.37"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "206 × $0.054 = $11.12 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274) (Set 356)",
+    "question": "An EC2 instance runs for 262 hours at $0.067/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$33.05",
+      "$10.53",
+      "$17.55",
+      "$59.55"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "262 × $0.067 = $17.55."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 151) (Set 357)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 246 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$8.61",
+      "$6.51",
+      "$15.50",
+      "$13.86"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "246 × $0.035 = $8.61 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339) (Set 358)",
+    "question": "An EC2 instance runs for 229 hours at $0.238/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$70.00",
+      "$96.50",
+      "$32.70",
+      "$54.50"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "229 × $0.238 = $54.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 102 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$1.84",
+      "$3.31",
+      "$-0.26",
+      "$7.09"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "102 × $0.018 = $1.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 221) (Set 360)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 722 hours at $0.530/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$398.16",
+      "$382.66",
+      "$229.60",
+      "$424.66"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "722 × $0.530 = $382.66."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 361)",
+    "question": "Storing 200 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$8.40",
+      "$13.65",
+      "$6.30",
+      "$15.12"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "200 × $0.042 = $8.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 140) (Set 362)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 88 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$8.24",
+      "$9.83",
+      "$2.48",
+      "$4.58"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "88 × $0.052 = $4.58 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 363)",
+    "question": "An EC2 instance runs for 493 hours at $0.205/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$116.56",
+      "$101.06",
+      "$60.64",
+      "$143.06"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "493 × $0.205 = $101.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 364)",
+    "question": "An EC2 instance runs for 435 hours at $0.126/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$70.31",
+      "$54.81",
+      "$96.81",
+      "$32.89"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "435 × $0.126 = $54.81."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 365)",
+    "question": "Storing 476 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$28.10",
+      "$20.75",
+      "$22.85",
+      "$41.13"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "476 × $0.048 = $22.85 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 366)",
+    "question": "An EC2 instance runs for 635 hours at $0.383/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$285.21",
+      "$145.93",
+      "$258.71",
+      "$243.21"
     ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "635 × $0.383 = $243.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 367)",
+    "question": "An EC2 instance runs for 794 hours at $0.212/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$101.00",
+      "$210.33",
+      "$168.33",
+      "$183.83"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "794 × $0.212 = $168.33."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 368)",
+    "question": "Storing 363 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$11.62",
+      "$20.92",
+      "$9.52",
+      "$16.87"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "363 × $0.032 = $11.62 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 369)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 153 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$0.81",
+      "$5.24",
+      "$8.16",
+      "$2.91"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "153 × $0.019 = $2.91 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 330) (Set 370)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 392 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$22.11",
+      "$30.35",
+      "$16.86",
+      "$14.76"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "392 × $0.043 = $16.86 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 319) (Set 371)",
+    "question": "An EC2 instance runs for 634 hours at $0.260/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$98.90",
+      "$206.84",
+      "$180.34",
+      "$164.84"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "634 × $0.260 = $164.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241) (Set 372)",
+    "question": "An EC2 instance runs for 264 hours at $0.448/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$133.77",
+      "$160.27",
+      "$70.96",
+      "$118.27"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "264 × $0.448 = $118.27."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 373)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 427 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$24.77",
+      "$30.02",
+      "$22.67",
+      "$44.59"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "427 × $0.058 = $24.77 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 374)",
+    "question": "An EC2 instance runs for 360 hours at $0.362/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$145.82",
+      "$130.32",
+      "$172.32",
+      "$78.19"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "360 × $0.362 = $130.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 177) (Set 375)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 806 hours at $0.332/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$283.09",
+      "$309.59",
+      "$160.55",
+      "$267.59"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "806 × $0.332 = $267.59."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 120) (Set 187) (Set 376)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 86 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$3.56",
+      "$-0.12",
+      "$7.23",
+      "$1.98"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "86 × $0.023 = $1.98 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 377)",
+    "question": "An EC2 instance runs for 228 hours at $0.169/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$54.03",
+      "$80.53",
+      "$38.53",
+      "$23.12"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "228 × $0.169 = $38.53."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98) (Set 313) (Set 378)",
+    "question": "Storing 522 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$8.87",
+      "$15.97",
+      "$6.77",
+      "$14.12"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "522 × $0.017 = $8.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 246) (Set 379)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 56 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$1.06",
+      "$1.91",
+      "$-1.04",
+      "$6.31"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "56 × $0.019 = $1.06 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 296) (Set 380)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 461 hours at $0.263/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$163.24",
+      "$136.74",
+      "$121.24",
+      "$72.74"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "461 × $0.263 = $121.24."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 142) (Set 144) (Set 202) (Set 381)",
+    "question": "An EC2 instance runs for 290 hours at $0.224/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$38.98",
+      "$106.96",
+      "$64.96",
+      "$80.46"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "290 × $0.224 = $64.96."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 36) (Set 382)",
+    "question": "Storing 131 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$5.90",
+      "$3.28",
+      "$1.18",
+      "$8.53"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "131 × $0.025 = $3.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 383)",
+    "question": "An EC2 instance runs for 675 hours at $0.526/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$213.03",
+      "$370.55",
+      "$397.05",
+      "$355.05"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "675 × $0.526 = $355.05."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 384)",
+    "question": "Storing 428 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$5.56",
+      "$10.81",
+      "$3.46",
+      "$10.01"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "428 × $0.013 = $5.56 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385)",
+    "question": "Storing 482 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$22.65",
+      "$20.55",
+      "$27.90",
+      "$40.77"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "482 × $0.047 = $22.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 364) (Set 386)",
+    "question": "An EC2 instance runs for 201 hours at $0.191/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$53.89",
+      "$38.39",
+      "$80.39",
+      "$23.03"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "201 × $0.191 = $38.39."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 387)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 119 hours at $0.103/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$7.36",
+      "$54.26",
+      "$12.26",
+      "$27.76"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "119 × $0.103 = $12.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 365) (Set 388)",
+    "question": "Storing 396 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$15.15",
+      "$7.80",
+      "$17.82",
+      "$9.90"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "396 × $0.025 = $9.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 237) (Set 389)",
+    "question": "Storing 153 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$8.42",
+      "$6.32",
+      "$15.16",
+      "$13.67"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "153 × $0.055 = $8.42 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 30) (Set 390)",
+    "question": "Storing 59 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$1.30",
+      "$-0.80",
+      "$2.34",
+      "$6.55"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "59 × $0.022 = $1.30 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 391)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 426 GB in S3 Standard at $0.041/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$15.37",
+      "$17.47",
+      "$22.72",
+      "$31.45"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "426 × $0.041 = $17.47 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 206) (Set 392)",
+    "question": "Storing 476 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$39.42",
+      "$21.90",
+      "$19.80",
+      "$27.15"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "476 × $0.046 = $21.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 393)",
+    "question": "Storing 294 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$14.11",
+      "$25.40",
+      "$12.01",
+      "$19.36"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "294 × $0.048 = $14.11 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 394)",
+    "question": "An EC2 instance runs for 281 hours at $0.152/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$42.71",
+      "$84.71",
+      "$25.63",
+      "$58.21"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "281 × $0.152 = $42.71."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 395)",
+    "question": "Storing 500 GB in S3 Standard at $0.056/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$50.40",
+      "$28.00",
+      "$25.90",
+      "$33.25"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "500 × $0.056 = $28.00 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 396)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 368 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$23.85",
+      "$18.50",
+      "$13.25",
+      "$11.15"
     ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "answer": 2,
+    "explanation": "368 × $0.036 = $13.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 397)",
+    "question": "An EC2 instance runs for 259 hours at $0.318/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$124.36",
+      "$82.36",
+      "$49.42",
+      "$97.86"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "259 × $0.318 = $82.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 398)",
+    "question": "Storing 521 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$17.23",
+      "$21.56",
+      "$11.98",
+      "$9.88"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "521 × $0.023 = $11.98 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 280) (Set 399)",
+    "question": "Storing 411 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$12.24",
+      "$6.99",
+      "$4.89",
+      "$12.58"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 1,
+    "explanation": "411 × $0.017 = $6.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 400)",
+    "question": "An EC2 instance runs for 727 hours at $0.395/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$287.17",
+      "$172.30",
+      "$302.67",
+      "$329.17"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "727 × $0.395 = $287.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 401)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 160 hours at $0.246/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$54.86",
+      "$81.36",
+      "$39.36",
+      "$23.62"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "160 × $0.246 = $39.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 402)",
+    "question": "Storing 271 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$12.80",
+      "$26.82",
+      "$20.15",
+      "$14.90"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "271 × $0.055 = $14.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403)",
+    "question": "Storing 534 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$20.74",
+      "$15.49",
+      "$27.88",
+      "$13.39"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "534 × $0.029 = $15.49 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 404)",
+    "question": "An EC2 instance runs for 468 hours at $0.223/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$146.36",
+      "$104.36",
+      "$119.86",
+      "$62.62"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "468 × $0.223 = $104.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 183) (Set 405)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 114 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$-0.39",
+      "$1.71",
+      "$6.96",
+      "$3.08"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "114 × $0.015 = $1.71 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406)",
+    "question": "An EC2 instance runs for 105 hours at $0.410/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$85.05",
+      "$58.55",
+      "$43.05",
+      "$25.83"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "105 × $0.410 = $43.05."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 198) (Set 332) (Set 407)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 348 hours at $0.404/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$156.09",
+      "$182.59",
+      "$140.59",
+      "$84.35"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "348 × $0.404 = $140.59."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 142) (Set 144) (Set 408)",
+    "question": "An EC2 instance runs for 484 hours at $0.143/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$69.21",
+      "$111.21",
+      "$41.53",
+      "$84.71"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184) (Set 409)",
-    "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
-    ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "484 × $0.143 = $69.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 54) (Set 410)",
+    "question": "Storing 417 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$19.43",
+      "$25.52",
+      "$14.18",
+      "$12.08"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "417 × $0.034 = $14.18 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 221) (Set 360) (Set 411)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 430 hours at $0.462/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$214.16",
+      "$198.66",
+      "$240.66",
+      "$119.20"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "430 × $0.462 = $198.66."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 412)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 282 hours at $0.383/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$108.01",
+      "$64.81",
+      "$123.51",
+      "$150.01"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "282 × $0.383 = $108.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 413)",
+    "question": "An EC2 instance runs for 382 hours at $0.349/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$79.99",
+      "$133.32",
+      "$148.82",
+      "$175.32"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "382 × $0.349 = $133.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 188) (Set 414)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 111 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$8.36",
+      "$1.01",
+      "$3.11",
+      "$5.60"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "111 × $0.028 = $3.11 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 224) (Set 240) (Set 415)",
+    "question": "Storing 427 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$42.26",
+      "$23.48",
+      "$21.38",
+      "$28.73"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "427 × $0.055 = $23.48 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 183) (Set 416)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 452 GB in S3 Standard at $0.040/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$18.08",
+      "$23.33",
+      "$32.54",
+      "$15.98"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "452 × $0.040 = $18.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 417)",
+    "question": "Storing 287 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$10.24",
+      "$17.59",
+      "$22.21",
+      "$12.34"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "287 × $0.043 = $12.34 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 296) (Set 418)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 502 hours at $0.335/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$168.17",
+      "$100.90",
+      "$183.67",
+      "$210.17"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "502 × $0.335 = $168.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 74) (Set 101) (Set 419)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 814 hours at $0.248/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$201.87",
+      "$243.87",
+      "$121.12",
+      "$217.37"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "814 × $0.248 = $201.87."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160) (Set 420)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 451 hours at $0.258/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$116.36",
+      "$69.82",
+      "$131.86",
+      "$158.36"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "451 × $0.258 = $116.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 417) (Set 421)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 735 hours at $0.051/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$37.48",
+      "$22.49",
+      "$52.98",
+      "$79.48"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "735 × $0.051 = $37.48."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 276) (Set 422)",
+    "question": "An EC2 instance runs for 157 hours at $0.441/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$111.24",
+      "$69.24",
+      "$84.74",
+      "$41.54"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "157 × $0.441 = $69.24."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 423)",
+    "question": "An EC2 instance runs for 194 hours at $0.101/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$19.59",
+      "$61.59",
+      "$11.75",
+      "$35.09"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "194 × $0.101 = $19.59."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 393) (Set 424)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 379 hours at $0.060/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$64.74",
+      "$38.24",
+      "$13.64",
+      "$22.74"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "379 × $0.060 = $22.74."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184) (Set 425)",
+    "question": "Storing 520 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$25.53",
+      "$36.50",
+      "$20.28",
+      "$18.18"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "520 × $0.039 = $20.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 426)",
+    "question": "Storing 117 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$7.94",
+      "$2.69",
+      "$4.84",
+      "$0.59"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "117 × $0.023 = $2.69 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339) (Set 358) (Set 427)",
+    "question": "An EC2 instance runs for 571 hours at $0.236/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$80.86",
+      "$150.26",
+      "$134.76",
+      "$176.76"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "571 × $0.236 = $134.76."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160) (Set 420) (Set 428)",
+    "question": "Storing 345 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$17.56",
+      "$19.66",
+      "$35.39",
+      "$24.91"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "345 × $0.057 = $19.66 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 429)",
+    "question": "Storing 336 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$22.37",
+      "$12.43",
+      "$10.33",
+      "$17.68"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 1,
+    "explanation": "336 × $0.037 = $12.43 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 430)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 754 hours at $0.219/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$99.08",
+      "$180.63",
+      "$165.13",
+      "$207.13"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 2,
+    "explanation": "754 × $0.219 = $165.13."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 59) (Set 294) (Set 431)",
+    "question": "An EC2 instance runs for 663 hours at $0.255/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$169.06",
+      "$184.56",
+      "$211.06",
+      "$101.44"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "663 × $0.255 = $169.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 172) (Set 182) (Set 432)",
+    "question": "An EC2 instance runs for 187 hours at $0.241/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$45.07",
+      "$27.04",
+      "$60.57",
+      "$87.07"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "187 × $0.241 = $45.07."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 433)",
+    "question": "An EC2 instance runs for 376 hours at $0.531/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$241.66",
+      "$215.16",
+      "$199.66",
+      "$119.80"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "376 × $0.531 = $199.66."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 434)",
+    "question": "Storing 496 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$5.95",
+      "$3.85",
+      "$11.20",
+      "$10.71"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 0,
+    "explanation": "496 × $0.012 = $5.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 170) (Set 435)",
+    "question": "An EC2 instance runs for 212 hours at $0.203/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$25.82",
+      "$58.54",
+      "$85.04",
+      "$43.04"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 436)",
-    "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
-    ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "212 × $0.203 = $43.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 308) (Set 437)",
+    "question": "Storing 380 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$10.06",
+      "$21.89",
+      "$12.16",
+      "$17.41"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "380 × $0.032 = $12.16 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 412) (Set 438)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 332 hours at $0.167/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$33.26",
+      "$55.44",
+      "$97.44",
+      "$70.94"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "332 × $0.167 = $55.44."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241) (Set 439)",
+    "question": "An EC2 instance runs for 714 hours at $0.412/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$294.17",
+      "$176.50",
+      "$336.17",
+      "$309.67"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "714 × $0.412 = $294.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 219) (Set 440)",
+    "question": "Storing 136 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$2.31",
+      "$7.56",
+      "$0.21",
+      "$4.16"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "136 × $0.017 = $2.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124) (Set 441)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 518 hours at $0.136/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$70.45",
+      "$112.45",
+      "$42.27",
+      "$85.95"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "518 × $0.136 = $70.45."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 361) (Set 442)",
+    "question": "Storing 60 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$2.38",
+      "$6.57",
+      "$1.32",
+      "$-0.78"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "60 × $0.022 = $1.32 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274) (Set 323) (Set 443)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 265 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$19.56",
+      "$25.76",
+      "$14.31",
+      "$12.21"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "265 × $0.054 = $14.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 444)",
+    "question": "An EC2 instance runs for 509 hours at $0.393/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$215.54",
+      "$242.04",
+      "$120.02",
+      "$200.04"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "509 × $0.393 = $200.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 342) (Set 445)",
+    "question": "Storing 338 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$29.81",
+      "$21.81",
+      "$16.56",
+      "$14.46"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "338 × $0.049 = $16.56 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 446)",
+    "question": "Storing 431 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$14.73",
+      "$7.38",
+      "$17.06",
+      "$9.48"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "431 × $0.022 = $9.48 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 282) (Set 447)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 181 hours at $0.296/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$69.08",
+      "$95.58",
+      "$53.58",
+      "$32.15"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "181 × $0.296 = $53.58."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 159) (Set 448)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 763 hours at $0.395/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$180.83",
+      "$343.38",
+      "$301.38",
+      "$316.88"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "763 × $0.395 = $301.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 222) (Set 449)",
+    "question": "An EC2 instance runs for 654 hours at $0.457/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$179.33",
+      "$314.38",
+      "$298.88",
+      "$340.88"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "654 × $0.457 = $298.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 194) (Set 450)",
+    "question": "An EC2 instance runs for 636 hours at $0.182/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$157.75",
+      "$131.25",
+      "$69.45",
+      "$115.75"
     ],
+    "answer": 3,
+    "explanation": "636 × $0.182 = $115.75."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 282 GB in S3 Standard at $0.021/GB/month costs how much monthly?",
+    "options": [
+      "$3.82",
+      "$10.66",
+      "$5.92",
+      "$11.17"
+    ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "282 × $0.021 = $5.92 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 451)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 150 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$0.15",
+      "$2.25",
+      "$7.50",
+      "$4.05"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "150 × $0.015 = $2.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 364) (Set 386) (Set 452)",
+    "question": "An EC2 instance runs for 579 hours at $0.383/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$263.76",
+      "$221.76",
+      "$133.06",
+      "$237.26"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "579 × $0.383 = $221.76."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 428 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
+    "options": [
+      "$18.52",
+      "$13.27",
+      "$11.17",
+      "$23.89"
+    ],
+    "answer": 1,
+    "explanation": "428 × $0.031 = $13.27 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 378 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
+    "options": [
+      "$4.91",
+      "$2.81",
+      "$10.16",
+      "$8.84"
+    ],
+    "answer": 0,
+    "explanation": "378 × $0.013 = $4.91 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 453)",
+    "question": "Storing 145 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$7.28",
+      "$2.03",
+      "$3.65",
+      "$-0.07"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "145 × $0.014 = $2.03 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 188) (Set 414) (Set 454)",
+    "question": "An EC2 instance runs for 395 hours at $0.073/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$17.30",
+      "$70.83",
+      "$28.83",
+      "$44.33"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "395 × $0.073 = $28.83."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 140) (Set 362) (Set 455)",
+    "question": "An EC2 instance runs for 549 hours at $0.066/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$36.23",
+      "$51.73",
+      "$21.74",
+      "$78.23"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "549 × $0.066 = $36.23."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98) (Set 313) (Set 378) (Set 456)",
+    "question": "Storing 518 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$11.47",
+      "$4.12",
+      "$11.20",
+      "$6.22"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "518 × $0.012 = $6.22 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 195) (Set 337) (Set 457)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 161 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$3.21",
+      "$5.31",
+      "$10.56",
+      "$9.56"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "161 × $0.033 = $5.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 296) (Set 380) (Set 458)",
+    "question": "Storing 405 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$22.27",
+      "$27.52",
+      "$20.17",
+      "$40.09"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "405 × $0.055 = $22.27 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 459)",
+    "question": "An EC2 instance runs for 327 hours at $0.482/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$173.11",
+      "$94.57",
+      "$157.61",
+      "$199.61"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "327 × $0.482 = $157.61."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460)",
+    "question": "An EC2 instance runs for 182 hours at $0.468/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$100.68",
+      "$127.18",
+      "$85.18",
+      "$51.11"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "182 × $0.468 = $85.18."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 461)",
+    "question": "Storing 319 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$12.59",
+      "$7.34",
+      "$13.21",
+      "$5.24"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "319 × $0.023 = $7.34 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 162) (Set 462)",
+    "question": "Storing 342 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$12.65",
+      "$17.90",
+      "$22.77",
+      "$10.55"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "342 × $0.037 = $12.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117) (Set 208) (Set 463)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 263 hours at $0.103/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$16.25",
+      "$42.59",
+      "$69.09",
+      "$27.09"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "263 × $0.103 = $27.09."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 298) (Set 464)",
+    "question": "Storing 216 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$9.56",
+      "$20.99",
+      "$11.66",
+      "$16.91"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "216 × $0.054 = $11.66 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 228) (Set 465)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 105 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$2.62",
+      "$8.50",
+      "$4.72",
+      "$9.97"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "105 × $0.045 = $4.72 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 417) (Set 466)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 708 hours at $0.130/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$107.54",
+      "$92.04",
+      "$55.22",
+      "$134.04"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "708 × $0.130 = $92.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 467)",
+    "question": "An EC2 instance runs for 753 hours at $0.154/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$131.46",
+      "$69.58",
+      "$157.96",
+      "$115.96"
+    ],
+    "answer": 3,
+    "explanation": "753 × $0.154 = $115.96."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 182 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$16.70",
+      "$7.18",
+      "$9.28",
+      "$14.53"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "182 × $0.051 = $9.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 298) (Set 464) (Set 468)",
+    "question": "Storing 539 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$6.47",
+      "$11.72",
+      "$11.65",
+      "$4.37"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "539 × $0.012 = $6.47 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 397) (Set 469)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 380 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$2.46",
+      "$8.21",
+      "$9.81",
+      "$4.56"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "380 × $0.012 = $4.56 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 176) (Set 470)",
+    "question": "An EC2 instance runs for 187 hours at $0.102/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$61.07",
+      "$19.07",
+      "$34.57",
+      "$11.44"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "187 × $0.102 = $19.07."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 195) (Set 337) (Set 457) (Set 471)",
+    "question": "An EC2 instance runs for 283 hours at $0.242/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$110.49",
+      "$68.49",
+      "$41.09",
+      "$83.99"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "283 × $0.242 = $68.49."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 402) (Set 472)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 699 hours at $0.316/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$262.88",
+      "$220.88",
+      "$236.38",
+      "$132.53"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "699 × $0.316 = $220.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 221) (Set 473)",
+    "question": "Storing 534 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$10.68",
+      "$15.93",
+      "$8.58",
+      "$19.22"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "534 × $0.020 = $10.68 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 474)",
+    "question": "An EC2 instance runs for 388 hours at $0.086/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$48.87",
+      "$75.37",
+      "$33.37",
+      "$20.02"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "388 × $0.086 = $33.37."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 475)",
+    "question": "An EC2 instance runs for 812 hours at $0.295/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$255.04",
+      "$239.54",
+      "$281.54",
+      "$143.72"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "812 × $0.295 = $239.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 194) (Set 450) (Set 476)",
+    "question": "An EC2 instance runs for 114 hours at $0.510/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$58.14",
+      "$100.14",
+      "$73.64",
+      "$34.88"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "114 × $0.510 = $58.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 318) (Set 477)",
+    "question": "An EC2 instance runs for 814 hours at $0.501/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$407.81",
+      "$449.81",
+      "$244.69",
+      "$423.31"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "814 × $0.501 = $407.81."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 289) (Set 478)",
+    "question": "Storing 471 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$12.50",
+      "$26.28",
+      "$14.60",
+      "$19.85"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 2,
+    "explanation": "471 × $0.031 = $14.60 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 263) (Set 290) (Set 346) (Set 479)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 193 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$7.76",
+      "$2.51",
+      "$4.52",
+      "$0.41"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "193 × $0.013 = $2.51 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 480)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 541 hours at $0.319/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$172.58",
+      "$214.58",
+      "$188.08",
+      "$103.55"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "541 × $0.319 = $172.58."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 296) (Set 380) (Set 458) (Set 481)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 780 hours at $0.114/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$53.35",
+      "$130.92",
+      "$88.92",
+      "$104.42"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "780 × $0.114 = $88.92."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 482)",
+    "question": "Storing 437 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$7.51",
+      "$14.86",
+      "$9.61",
+      "$17.30"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "437 × $0.022 = $9.61 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 483)",
+    "question": "An EC2 instance runs for 691 hours at $0.512/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$369.29",
+      "$353.79",
+      "$395.79",
+      "$212.27"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "691 × $0.512 = $353.79."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 484)",
+    "question": "Storing 132 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$2.64",
+      "$7.89",
+      "$0.54",
+      "$4.75"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "132 × $0.020 = $2.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 305) (Set 340) (Set 485)",
+    "question": "Storing 433 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$27.33",
+      "$39.74",
+      "$19.98",
+      "$22.08"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "433 × $0.051 = $22.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 151) (Set 486)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 362 GB in S3 Standard at $0.041/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$20.09",
+      "$14.84",
+      "$26.71",
+      "$12.74"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "362 × $0.041 = $14.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139) (Set 156) (Set 487)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 282 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$21.61",
+      "$14.26",
+      "$16.36",
+      "$29.45"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "282 × $0.058 = $16.36 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 237) (Set 389) (Set 488)",
+    "question": "Storing 69 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$1.59",
+      "$6.84",
+      "$2.86",
+      "$-0.51"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "69 × $0.023 = $1.59 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 289) (Set 489)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 428 hours at $0.189/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$96.39",
+      "$80.89",
+      "$48.53",
+      "$122.89"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 1,
+    "explanation": "428 × $0.189 = $80.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 490)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 480 hours at $0.340/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$163.20",
+      "$205.20",
+      "$178.70",
+      "$97.92"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "480 × $0.340 = $163.20."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 491)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 273 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$5.27",
+      "$13.27",
+      "$7.37",
+      "$12.62"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "273 × $0.027 = $7.37 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 492)",
+    "question": "Storing 287 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$14.98",
+      "$8.32",
+      "$13.57",
+      "$6.22"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "287 × $0.029 = $8.32 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 255) (Set 493)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 544 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$24.83",
+      "$35.24",
+      "$17.48",
+      "$19.58"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "544 × $0.036 = $19.58 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 227) (Set 229) (Set 494)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 350 hours at $0.429/hour. What is the total on-demand compute cost?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$192.15",
+      "$165.65",
+      "$150.15",
+      "$90.09"
     ],
-    "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "answer": 2,
+    "explanation": "350 × $0.429 = $150.15."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 252) (Set 495)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 396 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$17.03",
+      "$14.93",
+      "$22.28",
+      "$30.65"
     ],
     "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "explanation": "396 × $0.043 = $17.03 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 461) (Set 496)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 597 hours at $0.242/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$159.97",
+      "$144.47",
+      "$186.47",
+      "$86.68"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "597 × $0.242 = $144.47."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241) (Set 372) (Set 497)",
+    "question": "An EC2 instance runs for 388 hours at $0.250/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$112.50",
+      "$97.00",
+      "$58.20",
+      "$139.00"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "388 × $0.250 = $97.00."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 172) (Set 498)",
+    "question": "An EC2 instance runs for 207 hours at $0.132/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$27.32",
+      "$69.32",
+      "$16.39",
+      "$42.82"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "207 × $0.132 = $27.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 57) (Set 499)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 438 GB in S3 Standard at $0.041/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$15.86",
+      "$17.96",
+      "$32.33",
+      "$23.21"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "438 × $0.041 = $17.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 42) (Set 500)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 253 hours at $0.121/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$18.37",
+      "$30.61",
+      "$72.61",
+      "$46.11"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "253 × $0.121 = $30.61."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 146) (Set 501)",
+    "question": "Storing 514 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$21.28",
+      "$9.72",
+      "$11.82",
+      "$17.07"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "514 × $0.023 = $11.82 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 502)",
+    "question": "An EC2 instance runs for 692 hours at $0.330/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$243.86",
+      "$137.02",
+      "$270.36",
+      "$228.36"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "692 × $0.330 = $228.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 277) (Set 503)",
+    "question": "An EC2 instance runs for 167 hours at $0.158/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$41.89",
+      "$26.39",
+      "$68.39",
+      "$15.83"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "167 × $0.158 = $26.39."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 303) (Set 504)",
+    "question": "An EC2 instance runs for 170 hours at $0.526/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$53.65",
+      "$89.42",
+      "$104.92",
+      "$131.42"
     ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 1,
+    "explanation": "170 × $0.526 = $89.42."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 505)",
+    "question": "Storing 296 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$18.57",
+      "$13.32",
+      "$11.22",
+      "$23.98"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "296 × $0.045 = $13.32 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 374) (Set 506)",
+    "question": "An EC2 instance runs for 429 hours at $0.254/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$124.47",
+      "$108.97",
+      "$65.38",
+      "$150.97"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "429 × $0.254 = $108.97."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 354) (Set 507)",
+    "question": "An EC2 instance runs for 173 hours at $0.350/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$60.55",
+      "$36.33",
+      "$76.05",
+      "$102.55"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "173 × $0.350 = $60.55."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 434) (Set 508)",
+    "question": "Storing 171 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$10.89",
+      "$10.15",
+      "$3.54",
+      "$5.64"
     ],
     "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "explanation": "171 × $0.033 = $5.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 509)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 203 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$3.58",
+      "$10.22",
+      "$10.93",
+      "$5.68"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "203 × $0.028 = $5.68 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 375 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
+    "options": [
+      "$23.63",
+      "$18.38",
+      "$11.03",
+      "$13.13"
+    ],
+    "answer": 3,
+    "explanation": "375 × $0.035 = $13.13 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 373) (Set 510)",
+    "question": "An EC2 instance runs for 489 hours at $0.224/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$125.04",
+      "$151.54",
+      "$65.72",
+      "$109.54"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "489 × $0.224 = $109.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124) (Set 304) (Set 511)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 752 hours at $0.496/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$388.49",
+      "$372.99",
+      "$223.79",
+      "$414.99"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "752 × $0.496 = $372.99."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 512)",
+    "question": "Storing 434 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$21.34",
+      "$28.69",
+      "$23.44",
+      "$42.19"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "434 × $0.054 = $23.44 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 95) (Set 513)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 182 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$6.23",
+      "$1.36",
+      "$3.46",
+      "$8.71"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "182 × $0.019 = $3.46 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 69) (Set 514)",
+    "question": "Storing 276 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$8.39",
+      "$10.49",
+      "$18.88",
+      "$15.74"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "276 × $0.038 = $10.49 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 515)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 117 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$3.98",
+      "$1.88",
+      "$9.23",
+      "$7.16"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "117 × $0.034 = $3.98 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 516)",
+    "question": "Storing 301 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$19.51",
+      "$10.84",
+      "$16.09",
+      "$8.74"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "301 × $0.036 = $10.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 517)",
+    "question": "Storing 374 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$21.55",
+      "$17.22",
+      "$9.87",
+      "$11.97"
     ],
     "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "explanation": "374 × $0.032 = $11.97 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 518)",
+    "question": "An EC2 instance runs for 774 hours at $0.288/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$238.41",
+      "$264.91",
+      "$222.91",
+      "$133.75"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "774 × $0.288 = $222.91."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 219) (Set 519)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 686 hours at $0.209/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$143.37",
+      "$86.02",
+      "$158.87",
+      "$185.37"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "686 × $0.209 = $143.37."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 106) (Set 238) (Set 520)",
+    "question": "Storing 222 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$8.78",
+      "$10.88",
+      "$16.13",
+      "$19.58"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 1,
+    "explanation": "222 × $0.049 = $10.88 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 400) (Set 521)",
+    "question": "An EC2 instance runs for 719 hours at $0.149/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$107.13",
+      "$64.28",
+      "$149.13",
+      "$122.63"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "719 × $0.149 = $107.13."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 522)",
+    "question": "Storing 432 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$26.44",
+      "$12.59",
+      "$19.94",
+      "$14.69"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "432 × $0.034 = $14.69 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 120) (Set 187) (Set 523)",
+    "question": "An EC2 instance runs for 555 hours at $0.301/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$167.06",
+      "$100.24",
+      "$209.06",
+      "$182.56"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "555 × $0.301 = $167.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 524)",
+    "question": "Storing 139 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$2.77",
+      "$4.87",
+      "$8.77",
+      "$10.12"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "139 × $0.035 = $4.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 326) (Set 525)",
+    "question": "An EC2 instance runs for 343 hours at $0.214/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$73.40",
+      "$44.04",
+      "$88.90",
+      "$115.40"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "343 × $0.214 = $73.40."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 526)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 451 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$5.41",
+      "$3.31",
+      "$10.66",
+      "$9.74"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "451 × $0.012 = $5.41 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 338) (Set 527)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 397 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$19.06",
+      "$34.31",
+      "$24.31",
+      "$16.96"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "397 × $0.048 = $19.06 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 528)",
+    "question": "An EC2 instance runs for 750 hours at $0.166/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$124.50",
+      "$74.70",
+      "$140.00",
+      "$166.50"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "750 × $0.166 = $124.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 76) (Set 529)",
+    "question": "An EC2 instance runs for 278 hours at $0.534/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$148.45",
+      "$190.45",
+      "$89.07",
+      "$163.95"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "278 × $0.534 = $148.45."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 530)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 305 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$10.98",
+      "$4.00",
+      "$11.35",
+      "$6.10"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "305 × $0.020 = $6.10 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 209) (Set 531)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 445 hours at $0.427/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$205.51",
+      "$190.01",
+      "$114.01",
+      "$232.01"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "445 × $0.427 = $190.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 227) (Set 532)",
+    "question": "Storing 176 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$9.30",
+      "$4.05",
+      "$7.29",
+      "$1.95"
     ],
     "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "explanation": "176 × $0.023 = $4.05 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 402 hours at $0.078/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$73.36",
+      "$18.82",
+      "$31.36",
+      "$46.86"
+    ],
+    "answer": 2,
+    "explanation": "402 × $0.078 = $31.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 533)",
+    "question": "Storing 165 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$15.14",
+      "$8.41",
+      "$6.31",
+      "$13.66"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 1,
+    "explanation": "165 × $0.051 = $8.41 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 45) (Set 534)",
+    "question": "Storing 202 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$6.79",
+      "$14.14",
+      "$8.89",
+      "$16.00"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "202 × $0.044 = $8.89 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 280) (Set 399) (Set 535)",
+    "question": "Storing 534 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$11.66",
+      "$4.31",
+      "$6.41",
+      "$11.54"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 2,
+    "explanation": "534 × $0.012 = $6.41 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339) (Set 358) (Set 536)",
+    "question": "An EC2 instance runs for 800 hours at $0.068/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$96.40",
+      "$54.40",
+      "$69.90",
+      "$32.64"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "800 × $0.068 = $54.40."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 537)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 117 hours at $0.266/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$46.62",
+      "$31.12",
+      "$18.67",
+      "$73.12"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 1,
+    "explanation": "117 × $0.266 = $31.12."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 177) (Set 375) (Set 538)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 176 hours at $0.324/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$57.02",
+      "$99.02",
+      "$72.52",
+      "$34.21"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "176 × $0.324 = $57.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 459) (Set 539)",
+    "question": "An EC2 instance runs for 123 hours at $0.218/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$26.81",
+      "$68.81",
+      "$42.31",
+      "$16.09"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "123 × $0.218 = $26.81."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 150) (Set 540)",
+    "question": "An EC2 instance runs for 660 hours at $0.509/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$377.94",
+      "$351.44",
+      "$201.56",
+      "$335.94"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "660 × $0.509 = $335.94."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 541)",
+    "question": "Storing 57 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$2.57",
+      "$-0.67",
+      "$1.43",
+      "$6.68"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "57 × $0.025 = $1.43 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 286) (Set 542)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 399 hours at $0.105/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$57.39",
+      "$83.89",
+      "$25.13",
+      "$41.89"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "399 × $0.105 = $41.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 492) (Set 543)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 703 hours at $0.484/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$204.15",
+      "$355.75",
+      "$382.25",
+      "$340.25"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "703 × $0.484 = $340.25."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 522) (Set 544)",
+    "question": "Storing 378 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$2.44",
+      "$8.17",
+      "$9.79",
+      "$4.54"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "378 × $0.012 = $4.54 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 165) (Set 545)",
+    "question": "An EC2 instance runs for 222 hours at $0.511/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$128.94",
+      "$68.06",
+      "$113.44",
+      "$155.44"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "222 × $0.511 = $113.44."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 326) (Set 525) (Set 546)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 161 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$7.02",
+      "$3.19",
+      "$1.77",
+      "$-0.33"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "161 × $0.011 = $1.77 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 186) (Set 547)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 354 GB in S3 Standard at $0.059/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$26.14",
+      "$20.89",
+      "$37.60",
+      "$18.79"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 1,
+    "explanation": "354 × $0.059 = $20.89 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 548)",
+    "question": "An EC2 instance runs for 101 hours at $0.416/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$25.21",
+      "$42.02",
+      "$84.02",
+      "$57.52"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "101 × $0.416 = $42.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 549)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 231 hours at $0.539/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$140.01",
+      "$124.51",
+      "$74.71",
+      "$166.51"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "231 × $0.539 = $124.51."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269) (Set 550)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 232 hours at $0.226/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$52.43",
+      "$94.43",
+      "$31.46",
+      "$67.93"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "232 × $0.226 = $52.43."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 66) (Set 212) (Set 551)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 146 hours at $0.418/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$76.53",
+      "$103.03",
+      "$36.62",
+      "$61.03"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "146 × $0.418 = $61.03."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124) (Set 304) (Set 335) (Set 552)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 721 hours at $0.348/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$266.41",
+      "$150.55",
+      "$292.91",
+      "$250.91"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "721 × $0.348 = $250.91."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 199) (Set 553)",
+    "question": "An EC2 instance runs for 694 hours at $0.442/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$348.75",
+      "$322.25",
+      "$184.05",
+      "$306.75"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "694 × $0.442 = $306.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 554)",
+    "question": "An EC2 instance runs for 687 hours at $0.054/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$79.10",
+      "$52.60",
+      "$37.10",
+      "$22.26"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "687 × $0.054 = $37.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 373) (Set 510) (Set 555)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 328 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$7.74",
+      "$15.09",
+      "$17.71",
+      "$9.84"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "328 × $0.030 = $9.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 177) (Set 556)",
+    "question": "Storing 456 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$9.85",
+      "$5.47",
+      "$10.72",
+      "$3.37"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "456 × $0.012 = $5.47 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 557)",
+    "question": "An EC2 instance runs for 485 hours at $0.109/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$94.87",
+      "$52.87",
+      "$31.72",
+      "$68.37"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "485 × $0.109 = $52.87."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 54) (Set 558)",
+    "question": "Storing 228 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$10.21",
+      "$22.16",
+      "$12.31",
+      "$17.56"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "228 × $0.054 = $12.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98) (Set 559)",
+    "question": "Storing 228 GB in S3 Standard at $0.026/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$10.67",
+      "$11.18",
+      "$5.93",
+      "$3.83"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "228 × $0.026 = $5.93 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 298) (Set 464) (Set 468) (Set 560)",
+    "question": "Storing 300 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$16.65",
+      "$20.52",
+      "$9.30",
+      "$11.40"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 3,
+    "explanation": "300 × $0.038 = $11.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 413) (Set 561)",
+    "question": "An EC2 instance runs for 642 hours at $0.161/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$103.36",
+      "$62.02",
+      "$145.36",
+      "$118.86"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "642 × $0.161 = $103.36."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 562)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 162 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$7.87",
+      "$9.62",
+      "$4.37",
+      "$2.27"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "162 × $0.027 = $4.37 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 277) (Set 503) (Set 563)",
+    "question": "An EC2 instance runs for 660 hours at $0.349/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$138.20",
+      "$245.84",
+      "$272.34",
+      "$230.34"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "660 × $0.349 = $230.34."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 191) (Set 564)",
+    "question": "Storing 480 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$27.36",
+      "$49.25",
+      "$25.26",
+      "$32.61"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "480 × $0.057 = $27.36 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 632 hours at $0.484/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$305.89",
+      "$347.89",
+      "$321.39",
+      "$183.53"
+    ],
+    "answer": 0,
+    "explanation": "632 × $0.484 = $305.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 306) (Set 565)",
+    "question": "Storing 362 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$8.48",
+      "$4.71",
+      "$9.96",
+      "$2.61"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "362 × $0.013 = $4.71 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 566)",
+    "question": "Storing 141 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$3.24",
+      "$5.83",
+      "$8.49",
+      "$1.14"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "141 × $0.023 = $3.24 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 299) (Set 567)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 214 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$13.17",
+      "$14.26",
+      "$5.82",
+      "$7.92"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "214 × $0.037 = $7.92 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 102) (Set 568)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 476 GB in S3 Standard at $0.010/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$4.76",
+      "$2.66",
+      "$8.57",
+      "$10.01"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "476 × $0.010 = $4.76 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184) (Set 425) (Set 569)",
+    "question": "Storing 460 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$30.64",
+      "$17.02",
+      "$22.27",
+      "$14.92"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "460 × $0.037 = $17.02 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 310) (Set 570)",
+    "question": "An EC2 instance runs for 565 hours at $0.211/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$119.21",
+      "$71.53",
+      "$161.21",
+      "$134.71"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "565 × $0.211 = $119.21."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274) (Set 356) (Set 571)",
+    "question": "An EC2 instance runs for 479 hours at $0.541/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$301.14",
+      "$155.48",
+      "$274.64",
+      "$259.14"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "479 × $0.541 = $259.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 572)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 121 hours at $0.376/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$61.00",
+      "$87.50",
+      "$27.30",
+      "$45.50"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "121 × $0.376 = $45.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 183) (Set 405) (Set 573)",
+    "question": "An EC2 instance runs for 294 hours at $0.059/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$17.35",
+      "$59.35",
+      "$10.41",
+      "$32.85"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "294 × $0.059 = $17.35."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 574)",
+    "question": "Storing 80 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$2.46",
+      "$9.81",
+      "$8.21",
+      "$4.56"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "80 × $0.057 = $4.56 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 54) (Set 575)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 773 hours at $0.546/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$464.06",
+      "$437.56",
+      "$422.06",
+      "$253.24"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "773 × $0.546 = $422.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 413) (Set 561) (Set 576)",
+    "question": "An EC2 instance runs for 354 hours at $0.427/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$151.16",
+      "$193.16",
+      "$166.66",
+      "$90.70"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "354 × $0.427 = $151.16."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 537) (Set 577)",
+    "question": "Storing 111 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$3.67",
+      "$10.39",
+      "$11.02",
+      "$5.77"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 3,
+    "explanation": "111 × $0.052 = $5.77 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 336) (Set 578)",
+    "question": "An EC2 instance runs for 527 hours at $0.283/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$89.48",
+      "$149.14",
+      "$164.64",
+      "$191.14"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "527 × $0.283 = $149.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 579)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 278 hours at $0.442/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$122.88",
+      "$164.88",
+      "$73.73",
+      "$138.38"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "278 × $0.442 = $122.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 115) (Set 580)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 268 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$13.67",
+      "$18.92",
+      "$24.61",
+      "$11.57"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "268 × $0.051 = $13.67 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 280) (Set 399) (Set 581)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 762 hours at $0.155/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$133.61",
+      "$70.87",
+      "$160.11",
+      "$118.11"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "762 × $0.155 = $118.11."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 222) (Set 582)",
+    "question": "An EC2 instance runs for 760 hours at $0.354/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$311.04",
+      "$284.54",
+      "$269.04",
+      "$161.42"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "760 × $0.354 = $269.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 183) (Set 416) (Set 583)",
+    "question": "An EC2 instance runs for 220 hours at $0.332/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$73.04",
+      "$88.54",
+      "$115.04",
+      "$43.82"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "220 × $0.332 = $73.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 214) (Set 584)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 230 hours at $0.112/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$41.26",
+      "$25.76",
+      "$67.76",
+      "$15.46"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "230 × $0.112 = $25.76."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 585)",
+    "question": "An EC2 instance runs for 490 hours at $0.174/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$100.76",
+      "$85.26",
+      "$127.26",
+      "$51.16"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "490 × $0.174 = $85.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 277) (Set 586)",
+    "question": "An EC2 instance runs for 522 hours at $0.322/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$183.58",
+      "$168.08",
+      "$100.85",
+      "$210.08"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "522 × $0.322 = $168.08."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 237 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
+    "options": [
+      "$18.05",
+      "$12.80",
+      "$23.04",
+      "$10.70"
+    ],
+    "answer": 1,
+    "explanation": "237 × $0.054 = $12.80 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 111) (Set 161) (Set 587)",
+    "question": "An EC2 instance runs for 541 hours at $0.136/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$73.58",
+      "$115.58",
+      "$44.15",
+      "$89.08"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "541 × $0.136 = $73.58."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 297) (Set 588)",
+    "question": "An EC2 instance runs for 515 hours at $0.382/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$196.73",
+      "$212.23",
+      "$238.73",
+      "$118.04"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "515 × $0.382 = $196.73."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 589)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 374 hours at $0.391/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$161.73",
+      "$87.74",
+      "$188.23",
+      "$146.23"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "374 × $0.391 = $146.23."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269) (Set 590)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 604 hours at $0.214/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$144.76",
+      "$77.56",
+      "$171.26",
+      "$129.26"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "604 × $0.214 = $129.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 191) (Set 591)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 812 hours at $0.308/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$265.60",
+      "$150.06",
+      "$292.10",
+      "$250.10"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "812 × $0.308 = $250.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 237) (Set 592)",
+    "question": "Storing 547 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$31.18",
+      "$36.43",
+      "$29.08",
+      "$56.12"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "547 × $0.057 = $31.18 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 120) (Set 187) (Set 376) (Set 593)",
+    "question": "An EC2 instance runs for 178 hours at $0.248/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$26.48",
+      "$59.64",
+      "$86.14",
+      "$44.14"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "178 × $0.248 = $44.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 224) (Set 240) (Set 594)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 274 hours at $0.074/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$35.78",
+      "$20.28",
+      "$12.17",
+      "$62.28"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "274 × $0.074 = $20.28."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 595)",
+    "question": "An EC2 instance runs for 190 hours at $0.352/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$82.38",
+      "$40.13",
+      "$108.88",
+      "$66.88"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "190 × $0.352 = $66.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 197) (Set 333) (Set 596)",
+    "question": "Storing 182 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$7.64",
+      "$12.89",
+      "$5.54",
+      "$13.75"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "182 × $0.042 = $7.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 597)",
+    "question": "Storing 332 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$4.54",
+      "$6.64",
+      "$11.89",
+      "$11.95"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "332 × $0.020 = $6.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 172) (Set 498) (Set 598)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 507 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$24.26",
+      "$47.45",
+      "$31.61",
+      "$26.36"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "507 × $0.052 = $26.36 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 599)",
+    "question": "An EC2 instance runs for 504 hours at $0.376/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$113.70",
+      "$189.50",
+      "$231.50",
+      "$205.00"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "504 × $0.376 = $189.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 43) (Set 600)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 125 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$3.13",
+      "$1.03",
+      "$5.63",
+      "$8.38"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "125 × $0.025 = $3.13 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 176) (Set 601)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 271 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$8.30",
+      "$2.51",
+      "$9.86",
+      "$4.61"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "271 × $0.017 = $4.61 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 185) (Set 292) (Set 602)",
+    "question": "Storing 236 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$11.47",
+      "$11.62",
+      "$4.27",
+      "$6.37"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "236 × $0.027 = $6.37 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 303) (Set 603)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 264 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$15.31",
+      "$20.56",
+      "$27.56",
+      "$13.21"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "264 × $0.058 = $15.31 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 604)",
+    "question": "An EC2 instance runs for 349 hours at $0.385/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$134.37",
+      "$176.37",
+      "$149.87",
+      "$80.62"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "349 × $0.385 = $134.37."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 398) (Set 605)",
+    "question": "Storing 357 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$15.25",
+      "$10.00",
+      "$18.00",
+      "$7.90"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "357 × $0.028 = $10.00 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 373) (Set 606)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 487 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$14.50",
+      "$7.15",
+      "$9.25",
+      "$16.65"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "487 × $0.019 = $9.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 528) (Set 607)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 496 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$29.06",
+      "$23.81",
+      "$42.86",
+      "$21.71"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "496 × $0.048 = $23.81 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 608)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 393 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$21.22",
+      "$26.47",
+      "$19.12",
+      "$38.20"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "393 × $0.054 = $21.22 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 228) (Set 465) (Set 609)",
+    "question": "An EC2 instance runs for 362 hours at $0.314/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$129.17",
+      "$113.67",
+      "$68.20",
+      "$155.67"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "362 × $0.314 = $113.67."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 152) (Set 610)",
+    "question": "Storing 211 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$7.18",
+      "$16.70",
+      "$14.53",
+      "$9.28"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "211 × $0.044 = $9.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 585) (Set 611)",
+    "question": "An EC2 instance runs for 290 hours at $0.310/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$89.90",
+      "$53.94",
+      "$131.90",
+      "$105.40"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "290 × $0.310 = $89.90."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348) (Set 612)",
+    "question": "An EC2 instance runs for 364 hours at $0.130/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$89.32",
+      "$28.39",
+      "$47.32",
+      "$62.82"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "364 × $0.130 = $47.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 111) (Set 161) (Set 613)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 457 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$10.73",
+      "$9.86",
+      "$3.38",
+      "$5.48"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "457 × $0.012 = $5.48 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 282) (Set 447) (Set 614)",
+    "question": "Storing 285 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$1.89",
+      "$3.99",
+      "$7.18",
+      "$9.24"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "285 × $0.014 = $3.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 78) (Set 615)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 794 hours at $0.320/hour. What is the total on-demand compute cost?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$296.08",
+      "$152.45",
+      "$254.08",
+      "$269.58"
     ],
-    "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "answer": 2,
+    "explanation": "794 × $0.320 = $254.08."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 305) (Set 340) (Set 616)",
+    "question": "Storing 391 GB in S3 Standard at $0.016/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$11.51",
+      "$6.26",
+      "$4.16",
+      "$11.27"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 1,
+    "explanation": "391 × $0.016 = $6.26 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 191) (Set 591) (Set 617)",
+    "question": "Storing 149 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$3.56",
+      "$10.91",
+      "$10.19",
+      "$5.66"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "149 × $0.038 = $5.66 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 140) (Set 618)",
+    "question": "An EC2 instance runs for 434 hours at $0.539/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$233.93",
+      "$249.43",
+      "$275.93",
+      "$140.36"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "434 × $0.539 = $233.93."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 619)",
+    "question": "Storing 282 GB in S3 Standard at $0.056/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$15.79",
+      "$21.04",
+      "$28.42",
+      "$13.69"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "282 × $0.056 = $15.79 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 557) (Set 620)",
+    "question": "An EC2 instance runs for 311 hours at $0.386/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$72.03",
+      "$135.55",
+      "$120.05",
+      "$162.05"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "311 × $0.386 = $120.05."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 343) (Set 621)",
+    "question": "Storing 418 GB in S3 Standard at $0.026/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$8.77",
+      "$16.12",
+      "$19.57",
+      "$10.87"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "418 × $0.026 = $10.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184) (Set 622)",
+    "question": "Storing 418 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$5.42",
+      "$13.54",
+      "$7.52",
+      "$12.77"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "418 × $0.018 = $7.52 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 106) (Set 238) (Set 623)",
+    "question": "Storing 99 GB in S3 Standard at $0.056/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$10.79",
+      "$3.44",
+      "$9.97",
+      "$5.54"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 3,
+    "explanation": "99 × $0.056 = $5.54 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 624)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 230 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$9.85",
+      "$8.28",
+      "$2.50",
+      "$4.60"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "230 × $0.020 = $4.60 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 625)",
+    "question": "An EC2 instance runs for 501 hours at $0.206/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$61.93",
+      "$103.21",
+      "$118.71",
+      "$145.21"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "501 × $0.206 = $103.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 166) (Set 626)",
+    "question": "An EC2 instance runs for 348 hours at $0.479/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$100.01",
+      "$166.69",
+      "$182.19",
+      "$208.69"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "348 × $0.479 = $166.69."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 106) (Set 627)",
+    "question": "Storing 523 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$5.75",
+      "$10.35",
+      "$3.65",
+      "$11.00"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "523 × $0.011 = $5.75 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 524) (Set 628)",
+    "question": "Storing 189 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$14.63",
+      "$8.13",
+      "$13.38",
+      "$6.03"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "189 × $0.043 = $8.13 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 138) (Set 629)",
+    "question": "Storing 352 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$15.14",
+      "$13.04",
+      "$20.39",
+      "$27.25"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "352 × $0.043 = $15.14 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 630)",
+    "question": "An EC2 instance runs for 551 hours at $0.407/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$224.26",
+      "$266.26",
+      "$239.76",
+      "$134.56"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "551 × $0.407 = $224.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117) (Set 208) (Set 631)",
+    "question": "Storing 524 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$6.81",
+      "$4.71",
+      "$12.26",
+      "$12.06"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "524 × $0.013 = $6.81 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 20) (Set 168) (Set 632)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 312 hours at $0.368/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$130.32",
+      "$114.82",
+      "$68.89",
+      "$156.82"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "312 × $0.368 = $114.82."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 480) (Set 633)",
+    "question": "Storing 413 GB in S3 Standard at $0.040/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$14.42",
+      "$29.74",
+      "$21.77",
+      "$16.52"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "413 × $0.040 = $16.52 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 634)",
+    "question": "An EC2 instance runs for 712 hours at $0.445/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$332.34",
+      "$358.84",
+      "$316.84",
+      "$190.10"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "712 × $0.445 = $316.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 206) (Set 635)",
+    "question": "Storing 480 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$39.74",
+      "$22.08",
+      "$27.33",
+      "$19.98"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "480 × $0.046 = $22.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 624) (Set 636)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 315 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$17.32",
+      "$22.57",
+      "$31.18",
+      "$15.22"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "315 × $0.055 = $17.32 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 637)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 500 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$32.40",
+      "$23.25",
+      "$18.00",
+      "$15.90"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "500 × $0.036 = $18.00 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 111) (Set 161) (Set 587) (Set 638)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 68 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$-0.13",
+      "$1.97",
+      "$3.55",
+      "$7.22"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "68 × $0.029 = $1.97 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 206) (Set 635) (Set 639)",
+    "question": "Storing 428 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$9.84",
+      "$17.71",
+      "$7.74",
+      "$15.09"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "428 × $0.023 = $9.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 398) (Set 640)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 566 hours at $0.138/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$78.11",
+      "$93.61",
+      "$120.11",
+      "$46.87"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "566 × $0.138 = $78.11."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 641)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 165 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$2.15",
+      "$7.40",
+      "$0.05",
+      "$3.87"
     ],
     "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "165 × $0.013 = $2.15 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 524) (Set 628) (Set 642)",
+    "question": "Storing 300 GB in S3 Standard at $0.040/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$17.25",
+      "$9.90",
+      "$21.60",
+      "$12.00"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "300 × $0.040 = $12.00 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 222) (Set 234) (Set 643)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 330 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$20.20",
+      "$11.22",
+      "$9.12",
+      "$16.47"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "330 × $0.034 = $11.22 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 644)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 121 hours at $0.485/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$58.68",
+      "$100.68",
+      "$74.18",
+      "$35.21"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "121 × $0.485 = $58.68."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 50) (Set 645)",
+    "question": "An EC2 instance runs for 293 hours at $0.195/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$99.14",
+      "$34.28",
+      "$72.64",
+      "$57.14"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "293 × $0.195 = $57.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184) (Set 425) (Set 569) (Set 646)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 555 hours at $0.284/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$199.62",
+      "$94.57",
+      "$173.12",
+      "$157.62"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "555 × $0.284 = $157.62."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 71) (Set 183) (Set 647)",
+    "question": "An EC2 instance runs for 545 hours at $0.210/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$114.45",
+      "$156.45",
+      "$68.67",
+      "$129.95"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "545 × $0.210 = $114.45."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 648)",
+    "question": "An EC2 instance runs for 418 hours at $0.268/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$67.21",
+      "$154.02",
+      "$127.52",
+      "$112.02"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "418 × $0.268 = $112.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 297) (Set 588) (Set 649)",
+    "question": "An EC2 instance runs for 131 hours at $0.056/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$7.34",
+      "$22.84",
+      "$4.40",
+      "$49.34"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "131 × $0.056 = $7.34."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 424 hours at $0.354/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$90.06",
+      "$165.60",
+      "$192.10",
+      "$150.10"
+    ],
+    "answer": 3,
+    "explanation": "424 × $0.354 = $150.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 195) (Set 650)",
+    "question": "An EC2 instance runs for 584 hours at $0.460/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$268.64",
+      "$284.14",
+      "$161.18",
+      "$310.64"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "584 × $0.460 = $268.64."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 579) (Set 651)",
+    "question": "Storing 462 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$24.49",
+      "$22.39",
+      "$29.74",
+      "$44.08"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "462 × $0.053 = $24.49 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 247 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
+    "options": [
+      "$8.27",
+      "$15.62",
+      "$18.67",
+      "$10.37"
+    ],
+    "answer": 3,
+    "explanation": "247 × $0.042 = $10.37 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117) (Set 341) (Set 652)",
+    "question": "Storing 187 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$14.47",
+      "$5.94",
+      "$13.29",
+      "$8.04"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "187 × $0.043 = $8.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 653)",
+    "question": "An EC2 instance runs for 666 hours at $0.113/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$117.26",
+      "$45.16",
+      "$90.76",
+      "$75.26"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "666 × $0.113 = $75.26."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 146) (Set 501) (Set 654)",
+    "question": "Storing 147 GB in S3 Standard at $0.016/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$7.60",
+      "$4.23",
+      "$0.25",
+      "$2.35"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "147 × $0.016 = $2.35 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 394) (Set 655)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 183 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$0.46",
+      "$2.56",
+      "$7.81",
+      "$4.61"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "183 × $0.014 = $2.56 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 237) (Set 656)",
+    "question": "Storing 182 GB in S3 Standard at $0.024/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$7.87",
+      "$2.27",
+      "$9.62",
+      "$4.37"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 3,
+    "explanation": "182 × $0.024 = $4.37 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 365) (Set 657)",
+    "question": "Storing 58 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$4.39",
+      "$2.44",
+      "$0.34",
+      "$7.69"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "58 × $0.042 = $2.44 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 658)",
+    "question": "Storing 370 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$25.97",
+      "$19.68",
+      "$12.33",
+      "$14.43"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "370 × $0.039 = $14.43 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 285 hours at $0.359/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$102.31",
+      "$117.81",
+      "$61.39",
+      "$144.31"
+    ],
+    "answer": 0,
+    "explanation": "285 × $0.359 = $102.31."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 84 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
+    "options": [
+      "$6.66",
+      "$8.95",
+      "$1.60",
+      "$3.70"
+    ],
+    "answer": 3,
+    "explanation": "84 × $0.044 = $3.70 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 451) (Set 659)",
+    "question": "An EC2 instance runs for 475 hours at $0.151/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$87.22",
+      "$71.72",
+      "$113.72",
+      "$43.03"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "475 × $0.151 = $71.72."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 480) (Set 660)",
+    "question": "Storing 371 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$17.56",
+      "$24.91",
+      "$19.66",
+      "$35.39"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "371 × $0.053 = $19.66 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 190) (Set 661)",
+    "question": "An EC2 instance runs for 738 hours at $0.104/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$76.75",
+      "$92.25",
+      "$118.75",
+      "$46.05"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "738 × $0.104 = $76.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 194) (Set 450) (Set 476) (Set 662)",
+    "question": "An EC2 instance runs for 413 hours at $0.250/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$61.95",
+      "$118.75",
+      "$103.25",
+      "$145.25"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "413 × $0.250 = $103.25."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 190) (Set 663)",
+    "question": "An EC2 instance runs for 610 hours at $0.105/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$106.05",
+      "$64.05",
+      "$38.43",
+      "$79.55"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "610 × $0.105 = $64.05."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 66) (Set 212) (Set 551) (Set 664)",
+    "question": "Storing 353 GB in S3 Standard at $0.016/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$3.55",
+      "$5.65",
+      "$10.17",
+      "$10.90"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "353 × $0.016 = $5.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348) (Set 665)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 354 GB in S3 Standard at $0.012/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$7.65",
+      "$4.25",
+      "$2.15",
+      "$9.50"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "354 × $0.012 = $4.25 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 526 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
+    "options": [
+      "$20.52",
+      "$22.62",
+      "$27.87",
+      "$40.72"
+    ],
+    "answer": 1,
+    "explanation": "526 × $0.043 = $22.62 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 314 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
+    "options": [
+      "$23.74",
+      "$18.44",
+      "$11.09",
+      "$13.19"
+    ],
+    "answer": 3,
+    "explanation": "314 × $0.042 = $13.19 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 252) (Set 666)",
+    "question": "An EC2 instance runs for 544 hours at $0.470/hour. What is the total on-demand compute cost?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$271.18",
+      "$153.41",
+      "$297.68",
+      "$255.68"
     ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "answer": 3,
+    "explanation": "544 × $0.470 = $255.68."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 185) (Set 292) (Set 667)",
+    "question": "Storing 176 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$6.97",
+      "$3.87",
+      "$9.12",
+      "$1.77"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "176 × $0.022 = $3.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 54) (Set 575) (Set 668)",
+    "question": "Storing 332 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$6.57",
+      "$1.55",
+      "$8.90",
+      "$3.65"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "332 × $0.011 = $3.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 186) (Set 218) (Set 270) (Set 669)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 253 GB in S3 Standard at $0.059/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$20.18",
+      "$26.87",
+      "$14.93",
+      "$12.83"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "253 × $0.059 = $14.93 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 670)",
+    "question": "An EC2 instance runs for 547 hours at $0.378/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$124.06",
+      "$248.77",
+      "$222.27",
+      "$206.77"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "547 × $0.378 = $206.77."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 299) (Set 567) (Set 671)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 390 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$14.04",
+      "$19.29",
+      "$11.94",
+      "$25.27"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "390 × $0.036 = $14.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 347) (Set 672)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 500 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$33.30",
+      "$18.50",
+      "$16.40",
+      "$23.75"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "500 × $0.037 = $18.50 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 213) (Set 673)",
+    "question": "Storing 462 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$15.80",
+      "$6.68",
+      "$14.03",
+      "$8.78"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "462 × $0.019 = $8.78 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 166) (Set 674)",
+    "question": "An EC2 instance runs for 526 hours at $0.177/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$108.60",
+      "$93.10",
+      "$55.86",
+      "$135.10"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "526 × $0.177 = $93.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 675)",
+    "question": "An EC2 instance runs for 810 hours at $0.483/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$391.23",
+      "$234.74",
+      "$433.23",
+      "$406.73"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "810 × $0.483 = $391.23."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 492) (Set 676)",
+    "question": "Storing 169 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$5.50",
+      "$7.60",
+      "$13.68",
+      "$12.85"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "169 × $0.045 = $7.60 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 524) (Set 677)",
+    "question": "Storing 296 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$10.95",
+      "$16.20",
+      "$19.71",
+      "$8.85"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "296 × $0.037 = $10.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 342) (Set 445) (Set 678)",
+    "question": "Storing 207 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$8.04",
+      "$10.14",
+      "$18.25",
+      "$15.39"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "207 × $0.049 = $10.14 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 289) (Set 478) (Set 679)",
+    "question": "Storing 307 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$14.74",
+      "$12.64",
+      "$19.99",
+      "$26.53"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "307 × $0.048 = $14.74 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 89) (Set 680)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 190 hours at $0.139/hour. What is the total on-demand compute cost?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$15.85",
+      "$26.41",
+      "$68.41",
+      "$41.91"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 1,
+    "explanation": "190 × $0.139 = $26.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 681)",
+    "question": "An EC2 instance runs for 392 hours at $0.282/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$126.04",
+      "$66.32",
+      "$152.54",
+      "$110.54"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "392 × $0.282 = $110.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 43) (Set 600) (Set 682)",
+    "question": "An EC2 instance runs for 572 hours at $0.331/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$113.60",
+      "$189.33",
+      "$231.33",
+      "$204.83"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "572 × $0.331 = $189.33."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 219) (Set 683)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 599 hours at $0.442/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$306.76",
+      "$158.86",
+      "$264.76",
+      "$280.26"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "599 × $0.442 = $264.76."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 684)",
+    "question": "Storing 447 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$23.33",
+      "$18.21",
+      "$12.96",
+      "$10.86"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "447 × $0.029 = $12.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269) (Set 590) (Set 685)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 495 hours at $0.384/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$205.58",
+      "$114.05",
+      "$232.08",
+      "$190.08"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 3,
+    "explanation": "495 × $0.384 = $190.08."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 224) (Set 240) (Set 415) (Set 686)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 805 hours at $0.453/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$380.17",
+      "$406.67",
+      "$218.80",
+      "$364.67"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "805 × $0.453 = $364.67."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 383) (Set 687)",
+    "question": "An EC2 instance runs for 616 hours at $0.154/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$110.36",
+      "$94.86",
+      "$56.92",
+      "$136.86"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "616 × $0.154 = $94.86."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 300) (Set 688)",
+    "question": "Storing 73 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$6.64",
+      "$1.39",
+      "$-0.71",
+      "$2.50"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "73 × $0.019 = $1.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 689)",
+    "question": "An EC2 instance runs for 113 hours at $0.394/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$60.02",
+      "$26.71",
+      "$44.52",
+      "$86.52"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "113 × $0.394 = $44.52."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 149) (Set 314) (Set 690)",
+    "question": "An EC2 instance runs for 636 hours at $0.144/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$107.08",
+      "$133.58",
+      "$54.95",
+      "$91.58"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "636 × $0.144 = $91.58."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 244) (Set 691)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 216 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$11.66",
+      "$11.73",
+      "$6.48",
+      "$4.38"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "216 × $0.030 = $6.48 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 653) (Set 692)",
+    "question": "An EC2 instance runs for 173 hours at $0.295/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$51.03",
+      "$93.03",
+      "$66.53",
+      "$30.62"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "173 × $0.295 = $51.03."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 517) (Set 693)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 518 hours at $0.505/hour. What is the total on-demand compute cost?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$261.59",
+      "$277.09",
+      "$156.95",
+      "$303.59"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 0,
+    "explanation": "518 × $0.505 = $261.59."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269) (Set 694)",
+    "question": "Storing 237 GB in S3 Standard at $0.050/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$21.33",
+      "$11.85",
+      "$9.75",
+      "$17.10"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "237 × $0.050 = $11.85 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 93) (Set 695)",
+    "question": "Storing 50 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$3.51",
+      "$-0.15",
+      "$1.95",
+      "$7.20"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 2,
+    "explanation": "50 × $0.039 = $1.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 696)",
+    "question": "Storing 261 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$15.03",
+      "$8.35",
+      "$13.60",
+      "$6.25"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "261 × $0.032 = $8.35 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 492) (Set 697)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 339 hours at $0.350/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$160.65",
+      "$118.65",
+      "$71.19",
+      "$134.15"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "339 × $0.350 = $118.65."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 141) (Set 698)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 202 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$19.28",
+      "$8.61",
+      "$15.96",
+      "$10.71"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "202 × $0.053 = $10.71 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 102) (Set 568) (Set 699)",
+    "question": "An EC2 instance runs for 501 hours at $0.051/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$15.33",
+      "$41.05",
+      "$67.55",
+      "$25.55"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "501 × $0.051 = $25.55."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 343) (Set 621) (Set 700)",
+    "question": "Storing 272 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$14.77",
+      "$7.42",
+      "$9.52",
+      "$17.14"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "272 × $0.035 = $9.52 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 343) (Set 621) (Set 701)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 245 hours at $0.534/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$130.83",
+      "$172.83",
+      "$78.50",
+      "$146.33"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "245 × $0.534 = $130.83."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 675) (Set 702)",
+    "question": "An EC2 instance runs for 435 hours at $0.257/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$111.80",
+      "$67.08",
+      "$127.30",
+      "$153.80"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "435 × $0.257 = $111.80."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 77 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
+    "options": [
+      "$6.94",
+      "$1.69",
+      "$-0.41",
+      "$3.04"
+    ],
+    "answer": 1,
+    "explanation": "77 × $0.022 = $1.69 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 703)",
+    "question": "Storing 364 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$16.46",
+      "$33.41",
+      "$18.56",
+      "$23.81"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "364 × $0.051 = $18.56 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 350 hours at $0.270/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$136.50",
+      "$94.50",
+      "$56.70",
+      "$110.00"
+    ],
+    "answer": 1,
+    "explanation": "350 × $0.270 = $94.50."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 434 hours at $0.192/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$125.33",
+      "$50.00",
+      "$98.83",
+      "$83.33"
+    ],
+    "answer": 3,
+    "explanation": "434 × $0.192 = $83.33."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 704)",
+    "question": "Storing 104 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$6.73",
+      "$1.64",
+      "$3.74",
+      "$8.99"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "104 × $0.036 = $3.74 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 199) (Set 553) (Set 705)",
+    "question": "An EC2 instance runs for 412 hours at $0.365/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$165.88",
+      "$150.38",
+      "$192.38",
+      "$90.23"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "412 × $0.365 = $150.38."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 350) (Set 706)",
+    "question": "An EC2 instance runs for 790 hours at $0.407/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$192.92",
+      "$363.53",
+      "$321.53",
+      "$337.03"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "790 × $0.407 = $321.53."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 537) (Set 707)",
+    "question": "Storing 103 GB in S3 Standard at $0.027/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$8.03",
+      "$2.78",
+      "$0.68",
+      "$5.00"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 1,
+    "explanation": "103 × $0.027 = $2.78 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 708)",
+    "question": "Storing 531 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$18.16",
+      "$7.99",
+      "$15.34",
+      "$10.09"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "531 × $0.019 = $10.09 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 20) (Set 709)",
+    "question": "Storing 288 GB in S3 Standard at $0.029/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$6.25",
+      "$13.60",
+      "$15.03",
+      "$8.35"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "288 × $0.029 = $8.35 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 644) (Set 710)",
+    "question": "Storing 306 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$10.45",
+      "$9.36",
+      "$5.20",
+      "$3.10"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "306 × $0.017 = $5.20 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 537) (Set 711)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 517 hours at $0.094/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$48.60",
+      "$64.10",
+      "$90.60",
+      "$29.16"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "517 × $0.094 = $48.60."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 20) (Set 168) (Set 712)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 351 hours at $0.244/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$85.64",
+      "$51.38",
+      "$101.14",
+      "$127.64"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "351 × $0.244 = $85.64."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 349) (Set 713)",
+    "question": "Storing 57 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$0.29",
+      "$7.64",
+      "$4.30",
+      "$2.39"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "57 × $0.042 = $2.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 142) (Set 144) (Set 408) (Set 714)",
+    "question": "An EC2 instance runs for 593 hours at $0.299/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$192.81",
+      "$219.31",
+      "$106.39",
+      "$177.31"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "593 × $0.299 = $177.31."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 651 hours at $0.451/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$309.10",
+      "$176.16",
+      "$293.60",
+      "$335.60"
+    ],
+    "answer": 2,
+    "explanation": "651 × $0.451 = $293.60."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 138) (Set 715)",
+    "question": "Storing 92 GB in S3 Standard at $0.016/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$-0.63",
+      "$2.65",
+      "$1.47",
+      "$6.72"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "92 × $0.016 = $1.47 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 120) (Set 187) (Set 716)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 381 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$10.58",
+      "$3.23",
+      "$9.59",
+      "$5.33"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "381 × $0.014 = $5.33 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 169) (Set 279) (Set 717)",
+    "question": "Storing 235 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$19.87",
+      "$16.29",
+      "$8.94",
+      "$11.04"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "235 × $0.047 = $11.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 316) (Set 718)",
+    "question": "Storing 181 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$14.12",
+      "$15.97",
+      "$6.77",
+      "$8.87"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "181 × $0.049 = $8.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 306) (Set 719)",
+    "question": "Storing 397 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$21.84",
+      "$19.74",
+      "$27.09",
+      "$39.31"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "397 × $0.055 = $21.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 299) (Set 567) (Set 720)",
+    "question": "An EC2 instance runs for 516 hours at $0.064/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$48.52",
+      "$19.81",
+      "$33.02",
+      "$75.02"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "516 × $0.064 = $33.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 721)",
+    "question": "An EC2 instance runs for 446 hours at $0.348/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$197.21",
+      "$93.13",
+      "$155.21",
+      "$170.71"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "446 × $0.348 = $155.21."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 531 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
+    "options": [
+      "$50.65",
+      "$28.14",
+      "$26.04",
+      "$33.39"
+    ],
+    "answer": 1,
+    "explanation": "531 × $0.053 = $28.14 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339) (Set 358) (Set 536) (Set 722)",
+    "question": "An EC2 instance runs for 568 hours at $0.441/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$250.49",
+      "$292.49",
+      "$150.29",
+      "$265.99"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "568 × $0.441 = $250.49."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 196) (Set 723)",
+    "question": "An EC2 instance runs for 344 hours at $0.155/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$31.99",
+      "$95.32",
+      "$53.32",
+      "$68.82"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "344 × $0.155 = $53.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 36) (Set 382) (Set 724)",
+    "question": "Storing 178 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$-0.14",
+      "$1.96",
+      "$7.21",
+      "$3.53"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "178 × $0.011 = $1.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 255) (Set 493) (Set 725)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 325 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$9.92",
+      "$17.27",
+      "$21.64",
+      "$12.02"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "325 × $0.037 = $12.02 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 315) (Set 726)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 403 hours at $0.104/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$25.15",
+      "$41.91",
+      "$83.91",
+      "$57.41"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 1,
+    "explanation": "403 × $0.104 = $41.91."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 115) (Set 128) (Set 727)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 313 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$11.58",
+      "$20.84",
+      "$9.48",
+      "$16.83"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "313 × $0.037 = $11.58 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 102) (Set 568) (Set 728)",
+    "question": "An EC2 instance runs for 371 hours at $0.129/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$47.86",
+      "$63.36",
+      "$28.72",
+      "$89.86"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "371 × $0.129 = $47.86."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 729)",
+    "question": "Storing 157 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$3.67",
+      "$-0.06",
+      "$2.04",
+      "$7.29"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "157 × $0.013 = $2.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 147) (Set 730)",
+    "question": "Storing 519 GB in S3 Standard at $0.016/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$14.94",
+      "$6.20",
+      "$13.55",
+      "$8.30"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 3,
+    "explanation": "519 × $0.016 = $8.30 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 402) (Set 731)",
+    "question": "Storing 267 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$20.74",
+      "$13.39",
+      "$27.88",
+      "$15.49"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "267 × $0.058 = $15.49 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 203) (Set 732)",
+    "question": "An EC2 instance runs for 715 hours at $0.351/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$266.46",
+      "$292.96",
+      "$150.58",
+      "$250.96"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "715 × $0.351 = $250.96."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 589) (Set 733)",
+    "question": "Storing 185 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$8.40",
+      "$1.05",
+      "$5.67",
+      "$3.15"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "185 × $0.017 = $3.15 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 139) (Set 734)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 62 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$6.06",
+      "$1.46",
+      "$-1.29",
+      "$0.81"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "62 × $0.013 = $0.81 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160) (Set 735)",
+    "question": "Storing 328 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$21.32",
+      "$16.07",
+      "$28.93",
+      "$13.97"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "328 × $0.049 = $16.07 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 261) (Set 320) (Set 736)",
+    "question": "Storing 474 GB in S3 Standard at $0.035/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$14.49",
+      "$21.84",
+      "$29.86",
+      "$16.59"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "474 × $0.035 = $16.59 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 696) (Set 737)",
+    "question": "Storing 541 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$13.37",
+      "$8.12",
+      "$6.02",
+      "$14.62"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "541 × $0.015 = $8.12 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 373) (Set 606) (Set 738)",
+    "question": "An EC2 instance runs for 334 hours at $0.237/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$47.50",
+      "$121.16",
+      "$79.16",
+      "$94.66"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "334 × $0.237 = $79.16."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 505) (Set 739)",
+    "question": "Storing 93 GB in S3 Standard at $0.050/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$4.65",
+      "$8.37",
+      "$2.55",
+      "$9.90"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "93 × $0.050 = $4.65 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 172) (Set 740)",
+    "question": "An EC2 instance runs for 198 hours at $0.264/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$94.27",
+      "$67.77",
+      "$52.27",
+      "$31.36"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "198 × $0.264 = $52.27."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 79 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
+    "options": [
+      "$4.55",
+      "$7.78",
+      "$2.53",
+      "$0.43"
+    ],
+    "answer": 2,
+    "explanation": "79 × $0.032 = $2.53 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 741)",
+    "question": "An EC2 instance runs for 648 hours at $0.077/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$91.90",
+      "$65.40",
+      "$49.90",
+      "$29.94"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "648 × $0.077 = $49.90."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 742)",
+    "question": "An EC2 instance runs for 503 hours at $0.369/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$201.11",
+      "$111.37",
+      "$185.61",
+      "$227.61"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "503 × $0.369 = $185.61."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 106) (Set 743)",
+    "question": "Storing 97 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$4.75",
+      "$10.00",
+      "$2.65",
+      "$8.55"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "97 × $0.049 = $4.75 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 45) (Set 534) (Set 744)",
+    "question": "Storing 147 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
+    "options": [
+      "$0.55",
+      "$2.65",
+      "$4.77",
+      "$7.90"
+    ],
+    "answer": 1,
+    "explanation": "147 × $0.018 = $2.65 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 577 hours at $0.245/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$84.82",
+      "$156.87",
+      "$141.37",
+      "$183.37"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "577 × $0.245 = $141.37."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 188) (Set 745)",
+    "question": "An EC2 instance runs for 453 hours at $0.241/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$65.50",
+      "$109.17",
+      "$151.17",
+      "$124.67"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "453 × $0.241 = $109.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 286) (Set 746)",
+    "question": "Storing 411 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$10.64",
+      "$17.99",
+      "$22.93",
+      "$12.74"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 3,
+    "explanation": "411 × $0.031 = $12.74 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 196) (Set 747)",
+    "question": "An EC2 instance runs for 752 hours at $0.088/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$81.68",
+      "$66.18",
+      "$108.18",
+      "$39.71"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "752 × $0.088 = $66.18."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 748)",
+    "question": "An EC2 instance runs for 166 hours at $0.135/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$22.41",
+      "$13.45",
+      "$64.41",
+      "$37.91"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "166 × $0.135 = $22.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 177) (Set 375) (Set 538) (Set 749)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 674 hours at $0.319/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$257.01",
+      "$129.01",
+      "$215.01",
+      "$230.51"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "674 × $0.319 = $215.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 750)",
+    "question": "An EC2 instance runs for 125 hours at $0.242/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$30.25",
+      "$72.25",
+      "$45.75",
+      "$18.15"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "125 × $0.242 = $30.25."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 20) (Set 168) (Set 712) (Set 751)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 765 hours at $0.519/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$238.22",
+      "$439.04",
+      "$412.54",
+      "$397.04"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "765 × $0.519 = $397.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 336) (Set 752)",
+    "question": "An EC2 instance runs for 210 hours at $0.516/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$65.02",
+      "$150.36",
+      "$123.86",
+      "$108.36"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "210 × $0.516 = $108.36."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 186 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
+    "options": [
+      "$4.60",
+      "$6.70",
+      "$12.06",
+      "$11.95"
+    ],
+    "answer": 1,
+    "explanation": "186 × $0.036 = $6.70 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 135) (Set 753)",
+    "question": "Storing 486 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$18.80",
+      "$37.62",
+      "$26.15",
+      "$20.90"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "486 × $0.043 = $20.90 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 209) (Set 531) (Set 754)",
+    "question": "Storing 476 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$15.43",
+      "$6.47",
+      "$13.82",
+      "$8.57"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "476 × $0.018 = $8.57 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 363) (Set 755)",
+    "question": "An EC2 instance runs for 451 hours at $0.343/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$154.69",
+      "$196.69",
+      "$170.19",
+      "$92.81"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "451 × $0.343 = $154.69."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 78) (Set 334) (Set 756)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 477 hours at $0.268/hour. What is the total on-demand compute cost?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$169.84",
+      "$143.34",
+      "$76.70",
+      "$127.84"
     ],
-    "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "answer": 3,
+    "explanation": "477 × $0.268 = $127.84."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 757)",
+    "question": "Storing 104 GB in S3 Standard at $0.010/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$-1.06",
+      "$1.04",
+      "$1.87",
+      "$6.29"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "104 × $0.010 = $1.04 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 59) (Set 758)",
+    "question": "An EC2 instance runs for 799 hours at $0.416/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$199.43",
+      "$347.88",
+      "$332.38",
+      "$374.38"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "799 × $0.416 = $332.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 289) (Set 331) (Set 759)",
+    "question": "Storing 460 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$27.33",
+      "$39.74",
+      "$22.08",
+      "$19.98"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 2,
+    "explanation": "460 × $0.048 = $22.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 351) (Set 760)",
+    "question": "Storing 361 GB in S3 Standard at $0.048/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$31.19",
+      "$17.33",
+      "$22.58",
+      "$15.23"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "361 × $0.048 = $17.33 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 518) (Set 761)",
+    "question": "An EC2 instance runs for 595 hours at $0.504/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$315.38",
+      "$341.88",
+      "$179.93",
+      "$299.88"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "595 × $0.504 = $299.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 89) (Set 762)",
+    "question": "Storing 243 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$6.12",
+      "$3.40",
+      "$1.30",
+      "$8.65"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 1,
+    "explanation": "243 × $0.014 = $3.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 299) (Set 763)",
-    "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
-    ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 764)",
+    "question": "An EC2 instance runs for 532 hours at $0.511/hour. What is the total on-demand compute cost?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$313.85",
+      "$287.35",
+      "$163.11",
+      "$271.85"
     ],
     "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "explanation": "532 × $0.511 = $271.85."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 741) (Set 765)",
+    "question": "An EC2 instance runs for 715 hours at $0.420/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$342.30",
+      "$315.80",
+      "$300.30",
+      "$180.18"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "715 × $0.420 = $300.30."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348) (Set 665) (Set 766)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 216 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$5.44",
+      "$3.02",
+      "$8.27",
+      "$0.92"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "216 × $0.014 = $3.02 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 170) (Set 435) (Set 767)",
+    "question": "An EC2 instance runs for 643 hours at $0.308/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$198.04",
+      "$213.54",
+      "$118.82",
+      "$240.04"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "643 × $0.308 = $198.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 768)",
+    "question": "Storing 201 GB in S3 Standard at $0.049/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$15.10",
+      "$9.85",
+      "$17.73",
+      "$7.75"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "201 × $0.049 = $9.85 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 589) (Set 769)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 316 hours at $0.488/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$154.21",
+      "$169.71",
+      "$196.21",
+      "$92.53"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "316 × $0.488 = $154.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 770)",
+    "question": "An EC2 instance runs for 657 hours at $0.331/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$130.48",
+      "$217.47",
+      "$259.47",
+      "$232.97"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "657 × $0.331 = $217.47."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 729) (Set 771)",
+    "question": "Storing 328 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$13.32",
+      "$20.67",
+      "$27.76",
+      "$15.42"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "328 × $0.047 = $15.42 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 772)",
+    "question": "An EC2 instance runs for 383 hours at $0.460/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$218.18",
+      "$105.71",
+      "$176.18",
+      "$191.68"
+    ],
+    "answer": 2,
+    "explanation": "383 × $0.460 = $176.18."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 428 GB in S3 Standard at $0.039/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$14.59",
+      "$30.04",
+      "$21.94",
+      "$16.69"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "428 × $0.039 = $16.69 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 68) (Set 171) (Set 773)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 361 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$4.40",
+      "$11.75",
+      "$11.70",
+      "$6.50"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "361 × $0.018 = $6.50 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 317) (Set 774)",
+    "question": "An EC2 instance runs for 555 hours at $0.198/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$151.89",
+      "$65.93",
+      "$109.89",
+      "$125.39"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "555 × $0.198 = $109.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 92) (Set 775)",
+    "question": "An EC2 instance runs for 752 hours at $0.395/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$297.04",
+      "$339.04",
+      "$312.54",
+      "$178.22"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "752 × $0.395 = $297.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 776)",
+    "question": "An EC2 instance runs for 404 hours at $0.157/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$38.06",
+      "$63.43",
+      "$78.93",
+      "$105.43"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "404 × $0.157 = $63.43."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 366) (Set 777)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 436 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$17.52",
+      "$19.62",
+      "$35.32",
+      "$24.87"
     ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 1,
+    "explanation": "436 × $0.045 = $19.62 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 228) (Set 465) (Set 609) (Set 778)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 249 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$14.80",
+      "$8.22",
+      "$13.47",
+      "$6.12"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "249 × $0.033 = $8.22 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 413) (Set 561) (Set 576) (Set 779)",
+    "question": "An EC2 instance runs for 377 hours at $0.053/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$11.99",
+      "$35.48",
+      "$19.98",
+      "$61.98"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "377 × $0.053 = $19.98."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 522) (Set 544) (Set 780)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 397 hours at $0.285/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$155.14",
+      "$128.64",
+      "$67.88",
+      "$113.14"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "397 × $0.285 = $113.14."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 324) (Set 781)",
+    "question": "An EC2 instance runs for 259 hours at $0.348/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$132.13",
+      "$90.13",
+      "$54.08",
+      "$105.63"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "259 × $0.348 = $90.13."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 480) (Set 633) (Set 782)",
+    "question": "Storing 159 GB in S3 Standard at $0.047/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$13.45",
+      "$7.47",
+      "$5.37",
+      "$12.72"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "159 × $0.047 = $7.47 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 783)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 455 hours at $0.428/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$194.74",
+      "$116.84",
+      "$236.74",
+      "$210.24"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "455 × $0.428 = $194.74."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 394) (Set 784)",
+    "question": "An EC2 instance runs for 786 hours at $0.276/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$258.94",
+      "$130.16",
+      "$216.94",
+      "$232.44"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "786 × $0.276 = $216.94."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 785)",
+    "question": "An EC2 instance runs for 302 hours at $0.450/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$151.40",
+      "$81.54",
+      "$177.90",
+      "$135.90"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "302 × $0.450 = $135.90."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 97) (Set 786)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 150 hours at $0.304/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$45.60",
+      "$61.10",
+      "$87.60",
+      "$27.36"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "150 × $0.304 = $45.60."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 398) (Set 605) (Set 787)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 800 hours at $0.422/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$353.10",
+      "$337.60",
+      "$379.60",
+      "$202.56"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "800 × $0.422 = $337.60."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 97) (Set 786) (Set 788)",
+    "question": "Storing 467 GB in S3 Standard at $0.019/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$6.77",
+      "$8.87",
+      "$14.12",
+      "$15.97"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "467 × $0.019 = $8.87 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 79) (Set 103) (Set 789)",
+    "question": "An EC2 instance runs for 541 hours at $0.180/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$58.43",
+      "$97.38",
+      "$139.38",
+      "$112.88"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 184) (Set 790)",
-    "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
-    ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "541 × $0.180 = $97.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 176) (Set 791)",
+    "question": "An EC2 instance runs for 422 hours at $0.154/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$64.99",
+      "$106.99",
+      "$80.49",
+      "$38.99"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "422 × $0.154 = $64.99."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 474) (Set 792)",
+    "question": "An EC2 instance runs for 628 hours at $0.235/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$147.58",
+      "$189.58",
+      "$163.08",
+      "$88.55"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "628 × $0.235 = $147.58."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 336) (Set 793)",
+    "question": "An EC2 instance runs for 302 hours at $0.230/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$111.46",
+      "$84.96",
+      "$41.68",
+      "$69.46"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "302 × $0.230 = $69.46."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 794)",
+    "question": "Storing 325 GB in S3 Standard at $0.024/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$7.80",
+      "$5.70",
+      "$14.04",
+      "$13.05"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "325 × $0.024 = $7.80 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 155) (Set 795)",
+    "question": "An EC2 instance runs for 114 hours at $0.180/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$12.31",
+      "$62.52",
+      "$36.02",
+      "$20.52"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "114 × $0.180 = $20.52."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 796)",
+    "question": "Storing 345 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$10.70",
+      "$8.60",
+      "$15.95",
+      "$19.26"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "345 × $0.031 = $10.70 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 98) (Set 313) (Set 321) (Set 797)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 654 hours at $0.097/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$78.94",
+      "$63.44",
+      "$38.06",
+      "$105.44"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "654 × $0.097 = $63.44."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 798)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 191 GB in S3 Standard at $0.040/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$5.54",
+      "$12.89",
+      "$7.64",
+      "$13.75"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "191 × $0.040 = $7.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 799)",
+    "question": "Storing 510 GB in S3 Standard at $0.021/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$10.71",
+      "$15.96",
+      "$19.28",
+      "$8.61"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "510 × $0.021 = $10.71 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 281) (Set 307) (Set 344) (Set 800)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 293 hours at $0.312/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$91.42",
+      "$54.85",
+      "$106.92",
+      "$133.42"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "293 × $0.312 = $91.42."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 137) (Set 801)",
+    "question": "An EC2 instance runs for 222 hours at $0.371/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$82.36",
+      "$49.42",
+      "$124.36",
+      "$97.86"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "222 × $0.371 = $82.36."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 802)",
+    "question": "Storing 68 GB in S3 Standard at $0.055/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$3.74",
+      "$8.99",
+      "$1.64",
+      "$6.73"
     ],
-    "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "answer": 0,
+    "explanation": "68 × $0.055 = $3.74 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 316) (Set 803)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 252 hours at $0.136/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$49.77",
+      "$34.27",
+      "$20.56",
+      "$76.27"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "252 × $0.136 = $34.27."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 23) (Set 310) (Set 804)",
+    "question": "An EC2 instance runs for 791 hours at $0.519/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$410.53",
+      "$426.03",
+      "$452.53",
+      "$246.32"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "791 × $0.519 = $410.53."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 491) (Set 805)",
+    "question": "An EC2 instance runs for 178 hours at $0.434/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$119.25",
+      "$92.75",
+      "$77.25",
+      "$46.35"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "178 × $0.434 = $77.25."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 524) (Set 806)",
+    "question": "Storing 267 GB in S3 Standard at $0.026/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$4.84",
+      "$6.94",
+      "$12.19",
+      "$12.49"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "267 × $0.026 = $6.94 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 342) (Set 445) (Set 807)",
+    "question": "Storing 170 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$15.91",
+      "$14.09",
+      "$8.84",
+      "$6.74"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "170 × $0.052 = $8.84 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 312 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
+    "options": [
+      "$11.54",
+      "$20.77",
+      "$16.79",
+      "$9.44"
+    ],
+    "answer": 0,
+    "explanation": "312 × $0.037 = $11.54 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274) (Set 323) (Set 808)",
+    "question": "An EC2 instance runs for 515 hours at $0.297/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$152.95",
+      "$194.95",
+      "$168.45",
+      "$91.77"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "515 × $0.297 = $152.95."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 809)",
+    "question": "An EC2 instance runs for 599 hours at $0.487/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$291.71",
+      "$333.71",
+      "$307.21",
+      "$175.03"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "599 × $0.487 = $291.71."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 89) (Set 810)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 598 hours at $0.198/hour. What is the total on-demand compute cost?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$71.04",
+      "$160.40",
+      "$133.90",
+      "$118.40"
     ],
     "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "explanation": "598 × $0.198 = $118.40."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 57) (Set 811)",
+    "question": "An EC2 instance runs for 414 hours at $0.236/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$113.20",
+      "$139.70",
+      "$58.62",
+      "$97.70"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "414 × $0.236 = $97.70."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 228) (Set 309) (Set 812)",
+    "question": "An EC2 instance runs for 287 hours at $0.071/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$35.88",
+      "$20.38",
+      "$12.23",
+      "$62.38"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "287 × $0.071 = $20.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 585) (Set 611) (Set 813)",
+    "question": "An EC2 instance runs for 324 hours at $0.463/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$150.01",
+      "$90.01",
+      "$165.51",
+      "$192.01"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "324 × $0.463 = $150.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 413) (Set 561) (Set 814)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 290 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$18.59",
+      "$24.01",
+      "$11.24",
+      "$13.34"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "290 × $0.046 = $13.34 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 474) (Set 815)",
+    "question": "An EC2 instance runs for 627 hours at $0.303/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$189.98",
+      "$231.98",
+      "$205.48",
+      "$113.99"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "627 × $0.303 = $189.98."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 453) (Set 816)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 650 hours at $0.234/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$91.26",
+      "$152.10",
+      "$167.60",
+      "$194.10"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "650 × $0.234 = $152.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 387) (Set 817)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 687 hours at $0.430/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$177.25",
+      "$337.41",
+      "$295.41",
+      "$310.91"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "687 × $0.430 = $295.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 480) (Set 660) (Set 818)",
+    "question": "Storing 434 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$29.68",
+      "$21.74",
+      "$14.39",
+      "$16.49"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "434 × $0.038 = $16.49 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 64) (Set 819)",
+    "question": "An EC2 instance runs for 624 hours at $0.301/hour. What is the total on-demand compute cost?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$187.82",
+      "$203.32",
+      "$112.69",
+      "$229.82"
     ],
     "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "explanation": "624 × $0.301 = $187.82."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 637) (Set 820)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 395 GB in S3 Standard at $0.014/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$9.95",
+      "$10.78",
+      "$3.43",
+      "$5.53"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "395 × $0.014 = $5.53 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 785) (Set 821)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 142 GB in S3 Standard at $0.056/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$13.20",
+      "$14.31",
+      "$5.85",
+      "$7.95"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "142 × $0.056 = $7.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 566) (Set 822)",
+    "question": "Storing 132 GB in S3 Standard at $0.045/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$5.94",
+      "$10.69",
+      "$11.19",
+      "$3.84"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "132 × $0.045 = $5.94 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 413) (Set 561) (Set 576) (Set 779) (Set 823)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 130 GB in S3 Standard at $0.059/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$5.57",
+      "$12.92",
+      "$13.81",
+      "$7.67"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "130 × $0.059 = $7.67 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 824)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 151 GB in S3 Standard at $0.042/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$11.59",
+      "$6.34",
+      "$4.24",
+      "$11.41"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "151 × $0.042 = $6.34 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 825)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 154 hours at $0.509/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$93.89",
+      "$120.39",
+      "$47.03",
+      "$78.39"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "154 × $0.509 = $78.39."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 30) (Set 826)",
+    "question": "Storing 355 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$5.71",
+      "$13.06",
+      "$14.06",
+      "$7.81"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "355 × $0.022 = $7.81 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 203) (Set 732) (Set 827)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 170 GB in S3 Standard at $0.040/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$12.05",
+      "$4.70",
+      "$12.24",
+      "$6.80"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "170 × $0.040 = $6.80 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 165) (Set 545) (Set 828)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 249 GB in S3 Standard at $0.040/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$9.96",
+      "$7.86",
+      "$17.93",
+      "$15.21"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "249 × $0.040 = $9.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 829)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 414 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$17.67",
+      "$22.36",
+      "$12.42",
+      "$10.32"
     ],
     "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "414 × $0.030 = $12.42 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 589) (Set 830)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 605 hours at $0.133/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$80.47",
+      "$95.97",
+      "$122.47",
+      "$48.28"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "605 × $0.133 = $80.47."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 42) (Set 831)",
+    "question": "Storing 262 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$19.14",
+      "$25.00",
+      "$13.89",
+      "$11.79"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 293) (Set 832)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "262 × $0.053 = $13.89 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 833)",
+    "question": "Storing 277 GB in S3 Standard at $0.054/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$26.93",
+      "$14.96",
+      "$12.86",
+      "$20.21"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "277 × $0.054 = $14.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 63) (Set 291) (Set 373) (Set 510) (Set 555) (Set 834)",
+    "question": "An EC2 instance runs for 800 hours at $0.155/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$124.00",
+      "$166.00",
+      "$74.40",
+      "$139.50"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "800 × $0.155 = $124.00."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 224) (Set 240) (Set 415) (Set 835)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 375 hours at $0.106/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$55.25",
+      "$39.75",
+      "$81.75",
+      "$23.85"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "375 × $0.106 = $39.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 143) (Set 235) (Set 338) (Set 836)",
+    "question": "An EC2 instance runs for 287 hours at $0.097/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$43.34",
+      "$69.84",
+      "$16.70",
+      "$27.84"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "287 × $0.097 = $27.84."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 326) (Set 525) (Set 546) (Set 837)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 350 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$8.75",
+      "$14.00",
+      "$6.65",
+      "$15.75"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "350 × $0.025 = $8.75 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 69) (Set 838)",
+    "question": "Storing 190 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$16.27",
+      "$8.92",
+      "$19.84",
+      "$11.02"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "190 × $0.058 = $11.02 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 839)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 124 hours at $0.153/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$18.97",
+      "$60.97",
+      "$11.38",
+      "$34.47"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "124 × $0.153 = $18.97."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 130) (Set 158) (Set 840)",
+    "question": "An EC2 instance runs for 801 hours at $0.411/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$197.53",
+      "$344.71",
+      "$329.21",
+      "$371.21"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "801 × $0.411 = $329.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 367) (Set 841)",
+    "question": "An EC2 instance runs for 233 hours at $0.431/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$60.25",
+      "$100.42",
+      "$115.92",
+      "$142.42"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "233 × $0.431 = $100.42."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 492) (Set 676) (Set 842)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 459 hours at $0.547/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$293.07",
+      "$251.07",
+      "$266.57",
+      "$150.64"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "459 × $0.547 = $251.07."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 51) (Set 124) (Set 304) (Set 511) (Set 843)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 595 hours at $0.237/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$84.61",
+      "$141.01",
+      "$183.01",
+      "$156.51"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "595 × $0.237 = $141.01."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 109) (Set 122) (Set 844)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 148 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$9.05",
+      "$10.28",
+      "$5.03",
+      "$2.93"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "148 × $0.034 = $5.03 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 316) (Set 803) (Set 845)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 592 hours at $0.191/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$128.57",
+      "$113.07",
+      "$155.07",
+      "$67.84"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "592 × $0.191 = $113.07."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 296) (Set 380) (Set 846)",
+    "question": "Storing 387 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$9.51",
+      "$2.16",
+      "$7.67",
+      "$4.26"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 3,
+    "explanation": "387 × $0.011 = $4.26 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 277) (Set 586) (Set 847)",
+    "question": "An EC2 instance runs for 195 hours at $0.484/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$136.38",
+      "$94.38",
+      "$56.63",
+      "$109.88"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "195 × $0.484 = $94.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Which cloud service model provides OS, runtime, and tools directly? (Set 848)",
+    "question": "Storing 514 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "FaaS",
-      "SaaS",
-      "IaaS",
-      "PaaS (Platform as a Service)"
+      "$12.85",
+      "$18.10",
+      "$23.13",
+      "$10.75"
     ],
-    "answer": 3,
-    "explanation": "PaaS lets you run apps without managing the OS."
+    "answer": 0,
+    "explanation": "514 × $0.025 = $12.85 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 47) (Set 849)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 119 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$9.30",
+      "$1.95",
+      "$4.05",
+      "$7.29"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "119 × $0.034 = $4.05 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 850)",
+    "question": "Storing 242 GB in S3 Standard at $0.021/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$2.98",
+      "$9.14",
+      "$10.33",
+      "$5.08"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "242 × $0.021 = $5.08 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 528) (Set 607) (Set 851)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 470 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$11.75",
+      "$9.65",
+      "$21.15",
+      "$17.00"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "470 × $0.025 = $11.75 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 653) (Set 692) (Set 852)",
+    "question": "An EC2 instance runs for 287 hours at $0.192/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$55.10",
+      "$70.60",
+      "$33.06",
+      "$97.10"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "287 × $0.192 = $55.10."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 148) (Set 175) (Set 400) (Set 521) (Set 853)",
+    "question": "An EC2 instance runs for 450 hours at $0.073/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$48.35",
+      "$19.71",
+      "$74.85",
+      "$32.85"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "450 × $0.073 = $32.85."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 15) (Set 750) (Set 854)",
+    "question": "An EC2 instance runs for 615 hours at $0.062/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$53.63",
+      "$22.88",
+      "$80.13",
+      "$38.13"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "615 × $0.062 = $38.13."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 153) (Set 855)",
+    "question": "Storing 374 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$8.60",
+      "$15.48",
+      "$13.85",
+      "$6.50"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "374 × $0.023 = $8.60 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 856)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 857)",
+    "question": "An EC2 instance runs for 817 hours at $0.500/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$408.50",
+      "$450.50",
+      "$245.10",
+      "$424.00"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 0,
+    "explanation": "817 × $0.500 = $408.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 141) (Set 698) (Set 858)",
+    "question": "An EC2 instance runs for 144 hours at $0.085/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$12.24",
+      "$7.34",
+      "$27.74",
+      "$54.24"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "144 × $0.085 = $12.24."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 76) (Set 529) (Set 859)",
+    "question": "An EC2 instance runs for 212 hours at $0.507/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$149.48",
+      "$122.98",
+      "$64.49",
+      "$107.48"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "212 × $0.507 = $107.48."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 260) (Set 541) (Set 860)",
+    "question": "Storing 427 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$11.14",
+      "$18.49",
+      "$23.83",
+      "$13.24"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "427 × $0.031 = $13.24 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 274) (Set 356) (Set 861)",
+    "question": "An EC2 instance runs for 354 hours at $0.394/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$181.48",
+      "$139.48",
+      "$154.98",
+      "$83.69"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 1,
+    "explanation": "354 × $0.394 = $139.48."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 30) (Set 862)",
+    "question": "Storing 216 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$11.23",
+      "$16.48",
+      "$20.21",
+      "$9.13"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 0,
+    "explanation": "216 × $0.052 = $11.23 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 347) (Set 672) (Set 863)",
+    "question": "An EC2 instance runs for 160 hours at $0.248/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$23.81",
+      "$39.68",
+      "$81.68",
+      "$55.18"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "160 × $0.248 = $39.68."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 53) (Set 90) (Set 336) (Set 752) (Set 864)",
-    "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
-    ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 113) (Set 237) (Set 656) (Set 865)",
+    "question": "An EC2 instance runs for 310 hours at $0.445/hour. What is the total on-demand compute cost?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$137.95",
+      "$153.45",
+      "$179.95",
+      "$82.77"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "310 × $0.445 = $137.95."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 52) (Set 286) (Set 746) (Set 866)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 617 hours at $0.500/hour. What is the total on-demand compute cost?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$350.50",
+      "$308.50",
+      "$324.00",
+      "$185.10"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "617 × $0.500 = $308.50."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 537) (Set 711) (Set 867)",
+    "question": "Storing 74 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$8.06",
+      "$0.71",
+      "$5.06",
+      "$2.81"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 3,
+    "explanation": "74 × $0.038 = $2.81 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 115) (Set 580) (Set 868)",
+    "question": "An EC2 instance runs for 557 hours at $0.380/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$211.66",
+      "$127.00",
+      "$227.16",
+      "$253.66"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "557 × $0.380 = $211.66."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 117) (Set 869)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 589 hours at $0.072/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$84.41",
+      "$42.41",
+      "$25.45",
+      "$57.91"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 1,
+    "explanation": "589 × $0.072 = $42.41."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 490) (Set 870)",
+    "question": "Storing 344 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$35.91",
+      "$25.20",
+      "$19.95",
+      "$17.85"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "344 × $0.058 = $19.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 384) (Set 871)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 639 hours at $0.410/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$277.49",
+      "$261.99",
+      "$303.99",
+      "$157.19"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "639 × $0.410 = $261.99."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 490) (Set 870) (Set 872)",
+    "question": "Storing 237 GB in S3 Standard at $0.037/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$14.02",
+      "$15.79",
+      "$6.67",
+      "$8.77"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "237 × $0.037 = $8.77 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 48) (Set 480) (Set 633) (Set 873)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 576 hours at $0.291/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$183.12",
+      "$209.62",
+      "$100.57",
+      "$167.62"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "576 × $0.291 = $167.62."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160) (Set 874)",
+    "question": "Storing 68 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$1.78",
+      "$3.88",
+      "$9.13",
+      "$6.98"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 741) (Set 875)",
-    "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
-    ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "68 × $0.057 = $3.88 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 49) (Set 876)",
+    "question": "An EC2 instance runs for 562 hours at $0.119/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$40.13",
+      "$82.38",
+      "$108.88",
+      "$66.88"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 3,
+    "explanation": "562 × $0.119 = $66.88."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 398) (Set 605) (Set 877)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 486 hours at $0.091/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$86.23",
+      "$59.73",
+      "$26.54",
+      "$44.23"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "486 × $0.091 = $44.23."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 878)",
+    "question": "Storing 119 GB in S3 Standard at $0.025/GB/month costs how much monthly?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$5.36",
+      "$2.98",
+      "$8.23",
+      "$0.88"
     ],
     "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "explanation": "119 × $0.025 = $2.98 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 265) (Set 460) (Set 785) (Set 821) (Set 879)",
+    "question": "An EC2 instance runs for 444 hours at $0.054/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$23.98",
+      "$39.48",
+      "$65.98",
+      "$14.39"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "444 × $0.054 = $23.98."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 404) (Set 880)",
+    "question": "An EC2 instance runs for 631 hours at $0.438/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$276.38",
+      "$291.88",
+      "$165.83",
+      "$318.38"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "631 × $0.438 = $276.38."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 102) (Set 568) (Set 699) (Set 881)",
+    "question": "An EC2 instance runs for 458 hours at $0.164/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$75.11",
+      "$90.61",
+      "$45.07",
+      "$117.11"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "458 × $0.164 = $75.11."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 608) (Set 882)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 52 GB in S3 Standard at $0.056/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$8.16",
+      "$5.24",
+      "$0.81",
+      "$2.91"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "52 × $0.056 = $2.91 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 883)",
+    "question": "An EC2 instance runs for 389 hours at $0.430/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$209.27",
+      "$182.77",
+      "$167.27",
+      "$100.36"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "389 × $0.430 = $167.27."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 353) (Set 884)",
+    "question": "An EC2 instance runs for 621 hours at $0.111/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$110.93",
+      "$41.36",
+      "$84.43",
+      "$68.93"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "621 × $0.111 = $68.93."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 467) (Set 885)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 435 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$13.05",
+      "$18.30",
+      "$23.49",
+      "$10.95"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "435 × $0.030 = $13.05 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 886)",
+    "question": "Storing 539 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$21.08",
+      "$28.43",
+      "$23.18",
+      "$41.72"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "539 × $0.043 = $23.18 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 887)",
+    "question": "An EC2 instance runs for 548 hours at $0.308/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$184.28",
+      "$168.78",
+      "$101.27",
+      "$210.78"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 1,
+    "explanation": "548 × $0.308 = $168.78."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 195) (Set 888)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 280 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$15.12",
+      "$8.40",
+      "$6.30",
+      "$13.65"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "280 × $0.030 = $8.40 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 374) (Set 889)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 324 GB in S3 Standard at $0.053/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$17.17",
+      "$30.91",
+      "$22.42",
+      "$15.07"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "324 × $0.053 = $17.17 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 271) (Set 283) (Set 890)",
+    "question": "An EC2 instance runs for 533 hours at $0.248/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$174.18",
+      "$147.68",
+      "$79.31",
+      "$132.18"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "533 × $0.248 = $132.18."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 193) (Set 221) (Set 473) (Set 891)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 525 hours at $0.526/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$165.69",
+      "$276.15",
+      "$291.65",
+      "$318.15"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "525 × $0.526 = $276.15."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 892)",
+    "question": "An EC2 instance runs for 249 hours at $0.166/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$56.83",
+      "$41.33",
+      "$83.33",
+      "$24.80"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "249 × $0.166 = $41.33."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 26) (Set 75) (Set 123) (Set 412) (Set 893)",
+    "question": "Storing 476 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$16.20",
+      "$19.71",
+      "$10.95",
+      "$8.85"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 2,
+    "explanation": "476 × $0.023 = $10.95 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 474) (Set 792) (Set 894)",
+    "question": "An EC2 instance runs for 133 hours at $0.330/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$85.89",
+      "$26.33",
+      "$43.89",
+      "$59.39"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "133 × $0.330 = $43.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 895)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 188 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$10.89",
+      "$10.15",
+      "$5.64",
+      "$3.54"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "188 × $0.030 = $5.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 255) (Set 493) (Set 896)",
+    "question": "An EC2 instance runs for 634 hours at $0.094/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$35.76",
+      "$75.10",
+      "$101.60",
+      "$59.60"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
-  },
-  {
-    "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 110) (Set 223) (Set 897)",
-    "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
-    ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "634 × $0.094 = $59.60."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 898)",
+    "question": "An EC2 instance runs for 567 hours at $0.228/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$144.78",
+      "$171.28",
+      "$77.57",
+      "$129.28"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "567 × $0.228 = $129.28."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339) (Set 358) (Set 427) (Set 899)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 378 GB in S3 Standard at $0.046/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$22.64",
+      "$31.30",
+      "$15.29",
+      "$17.39"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "378 × $0.046 = $17.39 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 129) (Set 393) (Set 424) (Set 900)",
+    "question": "Storing 391 GB in S3 Standard at $0.010/GB/month costs how much monthly?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$9.16",
+      "$7.04",
+      "$1.81",
+      "$3.91"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "391 × $0.010 = $3.91 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 483) (Set 901)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 456 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$10.49",
+      "$15.74",
+      "$18.88",
+      "$8.39"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "456 × $0.023 = $10.49 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 902)",
+    "question": "Storing 474 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$28.15",
+      "$13.54",
+      "$15.64",
+      "$20.89"
     ],
-    "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "answer": 2,
+    "explanation": "474 × $0.033 = $15.64 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 80) (Set 255) (Set 493) (Set 725) (Set 903)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 548 GB in S3 Standard at $0.031/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$16.99",
+      "$22.24",
+      "$30.58",
+      "$14.89"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "548 × $0.031 = $16.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 27) (Set 28) (Set 29) (Set 524) (Set 806) (Set 904)",
+    "question": "Storing 472 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$32.63",
+      "$27.38",
+      "$25.28",
+      "$49.28"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "472 × $0.058 = $27.38 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.9% uptime per year, what is the maximum allowed service downtime? (Set 58) (Set 303) (Set 905)",
+    "question": "An EC2 instance runs for 502 hours at $0.211/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "52.56 minutes",
-      "5.26 minutes"
+      "$63.55",
+      "$147.92",
+      "$121.42",
+      "$105.92"
     ],
-    "answer": 0,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "502 × $0.211 = $105.92."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 147) (Set 225) (Set 906)",
+    "question": "Storing 179 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$12.24",
+      "$4.70",
+      "$12.05",
+      "$6.80"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 3,
+    "explanation": "179 × $0.038 = $6.80 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 130) (Set 907)",
+    "question": "An EC2 instance runs for 113 hours at $0.203/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$38.44",
+      "$64.94",
+      "$22.94",
+      "$13.76"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "113 × $0.203 = $22.94."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 7) (Set 14) (Set 56) (Set 72) (Set 492) (Set 676) (Set 908)",
+    "question": "Storing 423 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$11.41",
+      "$6.34",
+      "$4.24",
+      "$11.59"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "423 × $0.015 = $6.34 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 404) (Set 909)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 545 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$10.78",
+      "$3.89",
+      "$11.24",
+      "$5.99"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "545 × $0.011 = $5.99 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 374) (Set 910)",
+    "question": "An EC2 instance runs for 225 hours at $0.247/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$71.08",
+      "$55.58",
+      "$33.35",
+      "$97.58"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "225 × $0.247 = $55.58."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 131) (Set 911)",
+    "question": "An EC2 instance runs for 746 hours at $0.402/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$299.89",
+      "$179.93",
+      "$341.89",
+      "$315.39"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "746 × $0.402 = $299.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 19) (Set 912)",
+    "question": "An EC2 instance runs for 807 hours at $0.352/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$170.44",
+      "$326.06",
+      "$284.06",
+      "$299.56"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "807 × $0.352 = $284.06."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 266) (Set 269) (Set 913)",
+    "question": "Storing 509 GB in S3 Standard at $0.026/GB/month costs how much monthly?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$18.48",
+      "$13.23",
+      "$11.13",
+      "$23.81"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "509 × $0.026 = $13.23 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 112) (Set 914)",
+    "question": "Storing 422 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$12.85",
+      "$13.68",
+      "$5.50",
+      "$7.60"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "422 × $0.018 = $7.60 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 19) (Set 915)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 507 GB in S3 Standard at $0.043/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$19.70",
+      "$27.05",
+      "$21.80",
+      "$39.24"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 2,
+    "explanation": "507 × $0.043 = $21.80 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 77) (Set 741) (Set 916)",
+    "question": "An EC2 instance runs for 552 hours at $0.210/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$115.92",
+      "$69.55",
+      "$131.42",
+      "$157.92"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "552 × $0.210 = $115.92."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 3) (Set 12) (Set 385) (Set 398) (Set 605) (Set 787) (Set 917)",
+    "question": "Storing 365 GB in S3 Standard at $0.034/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$22.34",
+      "$10.31",
+      "$17.66",
+      "$12.41"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "365 × $0.034 = $12.41 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is hybrid cloud deployment? (Set 4) (Set 574) (Set 918)",
+    "question": "Storing 186 GB in S3 Standard at $0.051/GB/month costs how much monthly?",
     "options": [
-      "Using physical servers only",
-      "Combining public cloud with private cloud/on-premises infrastructure",
-      "Offline storage only",
-      "Using multiple public clouds"
+      "$17.08",
+      "$9.49",
+      "$7.39",
+      "$14.74"
     ],
     "answer": 1,
-    "explanation": "Allows keeping critical data private while using public cloud scale."
+    "explanation": "186 × $0.051 = $9.49 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 130 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
+    "options": [
+      "$2.34",
+      "$7.59",
+      "$0.24",
+      "$4.21"
+    ],
+    "answer": 0,
+    "explanation": "130 × $0.018 = $2.34 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 192) (Set 259) (Set 299) (Set 919)",
+    "question": "An EC2 instance runs for 236 hours at $0.054/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$12.74",
+      "$28.24",
+      "$54.74",
+      "$7.64"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "236 × $0.054 = $12.74."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 920)",
+    "question": "An EC2 instance runs for 637 hours at $0.276/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$191.31",
+      "$175.81",
+      "$217.81",
+      "$105.49"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "637 × $0.276 = $175.81."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 124 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
+    "options": [
+      "$4.46",
+      "$8.03",
+      "$2.36",
+      "$9.71"
+    ],
+    "answer": 0,
+    "explanation": "124 × $0.036 = $4.46 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 24) (Set 351) (Set 921)",
+    "question": "Storing 186 GB in S3 Standard at $0.044/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$6.08",
+      "$13.43",
+      "$8.18",
+      "$14.72"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "186 × $0.044 = $8.18 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 557) (Set 922)",
+    "question": "An EC2 instance runs for 146 hours at $0.532/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$119.67",
+      "$93.17",
+      "$46.60",
+      "$77.67"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "146 × $0.532 = $77.67."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 188) (Set 923)",
+    "question": "An EC2 instance runs for 217 hours at $0.117/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$15.23",
+      "$25.39",
+      "$67.39",
+      "$40.89"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "217 × $0.117 = $25.39."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 696) (Set 737) (Set 924)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 113 hours at $0.389/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$26.38",
+      "$43.96",
+      "$59.46",
+      "$85.96"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "113 × $0.389 = $43.96."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348) (Set 925)",
+    "question": "An EC2 instance runs for 584 hours at $0.469/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$289.40",
+      "$273.90",
+      "$164.34",
+      "$315.90"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "584 × $0.469 = $273.90."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 404) (Set 909) (Set 926)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 201 GB in S3 Standard at $0.018/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$3.62",
+      "$6.52",
+      "$8.87",
+      "$1.52"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "201 × $0.018 = $3.62 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 79) (Set 322) (Set 927)",
+    "question": "An EC2 instance runs for 814 hours at $0.294/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$239.32",
+      "$254.82",
+      "$281.32",
+      "$143.59"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "814 × $0.294 = $239.32."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 928)",
+    "question": "An EC2 instance runs for 515 hours at $0.336/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$103.82",
+      "$188.54",
+      "$215.04",
+      "$173.04"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "515 × $0.336 = $173.04."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 226) (Set 929)",
+    "question": "Storing 475 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$19.50",
+      "$14.25",
+      "$25.65",
+      "$12.15"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 1,
+    "explanation": "475 × $0.030 = $14.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241) (Set 372) (Set 497) (Set 930)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 87 GB in S3 Standard at $0.011/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$-1.14",
+      "$6.21",
+      "$0.96",
+      "$1.73"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "87 × $0.011 = $0.96 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 353) (Set 931)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 235 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$13.01",
+      "$5.66",
+      "$13.97",
+      "$7.76"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "235 × $0.033 = $7.76 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 185) (Set 292) (Set 932)",
+    "question": "Storing 501 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$28.85",
+      "$16.03",
+      "$21.28",
+      "$13.93"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 1,
+    "explanation": "501 × $0.032 = $16.03 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 249) (Set 704) (Set 933)",
+    "question": "Storing 485 GB in S3 Standard at $0.056/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$32.41",
+      "$25.06",
+      "$48.89",
+      "$27.16"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 3,
+    "explanation": "485 × $0.056 = $27.16 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
-    "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 347) (Set 672) (Set 934)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 276 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$8.28",
+      "$6.18",
+      "$14.90",
+      "$13.53"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 0,
+    "explanation": "276 × $0.030 = $8.28 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 579) (Set 935)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 807 hours at $0.106/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$85.54",
+      "$101.04",
+      "$127.54",
+      "$51.32"
     ],
     "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "explanation": "807 × $0.106 = $85.54."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 82) (Set 339) (Set 358) (Set 536) (Set 936)",
+    "question": "An EC2 instance runs for 473 hours at $0.085/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$40.21",
+      "$24.13",
+      "$82.21",
+      "$55.71"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "473 × $0.085 = $40.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 354) (Set 937)",
+    "question": "An EC2 instance runs for 201 hours at $0.345/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$69.34",
+      "$84.84",
+      "$111.34",
+      "$41.60"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "201 × $0.345 = $69.34."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 147) (Set 938)",
+    "question": "Storing 173 GB in S3 Standard at $0.030/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$3.09",
+      "$10.44",
+      "$5.19",
+      "$9.34"
     ],
-    "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "answer": 2,
+    "explanation": "173 × $0.030 = $5.19 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 16) (Set 401) (Set 939)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 436 hours at $0.089/hour. What is the total on-demand compute cost?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$80.80",
+      "$38.80",
+      "$54.30",
+      "$23.28"
     ],
     "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "explanation": "436 × $0.089 = $38.80."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 141) (Set 698) (Set 858) (Set 940)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 415 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$11.47",
+      "$6.22",
+      "$4.12",
+      "$11.20"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 1,
+    "explanation": "415 × $0.015 = $6.22 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241) (Set 372) (Set 941)",
+    "question": "An EC2 instance runs for 265 hours at $0.326/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$101.89",
+      "$86.39",
+      "$128.39",
+      "$51.83"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "265 × $0.326 = $86.39."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 276) (Set 422) (Set 942)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 184 GB in S3 Standard at $0.022/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$1.95",
+      "$9.30",
+      "$7.29",
+      "$4.05"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "184 × $0.022 = $4.05 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS EC2 stands for? (Set 227) (Set 229) (Set 328) (Set 943)",
+    "question": "Storing 496 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Easy Compute Center",
-      "Elastic Compute Cloud",
-      "Extended Core Engine",
-      "Elastic Connection Cloud"
+      "$23.11",
+      "$17.86",
+      "$32.15",
+      "$15.76"
     ],
     "answer": 1,
-    "explanation": "EC2 is Amazon's resizable virtual server service."
+    "explanation": "496 × $0.036 = $17.86 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 165) (Set 944)",
+    "question": "An EC2 instance runs for 209 hours at $0.446/hour. What is the total on-demand compute cost?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$93.21",
+      "$108.71",
+      "$55.93",
+      "$135.21"
     ],
-    "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "answer": 0,
+    "explanation": "209 × $0.446 = $93.21."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 34) (Set 167) (Set 945)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 114 hours at $0.068/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$7.75",
+      "$4.65",
+      "$23.25",
+      "$49.75"
     ],
-    "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "answer": 0,
+    "explanation": "114 × $0.068 = $7.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 244) (Set 946)",
+    "question": "An EC2 instance runs for 246 hours at $0.253/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$62.24",
+      "$37.34",
+      "$77.74",
+      "$104.24"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 0,
+    "explanation": "246 × $0.253 = $62.24."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 684) (Set 947)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 230 hours at $0.543/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$140.39",
+      "$74.93",
+      "$124.89",
+      "$166.89"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "230 × $0.543 = $124.89."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 44) (Set 60) (Set 948)",
+    "question": "Storing 111 GB in S3 Standard at $0.057/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$6.33",
+      "$11.58",
+      "$4.23",
+      "$11.39"
     ],
-    "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "answer": 0,
+    "explanation": "111 × $0.057 = $6.33 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 404) (Set 880) (Set 949)",
+    "question": "An EC2 instance runs for 793 hours at $0.241/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$191.11",
+      "$233.11",
+      "$206.61",
+      "$114.67"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "793 × $0.241 = $191.11."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 359) (Set 483) (Set 950)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 132 GB in S3 Standard at $0.052/GB/month costs how much monthly?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$6.86",
+      "$4.76",
+      "$12.11",
+      "$12.35"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "132 × $0.052 = $6.86 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 18) (Set 951)",
+    "question": "An EC2 instance runs for 673 hours at $0.416/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$321.97",
+      "$279.97",
+      "$167.98",
+      "$295.47"
     ],
     "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "explanation": "673 × $0.416 = $279.97."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348) (Set 612) (Set 952)",
+    "question": "An EC2 instance runs for 784 hours at $0.225/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$105.84",
+      "$191.90",
+      "$176.40",
+      "$218.40"
     ],
     "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "explanation": "784 × $0.225 = $176.40."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 2) (Set 953)",
+    "question": "An EC2 instance runs for 220 hours at $0.152/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$20.06",
+      "$33.44",
+      "$48.94",
+      "$75.44"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "220 × $0.152 = $33.44."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 87) (Set 954)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 161 GB in S3 Standard at $0.032/GB/month costs how much monthly?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$10.40",
+      "$5.15",
+      "$9.27",
+      "$3.05"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 1,
+    "explanation": "161 × $0.032 = $5.15 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.999% uptime per year, what is the maximum allowed service downtime? (Set 186) (Set 218) (Set 270) (Set 955)",
+    "question": "An EC2 instance runs for 631 hours at $0.341/hour. What is the total on-demand compute cost?",
     "options": [
-      "8.76 hours",
-      "24 hours",
-      "5.26 minutes",
-      "52.56 minutes"
+      "$257.17",
+      "$230.67",
+      "$129.10",
+      "$215.17"
     ],
-    "answer": 2,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "631 × $0.341 = $215.17."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 54) (Set 575) (Set 668) (Set 956)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 222 hours at $0.072/hour. What is the total on-demand compute cost?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$31.48",
+      "$9.59",
+      "$15.98",
+      "$57.98"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "222 × $0.072 = $15.98."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 17) (Set 111) (Set 161) (Set 587) (Set 957)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 119 GB in S3 Standard at $0.028/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$1.23",
+      "$3.33",
+      "$8.58",
+      "$5.99"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 1,
+    "explanation": "119 × $0.028 = $3.33 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 132) (Set 368) (Set 958)",
+    "question": "Storing 256 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$3.33",
+      "$8.58",
+      "$1.23",
+      "$5.99"
     ],
-    "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "answer": 0,
+    "explanation": "256 × $0.013 = $3.33 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "AWS S3 is an example of? (Set 121) (Set 160) (Set 420) (Set 959)",
+    "question": "Storing 101 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Relational Database",
-      "Object Storage",
-      "File System Storage",
-      "Block Storage"
+      "$7.27",
+      "$-0.08",
+      "$3.64",
+      "$2.02"
     ],
-    "answer": 1,
-    "explanation": "S3 stores flat files/folders as objects with metadata."
+    "answer": 3,
+    "explanation": "101 × $0.020 = $2.02 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 6) (Set 41) (Set 55) (Set 81) (Set 125) (Set 960)",
+    "question": "An EC2 instance runs for 679 hours at $0.387/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$157.66",
+      "$278.27",
+      "$304.77",
+      "$262.77"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "679 × $0.387 = $262.77."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 579) (Set 651) (Set 961)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 394 hours at $0.297/hour. What is the total on-demand compute cost?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$159.02",
+      "$70.21",
+      "$117.02",
+      "$132.52"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "394 × $0.297 = $117.02."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is serverless computing? (Set 100) (Set 147) (Set 225) (Set 962)",
+    "question": "Storing 207 GB in S3 Standard at $0.036/GB/month costs how much monthly?",
     "options": [
-      "Developer writes code without worrying about server provisioning",
-      "Running code offline",
-      "Physical servers are deleted",
-      "No servers are used at all"
+      "$7.45",
+      "$5.35",
+      "$13.41",
+      "$12.70"
     ],
     "answer": 0,
-    "explanation": "Cloud provider dynamically manages resource allocation and scaling."
+    "explanation": "207 × $0.036 = $7.45 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is SaaS (Software as a Service)? (Set 10) (Set 99) (Set 134) (Set 136) (Set 232) (Set 963)",
+    "question": "Storing 315 GB in S3 Standard at $0.023/GB/month costs how much monthly?",
     "options": [
-      "End-user applications hosted and managed by a provider",
-      "Virtual servers",
-      "Code execution runtimes",
-      "Database servers"
+      "$12.50",
+      "$5.15",
+      "$7.25",
+      "$13.05"
     ],
-    "answer": 0,
-    "explanation": "Examples: Gmail, Office 365, Salesforce."
+    "answer": 2,
+    "explanation": "315 × $0.023 = $7.25 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 115) (Set 128) (Set 964)",
+    "question": "An EC2 instance runs for 434 hours at $0.269/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$116.75",
+      "$158.75",
+      "$132.25",
+      "$70.05"
     ],
-    "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "answer": 0,
+    "explanation": "434 × $0.269 = $116.75."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 21) (Set 150) (Set 540) (Set 965)",
+    "question": "An EC2 instance runs for 755 hours at $0.441/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$332.95",
+      "$374.95",
+      "$199.77",
+      "$348.45"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "755 × $0.441 = $332.95."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What does Auto Scaling do? (Set 32) (Set 70) (Set 233) (Set 406) (Set 637) (Set 820) (Set 966)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 255 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
     "options": [
-      "Optimizes query performance",
-      "Speeds up connection latency",
-      "Dynamically adjusts the number of EC2 instances based on load",
-      "Resizes databases automatically"
+      "$15.16",
+      "$6.32",
+      "$8.42",
+      "$13.67"
     ],
     "answer": 2,
-    "explanation": "Ensures application has enough resources to handle target load."
+    "explanation": "255 × $0.033 = $8.42 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 331 GB in S3 Standard at $0.038/GB/month costs how much monthly?",
+    "options": [
+      "$17.83",
+      "$22.64",
+      "$10.48",
+      "$12.58"
+    ],
+    "answer": 3,
+    "explanation": "331 × $0.038 = $12.58 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 105) (Set 179) (Set 216) (Set 275) (Set 278) (Set 374) (Set 910) (Set 967)",
+    "question": "An EC2 instance runs for 514 hours at $0.350/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$107.94",
+      "$221.90",
+      "$195.40",
+      "$179.90"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "514 × $0.350 = $179.90."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 326) (Set 525) (Set 546) (Set 968)",
+    "question": "An EC2 instance runs for 493 hours at $0.434/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$229.46",
+      "$255.96",
+      "$213.96",
+      "$128.38"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 2,
+    "explanation": "493 × $0.434 = $213.96."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Kubernetes is used for? (Set 8) (Set 127) (Set 146) (Set 250) (Set 969)",
+    "question": "Storing 270 GB in S3 Standard at $0.017/GB/month costs how much monthly?",
     "options": [
-      "Creating container images",
-      "Version control",
-      "Container orchestration and management",
-      "Web development"
+      "$2.49",
+      "$9.84",
+      "$4.59",
+      "$8.26"
     ],
     "answer": 2,
-    "explanation": "K8s automates deployment, scaling, and load-balancing of containers."
+    "explanation": "270 × $0.017 = $4.59 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 9) (Set 13) (Set 190) (Set 661) (Set 970)",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 444 GB in S3 Standard at $0.015/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$6.66",
+      "$11.99",
+      "$4.56",
+      "$11.91"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "444 × $0.015 = $6.66 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 104) (Set 528) (Set 607) (Set 851) (Set 971)",
+    "question": "An EC2 instance runs for 121 hours at $0.463/hour. What is the total on-demand compute cost?",
+    "options": [
+      "$33.61",
+      "$71.52",
+      "$98.02",
+      "$56.02"
+    ],
+    "answer": 3,
+    "explanation": "121 × $0.463 = $56.02."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 339 GB in S3 Standard at $0.058/GB/month costs how much monthly?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$19.66",
+      "$24.91",
+      "$35.39",
+      "$17.56"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "339 × $0.058 = $19.66 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "What is IaaS (Infrastructure as a Service)? (Set 35) (Set 46) (Set 86) (Set 198) (Set 217) (Set 972)",
+    "question": "Storing 118 GB in S3 Standard at $0.033/GB/month costs how much monthly?",
+    "options": [
+      "$7.00",
+      "$3.89",
+      "$9.14",
+      "$1.79"
+    ],
+    "answer": 1,
+    "explanation": "118 × $0.033 = $3.89 per month."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 722 hours at $0.085/hour. What is the total on-demand compute cost?",
     "options": [
-      "Provides only database access",
-      "Provides virtualized computing resources (VMs, storage, networks)",
-      "Provides code execution environments without servers",
-      "Provides ready-to-run business applications"
+      "$103.37",
+      "$61.37",
+      "$76.87",
+      "$36.82"
     ],
     "answer": 1,
-    "explanation": "Examples: AWS EC2, GCP Compute Engine."
+    "explanation": "722 × $0.085 = $61.37."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Infrastructure as Code (IaC) is represented by? (Set 67) (Set 126) (Set 253) (Set 973)",
+    "question": "An EC2 instance runs for 185 hours at $0.540/hour. What is the total on-demand compute cost?",
     "options": [
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "Terraform / AWS CloudFormation"
+      "$141.90",
+      "$59.94",
+      "$115.40",
+      "$99.90"
     ],
     "answer": 3,
-    "explanation": "IaC provisions resources using configuration files."
+    "explanation": "185 × $0.540 = $99.90."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 404) (Set 974)",
+    "question": "An EC2 instance runs for 354 hours at $0.111/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$54.79",
+      "$23.57",
+      "$39.29",
+      "$81.29"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 2,
+    "explanation": "354 × $0.111 = $39.29."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 975)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 338 hours at $0.466/hour. What is the total on-demand compute cost?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$173.01",
+      "$199.51",
+      "$157.51",
+      "$94.51"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "338 × $0.466 = $157.51."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the scope of a VPC (Virtual Private Cloud)? (Set 61) (Set 252) (Set 495) (Set 976)",
+    "question": "An EC2 instance runs for 345 hours at $0.306/hour. What is the total on-demand compute cost?",
     "options": [
-      "A logically isolated virtual network within an AWS account",
-      "A database instance",
-      "A physical storage array",
-      "An encryption service"
+      "$63.34",
+      "$121.07",
+      "$147.57",
+      "$105.57"
     ],
-    "answer": 0,
-    "explanation": "VPC allows securing and provisioning a private network."
+    "answer": 3,
+    "explanation": "345 × $0.306 = $105.57."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Storage Pricing",
     "difficulty": "Easy",
-    "question": "Standard public cloud model means? (Set 1) (Set 11) (Set 22) (Set 403) (Set 696) (Set 737) (Set 924) (Set 977)",
+    "question": "Storing 443 GB in S3 Standard at $0.020/GB/month costs how much monthly?",
     "options": [
-      "Hosted on-premises only",
-      "Private network access only",
-      "Resources are shared across multiple tenants over the internet",
-      "Resources are dedicated to a single enterprise"
+      "$14.11",
+      "$6.76",
+      "$8.86",
+      "$15.95"
     ],
     "answer": 2,
-    "explanation": "Public cloud uses multi-tenant shared infrastructure."
+    "explanation": "443 × $0.020 = $8.86 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
-    "difficulty": "Easy",
-    "question": "Docker allows you to? (Set 5) (Set 978)",
+    "topic": "Cost Management",
+    "difficulty": "Medium",
+    "question": "An EC2 instance runs for 388 hours at $0.504/hour. What is the total on-demand compute cost?",
     "options": [
-      "Deploy physical servers",
-      "Emulate full hardware with an OS",
-      "Store databases only",
-      "Package an app with its dependencies into a lightweight container"
+      "$211.05",
+      "$237.55",
+      "$117.33",
+      "$195.55"
     ],
     "answer": 3,
-    "explanation": "Containers run isolated environments sharing the host OS kernel."
+    "explanation": "388 × $0.504 = $195.55."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 241) (Set 372) (Set 979)",
+    "question": "An EC2 instance runs for 176 hours at $0.099/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$17.42",
+      "$10.45",
+      "$59.42",
+      "$32.92"
     ],
     "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "explanation": "176 × $0.099 = $17.42."
+  },
+  {
+    "subject": "Cloud",
+    "topic": "Storage Pricing",
+    "difficulty": "Easy",
+    "question": "Storing 427 GB in S3 Standard at $0.013/GB/month costs how much monthly?",
+    "options": [
+      "$10.80",
+      "$9.99",
+      "$5.55",
+      "$3.45"
+    ],
+    "answer": 2,
+    "explanation": "427 × $0.013 = $5.55 per month."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "What is the AWS Shared Responsibility Model? (Set 73) (Set 84) (Set 85) (Set 114) (Set 288) (Set 675) (Set 702) (Set 980)",
+    "question": "An EC2 instance runs for 594 hours at $0.469/hour. What is the total on-demand compute cost?",
     "options": [
-      "AWS secures the infrastructure; customer secures data and access",
-      "Both manage everything together",
-      "AWS handles application code debugging",
-      "Customer is responsible for physical host security"
+      "$167.15",
+      "$294.09",
+      "$320.59",
+      "$278.59"
     ],
-    "answer": 0,
-    "explanation": "Clear demarcation of cloud provider vs customer responsibilities."
+    "answer": 3,
+    "explanation": "594 × $0.469 = $278.59."
   },
   {
     "subject": "Cloud",
-    "topic": "SLA Calculations",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "If a cloud database service offers a high availability SLA benchmark of 99.99% uptime per year, what is the maximum allowed service downtime? (Set 25) (Set 38) (Set 65) (Set 201) (Set 326) (Set 525) (Set 981)",
+    "question": "An EC2 instance runs for 758 hours at $0.492/hour. What is the total on-demand compute cost?",
     "options": [
-      "24 hours",
-      "52.56 minutes",
-      "8.76 hours",
-      "5.26 minutes"
+      "$414.94",
+      "$223.76",
+      "$388.44",
+      "$372.94"
     ],
-    "answer": 1,
-    "explanation": "SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr."
+    "answer": 3,
+    "explanation": "758 × $0.492 = $372.94."
   },
   {
     "subject": "Cloud",
-    "topic": "Cloud",
+    "topic": "Cost Management",
     "difficulty": "Medium",
-    "question": "Which AWS service provides load balancing across multiple targets? (Set 40) (Set 348) (Set 665) (Set 982)",
+    "question": "An EC2 instance runs for 683 hours at $0.134/hour. What is the total on-demand compute cost?",
     "options": [
-      "CloudTrail",
-      "Route 53",
-      "ALB (Application Load Balancer)",
-      "VPC"
+      "$107.02",
+      "$54.91",
+      "$133.52",
+      "$91.52"
     ],
-    "answer": 2,
-    "explanation": "ALB operates at Layer 7 to distribute HTTP/HTTPS traffic."
+    "answer": 3,
+    "explanation": "683 × $0.134 = $91.52."
   }
 ];

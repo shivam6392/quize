@@ -303,24 +303,112 @@ function generateProceduralQuestion(sub, id) {
     }
 
     if (key === 'cloud') {
-        const pctIndex = R([0, 1, 2]);
-        const pcts = ['99.9%', '99.99%', '99.999%'];
-        const values = ['8.76 hours', '52.56 minutes', '5.26 minutes'];
+        const type = R(['sla', 'pricing', 'storage', 'instance', 'region', 'scaling']);
 
-        const cor = values[pctIndex];
-        const w = values.filter(x => x !== cor);
-        w.push('24 hours');
-
-        return {
-            subject: 'Cloud',
-            topic: 'SLA Calculations',
-            difficulty: 'Medium',
-            question: `If a cloud database service offers a high availability SLA benchmark of ${pcts[pctIndex]} uptime per year, what is the maximum allowed service downtime?`,
-            options: shuffle([cor, ...w]),
-            answer: -1,
-            explanation: `SLA downtime bounds: 99.9% allowed downtime is 8.76 hours/yr, 99.99% is 52.56 min/yr, and 99.999% is 5.26 min/yr.`,
-            _correct: cor
-        };
+        if (type === 'sla') {
+            const pctIndex = R([0, 1, 2]);
+            const pcts = ['99.9%', '99.99%', '99.999%'];
+            const values = ['8.76 hours per year', '52.56 minutes per year', '5.26 minutes per year'];
+            const cor = values[pctIndex];
+            const w = values.filter(x => x !== cor);
+            w.push('365.25 minutes per year');
+            return {
+                subject: 'Cloud', topic: 'SLA Calculations', difficulty: 'Medium',
+                question: `A cloud provider guarantees ${pcts[pctIndex]} uptime SLA. What is the maximum allowed annual downtime?`,
+                options: shuffle([cor, ...w]), answer: -1,
+                explanation: `${pcts[pctIndex]} uptime allows ${cor} of downtime.`,
+                _correct: cor
+            };
+        } else if (type === 'pricing') {
+            const hours = Math.floor(Math.random() * 720) + 100;
+            const rate = (Math.random() * 0.5 + 0.05).toFixed(3);
+            const cost = (hours * parseFloat(rate)).toFixed(2);
+            const cor = '$' + cost;
+            const w = [
+                '$' + (parseFloat(cost) + 15.50).toFixed(2),
+                '$' + (parseFloat(cost) * 0.6).toFixed(2),
+                '$' + (parseFloat(cost) + 42.00).toFixed(2)
+            ];
+            return {
+                subject: 'Cloud', topic: 'Cost Management', difficulty: 'Medium',
+                question: `An EC2 instance runs for ${hours} hours at $${rate}/hour. What is the total on-demand compute cost?`,
+                options: shuffle([cor, ...w]), answer: -1,
+                explanation: `${hours} × $${rate} = ${cor}.`,
+                _correct: cor
+            };
+        } else if (type === 'storage') {
+            const gb = Math.floor(Math.random() * 500) + 50;
+            const pricePerGB = (Math.random() * 0.05 + 0.01).toFixed(3);
+            const cost = (gb * parseFloat(pricePerGB)).toFixed(2);
+            const cor = '$' + cost;
+            const w = [
+                '$' + (parseFloat(cost) + 5.25).toFixed(2),
+                '$' + (parseFloat(cost) * 1.8).toFixed(2),
+                '$' + (parseFloat(cost) - 2.10).toFixed(2)
+            ];
+            return {
+                subject: 'Cloud', topic: 'Storage Pricing', difficulty: 'Easy',
+                question: `Storing ${gb} GB in S3 Standard at $${pricePerGB}/GB/month costs how much monthly?`,
+                options: shuffle([cor, ...w]), answer: -1,
+                explanation: `${gb} × $${pricePerGB} = ${cor} per month.`,
+                _correct: cor
+            };
+        } else if (type === 'instance') {
+            const instances = [
+                { name: 't2.micro', vcpu: '1 vCPU, 1 GB RAM' },
+                { name: 't3.medium', vcpu: '2 vCPU, 4 GB RAM' },
+                { name: 'm5.large', vcpu: '2 vCPU, 8 GB RAM' },
+                { name: 'c5.xlarge', vcpu: '4 vCPU, 8 GB RAM' },
+                { name: 'r5.large', vcpu: '2 vCPU, 16 GB RAM' },
+                { name: 'p3.2xlarge', vcpu: '8 vCPU, 61 GB RAM' }
+            ];
+            const target = R(instances);
+            const cor = target.vcpu;
+            const w = instances.filter(i => i.vcpu !== cor).map(i => i.vcpu).slice(0, 3);
+            return {
+                subject: 'Cloud', topic: 'Compute Instances', difficulty: 'Medium',
+                question: `What are the default specifications of an AWS ${target.name} instance type?`,
+                options: shuffle([cor, ...w]), answer: -1,
+                explanation: `AWS ${target.name} provides ${cor}.`,
+                _correct: cor
+            };
+        } else if (type === 'region') {
+            const regions = [
+                { code: 'us-east-1', name: 'N. Virginia region' },
+                { code: 'us-west-2', name: 'Oregon region' },
+                { code: 'eu-west-1', name: 'Ireland region' },
+                { code: 'ap-south-1', name: 'Mumbai region' },
+                { code: 'ap-southeast-1', name: 'Singapore region' },
+                { code: 'eu-central-1', name: 'Frankfurt region' }
+            ];
+            const target = R(regions);
+            const cor = target.name;
+            const w = regions.filter(r => r.name !== cor).map(r => r.name).slice(0, 3);
+            return {
+                subject: 'Cloud', topic: 'AWS Regions', difficulty: 'Easy',
+                question: `Which geographic location does the AWS region code '${target.code}' correspond to?`,
+                options: shuffle([cor, ...w]), answer: -1,
+                explanation: `${target.code} is the ${cor}.`,
+                _correct: cor
+            };
+        } else {
+            const curr = Math.floor(Math.random() * 4) + 2;
+            const target = curr + Math.floor(Math.random() * 6) + 2;
+            const added = target - curr;
+            const cor = added + ' new instances';
+            const w = [
+                (added + 2) + ' new instances',
+                (added - 1) + ' new instances',
+                (added * 2) + ' new instances'
+            ];
+            return {
+                subject: 'Cloud', topic: 'Auto Scaling', difficulty: 'Easy',
+                question: `An auto-scaling group has ${curr} running instances and a desired capacity of ${target}. How many instances will be launched?`,
+                options: shuffle([cor, ...w]), answer: -1,
+                explanation: `${target} desired - ${curr} running = ${added} new instances.`,
+                _correct: cor
+            };
+        }
     }
 
     if (key === 'coa') {

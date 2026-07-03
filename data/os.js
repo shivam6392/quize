@@ -6,9 +6,9 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Process is?",
     "options": [
+      "Static code (general case)",
       "Hardware component",
-      "Static code",
-      "Stored file",
+      "Stored file by design",
       "Program in execution"
     ],
     "answer": 3,
@@ -20,12 +20,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Thread vs Process?",
     "options": [
-      "Same thing",
-      "Process shares memory",
-      "Thread is heavier",
-      "Thread shares process memory; process has own address space"
+      "Thread is heavier in typical implementations",
+      "Thread shares process memory; process has own address space",
+      "Same thing in typical implementations",
+      "Process shares memory in typical implementations"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Threads are lightweight within a process."
   },
   {
@@ -34,12 +34,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "PCB contains?",
     "options": [
-      "Only memory",
       "Process state, PID, registers, memory info",
-      "Only PID",
-      "Only CPU info"
+      "Only CPU info in typical implementations",
+      "Only memory in typical implementations",
+      "Only PID in typical implementations"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Process Control Block stores all process metadata."
   },
   {
@@ -48,12 +48,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Context switching involves?",
     "options": [
-      "Formatting disk",
-      "Deleting process",
-      "Creating new memory",
-      "Saving current process state and loading another"
+      "Saving current process state and loading another",
+      "Creating new memory (standard definition)",
+      "Formatting disk in typical implementations",
+      "Deleting process in typical implementations"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "OS saves/restores PCB during context switch."
   },
   {
@@ -62,12 +62,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "FCFS scheduling is?",
     "options": [
-      "Random",
+      "Priority-based (typical scenario)",
+      "Preemptive under normal conditions",
       "First Come First Served — non-preemptive",
-      "Priority-based",
-      "Preemptive"
+      "Random in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Processes executed in arrival order."
   },
   {
@@ -76,12 +76,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "SJF scheduling selects?",
     "options": [
-      "Random",
-      "Process with shortest burst time",
-      "Highest priority",
-      "Longest burst"
+      "Random based on convention",
+      "Longest burst (default behavior)",
+      "Highest priority (standard definition)",
+      "Process with shortest burst time"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Minimizes average waiting time (optimal for non-preemptive)."
   },
   {
@@ -90,12 +90,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Round Robin uses?",
     "options": [
-      "Burst time",
-      "Time quantum for preemption",
-      "Priority only",
-      "No preemption"
+      "No preemption in standard usage",
+      "Priority only based on convention",
+      "Burst time (typical scenario)",
+      "Time quantum for preemption"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Each process gets equal CPU time slice."
   },
   {
@@ -104,12 +104,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Priority scheduling risk?",
     "options": [
-      "Too fast execution",
-      "Memory overflow",
-      "Deadlock always",
-      "Starvation of low-priority processes"
+      "Too fast execution (commonly used)",
+      "Memory overflow (primary approach)",
+      "Starvation of low-priority processes",
+      "Deadlock always in most cases"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Aging technique prevents starvation."
   },
   {
@@ -118,12 +118,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Semaphore is?",
     "options": [
-      "File descriptor",
+      "File descriptor in typical implementations",
+      "Memory address under normal conditions",
       "Integer variable for process synchronization",
-      "Process ID",
-      "Memory address"
+      "Process ID in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "wait() decrements; signal() increments."
   },
   {
@@ -132,12 +132,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Mutex is?",
     "options": [
+      "File lock in typical implementations",
       "Binary semaphore for mutual exclusion",
-      "Memory segment",
-      "Counting semaphore",
-      "File lock"
+      "Memory segment (widely accepted)",
+      "Counting semaphore (standard definition)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Only owner thread can release mutex."
   },
   {
@@ -146,12 +146,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Deadlock conditions (all four)?",
     "options": [
-      "Only mutual exclusion",
+      "Only circular wait in typical implementations",
+      "Only mutual exclusion in typical implementations",
       "Mutual exclusion, Hold & wait, No preemption, Circular wait",
-      "Only circular wait",
-      "Only hold and wait"
+      "Only hold and wait in typical implementations"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "All four Coffman conditions must hold simultaneously."
   },
   {
@@ -160,9 +160,9 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Banker's algorithm is for?",
     "options": [
-      "Deadlock recovery",
-      "Deadlock avoidance",
       "Deadlock prevention",
+      "Deadlock avoidance",
+      "Deadlock recovery",
       "Deadlock detection"
     ],
     "answer": 1,
@@ -174,12 +174,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Paging divides?",
     "options": [
+      "CPU into cores (standard definition)",
+      "Files into blocks (typical scenario)",
       "Logical memory into fixed-size pages",
-      "Files into blocks",
-      "CPU into cores",
-      "Physical memory into segments"
+      "Physical memory into segments in most cases"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Pages map to frames in physical memory."
   },
   {
@@ -188,12 +188,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Segmentation divides memory by?",
     "options": [
-      "Fixed-size pages",
-      "Equal partitions",
-      "Random blocks",
-      "Logical segments (code, data, stack)"
+      "Random blocks (primary approach)",
+      "Fixed-size pages (general case)",
+      "Logical segments (code, data, stack)",
+      "Equal partitions (typical scenario)"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Variable-size segments based on program structure."
   },
   {
@@ -202,12 +202,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Virtual memory allows?",
     "options": [
-      "More RAM",
       "Execution of processes larger than physical memory",
-      "Better graphics",
-      "Faster CPU"
+      "Faster CPU in typical implementations",
+      "Better graphics in typical implementations",
+      "More RAM in typical implementations"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Uses disk as extension of RAM via demand paging."
   },
   {
@@ -216,10 +216,10 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Thrashing occurs when?",
     "options": [
-      "Disk is full",
+      "Memory is empty in typical implementations",
       "Excessive page faults slow system drastically",
-      "CPU is idle",
-      "Memory is empty"
+      "Disk is full in typical implementations",
+      "CPU is idle in typical implementations"
     ],
     "answer": 1,
     "explanation": "Process spends more time paging than executing."
@@ -230,12 +230,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Page replacement algorithm LRU evicts?",
     "options": [
-      "Most recently used",
-      "Least Recently Used page",
-      "Random page",
-      "First loaded page"
+      "Most recently used in practice",
+      "Random page (typical scenario)",
+      "First loaded page by design",
+      "Least Recently Used page"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "LRU approximates optimal by tracking usage recency."
   },
   {
@@ -244,10 +244,10 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "FIFO page replacement?",
     "options": [
-      "Most used page",
+      "Most used page under normal conditions",
       "Evicts the oldest page in memory",
-      "Newest page",
-      "Least used page"
+      "Newest page (standard definition)",
+      "Least used page in standard usage"
     ],
     "answer": 1,
     "explanation": "Simple but can suffer Belady's anomaly."
@@ -258,12 +258,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Optimal page replacement?",
     "options": [
+      "Oldest page in typical implementations",
       "Evicts page not used for longest future time",
-      "Random page",
-      "Oldest page",
-      "Most used page"
+      "Most used page under normal conditions",
+      "Random page in typical implementations"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Theoretical best; requires future knowledge."
   },
   {
@@ -272,12 +272,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "TLB (Translation Lookaside Buffer) is?",
     "options": [
-      "Main memory",
       "Cache for page table entries",
-      "Disk cache",
-      "CPU register"
+      "CPU register based on convention",
+      "Main memory under normal conditions",
+      "Disk cache (default behavior)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Speeds up virtual to physical address translation."
   },
   {
@@ -286,12 +286,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "File allocation methods include?",
     "options": [
-      "Only contiguous",
-      "Only linked",
-      "Only indexed",
-      "Contiguous, Linked, Indexed"
+      "Only indexed by design",
+      "Contiguous, Linked, Indexed",
+      "Only linked (standard definition)",
+      "Only contiguous in most cases"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Each has trade-offs in speed and fragmentation."
   },
   {
@@ -300,12 +300,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Inode stores?",
     "options": [
-      "User passwords",
-      "Network addresses",
+      "User passwords in typical implementations",
       "File metadata (size, permissions, pointers)",
-      "File content only"
+      "File content only (typical scenario)",
+      "Network addresses (typical scenario)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Unix/Linux inode contains all file attributes except name."
   },
   {
@@ -314,12 +314,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Disk scheduling SCAN (elevator)?",
     "options": [
-      "Always starts from 0",
-      "Shortest seek first",
-      "Random access",
-      "Moves in one direction then reverses"
+      "Shortest seek first based on convention",
+      "Moves in one direction then reverses",
+      "Always starts from 0 in standard usage",
+      "Random access based on convention"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Like an elevator, services requests in one direction."
   },
   {
@@ -328,12 +328,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "SSTF disk scheduling?",
     "options": [
-      "Random order",
-      "FIFO",
+      "Random order in standard usage",
       "Shortest Seek Time First",
-      "Reverse order"
+      "FIFO (standard definition)",
+      "Reverse order (commonly used)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Services nearest request; can cause starvation of far requests."
   },
   {
@@ -342,12 +342,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "System call is?",
     "options": [
+      "Hardware interrupt in typical implementations",
       "Interface between user program and OS kernel",
-      "Software bug",
-      "Hardware interrupt",
-      "Network protocol"
+      "Network protocol in typical implementations",
+      "Software bug in typical implementations"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Programs request OS services via system calls."
   },
   {
@@ -356,12 +356,12 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "fork() system call creates?",
     "options": [
-      "New file",
-      "New device",
+      "New device in practice",
       "A new child process",
-      "New thread"
+      "New thread by design",
+      "New file by design"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Child is copy of parent process."
   },
   {
@@ -370,12 +370,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Producer-Consumer problem uses?",
     "options": [
-      "File I/O only",
-      "CPU scheduling",
-      "Sorting",
-      "Semaphores or mutex with bounded buffer"
+      "File I/O only (typical scenario)",
+      "Semaphores or mutex with bounded buffer",
+      "Sorting in typical implementations",
+      "CPU scheduling based on convention"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Classic synchronization problem with shared buffer."
   },
   {
@@ -384,12 +384,12 @@ window.quizData.os = [
     "difficulty": "Hard",
     "question": "Dining Philosophers problem illustrates?",
     "options": [
-      "Deadlock and synchronization challenges",
-      "File systems",
-      "Sorting efficiency",
-      "Memory allocation"
+      "Memory allocation based on convention",
+      "Sorting efficiency in standard usage",
+      "File systems as per specification",
+      "Deadlock and synchronization challenges"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Five philosophers, five forks, potential circular wait."
   },
   {
@@ -398,12 +398,12 @@ window.quizData.os = [
     "difficulty": "Hard",
     "question": "Readers-Writers problem addresses?",
     "options": [
-      "File compression",
-      "CPU scheduling",
-      "Memory allocation",
-      "Concurrent access to shared data"
+      "File compression (standard definition)",
+      "Concurrent access to shared data",
+      "Memory allocation (typical scenario)",
+      "CPU scheduling (widely accepted)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Multiple readers OK; writers need exclusive access."
   },
   {
@@ -412,12 +412,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Internal fragmentation occurs in?",
     "options": [
-      "No allocation",
-      "Stack memory",
+      "Stack memory in standard usage",
       "Fixed-size allocation (paging)",
-      "Variable-size allocation"
+      "Variable-size allocation in practice",
+      "No allocation in practice"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Allocated block larger than needed; wasted space within."
   },
   {
@@ -426,12 +426,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "External fragmentation occurs in?",
     "options": [
-      "Variable-size allocation (segmentation)",
-      "CPU registers",
-      "Cache memory",
-      "Fixed-size allocation"
+      "Fixed-size allocation under normal conditions",
+      "Cache memory (standard definition)",
+      "CPU registers (default behavior)",
+      "Variable-size allocation (segmentation)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Enough total free memory but not contiguous."
   },
   {
@@ -440,9 +440,9 @@ window.quizData.os = [
     "difficulty": "Easy",
     "question": "Demand paging loads pages?",
     "options": [
-      "All at program start",
-      "In sorted order",
-      "Randomly",
+      "All at program start (commonly used)",
+      "Randomly in typical implementations",
+      "In sorted order (standard definition)",
       "Only when they are accessed (on demand)"
     ],
     "answer": 3,
@@ -454,12 +454,12 @@ window.quizData.os = [
     "difficulty": "Hard",
     "question": "Working Set Model tracks?",
     "options": [
-      "Disk blocks",
-      "All system pages",
       "Set of pages a process is currently using",
-      "CPU instructions"
+      "All system pages under normal conditions",
+      "CPU instructions (standard definition)",
+      "Disk blocks under normal conditions"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Helps determine how many frames a process needs."
   },
   {
@@ -468,12 +468,12 @@ window.quizData.os = [
     "difficulty": "Hard",
     "question": "Belady's Anomaly?",
     "options": [
-      "Fewer frames always worse",
-      "LRU anomaly",
       "More frames can cause more page faults in FIFO",
-      "Optimal anomaly"
+      "LRU anomaly in typical implementations",
+      "Fewer frames always worse (commonly used)",
+      "Optimal anomaly under normal conditions"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Counter-intuitive: more memory can degrade FIFO performance."
   },
   {
@@ -482,12 +482,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Multithreading model: many-to-one?",
     "options": [
-      "One-to-one",
-      "Many user threads map to one kernel thread",
-      "Many-to-many",
-      "One-to-many"
+      "Many-to-many under normal conditions",
+      "One-to-one in typical implementations",
+      "One-to-many under normal conditions",
+      "Many user threads map to one kernel thread"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Efficient but one block stops all."
   },
   {
@@ -497,9 +497,9 @@ window.quizData.os = [
     "question": "Multithreading model: one-to-one?",
     "options": [
       "Each user thread maps to one kernel thread",
-      "None",
-      "Many-to-one",
-      "Many-to-many"
+      "Many-to-one under normal conditions",
+      "Many-to-many under normal conditions",
+      "None in typical implementations"
     ],
     "answer": 0,
     "explanation": "More concurrency but higher overhead."
@@ -510,12 +510,12 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Starvation vs Deadlock?",
     "options": [
-      "Deadlock is temporary",
-      "Starvation is worse",
-      "Same thing",
-      "Starvation: indefinite wait; Deadlock: permanent block"
+      "Starvation: indefinite wait; Deadlock: permanent block",
+      "Starvation is worse in typical implementations",
+      "Same thing in typical implementations",
+      "Deadlock is temporary in typical implementations"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Starvation can be resolved; deadlock requires intervention."
   },
   {
@@ -524,12 +524,12 @@ window.quizData.os = [
     "difficulty": "Hard",
     "question": "Monitor is?",
     "options": [
-      "Network monitor",
-      "Disk management tool",
       "High-level synchronization construct with mutual exclusion",
-      "Hardware device"
+      "Disk management tool in typical implementations",
+      "Network monitor in typical implementations",
+      "Hardware device in typical implementations"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Encapsulates shared data with synchronized procedures."
   },
   {
@@ -538,278 +538,26 @@ window.quizData.os = [
     "difficulty": "Medium",
     "question": "Spooling is?",
     "options": [
+      "CPU scheduling in typical implementations",
+      "Network protocol (widely accepted)",
       "Simultaneous Peripheral Operation On-Line",
-      "CPU scheduling",
-      "Network protocol",
-      "Memory management"
+      "Memory management under normal conditions"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Buffers data for slow devices like printers."
   },
   {
     "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "6.00 ms",
-      "6.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "1.67 ms",
-      "4.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.67 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Virtual Memory",
-    "difficulty": "Hard",
-    "question": "Using the reference string [1, 2, 3, 4, 1, 2] with 3 physical page frames initially empty, how many page faults occur under the FIFO replacement algorithm?",
-    "options": [
-      "3",
-      "7",
-      "6",
-      "4"
-    ],
-    "answer": 2,
-    "explanation": "Simulates FIFO allocations on 3 page frame size. Result is 6."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.33 ms",
-      "2.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
     "topic": "Memory Management",
     "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 35 KB in the very first free block that is large enough?",
+    "question": "Which memory partition allocation algorithm places a new process of size 30 KB in the very first free block that is large enough?",
     "options": [
-      "None of these",
-      "Best-Fit",
       "Worst-Fit",
+      "Best-Fit",
+      "None of these",
       "First-Fit"
     ],
     "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "8.33 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Best-Fit",
-      "None of these",
-      "Worst-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 40 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit",
-      "None of these"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 49 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 31 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "4.33 ms",
-      "6.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 39 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "First-Fit",
-      "None of these",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 28 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "4.00 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 33 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "First-Fit",
-      "Best-Fit",
-      "None of these"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 36 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Best-Fit",
-      "None of these",
-      "Worst-Fit"
-    ],
-    "answer": 0,
     "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
@@ -818,4815 +566,13 @@ window.quizData.os = [
     "difficulty": "Hard",
     "question": "Using the reference string [1, 2, 3, 4, 1, 2] with 4 physical page frames initially empty, how many page faults occur under the FIFO replacement algorithm?",
     "options": [
-      "7",
       "3",
-      "4",
-      "5"
+      "7",
+      "5",
+      "4"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Simulates FIFO allocations on 4 page frame size. Result is 5."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 17 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 37 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "None of these",
-      "Worst-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 43 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.00 ms",
-      "4.00 ms",
-      "7.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 55 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit",
-      "None of these"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.67 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 21 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "None of these",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "8.00 ms",
-      "8.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "7.00 ms",
-      "7.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "3.67 ms",
-      "5.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 45 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "4.33 ms",
-      "4.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "7.33 ms",
-      "4.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "3.33 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "2.67 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 50 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "8.33 ms",
-      "5.33 ms",
-      "8.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 51 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 56 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit",
-      "None of these"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 58 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit",
-      "None of these"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 11 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Worst-Fit",
-      "Best-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 38 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "2.33 ms",
-      "3.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 30 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "3.33 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.33 ms",
-      "2.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 25 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit",
-      "None of these"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "7.00 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 54 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit",
-      "None of these"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "2.00 ms",
-      "3.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "3.00 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.00 ms",
-      "7.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "7.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "1.33 ms",
-      "4.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 44 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.00 ms",
-      "6.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.67 ms",
-      "6.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "1.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "4.00 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 34 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.33 ms",
-      "4.00 ms",
-      "5.67 ms",
-      "7.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "4.00 ms",
-      "8.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 52 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.00 ms",
-      "2.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 20 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit",
-      "None of these"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 48 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
-      "6.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.33 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 24 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.33 ms",
-      "5.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.33 ms",
-      "8.00 ms",
-      "8.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "8.00 ms",
-      "5.00 ms",
-      "9.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "3.33 ms",
-      "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "None of these",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "6.00 ms",
-      "4.00 ms",
-      "7.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 27 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "7.67 ms",
-      "8.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "4.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 59 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "8.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.33 ms",
-      "1.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "1.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.33 ms",
-      "5.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "3.33 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "1.67 ms",
-      "2.00 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "2.00 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 10 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "First-Fit",
-      "None of these",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.67 ms",
-      "3.00 ms",
-      "1.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 23 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 14 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "2.33 ms",
-      "3.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.33 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 32 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "3.67 ms",
-      "1.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 46 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "First-Fit",
-      "None of these",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "1.67 ms",
-      "4.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.00 ms",
-      "3.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.00 ms",
-      "2.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "2.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "7.67 ms",
-      "3.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "5.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 47 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "4.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "8.00 ms",
-      "7.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "2.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.67 ms",
-      "2.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "5.00 ms",
-      "3.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "5.67 ms",
-      "6.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "4.33 ms",
-      "7.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 12 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "5.00 ms",
-      "6.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 16 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Worst-Fit",
-      "Best-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "3.67 ms",
-      "7.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 53 KB in the very first free block that is large enough?",
-    "options": [
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit",
-      "None of these"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "3.67 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "5.00 ms",
-      "6.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "9.00 ms",
-      "5.67 ms",
-      "8.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "4.33 ms",
-      "6.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
-      "2.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "6.67 ms",
-      "7.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "3.00 ms",
-      "6.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "4.67 ms",
-      "4.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.67 ms",
-      "4.00 ms",
-      "5.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "1.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "7.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 13 KB in the very first free block that is large enough?",
-    "options": [
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit",
-      "None of these"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "2.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "8.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "2.67 ms",
-      "4.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "2.33 ms",
-      "6.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "5.33 ms",
-      "6.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "3.00 ms",
-      "2.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.33 ms",
-      "2.67 ms",
-      "1.67 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 41 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit",
-      "None of these"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.00 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "3.00 ms",
-      "3.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.67 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "5.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "4.67 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.67 ms",
-      "4.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "8.33 ms",
-      "8.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "6.67 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "7.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.00 ms",
-      "4.67 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "3.00 ms",
-      "4.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "1.67 ms",
-      "4.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "2.67 ms",
-      "3.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.33 ms",
-      "8.33 ms",
-      "5.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.00 ms",
-      "6.67 ms",
-      "4.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "2.33 ms",
-      "1.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 29 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.67 ms",
-      "7.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "6.33 ms",
-      "4.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "5.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "5.67 ms",
-      "3.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "5.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.00 ms",
-      "4.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "1.67 ms",
-      "2.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "6.00 ms",
-      "3.33 ms",
-      "8.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.67 ms",
-      "2.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "6.00 ms",
-      "5.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.33 ms",
-      "2.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.00 ms",
-      "5.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "3.33 ms",
-      "7.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.67 ms",
-      "8.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "8.33 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 42 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Worst-Fit",
-      "Best-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "6.33 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "4.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "2.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.00 ms",
-      "4.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "6.67 ms",
-      "5.33 ms",
-      "6.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.33 ms",
-      "2.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "3.00 ms",
-      "5.33 ms",
-      "6.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 19 KB in the very first free block that is large enough?",
-    "options": [
-      "First-Fit",
-      "Worst-Fit",
-      "Best-Fit",
-      "None of these"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "1.67 ms",
-      "4.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 57 KB in the very first free block that is large enough?",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "5.33 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "5.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "2.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.33 ms",
-      "5.33 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "6.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "6.00 ms",
-      "3.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "5.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "7.67 ms",
-      "3.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.33 ms",
-      "7.33 ms",
-      "9.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.33 ms",
-      "3.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "5.33 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "6.00 ms",
-      "4.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "1.67 ms",
-      "3.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "4.33 ms",
-      "7.00 ms",
-      "7.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.00 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.33 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "5.67 ms",
-      "4.67 ms",
-      "8.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.33 ms",
-      "4.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.00 ms",
-      "8.00 ms",
-      "7.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "6.67 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.67 ms",
-      "5.33 ms",
-      "8.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.00 ms",
-      "6.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "2.67 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "3.67 ms",
-      "4.33 ms",
-      "1.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.00 ms",
-      "2.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.33 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "4.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "3.00 ms",
-      "4.00 ms",
-      "1.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.33 ms",
-      "7.00 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "4.67 ms",
-      "6.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "7.00 ms",
-      "6.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "2.67 ms",
-      "2.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "8.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "1.67 ms",
-      "3.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "3.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "7.00 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "3.00 ms",
-      "3.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "3.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "5.00 ms",
-      "6.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.00 ms",
-      "2.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.00 ms",
-      "3.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.67 ms",
-      "2.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "2.00 ms",
-      "3.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.67 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.33 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "3.67 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.67 ms",
-      "4.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.00 ms",
-      "5.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "1.67 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "6.00 ms",
-      "8.67 ms",
-      "8.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.67 ms",
-      "5.67 ms",
-      "8.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.00 ms",
-      "2.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.33 ms",
-      "1.67 ms",
-      "2.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "2.33 ms",
-      "4.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.00 ms",
-      "6.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "8.00 ms",
-      "5.67 ms",
-      "8.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "6.33 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "5.00 ms",
-      "3.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "5.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "6.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "7.67 ms",
-      "3.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "4.33 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.00 ms",
-      "3.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "5.67 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "7.67 ms",
-      "7.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "2.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "5.67 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "3.33 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "3.67 ms",
-      "5.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "2.67 ms",
-      "3.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "6.33 ms",
-      "3.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "4.33 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "6.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "5.33 ms",
-      "4.00 ms",
-      "6.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "5.00 ms",
-      "4.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.67 ms",
-      "6.33 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "6.67 ms",
-      "5.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "5.00 ms",
-      "5.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "3.67 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.67 ms",
-      "4.67 ms",
-      "9.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "4.33 ms",
-      "6.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.00 ms",
-      "3.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.67 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "5.00 ms",
-      "5.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.00 ms",
-      "3.00 ms",
-      "2.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "5.33 ms",
-      "5.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "5.00 ms",
-      "6.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.33 ms",
-      "4.00 ms",
-      "3.67 ms",
-      "6.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.33 ms",
-      "3.33 ms",
-      "3.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "4.00 ms",
-      "7.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "5.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.00 ms",
-      "6.33 ms",
-      "4.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.00 ms",
-      "4.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.67 ms",
-      "8.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "2.00 ms",
-      "3.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "8.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "7.67 ms",
-      "4.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "2.00 ms",
-      "2.00 ms",
-      "2.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.33 ms",
-      "5.33 ms",
-      "4.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.67 ms",
-      "4.67 ms",
-      "7.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "3.33 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.00 ms",
-      "5.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.67 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "6.67 ms",
-      "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "3.67 ms",
-      "3.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "5.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "6.00 ms",
-      "6.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.33 ms",
-      "5.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "5.67 ms",
-      "5.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "5.33 ms",
-      "4.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "7.33 ms",
-      "3.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.00 ms",
-      "1.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "6.00 ms",
-      "2.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.33 ms",
-      "3.00 ms",
-      "1.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.67 ms",
-      "2.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.00 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.67 ms",
-      "3.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "3.67 ms",
-      "6.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "6.00 ms",
-      "5.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "8.67 ms",
-      "6.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "2.33 ms",
-      "5.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "5.00 ms",
-      "3.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.33 ms",
-      "2.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "2.67 ms",
-      "3.00 ms",
-      "6.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "7.67 ms",
-      "5.00 ms",
-      "7.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "1.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "6.33 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
   },
   {
     "subject": "OS",
@@ -5646,26 +592,474 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.67 ms",
       "4.00 ms",
-      "2.33 ms",
-      "2.33 ms"
+      "5.67 ms",
+      "7.33 ms",
+      "7.00 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "7.00 ms",
+      "4.00 ms",
       "5.67 ms",
-      "5.67 ms",
+      "3.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "4.33 ms",
+      "1.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Virtual Memory",
+    "difficulty": "Hard",
+    "question": "Using the reference string [1, 2, 3, 4, 1, 2] with 3 physical page frames initially empty, how many page faults occur under the FIFO replacement algorithm?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Simulates FIFO allocations on 3 page frame size. Result is 6."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.00 ms",
+      "2.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "4.33 ms",
+      "3.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.33 ms",
+      "8.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "4.67 ms",
+      "4.33 ms",
+      "8.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 57 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "4.33 ms",
+      "2.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 29 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "4.67 ms",
+      "8.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 41 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 32 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "1.67 ms",
+      "2.67 ms",
       "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 36 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "Worst-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 55 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.67 ms",
+      "2.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 33 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "First-Fit",
+      "Worst-Fit",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 50 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.00 ms",
+      "1.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "7.67 ms",
+      "5.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "2.67 ms",
+      "3.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 37 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 54 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.67 ms",
+      "5.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.33 ms",
+      "6.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 35 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 27 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "4.67 ms",
+      "6.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "2.67 ms",
+      "7.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "5.67 ms",
+      "6.00 ms",
+      "4.33 ms"
     ],
     "answer": 1,
     "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
@@ -5674,25 +1068,95 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.67 ms",
-      "7.67 ms",
-      "6.00 ms",
-      "3.00 ms"
+      "7.00 ms",
+      "4.67 ms",
+      "4.67 ms",
+      "7.00 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "6.00 ms",
+      "4.00 ms",
+      "2.33 ms",
+      "2.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
       "4.67 ms",
       "3.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "3.67 ms",
+      "4.33 ms",
+      "2.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "3.00 ms",
+      "2.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "3.00 ms",
+      "4.33 ms",
       "5.33 ms"
     ],
     "answer": 3,
@@ -5702,138 +1166,796 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "4.00 ms",
-      "6.33 ms",
-      "8.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.00 ms",
+      "7.00 ms",
+      "7.00 ms",
       "6.00 ms",
-      "8.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.67 ms",
-      "7.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "5.67 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "3.00 ms",
-      "5.33 ms",
-      "3.67 ms"
+      "4.00 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.33 ms",
       "3.00 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.33 ms",
-      "5.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "6.67 ms",
-      "5.00 ms",
-      "5.67 ms"
+      "2.67 ms",
+      "3.67 ms",
+      "2.33 ms"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
+      "3.67 ms",
       "5.67 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "5.33 ms"
+      "5.33 ms",
+      "6.67 ms"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "4.00 ms",
+      "4.33 ms",
+      "7.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 17 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "8.00 ms",
+      "5.67 ms",
+      "7.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 47 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.67 ms",
+      "4.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "2.33 ms",
+      "2.33 ms",
+      "2.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.33 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "4.67 ms",
+      "6.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 56 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 34 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "8.33 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "4.33 ms",
+      "1.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 11 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 38 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.33 ms",
+      "4.00 ms",
+      "7.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 14 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "5.00 ms",
+      "8.00 ms",
+      "7.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "7.67 ms",
+      "8.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "First-Fit",
+      "Best-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 44 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 39 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.33 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "3.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.67 ms",
+      "3.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 45 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 28 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "First-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.67 ms",
+      "5.67 ms",
+      "5.67 ms",
+      "9.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.00 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 16 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "2.67 ms",
+      "3.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "5.33 ms",
+      "7.67 ms",
+      "7.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.67 ms",
+      "6.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 43 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "First-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.33 ms",
+      "5.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.67 ms",
+      "3.33 ms",
+      "1.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 53 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.33 ms",
+      "6.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.00 ms",
+      "4.33 ms",
+      "6.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 25 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.67 ms",
+      "2.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.00 ms",
+      "3.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "7.00 ms",
+      "4.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 52 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.67 ms",
+      "2.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 49 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "Worst-Fit",
+      "Best-Fit",
+      "None of these"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "3.00 ms",
+      "5.00 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.33 ms",
+      "6.33 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.00 ms",
+      "4.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "6.00 ms",
       "7.67 ms",
-      "4.67 ms",
-      "6.33 ms"
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "4.33 ms",
+      "5.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "7.67 ms",
+      "6.67 ms",
+      "5.00 ms"
     ],
     "answer": 1,
     "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
@@ -5842,25 +1964,109 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.00 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "3.00 ms"
+      "7.67 ms",
+      "4.00 ms",
+      "6.67 ms",
+      "4.33 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "6.33 ms",
+      "6.00 ms",
+      "3.33 ms",
+      "4.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
       "5.67 ms",
-      "3.67 ms",
+      "3.33 ms",
+      "5.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.33 ms",
+      "2.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 23 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 46 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 51 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "Best-Fit",
+      "Worst-Fit",
+      "None of these"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.33 ms",
+      "2.67 ms",
       "4.00 ms"
     ],
     "answer": 3,
@@ -5868,96 +2074,68 @@ window.quizData.os = [
   },
   {
     "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough?",
     "options": [
-      "7.00 ms",
-      "4.00 ms",
-      "8.00 ms",
-      "5.00 ms"
+      "Best-Fit",
+      "First-Fit",
+      "None of these",
+      "Worst-Fit"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "4.67 ms",
-      "2.67 ms",
-      "2.67 ms",
-      "6.00 ms"
+      "4.00 ms",
+      "3.33 ms",
+      "5.33 ms"
     ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 19 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "Best-Fit",
+      "Worst-Fit",
+      "None of these"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.00 ms",
+      "2.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "5.33 ms",
       "6.67 ms",
-      "3.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.33 ms",
-      "4.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "3.67 ms",
-      "4.00 ms",
-      "8.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "5.67 ms",
       "6.00 ms",
       "4.33 ms"
     ],
@@ -5968,15 +2146,3025 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.00 ms",
+      "7.67 ms",
+      "7.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "3.67 ms",
+      "6.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 20 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 59 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "3.33 ms",
+      "4.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.33 ms",
+      "3.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "5.00 ms",
+      "5.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "4.33 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.00 ms",
       "3.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "6.33 ms",
       "4.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "8.00 ms",
+      "5.33 ms",
+      "8.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "3.67 ms",
+      "5.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 13 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "Worst-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "4.33 ms",
+      "2.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "5.67 ms",
+      "4.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "5.33 ms",
+      "3.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "5.00 ms",
+      "3.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.00 ms",
+      "7.33 ms",
+      "7.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.67 ms",
+      "5.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "2.67 ms",
+      "5.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.33 ms",
+      "6.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "4.00 ms",
+      "6.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "6.00 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 21 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.67 ms",
+      "4.00 ms",
+      "3.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "6.33 ms",
+      "4.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "7.67 ms",
+      "5.33 ms",
+      "8.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 12 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 31 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "Best-Fit",
+      "None of these",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 42 KB in the very first free block that is large enough?",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.67 ms",
+      "3.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.67 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 24 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "6.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "1.67 ms",
+      "4.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "2.33 ms",
+      "2.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "9.00 ms",
+      "9.00 ms",
+      "6.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.67 ms",
+      "6.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.67 ms",
+      "4.00 ms",
       "5.33 ms"
     ],
     "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "5.00 ms",
+      "3.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.33 ms",
+      "3.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.67 ms",
+      "2.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 40 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "2.67 ms",
+      "3.00 ms",
+      "1.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "4.67 ms",
+      "7.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "2.33 ms",
+      "6.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "5.00 ms",
+      "5.00 ms",
+      "7.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.00 ms",
+      "5.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "2.00 ms",
+      "4.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.33 ms",
+      "3.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "4.67 ms",
+      "4.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "7.33 ms",
+      "7.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "4.33 ms",
+      "7.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "5.67 ms",
+      "4.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "4.67 ms",
+      "7.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "5.33 ms",
+      "3.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.67 ms",
+      "3.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.33 ms",
+      "5.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.00 ms",
+      "8.33 ms",
+      "8.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "4.33 ms",
+      "4.33 ms",
+      "9.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "3.00 ms",
+      "3.33 ms",
+      "2.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "3.67 ms",
+      "5.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.00 ms",
+      "1.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.33 ms",
+      "4.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "3.33 ms",
+      "6.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.33 ms",
+      "7.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "1.67 ms",
+      "4.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.00 ms",
+      "5.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.67 ms",
+      "7.00 ms",
+      "4.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "5.67 ms",
+      "5.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "7.00 ms",
+      "7.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 48 KB in the very first free block that is large enough?",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "5.67 ms",
+      "8.33 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "7.33 ms",
+      "5.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 58 KB in the very first free block that is large enough?",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "7.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.33 ms",
+      "5.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.33 ms",
+      "5.33 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 10 KB in the very first free block that is large enough?",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "6.33 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "1.33 ms",
+      "1.33 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.00 ms",
+      "5.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "7.33 ms",
+      "5.33 ms",
+      "8.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "1.67 ms",
+      "2.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.67 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "1.67 ms",
+      "3.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "4.00 ms",
+      "6.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "4.00 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.00 ms",
+      "2.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.67 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "6.00 ms",
+      "3.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "5.33 ms",
+      "3.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "7.33 ms",
+      "5.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.67 ms",
+      "6.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "3.00 ms",
+      "3.33 ms",
+      "1.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "2.33 ms",
+      "3.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "2.00 ms",
+      "4.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "5.00 ms",
+      "4.00 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.67 ms",
+      "2.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "3.33 ms",
+      "4.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "7.00 ms",
+      "5.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.67 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
     "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "5.33 ms",
+      "4.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "5.33 ms",
+      "3.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.33 ms",
+      "5.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "3.33 ms",
+      "4.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "3.33 ms",
+      "4.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "2.67 ms",
+      "4.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "4.00 ms",
+      "3.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "4.00 ms",
+      "6.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.33 ms",
+      "5.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "5.67 ms",
+      "8.67 ms",
+      "8.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "4.33 ms",
+      "4.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "3.33 ms",
+      "6.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.33 ms",
+      "3.33 ms",
+      "4.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "3.67 ms",
+      "2.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "4.67 ms",
+      "7.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "2.00 ms",
+      "4.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.33 ms",
+      "6.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "3.00 ms",
+      "2.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "3.67 ms",
+      "4.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.00 ms",
+      "5.00 ms",
+      "5.00 ms",
+      "9.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.00 ms",
+      "5.33 ms",
+      "7.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.00 ms",
+      "2.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "5.67 ms",
+      "3.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "7.33 ms",
+      "4.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "3.67 ms",
+      "5.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.67 ms",
+      "6.67 ms",
+      "8.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.33 ms",
+      "6.33 ms",
+      "8.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.67 ms",
+      "5.67 ms",
+      "8.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "3.00 ms",
+      "4.67 ms",
+      "7.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "6.33 ms",
+      "7.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "4.67 ms",
+      "5.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "4.00 ms",
+      "3.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "2.67 ms",
+      "4.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "3.33 ms",
+      "4.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "3.67 ms",
+      "3.67 ms",
+      "9.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "8.00 ms",
+      "5.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "1.67 ms",
+      "3.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.33 ms",
+      "4.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "6.67 ms",
+      "2.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.33 ms",
+      "7.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "3.67 ms",
+      "7.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "3.33 ms",
+      "3.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "6.00 ms",
+      "4.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "3.67 ms",
+      "5.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "7.33 ms",
+      "5.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.33 ms",
+      "5.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.33 ms",
+      "4.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.33 ms",
+      "5.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "3.00 ms",
+      "6.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "3.33 ms",
+      "5.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "8.00 ms",
+      "8.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.67 ms",
+      "3.33 ms",
+      "1.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.00 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.67 ms",
+      "2.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.67 ms",
+      "5.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "8.00 ms",
+      "3.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "7.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "4.67 ms",
+      "5.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.33 ms",
+      "5.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.67 ms",
+      "7.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.33 ms",
+      "5.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "2.67 ms",
+      "5.67 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "3.67 ms",
+      "3.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.00 ms",
+      "2.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "3.67 ms",
+      "2.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "8.00 ms",
+      "7.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "3.67 ms",
+      "4.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.00 ms",
+      "4.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "5.00 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "3.33 ms",
+      "2.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "2.67 ms",
+      "4.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "4.33 ms",
+      "5.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.00 ms",
+      "3.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "6.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "2.67 ms",
+      "2.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.00 ms",
+      "6.67 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "4.00 ms",
+      "2.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "8.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.67 ms",
+      "4.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.67 ms",
+      "2.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.00 ms",
+      "1.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "6.67 ms",
+      "5.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.67 ms",
+      "1.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "4.00 ms",
+      "3.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.33 ms",
+      "6.00 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.33 ms",
+      "5.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.33 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.33 ms",
+      "3.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "5.00 ms",
+      "7.33 ms",
+      "7.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.33 ms",
+      "6.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.00 ms",
+      "5.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "2.00 ms",
+      "4.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
   },
   {
     "subject": "OS",
@@ -5996,1174 +5184,12 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "8.33 ms",
+      "4.33 ms",
       "4.00 ms",
-      "7.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "2.67 ms",
-      "6.67 ms",
+      "3.33 ms",
       "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.67 ms",
-      "3.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "6.67 ms",
-      "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "2.67 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "6.00 ms",
-      "6.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "6.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "5.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "7.67 ms",
-      "4.67 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "2.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.33 ms",
-      "4.67 ms",
-      "8.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "6.33 ms",
-      "5.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
-      "3.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "2.00 ms",
-      "1.67 ms",
-      "1.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "3.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "7.67 ms",
-      "4.00 ms",
-      "6.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "7.00 ms",
-      "5.33 ms",
-      "7.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.00 ms",
-      "7.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.67 ms",
-      "4.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "6.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "7.00 ms",
-      "2.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.67 ms",
-      "3.67 ms",
-      "2.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "6.00 ms",
-      "4.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "2.33 ms",
-      "4.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "4.00 ms",
-      "6.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "2.33 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "2.67 ms",
-      "4.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.00 ms",
-      "2.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "7.00 ms",
-      "4.67 ms",
-      "7.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "3.33 ms",
-      "6.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "3.67 ms",
-      "3.67 ms",
-      "8.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "4.33 ms",
-      "3.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.00 ms",
-      "4.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.00 ms",
-      "5.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
-      "6.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "2.00 ms",
-      "3.33 ms",
-      "1.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "7.00 ms",
-      "5.00 ms",
-      "2.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "8.00 ms",
-      "5.33 ms",
-      "8.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "3.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.33 ms",
-      "2.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.67 ms",
-      "3.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "1.67 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "2.00 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.67 ms",
-      "5.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.33 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.33 ms",
-      "5.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "7.00 ms",
-      "1.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "7.00 ms",
-      "3.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "7.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "5.67 ms",
-      "4.33 ms",
-      "6.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "2.33 ms",
-      "5.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "2.33 ms",
-      "4.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "6.00 ms",
-      "5.33 ms",
-      "8.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "5.67 ms",
-      "4.67 ms",
-      "7.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "6.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "3.33 ms",
-      "2.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "6.00 ms",
-      "7.00 ms",
-      "8.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "2.67 ms",
-      "5.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.33 ms",
-      "4.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "4.00 ms",
-      "4.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "2.67 ms",
-      "3.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "7.00 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "7.33 ms",
-      "5.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "4.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "1.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "2.67 ms",
-      "2.67 ms",
-      "1.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.00 ms",
-      "4.33 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "1.67 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "2.67 ms",
-      "3.33 ms",
-      "4.33 ms"
     ],
     "answer": 0,
     "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
@@ -7186,319 +5212,53 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
-      "5.33 ms",
+      "4.67 ms",
+      "2.67 ms",
       "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "4.00 ms",
-      "3.00 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "7.67 ms",
-      "8.67 ms",
       "4.67 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
+      "2.00 ms",
+      "1.67 ms",
+      "2.67 ms",
+      "2.67 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.33 ms",
-      "4.67 ms",
-      "3.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
       "5.67 ms",
-      "5.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.67 ms",
-      "2.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "9.00 ms",
-      "9.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "4.00 ms",
-      "2.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.67 ms",
-      "2.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "9.00 ms",
-      "3.67 ms",
       "6.67 ms",
       "3.67 ms"
     ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
-      "4.00 ms",
-      "3.33 ms",
-      "2.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
+      "4.33 ms",
+      "6.00 ms",
       "3.00 ms",
-      "3.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "5.00 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "2.00 ms",
-      "4.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.33 ms",
-      "2.00 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.67 ms",
-      "8.67 ms",
-      "8.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.00 ms",
-      "3.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "4.00 ms",
-      "7.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.33 ms",
-      "2.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.33 ms",
-      "5.67 ms",
-      "4.33 ms",
       "6.33 ms"
     ],
     "answer": 3,
@@ -7508,785 +5268,15 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "4.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "5.67 ms",
-      "4.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "5.00 ms",
-      "2.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "7.67 ms",
-      "4.67 ms",
-      "7.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "7.67 ms",
-      "7.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.00 ms",
-      "5.67 ms",
-      "4.33 ms",
-      "6.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.33 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "3.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "5.33 ms",
-      "6.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "6.00 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "4.00 ms",
-      "7.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "5.33 ms",
-      "3.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.33 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "4.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "4.67 ms",
-      "5.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.33 ms",
-      "6.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "9.00 ms",
-      "5.33 ms",
-      "8.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "4.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.67 ms",
-      "6.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.00 ms",
-      "3.00 ms",
-      "3.33 ms",
-      "1.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "5.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "5.67 ms",
-      "3.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "2.00 ms",
-      "6.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "3.00 ms",
-      "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "7.33 ms",
-      "7.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "3.67 ms",
-      "1.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "3.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "1.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "3.33 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "6.00 ms",
-      "7.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "5.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "4.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "7.00 ms",
-      "9.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "1.33 ms",
-      "3.67 ms",
-      "3.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "6.67 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "4.00 ms",
-      "6.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "2.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "5.00 ms",
-      "5.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.67 ms",
-      "7.33 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.00 ms",
-      "6.33 ms",
-      "4.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.00 ms",
-      "2.67 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "6.33 ms",
-      "5.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
-      "5.33 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.33 ms",
       "1.67 ms",
-      "3.67 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.00 ms",
-      "5.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "5.33 ms",
-      "6.67 ms"
+      "2.33 ms",
+      "1.67 ms",
+      "2.00 ms"
     ],
     "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "5.33 ms",
-      "8.00 ms",
-      "5.67 ms",
-      "7.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
   },
   {
     "subject": "OS",
@@ -8306,15 +5296,15 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "6.00 ms",
-      "4.33 ms",
-      "5.33 ms",
-      "3.00 ms"
+      "4.67 ms",
+      "5.67 ms",
+      "3.00 ms",
+      "4.67 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
   },
   {
     "subject": "OS",
@@ -8334,1201 +5324,25 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "2.67 ms",
-      "2.67 ms",
-      "2.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "2.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.33 ms",
-      "2.00 ms",
-      "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.33 ms",
-      "5.67 ms",
-      "7.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
-      "3.00 ms",
-      "7.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "6.00 ms",
       "4.00 ms",
-      "7.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "4.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "3.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 1)",
-    "options": [
-      "2.67 ms",
-      "4.33 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 2)",
-    "options": [
-      "4.67 ms",
-      "6.33 ms",
-      "5.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 3)",
-    "options": [
       "3.33 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 4)",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
-      "2.00 ms",
-      "4.00 ms"
+      "2.00 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 5)",
-    "options": [
-      "3.00 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 6)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.67 ms",
       "5.33 ms",
-      "6.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 7)",
-    "options": [
-      "5.00 ms",
-      "5.00 ms",
-      "8.00 ms",
-      "7.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 47 KB in the very first free block that is large enough? (Set 8)",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 9)",
-    "options": [
-      "5.00 ms",
-      "6.00 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 10)",
-    "options": [
       "4.33 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 11)",
-    "options": [
-      "2.00 ms",
-      "3.00 ms",
-      "3.33 ms",
-      "1.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 12)",
-    "options": [
-      "4.67 ms",
-      "7.33 ms",
-      "7.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 13)",
-    "options": [
-      "7.00 ms",
-      "4.00 ms",
-      "8.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 14)",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 15)",
-    "options": [
-      "4.67 ms",
-      "3.00 ms",
-      "6.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 16)",
-    "options": [
-      "6.33 ms",
-      "6.67 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 17)",
-    "options": [
-      "6.00 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 18)",
-    "options": [
-      "5.00 ms",
-      "7.67 ms",
-      "8.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 19)",
-    "options": [
-      "3.00 ms",
-      "4.00 ms",
-      "6.00 ms",
-      "8.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough? (Set 20)",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 21)",
-    "options": [
-      "4.67 ms",
-      "6.00 ms",
-      "3.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 22)",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "6.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 24)",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 25)",
-    "options": [
-      "3.33 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 26)",
-    "options": [
-      "2.67 ms",
-      "5.00 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 30 KB in the very first free block that is large enough? (Set 27)",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28)",
-    "options": [
-      "4.67 ms",
-      "6.33 ms",
-      "5.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 29)",
-    "options": [
-      "6.00 ms",
-      "6.33 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 52 KB in the very first free block that is large enough? (Set 30)",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 32)",
-    "options": [
-      "2.67 ms",
-      "6.00 ms",
-      "3.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 57 KB in the very first free block that is large enough? (Set 33)",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 34)",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 35)",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "4.33 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Semaphore is? (Set 36)",
-    "options": [
-      "File descriptor",
-      "Integer variable for process synchronization",
-      "Process ID",
-      "Memory address"
-    ],
-    "answer": 1,
-    "explanation": "wait() decrements; signal() increments."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough? (Set 20) (Set 37)",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 38)",
-    "options": [
-      "6.00 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 39)",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "4.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 40)",
-    "options": [
-      "2.33 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 41)",
-    "options": [
-      "4.67 ms",
-      "7.00 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 42)",
-    "options": [
-      "5.67 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "FCFS scheduling is? (Set 43)",
-    "options": [
-      "Random",
-      "First Come First Served — non-preemptive",
-      "Priority-based",
-      "Preemptive"
-    ],
-    "answer": 1,
-    "explanation": "Processes executed in arrival order."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 44)",
-    "options": [
-      "4.33 ms",
-      "4.33 ms",
-      "7.33 ms",
-      "9.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 45)",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "3.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 46)",
-    "options": [
-      "7.33 ms",
-      "4.00 ms",
-      "5.67 ms",
-      "7.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 47)",
-    "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "5.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 48)",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 49)",
-    "options": [
-      "5.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Dining Philosophers problem illustrates? (Set 50)",
-    "options": [
-      "Deadlock and synchronization challenges",
-      "File systems",
-      "Sorting efficiency",
-      "Memory allocation"
-    ],
-    "answer": 0,
-    "explanation": "Five philosophers, five forks, potential circular wait."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 51)",
-    "options": [
-      "2.67 ms",
-      "2.67 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 52)",
-    "options": [
-      "4.67 ms",
-      "6.67 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Context switching involves? (Set 53)",
-    "options": [
-      "Formatting disk",
-      "Deleting process",
-      "Creating new memory",
-      "Saving current process state and loading another"
-    ],
-    "answer": 3,
-    "explanation": "OS saves/restores PCB during context switch."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 54)",
-    "options": [
-      "4.67 ms",
-      "7.67 ms",
-      "4.67 ms",
-      "9.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Readers-Writers problem addresses? (Set 55)",
-    "options": [
-      "File compression",
-      "CPU scheduling",
-      "Memory allocation",
-      "Concurrent access to shared data"
-    ],
-    "answer": 3,
-    "explanation": "Multiple readers OK; writers need exclusive access."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 56)",
-    "options": [
-      "4.33 ms",
-      "4.67 ms",
-      "2.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 57)",
-    "options": [
-      "2.00 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 58)",
-    "options": [
-      "6.33 ms",
-      "4.00 ms",
-      "7.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 24) (Set 59)",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 55 KB in the very first free block that is large enough? (Set 60)",
-    "options": [
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit",
-      "None of these"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 22) (Set 61)",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "6.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 62)",
-    "options": [
-      "4.33 ms",
-      "6.00 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 63)",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "2.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 64)",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "3.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 65)",
-    "options": [
-      "5.33 ms",
-      "3.33 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 66)",
-    "options": [
-      "4.67 ms",
-      "6.00 ms",
-      "3.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 67)",
-    "options": [
-      "4.33 ms",
-      "5.00 ms",
-      "2.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 68)",
-    "options": [
-      "6.33 ms",
-      "3.00 ms",
-      "2.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 69)",
-    "options": [
-      "6.33 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 70)",
-    "options": [
-      "3.67 ms",
-      "7.67 ms",
-      "6.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough? (Set 20) (Set 71)",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 72)",
-    "options": [
-      "3.67 ms",
-      "3.33 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 73)",
-    "options": [
-      "3.33 ms",
-      "5.67 ms",
-      "7.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 48) (Set 74)",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 75)",
-    "options": [
-      "4.67 ms",
-      "4.67 ms",
-      "5.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 76)",
-    "options": [
-      "5.67 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 77)",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 78)",
-    "options": [
-      "4.33 ms",
-      "5.33 ms",
-      "3.67 ms",
       "2.00 ms"
     ],
     "answer": 1,
@@ -9538,460 +5352,12 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 73) (Set 79)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
-      "5.67 ms",
-      "7.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 80)",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 81)",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Monitor is? (Set 82)",
-    "options": [
-      "Network monitor",
-      "Disk management tool",
-      "High-level synchronization construct with mutual exclusion",
-      "Hardware device"
-    ],
-    "answer": 2,
-    "explanation": "Encapsulates shared data with synchronized procedures."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 83)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Readers-Writers problem addresses? (Set 84)",
-    "options": [
-      "File compression",
-      "CPU scheduling",
-      "Memory allocation",
-      "Concurrent access to shared data"
-    ],
-    "answer": 3,
-    "explanation": "Multiple readers OK; writers need exclusive access."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 85)",
-    "options": [
-      "3.67 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 86)",
-    "options": [
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 87)",
-    "options": [
-      "4.67 ms",
-      "2.67 ms",
-      "3.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 88)",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "1.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 89)",
-    "options": [
-      "8.67 ms",
-      "5.67 ms",
-      "8.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31) (Set 90)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 91)",
-    "options": [
-      "4.00 ms",
-      "3.67 ms",
-      "2.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 92)",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "4.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 93)",
-    "options": [
-      "2.33 ms",
-      "1.67 ms",
-      "3.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 94)",
-    "options": [
-      "7.00 ms",
-      "7.00 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 95)",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 96)",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 97)",
-    "options": [
-      "4.00 ms",
+      "1.33 ms",
       "6.00 ms",
-      "6.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 19 KB in the very first free block that is large enough? (Set 98)",
-    "options": [
-      "First-Fit",
-      "Worst-Fit",
-      "Best-Fit",
-      "None of these"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 99)",
-    "options": [
-      "7.67 ms",
-      "3.67 ms",
       "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 100)",
-    "options": [
-      "5.67 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Dining Philosophers problem illustrates? (Set 101)",
-    "options": [
-      "Deadlock and synchronization challenges",
-      "File systems",
-      "Sorting efficiency",
-      "Memory allocation"
-    ],
-    "answer": 0,
-    "explanation": "Five philosophers, five forks, potential circular wait."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 102)",
-    "options": [
-      "3.00 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 103)",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "2.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 30 KB in the very first free block that is large enough? (Set 27) (Set 104)",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 32) (Set 105)",
-    "options": [
-      "2.67 ms",
-      "6.00 ms",
-      "3.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 106)",
-    "options": [
-      "5.00 ms",
-      "2.33 ms",
-      "6.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 107)",
-    "options": [
-      "6.67 ms",
-      "5.67 ms",
-      "4.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 108)",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "2.67 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 49 KB in the very first free block that is large enough? (Set 109)",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "File allocation methods include? (Set 110)",
-    "options": [
-      "Only contiguous",
-      "Only linked",
-      "Only indexed",
-      "Contiguous, Linked, Indexed"
-    ],
-    "answer": 3,
-    "explanation": "Each has trade-offs in speed and fragmentation."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 111)",
-    "options": [
-      "3.33 ms",
-      "6.00 ms",
-      "5.33 ms",
-      "6.00 ms"
+      "4.00 ms"
     ],
     "answer": 1,
     "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
@@ -10000,24 +5366,304 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 112)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "2.67 ms",
-      "5.33 ms",
-      "4.00 ms",
-      "5.33 ms"
+      "3.33 ms",
+      "3.00 ms",
+      "5.67 ms",
+      "5.00 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 113)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
       "4.67 ms",
+      "4.67 ms",
+      "2.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.67 ms",
+      "3.67 ms",
+      "3.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "5.67 ms",
+      "6.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.00 ms",
+      "6.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "3.67 ms",
+      "4.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "4.67 ms",
+      "4.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "5.33 ms",
+      "5.33 ms",
+      "7.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "5.33 ms",
+      "4.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "5.33 ms",
+      "5.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.33 ms",
+      "3.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "5.00 ms",
+      "7.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.33 ms",
+      "6.67 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "7.33 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.67 ms",
+      "4.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.67 ms",
+      "2.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "4.33 ms",
+      "5.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "5.67 ms",
+      "4.33 ms",
+      "7.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "3.67 ms",
+      "5.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "3.33 ms",
+      "2.67 ms",
+      "2.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "3.33 ms",
+      "6.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.00 ms",
       "3.67 ms",
       "3.67 ms"
     ],
@@ -10028,473 +5674,67 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 114)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "4.33 ms",
-      "5.00 ms",
-      "2.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 115)",
-    "options": [
-      "6.33 ms",
-      "5.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 116)",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "4.33 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 6) (Set 117)",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "6.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 118)",
-    "options": [
-      "5.33 ms",
       "7.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "System call is? (Set 119)",
-    "options": [
-      "Interface between user program and OS kernel",
-      "Software bug",
-      "Hardware interrupt",
-      "Network protocol"
-    ],
-    "answer": 0,
-    "explanation": "Programs request OS services via system calls."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 120)",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough? (Set 121)",
-    "options": [
-      "Best-Fit",
-      "None of these",
-      "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 2) (Set 122)",
-    "options": [
-      "4.67 ms",
-      "6.33 ms",
-      "5.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 123)",
-    "options": [
-      "4.67 ms",
-      "1.67 ms",
-      "4.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 124)",
-    "options": [
-      "4.00 ms",
       "6.00 ms",
-      "6.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 125)",
-    "options": [
-      "2.33 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31) (Set 126)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 127)",
-    "options": [
-      "8.67 ms",
-      "4.67 ms",
-      "7.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 25 KB in the very first free block that is large enough? (Set 128)",
-    "options": [
-      "Best-Fit",
-      "First-Fit",
-      "Worst-Fit",
-      "None of these"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 129)",
-    "options": [
-      "6.33 ms",
-      "4.67 ms",
       "3.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 130)",
-    "options": [
-      "3.33 ms",
-      "5.00 ms",
-      "6.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 131)",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "3.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 132)",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "5.00 ms",
       "3.67 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 133)",
-    "options": [
-      "5.33 ms",
-      "2.67 ms",
-      "4.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 134)",
-    "options": [
-      "1.33 ms",
-      "1.67 ms",
-      "2.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 135)",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 136)",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 137)",
-    "options": [
-      "3.67 ms",
-      "4.33 ms",
-      "7.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 138)",
-    "options": [
-      "1.33 ms",
-      "2.00 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 139)",
-    "options": [
-      "5.67 ms",
-      "2.00 ms",
-      "4.33 ms",
-      "3.33 ms"
-    ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 140)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "2.00 ms",
-      "4.00 ms",
+      "3.67 ms",
+      "5.00 ms",
       "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 141)",
-    "options": [
-      "6.67 ms",
-      "5.33 ms",
-      "3.33 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 142)",
-    "options": [
-      "4.33 ms",
-      "4.00 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 143)",
-    "options": [
-      "1.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 144)",
-    "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "1.67 ms",
-      "4.67 ms"
+      "5.33 ms"
     ],
     "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 145)",
-    "options": [
-      "4.67 ms",
-      "6.67 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 146)",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "7.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 147)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "5.00 ms",
-      "6.33 ms",
+      "6.00 ms",
+      "3.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.67 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
       "4.00 ms",
+      "3.00 ms",
+      "5.33 ms",
       "6.00 ms"
     ],
     "answer": 3,
@@ -10504,362 +5744,68 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 148)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
+      "6.67 ms",
+      "4.00 ms",
       "4.67 ms",
-      "5.67 ms",
       "5.67 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 149)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.67 ms",
-      "8.00 ms",
-      "5.67 ms",
-      "8.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 150)",
-    "options": [
-      "2.33 ms",
-      "2.00 ms",
-      "3.00 ms",
-      "2.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 151)",
-    "options": [
-      "4.00 ms",
-      "2.67 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 152)",
-    "options": [
-      "4.00 ms",
-      "5.00 ms",
-      "5.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 153)",
-    "options": [
-      "5.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 154)",
-    "options": [
-      "8.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 155)",
-    "options": [
-      "6.33 ms",
       "6.00 ms",
-      "4.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 51) (Set 156)",
-    "options": [
-      "2.67 ms",
-      "2.67 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 157)",
-    "options": [
-      "5.33 ms",
-      "2.67 ms",
-      "4.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 158)",
-    "options": [
-      "6.33 ms",
-      "4.33 ms",
-      "3.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Medium",
-    "question": "Thrashing occurs when? (Set 159)",
-    "options": [
-      "Disk is full",
-      "Excessive page faults slow system drastically",
-      "CPU is idle",
-      "Memory is empty"
-    ],
-    "answer": 1,
-    "explanation": "Process spends more time paging than executing."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 160)",
-    "options": [
-      "1.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 161)",
-    "options": [
-      "5.33 ms",
-      "6.67 ms",
-      "5.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 162)",
-    "options": [
-      "6.33 ms",
       "3.33 ms",
-      "5.00 ms",
-      "2.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 163)",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 56) (Set 164)",
-    "options": [
-      "4.33 ms",
-      "4.67 ms",
-      "2.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 165)",
-    "options": [
-      "3.67 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "7.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 136) (Set 166)",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.33 ms",
+      "4.00 ms",
       "7.33 ms"
     ],
     "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 167)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
+      "5.33 ms",
+      "6.00 ms",
       "3.67 ms",
-      "2.33 ms",
-      "4.67 ms",
-      "4.00 ms"
+      "3.67 ms"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 168)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "6.33 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 111) (Set 169)",
-    "options": [
-      "3.33 ms",
-      "6.00 ms",
       "5.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 120) (Set 170)",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 171)",
-    "options": [
-      "6.67 ms",
-      "7.67 ms",
-      "4.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 172)",
-    "options": [
-      "6.33 ms",
-      "6.67 ms",
-      "5.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 173)",
-    "options": [
-      "4.67 ms",
-      "7.33 ms",
       "7.33 ms",
       "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "7.33 ms",
+      "6.33 ms",
+      "3.67 ms"
     ],
     "answer": 1,
     "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
@@ -10868,37 +5814,975 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 174)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "5.00 ms",
+      "4.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "7.67 ms",
+      "5.67 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "3.00 ms",
+      "5.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.67 ms",
+      "5.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "6.00 ms",
+      "8.33 ms",
+      "5.33 ms",
+      "8.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.00 ms",
+      "7.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "2.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "7.00 ms",
+      "4.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "6.67 ms",
+      "3.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
       "4.00 ms",
+      "3.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "2.67 ms",
+      "5.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "6.00 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "5.67 ms",
+      "7.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "7.67 ms",
+      "5.00 ms",
+      "7.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "2.00 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.00 ms",
+      "7.00 ms",
+      "7.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "2.33 ms",
+      "3.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.67 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "7.33 ms",
+      "4.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.67 ms",
+      "2.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.67 ms",
+      "5.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "8.00 ms",
+      "7.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.33 ms",
+      "5.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.00 ms",
+      "5.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.67 ms",
+      "8.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "4.67 ms",
+      "5.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.00 ms",
+      "3.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.67 ms",
+      "5.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.33 ms",
+      "1.67 ms",
+      "2.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.33 ms",
+      "6.67 ms",
+      "2.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.33 ms",
+      "6.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.67 ms",
+      "7.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "2.33 ms",
+      "3.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "9.00 ms",
+      "8.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.33 ms",
+      "4.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "3.33 ms",
+      "8.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "8.33 ms",
+      "5.33 ms",
+      "8.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.67 ms",
+      "3.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.00 ms",
+      "2.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "4.67 ms",
+      "5.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "5.67 ms",
+      "3.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.67 ms",
+      "3.00 ms",
+      "1.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "5.00 ms",
+      "8.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "8.00 ms",
+      "6.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.00 ms",
+      "6.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "2.00 ms",
+      "3.67 ms",
+      "1.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.67 ms",
+      "5.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.00 ms",
+      "5.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "8.00 ms",
+      "7.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "5.00 ms",
+      "7.67 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.33 ms",
+      "2.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "7.67 ms",
+      "4.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "3.00 ms",
+      "5.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.67 ms",
       "1.33 ms",
       "3.33 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 175)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "4.67 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "7.33 ms"
+      "8.33 ms",
+      "3.67 ms",
+      "3.33 ms",
+      "6.33 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 176)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.33 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "6.00 ms",
+      "5.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.33 ms",
+      "8.67 ms",
+      "5.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "5.00 ms",
+      "4.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "2.67 ms",
+      "4.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "5.00 ms",
+      "7.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.33 ms",
+      "2.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.33 ms",
       "2.00 ms",
       "2.67 ms",
       "2.67 ms"
@@ -10908,168 +6792,112 @@ window.quizData.os = [
   },
   {
     "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 23 KB in the very first free block that is large enough? (Set 177)",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31) (Set 178)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
+      "6.67 ms",
+      "5.67 ms",
+      "7.67 ms"
     ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 42) (Set 179)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "5.67 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 180)",
-    "options": [
-      "4.00 ms",
-      "3.67 ms",
-      "2.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 181)",
-    "options": [
-      "3.33 ms",
-      "1.67 ms",
-      "3.67 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 182)",
-    "options": [
-      "2.67 ms",
-      "5.67 ms",
-      "7.00 ms",
+      "5.00 ms",
+      "6.67 ms",
       "4.67 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 153) (Set 183)",
-    "options": [
-      "5.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Medium",
-    "question": "Multithreading model: one-to-one? (Set 184)",
-    "options": [
-      "Each user thread maps to one kernel thread",
-      "None",
-      "Many-to-one",
-      "Many-to-many"
-    ],
     "answer": 0,
-    "explanation": "More concurrency but higher overhead."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 47 KB in the very first free block that is large enough? (Set 185)",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 186)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
+      "4.67 ms",
+      "7.00 ms",
+      "5.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.00 ms",
       "3.67 ms",
-      "4.33 ms",
-      "3.33 ms",
-      "2.33 ms"
+      "2.00 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Medium",
-    "question": "Multithreading model: one-to-one? (Set 184) (Set 187)",
-    "options": [
-      "Each user thread maps to one kernel thread",
-      "None",
-      "Many-to-one",
-      "Many-to-many"
-    ],
-    "answer": 0,
-    "explanation": "More concurrency but higher overhead."
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 188)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "2.33 ms",
+      "5.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "3.33 ms",
+      "6.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "2.33 ms",
-      "3.33 ms",
-      "2.33 ms",
-      "2.67 ms"
+      "3.00 ms",
+      "2.67 ms",
+      "3.67 ms"
     ],
     "answer": 0,
     "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
@@ -11078,40 +6906,670 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 189)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "6.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 27 KB in the very first free block that is large enough? (Set 190)",
-    "options": [
-      "First-Fit",
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit"
+      "6.00 ms",
+      "4.00 ms",
+      "6.67 ms",
+      "5.00 ms"
     ],
     "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 191)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "5.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "6.00 ms",
+      "6.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "3.33 ms",
+      "4.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.33 ms",
+      "5.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.67 ms",
       "1.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "2.33 ms",
+      "2.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "8.67 ms",
+      "4.67 ms",
+      "7.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "4.33 ms",
+      "3.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.00 ms",
+      "2.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "7.67 ms",
+      "5.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "6.33 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.33 ms",
+      "7.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.67 ms",
+      "5.33 ms",
+      "5.00 ms",
+      "8.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.67 ms",
       "3.00 ms",
-      "1.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "8.33 ms",
+      "5.00 ms",
+      "8.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "4.00 ms",
+      "2.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "6.33 ms",
+      "4.67 ms",
+      "7.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "5.33 ms",
+      "4.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "3.33 ms",
+      "3.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "5.00 ms",
+      "5.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "3.33 ms",
       "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "4.67 ms",
+      "7.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.00 ms",
+      "3.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.33 ms",
+      "4.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "4.00 ms",
+      "6.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.33 ms",
+      "3.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "3.67 ms",
+      "4.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "5.00 ms",
+      "3.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "9.00 ms",
+      "4.00 ms",
+      "7.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "4.33 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "5.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "6.00 ms",
+      "7.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "4.00 ms",
+      "6.33 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "5.33 ms",
+      "5.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.00 ms",
+      "6.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "3.00 ms",
+      "3.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "2.67 ms",
+      "3.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.67 ms",
+      "3.67 ms",
+      "3.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.33 ms",
+      "5.00 ms",
+      "2.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "4.00 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.33 ms",
+      "3.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.67 ms",
+      "4.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "3.00 ms",
+      "3.33 ms",
+      "4.33 ms"
     ],
     "answer": 1,
     "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
@@ -11120,53 +7578,319 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 192)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "8.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "6.67 ms"
+      "7.67 ms",
+      "3.33 ms",
+      "4.67 ms",
+      "6.33 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Dining Philosophers problem illustrates? (Set 193)",
-    "options": [
-      "Deadlock and synchronization challenges",
-      "File systems",
-      "Sorting efficiency",
-      "Memory allocation"
-    ],
-    "answer": 0,
-    "explanation": "Five philosophers, five forks, potential circular wait."
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 194)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.67 ms",
-      "4.33 ms",
-      "3.00 ms",
-      "4.67 ms"
+      "1.67 ms",
+      "6.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "6.67 ms",
+      "7.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "2.00 ms",
+      "4.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.33 ms",
+      "5.67 ms",
+      "3.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "4.00 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "3.33 ms",
+      "2.33 ms",
+      "4.33 ms"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 130) (Set 195)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.00 ms",
+      "4.00 ms",
+      "6.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "3.33 ms",
+      "4.33 ms",
+      "2.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
       "5.00 ms",
-      "6.33 ms",
+      "3.33 ms",
+      "2.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "5.67 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "6.00 ms",
+      "3.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.00 ms",
+      "2.00 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.67 ms",
+      "2.67 ms",
+      "4.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.33 ms",
+      "5.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "1.67 ms",
+      "1.33 ms",
+      "2.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "5.67 ms",
+      "3.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "5.33 ms",
+      "3.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "4.67 ms",
+      "5.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "2.67 ms",
+      "2.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "2.33 ms",
+      "4.00 ms",
       "7.33 ms"
     ],
     "answer": 3,
@@ -11176,25 +7900,361 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 123) (Set 196)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "4.67 ms",
-      "1.67 ms",
       "4.33 ms",
-      "4.00 ms"
+      "3.33 ms",
+      "4.00 ms",
+      "5.00 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 3) (Set 197)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
+      "4.00 ms",
+      "4.00 ms",
+      "3.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.67 ms",
+      "4.67 ms",
+      "1.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "2.67 ms",
+      "7.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
       "3.00 ms",
       "4.67 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.33 ms",
+      "4.00 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "7.67 ms",
+      "3.67 ms",
+      "6.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.00 ms",
+      "3.33 ms",
+      "5.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "6.67 ms",
+      "3.67 ms",
+      "8.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.67 ms",
+      "4.67 ms",
+      "4.33 ms",
+      "6.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.67 ms",
+      "1.67 ms",
+      "4.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "4.67 ms",
+      "6.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "6.00 ms",
+      "3.00 ms",
+      "3.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "3.33 ms",
+      "6.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.00 ms",
+      "4.33 ms",
+      "6.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "6.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.33 ms",
+      "2.67 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "7.67 ms",
+      "6.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.00 ms",
+      "2.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "7.00 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "6.67 ms",
+      "5.33 ms",
+      "6.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "4.00 ms",
+      "3.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "4.33 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.67 ms",
+      "3.00 ms",
+      "5.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "5.00 ms",
+      "3.67 ms",
       "4.33 ms"
     ],
     "answer": 3,
@@ -11204,348 +8264,138 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 198)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.67 ms",
-      "5.67 ms",
+      "5.00 ms",
       "4.33 ms",
-      "5.33 ms"
+      "3.33 ms",
+      "3.00 ms"
     ],
     "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 199)",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 200)",
-    "options": [
-      "4.00 ms",
-      "3.00 ms",
-      "2.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
     "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 123) (Set 196) (Set 201)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
+      "7.67 ms",
       "4.67 ms",
-      "1.67 ms",
-      "4.33 ms",
-      "4.00 ms"
+      "9.00 ms",
+      "4.67 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Dining Philosophers problem illustrates? (Set 202)",
-    "options": [
-      "Deadlock and synchronization challenges",
-      "File systems",
-      "Sorting efficiency",
-      "Memory allocation"
-    ],
-    "answer": 0,
-    "explanation": "Five philosophers, five forks, potential circular wait."
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31) (Set 203)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Process is? (Set 204)",
-    "options": [
-      "Hardware component",
-      "Static code",
-      "Stored file",
-      "Program in execution"
-    ],
-    "answer": 3,
-    "explanation": "Process = program + execution context."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 205)",
-    "options": [
-      "6.00 ms",
-      "7.67 ms",
-      "3.00 ms",
-      "4.33 ms"
+      "5.67 ms",
+      "7.00 ms",
+      "3.33 ms",
+      "3.33 ms"
     ],
     "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "4.00 ms",
+      "7.00 ms",
+      "5.33 ms",
+      "7.67 ms"
+    ],
+    "answer": 3,
     "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 206)",
-    "options": [
-      "3.33 ms",
-      "5.33 ms",
-      "3.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 207)",
-    "options": [
-      "5.67 ms",
-      "8.67 ms",
-      "8.33 ms",
-      "6.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Semaphore is? (Set 208)",
-    "options": [
-      "File descriptor",
-      "Integer variable for process synchronization",
-      "Process ID",
-      "Memory address"
-    ],
-    "answer": 1,
-    "explanation": "wait() decrements; signal() increments."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 209)",
-    "options": [
-      "4.33 ms",
-      "5.00 ms",
-      "6.67 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 210)",
-    "options": [
-      "7.67 ms",
-      "6.00 ms",
-      "5.33 ms",
-      "8.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 211)",
-    "options": [
-      "2.67 ms",
-      "2.67 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 95) (Set 212)",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 103) (Set 213)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "4.67 ms",
-      "3.67 ms",
-      "2.33 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 130) (Set 195) (Set 214)",
-    "options": [
-      "3.33 ms",
-      "5.00 ms",
-      "6.33 ms",
+      "5.67 ms",
+      "7.00 ms",
       "7.33 ms"
     ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 215)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "5.67 ms",
-      "4.67 ms"
+      "1.67 ms",
+      "3.00 ms",
+      "4.00 ms",
+      "4.33 ms"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 148) (Set 216)",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "5.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 217)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
       "4.67 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 42 KB in the very first free block that is large enough? (Set 218)",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Worst-Fit",
-      "Best-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 45) (Set 219)",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
-      "3.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 220)",
-    "options": [
       "3.33 ms",
       "2.67 ms",
-      "2.33 ms",
-      "2.67 ms"
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "4.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "3.33 ms",
+      "5.33 ms",
+      "1.67 ms",
+      "4.00 ms"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 153) (Set 221)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "5.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 24) (Set 222)",
-    "options": [
-      "5.00 ms",
-      "4.33 ms",
+      "3.00 ms",
+      "2.33 ms",
       "4.00 ms",
-      "3.33 ms"
+      "1.33 ms"
     ],
     "answer": 2,
     "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
@@ -11554,305 +8404,235 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 223)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "2.67 ms",
-      "2.00 ms",
-      "3.33 ms",
-      "1.33 ms"
+      "6.33 ms",
+      "4.67 ms",
+      "4.67 ms",
+      "5.00 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 224)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling?",
     "options": [
-      "6.33 ms",
-      "5.67 ms",
+      "8.33 ms",
+      "7.00 ms",
+      "4.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling?",
+    "options": [
+      "2.00 ms",
+      "3.00 ms",
+      "2.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 1)",
+    "options": [
+      "3.00 ms",
+      "7.67 ms",
       "6.00 ms",
       "3.67 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 225)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 2)",
     "options": [
+      "7.33 ms",
       "5.67 ms",
+      "3.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 3)",
+    "options": [
       "6.67 ms",
       "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 226)",
-    "options": [
-      "9.00 ms",
-      "5.33 ms",
-      "8.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 227)",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
       "6.00 ms",
-      "4.67 ms"
+      "3.67 ms"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 23 KB in the very first free block that is large enough? (Set 177) (Set 228)",
-    "options": [
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 52 KB in the very first free block that is large enough? (Set 30) (Set 229)",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 230)",
-    "options": [
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
     "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 231)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 4)",
     "options": [
-      "6.67 ms",
-      "1.67 ms",
-      "4.67 ms",
-      "4.00 ms"
+      "5.00 ms",
+      "4.33 ms",
+      "5.67 ms",
+      "3.33 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 232)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 5)",
     "options": [
-      "4.33 ms",
-      "6.00 ms",
-      "4.00 ms",
-      "5.33 ms"
+      "5.00 ms",
+      "7.67 ms",
+      "7.33 ms",
+      "5.67 ms"
     ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 233)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 6)",
     "options": [
       "7.67 ms",
       "4.67 ms",
-      "5.00 ms",
-      "7.33 ms"
+      "6.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 37 KB in the very first free block that is large enough? (Set 7)",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+    "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 198) (Set 234)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 8)",
     "options": [
+      "6.67 ms",
       "3.67 ms",
       "5.67 ms",
-      "4.33 ms",
-      "5.33 ms"
+      "3.33 ms"
     ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
   },
   {
     "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 235)",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 49 KB in the very first free block that is large enough? (Set 9)",
     "options": [
-      "5.00 ms",
-      "5.67 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 236)",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "3.67 ms"
+      "None of these",
+      "First-Fit",
+      "Best-Fit",
+      "Worst-Fit"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+    "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 237)",
-    "options": [
-      "6.00 ms",
-      "5.67 ms",
-      "4.67 ms",
-      "7.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 238)",
-    "options": [
-      "4.00 ms",
-      "3.33 ms",
-      "3.67 ms",
-      "1.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 22) (Set 239)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 10)",
     "options": [
       "4.33 ms",
-      "6.67 ms",
-      "6.33 ms",
+      "7.67 ms",
+      "7.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 11)",
+    "options": [
+      "5.00 ms",
+      "8.33 ms",
+      "7.67 ms",
       "4.67 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 240)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 12)",
     "options": [
-      "2.33 ms",
-      "3.33 ms",
       "4.33 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 241)",
-    "options": [
       "6.00 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 242)",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "2.33 ms"
+      "6.67 ms",
+      "3.67 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 243)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 13)",
     "options": [
-      "3.33 ms",
-      "4.33 ms",
-      "5.67 ms",
-      "5.00 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 244)",
-    "options": [
-      "4.33 ms",
+      "8.33 ms",
+      "6.67 ms",
       "4.00 ms",
-      "5.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 14)",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "2.67 ms",
       "3.33 ms"
     ],
     "answer": 0,
@@ -11862,1201 +8642,95 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 245)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 15)",
     "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "5.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+3. Average = (6+9)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 49 KB in the very first free block that is large enough? (Set 109) (Set 246)",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 247)",
-    "options": [
-      "5.00 ms",
+      "3.00 ms",
+      "2.33 ms",
       "4.00 ms",
-      "3.67 ms",
       "3.67 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 29) (Set 248)",
-    "options": [
-      "6.00 ms",
-      "6.33 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 249)",
-    "options": [
-      "3.67 ms",
-      "4.00 ms",
-      "4.67 ms",
-      "5.67 ms"
-    ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 250)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 16)",
     "options": [
-      "3.00 ms",
-      "4.33 ms",
+      "4.00 ms",
       "3.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 251)",
-    "options": [
-      "2.33 ms",
-      "7.67 ms",
-      "3.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 252)",
-    "options": [
-      "2.33 ms",
-      "3.33 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 253)",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 254)",
-    "options": [
-      "1.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 94) (Set 255)",
-    "options": [
-      "7.00 ms",
-      "7.00 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 56) (Set 164) (Set 256)",
-    "options": [
-      "4.33 ms",
-      "4.67 ms",
-      "2.33 ms",
-      "5.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 257)",
-    "options": [
-      "7.33 ms",
       "5.67 ms",
-      "4.33 ms",
-      "6.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 258)",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "6.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 135) (Set 259)",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Medium",
-    "question": "TLB (Translation Lookaside Buffer) is? (Set 260)",
-    "options": [
-      "Main memory",
-      "Cache for page table entries",
-      "Disk cache",
-      "CPU register"
-    ],
-    "answer": 1,
-    "explanation": "Speeds up virtual to physical address translation."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31) (Set 203) (Set 261)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 262)",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "2.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 263)",
-    "options": [
-      "1.67 ms",
-      "4.00 ms",
-      "5.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 264)",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "8.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 265)",
-    "options": [
-      "4.00 ms",
-      "2.67 ms",
-      "3.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 266)",
-    "options": [
-      "6.67 ms",
-      "3.67 ms",
-      "7.00 ms",
       "5.67 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 95) (Set 212) (Set 267)",
-    "options": [
-      "3.67 ms",
-      "6.67 ms",
-      "5.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 233) (Set 268)",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 269)",
-    "options": [
-      "2.67 ms",
-      "4.33 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 270)",
-    "options": [
-      "3.33 ms",
-      "2.00 ms",
-      "6.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 271)",
-    "options": [
-      "6.00 ms",
-      "3.00 ms",
-      "5.33 ms",
-      "6.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 272)",
-    "options": [
-      "5.00 ms",
-      "3.67 ms",
-      "6.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 94) (Set 255) (Set 273)",
-    "options": [
-      "7.00 ms",
-      "7.00 ms",
-      "4.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 274)",
-    "options": [
-      "6.33 ms",
-      "5.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 275)",
-    "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "2.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 276)",
-    "options": [
-      "4.00 ms",
-      "7.00 ms",
-      "7.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 277)",
-    "options": [
-      "5.00 ms",
-      "7.67 ms",
-      "8.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 32 KB in the very first free block that is large enough? (Set 278)",
-    "options": [
-      "First-Fit",
-      "None of these",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Process is? (Set 204) (Set 279)",
-    "options": [
-      "Hardware component",
-      "Static code",
-      "Stored file",
-      "Program in execution"
-    ],
-    "answer": 3,
-    "explanation": "Process = program + execution context."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 30 KB in the very first free block that is large enough? (Set 27) (Set 104) (Set 280)",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 6) (Set 117) (Set 281)",
-    "options": [
-      "3.67 ms",
-      "5.33 ms",
-      "6.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 282)",
-    "options": [
-      "4.33 ms",
-      "3.33 ms",
-      "7.00 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 283)",
-    "options": [
-      "3.33 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 282) (Set 284)",
-    "options": [
-      "4.33 ms",
-      "3.33 ms",
-      "7.00 ms",
-      "6.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 285)",
-    "options": [
-      "7.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 286)",
-    "options": [
-      "5.00 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 287)",
-    "options": [
-      "2.33 ms",
-      "3.33 ms",
-      "3.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 288)",
-    "options": [
-      "5.67 ms",
-      "2.67 ms",
-      "4.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 289)",
-    "options": [
-      "4.33 ms",
-      "2.67 ms",
-      "5.67 ms",
-      "7.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Hard",
-    "question": "Dining Philosophers problem illustrates? (Set 290)",
-    "options": [
-      "Deadlock and synchronization challenges",
-      "File systems",
-      "Sorting efficiency",
-      "Memory allocation"
-    ],
-    "answer": 0,
-    "explanation": "Five philosophers, five forks, potential circular wait."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 30 KB in the very first free block that is large enough? (Set 291)",
-    "options": [
-      "None of these",
-      "First-Fit",
-      "Best-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 1,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 227) (Set 292)",
-    "options": [
-      "4.00 ms",
-      "4.67 ms",
-      "6.00 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Semaphore is? (Set 293)",
-    "options": [
-      "File descriptor",
-      "Integer variable for process synchronization",
-      "Process ID",
-      "Memory address"
-    ],
-    "answer": 1,
-    "explanation": "wait() decrements; signal() increments."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 294)",
-    "options": [
-      "4.33 ms",
-      "7.00 ms",
-      "8.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Virtual Memory",
-    "difficulty": "Hard",
-    "question": "Using the reference string [1, 2, 3, 4, 1, 2] with 4 physical page frames initially empty, how many page faults occur under the FIFO replacement algorithm? (Set 295)",
-    "options": [
-      "7",
-      "3",
-      "4",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "Simulates FIFO allocations on 4 page frame size. Result is 5."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 296)",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 297)",
-    "options": [
-      "3.00 ms",
-      "3.00 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23) (Set 31) (Set 203) (Set 261) (Set 298)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 83) (Set 299)",
-    "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 300)",
-    "options": [
-      "6.00 ms",
-      "7.67 ms",
-      "3.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 301)",
-    "options": [
-      "3.67 ms",
-      "7.00 ms",
-      "1.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Medium",
-    "question": "SSTF disk scheduling? (Set 302)",
-    "options": [
-      "Random order",
-      "FIFO",
-      "Shortest Seek Time First",
-      "Reverse order"
-    ],
-    "answer": 2,
-    "explanation": "Services nearest request; can cause starvation of far requests."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 303)",
-    "options": [
-      "5.67 ms",
-      "5.00 ms",
-      "6.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 27 KB in the very first free block that is large enough? (Set 190) (Set 304)",
-    "options": [
-      "First-Fit",
-      "Worst-Fit",
-      "None of these",
-      "Best-Fit"
-    ],
-    "answer": 0,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 305)",
-    "options": [
-      "5.67 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Paging divides? (Set 306)",
-    "options": [
-      "Logical memory into fixed-size pages",
-      "Files into blocks",
-      "CPU into cores",
-      "Physical memory into segments"
-    ],
-    "answer": 0,
-    "explanation": "Pages map to frames in physical memory."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 48) (Set 307)",
-    "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.33 ms",
-      "3.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 308)",
-    "options": [
-      "1.33 ms",
-      "2.00 ms",
-      "2.00 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 15) (Set 309)",
-    "options": [
-      "4.67 ms",
-      "3.00 ms",
-      "6.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 310)",
-    "options": [
-      "6.33 ms",
-      "5.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 181) (Set 311)",
-    "options": [
-      "3.33 ms",
-      "1.67 ms",
-      "3.67 ms",
-      "2.33 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 277) (Set 312)",
-    "options": [
-      "5.00 ms",
-      "7.67 ms",
-      "8.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 313)",
-    "options": [
-      "2.67 ms",
-      "3.33 ms",
-      "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 1) (Set 314)",
-    "options": [
-      "2.67 ms",
-      "4.33 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Semaphore is? (Set 315)",
-    "options": [
-      "File descriptor",
-      "Integer variable for process synchronization",
-      "Process ID",
-      "Memory address"
-    ],
-    "answer": 1,
-    "explanation": "wait() decrements; signal() increments."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 262) (Set 316)",
-    "options": [
-      "3.67 ms",
-      "2.67 ms",
-      "2.33 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 317)",
-    "options": [
-      "5.00 ms",
-      "3.00 ms",
-      "6.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 49 KB in the very first free block that is large enough? (Set 109) (Set 246) (Set 318)",
-    "options": [
-      "Worst-Fit",
-      "None of these",
-      "First-Fit",
-      "Best-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 160) (Set 319)",
-    "options": [
-      "1.33 ms",
-      "4.33 ms",
-      "3.67 ms",
-      "4.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 320)",
-    "options": [
-      "3.00 ms",
-      "4.67 ms",
-      "2.67 ms",
-      "5.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 321)",
-    "options": [
-      "4.00 ms",
-      "5.33 ms",
-      "2.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 168) (Set 322)",
-    "options": [
-      "6.33 ms",
-      "3.33 ms",
-      "5.00 ms",
-      "6.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Paging divides? (Set 323)",
-    "options": [
-      "Logical memory into fixed-size pages",
-      "Files into blocks",
-      "CPU into cores",
-      "Physical memory into segments"
-    ],
-    "answer": 0,
-    "explanation": "Pages map to frames in physical memory."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 324)",
-    "options": [
-      "5.33 ms",
-      "7.67 ms",
-      "4.67 ms",
-      "7.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 325)",
-    "options": [
-      "6.67 ms",
-      "3.67 ms",
-      "7.00 ms",
-      "5.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 326)",
-    "options": [
-      "7.00 ms",
-      "5.67 ms",
-      "5.33 ms",
-      "4.67 ms"
-    ],
-    "answer": 1,
     "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 21) (Set 327)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 17)",
     "options": [
       "4.67 ms",
-      "6.00 ms",
-      "3.00 ms",
+      "5.00 ms",
+      "7.33 ms",
       "7.33 ms"
     ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 328)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 18)",
     "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "2.67 ms",
+      "3.67 ms",
+      "5.00 ms",
+      "5.67 ms",
       "3.33 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 329)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 11) (Set 19)",
     "options": [
-      "3.67 ms",
-      "5.67 ms",
-      "6.67 ms",
-      "3.33 ms"
+      "7.67 ms",
+      "4.67 ms",
+      "8.33 ms",
+      "5.00 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 330)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 20)",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "1.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 21)",
     "options": [
       "3.33 ms",
-      "5.00 ms",
-      "5.67 ms",
+      "2.33 ms",
+      "4.33 ms",
       "3.67 ms"
     ],
     "answer": 0,
@@ -13066,68 +8740,26 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 331)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 22)",
     "options": [
-      "5.67 ms",
-      "8.67 ms",
-      "8.33 ms",
-      "6.00 ms"
+      "2.00 ms",
+      "2.33 ms",
+      "3.33 ms",
+      "3.33 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 83) (Set 299) (Set 332)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 23)",
     "options": [
-      "5.00 ms",
-      "2.00 ms",
-      "4.00 ms",
-      "5.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 333)",
-    "options": [
-      "8.00 ms",
-      "6.67 ms",
-      "4.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 155) (Set 334)",
-    "options": [
-      "6.33 ms",
-      "6.00 ms",
-      "4.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 335)",
-    "options": [
-      "6.33 ms",
-      "4.00 ms",
+      "3.33 ms",
+      "5.67 ms",
       "7.00 ms",
-      "4.00 ms"
+      "3.33 ms"
     ],
     "answer": 2,
     "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
@@ -13136,49 +8768,455 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 39) (Set 336)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 24)",
     "options": [
       "3.67 ms",
-      "3.00 ms",
+      "4.00 ms",
+      "6.67 ms",
+      "8.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 25)",
+    "options": [
       "4.67 ms",
+      "3.00 ms",
+      "3.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 26)",
+    "options": [
+      "2.00 ms",
+      "3.00 ms",
+      "1.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 27)",
+    "options": [
+      "4.67 ms",
+      "3.67 ms",
+      "6.67 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28)",
+    "options": [
+      "2.33 ms",
+      "2.33 ms",
+      "4.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 29)",
+    "options": [
+      "7.00 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "7.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 30)",
+    "options": [
+      "7.00 ms",
+      "5.33 ms",
+      "6.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28) (Set 31)",
+    "options": [
+      "2.33 ms",
+      "2.33 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 32)",
+    "options": [
+      "3.00 ms",
+      "3.67 ms",
+      "3.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 33)",
+    "options": [
+      "6.67 ms",
+      "3.33 ms",
+      "3.00 ms",
       "5.33 ms"
     ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
   },
   {
     "subject": "OS",
     "topic": "Memory Management",
     "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 337)",
+    "question": "Which memory partition allocation algorithm places a new process of size 11 KB in the very first free block that is large enough? (Set 34)",
     "options": [
-      "None of these",
+      "First-Fit",
       "Worst-Fit",
       "Best-Fit",
-      "First-Fit"
+      "None of these"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 338)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 35)",
     "options": [
+      "3.33 ms",
+      "5.33 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 36)",
+    "options": [
+      "3.33 ms",
+      "4.33 ms",
+      "5.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 37)",
+    "options": [
+      "6.67 ms",
+      "8.67 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 38)",
+    "options": [
+      "4.33 ms",
+      "3.67 ms",
+      "1.33 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Hard",
+    "question": "Dining Philosophers problem illustrates? (Set 39)",
+    "options": [
+      "Sorting efficiency in typical implementations",
+      "Memory allocation (typical scenario)",
+      "File systems as per specification",
+      "Deadlock and synchronization challenges"
+    ],
+    "answer": 3,
+    "explanation": "Five philosophers, five forks, potential circular wait."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 40)",
+    "options": [
+      "3.33 ms",
+      "7.33 ms",
+      "2.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 41)",
+    "options": [
+      "7.33 ms",
+      "5.00 ms",
+      "7.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 42)",
+    "options": [
+      "3.33 ms",
+      "4.67 ms",
+      "6.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 43)",
+    "options": [
+      "3.00 ms",
+      "4.67 ms",
+      "3.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 44)",
+    "options": [
+      "5.67 ms",
+      "3.33 ms",
+      "3.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 45)",
+    "options": [
+      "3.67 ms",
+      "5.67 ms",
+      "6.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 46)",
+    "options": [
+      "4.67 ms",
+      "6.00 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough? (Set 47)",
+    "options": [
+      "First-Fit",
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28) (Set 48)",
+    "options": [
+      "4.00 ms",
+      "2.33 ms",
+      "2.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 49)",
+    "options": [
+      "2.00 ms",
+      "4.67 ms",
+      "6.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 50)",
+    "options": [
+      "3.67 ms",
       "2.33 ms",
       "3.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 51)",
+    "options": [
+      "3.33 ms",
+      "2.33 ms",
       "2.33 ms",
       "2.67 ms"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 120) (Set 339)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 52)",
+    "options": [
+      "3.67 ms",
+      "5.33 ms",
+      "4.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 18) (Set 53)",
+    "options": [
+      "5.00 ms",
+      "3.67 ms",
+      "5.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 54)",
+    "options": [
+      "4.33 ms",
+      "5.33 ms",
+      "5.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 55)",
+    "options": [
+      "1.67 ms",
+      "3.67 ms",
+      "4.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 56)",
     "options": [
       "5.00 ms",
       "4.33 ms",
@@ -13192,67 +9230,599 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 217) (Set 340)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 10) (Set 57)",
     "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "2.33 ms",
-      "3.67 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 341)",
-    "options": [
-      "5.67 ms",
       "7.33 ms",
-      "5.33 ms",
-      "8.00 ms"
+      "7.67 ms",
+      "4.33 ms",
+      "5.67 ms"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 93) (Set 342)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 58)",
     "options": [
-      "2.33 ms",
-      "1.67 ms",
-      "3.00 ms",
-      "3.33 ms"
+      "6.67 ms",
+      "3.33 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 59)",
+    "options": [
+      "2.00 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "6.00 ms"
     ],
     "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Easy",
+    "question": "Virtual memory allows? (Set 60)",
+    "options": [
+      "Execution of processes larger than physical memory",
+      "Faster CPU in typical implementations",
+      "Better graphics in typical implementations",
+      "More RAM in typical implementations"
+    ],
+    "answer": 0,
+    "explanation": "Uses disk as extension of RAM via demand paging."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 343)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 1) (Set 61)",
     "options": [
-      "5.00 ms",
-      "2.67 ms",
       "3.67 ms",
+      "3.00 ms",
+      "7.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 62)",
+    "options": [
+      "6.67 ms",
+      "7.00 ms",
+      "5.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 63)",
+    "options": [
+      "1.33 ms",
+      "3.67 ms",
+      "4.33 ms",
       "4.33 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 64)",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 199) (Set 344)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 65)",
+    "options": [
+      "4.33 ms",
+      "3.33 ms",
+      "2.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 66)",
+    "options": [
+      "7.00 ms",
+      "5.33 ms",
+      "5.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 67)",
+    "options": [
+      "5.00 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 68)",
     "options": [
       "6.00 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 69)",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "3.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 70)",
+    "options": [
+      "3.33 ms",
+      "6.00 ms",
+      "3.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 71)",
+    "options": [
+      "2.33 ms",
+      "3.33 ms",
+      "2.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 72)",
+    "options": [
+      "6.67 ms",
+      "3.33 ms",
+      "2.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "Internal fragmentation occurs in? (Set 73)",
+    "options": [
+      "Variable-size allocation by design",
+      "Fixed-size allocation (paging)",
+      "No allocation (standard definition)",
+      "Stack memory in practice"
+    ],
+    "answer": 1,
+    "explanation": "Allocated block larger than needed; wasted space within."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 74)",
+    "options": [
       "4.67 ms",
       "4.00 ms",
+      "5.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 75)",
+    "options": [
+      "2.33 ms",
+      "3.33 ms",
+      "6.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 76)",
+    "options": [
+      "4.67 ms",
+      "3.67 ms",
+      "5.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 77)",
+    "options": [
+      "4.00 ms",
+      "2.67 ms",
+      "5.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 20) (Set 78)",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "1.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 22) (Set 79)",
+    "options": [
+      "2.00 ms",
+      "2.33 ms",
+      "3.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "SSTF disk scheduling? (Set 80)",
+    "options": [
+      "Reverse order in standard usage",
+      "FIFO (commonly used)",
+      "Shortest Seek Time First",
+      "Random order in standard usage"
+    ],
+    "answer": 2,
+    "explanation": "Services nearest request; can cause starvation of far requests."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 81)",
+    "options": [
+      "2.33 ms",
+      "4.00 ms",
+      "5.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 82)",
+    "options": [
+      "3.00 ms",
+      "5.67 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 83)",
+    "options": [
+      "5.33 ms",
+      "5.00 ms",
+      "3.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 84)",
+    "options": [
+      "4.00 ms",
+      "2.00 ms",
+      "2.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 85)",
+    "options": [
+      "7.33 ms",
+      "5.67 ms",
+      "2.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 86)",
+    "options": [
+      "6.00 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 46 KB in the very first free block that is large enough? (Set 87)",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 88)",
+    "options": [
+      "3.33 ms",
+      "5.67 ms",
+      "5.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 89)",
+    "options": [
+      "2.33 ms",
+      "3.00 ms",
+      "4.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+5. Average = (2+7)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 90)",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "5.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 91)",
+    "options": [
+      "6.00 ms",
+      "5.00 ms",
+      "4.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 92)",
+    "options": [
+      "7.00 ms",
+      "4.33 ms",
+      "6.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 93)",
+    "options": [
+      "8.67 ms",
+      "6.67 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 94)",
+    "options": [
+      "3.33 ms",
+      "6.33 ms",
+      "8.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 82) (Set 95)",
+    "options": [
+      "5.00 ms",
+      "6.00 ms",
+      "5.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "Starvation vs Deadlock? (Set 96)",
+    "options": [
+      "Starvation: indefinite wait; Deadlock: permanent block",
+      "Deadlock is temporary in typical implementations",
+      "Same thing in typical implementations",
+      "Starvation is worse in typical implementations"
+    ],
+    "answer": 0,
+    "explanation": "Starvation can be resolved; deadlock requires intervention."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 97)",
+    "options": [
+      "4.33 ms",
+      "8.67 ms",
+      "7.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 98)",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 99)",
+    "options": [
+      "2.67 ms",
+      "4.00 ms",
+      "2.00 ms",
       "5.33 ms"
     ],
     "answer": 3,
@@ -13262,403 +9832,81 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 152) (Set 345)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 100)",
     "options": [
-      "4.00 ms",
-      "5.00 ms",
-      "5.67 ms",
-      "2.67 ms"
+      "2.33 ms",
+      "4.33 ms",
+      "3.33 ms",
+      "1.67 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 346)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 101)",
     "options": [
-      "4.67 ms",
-      "4.67 ms",
-      "3.67 ms",
+      "1.33 ms",
+      "1.33 ms",
+      "2.00 ms",
       "2.00 ms"
     ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 233) (Set 347)",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 348)",
-    "options": [
-      "3.33 ms",
-      "7.67 ms",
-      "4.67 ms",
-      "6.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 349)",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "3.33 ms",
-      "2.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 350)",
-    "options": [
-      "5.33 ms",
-      "8.00 ms",
-      "5.67 ms",
-      "7.67 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 285) (Set 351)",
-    "options": [
-      "7.00 ms",
-      "7.33 ms",
-      "5.33 ms",
-      "4.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 352)",
-    "options": [
-      "5.67 ms",
-      "2.67 ms",
-      "4.67 ms",
-      "3.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 353)",
-    "options": [
-      "5.33 ms",
-      "3.00 ms",
-      "5.67 ms",
-      "4.33 ms"
-    ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "Semaphore is? (Set 315) (Set 354)",
-    "options": [
-      "File descriptor",
-      "Integer variable for process synchronization",
-      "Process ID",
-      "Memory address"
-    ],
-    "answer": 1,
-    "explanation": "wait() decrements; signal() increments."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 123) (Set 355)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 102)",
     "options": [
-      "4.67 ms",
-      "1.67 ms",
-      "4.33 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 356)",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "2.67 ms",
+      "6.00 ms",
+      "5.00 ms",
+      "2.33 ms",
       "3.33 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 357)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 103)",
     "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "2.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "OS",
-    "difficulty": "Easy",
-    "question": "FCFS scheduling is? (Set 43) (Set 358)",
-    "options": [
-      "Random",
-      "First Come First Served — non-preemptive",
-      "Priority-based",
-      "Preemptive"
-    ],
-    "answer": 1,
-    "explanation": "Processes executed in arrival order."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 341) (Set 359)",
-    "options": [
-      "5.67 ms",
-      "7.33 ms",
       "5.33 ms",
-      "8.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 191) (Set 360)",
-    "options": [
-      "1.67 ms",
-      "3.00 ms",
-      "1.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 191) (Set 360) (Set 361)",
-    "options": [
-      "1.67 ms",
-      "3.00 ms",
-      "1.67 ms",
-      "2.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 362)",
-    "options": [
-      "6.33 ms",
+      "4.67 ms",
       "4.00 ms",
-      "7.00 ms",
-      "4.00 ms"
+      "3.33 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 236) (Set 363)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 104)",
     "options": [
+      "2.33 ms",
       "3.33 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 364)",
-    "options": [
-      "4.67 ms",
-      "4.00 ms",
-      "4.00 ms",
-      "3.00 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 231) (Set 365)",
-    "options": [
-      "6.67 ms",
-      "1.67 ms",
-      "4.67 ms",
-      "4.00 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 366)",
-    "options": [
-      "7.00 ms",
-      "5.33 ms",
-      "5.67 ms",
+      "3.67 ms",
       "4.33 ms"
     ],
     "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
   },
   {
     "subject": "OS",
     "topic": "Memory Management",
     "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 367)",
-    "options": [
-      "None of these",
-      "Worst-Fit",
-      "Best-Fit",
-      "First-Fit"
-    ],
-    "answer": 3,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough? (Set 121) (Set 368)",
+    "question": "Which memory partition allocation algorithm places a new process of size 25 KB in the very first free block that is large enough? (Set 105)",
     "options": [
       "Best-Fit",
-      "None of these",
       "First-Fit",
-      "Worst-Fit"
-    ],
-    "answer": 2,
-    "explanation": "First-Fit allocates the first available partition holding size."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 233) (Set 347) (Set 369)",
-    "options": [
-      "7.67 ms",
-      "4.67 ms",
-      "5.00 ms",
-      "7.33 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 370)",
-    "options": [
-      "6.00 ms",
-      "7.33 ms",
-      "4.33 ms",
-      "7.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 371)",
-    "options": [
-      "5.00 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "6.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 372)",
-    "options": [
-      "5.67 ms",
-      "5.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "Memory Management",
-    "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 33 KB in the very first free block that is large enough? (Set 373)",
-    "options": [
       "Worst-Fit",
-      "First-Fit",
-      "Best-Fit",
       "None of these"
     ],
     "answer": 1,
@@ -13668,66 +9916,388 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 374)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 106)",
     "options": [
-      "6.00 ms",
+      "5.33 ms",
+      "6.67 ms",
       "4.00 ms",
-      "1.33 ms",
-      "3.33 ms"
+      "5.33 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 357) (Set 375)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 107)",
     "options": [
-      "4.67 ms",
-      "3.67 ms",
-      "6.33 ms",
-      "2.00 ms"
+      "1.67 ms",
+      "4.33 ms",
+      "4.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 41 KB in the very first free block that is large enough? (Set 108)",
+    "options": [
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit",
+      "None of these"
     ],
     "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 11 KB in the very first free block that is large enough? (Set 34) (Set 109)",
+    "options": [
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 110)",
+    "options": [
+      "5.67 ms",
+      "3.00 ms",
+      "4.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
     "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 24) (Set 222) (Set 376)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 111)",
     "options": [
-      "5.00 ms",
-      "4.33 ms",
-      "4.00 ms",
-      "3.33 ms"
+      "2.67 ms",
+      "7.67 ms",
+      "5.67 ms",
+      "4.00 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 377)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 107) (Set 112)",
     "options": [
-      "4.67 ms",
-      "3.33 ms",
+      "3.00 ms",
+      "4.00 ms",
+      "1.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 113)",
+    "options": [
       "5.33 ms",
-      "3.33 ms"
+      "8.00 ms",
+      "8.00 ms",
+      "5.33 ms"
     ],
     "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 114)",
+    "options": [
+      "7.00 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 115)",
+    "options": [
+      "3.33 ms",
+      "3.67 ms",
+      "4.00 ms",
+      "1.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 116)",
+    "options": [
+      "6.67 ms",
+      "6.33 ms",
+      "3.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 117)",
+    "options": [
+      "4.33 ms",
+      "3.67 ms",
+      "3.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
     "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 118)",
+    "options": [
+      "5.67 ms",
+      "4.33 ms",
+      "3.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 119)",
+    "options": [
+      "2.33 ms",
+      "4.00 ms",
+      "5.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 120)",
+    "options": [
+      "5.67 ms",
+      "6.00 ms",
+      "8.67 ms",
+      "8.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 121)",
+    "options": [
+      "6.33 ms",
+      "6.67 ms",
+      "4.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 122)",
+    "options": [
+      "5.67 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 123)",
+    "options": [
+      "6.33 ms",
+      "7.00 ms",
+      "4.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
   },
   {
     "subject": "OS",
     "topic": "Memory Management",
     "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 52 KB in the very first free block that is large enough? (Set 30) (Set 229) (Set 378)",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough? (Set 47) (Set 124)",
     "options": [
+      "Best-Fit",
       "Worst-Fit",
       "None of these",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 125)",
+    "options": [
+      "4.33 ms",
+      "4.33 ms",
+      "9.00 ms",
+      "7.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 82) (Set 126)",
+    "options": [
+      "5.67 ms",
+      "3.00 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 14) (Set 127)",
+    "options": [
+      "2.67 ms",
+      "3.33 ms",
+      "4.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 128)",
+    "options": [
+      "4.67 ms",
+      "4.67 ms",
+      "2.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+6. Average = (4+10)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 129)",
+    "options": [
+      "2.33 ms",
+      "1.67 ms",
+      "3.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 130)",
+    "options": [
+      "4.67 ms",
+      "6.67 ms",
+      "5.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28) (Set 48) (Set 131)",
+    "options": [
+      "3.67 ms",
+      "4.00 ms",
+      "2.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 94) (Set 132)",
+    "options": [
+      "3.33 ms",
+      "8.67 ms",
+      "6.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 31 KB in the very first free block that is large enough? (Set 133)",
+    "options": [
+      "None of these",
+      "Worst-Fit",
       "Best-Fit",
       "First-Fit"
     ],
@@ -13738,152 +10308,1020 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 313) (Set 379)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 134)",
     "options": [
-      "2.67 ms",
-      "3.33 ms",
       "4.00 ms",
-      "3.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 380)",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "8.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 381)",
-    "options": [
-      "6.33 ms",
-      "2.33 ms",
-      "5.33 ms",
-      "3.67 ms"
+      "3.00 ms",
+      "4.00 ms",
+      "2.00 ms"
     ],
     "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 382)",
-    "options": [
-      "4.33 ms",
-      "6.67 ms",
-      "3.67 ms",
-      "1.33 ms"
-    ],
-    "answer": 1,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 264) (Set 383)",
-    "options": [
-      "5.00 ms",
-      "4.67 ms",
-      "7.67 ms",
-      "8.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 88) (Set 384)",
-    "options": [
-      "2.67 ms",
-      "4.00 ms",
-      "1.67 ms",
-      "3.67 ms"
-    ],
-    "answer": 1,
     "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 385)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 135)",
     "options": [
-      "4.00 ms",
-      "5.33 ms",
-      "2.67 ms",
-      "4.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 192) (Set 386)",
-    "options": [
-      "8.33 ms",
+      "6.33 ms",
       "4.33 ms",
-      "3.67 ms",
-      "6.67 ms"
-    ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=9, P3=9+7. Average = (9+16)/3 = 8.33 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 387)",
-    "options": [
-      "6.00 ms",
-      "7.00 ms",
-      "5.00 ms",
-      "4.00 ms"
-    ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 199) (Set 344) (Set 388)",
-    "options": [
-      "6.00 ms",
-      "4.67 ms",
-      "4.00 ms",
-      "5.33 ms"
+      "3.33 ms",
+      "8.00 ms"
     ],
     "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 64) (Set 136)",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "Worst-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 14 KB in the very first free block that is large enough? (Set 137)",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 138)",
+    "options": [
+      "4.67 ms",
+      "5.33 ms",
+      "4.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
     "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 389)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 120) (Set 139)",
+    "options": [
+      "5.67 ms",
+      "8.67 ms",
+      "8.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 140)",
     "options": [
       "3.33 ms",
+      "2.33 ms",
+      "2.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 141)",
+    "options": [
+      "5.00 ms",
+      "5.00 ms",
+      "7.00 ms",
+      "7.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "SSTF disk scheduling? (Set 80) (Set 142)",
+    "options": [
+      "Shortest Seek Time First",
+      "Reverse order in standard usage",
+      "FIFO in standard usage",
+      "Random order in practice"
+    ],
+    "answer": 0,
+    "explanation": "Services nearest request; can cause starvation of far requests."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 143)",
+    "options": [
+      "4.33 ms",
+      "4.67 ms",
+      "2.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 57 KB in the very first free block that is large enough? (Set 144)",
+    "options": [
+      "Best-Fit",
+      "Worst-Fit",
+      "None of these",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 145)",
+    "options": [
+      "7.33 ms",
+      "4.33 ms",
+      "7.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 146)",
+    "options": [
+      "2.67 ms",
+      "6.67 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 147)",
+    "options": [
+      "2.00 ms",
+      "2.67 ms",
+      "2.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 148)",
+    "options": [
+      "6.67 ms",
+      "6.33 ms",
+      "5.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Hard",
+    "question": "Working Set Model tracks? (Set 149)",
+    "options": [
+      "Set of pages a process is currently using",
+      "CPU instructions under normal conditions",
+      "Disk blocks in typical implementations",
+      "All system pages based on convention"
+    ],
+    "answer": 0,
+    "explanation": "Helps determine how many frames a process needs."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 150)",
+    "options": [
+      "4.67 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 151)",
+    "options": [
+      "7.00 ms",
+      "4.00 ms",
+      "4.33 ms",
+      "8.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 152)",
+    "options": [
+      "4.67 ms",
+      "3.00 ms",
+      "3.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 153)",
+    "options": [
+      "6.00 ms",
+      "2.33 ms",
+      "3.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 154)",
+    "options": [
+      "4.00 ms",
+      "3.67 ms",
+      "2.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 2ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 155)",
+    "options": [
+      "3.67 ms",
+      "2.67 ms",
+      "2.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+2. Average = (3+5)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 156)",
+    "options": [
+      "6.00 ms",
+      "4.33 ms",
+      "3.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 56 KB in the very first free block that is large enough? (Set 157)",
+    "options": [
+      "Best-Fit",
+      "Worst-Fit",
+      "None of these",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "Internal fragmentation occurs in? (Set 158)",
+    "options": [
+      "Fixed-size allocation (paging)",
+      "Variable-size allocation by design",
+      "Stack memory in most cases",
+      "No allocation in standard usage"
+    ],
+    "answer": 0,
+    "explanation": "Allocated block larger than needed; wasted space within."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "External fragmentation occurs in? (Set 159)",
+    "options": [
+      "Cache memory (standard definition)",
+      "Fixed-size allocation in standard usage",
+      "CPU registers based on convention",
+      "Variable-size allocation (segmentation)"
+    ],
+    "answer": 3,
+    "explanation": "Enough total free memory but not contiguous."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 160)",
+    "options": [
+      "5.67 ms",
+      "3.33 ms",
+      "6.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 161)",
+    "options": [
+      "5.67 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 162)",
+    "options": [
+      "5.00 ms",
+      "3.67 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 163)",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 164)",
+    "options": [
+      "5.00 ms",
+      "4.67 ms",
+      "1.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 165)",
+    "options": [
+      "6.00 ms",
+      "5.00 ms",
+      "4.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 166)",
+    "options": [
+      "7.00 ms",
+      "6.00 ms",
+      "7.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 90) (Set 167)",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "5.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 168)",
+    "options": [
+      "4.00 ms",
+      "3.00 ms",
+      "2.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+5. Average = (3+8)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 169)",
+    "options": [
+      "5.00 ms",
+      "6.33 ms",
+      "5.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 170)",
+    "options": [
+      "3.00 ms",
+      "3.67 ms",
+      "5.33 ms",
+      "1.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 171)",
+    "options": [
+      "8.00 ms",
+      "4.00 ms",
+      "4.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 53 KB in the very first free block that is large enough? (Set 172)",
+    "options": [
+      "First-Fit",
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 173)",
+    "options": [
+      "2.33 ms",
+      "3.33 ms",
+      "3.67 ms",
+      "2.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 174)",
+    "options": [
+      "6.33 ms",
+      "3.00 ms",
+      "4.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 20) (Set 78) (Set 175)",
+    "options": [
+      "4.33 ms",
+      "1.33 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 176)",
+    "options": [
+      "4.67 ms",
+      "6.67 ms",
+      "6.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 177)",
+    "options": [
+      "4.33 ms",
+      "5.67 ms",
+      "5.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 56) (Set 178)",
+    "options": [
+      "4.33 ms",
       "3.33 ms",
       "4.00 ms",
-      "4.67 ms"
+      "5.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 179)",
+    "options": [
+      "1.33 ms",
+      "1.67 ms",
+      "2.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 180)",
+    "options": [
+      "3.67 ms",
+      "3.67 ms",
+      "6.33 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 181)",
+    "options": [
+      "2.67 ms",
+      "4.00 ms",
+      "5.33 ms",
+      "2.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 182)",
+    "options": [
+      "5.67 ms",
+      "5.00 ms",
+      "2.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 183)",
+    "options": [
+      "7.67 ms",
+      "3.00 ms",
+      "6.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 184)",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "7.00 ms",
+      "8.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 17 KB in the very first free block that is large enough? (Set 185)",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "Worst-Fit",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 134) (Set 186)",
+    "options": [
+      "4.00 ms",
+      "4.00 ms",
+      "2.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 187)",
+    "options": [
+      "3.33 ms",
+      "4.00 ms",
+      "1.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 188)",
+    "options": [
+      "7.00 ms",
+      "5.33 ms",
+      "2.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 189)",
+    "options": [
+      "4.67 ms",
+      "5.67 ms",
+      "4.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "TLB (Translation Lookaside Buffer) is? (Set 190)",
+    "options": [
+      "CPU register based on convention",
+      "Disk cache as per specification",
+      "Main memory in practice",
+      "Cache for page table entries"
+    ],
+    "answer": 3,
+    "explanation": "Speeds up virtual to physical address translation."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 191)",
+    "options": [
+      "4.00 ms",
+      "3.33 ms",
+      "6.00 ms",
+      "7.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 192)",
+    "options": [
+      "4.33 ms",
+      "6.00 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 193)",
+    "options": [
+      "5.33 ms",
+      "8.67 ms",
+      "8.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 194)",
+    "options": [
+      "4.33 ms",
+      "5.67 ms",
+      "4.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 195)",
+    "options": [
+      "7.33 ms",
+      "3.00 ms",
+      "5.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 196)",
+    "options": [
+      "5.00 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "Banker's algorithm is for? (Set 197)",
+    "options": [
+      "Deadlock detection",
+      "Deadlock prevention",
+      "Deadlock recovery",
+      "Deadlock avoidance"
+    ],
+    "answer": 3,
+    "explanation": "Checks safe state before granting resources."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 198)",
+    "options": [
+      "3.00 ms",
+      "4.67 ms",
+      "4.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 199)",
+    "options": [
+      "5.33 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+4. Average = (7+11)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 200)",
+    "options": [
+      "2.33 ms",
+      "2.00 ms",
+      "4.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 201)",
+    "options": [
+      "5.00 ms",
+      "6.33 ms",
+      "3.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 35) (Set 202)",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "5.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 203)",
+    "options": [
+      "4.67 ms",
+      "6.33 ms",
+      "3.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 204)",
+    "options": [
+      "6.00 ms",
+      "3.33 ms",
+      "6.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 27) (Set 205)",
+    "options": [
+      "4.67 ms",
+      "6.67 ms",
+      "7.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 206)",
+    "options": [
+      "3.33 ms",
+      "2.33 ms",
+      "3.00 ms",
+      "3.67 ms"
     ],
     "answer": 0,
     "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
@@ -13892,21 +11330,147 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 390)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 198) (Set 207)",
     "options": [
-      "6.33 ms",
+      "4.67 ms",
       "4.33 ms",
-      "5.33 ms",
-      "4.67 ms"
+      "2.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 208)",
+    "options": [
+      "3.33 ms",
+      "2.33 ms",
+      "1.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 209)",
+    "options": [
+      "3.00 ms",
+      "4.67 ms",
+      "4.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 210)",
+    "options": [
+      "1.67 ms",
+      "2.33 ms",
+      "3.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 211)",
+    "options": [
+      "5.00 ms",
+      "7.00 ms",
+      "7.33 ms",
+      "4.33 ms"
     ],
     "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 37) (Set 212)",
+    "options": [
+      "6.67 ms",
+      "3.67 ms",
+      "4.00 ms",
+      "8.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 213)",
+    "options": [
+      "7.33 ms",
+      "4.67 ms",
+      "7.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 214)",
+    "options": [
+      "6.67 ms",
+      "4.33 ms",
+      "3.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 106) (Set 215)",
+    "options": [
+      "6.67 ms",
+      "4.00 ms",
+      "5.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 216)",
+    "options": [
+      "3.33 ms",
+      "6.00 ms",
+      "4.00 ms",
+      "1.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
   },
   {
     "subject": "OS",
     "topic": "Memory Management",
     "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough? (Set 391)",
+    "question": "Which memory partition allocation algorithm places a new process of size 42 KB in the very first free block that is large enough? (Set 217)",
     "options": [
       "None of these",
       "Best-Fit",
@@ -13920,49 +11484,623 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 392)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 218)",
     "options": [
-      "4.67 ms",
-      "1.67 ms",
       "4.33 ms",
-      "4.00 ms"
+      "7.67 ms",
+      "5.00 ms",
+      "7.33 ms"
     ],
-    "answer": 2,
-    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
   },
   {
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 372) (Set 393)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 44) (Set 219)",
     "options": [
       "5.67 ms",
-      "5.33 ms",
+      "3.33 ms",
       "3.67 ms",
-      "6.67 ms"
+      "5.00 ms"
     ],
-    "answer": 0,
-    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
-  },
-  {
-    "subject": "OS",
-    "topic": "CPU Scheduling",
-    "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 394)",
-    "options": [
-      "3.00 ms",
-      "1.67 ms",
-      "4.00 ms",
-      "4.33 ms"
-    ],
-    "answer": 3,
-    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
   },
   {
     "subject": "OS",
     "topic": "Memory Management",
     "difficulty": "Medium",
-    "question": "Which memory partition allocation algorithm places a new process of size 52 KB in the very first free block that is large enough? (Set 30) (Set 229) (Set 395)",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough? (Set 47) (Set 124) (Set 220)",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "First-Fit",
+      "Best-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 33) (Set 221)",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "3.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+6. Average = (7+13)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 222)",
+    "options": [
+      "5.33 ms",
+      "3.00 ms",
+      "4.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 223)",
+    "options": [
+      "2.00 ms",
+      "3.33 ms",
+      "3.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 224)",
+    "options": [
+      "3.33 ms",
+      "5.00 ms",
+      "5.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 225)",
+    "options": [
+      "8.67 ms",
+      "6.00 ms",
+      "8.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28) (Set 48) (Set 131) (Set 226)",
+    "options": [
+      "2.33 ms",
+      "4.00 ms",
+      "2.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 227)",
+    "options": [
+      "6.67 ms",
+      "3.67 ms",
+      "4.67 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 228)",
+    "options": [
+      "4.33 ms",
+      "2.00 ms",
+      "2.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 229)",
+    "options": [
+      "7.67 ms",
+      "8.33 ms",
+      "5.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 230)",
+    "options": [
+      "6.33 ms",
+      "3.67 ms",
+      "8.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 231)",
+    "options": [
+      "3.00 ms",
+      "4.00 ms",
+      "2.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 64) (Set 232)",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "First-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 233)",
+    "options": [
+      "6.67 ms",
+      "5.33 ms",
+      "4.00 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 54) (Set 234)",
+    "options": [
+      "5.33 ms",
+      "5.67 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 235)",
+    "options": [
+      "3.33 ms",
+      "5.67 ms",
+      "7.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 236)",
+    "options": [
+      "3.33 ms",
+      "2.33 ms",
+      "3.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough? (Set 237)",
+    "options": [
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 238)",
+    "options": [
+      "3.00 ms",
+      "2.67 ms",
+      "3.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 239)",
+    "options": [
+      "4.00 ms",
+      "1.33 ms",
+      "2.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+2. Average = (5+7)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "SSTF disk scheduling? (Set 80) (Set 142) (Set 240)",
+    "options": [
+      "Shortest Seek Time First",
+      "FIFO in standard usage",
+      "Random order (widely accepted)",
+      "Reverse order in most cases"
+    ],
+    "answer": 0,
+    "explanation": "Services nearest request; can cause starvation of far requests."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 153) (Set 241)",
+    "options": [
+      "5.00 ms",
+      "3.33 ms",
+      "2.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 242)",
+    "options": [
+      "5.33 ms",
+      "4.33 ms",
+      "4.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 54) (Set 234) (Set 243)",
+    "options": [
+      "4.33 ms",
+      "5.33 ms",
+      "3.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 244)",
+    "options": [
+      "3.33 ms",
+      "5.33 ms",
+      "3.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 245)",
+    "options": [
+      "6.67 ms",
+      "7.33 ms",
+      "4.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 246)",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "3.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 247)",
+    "options": [
+      "3.33 ms",
+      "4.00 ms",
+      "2.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 248)",
+    "options": [
+      "1.67 ms",
+      "4.33 ms",
+      "4.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+8. Average = (3+11)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough? (Set 249)",
+    "options": [
+      "None of these",
+      "First-Fit",
+      "Worst-Fit",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 222) (Set 250)",
+    "options": [
+      "5.33 ms",
+      "5.33 ms",
+      "3.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 8ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 251)",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "5.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+8. Average = (2+10)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 252)",
+    "options": [
+      "5.00 ms",
+      "4.67 ms",
+      "4.33 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+2. Average = (6+8)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 253)",
+    "options": [
+      "5.33 ms",
+      "5.67 ms",
+      "3.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 213) (Set 254)",
+    "options": [
+      "7.33 ms",
+      "5.67 ms",
+      "4.67 ms",
+      "7.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 255)",
+    "options": [
+      "2.67 ms",
+      "5.67 ms",
+      "5.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 256)",
+    "options": [
+      "2.33 ms",
+      "4.00 ms",
+      "5.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 192) (Set 257)",
+    "options": [
+      "4.67 ms",
+      "4.33 ms",
+      "6.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 28) (Set 258)",
+    "options": [
+      "3.67 ms",
+      "4.00 ms",
+      "2.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 36 KB in the very first free block that is large enough? (Set 259)",
+    "options": [
+      "None of these",
+      "First-Fit",
+      "Worst-Fit",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "TLB (Translation Lookaside Buffer) is? (Set 260)",
+    "options": [
+      "CPU register (default behavior)",
+      "Cache for page table entries",
+      "Disk cache (widely accepted)",
+      "Main memory (general case)"
+    ],
+    "answer": 1,
+    "explanation": "Speeds up virtual to physical address translation."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 213) (Set 254) (Set 261)",
+    "options": [
+      "4.67 ms",
+      "7.33 ms",
+      "7.00 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough? (Set 47) (Set 124) (Set 262)",
     "options": [
       "Worst-Fit",
       "None of these",
@@ -13976,21 +12114,1743 @@ window.quizData.os = [
     "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 396)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 263)",
+    "options": [
+      "1.67 ms",
+      "2.00 ms",
+      "2.33 ms",
+      "2.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 264)",
+    "options": [
+      "3.00 ms",
+      "3.33 ms",
+      "2.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 138) (Set 265)",
+    "options": [
+      "6.00 ms",
+      "4.67 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 266)",
+    "options": [
+      "3.33 ms",
+      "5.67 ms",
+      "7.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough? (Set 267)",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 268)",
     "options": [
       "5.00 ms",
+      "4.00 ms",
       "5.00 ms",
-      "8.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 269)",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "2.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 270)",
+    "options": [
+      "2.67 ms",
+      "3.67 ms",
+      "3.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+4. Average = (2+6)/3 = 2.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 271)",
+    "options": [
+      "5.67 ms",
+      "8.33 ms",
+      "8.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+9. Average = (8+17)/3 = 8.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 14 KB in the very first free block that is large enough? (Set 137) (Set 272)",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "First-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 2,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 273)",
+    "options": [
+      "5.33 ms",
+      "5.33 ms",
+      "7.00 ms",
       "7.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 274)",
+    "options": [
+      "3.00 ms",
+      "5.00 ms",
+      "3.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 275)",
+    "options": [
+      "7.00 ms",
+      "4.00 ms",
+      "6.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 276)",
+    "options": [
+      "3.33 ms",
+      "2.00 ms",
+      "2.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 277)",
+    "options": [
+      "6.00 ms",
+      "9.00 ms",
+      "6.00 ms",
+      "9.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "TLB (Translation Lookaside Buffer) is? (Set 190) (Set 278)",
+    "options": [
+      "CPU register (general case)",
+      "Disk cache (primary approach)",
+      "Cache for page table entries",
+      "Main memory (typical scenario)"
+    ],
+    "answer": 2,
+    "explanation": "Speeds up virtual to physical address translation."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 180) (Set 279)",
+    "options": [
+      "6.33 ms",
+      "3.67 ms",
+      "8.00 ms",
+      "3.67 ms"
     ],
     "answer": 2,
     "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
   },
   {
     "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "Internal fragmentation occurs in? (Set 280)",
+    "options": [
+      "Variable-size allocation in practice",
+      "Fixed-size allocation (paging)",
+      "Stack memory under normal conditions",
+      "No allocation (widely accepted)"
+    ],
+    "answer": 1,
+    "explanation": "Allocated block larger than needed; wasted space within."
+  },
+  {
+    "subject": "OS",
     "topic": "CPU Scheduling",
     "difficulty": "Hard",
-    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 140) (Set 397)",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 281)",
+    "options": [
+      "8.00 ms",
+      "9.00 ms",
+      "5.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 282)",
+    "options": [
+      "5.00 ms",
+      "6.00 ms",
+      "4.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 98) (Set 283)",
+    "options": [
+      "None of these",
+      "First-Fit",
+      "Worst-Fit",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 70) (Set 284)",
+    "options": [
+      "5.33 ms",
+      "3.33 ms",
+      "6.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 285)",
+    "options": [
+      "8.00 ms",
+      "4.67 ms",
+      "5.67 ms",
+      "7.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 286)",
+    "options": [
+      "4.00 ms",
+      "5.67 ms",
+      "4.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 287)",
+    "options": [
+      "5.00 ms",
+      "6.00 ms",
+      "4.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 34 KB in the very first free block that is large enough? (Set 288)",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 289)",
+    "options": [
+      "5.33 ms",
+      "4.00 ms",
+      "4.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 290)",
+    "options": [
+      "6.00 ms",
+      "3.67 ms",
+      "5.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+7. Average = (2+9)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 125) (Set 291)",
+    "options": [
+      "7.33 ms",
+      "9.00 ms",
+      "4.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 292)",
+    "options": [
+      "6.00 ms",
+      "5.00 ms",
+      "6.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 129) (Set 293)",
+    "options": [
+      "3.33 ms",
+      "1.67 ms",
+      "2.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+3. Average = (5+8)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 292) (Set 294)",
+    "options": [
+      "5.00 ms",
+      "6.00 ms",
+      "3.33 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 173) (Set 295)",
+    "options": [
+      "2.00 ms",
+      "3.67 ms",
+      "2.33 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 10) (Set 296)",
+    "options": [
+      "5.67 ms",
+      "7.33 ms",
+      "7.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 27 KB in the very first free block that is large enough? (Set 297)",
+    "options": [
+      "Worst-Fit",
+      "None of these",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 298)",
+    "options": [
+      "5.00 ms",
+      "7.67 ms",
+      "5.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 40) (Set 299)",
+    "options": [
+      "2.67 ms",
+      "5.33 ms",
+      "3.33 ms",
+      "7.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 6ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 300)",
+    "options": [
+      "4.33 ms",
+      "6.00 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+6. Average = (5+11)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 110) (Set 301)",
+    "options": [
+      "6.33 ms",
+      "5.67 ms",
+      "3.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+3. Average = (8+11)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 59) (Set 302)",
+    "options": [
+      "4.00 ms",
+      "2.00 ms",
+      "6.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 303)",
+    "options": [
+      "5.33 ms",
+      "4.67 ms",
+      "4.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 304)",
+    "options": [
+      "2.67 ms",
+      "6.00 ms",
+      "5.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 114) (Set 305)",
+    "options": [
+      "5.33 ms",
+      "4.67 ms",
+      "7.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 114) (Set 306)",
+    "options": [
+      "7.00 ms",
+      "6.33 ms",
+      "4.67 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 10) (Set 307)",
+    "options": [
+      "4.33 ms",
+      "7.33 ms",
+      "7.67 ms",
+      "5.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 189) (Set 308)",
+    "options": [
+      "4.33 ms",
+      "4.00 ms",
+      "5.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 12) (Set 309)",
+    "options": [
+      "3.67 ms",
+      "6.00 ms",
+      "6.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 310)",
+    "options": [
+      "7.00 ms",
+      "6.67 ms",
+      "4.00 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+5. Average = (8+13)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 311)",
+    "options": [
+      "3.67 ms",
+      "7.67 ms",
+      "3.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 312)",
+    "options": [
+      "3.00 ms",
+      "3.00 ms",
+      "7.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 313)",
+    "options": [
+      "4.33 ms",
+      "6.67 ms",
+      "5.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 314)",
+    "options": [
+      "4.67 ms",
+      "7.67 ms",
+      "7.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+7. Average = (8+15)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 54 KB in the very first free block that is large enough? (Set 315)",
+    "options": [
+      "None of these",
+      "Best-Fit",
+      "Worst-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "SSTF disk scheduling? (Set 80) (Set 142) (Set 240) (Set 316)",
+    "options": [
+      "Reverse order (general case)",
+      "Random order (commonly used)",
+      "FIFO in standard usage",
+      "Shortest Seek Time First"
+    ],
+    "answer": 3,
+    "explanation": "Services nearest request; can cause starvation of far requests."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 317)",
+    "options": [
+      "4.67 ms",
+      "5.67 ms",
+      "3.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+9. Average = (4+13)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 90) (Set 318)",
+    "options": [
+      "3.33 ms",
+      "5.33 ms",
+      "5.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+5. Average = (6+11)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 319)",
+    "options": [
+      "5.67 ms",
+      "3.00 ms",
+      "1.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 320)",
+    "options": [
+      "3.33 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 269) (Set 321)",
+    "options": [
+      "2.00 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 322)",
+    "options": [
+      "2.33 ms",
+      "2.00 ms",
+      "1.67 ms",
+      "1.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 42 KB in the very first free block that is large enough? (Set 217) (Set 323)",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 324)",
+    "options": [
+      "5.67 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "6.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 325)",
+    "options": [
+      "3.67 ms",
+      "4.33 ms",
+      "3.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 326)",
+    "options": [
+      "7.67 ms",
+      "3.67 ms",
+      "6.67 ms",
+      "5.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 327)",
+    "options": [
+      "5.67 ms",
+      "6.33 ms",
+      "4.33 ms",
+      "7.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+9. Average = (5+14)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 303) (Set 328)",
+    "options": [
+      "4.67 ms",
+      "5.33 ms",
+      "4.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 329)",
+    "options": [
+      "5.00 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 330)",
+    "options": [
+      "3.67 ms",
+      "3.00 ms",
+      "3.00 ms",
+      "2.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 331)",
+    "options": [
+      "2.33 ms",
+      "3.00 ms",
+      "3.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+2. Average = (4+6)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 91) (Set 332)",
+    "options": [
+      "4.33 ms",
+      "5.00 ms",
+      "2.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+2. Average = (8+10)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 7ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 333)",
+    "options": [
+      "3.67 ms",
+      "6.00 ms",
+      "4.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+7. Average = (6+13)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 334)",
+    "options": [
+      "4.33 ms",
+      "4.00 ms",
+      "1.67 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 335)",
+    "options": [
+      "2.33 ms",
+      "3.33 ms",
+      "3.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+3. Average = (3+6)/3 = 3.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 3) (Set 336)",
+    "options": [
+      "6.00 ms",
+      "6.67 ms",
+      "4.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 337)",
+    "options": [
+      "4.67 ms",
+      "6.33 ms",
+      "6.33 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 64) (Set 136) (Set 338)",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 18 KB in the very first free block that is large enough? (Set 339)",
+    "options": [
+      "Best-Fit",
+      "First-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 340)",
+    "options": [
+      "4.00 ms",
+      "6.67 ms",
+      "8.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+8. Average = (9+17)/3 = 8.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 8ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 341)",
+    "options": [
+      "5.00 ms",
+      "5.00 ms",
+      "7.67 ms",
+      "8.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+8. Average = (8+16)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 198) (Set 207) (Set 342)",
+    "options": [
+      "3.00 ms",
+      "2.67 ms",
+      "4.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 143) (Set 343)",
+    "options": [
+      "4.33 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+9. Average = (2+11)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 6ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 344)",
+    "options": [
+      "3.33 ms",
+      "2.67 ms",
+      "4.00 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+6. Average = (2+8)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 31 KB in the very first free block that is large enough? (Set 345)",
+    "options": [
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 5ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 25) (Set 346)",
+    "options": [
+      "5.00 ms",
+      "4.67 ms",
+      "3.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+5. Average = (5+10)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 347)",
+    "options": [
+      "6.00 ms",
+      "5.33 ms",
+      "3.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 15 KB in the very first free block that is large enough? (Set 348)",
+    "options": [
+      "First-Fit",
+      "None of these",
+      "Worst-Fit",
+      "Best-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 4ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 349)",
+    "options": [
+      "6.67 ms",
+      "3.67 ms",
+      "7.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+4. Average = (9+13)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 102) (Set 350)",
+    "options": [
+      "2.33 ms",
+      "5.00 ms",
+      "3.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Virtual Memory",
+    "difficulty": "Hard",
+    "question": "Using the reference string [1, 2, 3, 4, 1, 2] with 4 physical page frames initially empty, how many page faults occur under the FIFO replacement algorithm? (Set 351)",
+    "options": [
+      "4",
+      "3",
+      "7",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Simulates FIFO allocations on 4 page frame size. Result is 5."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 352)",
+    "options": [
+      "5.33 ms",
+      "6.67 ms",
+      "2.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+4. Average = (8+12)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 5ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 353)",
+    "options": [
+      "6.00 ms",
+      "6.33 ms",
+      "3.67 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+5. Average = (7+12)/3 = 6.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 42 KB in the very first free block that is large enough? (Set 354)",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 9ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 355)",
+    "options": [
+      "5.33 ms",
+      "7.67 ms",
+      "8.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+9. Average = (7+16)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 2ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 32) (Set 356)",
+    "options": [
+      "3.00 ms",
+      "3.67 ms",
+      "2.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+2. Average = (2+4)/3 = 2.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 3ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 357)",
+    "options": [
+      "3.67 ms",
+      "5.00 ms",
+      "3.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+3. Average = (4+7)/3 = 3.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 8ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 358)",
+    "options": [
+      "6.67 ms",
+      "4.00 ms",
+      "6.67 ms",
+      "4.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+8. Average = (6+14)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 266) (Set 359)",
+    "options": [
+      "3.33 ms",
+      "7.00 ms",
+      "5.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 9ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 360)",
+    "options": [
+      "2.33 ms",
+      "5.33 ms",
+      "4.33 ms",
+      "5.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+9. Average = (3+12)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 303) (Set 328) (Set 361)",
+    "options": [
+      "5.33 ms",
+      "4.00 ms",
+      "4.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 273) (Set 362)",
+    "options": [
+      "5.33 ms",
+      "7.67 ms",
+      "7.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 8ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 363)",
+    "options": [
+      "3.67 ms",
+      "7.33 ms",
+      "4.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+8. Average = (7+15)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 364)",
+    "options": [
+      "4.67 ms",
+      "5.00 ms",
+      "3.33 ms",
+      "2.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 4ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 365)",
+    "options": [
+      "6.00 ms",
+      "4.67 ms",
+      "4.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+4. Average = (5+9)/3 = 4.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 8ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 366)",
+    "options": [
+      "5.33 ms",
+      "5.67 ms",
+      "4.33 ms",
+      "7.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+8. Average = (4+12)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 7ms, and P3 = 9ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 367)",
+    "options": [
+      "4.33 ms",
+      "5.33 ms",
+      "4.00 ms",
+      "6.33 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+7. Average = (3+10)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 7ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 86) (Set 368)",
+    "options": [
+      "4.67 ms",
+      "3.67 ms",
+      "5.00 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+7. Average = (4+11)/3 = 5.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 4ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 236) (Set 369)",
+    "options": [
+      "3.67 ms",
+      "2.33 ms",
+      "2.67 ms",
+      "3.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+4. Average = (3+7)/3 = 3.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 7ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 370)",
+    "options": [
+      "4.00 ms",
+      "4.33 ms",
+      "5.33 ms",
+      "3.67 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 8ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 40) (Set 299) (Set 371)",
+    "options": [
+      "2.67 ms",
+      "7.33 ms",
+      "3.33 ms",
+      "5.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=8, P3=8+6. Average = (8+14)/3 = 7.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 3ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 319) (Set 372)",
+    "options": [
+      "1.67 ms",
+      "5.67 ms",
+      "3.00 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+3. Average = (7+10)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 26 KB in the very first free block that is large enough? (Set 64) (Set 136) (Set 338) (Set 373)",
+    "options": [
+      "Worst-Fit",
+      "Best-Fit",
+      "None of these",
+      "First-Fit"
+    ],
+    "answer": 3,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "Optimal page replacement? (Set 374)",
+    "options": [
+      "Random page in typical implementations",
+      "Most used page under normal conditions",
+      "Oldest page in typical implementations",
+      "Evicts page not used for longest future time"
+    ],
+    "answer": 3,
+    "explanation": "Theoretical best; requires future knowledge."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 8ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 304) (Set 375)",
+    "options": [
+      "3.67 ms",
+      "5.33 ms",
+      "2.67 ms",
+      "6.00 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+8. Average = (5+13)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 9ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 27) (Set 376)",
+    "options": [
+      "3.67 ms",
+      "4.67 ms",
+      "7.00 ms",
+      "6.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+9. Average = (6+15)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 7ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 377)",
+    "options": [
+      "5.67 ms",
+      "3.33 ms",
+      "7.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+7. Average = (7+14)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 6ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 378)",
+    "options": [
+      "3.00 ms",
+      "2.67 ms",
+      "3.67 ms",
+      "2.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 379)",
+    "options": [
+      "5.67 ms",
+      "5.67 ms",
+      "9.00 ms",
+      "8.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 7ms, P2 = 2ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 380)",
+    "options": [
+      "2.33 ms",
+      "5.33 ms",
+      "4.67 ms",
+      "4.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=7, P3=7+2. Average = (7+9)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 181) (Set 381)",
+    "options": [
+      "2.67 ms",
+      "2.00 ms",
+      "4.00 ms",
+      "5.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 2ms, P2 = 3ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 263) (Set 382)",
+    "options": [
+      "1.67 ms",
+      "2.67 ms",
+      "2.00 ms",
+      "2.33 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=2, P3=2+3. Average = (2+5)/3 = 2.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 3ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 383)",
+    "options": [
+      "5.33 ms",
+      "2.33 ms",
+      "7.00 ms",
+      "4.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+3. Average = (9+12)/3 = 7.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 5ms, P2 = 7ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 384)",
+    "options": [
+      "3.67 ms",
+      "3.00 ms",
+      "5.33 ms",
+      "5.67 ms"
+    ],
+    "answer": 3,
+    "explanation": "Waiting times: P1=0, P2=5, P3=5+7. Average = (5+12)/3 = 5.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 5ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 43) (Set 385)",
+    "options": [
+      "3.00 ms",
+      "3.33 ms",
+      "4.33 ms",
+      "4.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+5. Average = (4+9)/3 = 4.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 386)",
+    "options": [
+      "4.00 ms",
+      "3.67 ms",
+      "2.67 ms",
+      "1.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 134) (Set 387)",
     "options": [
       "2.00 ms",
       "4.00 ms",
@@ -13999,5 +13859,145 @@ window.quizData.os = [
     ],
     "answer": 1,
     "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 4ms, and P3 = 8ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 303) (Set 328) (Set 388)",
+    "options": [
+      "4.00 ms",
+      "4.67 ms",
+      "5.33 ms",
+      "6.00 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+4. Average = (6+10)/3 = 5.33 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 2ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 38) (Set 389)",
+    "options": [
+      "3.67 ms",
+      "6.67 ms",
+      "1.33 ms",
+      "4.33 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+2. Average = (9+11)/3 = 6.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 22 KB in the very first free block that is large enough? (Set 47) (Set 124) (Set 220) (Set 390)",
+    "options": [
+      "Worst-Fit",
+      "First-Fit",
+      "None of these",
+      "Best-Fit"
+    ],
+    "answer": 1,
+    "explanation": "First-Fit allocates the first available partition holding size."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 6ms, and P3 = 4ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 135) (Set 391)",
+    "options": [
+      "6.33 ms",
+      "4.33 ms",
+      "8.00 ms",
+      "3.33 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+6. Average = (9+15)/3 = 8.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 5ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 111) (Set 392)",
+    "options": [
+      "4.00 ms",
+      "5.67 ms",
+      "7.67 ms",
+      "2.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+5. Average = (9+14)/3 = 7.67 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 6ms, P2 = 6ms, and P3 = 5ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 393)",
+    "options": [
+      "3.67 ms",
+      "5.67 ms",
+      "6.00 ms",
+      "3.67 ms"
+    ],
+    "answer": 2,
+    "explanation": "Waiting times: P1=0, P2=6, P3=6+6. Average = (6+12)/3 = 6.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 3ms, P2 = 6ms, and P3 = 3ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 134) (Set 186) (Set 394)",
+    "options": [
+      "2.00 ms",
+      "4.00 ms",
+      "4.00 ms",
+      "3.00 ms"
+    ],
+    "answer": 1,
+    "explanation": "Waiting times: P1=0, P2=3, P3=3+6. Average = (3+9)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 4ms, P2 = 4ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 395)",
+    "options": [
+      "4.00 ms",
+      "2.00 ms",
+      "3.33 ms",
+      "2.00 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=4, P3=4+4. Average = (4+8)/3 = 4.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "CPU Scheduling",
+    "difficulty": "Hard",
+    "question": "Given three processes arriving at time 0 with CPU burst times of P1 = 9ms, P2 = 9ms, and P3 = 2ms. What is the average waiting time under non-preemptive FCFS scheduling? (Set 396)",
+    "options": [
+      "9.00 ms",
+      "3.67 ms",
+      "6.67 ms",
+      "3.67 ms"
+    ],
+    "answer": 0,
+    "explanation": "Waiting times: P1=0, P2=9, P3=9+9. Average = (9+18)/3 = 9.00 ms."
+  },
+  {
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "question": "Which memory partition allocation algorithm places a new process of size 56 KB in the very first free block that is large enough? (Set 157) (Set 397)",
+    "options": [
+      "First-Fit",
+      "Best-Fit",
+      "None of these",
+      "Worst-Fit"
+    ],
+    "answer": 0,
+    "explanation": "First-Fit allocates the first available partition holding size."
   }
 ];
