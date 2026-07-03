@@ -561,109 +561,208 @@ function generateProceduralQuestion(sub, id) {
     // 6. CLOUD COMPUTING (CLOUD)
     // ============================================================
     if (key === 'cloud') {
-        const type = R(['sla', 'pricing', 'storage', 'instance', 'region', 'scaling']);
+        const type = R(['iam', 'k8s', 'vpc', 'dynamodb', 'docker']);
 
-        if (type === 'sla') {
-            const pctIndex = R([0, 1, 2]);
-            const pcts = ['99.9%', '99.99%', '99.999%'];
-            const values = ['8.72 hours per year', '52.56 minutes per year', '5.26 minutes per year'];
-            const cor = values[pctIndex];
-            const w = values.filter(x => x !== cor);
-            w.push('365.25 minutes per year');
-            return {
-                subject: 'Cloud', topic: 'SLA Calculations', difficulty: 'Medium',
-                question: `A cloud provider guarantees ${pcts[pctIndex]} uptime SLA. What is the maximum allowed annual downtime?`,
-                options: shuffle([cor, ...w]), answer: -1,
-                explanation: `${pcts[pctIndex]} uptime allows ${cor} of downtime.`,
-                _correct: cor
-            };
-        } else if (type === 'pricing') {
-            const hours = Math.floor(Math.random() * 720) + 100;
-            const rate = (Math.random() * 0.5 + 0.05).toFixed(3);
-            const cost = (hours * parseFloat(rate)).toFixed(2);
-            const cor = '$' + cost;
+        if (type === 'iam') {
+            const bucket = R(['prod-assets-s3', 'finance-ledger-raw', 'customer-identity-keys']);
+            const folder1 = R(['confidential', 'payroll', 'archives', 'system-logs']);
+            const action1 = R(['GetObject', 'PutObject', 'DeleteObject']);
+            const effect1 = R(['Allow', 'Deny']);
+            const effect2 = effect1 === 'Allow' ? 'Deny' : 'Allow';
+
+            const requestOnConfidential = Math.random() > 0.5;
+            let cor = '';
+            let explanation = '';
+
+            if (requestOnConfidential) {
+                cor = 'Access Denied (Explicit Deny)';
+                explanation = `Under AWS IAM policy evaluation rules, if any matching statement contains an explicit 'Deny' (which is the case here since one statement is 'Allow' and the other is 'Deny'), it always overrides any matching 'Allow' statements. Hence, access is Denied.`;
+            } else {
+                cor = effect1 === 'Allow' ? 'Access Allowed' : 'Access Denied (Explicit Deny)';
+                explanation = `For target path outside the '/${folder1}/' namespace, only Rule A applies (Effect: ${effect1}). ${effect1 === 'Allow' ? 'Since it matches the Allow statement and there are no matching Deny statements, the request is Allowed.' : 'Since the matching statement has Deny, it is explicitly Denied.'}`;
+            }
+
+            const qTextStr = `Consider the following AWS IAM policy definition for an S3 bucket:
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RuleA",
+      "Effect": "${effect1}",
+      "Action": ["s3:${action1}"],
+      "Resource": ["arn:aws:s3:::${bucket}/*"]
+    },
+    {
+      "Sid": "RuleB",
+      "Effect": "${effect2}",
+      "Action": ["s3:${action1}"],
+      "Resource": ["arn:aws:s3:::${bucket}/${folder1}/*"]
+    }
+  ]
+}
+If an IAM role containing this policy attempts to make an API call to 's3:${action1}' on target file 'arn:aws:s3:::${bucket}/${requestOnConfidential ? folder1 : 'public-docs'}/secret.keys', what is the final decision outcome under AWS policy evaluation logic?`;
+
             const w = [
-                '$' + (parseFloat(cost) + 15.50).toFixed(2),
-                '$' + (parseFloat(cost) * 0.6).toFixed(2),
-                '$' + (parseFloat(cost) + 42.00).toFixed(2)
-            ];
+                'Access Allowed',
+                'Access Denied (Explicit Deny)',
+                'Access Denied (Implicit Deny due to missing permissions)',
+                'Access Allowed (but restricted to Read-Only metadata checks)'
+            ].filter(x => x !== cor).slice(0, 3);
+
             return {
-                subject: 'Cloud', topic: 'Cost Management', difficulty: 'Medium',
-                question: `An EC2 instance runs for ${hours} hours at $${rate}/hour. What is the total on-demand compute cost?`,
-                options: shuffle([cor, ...w]), answer: -1,
-                explanation: `${hours} × $${rate} = ${cor}.`,
+                subject: 'Cloud',
+                topic: 'Cloud Security & IAM Policy Evaluation',
+                difficulty: 'Hard',
+                question: qTextStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
                 _correct: cor
             };
-        } else if (type === 'storage') {
-            const gb = Math.floor(Math.random() * 500) + 50;
-            const pricePerGB = (Math.random() * 0.05 + 0.01).toFixed(3);
-            const cost = (gb * parseFloat(pricePerGB)).toFixed(2);
-            const cor = '$' + cost;
+        } else if (type === 'k8s') {
+            const delay = Math.floor(Math.random() * 20) + 10; // 10 to 29 s
+            const period = Math.floor(Math.random() * 10) + 5; // 5 to 14 s
+            const threshold = Math.floor(Math.random() * 4) + 2; // 2 to 5 failures
+            const time = delay + (threshold - 1) * period;
+
+            const questionStr = `A Kubernetes Pod deployment defines the following livenessProbe inside the container spec:
+livenessProbe:
+  tcpSocket:
+    port: 8080
+  initialDelaySeconds: ${delay}
+  periodSeconds: ${period}
+  failureThreshold: ${threshold}
+
+If the container application crashes internally and fails every TCP check starting from the startup moment, of the time milestones elapsed since the pod initialized, exactly at which second will Kubelet trigger the first container restart?`;
+
+            const cor = `${time} seconds`;
             const w = [
-                '$' + (parseFloat(cost) + 5.25).toFixed(2),
-                '$' + (parseFloat(cost) * 1.8).toFixed(2),
-                '$' + (parseFloat(cost) - 2.10).toFixed(2)
-            ];
+                `${delay + threshold * period} seconds`,
+                `${delay} seconds`,
+                `${(threshold - 1) * period} seconds`,
+                `${delay + period} seconds`
+            ].filter(x => x !== cor).slice(0, 3);
+            const explanation = `Liveness probes are initiated after initialDelaySeconds (${delay}s). Subsequent checks run every periodSeconds (${period}s). The container is restarted when failures reach the failureThreshold (${threshold} consecutive failures). Calculated: Start checks at ${delay}s (failure 1), then ${delay + period}s (failure 2), and finally ${delay + (threshold - 1) * period}s = ${time}s (failure ${threshold}), triggering container kill/restart.`;
+
             return {
-                subject: 'Cloud', topic: 'Storage Pricing', difficulty: 'Easy',
-                question: `Storing ${gb} GB in S3 Standard at $${pricePerGB}/GB/month costs how much monthly?`,
-                options: shuffle([cor, ...w]), answer: -1,
-                explanation: `${gb} × $${pricePerGB} = ${cor} per month.`,
+                subject: 'Cloud',
+                topic: 'Containers & Orchestration (K8s)',
+                difficulty: 'Hard',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
                 _correct: cor
             };
-        } else if (type === 'instance') {
-            const instances = [
-                { name: 't2.micro', vcpu: '1 vCPU, 1 GB RAM' },
-                { name: 't3.medium', vcpu: '2 vCPU, 4 GB RAM' },
-                { name: 'm5.large', vcpu: '2 vCPU, 8 GB RAM' },
-                { name: 'c5.xlarge', vcpu: '4 vCPU, 8 GB RAM' },
-                { name: 'r5.large', vcpu: '2 vCPU, 16 GB RAM' },
-                { name: 'p3.2xlarge', vcpu: '8 vCPU, 61 GB RAM' }
-            ];
-            const target = R(instances);
-            const cor = target.vcpu;
-            const w = instances.filter(i => i.vcpu !== cor).map(i => i.vcpu).slice(0, 3);
+        } else if (type === 'vpc') {
+            const subnetAName = R(['Subnet-Private-A', 'App-Subnet-1', 'DB-Subnet-Primary']);
+            const destIP = R(['10.0.0.45', '10.0.0.194', '10.0.24.8', '192.168.1.15']);
+
+            let cor = '';
+            let explanation = '';
+
+            if (destIP === '10.0.0.45') {
+                cor = 'NAT Gateway (nat-gateway)';
+                explanation = `The IP address 10.0.0.45 matches 10.0.0.0/16, 10.0.0.0/24, and 0.0.0.0/0. Under the Longest Prefix Match routing rule, /24 is selected because it is the most specific network prefix.`;
+            } else if (destIP === '10.0.0.194') {
+                cor = 'VPC Peering (peering-connection)';
+                explanation = `The IP address 10.0.0.194 matches 10.0.0.0/16, 10.0.0.0/24, 10.0.0.128/25, and 0.0.0.0/0. The /25 mask is the longest prefix matching this target.`;
+            } else if (destIP === '10.0.24.8') {
+                cor = 'Local Router (local)';
+                explanation = `The IP address 10.0.24.8 matches 10.0.0.0/16 and 0.0.0.0/0. The /16 prefix is more specific than the /0 default route.`;
+            } else {
+                cor = 'Internet Gateway (internet-gateway)';
+                explanation = `The IP address 192.168.1.15 only matches the default route 0.0.0.0/0. Thus it is routed through the Internet Gateway.`;
+            }
+
+            const questionStr = `An AWS VPC contains a custom Route Table configured as follows:
+- Destination: 10.0.0.0/16  ==> Target: local
+- Destination: 10.0.0.0/24  ==> Target: nat-gateway
+- Destination: 10.0.0.128/25 ==> Target: peering-connection
+- Destination: 0.0.0.0/0     ==> Target: internet-gateway
+
+An EC2 instance in ${subnetAName} initiates an egress socket stream connection targeting destination IP: ${destIP}. What is the route target used by the VPC virtual router?`;
+
+            const w = [
+                'Local Router (local)',
+                'NAT Gateway (nat-gateway)',
+                'VPC Peering (peering-connection)',
+                'Internet Gateway (internet-gateway)'
+            ].filter(x => x !== cor);
+
             return {
-                subject: 'Cloud', topic: 'Compute Instances', difficulty: 'Medium',
-                question: `What are the default specifications of an AWS ${target.name} instance type?`,
-                options: shuffle([cor, ...w]), answer: -1,
-                explanation: `AWS ${target.name} provides ${cor}.`,
+                subject: 'Cloud',
+                topic: 'AWS VPC Networking',
+                difficulty: 'Hard',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
                 _correct: cor
             };
-        } else if (type === 'region') {
-            const regions = [
-                { code: 'us-east-1', name: 'N. Virginia region' },
-                { code: 'us-west-2', name: 'Oregon region' },
-                { code: 'eu-west-1', name: 'Ireland region' },
-                { code: 'ap-south-1', name: 'Mumbai region' },
-                { code: 'ap-southeast-1', name: 'Singapore region' },
-                { code: 'eu-central-1', name: 'Frankfurt region' }
-            ];
-            const target = R(regions);
-            const cor = target.name;
-            const w = regions.filter(r => r.name !== cor).map(r => r.name).slice(0, 3);
+        } else if (type === 'dynamodb') {
+            const wRate = Math.floor(Math.random() * 20) * 10 + 50;
+            const wSize = Math.floor(Math.random() * 4) + 1.2;
+            const rRate = Math.floor(Math.random() * 50) * 10 + 100;
+            const rSize = Math.floor(Math.random() * 8) + 1.5;
+
+            const wChunks = Math.ceil(wSize);
+            const wcus = wRate * wChunks;
+
+            const rChunks = Math.ceil(rSize / 4);
+            const rcus = rRate * rChunks;
+
+            const questionStr = `You are hosting an application that requires writing database records to user sessions at a steady rate of ${wRate} items/second (average item size of ${wSize.toFixed(1)} KB) and performing strongly consistent reads at a rate of ${rRate} items/second (average item size of ${rSize.toFixed(1)} KB). Under DynamoDB Provisioned Capacity Mode, what are the minimum Write Capacity Units (WCU) and Read Capacity Units (RCU) required?`;
+
+            const cor = `${wcus} WCU and ${rcus} RCU`;
+            const w = [
+                `${wRate} WCU and ${rRate} RCU`,
+                `${Math.round(wcus * 0.5)} WCU and ${Math.round(rcus * 2)} RCU`,
+                `${wcus * 2} WCU and ${Math.round(rcus * 0.5)} RCU`,
+                `${wRate * Math.floor(wSize)} WCU and ${rRate * Math.floor(rSize / 4)} RCU`
+            ].filter(x => x !== cor).slice(0, 3);
+            const explanation = `Calculations:\\n1. WCUs: Size ${wSize.toFixed(1)} KB rounds up to ${wChunks} KB chunks. Output: ${wRate} writes/sec * ${wChunks} WCU/write = ${wcus} WCU.\\n2. RCUs: Size ${rSize.toFixed(1)} KB rounds up to the next 4 KB boundary = ${rChunks * 4} KB (which is ${rChunks} * 4KB chunks). Output: ${rRate} reads/sec * ${rChunks} RCU/read = ${rcus} RCU.`;
+
             return {
-                subject: 'Cloud', topic: 'AWS Regions', difficulty: 'Easy',
-                question: `Which geographic location does the AWS region code '${target.code}' correspond to?`,
-                options: shuffle([cor, ...w]), answer: -1,
-                explanation: `${target.code} is the ${cor}.`,
+                subject: 'Cloud',
+                topic: 'AWS Storage Capacity Calculations',
+                difficulty: 'Medium',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
                 _correct: cor
             };
         } else {
-            const curr = Math.floor(Math.random() * 4) + 2;
-            const target = curr + Math.floor(Math.random() * 6) + 2;
-            const added = target - curr;
-            const cor = added + ' new instances';
+            const hPort = Math.floor(Math.random() * 2000) + 8000;
+            const cPort = R([80, 3000, 5000, 8080]);
+            const isRo = Math.random() > 0.5;
+
+            const questionStr = `You execute the following Docker CLI deployment command inside a shell terminal:
+docker run -d --name app-container -v /opt/app/data:/var/lib/data:${isRo ? 'ro' : 'rw'} -p ${hPort}:${cPort} node-microservice:latest
+
+Which of the following configurations describes the operational filesystem access and port mapping behavior of the resulting container?`;
+
+            const cor = isRo
+                ? `Host directory /opt/app/data is mounted read-only inside the container at /var/lib/data, and host traffic is port-forwarded from ${hPort} to container internal port ${cPort}.`
+                : `Host directory /opt/app/data is mounted read-write inside the container at /var/lib/data, and host traffic is port-forwarded from ${hPort} to container internal port ${cPort}.`;
+
             const w = [
-                (added + 2) + ' new instances',
-                (added - 1) + ' new instances',
-                (added * 2) + ' new instances'
-            ];
+                `Host directory /var/lib/data is mounted read-only inside the container at /opt/app/data, mapping port ${cPort} of host to container port ${hPort}.`,
+                `Host directory /opt/app/data is mounted read-write inside the container at /var/lib/data, mapping port ${cPort} of host to container port ${hPort}.`,
+                `A named volume is constructed pointing node-microservice image data to container, exporting port ${hPort} exclusively to private docker networks.`
+            ].filter(x => x !== cor).slice(0, 3);
+
+            const explanation = `Analyzing commands:\\n1. '-v /opt/app/data:/var/lib/data:${isRo ? 'ro' : 'rw'}' maps host directory /opt/app/data to container directory /var/lib/data in ${isRo ? 'read-only (ro)' : 'read-write (rw)'} mode.\\n2. '-p ${hPort}:${cPort}' maps host access port ${hPort} to container destination port ${cPort}.`;
+
             return {
-                subject: 'Cloud', topic: 'Auto Scaling', difficulty: 'Easy',
-                question: `An auto-scaling group has ${curr} running instances and a desired capacity of ${target}. How many instances will be launched?`,
-                options: shuffle([cor, ...w]), answer: -1,
-                explanation: `${target} desired - ${curr} running = ${added} new instances.`,
+                subject: 'Cloud',
+                topic: 'Virtualization & Containers',
+                difficulty: 'Medium',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
                 _correct: cor
             };
         }
