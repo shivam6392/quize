@@ -772,46 +772,71 @@ Which of the following configurations describes the operational filesystem acces
     // 7. COMPUTER ORGANIZATION & ARCHITECTURE (COA)
     // ============================================================
     if (key === 'coa') {
-        const type = R(['binary', 'hex', 'cache_split']);
+        const type = R(['pipeline', 'ieee754', 'cache_split']);
 
-        if (type === 'binary') {
-            const val = Math.floor(Math.random() * 10000) + 15;
-            const cor = val.toString(2);
+        if (type === 'pipeline') {
+            const stages = R([4, 5, 6]);
+            const inst = Math.floor(Math.random() * 50) + 20; // 20 to 69 instructions
+            const hazards = Math.floor(Math.random() * 5) + 2;
+            const stalls = R([1, 2]);
+
+            const time = stages + (inst - 1) + (hazards * stalls);
+
+            const questionStr = `A CPU executes a program sequence with ${inst} instructions on an instruction pipeline having ${stages} stages (Fetch, Decode, Execute, Memory access, Writeback). If the compiler identifies exactly ${hazards} data hazard dependency conflicts, and each hazard inserts ${stalls} clock cycle bubble stall(s) into the pipeline, what is the total clock cycle count required to execute the instructions to completion?`;
+
+            const cor = `${time} cycles`;
             const w = [
-                (val + 6).toString(2),
-                (val - 4).toString(2),
-                (val + 24).toString(2)
+                `${inst + stages} cycles`,
+                `${stages + inst - 1} cycles`,
+                `${time + 5} cycles`,
+                `${inst * stages} cycles`
             ].filter(x => x !== cor).slice(0, 3);
-            while (w.length < 3) w.push('11111111');
+
+            const explanation = `Pipeline Clocks Formula: Total Cycles = Stages + (Instructions - 1) + Stalls. Here, Stages = ${stages}, Instructions = ${inst}. Total Stalls = ${hazards} dependency hazards * ${stalls} cycle(s) = ${hazards * stalls} stalls. Total = ${stages} + (${inst} - 1) + ${hazards * stalls} = ${time} cycles.`;
 
             return {
                 subject: 'COA',
-                topic: 'Binary Conversions',
-                difficulty: 'Easy',
-                question: `Convert the decimal integer base-10 number ${val} to its binary representation.`,
+                topic: 'Pipelining & Hazards',
+                difficulty: 'Hard',
+                question: questionStr,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `${val} in binary base-2 is format = ${cor}.`,
+                explanation: explanation,
                 _correct: cor
             };
-        } else if (type === 'hex') {
-            const val = Math.floor(Math.random() * 80000) + 60;
-            const cor = '0x' + val.toString(16).toUpperCase();
-            const w = [
-                '0x' + (val - 16).toString(16).toUpperCase(),
-                '0x' + (val + 64).toString(16).toUpperCase(),
-                '0x' + (val * 2).toString(16).toUpperCase()
-            ].filter(x => x !== cor).slice(0, 3);
-            while (w.length < 3) w.push('0x00FF');
+        } else if (type === 'ieee754') {
+            const isDouble = Math.random() > 0.5;
+
+            const questionStr = isDouble
+                ? `In the IEEE 754 Double-Precision (64-bit) Floating-Point representation standard, what is the bit allocation configuration for the Sign, Biased Exponent, and Fraction/Mantissa fields respectively?`
+                : `In the IEEE 754 Single-Precision (32-bit) Floating-Point representation standard, what is the bit allocation configuration for the Sign, Biased Exponent, and Fraction/Mantissa fields respectively?`;
+
+            const cor = isDouble
+                ? `1 bit Sign, 11 bits Exponent, 52 bits Mantissa`
+                : `1 bit Sign, 8 bits Exponent, 23 bits Mantissa`;
+
+            const w = isDouble
+                ? [
+                    `1 bit Sign, 8 bits Exponent, 55 bits Mantissa`,
+                    `1 bit Sign, 12 bits Exponent, 51 bits Mantissa`,
+                    `1 bit Sign, 10 bits Exponent, 53 bits Mantissa`
+                ]
+                : [
+                    `1 bit Sign, 7 bits Exponent, 24 bits Mantissa`,
+                    `1 bit Sign, 9 bits Exponent, 22 bits Mantissa`,
+                    `1 bit Sign, 8 bits Exponent, 24 bits Mantissa`
+                ];
 
             return {
                 subject: 'COA',
-                topic: 'Hexadecimal Conversions',
+                topic: 'Data Representation',
                 difficulty: 'Medium',
-                question: `Determine the correct hexadecimal representation of the decimal value ${val}.`,
+                question: questionStr,
                 options: shuffle([cor, ...w]),
                 answer: -1,
-                explanation: `Decimal ${val} translates directly to Base-16 hexadecimal as ${cor}.`,
+                explanation: isDouble
+                    ? `IEEE 754 Double-Precision uses a 64-bit layout: Sign = 1 bit (bit 63), Biased Exponent = 11 bits (bits 62-52), Fraction/Mantissa = 52 bits (bits 51-0).`
+                    : `IEEE 754 Single-Precision uses a 32-bit layout: Sign = 1 bit (bit 31), Biased Exponent = 8 bits (bits 30-23), Fraction/Mantissa = 23 bits (bits 22-0).`,
                 _correct: cor
             };
         } else {
@@ -947,6 +972,199 @@ Which of the following configurations describes the operational filesystem acces
         };
     }
 
+    // ============================================================
+    // 9. DATABASE MANAGEMENT SYSTEMS (DBMS)
+    // ============================================================
+    if (key === 'dbms') {
+        const type = R(['joins', 'normalization', 'concurrency', 'nosql', 'indexing']);
+
+        if (type === 'joins') {
+            const empCount = Math.floor(Math.random() * 120) + 80; // 80 to 199
+            const deptCount = Math.floor(Math.random() * 20) + 10; // 10 to 29
+            const matchCount = Math.floor(Math.random() * 8) + 12; // 12 to 19
+            const isLeft = Math.random() > 0.5;
+
+            const questionStr = `You have two SQL database tables: 'Employees' (emp_id, emp_name, dept_id) containing ${empCount} rows, and 'Departments' (dept_id, dept_name) containing ${deptCount} rows. If there are exactly ${matchCount} matching 'dept_id' values between the tables (all other dept_id references are NULL or unmatched), how many rows will be returned by a query performing a ${isLeft ? 'LEFT OUTER JOIN' : 'INNER JOIN'} between 'Employees' and 'Departments' on 'dept_id'?`;
+
+            const corVal = isLeft ? empCount : matchCount;
+            const cor = `${corVal} rows`;
+            const w = [
+                `${isLeft ? matchCount : empCount} rows`,
+                `${empCount + deptCount} rows`,
+                `${matchCount + deptCount} rows`,
+                `${Math.abs(empCount - deptCount)} rows`
+            ].filter(x => x !== cor).slice(0, 3);
+
+            const explanation = isLeft
+                ? `A LEFT OUTER JOIN preserves all rows from the left table ('Employees') regardless of match. Since Employees has ${empCount} rows, the result contains exactly ${empCount} rows.`
+                : `An INNER JOIN returns only the rows where the join condition matches. Since there are exactly ${matchCount} matching dept_ids, the result contains ${matchCount} rows.`;
+
+            return {
+                subject: 'DBMS',
+                topic: 'Relational Database Joins',
+                difficulty: 'Medium',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
+                _correct: cor
+            };
+        } else if (type === 'normalization') {
+            const fdsList = [
+                {
+                    fds: 'A -> B, B -> C (Primary Key is A)',
+                    nf: '2NF',
+                    exp: "The relation has a transitive dependency A -> B -> C where C is non-prime and B is not a superkey. Thus, it contains transitive dependencies, violating 3NF, but has no partial dependencies (A is the single-attribute primary key), leaving it in 2NF."
+                },
+                {
+                    fds: 'A -> B, C -> D (Primary Key is (A, C))',
+                    nf: '1NF',
+                    exp: "The key is composite (A, C). FDs 'A -> B' and 'C -> D' exhibit partial dependencies (where part of the primary key determines a non-prime attribute). Since partial dependencies exist, it violates 2NF, leaving it in 1NF."
+                },
+                {
+                    fds: 'AB -> C, C -> D (Primary Key is (A, B))',
+                    nf: '2NF',
+                    exp: "No partial dependencies exist because C depends on the full key AB, and D depends on C. However, C -> D is a transitive dependency (D depends on C, which is not a primary key). This violates 3NF, leaving it in 2NF."
+                },
+                {
+                    fds: 'A -> B, A -> C, A -> D (Primary Key is A)',
+                    nf: '3NF (and BCNF)',
+                    exp: "All non-prime attributes (B, C, D) are fully and directly dependent on the primary key A (a single attribute superkey). No partial or transitive dependencies exist, meaning the relation is in 3NF and BCNF."
+                },
+                {
+                    fds: 'A -> B, B -> C, C -> A (Primary Key is A)',
+                    nf: '3NF (and BCNF)',
+                    exp: "Since A, B, and C can each act as a candidate key (due to the circular dependencies), there are no transitive or partial dependencies. Every determinant is a candidate key. Highest NF is BCNF/3NF."
+                }
+            ];
+
+            const targetCase = R(fdsList);
+            const questionStr = `A relational schema R(A, B, C, D) is configured with the following set of Functional Dependencies:
+{ ${targetCase.fds} }
+
+What is the highest normal form (Normal Form status) satisfied by this relation?`;
+
+            const cor = targetCase.nf;
+            const w = ['1NF', '2NF', '3NF (and BCNF)', '4NF'].filter(x => x !== cor).slice(0, 3);
+
+            return {
+                subject: 'DBMS',
+                topic: 'Database Normalization',
+                difficulty: 'Hard',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: targetCase.exp,
+                _correct: cor
+            };
+        } else if (type === 'concurrency') {
+            const anomalies = [
+                {
+                    name: 'Dirty Read (Write-Read Conflict)',
+                    seq: 'Transaction T1 updates row R (writes R), Transaction T2 reads row R, then Transaction T1 performs a Rollback/Abort.',
+                    exp: 'A Dirty Read occurs when a transaction reads data that has been modified by another transaction but not yet committed.'
+                },
+                {
+                    name: 'Non-Repeatable Read (Read-Write Conflict)',
+                    seq: 'Transaction T1 reads row R, Transaction T2 updates row R and commits, then Transaction T1 reads row R again and finds a different value.',
+                    exp: 'A Non-Repeatable Read occurs when a transaction retrieves the same row twice and obtains different data values because another transaction modified it in between.'
+                },
+                {
+                    name: 'Phantom Read',
+                    seq: 'Transaction T1 reads a set of rows matching search criteria, Transaction T2 inserts a new row matching those criteria and commits, then T1 executes the query again.',
+                    exp: 'A Phantom Read occurs when a transaction runs a query returning a set of rows, and upon re-running, finds new "phantom" rows inserted by a committed concurrent transaction.'
+                },
+                {
+                    name: 'Lost Update (Write-Write Conflict)',
+                    seq: 'Transaction T1 reads balance. Transaction T2 reads balance. T1 updates balance and writes it back. T2 updates balance based on its old read and writes it back, overwriting T1\'s change.',
+                    exp: 'A Lost Update happens when two transactions read the same record, and then both write updates to it, where the latter write overrides and cancels the earlier write.'
+                }
+            ];
+
+            const target = R(anomalies);
+            const questionStr = `Read the following transaction operations execution sequence:
+"${target.seq}"
+
+Which SQL concurrency level anomaly/conflict does this sequence represent?`;
+
+            const cor = target.name;
+            const w = anomalies.filter(x => x.name !== target.name).map(x => x.name).slice(0, 3);
+
+            return {
+                subject: 'DBMS',
+                topic: 'Transactions & Concurrency Control',
+                difficulty: 'Hard',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: target.exp,
+                _correct: cor
+            };
+        } else if (type === 'nosql') {
+            const collections = ['orders', 'users', 'inventory', 'reviews'];
+            const col = R(collections);
+            const field = col === 'orders' ? 'amount' : col === 'users' ? 'age' : col === 'inventory' ? 'price' : 'rating';
+            const groupField = col === 'orders' ? 'status' : col === 'users' ? 'country' : col === 'inventory' ? 'category' : 'product_id';
+
+            const questionStr = `A MongoDB database contains a collection named '${col}'. You run the following aggregate database query:
+db.${col}.aggregate([
+  { $match: { ${field}: { $gt: 100 } } },
+  { $group: { _id: "$${groupField}", averageValue: { $avg: "$${field}" } } }
+])
+
+What is the operational execution flow of this aggregation pipeline?`;
+
+            const cor = `First, filters documents in '${col}' where '${field}' is greater than 100, then groups the remaining documents by '${groupField}', and computes the average of the '${field}' field for each group.`;
+            const w = [
+                `Groups all documents in '${col}' by '${groupField}', calculates the average of ${field}, and outputs only groups having an average greater than 100.`,
+                `Creates an index on '${groupField}' and '${field}', then aggregates and inserts filtered documents greater than 100 back into the database.`,
+                `Runs a join query matching documents in '${col}' and '${groupField}' where both tables share fields greater than 100.`
+            ].slice(0, 3);
+
+            return {
+                subject: 'DBMS',
+                topic: 'NoSQL Databases (MongoDB)',
+                difficulty: 'Medium',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: `In MongoDB, the aggregation array executes sequentially: stage 1 ($match) filters matching documents where '${field}' > 100, and stage 2 ($group) groups by '_id: $${groupField}' and outputs the average value.`,
+                _correct: cor
+            };
+        } else {
+            const blockSize = R([2048, 4096, 8192]);
+            const keySize = R([16, 24, 32]);
+            const ptrSize = 8;
+
+            // Formula solver: P * (ptrSize + keySize) <= blockSize + keySize
+            // P <= (blockSize + keySize) / (ptrSize + keySize)
+            const maxOrder = Math.floor((blockSize + keySize) / (ptrSize + keySize));
+
+            const questionStr = `A database storage index uses a B+ Tree file organizational structure. Internal index nodes are stored in disk blocks size of ${blockSize} bytes. Each search key requires ${keySize} bytes, and child pointers require ${ptrSize} bytes. Under index constraints, what is the maximum order (maximum child pointers / fan-out P) of an internal index node in this B+ Tree?`;
+
+            const cor = `${maxOrder} children`;
+            const w = [
+                `${maxOrder + 10} children`,
+                `${maxOrder - 15} children`,
+                `${Math.floor(blockSize / keySize)} children`,
+                `${Math.floor(blockSize / (keySize + ptrSize))} children`
+            ].filter(x => x !== cor).slice(0, 3);
+
+            const explanation = `Calculation for B+ Tree order P: P pointers and (P - 1) keys must fit in a single block size. Thus: P * ${ptrSize} + (P - 1) * ${keySize} <= ${blockSize} => P * (${ptrSize} + ${keySize}) - ${keySize} <= ${blockSize} => P * ${ptrSize + keySize} <= ${blockSize + keySize} => P <= ${blockSize + keySize} / ${ptrSize + keySize} = ${(blockSize + keySize) / (ptrSize + keySize)} => Max P = ${maxOrder}.`;
+
+            return {
+                subject: 'DBMS',
+                topic: 'Database Indexes & B+ Trees',
+                difficulty: 'Hard',
+                question: questionStr,
+                options: shuffle([cor, ...w]),
+                answer: -1,
+                explanation: explanation,
+                _correct: cor
+            };
+        }
+    }
+
     // Default safe fallback if subject mismatch
     return {
         subject: sub,
@@ -961,3 +1179,4 @@ Which of the following configurations describes the operational filesystem acces
 }
 
 module.exports = { generateProceduralQuestion, R };
+

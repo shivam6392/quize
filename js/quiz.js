@@ -10,7 +10,7 @@ let currentSessionMode = ''; // track mode for save/resume
 const MODE_TOTALS = {
     quick: 1000,
     standard: 2500,
-    deep: 8000
+    deep: 9000
 };
 
 // DOM Elements

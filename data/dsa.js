@@ -6,12 +6,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the time complexity of binary search?",
     "options": [
-      "O(n)",
-      "O(n²)",
+      "O(1)",
       "O(log n)",
-      "O(1)"
+      "O(n²)",
+      "O(n)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Binary search halves the search space each step."
   },
   {
@@ -21,11 +21,11 @@ window.quizData.dsa = [
     "question": "What is the worst-case time complexity of bubble sort?",
     "options": [
       "O(n)",
-      "O(n²)",
       "O(n log n)",
-      "O(log n)"
+      "O(log n)",
+      "O(n²)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Bubble sort compares all pairs in worst case."
   },
   {
@@ -34,12 +34,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What does Big O notation describe?",
     "options": [
-      "Exact growth in standard usage",
       "Upper bound of growth rate",
-      "Average case only (general case)",
-      "Lower bound (widely accepted)"
+      "Lower bound (general case)",
+      "Average case only in most cases",
+      "Exact growth (typical scenario)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Big O gives the worst-case upper bound."
   },
   {
@@ -49,11 +49,11 @@ window.quizData.dsa = [
     "question": "What is the time complexity of accessing an array element by index?",
     "options": [
       "O(n)",
+      "O(1)",
       "O(n²)",
-      "O(log n)",
-      "O(1)"
+      "O(log n)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Array access is constant time via direct addressing."
   },
   {
@@ -62,12 +62,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Master theorem applies to recurrences of what form?",
     "options": [
-      "T(n) = n! (general case)",
-      "T(n) = 2n + 1 by design",
       "T(n) = aT(n/b) + f(n)",
+      "T(n) = 2n + 1 by design",
+      "T(n) = n! (widely accepted)",
       "T(n) = T(n-1) + n"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Master theorem solves divide-and-conquer recurrences."
   },
   {
@@ -76,12 +76,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the space complexity of merge sort?",
     "options": [
-      "O(n)",
       "O(n²)",
-      "O(1)",
-      "O(log n)"
+      "O(n)",
+      "O(log n)",
+      "O(1)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Merge sort needs auxiliary array of size n."
   },
   {
@@ -91,11 +91,11 @@ window.quizData.dsa = [
     "question": "Big Omega represents?",
     "options": [
       "Average case",
-      "Tight bound",
       "Lower bound",
-      "Upper bound"
+      "Upper bound",
+      "Tight bound"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Ω notation gives the best-case lower bound."
   },
   {
@@ -104,12 +104,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Big Theta represents?",
     "options": [
-      "Lower bound only",
-      "No bound",
+      "Upper bound only",
       "Tight bound",
-      "Upper bound only"
+      "Lower bound only",
+      "No bound"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Θ gives both upper and lower bounds."
   },
   {
@@ -118,8 +118,8 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the best case time complexity of insertion sort?",
     "options": [
-      "O(n log n)",
       "O(1)",
+      "O(n log n)",
       "O(n²)",
       "O(n)"
     ],
@@ -132,12 +132,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is amortized analysis?",
     "options": [
-      "Average cost per operation over a sequence",
-      "Worst case only in typical implementations",
-      "Space analysis under normal conditions",
-      "Best case only as per specification"
+      "Worst case only as per specification",
+      "Best case only (standard definition)",
+      "Space analysis in typical implementations",
+      "Average cost per operation over a sequence"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Amortized analysis averages cost across operations."
   },
   {
@@ -146,12 +146,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Time complexity of linear search?",
     "options": [
-      "O(n)",
       "O(log n)",
-      "O(n²)",
-      "O(1)"
+      "O(n)",
+      "O(1)",
+      "O(n²)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "May need to check every element."
   },
   {
@@ -160,12 +160,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What is the recurrence for merge sort?",
     "options": [
-      "T(n) = T(n/2) + O(1)",
-      "T(n) = 2T(n/2) + O(n)",
+      "T(n) = nT(n/2) by design",
       "T(n) = T(n-1) + O(n)",
-      "T(n) = nT(n/2) in most cases"
+      "T(n) = 2T(n/2) + O(n)",
+      "T(n) = T(n/2) + O(1)"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Merge sort splits in half and merges in O(n)."
   },
   {
@@ -175,11 +175,11 @@ window.quizData.dsa = [
     "question": "What is the time complexity of the naive recursive Fibonacci?",
     "options": [
       "O(n log n)",
-      "O(n)",
       "O(2^n)",
+      "O(n)",
       "O(n²)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Each call branches into two recursive calls."
   },
   {
@@ -190,8 +190,8 @@ window.quizData.dsa = [
     "options": [
       "O(n)",
       "O(log n)",
-      "O(n²)",
-      "O(1)"
+      "O(1)",
+      "O(n²)"
     ],
     "answer": 1,
     "explanation": "Recursion stack depth is log n on average."
@@ -202,12 +202,12 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Which notation is used when best and worst case are the same?",
     "options": [
-      "Theta (Θ)",
       "Little o",
-      "Big Omega",
-      "Big O"
+      "Theta (Θ)",
+      "Big O",
+      "Big Omega"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Θ means asymptotically tight bound."
   },
   {
@@ -216,40 +216,40 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Two Sum problem is best solved using?",
     "options": [
-      "HashMap",
-      "Stack",
       "Sorting",
-      "Binary Search Tree"
+      "Binary Search Tree",
+      "Stack",
+      "HashMap"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "HashMap gives O(1) lookup for complement."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Kadane's algorithm solves?",
     "options": [
-      "Shortest path by design",
       "Maximum subarray sum",
-      "Sorting (primary approach)",
-      "String matching"
+      "String matching",
+      "Shortest path in practice",
+      "Sorting (widely accepted)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Kadane's finds max contiguous subarray in O(n)."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Sliding window technique is used for?",
     "options": [
-      "Subarray/substring problems with constraints",
+      "Sorting in typical implementations",
       "Graph traversal in typical implementations",
-      "Tree balancing under normal conditions",
-      "Sorting in typical implementations"
+      "Tree balancing in typical implementations",
+      "Subarray/substring problems with constraints"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Sliding window maintains a dynamic range."
   },
   {
@@ -258,40 +258,40 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Dutch National Flag partitions array into how many parts?",
     "options": [
-      "Two",
-      "Three",
       "Four",
-      "Five"
+      "Two",
+      "Five",
+      "Three"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Low, mid, high pointers create 3 partitions."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Time complexity of rotating array by k positions using reversal?",
     "options": [
       "O(n*k)",
-      "O(n²)",
+      "O(n)",
       "O(k)",
-      "O(n)"
+      "O(n²)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Three reversals each take O(n)."
   },
   {
     "subject": "DSA",
     "topic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Prefix sum array helps answer what queries efficiently?",
     "options": [
-      "Range sum queries",
-      "Minimum element",
       "Sorting status",
-      "Graph connectivity"
+      "Graph connectivity",
+      "Minimum element",
+      "Range sum queries"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Prefix sum allows O(1) range sum queries."
   },
   {
@@ -300,12 +300,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Best Time to Buy Stock uses which pattern?",
     "options": [
-      "Binary search (typical scenario)",
-      "Track minimum and max profit",
-      "Sliding window in practice",
-      "Two pointers based on convention"
+      "Binary search (general case)",
+      "Sliding window (general case)",
+      "Two pointers based on convention",
+      "Track minimum and max profit"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Track min price seen so far, compute max profit."
   },
   {
@@ -314,12 +314,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Move Zeroes problem moves zeros to?",
     "options": [
-      "Middle by design",
-      "Sorted position",
+      "Beginning",
       "End of array",
-      "Beginning"
+      "Middle in practice",
+      "Sorted position"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Non-zero elements move left, zeros fill right."
   },
   {
@@ -328,12 +328,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Product of Array Except Self avoids division by using?",
     "options": [
+      "Queue as per specification",
       "Left and right product arrays",
-      "Stack (standard definition)",
-      "Queue under normal conditions",
-      "Sorting (primary approach)"
+      "Sorting (general case)",
+      "Stack (typical scenario)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Multiply prefix and suffix products."
   },
   {
@@ -342,12 +342,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Merge Intervals first step is?",
     "options": [
-      "Sort by start time",
+      "Build a tree by design",
       "Sort by end time",
       "Use a stack in most cases",
-      "Build a tree in practice"
+      "Sort by start time"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Sorting by start allows sequential merging."
   },
   {
@@ -357,11 +357,11 @@ window.quizData.dsa = [
     "question": "Two pointer technique works best on?",
     "options": [
       "Heaps in practice",
-      "Graphs by design",
-      "Trees in most cases",
-      "Sorted arrays"
+      "Trees (general case)",
+      "Sorted arrays",
+      "Graphs in most cases"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Two pointers converge from both ends of sorted data."
   },
   {
@@ -370,12 +370,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "What does the sliding window technique maintain?",
     "options": [
-      "A sorted subarray as per specification",
-      "A priority queue under normal conditions",
-      "A balanced tree as per specification",
-      "A window of elements satisfying a condition"
+      "A window of elements satisfying a condition",
+      "A balanced tree under normal conditions",
+      "A priority queue (standard definition)",
+      "A sorted subarray (typical scenario)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "The window expands/contracts based on constraints."
   },
   {
@@ -384,52 +384,52 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "KMP algorithm's time complexity for pattern matching?",
     "options": [
+      "O(n*m)",
       "O(n²)",
       "O(n+m)",
-      "O(n*m)",
       "O(m²)"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "KMP uses failure function to avoid re-scanning."
   },
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Rabin-Karp uses what technique?",
     "options": [
-      "Hashing",
       "Backtracking",
-      "Greedy",
-      "Dynamic programming"
+      "Hashing",
+      "Dynamic programming",
+      "Greedy"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Rolling hash compares pattern hash with window hash."
   },
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Checking if two strings are anagrams requires?",
     "options": [
-      "Character frequency comparison",
-      "Substring search as per specification",
-      "Sorting only in practice",
-      "Regular expressions by design"
+      "Substring search based on convention",
+      "Sorting only (default behavior)",
+      "Regular expressions (commonly used)",
+      "Character frequency comparison"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Same character counts means anagram."
   },
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "A palindrome reads the same?",
     "options": [
-      "Only backward in practice",
+      "Only forward (general case)",
       "Forward and backward",
-      "Diagonally (commonly used)",
-      "Only forward (general case)"
+      "Diagonally by design",
+      "Only backward in practice"
     ],
     "answer": 1,
     "explanation": "Palindromes are symmetric strings."
@@ -437,15 +437,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "StringBuilder in Java is preferred over String for?",
     "options": [
-      "Read-only access (typical scenario)",
-      "Sorting based on convention",
-      "Hashing (typical scenario)",
-      "Frequent modifications (mutable)"
+      "Hashing (default behavior)",
+      "Sorting (standard definition)",
+      "Frequent modifications (mutable)",
+      "Read-only access based on convention"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "StringBuilder avoids creating new String objects."
   },
   {
@@ -454,12 +454,12 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Time complexity to check if a string is palindrome?",
     "options": [
-      "O(1)",
-      "O(n)",
       "O(n²)",
-      "O(log n)"
+      "O(log n)",
+      "O(1)",
+      "O(n)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Compare characters from both ends in one pass."
   },
   {
@@ -468,9 +468,9 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Frequency count of characters uses?",
     "options": [
-      "Linked List in standard usage",
-      "Stack (default behavior)",
-      "Queue (widely accepted)",
+      "Stack (standard definition)",
+      "Linked List (default behavior)",
+      "Queue (general case)",
       "Array of size 26 or HashMap"
     ],
     "answer": 3,
@@ -479,15 +479,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Strings",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "Longest palindromic substring can be found in?",
     "options": [
-      "O(n³) in typical implementations",
-      "O(n) under normal conditions",
-      "O(n²) using expand around center",
-      "O(log n) as per specification"
+      "O(log n) under normal conditions",
+      "O(n³) as per specification",
+      "O(n) as per specification",
+      "O(n²) using expand around center"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Expand from each center in O(n) time, n centers."
   },
   {
@@ -496,24 +496,24 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Floyd's cycle detection uses?",
     "options": [
+      "Stack (standard definition)",
+      "Recursion only (widely accepted)",
       "Two pointers (slow and fast)",
-      "Stack in standard usage",
-      "Recursion only (commonly used)",
-      "Queue in standard usage"
+      "Queue in typical implementations"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Slow moves 1 step, fast moves 2; they meet in cycle."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Reversing a singly linked list takes?",
     "options": [
       "O(n) time, O(1) space",
-      "O(n²) time (commonly used)",
+      "O(n) space in practice",
       "O(log n) time (general case)",
-      "O(n) space in standard usage"
+      "O(n²) time (general case)"
     ],
     "answer": 0,
     "explanation": "Iterate once, reversing pointers in-place."
@@ -524,26 +524,26 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Middle of linked list found using?",
     "options": [
-      "Recursion in standard usage",
-      "Slow and fast pointer",
       "Stack (typical scenario)",
-      "Counting then traversing"
+      "Counting then traversing",
+      "Slow and fast pointer",
+      "Recursion (widely accepted)"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "When fast reaches end, slow is at middle."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Merge two sorted linked lists time complexity?",
     "options": [
-      "O(log(n+m))",
+      "O(n+m)",
       "O(n²)",
-      "O(n*m)",
-      "O(n+m)"
+      "O(log(n+m))",
+      "O(n*m)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Compare heads and merge in single pass."
   },
   {
@@ -552,26 +552,26 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Doubly linked list advantage over singly?",
     "options": [
-      "Traversal in both directions",
       "Faster access by index by design",
-      "Less memory (typical scenario)",
-      "Simpler implementation in practice"
+      "Traversal in both directions",
+      "Less memory by design",
+      "Simpler implementation by design"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "DLL has prev pointer enabling backward traversal."
   },
   {
     "subject": "DSA",
     "topic": "Linked List",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Circular linked list last node points to?",
     "options": [
-      "First node (head)",
       "Previous node",
-      "NULL based on convention",
-      "Itself (general case)"
+      "Itself by design",
+      "NULL (default behavior)",
+      "First node (head)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Circular list forms a loop back to head."
   },
   {
@@ -580,10 +580,10 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Detecting intersection point of two lists uses?",
     "options": [
-      "Queue in typical implementations",
+      "Stack in typical implementations",
       "Length difference or two-pointer approach",
-      "Sorting in typical implementations",
-      "Stack in typical implementations"
+      "Queue in typical implementations",
+      "Sorting in typical implementations"
     ],
     "answer": 1,
     "explanation": "Align starts by length diff, then traverse together."
@@ -594,12 +594,12 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Remove Nth node from end uses?",
     "options": [
-      "Binary search (general case)",
+      "Binary search (commonly used)",
+      "Reverse list by design",
       "Two pointers with N gap",
-      "Stack of size N (general case)",
-      "Reverse list (commonly used)"
+      "Stack of size N in most cases"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Fast pointer leads by N, both advance until fast reaches end."
   },
   {
@@ -608,40 +608,40 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Stack follows which principle?",
     "options": [
+      "FIFO (commonly used)",
       "LILO (typical scenario)",
-      "LIFO (Last In First Out)",
-      "FIFO as per specification",
-      "Random access in standard usage"
+      "Random access (commonly used)",
+      "LIFO (Last In First Out)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Last element pushed is first popped."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Balanced parentheses checking uses?",
     "options": [
       "Queue",
       "Array",
-      "Tree",
-      "Stack"
+      "Stack",
+      "Tree"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Push opening brackets, pop and match closing ones."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Monotonic stack is used for?",
     "options": [
+      "String matching based on convention",
       "BFS in typical implementations",
-      "Next greater/smaller element problems",
-      "String matching in typical implementations",
-      "Sorting in typical implementations"
+      "Sorting in typical implementations",
+      "Next greater/smaller element problems"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Maintains increasing/decreasing order of elements."
   },
   {
@@ -650,38 +650,38 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Infix to postfix conversion uses?",
     "options": [
+      "Linked list in most cases",
+      "Tree in practice",
       "Stack for operators",
-      "Linked list (general case)",
-      "Tree in most cases",
-      "Queue by design"
+      "Queue (default behavior)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Operators are pushed/popped based on precedence."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Time complexity of push and pop in stack?",
     "options": [
+      "O(1)",
       "O(n²)",
       "O(n)",
-      "O(1)",
       "O(log n)"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Both operations work on the top element only."
   },
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Stack overflow occurs when?",
     "options": [
-      "Array is sorted in typical implementations",
+      "Queue is full in typical implementations",
       "Heap is full in typical implementations",
       "Stack memory is exhausted (e.g., deep recursion)",
-      "Queue is full in typical implementations"
+      "Array is sorted in typical implementations"
     ],
     "answer": 2,
     "explanation": "Infinite or very deep recursion causes stack overflow."
@@ -689,13 +689,13 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Stack",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Postfix expression evaluation uses?",
     "options": [
-      "Queue (commonly used)",
+      "Queue (widely accepted)",
       "Stack for operands",
-      "Tree based on convention",
-      "Two stacks in practice"
+      "Two stacks (general case)",
+      "Tree (widely accepted)"
     ],
     "answer": 1,
     "explanation": "Push operands, pop two for each operator."
@@ -706,12 +706,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Queue follows which principle?",
     "options": [
-      "Random access by design",
+      "Random access (typical scenario)",
       "Priority (primary approach)",
-      "FIFO (First In First Out)",
-      "LIFO (commonly used)"
+      "LIFO in typical implementations",
+      "FIFO (First In First Out)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "First element enqueued is first dequeued."
   },
   {
@@ -720,26 +720,26 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Circular queue solves which problem?",
     "options": [
+      "Searching based on convention",
+      "Balancing under normal conditions",
       "Sorting as per specification",
-      "Searching (default behavior)",
-      "Wasted space in linear queue",
-      "Balancing as per specification"
+      "Wasted space in linear queue"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Rear wraps around to use freed front space."
   },
   {
     "subject": "DSA",
     "topic": "Queue",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Deque allows operations at?",
     "options": [
-      "Only rear by design",
-      "Only front (general case)",
-      "Both front and rear",
-      "Middle only in most cases"
+      "Only rear in most cases",
+      "Only front in most cases",
+      "Middle only in most cases",
+      "Both front and rear"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Double-ended queue supports both ends."
   },
   {
@@ -749,9 +749,9 @@ window.quizData.dsa = [
     "question": "Priority queue is typically implemented using?",
     "options": [
       "Heap (binary heap)",
-      "Stack (general case)",
-      "Array based on convention",
-      "Linked list by design"
+      "Array by design",
+      "Linked list in practice",
+      "Stack in most cases"
     ],
     "answer": 0,
     "explanation": "Heap gives O(log n) insert and extract-min/max."
@@ -762,12 +762,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "BFS graph traversal uses?",
     "options": [
-      "Queue",
       "Deque",
+      "Queue",
       "Priority queue",
       "Stack"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "BFS explores level by level using FIFO."
   },
   {
@@ -778,8 +778,8 @@ window.quizData.dsa = [
     "options": [
       "O(log n)",
       "O(1)",
-      "O(n)",
-      "O(n²)"
+      "O(n²)",
+      "O(n)"
     ],
     "answer": 1,
     "explanation": "Direct insertion at rear pointer."
@@ -787,12 +787,12 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "HashMap provides average case lookup of?",
     "options": [
+      "O(log n)",
       "O(n²)",
       "O(n)",
-      "O(log n)",
       "O(1)"
     ],
     "answer": 3,
@@ -801,43 +801,43 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Collision in hashing means?",
     "options": [
-      "Duplicate keys (typical scenario)",
-      "Hash table is full by design",
       "Two keys map to same index",
-      "Key not found based on convention"
+      "Duplicate keys (general case)",
+      "Hash table is full by design",
+      "Key not found (default behavior)"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Different keys producing same hash cause collision."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Chaining resolves collisions using?",
     "options": [
-      "Rehashing only (commonly used)",
       "Linked list at each bucket",
-      "Sorting as per specification",
-      "Open addressing in practice"
+      "Sorting (general case)",
+      "Rehashing only (general case)",
+      "Open addressing (general case)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Each bucket holds a chain of entries."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Open addressing resolves collisions by?",
     "options": [
-      "Probing for next empty slot",
       "Creating new table in most cases",
+      "Using linked lists in practice",
       "Ignoring collision in practice",
-      "Using linked lists by design"
+      "Probing for next empty slot"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Linear/quadratic probing finds alternative slots."
   },
   {
@@ -846,22 +846,22 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Rehashing is triggered when?",
     "options": [
+      "After deletion only by design",
       "First insertion by design",
-      "Load factor exceeds threshold",
-      "After deletion only (commonly used)",
-      "Table is empty by design"
+      "Table is empty in practice",
+      "Load factor exceeds threshold"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "High load factor degrades performance, so table resizes."
   },
   {
     "subject": "DSA",
     "topic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "HashSet stores?",
     "options": [
-      "Duplicates allowed",
       "Sorted elements",
+      "Duplicates allowed",
       "Unique elements only",
       "Key-value pairs"
     ],
@@ -874,40 +874,40 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "What is a good hash function property?",
     "options": [
-      "Returns key itself (general case)",
-      "Ignores input in most cases",
-      "Always returns 0 in most cases",
-      "Uniform distribution of keys"
+      "Returns key itself (commonly used)",
+      "Uniform distribution of keys",
+      "Always returns 0 (commonly used)",
+      "Ignores input in standard usage"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Uniform distribution minimizes collisions."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Inorder traversal of BST gives?",
     "options": [
-      "Level order (widely accepted)",
       "Sorted ascending order",
-      "Random order in most cases",
-      "Descending order in practice"
+      "Level order in standard usage",
+      "Descending order by design",
+      "Random order (general case)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Left-Root-Right visits BST nodes in sorted order."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Height of a balanced BST with n nodes?",
     "options": [
-      "O(n)",
       "O(n²)",
-      "O(1)",
-      "O(log n)"
+      "O(n)",
+      "O(log n)",
+      "O(1)"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Balanced tree has logarithmic height."
   },
   {
@@ -916,10 +916,10 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "LCA (Lowest Common Ancestor) in BST takes?",
     "options": [
+      "O(1) (standard definition)",
       "O(n log n) (typical scenario)",
-      "O(1) in practice",
       "O(h) where h is height",
-      "O(n²) in standard usage"
+      "O(n²) (widely accepted)"
     ],
     "answer": 2,
     "explanation": "Follow BST property to find split point."
@@ -930,9 +930,9 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "AVL tree maintains balance by?",
     "options": [
-      "Sorting nodes (primary approach)",
-      "Rebuilding tree (general case)",
-      "Using extra array (primary approach)",
+      "Sorting nodes (general case)",
+      "Rebuilding tree (primary approach)",
+      "Using extra array (default behavior)",
       "Rotations after insert/delete"
     ],
     "answer": 3,
@@ -941,15 +941,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Binary tree maximum path sum problem uses?",
     "options": [
-      "BFS in typical implementations",
-      "Greedy (standard definition)",
+      "Sorting in typical implementations",
       "Recursion with global max tracking",
-      "Sorting as per specification"
+      "Greedy (standard definition)",
+      "BFS under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "At each node, compute max path through it."
   },
   {
@@ -958,32 +958,32 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Preorder traversal visits?",
     "options": [
-      "Right, Root, Left",
-      "Left, Right, Root",
       "Left, Root, Right",
-      "Root, Left, Right"
+      "Right, Root, Left",
+      "Root, Left, Right",
+      "Left, Right, Root"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Pre = root first, then children."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "Postorder traversal visits?",
     "options": [
-      "Left, Root, Right",
       "Root, Left, Right",
       "Right, Left, Root",
-      "Left, Right, Root"
+      "Left, Right, Root",
+      "Left, Root, Right"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Post = root last, after children."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "Level order traversal uses?",
     "options": [
       "Sorting",
@@ -997,29 +997,29 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Diameter of binary tree is?",
     "options": [
-      "Root to deepest node by design",
-      "Number of leaves (primary approach)",
+      "Number of leaves (widely accepted)",
       "Longest path between any two nodes",
-      "Height of tree under normal conditions"
+      "Height of tree as per specification",
+      "Root to deepest node (primary approach)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Diameter = max of left height + right height at each node."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Segment tree is used for?",
     "options": [
-      "Sorting under normal conditions",
-      "String matching (general case)",
+      "Graph traversal as per specification",
       "Range queries and updates efficiently",
-      "Graph traversal under normal conditions"
+      "String matching as per specification",
+      "Sorting under normal conditions"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Segment tree handles range sum/min/max in O(log n)."
   },
   {
@@ -1028,40 +1028,40 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Heap property: in a max-heap, parent is?",
     "options": [
+      "Equal to children (general case)",
+      "Less than children in most cases",
       "Greater than or equal to children",
-      "Random under normal conditions",
-      "Less than children (typical scenario)",
-      "Equal to children as per specification"
+      "Random in typical implementations"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Max-heap: parent >= children at every node."
   },
   {
     "subject": "DSA",
     "topic": "Trees",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "BST search time complexity (balanced)?",
     "options": [
-      "O(log n)",
-      "O(n)",
       "O(1)",
+      "O(n)",
+      "O(log n)",
       "O(n²)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Balanced BST halves search space each step."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "BFS uses which data structure?",
     "options": [
       "Stack",
-      "Queue",
       "Heap",
+      "Queue",
       "Array"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "BFS explores neighbors level-by-level using FIFO."
   },
   {
@@ -1070,12 +1070,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "DFS uses which data structure?",
     "options": [
-      "Queue by design",
+      "Array based on convention",
+      "Heap in standard usage",
       "Stack (or recursion)",
-      "Heap as per specification",
-      "Array by design"
+      "Queue in most cases"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "DFS goes deep first using LIFO."
   },
   {
@@ -1084,23 +1084,23 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Dijkstra's algorithm fails with?",
     "options": [
-      "Negative edge weights",
-      "Undirected graphs",
       "Positive weights",
-      "Dense graphs (commonly used)"
+      "Undirected graphs",
+      "Dense graphs by design",
+      "Negative edge weights"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Greedy assumption breaks with negative edges."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Topological sort applies to?",
     "options": [
-      "Undirected graphs (default behavior)",
-      "Cyclic graphs by design",
-      "Weighted graphs only (commonly used)",
+      "Cyclic graphs (primary approach)",
+      "Weighted graphs only in practice",
+      "Undirected graphs (primary approach)",
       "Directed Acyclic Graphs (DAG)"
     ],
     "answer": 3,
@@ -1109,27 +1109,27 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Union-Find is used in?",
     "options": [
-      "BFS under normal conditions",
       "Kruskal's MST and cycle detection",
-      "String matching (commonly used)",
-      "Shortest path in standard usage"
+      "Shortest path based on convention",
+      "BFS in typical implementations",
+      "String matching (primary approach)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Union-Find efficiently tracks connected components."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Bellman-Ford handles?",
     "options": [
-      "Only undirected in practice",
-      "Only trees (widely accepted)",
+      "Only positive weights",
+      "Only trees by design",
       "Negative edge weights",
-      "Only positive weights"
+      "Only undirected by design"
     ],
     "answer": 2,
     "explanation": "Relaxes all edges V-1 times."
@@ -1137,29 +1137,29 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Kruskal's algorithm is?",
     "options": [
-      "Divide and conquer (widely accepted)",
-      "BFS-based (primary approach)",
+      "Greedy MST using sorted edges",
+      "Divide and conquer (general case)",
       "Dynamic programming in practice",
-      "Greedy MST using sorted edges"
+      "BFS-based (default behavior)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Sort edges, add if no cycle (Union-Find)."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Prim's algorithm starts from?",
     "options": [
       "All vertices",
-      "Leaf node in practice",
       "Any single vertex",
-      "Heaviest edge"
+      "Heaviest edge",
+      "Leaf node (general case)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Prim grows MST from one vertex using min-edge."
   },
   {
@@ -1168,26 +1168,26 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Floyd-Warshall finds?",
     "options": [
-      "MST (general case)",
       "All-pairs shortest paths",
       "Single-source shortest path",
+      "MST (default behavior)",
       "Topological order by design"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "DP approach considers all intermediate vertices."
   },
   {
     "subject": "DSA",
     "topic": "Graph",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Cycle detection in undirected graph uses?",
     "options": [
-      "BFS only in typical implementations",
+      "Topological sort (general case)",
+      "BFS only under normal conditions",
       "Dijkstra in typical implementations",
-      "DFS with parent tracking or Union-Find",
-      "Topological sort (primary approach)"
+      "DFS with parent tracking or Union-Find"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Back edge to non-parent indicates cycle."
   },
   {
@@ -1196,12 +1196,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Graph adjacency matrix space complexity?",
     "options": [
-      "O(V²)",
-      "O(V+E)",
       "O(E)",
-      "O(V)"
+      "O(V+E)",
+      "O(V)",
+      "O(V²)"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "V×V matrix stores all possible edges."
   },
   {
@@ -1210,26 +1210,26 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Adjacency list space complexity?",
     "options": [
-      "O(V²)",
       "O(E²)",
+      "O(V+E)",
       "O(V)",
-      "O(V+E)"
+      "O(V²)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "List stores only existing edges."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Memoization is?",
     "options": [
-      "Top-down DP with caching",
-      "Brute force in practice",
-      "Greedy (widely accepted)",
-      "Bottom-up approach by design"
+      "Greedy in standard usage",
+      "Bottom-up approach by design",
+      "Brute force in standard usage",
+      "Top-down DP with caching"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Store results of subproblems to avoid recomputation."
   },
   {
@@ -1239,9 +1239,9 @@ window.quizData.dsa = [
     "question": "Tabulation is?",
     "options": [
       "Bottom-up DP using table",
-      "Backtracking in standard usage",
-      "Top-down approach in most cases",
-      "Recursion by design"
+      "Recursion (widely accepted)",
+      "Backtracking (widely accepted)",
+      "Top-down approach in most cases"
     ],
     "answer": 0,
     "explanation": "Fill table iteratively from base cases."
@@ -1249,26 +1249,26 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "0/1 Knapsack time complexity?",
     "options": [
+      "O(n*W)",
       "O(2^n)",
       "O(n log n)",
-      "O(n*W)",
       "O(n²)"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "DP table of items × capacity."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "LIS (Longest Increasing Subsequence) optimal complexity?",
     "options": [
-      "O(n²)",
       "O(n) in practice",
       "O(2^n)",
+      "O(n²)",
       "O(n log n)"
     ],
     "answer": 3,
@@ -1277,71 +1277,71 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "LCS (Longest Common Subsequence) of two strings?",
     "options": [
-      "O(m*n)",
-      "O(m+n)",
       "O(m²)",
+      "O(m+n)",
+      "O(m*n)",
       "O(2^n)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "2D DP table comparing characters."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Coin Change problem (min coins) is solved by?",
     "options": [
-      "BFS only (commonly used)",
       "DP (unbounded knapsack variant)",
-      "Sorting (standard definition)",
-      "Greedy always as per specification"
+      "Sorting (default behavior)",
+      "Greedy always in standard usage",
+      "BFS only (default behavior)"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Try each coin, take minimum."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "question": "Matrix Chain Multiplication optimizes?",
     "options": [
-      "Matrix sorting (standard definition)",
-      "Matrix dimensions as per specification",
-      "Matrix values (general case)",
-      "Order of matrix multiplications"
+      "Matrix sorting in practice",
+      "Order of matrix multiplications",
+      "Matrix values in most cases",
+      "Matrix dimensions by design"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Different parenthesizations give different costs."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "question": "DP on grids typically moves?",
     "options": [
-      "Up only by design",
+      "Up only in practice",
       "Diagonally only",
-      "Right and down",
-      "All 8 directions"
+      "All 8 directions",
+      "Right and down"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Grid DP usually considers right/down movements."
   },
   {
     "subject": "DSA",
     "topic": "Dynamic Programming",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "question": "Optimal substructure means?",
     "options": [
       "Random solutions work (typical scenario)",
-      "Problem has no solution based on convention",
       "Optimal solution contains optimal sub-solutions",
-      "Only greedy works under normal conditions"
+      "Only greedy works under normal conditions",
+      "Problem has no solution in standard usage"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Key property enabling DP approach."
   },
   {
@@ -1350,10 +1350,10 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Overlapping subproblems means?",
     "options": [
-      "No subproblems exist (commonly used)",
+      "Linear scan suffices as per specification",
       "Same subproblems are solved multiple times",
-      "Linear scan suffices under normal conditions",
-      "Each subproblem is unique (widely accepted)"
+      "No subproblems exist as per specification",
+      "Each subproblem is unique (general case)"
     ],
     "answer": 1,
     "explanation": "Caching avoids redundant computation."
@@ -1361,15 +1361,15 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Activity selection problem selects by?",
     "options": [
-      "Latest start in practice",
       "Maximum duration",
       "Earliest finish time",
+      "Latest start in most cases",
       "Random (primary approach)"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Greedy: pick activity finishing earliest."
   },
   {
@@ -1378,51 +1378,51 @@ window.quizData.dsa = [
     "difficulty": "Hard",
     "question": "Fractional knapsack allows?",
     "options": [
-      "Negative weights by design",
-      "No items in standard usage",
+      "Negative weights (general case)",
       "Taking fractions of items",
-      "Only whole items (commonly used)"
+      "No items (typical scenario)",
+      "Only whole items in most cases"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Sort by value/weight ratio, take fractions."
   },
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Huffman coding builds?",
     "options": [
+      "Hash table (commonly used)",
       "Optimal prefix-free binary tree",
-      "Graph (standard definition)",
-      "Hash table under normal conditions",
-      "Balanced BST under normal conditions"
+      "Balanced BST in most cases",
+      "Graph in typical implementations"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Greedy: merge two lowest-frequency nodes."
   },
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Job scheduling with deadlines maximizes?",
     "options": [
+      "Minimum cost",
       "Total time",
       "Total profit",
-      "Minimum cost",
       "Number of jobs"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Schedule highest-profit jobs first within deadlines."
   },
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Minimum platforms problem uses?",
     "options": [
-      "Binary search in standard usage",
-      "Stack (primary approach)",
-      "Queue (default behavior)",
+      "Stack (typical scenario)",
+      "Binary search in most cases",
+      "Queue (typical scenario)",
       "Sorting arrival/departure times"
     ],
     "answer": 3,
@@ -1431,13 +1431,13 @@ window.quizData.dsa = [
   {
     "subject": "DSA",
     "topic": "Greedy",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Greedy algorithms guarantee optimal solution when?",
     "options": [
-      "Always in typical implementations",
+      "Never in typical implementations",
       "Only for sorting in typical implementations",
       "Greedy choice property and optimal substructure hold",
-      "Never in typical implementations"
+      "Always in typical implementations"
     ],
     "answer": 2,
     "explanation": "Both properties must be proven for correctness."
@@ -1448,26 +1448,26 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "N-Queens problem places N queens such that?",
     "options": [
-      "Queens form diagonal (commonly used)",
-      "All queens are in one row by design",
-      "Queens are adjacent in standard usage",
-      "No two queens attack each other"
+      "All queens are in one row in practice",
+      "Queens are adjacent by design",
+      "No two queens attack each other",
+      "Queens form diagonal in practice"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "No two queens share row, column, or diagonal."
   },
   {
     "subject": "DSA",
     "topic": "Backtracking",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Sudoku solver uses?",
     "options": [
+      "Greedy in typical implementations",
       "Backtracking with constraint checking",
-      "Sorting under normal conditions",
       "BFS in typical implementations",
-      "Greedy under normal conditions"
+      "Sorting under normal conditions"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Try digits 1-9, backtrack if constraint violated."
   },
   {
@@ -1476,12 +1476,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Rat in Maze explores paths using?",
     "options": [
+      "Sorting in standard usage",
       "Recursion and backtracking",
-      "Sorting (primary approach)",
       "Dynamic programming in practice",
-      "BFS only as per specification"
+      "BFS only (general case)"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Try all directions, backtrack on dead ends."
   },
   {
@@ -1490,12 +1490,12 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Generating all permutations uses?",
     "options": [
-      "Swap-based backtracking",
       "Queue (widely accepted)",
-      "Sorting (commonly used)",
-      "Hashing by design"
+      "Hashing (widely accepted)",
+      "Swap-based backtracking",
+      "Sorting (standard definition)"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Swap elements, recurse, then swap back."
   },
   {
@@ -1504,12 +1504,12 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Combination Sum allows?",
     "options": [
-      "Sorting only as per specification",
-      "Each element used once in practice",
-      "Negative numbers (primary approach)",
-      "Reusing elements to reach target"
+      "Reusing elements to reach target",
+      "Each element used once (general case)",
+      "Negative numbers as per specification",
+      "Sorting only (commonly used)"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Include current element again or move to next."
   },
   {
@@ -1518,40 +1518,40 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Backtracking time complexity is typically?",
     "options": [
+      "O(n) in practice",
       "Exponential",
-      "O(n) by design",
-      "O(n²) by design",
-      "O(n log n)"
+      "O(n log n)",
+      "O(n²) by design"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Explores all possible configurations."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "XOR of a number with itself gives?",
     "options": [
+      "0",
       "Negative number",
-      "1",
       "The number itself",
-      "0"
+      "1"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "x ^ x = 0 for any x."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "XOR of a number with 0 gives?",
     "options": [
-      "Complement by design",
+      "1 (commonly used)",
+      "0 by design",
       "The number itself",
-      "0 based on convention",
-      "1 (typical scenario)"
+      "Complement in most cases"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "x ^ 0 = x."
   },
   {
@@ -1560,54 +1560,54 @@ window.quizData.dsa = [
     "difficulty": "Easy",
     "question": "Check if number is power of 2 using?",
     "options": [
-      "n | 1 == n",
-      "n >> 1 == 0",
+      "n % 2 == 0",
       "n & (n-1) == 0",
-      "n % 2 == 0"
+      "n >> 1 == 0",
+      "n | 1 == n"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Power of 2 has single set bit; n&(n-1) clears it."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Left shift by 1 is equivalent to?",
     "options": [
-      "Multiply by 2",
-      "Add 1 (general case)",
+      "Add 1 in practice",
       "Subtract 1",
-      "Divide by 2"
+      "Divide by 2",
+      "Multiply by 2"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Shifting bits left doubles the value."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "question": "Right shift by 1 is equivalent to?",
     "options": [
       "Add 2 (primary approach)",
-      "Multiply by 2 (widely accepted)",
-      "Divide by 2 (integer division)",
-      "XOR with 1 (standard definition)"
+      "XOR with 1 in standard usage",
+      "Multiply by 2 by design",
+      "Divide by 2 (integer division)"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Shifting bits right halves the value."
   },
   {
     "subject": "DSA",
     "topic": "Bit Manipulation",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "question": "Bit masking is used for?",
     "options": [
-      "Graph traversal (widely accepted)",
-      "String matching (primary approach)",
+      "Sorting (standard definition)",
       "Extracting or setting specific bits",
-      "Sorting in typical implementations"
+      "String matching (commonly used)",
+      "Graph traversal in standard usage"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "AND/OR masks isolate or set individual bits."
   },
   {
@@ -1616,37 +1616,37 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Trie is best for?",
     "options": [
-      "Matrix operations (widely accepted)",
-      "Prefix-based string operations",
-      "Sorting numbers in standard usage",
-      "Graph traversal in most cases"
+      "Graph traversal by design",
+      "Sorting numbers in practice",
+      "Matrix operations in practice",
+      "Prefix-based string operations"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Trie stores strings character-by-character for prefix search."
   },
   {
     "subject": "DSA",
     "topic": "Advanced Topics",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Disjoint Set Union find uses?",
     "options": [
+      "Path compression and union by rank",
+      "Sorting based on convention",
       "Hashing in typical implementations",
-      "Sorting (standard definition)",
-      "BFS under normal conditions",
-      "Path compression and union by rank"
+      "BFS under normal conditions"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Optimizations give nearly O(1) amortized operations."
   },
   {
     "subject": "DSA",
     "topic": "Advanced Topics",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "question": "Fenwick tree (BIT) supports?",
     "options": [
       "Point updates and prefix sum queries",
-      "Graph BFS in typical implementations",
-      "String matching in most cases",
+      "Graph BFS (standard definition)",
+      "String matching as per specification",
       "Sorting under normal conditions"
     ],
     "answer": 0,
@@ -1658,2659 +1658,83 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "Segment tree range query time?",
     "options": [
-      "O(1)",
-      "O(n²)",
       "O(n)",
-      "O(log n)"
+      "O(log n)",
+      "O(n²)",
+      "O(1)"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Tree structure allows logarithmic range operations."
   },
   {
     "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][16] starts at base address 2300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][10]?",
+    "options": [
+      "4628",
+      "2700",
+      "4404",
+      "4420"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (10 * 26 + 5) * 8 = 4420."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 9, 7, 20, 37, 46, 32, 40, 39, 12], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "287",
+      "230",
+      "270",
+      "309"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 270."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][17] starts at base address 2700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][14]?",
+    "options": [
+      "2756",
+      "2780",
+      "2782",
+      "2799"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (4 * 17 + 14) * 1 = 2782."
+  },
+  {
+    "subject": "DSA",
     "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a Stack?",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Sorted Array?",
     "options": [
       "O(n log n)",
       "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For Stack, performing a 'Deletion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
-    "options": [
-      "44",
-      "37",
-      "91",
-      "58"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 49% density, total edges = 44."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
-    "options": [
-      "406",
-      "240",
-      "211",
-      "197"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 52% density, total edges = 211."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
-    "options": [
-      "519",
-      "1485",
-      "574",
-      "492"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 35% density, total edges = 519."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
-    "options": [
-      "143",
-      "780",
-      "203",
-      "163"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 21% density, total edges = 163."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Unsorted Array?",
-    "options": [
       "O(n)",
-      "O(log n)",
-      "O(1)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Unsorted Array, performing a 'Search' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "213",
-      "820",
-      "254",
-      "193"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 26% density, total edges = 213."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
-    "options": [
-      "542",
-      "861",
-      "521",
-      "584"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 63% density, total edges = 542."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [43, 25, 18, 15, 5, 2], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "58",
-      "118",
-      "116",
-      "101"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 101."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][33] starts at base address 1200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[6][17]?",
-    "options": [
-      "1448",
-      "1302",
-      "1413",
-      "1415"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (6 * 33 + 17) * 1 = 1415."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Doubly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Doubly Linked List, performing a 'Insertion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [13, 24, 27, 20, 31, 29, 50, 41, 50], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "173",
-      "161",
-      "131",
-      "144"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 144."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 41, 21, 20, 14, 10, 49, 12, 37, 46], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "176",
-      "208",
-      "159",
-      "155"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 159."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
-    "options": [
-      "202",
-      "247",
-      "435",
-      "217"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 50% density, total edges = 217."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 22, 21, 37, 47, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "135",
-      "80",
-      "115",
-      "98"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 98."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][32] starts at base address 1400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[16][22]?",
-    "options": [
-      "2468",
-      "2464",
-      "2532",
-      "2104"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (16 * 32 + 22) * 2 = 2468."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
-    "options": [
-      "302",
-      "346",
-      "946",
-      "280"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 32% density, total edges = 302."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][28] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][15]?",
-    "options": [
-      "2316",
-      "2392",
-      "1360",
-      "2324"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (15 * 17 + 1) * 4 = 2324."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Access' operation on a Queue?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, performing a 'Access' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [20, 38, 25, 19, 35, 47, 24, 16, 2, 31, 19, 45], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "137",
-      "117",
-      "154",
-      "172"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 137."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
-    "options": [
-      "472",
-      "544",
-      "496",
-      "1128"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 44% density, total edges = 496."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 22, 23, 11, 20, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "56",
-      "83",
-      "89",
-      "72"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 72."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
-    "options": [
-      "428",
-      "630",
-      "410",
-      "464"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 68% density, total edges = 428."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Doubly Linked List?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Doubly Linked List, performing a 'Search' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][15] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[17][8]?",
-    "options": [
-      "1878",
-      "1882",
-      "1672",
-      "1938"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (8 * 28 + 17) * 2 = 1882."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][29] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][8]?",
-    "options": [
-      "1996",
-      "1964",
-      "1764",
-      "1960"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (8 * 16 + 4) * 2 = 1964."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
-    "options": [
-      "586",
-      "546",
-      "526",
-      "780"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 70% density, total edges = 546."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a AVL Tree?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For AVL Tree, performing a 'Insertion' takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Access' operation on a Unsorted Array?",
-    "options": [
-      "O(n log n)",
-      "O(1)",
-      "O(n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Unsorted Array, performing a 'Access' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 11, 34, 11, 4, 28], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "111",
-      "60",
-      "94",
-      "98"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 94."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [14, 31, 25, 28, 40, 18, 40, 44, 41, 40], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "70",
-      "56",
-      "87",
-      "95"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 70."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
-    "options": [
-      "136",
-      "54",
-      "71",
-      "46"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 40% density, total edges = 54."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [46, 15, 8, 45, 17, 42, 42, 38, 21, 4], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "169",
-      "232",
-      "215",
-      "257"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 215."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][30] starts at base address 2300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][23]?",
-    "options": [
-      "3036",
-      "3684",
-      "3444",
-      "3428"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (4 * 30 + 23) * 8 = 3444."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][30] starts at base address 2300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][28]?",
-    "options": [
-      "3420",
-      "3436",
-      "2748",
-      "3476"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (28 * 5 + 2) * 8 = 3436."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][14] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[4][3]?",
-    "options": [
-      "1488",
-      "1472",
-      "1640",
-      "1096"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (3 * 19 + 4) * 8 = 1488."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][19] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[22][17]?",
-    "options": [
-      "2670",
-      "2666",
-      "2708",
-      "2548"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (22 * 19 + 17) * 2 = 2670."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][27] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[18][17]?",
-    "options": [
-      "1812",
-      "1984",
-      "1980",
-      "2028"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (17 * 22 + 18) * 2 = 1984."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a Queue?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 2,
-    "explanation": "For Queue, performing a 'Deletion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][29] starts at base address 2100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][11]?",
-    "options": [
-      "2169",
-      "2111",
-      "2138",
-      "2140"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (1 * 29 + 11) * 1 = 2140."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 40, 30, 45, 19, 36, 28, 30], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "170",
-      "237",
-      "256",
-      "220"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 220."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Regular BST (worst case)?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Regular BST (worst case), performing a 'Insertion' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Singly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
       "O(1)"
     ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, performing a 'Search' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[11][34] starts at base address 1600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][25]?",
-    "options": [
-      "1990",
-      "1800",
-      "1918",
-      "1922"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (4 * 34 + 25) * 2 = 1922."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [43, 19, 24, 39, 19, 8], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "82",
-      "125",
-      "164",
-      "142"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 125."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
-    "options": [
-      "258",
-      "903",
-      "322",
-      "279"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 31% density, total edges = 279."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a Doubly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(1)",
-      "O(n log n)"
-    ],
     "answer": 2,
-    "explanation": "For Doubly Linked List, performing a 'Deletion' takes O(1)."
+    "explanation": "For Sorted Array, performing a 'Insertion' takes O(n)."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [47, 3, 6, 18, 39, 31, 7, 13, 5, 50, 34], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "question": "Given the 1D integer array [14, 2, 3, 19, 33, 7], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "158",
-      "168",
-      "104",
-      "151"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 151."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
-    "options": [
-      "716",
-      "690",
-      "1378",
-      "769"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 52% density, total edges = 716."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][14] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][2]?",
-    "options": [
-      "1552",
-      "1664",
-      "1536",
-      "1248"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (3 * 14 + 2) * 8 = 1552."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [28, 22, 32, 37, 17, 3, 34, 18], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "136",
-      "91",
-      "156",
-      "119"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 119."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][14] starts at base address 1000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[9][6]?",
-    "options": [
-      "1130",
-      "1146",
-      "1132",
-      "1054"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (9 * 14 + 6) * 1 = 1132."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Singly Linked List?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Singly Linked List, performing a 'Insertion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
-    "options": [
-      "282",
-      "252",
-      "435",
-      "237"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 58% density, total edges = 252."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][24] starts at base address 2600 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][1]?",
-    "options": [
-      "2621",
-      "2607",
-      "2623",
-      "2639"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (1 * 16 + 7) * 1 = 2623."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][27] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[4][25]?",
-    "options": [
-      "2600",
-      "2877",
-      "2879",
-      "2894"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (25 * 15 + 4) * 1 = 2879."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][38] starts at base address 1200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][11]?",
-    "options": [
-      "1287",
-      "1325",
-      "1285",
-      "1222"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 38 + 11) * 1 = 1287."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "312",
-      "946",
-      "290",
-      "356"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 33% density, total edges = 312."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 36, 32, 7, 11, 20], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "104",
-      "93",
-      "86",
-      "110"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 93."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
-    "options": [
-      "212",
-      "163",
-      "179",
-      "528"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 34% density, total edges = 179."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][11] starts at base address 2200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][7]?",
-    "options": [
-      "2214",
-      "2236",
-      "2258",
-      "2232"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (1 * 11 + 7) * 2 = 2236."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][24] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[7][15]?",
-    "options": [
-      "2007",
-      "1905",
-      "1983",
-      "1981"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (7 * 24 + 15) * 1 = 1983."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][31] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][20]?",
-    "options": [
-      "6388",
-      "6140",
-      "6156",
-      "1820"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (20 * 29 + 2) * 8 = 6156."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][33] starts at base address 2600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][26]?",
-    "options": [
-      "3016",
-      "3336",
-      "3320",
-      "3600"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (2 * 33 + 26) * 8 = 3336."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][18] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[19][15]?",
-    "options": [
-      "1685",
-      "1771",
-      "1749",
-      "1747"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (15 * 22 + 19) * 1 = 1749."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[24][11] starts at base address 1800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][7]?",
-    "options": [
-      "1968",
-      "1994",
-      "1814",
-      "1970"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (7 * 24 + 2) * 1 = 1970."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "946",
-      "431",
-      "387",
-      "365"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 41% density, total edges = 387."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
-    "options": [
-      "378",
-      "136",
-      "164",
-      "122"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 36% density, total edges = 136."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][29] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[16][1]?",
-    "options": [
-      "3160",
-      "3152",
-      "1364",
-      "3276"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (16 * 29 + 1) * 4 = 3160."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 18, 46, 6, 42, 47, 22, 31, 33], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "208",
-      "181",
-      "213",
-      "191"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 191."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [37, 14, 1, 23, 11, 36, 15, 6, 42, 25, 22], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
-    "options": [
-      "227",
-      "202",
-      "148",
-      "185"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 185."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Access' operation on a Sorted Array?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Sorted Array, performing a 'Access' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [31, 19, 28, 2, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "80",
-      "82",
-      "97",
-      "49"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 80."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
-    "options": [
-      "139",
-      "169",
-      "435",
-      "124"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 32% density, total edges = 139."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
-    "options": [
-      "550",
-      "903",
-      "529",
-      "593"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 61% density, total edges = 550."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Queue?",
-    "options": [
-      "O(n)",
-      "O(log n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Queue, performing a 'Insertion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][10] starts at base address 2700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][2]?",
-    "options": [
-      "3036",
-      "2732",
-      "3196",
-      "3020"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (2 * 20 + 2) * 8 = 3036."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
-    "options": [
-      "807",
-      "750",
-      "1596",
-      "722"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 47% density, total edges = 750."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [32, 18, 10, 44, 49, 29, 49], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "182",
-      "150",
-      "211",
-      "199"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 182."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
-    "options": [
-      "162",
-      "148",
-      "406",
-      "191"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 40% density, total edges = 162."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a AVL Tree?",
-    "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 1,
-    "explanation": "For AVL Tree, performing a 'Search' takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 36, 8, 46, 45, 45, 29], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "90",
-      "107",
-      "153",
-      "124"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 107."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][31] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[22][8]?",
-    "options": [
-      "1554",
-      "1583",
-      "1552",
-      "1476"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (8 * 29 + 22) * 1 = 1554."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][28] starts at base address 2700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][23]?",
-    "options": [
-      "3068",
-      "8036",
-      "8052",
-      "8284"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (23 * 29 + 2) * 8 = 8052."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][37] starts at base address 2100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][30]?",
-    "options": [
-      "3212",
-      "3228",
-      "3524",
-      "2820"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (3 * 37 + 30) * 8 = 3228."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 48, 40, 33, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "163",
-      "121",
-      "196",
-      "180"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 163."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
-    "options": [
-      "15",
-      "9",
-      "27",
-      "66"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 24% density, total edges = 15."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 33, 49, 6, 48, 4, 45, 31, 25, 12, 6], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
-    "options": [
-      "245",
-      "262",
-      "241",
-      "270"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 245."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "417",
-      "703",
-      "379",
-      "360"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 54% density, total edges = 379."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][15] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][5]?",
-    "options": [
-      "1660",
-      "1540",
-      "1644",
-      "1780"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (1 * 15 + 5) * 8 = 1660."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][11] starts at base address 1700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][5]?",
-    "options": [
-      "1820",
-      "1750",
-      "1816",
-      "1842"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (5 * 11 + 5) * 2 = 1820."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "219",
-      "666",
-      "256",
-      "201"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 33% density, total edges = 219."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [40, 1, 11, 38, 42, 36, 38, 33, 1], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "272",
-      "239",
-      "199",
-      "256"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 239."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Queue?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Queue, performing a 'Search' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [35, 33, 10, 33, 3, 31, 26, 39, 36], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "210",
-      "249",
-      "175",
-      "227"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 210."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
-    "options": [
-      "212",
-      "258",
-      "227",
-      "465"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 49% density, total edges = 227."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 32, 15, 24, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "89",
-      "47",
-      "74",
-      "91"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 74."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [36, 48, 35, 45, 32], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "83",
-      "154",
-      "136",
-      "119"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 119."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [48, 20, 31, 48, 22, 21, 48, 40, 22, 48, 26, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "116",
-      "130",
-      "99",
-      "51"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 99."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [24, 39, 48, 41, 4, 47, 21, 45], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "241",
-      "245",
-      "224",
-      "200"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 224."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
-    "options": [
-      "269",
-      "294",
-      "1225",
-      "344"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 24% density, total edges = 294."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [29, 3, 31, 50, 32, 16, 33, 46, 30, 41, 4, 24], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "163",
-      "113",
-      "84",
-      "130"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 113."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 18, 42, 34, 28, 3, 6, 41, 3, 23, 11, 45], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "79",
-      "62",
-      "60",
-      "104"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 62."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Access' operation on a Stack?",
-    "options": [
-      "O(log n)",
-      "O(1)",
-      "O(n log n)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, performing a 'Access' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][19] starts at base address 1600 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[17][16]?",
-    "options": [
-      "2238",
-      "2144",
-      "2280",
-      "2242"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (16 * 19 + 17) * 2 = 2242."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][32] starts at base address 1700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][25]?",
-    "options": [
-      "1885",
-      "1853",
-      "1800",
-      "1851"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (4 * 32 + 25) * 1 = 1853."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Access' operation on a Singly Linked List?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Singly Linked List, performing a 'Access' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 45, 4, 38, 45, 21, 8, 5, 20], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "185",
-      "168",
-      "176",
-      "161"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 168."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
-      "154",
-      "703",
-      "135",
-      "192"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 22% density, total edges = 154."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][28] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[9][22]?",
-    "options": [
-      "3708",
-      "3292",
-      "3596",
-      "3588"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (9 * 28 + 22) * 4 = 3596."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][36] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[8][34]?",
-    "options": [
-      "5076",
-      "5192",
-      "2188",
-      "5068"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (34 * 29 + 8) * 4 = 5076."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][20] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][7]?",
-    "options": [
-      "1956",
-      "2080",
-      "2088",
-      "2168"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (2 * 20 + 7) * 4 = 2088."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Stack?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 3,
-    "explanation": "For Stack, performing a 'Insertion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][35] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][32]?",
-    "options": [
-      "1562",
-      "1464",
-      "1567",
-      "1560"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (32 * 5 + 2) * 1 = 1562."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][38] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[15][16]?",
-    "options": [
-      "2860",
-      "4244",
-      "4396",
-      "4236"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (15 * 38 + 16) * 4 = 4244."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][25] starts at base address 2800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][12]?",
-    "options": [
-      "2935",
-      "2937",
-      "2962",
-      "2860"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (5 * 25 + 12) * 1 = 2937."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [32, 10, 38, 21, 44, 26, 9], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "101",
-      "69",
-      "122",
-      "118"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 101."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
-      "69",
-      "378",
-      "111",
-      "83"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 22% density, total edges = 83."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "129",
-      "300",
-      "117",
-      "154"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 43% density, total edges = 129."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][29] starts at base address 2200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][12]?",
-    "options": [
-      "3208",
-      "3456",
-      "3224",
-      "2584"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (4 * 29 + 12) * 8 = 3224."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][37] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[15][27]?",
-    "options": [
-      "1909",
-      "1907",
-      "1705",
-      "1931"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (27 * 22 + 15) * 1 = 1909."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 19, 33, 43, 18, 20, 30, 30, 45], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "136",
-      "119",
-      "113",
-      "137"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 119."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][27] starts at base address 1100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[10][18]?",
-    "options": [
-      "3756",
-      "2540",
-      "3916",
-      "3772"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (18 * 18 + 10) * 8 = 3772."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][25] starts at base address 1800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][11]?",
-    "options": [
-      "2051",
-      "2049",
-      "1899",
-      "2073"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (11 * 22 + 9) * 1 = 2051."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][12] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][8]?",
-    "options": [
-      "2504",
-      "2408",
-      "1920",
-      "2392"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (8 * 12 + 5) * 8 = 2408."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "300",
-      "110",
-      "122",
-      "147"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 41% density, total edges = 122."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][23] starts at base address 2400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[6][15]?",
-    "options": [
-      "3608",
-      "3624",
-      "3120",
-      "3808"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (6 * 23 + 15) * 8 = 3624."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [14, 50, 46, 33, 42, 48, 5, 37, 14], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "224",
-      "243",
-      "238",
-      "255"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 238."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][18] starts at base address 2600 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][3]?",
-    "options": [
-      "2772",
-      "2776",
-      "2624",
-      "2832"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (3 * 28 + 4) * 2 = 2776."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "120",
-      "42",
-      "66",
-      "50"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 42% density, total edges = 50."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][21] starts at base address 2100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][16]?",
-    "options": [
-      "2293",
-      "2295",
-      "2307",
-      "2148"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (16 * 12 + 3) * 1 = 2295."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 12, 27, 24, 19, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "90",
-      "97",
-      "73",
-      "63"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 73."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "254",
-      "205",
-      "221",
-      "528"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 42% density, total edges = 221."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a Regular BST (worst case)?",
-    "options": [
-      "O(log n)",
-      "O(n)",
-      "O(n log n)",
-      "O(1)"
-    ],
-    "answer": 1,
-    "explanation": "For Regular BST (worst case), performing a 'Deletion' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
-    "options": [
-      "903",
-      "629",
-      "586",
-      "565"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 65% density, total edges = 586."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][36] starts at base address 2800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[21][5]?",
-    "options": [
-      "3010",
-      "4322",
-      "4318",
-      "4394"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (21 * 36 + 5) * 2 = 4322."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [46, 7, 41, 34, 20, 44, 33, 3, 24], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "236",
-      "209",
-      "192",
-      "146"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 192."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Stack?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Stack, performing a 'Search' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
-    "options": [
-      "224",
-      "325",
-      "198",
-      "185"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 61% density, total edges = 198."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 9, 49, 44, 6, 29, 47, 19, 30, 5], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "203",
-      "248",
-      "246",
-      "229"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 229."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][33] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[8][18]?",
-    "options": [
-      "2544",
-      "2628",
-      "2536",
-      "1576"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (18 * 21 + 8) * 4 = 2544."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
-    "options": [
-      "908",
-      "964",
-      "1540",
-      "880"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 59% density, total edges = 908."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][15] starts at base address 1600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[22][5]?",
-    "options": [
-      "2940",
-      "2040",
-      "3000",
-      "2932"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (22 * 15 + 5) * 4 = 2940."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
-    "options": [
-      "309",
-      "277",
-      "496",
-      "261"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 56% density, total edges = 277."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Unsorted Array?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Unsorted Array, performing a 'Insertion' takes O(1)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 39, 50, 43, 11, 9, 5, 18, 23, 11, 11, 11], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "176",
-      "132",
-      "133",
-      "150"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 133."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][20] starts at base address 2500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[8][18]?",
-    "options": [
-      "3908",
-      "3924",
-      "3652",
-      "4084"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (8 * 20 + 18) * 8 = 3924."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 1, 17, 27, 27, 9, 32, 9, 30], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "81",
-      "131",
-      "148",
-      "140"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 131."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Regular BST (worst case)?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Regular BST (worst case), performing a 'Search' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][18] starts at base address 2100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[13][16]?",
-    "options": [
-      "2368",
-      "2348",
-      "2350",
-      "2308"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (13 * 18 + 16) * 1 = 2350."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][39] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[8][24]?",
-    "options": [
-      "2220",
-      "2233",
-      "2218",
-      "2092"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (24 * 13 + 8) * 1 = 2220."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 59 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
-    "options": [
-      "552",
-      "1711",
-      "581",
-      "640"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 59*(58)/2 = 1711. At 34% density, total edges = 581."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 22, 10, 33, 3, 39, 13, 4, 2], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "142",
-      "124",
-      "159",
-      "146"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 142."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
-    "options": [
-      "471",
-      "452",
-      "509",
-      "703"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 67% density, total edges = 471."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[8][36] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[6][7]?",
-    "options": [
-      "2246",
-      "2318",
-      "2242",
-      "1884"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (6 * 36 + 7) * 2 = 2246."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [15, 29, 48, 13, 5], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "92",
-      "109",
-      "140",
-      "77"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 92."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [44, 1, 30, 42, 16, 32, 46], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "159",
-      "134",
-      "117",
-      "73"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 117."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Access' operation on a Regular BST (worst case)?",
-    "options": [
-      "O(1)",
-      "O(n)",
-      "O(n log n)",
-      "O(log n)"
-    ],
-    "answer": 1,
-    "explanation": "For Regular BST (worst case), performing a 'Access' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
-    "options": [
-      "1485",
-      "396",
-      "314",
-      "341"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 23% density, total edges = 341."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][31] starts at base address 1400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[12][18]?",
-    "options": [
-      "2736",
-      "2744",
-      "2264",
-      "2816"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (18 * 18 + 12) * 4 = 2744."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Search' operation on a Sorted Array?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 0,
-    "explanation": "For Sorted Array, performing a 'Search' takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 30, 27, 28, 4, 27, 40], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "116",
-      "122",
-      "149",
-      "139"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 122."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 30, 16, 23, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "46",
-      "104",
-      "88",
-      "105"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 88."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][37] starts at base address 1500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][34]?",
-    "options": [
-      "2588",
-      "2592",
-      "1636",
-      "2624"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (34 * 16 + 2) * 2 = 2592."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 34, 4, 27, 50], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "88",
+      "55",
+      "57",
       "38",
-      "71",
-      "75"
+      "24"
     ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 71."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a AVL Tree?",
-    "options": [
-      "O(1)",
-      "O(n log n)",
-      "O(log n)",
-      "O(n)"
-    ],
-    "answer": 2,
-    "explanation": "For AVL Tree, performing a 'Deletion' takes O(log n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 3, 2, 29, 46], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "84",
-      "101",
-      "113",
-      "34"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 84."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
-    "options": [
-      "110",
-      "94",
-      "143",
-      "528"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 21% density, total edges = 110."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][25] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][9]?",
-    "options": [
-      "1209",
-      "1264",
-      "1271",
-      "1262"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (9 * 7 + 1) * 1 = 1264."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][13] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][6]?",
-    "options": [
-      "1352",
-      "1336",
-      "1408",
-      "1096"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (6 * 7 + 2) * 8 = 1352."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [35, 32, 32, 18, 21, 15, 14, 25], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "159",
-      "138",
-      "155",
-      "103"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 138."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][28] starts at base address 1600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][14]?",
-    "options": [
-      "1760",
-      "1880",
-      "1656",
-      "1768"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (1 * 28 + 14) * 4 = 1768."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "139",
-      "106",
-      "117",
-      "231"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 51% density, total edges = 117."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
-    "options": [
-      "459",
-      "478",
-      "703",
-      "516"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 68% density, total edges = 478."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][26] starts at base address 2000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[14][5]?",
-    "options": [
-      "2367",
-      "2070",
-      "2369",
-      "2395"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (14 * 26 + 5) * 1 = 2369."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [22, 13, 21, 30, 6, 49, 34], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "70",
-      "98",
-      "92",
-      "109"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 92."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
-    "options": [
-      "352",
-      "280",
-      "1128",
-      "304"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 27% density, total edges = 304."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
-    "options": [
-      "425",
-      "469",
-      "946",
-      "403"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 45% density, total edges = 425."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [49, 26, 32, 10, 19, 39, 4, 8, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "117",
-      "134",
-      "68",
-      "127"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 117."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][19] starts at base address 2200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][16]?",
-    "options": [
-      "2392",
-      "2568",
-      "2484",
-      "2492"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (3 * 19 + 16) * 4 = 2492."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "24",
-      "45",
-      "39",
-      "29"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 66% density, total edges = 29."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "503",
-      "903",
-      "439",
-      "460"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 51% density, total edges = 460."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][35] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][8]?",
-    "options": [
-      "2264",
-      "2344",
-      "1792",
-      "2248"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (8 * 10 + 3) * 8 = 2264."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
-    "options": [
-      "1225",
-      "416",
-      "391",
-      "466"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 34% density, total edges = 416."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [21, 4, 17, 2, 16, 46, 18, 2, 40, 44], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "106",
-      "152",
-      "85",
-      "123"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 106."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[8][36] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[6][19]?",
-    "options": [
-      "1316",
-      "1312",
-      "1332",
-      "1228"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (19 * 8 + 6) * 2 = 1316."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 4, 22, 37, 9, 20, 48, 27, 5, 7, 9, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "98",
-      "118",
-      "63",
-      "81"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 81."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 27, 1, 22, 16, 46, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "109",
-      "114",
-      "92",
-      "50"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 92."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "28",
-      "39",
-      "23",
-      "55"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 51% density, total edges = 28."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 38."
   },
   {
     "subject": "DSA",
@@ -4319,68 +1743,1076 @@ window.quizData.dsa = [
     "question": "What is the time complexity of performing a 'Deletion' operation on a Singly Linked List?",
     "options": [
       "O(1)",
-      "O(log n)",
+      "O(n)",
       "O(n log n)",
-      "O(n)"
+      "O(log n)"
     ],
     "answer": 0,
     "explanation": "For Singly Linked List, performing a 'Deletion' takes O(1)."
   },
   {
     "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 43, 33, 33, 18, 11, 21, 42], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "64",
-      "120",
-      "40",
-      "48"
+      "132",
+      "109",
+      "148",
+      "115"
     ],
     "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 40% density, total edges = 48."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
-    "options": [
-      "679",
-      "1596",
-      "594",
-      "622"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 39% density, total edges = 622."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][32] starts at base address 2900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[18][11]?",
-    "options": [
-      "4070",
-      "4138",
-      "3296",
-      "4074"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (18 * 32 + 11) * 2 = 4074."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 115."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [28, 39, 17, 12, 5, 28, 46, 34, 22, 9, 36, 22], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "question": "Given the 1D integer array [41, 26, 15, 3, 38, 49, 20, 47], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "243",
-      "209",
-      "226",
-      "181"
+      "140",
+      "82",
+      "123",
+      "161"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 123."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Stack?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 0,
+    "explanation": "For Stack, performing a 'Deletion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 33, 1, 25, 27, 48, 27, 23, 44, 16, 27], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "262",
+      "244",
+      "278",
+      "279"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 262."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][11] starts at base address 2700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][6]?",
+    "options": [
+      "3100",
+      "2996",
+      "3012",
+      "2844"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (3 * 11 + 6) * 8 = 3012."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
     ],
     "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 209."
+    "explanation": "For Regular BST (worst case), performing a 'Insertion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "903",
+      "368",
+      "304",
+      "325"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 36% density, total edges = 325."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Singly Linked List?",
+    "options": [
+      "O(n log n)",
+      "O(1)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": 2,
+    "explanation": "For Singly Linked List, performing a 'Access' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 20%, how many edges are present in G?",
+    "options": [
+      "61",
+      "103",
+      "75",
+      "378"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 20% density, total edges = 75."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Queue?",
+    "options": [
+      "O(1)",
+      "O(n log n)",
+      "O(log n)",
+      "O(n)"
+    ],
+    "answer": 0,
+    "explanation": "For Queue, performing a 'Search' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "841",
+      "1275",
+      "790",
+      "765"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 62% density, total edges = 790."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "861",
+      "463",
+      "400",
+      "421"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 49% density, total edges = 421."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 29, 22, 42, 8, 40, 18], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "196",
+      "156",
+      "173",
+      "141"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 156."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "options": [
+      "120",
+      "19",
+      "27",
+      "43"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 23% density, total edges = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][33] starts at base address 2200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[11][4]?",
+    "options": [
+      "2376",
+      "3800",
+      "3668",
+      "3660"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (11 * 33 + 4) * 4 = 3668."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Stack?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Stack, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 41, 6, 21, 29], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "116",
+      "112",
+      "68",
+      "95"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 95."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 46, 48, 25, 42, 33, 17, 32, 41], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "119",
+      "152",
+      "135",
+      "160"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 135."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
+    "options": [
+      "120",
+      "50",
+      "58",
+      "74"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 49% density, total edges = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [42, 16, 19, 19, 34, 23, 25, 11, 20, 28, 26, 11], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "170",
+      "111",
+      "176",
+      "153"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 153."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][15] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][12]?",
+    "options": [
+      "2344",
+      "2288",
+      "1792",
+      "2272"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (12 * 7 + 2) * 8 = 2288."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "903",
+      "231",
+      "252",
+      "295"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 28% density, total edges = 252."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "153",
+      "59",
+      "68",
+      "86"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 45% density, total edges = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][25] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[6][21]?",
+    "options": [
+      "2052",
+      "2186",
+      "2190",
+      "2208"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (21 * 9 + 6) * 2 = 2190."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [34, 26, 36, 12, 46, 42, 14, 25, 30, 21, 35, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "74",
+      "120",
+      "125",
+      "108"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 108."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "65",
+      "153",
+      "56",
+      "83"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 43% density, total edges = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
+    "options": [
+      "11",
+      "27",
+      "16",
+      "55"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 30% density, total edges = 16."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][16] starts at base address 2100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][1]?",
+    "options": [
+      "2102",
+      "2149",
+      "2131",
+      "2133"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (2 * 16 + 1) * 1 = 2133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 33, 32, 28, 20, 7, 20, 4, 22, 24, 19, 50], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "125",
+      "97",
+      "114",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 97."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Sorted Array?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer": 3,
+    "explanation": "For Sorted Array, performing a 'Access' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][14] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[14][12]?",
+    "options": [
+      "1508",
+      "1468",
+      "1506",
+      "1522"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (14 * 14 + 12) * 1 = 1508."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 16, 2, 14, 29, 19, 4, 10, 50, 37, 35, 11], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "216",
+      "181",
+      "199",
+      "236"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 199."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(n log n)",
+      "O(1)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": 2,
+    "explanation": "For Regular BST (worst case), performing a 'Deletion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][32] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[8][19]?",
+    "options": [
+      "2514",
+      "2204",
+      "2450",
+      "2446"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (8 * 32 + 19) * 2 = 2450."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][29] starts at base address 2700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[7][19]?",
+    "options": [
+      "7076",
+      "6860",
+      "3764",
+      "6844"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (19 * 27 + 7) * 8 = 6860."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][11] starts at base address 1400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][7]?",
+    "options": [
+      "1728",
+      "1736",
+      "1596",
+      "1780"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (7 * 11 + 7) * 4 = 1736."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][34] starts at base address 1200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][20]?",
+    "options": [
+      "1280",
+      "1376",
+      "1372",
+      "1444"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 34 + 20) * 2 = 1376."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][28] starts at base address 1700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][10]?",
+    "options": [
+      "2788",
+      "2796",
+      "2904",
+      "1860"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (10 * 27 + 4) * 4 = 2796."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 7, 32, 28, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "77",
+      "94",
+      "39",
+      "109"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 77."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][16] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[13][3]?",
+    "options": [
+      "1612",
+      "2332",
+      "2100",
+      "2084"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (3 * 29 + 13) * 8 = 2100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Doubly Linked List?",
+    "options": [
+      "O(n log n)",
+      "O(1)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Doubly Linked List, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][28] starts at base address 1500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][15]?",
+    "options": [
+      "2208",
+      "2164",
+      "2160",
+      "1560"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (15 * 22 + 2) * 2 = 2164."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "1485",
+      "893",
+      "975",
+      "920"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 62% density, total edges = 920."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a AVL Tree?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 3,
+    "explanation": "For AVL Tree, performing a 'Search' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][15] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[6][7]?",
+    "options": [
+      "1842",
+      "1912",
+      "1897",
+      "1895"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (6 * 15 + 7) * 1 = 1897."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Sorted Array?",
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "answer": 1,
+    "explanation": "For Sorted Array, performing a 'Search' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][36] starts at base address 2600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][31]?",
+    "options": [
+      "4000",
+      "3712",
+      "3696",
+      "3344"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (3 * 36 + 31) * 8 = 3712."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(n log n)",
+      "O(1)",
+      "O(log n)",
+      "O(n)"
+    ],
+    "answer": 3,
+    "explanation": "For Regular BST (worst case), performing a 'Access' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][17] starts at base address 2400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[15][9]?",
+    "options": [
+      "2535",
+      "2662",
+      "2664",
+      "2681"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (15 * 17 + 9) * 1 = 2664."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][37] starts at base address 2800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[14][29]?",
+    "options": [
+      "7176",
+      "7160",
+      "6048",
+      "7472"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (14 * 37 + 29) * 8 = 7176."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 23, 4, 41, 41, 47, 46, 19, 33], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "264",
+      "235",
+      "202",
+      "218"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 218."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Singly Linked List?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "answer": 1,
+    "explanation": "For Singly Linked List, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Unsorted Array?",
+    "options": [
+      "O(n log n)",
+      "O(n)",
+      "O(1)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Unsorted Array, performing a 'Deletion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "548",
+      "523",
+      "599",
+      "1275"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 43% density, total edges = 548."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Unsorted Array?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": 3,
+    "explanation": "For Unsorted Array, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "688",
+      "739",
+      "663",
+      "1275"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 54% density, total edges = 688."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 9, 34, 21, 12, 33, 22], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "109",
+      "164",
+      "147",
+      "180"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 147."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [29, 20, 27, 3, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "47",
+      "76",
+      "93",
+      "103"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "141",
+      "118",
+      "253",
+      "107"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 47% density, total edges = 118."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "406",
+      "183",
+      "154",
+      "140"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 38% density, total edges = 154."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 31, 26, 5, 1, 30, 46, 40, 43, 48], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "81",
+      "57",
+      "64",
+      "90"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][37] starts at base address 2800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[14][25]?",
+    "options": [
+      "4232",
+      "3500",
+      "4174",
+      "4178"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (25 * 27 + 14) * 2 = 4178."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][25] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][12]?",
+    "options": [
+      "2948",
+      "2848",
+      "2840",
+      "2644"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (3 * 25 + 12) * 4 = 2848."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][39] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][32]?",
+    "options": [
+      "5088",
+      "5104",
+      "5232",
+      "1256"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (32 * 16 + 1) * 8 = 5104."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Queue?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "answer": 0,
+    "explanation": "For Queue, performing a 'Deletion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][35] starts at base address 2000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[15][20]?",
+    "options": [
+      "3190",
+      "2600",
+      "3186",
+      "3248"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (20 * 29 + 15) * 2 = 3190."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "50",
+      "43",
+      "64",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 55% density, total edges = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][31] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][21]?",
+    "options": [
+      "1664",
+      "1912",
+      "1336",
+      "1648"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (2 * 31 + 21) * 8 = 1664."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "153",
+      "90",
+      "81",
+      "108"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 59% density, total edges = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "options": [
+      "351",
+      "80",
+      "67",
+      "107"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 23% density, total edges = 80."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 20, 20, 26, 17, 39, 50, 1, 23, 22, 40, 24], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "186",
+      "185",
+      "202",
+      "173"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 185."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "1485",
+      "559",
+      "477",
+      "504"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 34% density, total edges = 504."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 29, 25, 47, 4, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "101",
+      "126",
+      "109",
+      "156"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 109."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [29, 48, 31, 20, 26, 24, 6, 14], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "184",
+      "190",
+      "155",
+      "201"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 184."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "418",
+      "1596",
+      "446",
+      "503"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 28% density, total edges = 446."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "328",
+      "630",
+      "382",
+      "346"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 55% density, total edges = 346."
   },
   {
     "subject": "DSA",
@@ -4389,558 +2821,572 @@ window.quizData.dsa = [
     "question": "What is the time complexity of performing a 'Access' operation on a AVL Tree?",
     "options": [
       "O(n)",
-      "O(log n)",
       "O(n log n)",
-      "O(1)"
+      "O(1)",
+      "O(log n)"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "For AVL Tree, performing a 'Access' takes O(log n)."
   },
   {
     "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [25, 39, 28, 12, 27, 23], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][34] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][16]?",
     "options": [
-      "116",
-      "79",
-      "121",
-      "104"
+      "2208",
+      "2216",
+      "2352",
+      "1648"
     ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 104."
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (7 * 34 + 16) * 4 = 2216."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[16][37] starts at base address 2200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[13][16]?",
+    "question": "A 2D array A[13][17] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][7]?",
     "options": [
-      "3276",
-      "3268",
-      "3032",
-      "3340"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (16 * 16 + 13) * 4 = 3276."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][30] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][11]?",
-    "options": [
-      "1588",
-      "1188",
-      "1548",
-      "1540"
+      "2424",
+      "2312",
+      "2398",
+      "2394"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (11 * 10 + 2) * 4 = 1548."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (7 * 13 + 8) * 2 = 2398."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
     "options": [
-      "204",
-      "174",
-      "435",
-      "159"
+      "491",
+      "1326",
+      "517",
+      "569"
     ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 40% density, total edges = 174."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [13, 8, 5, 29, 6, 39, 21, 34, 12, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "42",
-      "55",
-      "84",
-      "72"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 55."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [29, 5, 5, 14, 4, 16, 43, 8, 44], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "141",
-      "95",
-      "132",
-      "124"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 124."
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 39% density, total edges = 517."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
     "options": [
-      "895",
-      "845",
-      "820",
-      "1225"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 69% density, total edges = 845."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [46, 42, 28, 45, 12, 42, 29, 34, 45], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "185",
-      "127",
-      "190",
-      "173"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 173."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 13, 27, 14, 42, 31, 23, 49, 18, 18, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "40",
-      "84",
-      "74",
-      "57"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 57."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [20, 9, 48, 26, 18, 45], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "77",
-      "57",
-      "94",
-      "125"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 77."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 6, 18, 31, 39, 37], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "137",
-      "94",
       "159",
-      "120"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 120."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][12] starts at base address 2100 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[24][1]?",
-    "options": [
-      "2200",
-      "2148",
-      "2252",
-      "2196"
+      "185",
+      "146",
+      "325"
     ],
     "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (1 * 26 + 24) * 2 = 2200."
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 49% density, total edges = 159."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [46, 43, 30, 33, 42, 30, 1, 38], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [27, 24, 23, 15, 40, 12, 34, 37, 11, 25, 43, 39], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "254",
-      "224",
-      "178",
-      "241"
+      "74",
+      "97",
+      "47",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 74."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 40, 13, 17, 13, 2, 1, 14, 7, 4], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "135",
+      "128",
+      "145",
+      "107"
     ],
     "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 224."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 128."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[6][20] starts at base address 2600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][5]?",
+    "question": "A 2D array A[10][16] starts at base address 2700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][7]?",
     "options": [
-      "2665",
-      "2643",
-      "2645",
-      "2610"
+      "2742",
+      "2746",
+      "2714",
+      "2778"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (2 * 20 + 5) * 1 = 2645."
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (1 * 16 + 7) * 2 = 2746."
   },
   {
     "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][38] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][31]?",
     "options": [
-      "161",
-      "465",
-      "207",
-      "176"
+      "2013",
+      "1579",
+      "1989",
+      "1991"
     ],
     "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 38% density, total edges = 176."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (31 * 22 + 9) * 1 = 1991."
   },
   {
     "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 36, 31, 34, 38], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "163",
-      "146",
-      "101",
-      "180"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 146."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
+    "topic": "Complexity Analysis",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "question": "What is the time complexity of performing a 'Access' operation on a Stack?",
     "options": [
-      "1378",
-      "358",
-      "332",
-      "411"
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
     ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 26% density, total edges = 358."
+    "answer": 0,
+    "explanation": "For Stack, performing a 'Access' takes O(n)."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[15][26] starts at base address 2700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[12][3]?",
+    "question": "A 2D array A[6][38] starts at base address 2500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
     "options": [
-      "3041",
-      "2736",
-      "3015",
-      "3013"
+      "3756",
+      "2660",
+      "4060",
+      "3740"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (12 * 26 + 3) * 1 = 3015."
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (4 * 38 + 5) * 8 = 3756."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "1085",
+      "1057",
+      "1142",
+      "1596"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 68% density, total edges = 1085."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 18, 22, 33, 15, 35, 42, 5, 44], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [35, 37, 25, 36, 3, 38, 48, 33, 15, 27, 18], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "156",
-      "123",
+      "101",
+      "153",
       "139",
-      "174"
+      "136"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 136."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Unsorted Array?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer": 0,
+    "explanation": "For Unsorted Array, performing a 'Search' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][20] starts at base address 2400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
+    "options": [
+      "2420",
+      "2476",
+      "2440",
+      "2448"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (1 * 7 + 5) * 4 = 2448."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
+    "options": [
+      "67",
+      "136",
+      "50",
+      "42"
     ],
     "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 37% density, total edges = 50."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][34] starts at base address 2100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[6][4]?",
+    "options": [
+      "2308",
+      "2124",
+      "2306",
+      "2342"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (6 * 34 + 4) * 1 = 2308."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 31, 5, 9, 35, 11, 31, 7, 21, 33, 39], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "238",
+      "254",
+      "221",
+      "183"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 221."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "496",
+      "165",
+      "117",
+      "133"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 27% density, total edges = 133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][37] starts at base address 2700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][17]?",
+    "options": [
+      "3724",
+      "4020",
+      "3708",
+      "3108"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (3 * 37 + 17) * 8 = 3724."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][31] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][1]?",
+    "options": [
+      "1319",
+      "1321",
+      "1336",
+      "1306"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (1 * 15 + 6) * 1 = 1321."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][34] starts at base address 2900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][17]?",
+    "options": [
+      "3308",
+      "3920",
+      "3776",
+      "3784"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (6 * 34 + 17) * 4 = 3784."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "528",
+      "232",
+      "265",
+      "216"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 44% density, total edges = 232."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][34] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][3]?",
+    "options": [
+      "1048",
+      "1244",
+      "1236",
+      "1320"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (3 * 19 + 4) * 4 = 1244."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][34] starts at base address 2900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][14]?",
+    "options": [
+      "3364",
+      "3012",
+      "3228",
+      "3220"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (2 * 34 + 14) * 4 = 3228."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "51",
+      "231",
+      "84",
+      "62"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 27% density, total edges = 62."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "263",
+      "279",
+      "312",
+      "528"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 53% density, total edges = 279."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][35] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][22]?",
+    "options": [
+      "2796",
+      "2780",
+      "3076",
+      "2204"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (4 * 35 + 22) * 8 = 2796."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][16] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "1344",
+      "1408",
+      "1336",
+      "1232"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 16 + 4) * 4 = 1344."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 6, 23, 42, 31, 40, 9, 48], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "56",
+      "62",
+      "39",
+      "29"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "50",
+      "35",
+      "105",
+      "28"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 34% density, total edges = 35."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][34] starts at base address 2100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][9]?",
+    "options": [
+      "2182",
+      "2193",
+      "2184",
+      "2127"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (9 * 9 + 3) * 1 = 2184."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][14] starts at base address 2700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[20][10]?",
+    "options": [
+      "3039",
+      "3008",
+      "2900",
+      "3010"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (10 * 29 + 20) * 1 = 3010."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 49, 45, 15, 23, 6, 12, 16, 36, 7, 9, 19], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "139",
+      "156",
+      "145",
+      "138"
+    ],
+    "answer": 0,
     "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 139."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 46, 29, 49, 3, 45, 25, 40, 21, 8, 3, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [30, 10, 46, 32, 44, 10], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "148",
-      "134",
-      "131",
-      "127"
+      "135",
+      "118",
+      "150",
+      "88"
     ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 131."
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 118."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[10][15] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][1]?",
+    "question": "A 2D array A[17][32] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[13][6]?",
     "options": [
-      "1516",
-      "1748",
-      "1732",
-      "1868"
+      "1926",
+      "1930",
+      "1964",
+      "1856"
     ],
     "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (2 * 15 + 1) * 8 = 1748."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (6 * 17 + 13) * 2 = 1930."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
+    "options": [
+      "666",
+      "383",
+      "346",
+      "328"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 52% density, total edges = 346."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][11] starts at base address 2400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][9]?",
+    "options": [
+      "2431",
+      "2418",
+      "2442",
+      "2429"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (2 * 11 + 9) * 1 = 2431."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 24, 36, 30, 45, 40, 32], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "question": "Given the 1D integer array [24, 30, 27, 5, 17, 25, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
+      "108",
+      "57",
       "81",
-      "64",
-      "100",
-      "60"
+      "98"
     ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 64."
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 81."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[12][12] starts at base address 1500 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][8]?",
+    "question": "A 2D array A[16][31] starts at base address 2000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][28]?",
     "options": [
-      "1608",
-      "1612",
-      "1636",
-      "1564"
+      "5632",
+      "3344",
+      "5760",
+      "5616"
     ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (4 * 12 + 8) * 2 = 1612."
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (28 * 16 + 6) * 8 = 5632."
   },
   {
     "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 41, 19, 10, 8, 41, 24, 48, 33, 16, 27, 26], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "325",
-      "172",
-      "185",
-      "211"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 57% density, total edges = 185."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "797",
-      "744",
-      "1378",
-      "718"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 54% density, total edges = 744."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "52",
       "78",
-      "39",
-      "33"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 51% density, total edges = 39."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
-    "options": [
-      "34",
-      "47",
-      "78",
-      "28"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 44% density, total edges = 34."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 16, 36, 17, 37, 40], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "156",
-      "173",
-      "193",
-      "106"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 156."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [47, 6, 41, 37, 19, 45, 38, 29, 8, 26, 26, 11], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
-    "options": [
-      "287",
-      "278",
-      "223",
-      "270"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 270."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][24] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[9][18]?",
-    "options": [
-      "1524",
-      "1650",
-      "1674",
-      "1646"
+      "118",
+      "135",
+      "126"
     ],
     "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (18 * 12 + 9) * 2 = 1650."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
-    "options": [
-      "60",
-      "253",
-      "83",
-      "49"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 24% density, total edges = 60."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][34] starts at base address 2600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][7]?",
-    "options": [
-      "2736",
-      "2628",
-      "2744",
-      "2764"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (7 * 5 + 1) * 4 = 2744."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 25, 42, 49, 9, 16, 8, 26, 39], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "191",
-      "175",
-      "208",
-      "217"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 191."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][34] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[8][6]?",
-    "options": [
-      "3116",
-      "3108",
-      "2892",
-      "3180"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (6 * 16 + 8) * 4 = 3116."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [30, 47, 19, 40, 8, 41], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "96",
-      "113",
-      "115",
-      "66"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 96."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][33] starts at base address 2200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][26]?",
-    "options": [
-      "2278",
-      "2986",
-      "2955",
-      "2957"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (26 * 29 + 3) * 1 = 2957."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 38, 16, 4, 12, 32, 6, 13, 10, 38, 37, 24], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "157",
-      "144",
-      "161",
-      "121"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 144."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 8, 6, 30, 17, 49, 4], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "26",
-      "37",
-      "20",
-      "14"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 20."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [8, 12, 23, 48, 31, 44, 11, 21], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "153",
-      "139",
-      "122",
-      "114"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 122."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 118."
   },
   {
     "subject": "DSA",
@@ -4958,14 +3404,350 @@ window.quizData.dsa = [
   },
   {
     "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "454",
+      "367",
+      "1653",
+      "396"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 24% density, total edges = 396."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "386",
+      "367",
+      "703",
+      "424"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 55% density, total edges = 386."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Queue?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 0,
+    "explanation": "For Queue, performing a 'Access' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][14] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[12][4]?",
+    "options": [
+      "1848",
+      "1970",
+      "1986",
+      "1972"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (12 * 14 + 4) * 1 = 1972."
+  },
+  {
+    "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [37, 35, 27, 10, 10, 44, 13, 26], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [41, 29, 28, 41, 40, 43, 49, 6, 28], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "126",
-      "180",
+      "138",
+      "219",
+      "196",
+      "179"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 179."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "690",
+      "1128",
+      "618",
+      "642"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 57% density, total edges = 642."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [45, 29, 14, 11, 41, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "43",
+      "105",
+      "102",
+      "88"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 50, 38, 7, 6, 8, 44, 1, 3, 38, 47], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "277",
+      "256",
+      "239",
+      "195"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 239."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [32, 28, 7, 3, 37, 25, 21, 38, 3, 11, 36, 37], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "208",
+      "229",
+      "159",
+      "191"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 191."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][29] starts at base address 2600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][8]?",
+    "options": [
+      "2760",
+      "3204",
+      "3328",
+      "3212"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (5 * 29 + 8) * 4 = 3212."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][27] starts at base address 2400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[9][8]?",
+    "options": [
+      "3736",
+      "3752",
+      "2976",
+      "3912"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (8 * 20 + 9) * 8 = 3752."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "189",
+      "595",
+      "137",
+      "154"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 26% density, total edges = 154."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][14] starts at base address 2900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][10]?",
+    "options": [
+      "3588",
+      "3380",
+      "3652",
+      "3572"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (10 * 8 + 6) * 8 = 3588."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][11] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][7]?",
+    "options": [
+      "1928",
+      "2064",
+      "2040",
+      "2044"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (7 * 10 + 2) * 2 = 2044."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][36] starts at base address 1100 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][18]?",
+    "options": [
+      "1244",
+      "1392",
+      "1396",
+      "1412"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (18 * 8 + 4) * 2 = 1396."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 33, 19, 40, 29, 21, 11, 33, 8, 28, 29, 14], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "135",
+      "95",
+      "92",
+      "112"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 95."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 38, 31, 45, 39, 14, 10, 42, 5, 28, 18], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "170",
+      "167",
+      "187",
+      "184"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 170."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
+    "options": [
+      "861",
+      "403",
+      "340",
+      "361"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 42% density, total edges = 361."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "66",
+      "171",
+      "85",
+      "57"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 39% density, total edges = 66."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "767",
+      "712",
+      "1485",
+      "685"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 48% density, total edges = 712."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Access' operation on a Unsorted Array?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer": 1,
+    "explanation": "For Unsorted Array, performing a 'Access' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][39] starts at base address 2600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[8][10]?",
+    "options": [
+      "4408",
+      "3240",
+      "4424",
+      "4600"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (10 * 22 + 8) * 8 = 4424."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 10, 24, 41, 29, 11, 42, 15, 45, 49, 20, 7], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "301",
+      "321",
+      "318",
+      "286"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 301."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Singly Linked List?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": 2,
+    "explanation": "For Singly Linked List, performing a 'Search' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 44, 48, 43, 6, 9, 44, 3], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "150",
+      "172",
       "163",
-      "207"
+      "180"
     ],
     "answer": 2,
     "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 163."
@@ -4974,295 +3756,3921 @@ window.quizData.dsa = [
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[8][15] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][2]?",
+    "question": "A 2D array A[18][21] starts at base address 2300 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][2]?",
     "options": [
-      "2620",
-      "2754",
-      "2750",
-      "2784"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (5 * 15 + 2) * 2 = 2754."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][20] starts at base address 2900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[22][5]?",
-    "options": [
-      "3120",
-      "3830",
-      "3786",
-      "3790"
+      "2384",
+      "2430",
+      "2308",
+      "2388"
     ],
     "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (22 * 20 + 5) * 2 = 3790."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (2 * 21 + 2) * 2 = 2388."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
     "options": [
-      "749",
-      "702",
-      "1081",
-      "679"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 65% density, total edges = 702."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][22] starts at base address 1800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][10]?",
-    "options": [
-      "1900",
-      "2040",
-      "2084",
-      "2036"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (5 * 22 + 10) * 2 = 2040."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][29] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[13][17]?",
-    "options": [
-      "1542",
-      "1946",
-      "1884",
-      "1888"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (13 * 29 + 17) * 2 = 1888."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 22, 1, 28, 17, 40, 17, 28, 25, 11, 9], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "189",
-      "216",
-      "205",
-      "222"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 205."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][21] starts at base address 2700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[13][19]?",
-    "options": [
-      "2947",
-      "3036",
-      "3053",
-      "3034"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (19 * 17 + 13) * 1 = 3036."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "404",
-      "353",
-      "370",
-      "561"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 66% density, total edges = 370."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][12] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[14][6]?",
-    "options": [
-      "2172",
-      "2988",
-      "2876",
-      "2892"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (14 * 12 + 6) * 8 = 2892."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][10] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][6]?",
-    "options": [
-      "1528",
-      "1432",
-      "1448",
-      "1240"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (5 * 10 + 6) * 8 = 1448."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][12] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[13][8]?",
-    "options": [
-      "2332",
-      "2972",
-      "2820",
-      "2804"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (8 * 19 + 13) * 8 = 2820."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [28, 6, 26, 3, 50, 15], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "130",
-      "163",
-      "113",
-      "85"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 113."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "49",
-      "91",
-      "63",
-      "42"
+      "173",
+      "201",
+      "378",
+      "159"
     ],
     "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 54% density, total edges = 49."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
-      "300",
-      "54",
-      "91",
-      "66"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 22% density, total edges = 66."
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 46% density, total edges = 173."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 16, 32, 42, 11, 47, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [31, 13, 44, 5, 35], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "106",
+      "93",
+      "98",
+      "110",
+      "62"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 93."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][12] starts at base address 2900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[16][3]?",
+    "options": [
+      "3680",
+      "3092",
+      "3728",
+      "3672"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (16 * 12 + 3) * 4 = 3680."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 21, 26, 8, 5, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "69",
+      "78",
+      "47",
+      "52"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 52."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "221",
+      "182",
+      "325",
+      "195"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 60% density, total edges = 195."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "336",
+      "377",
+      "820",
+      "316"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 41% density, total edges = 336."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "846",
+      "901",
+      "819",
+      "1485"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 57% density, total edges = 846."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 49, 34, 49, 35, 47, 23], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "110",
+      "144",
+      "83",
+      "127"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 110."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][25] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][11]?",
+    "options": [
+      "1355",
+      "1378",
+      "1122",
+      "1353"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (11 * 23 + 2) * 1 = 1355."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 49 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "716",
+      "789",
+      "1176",
+      "740"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 49*(48)/2 = 1176. At 63% density, total edges = 740."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][13] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[18][6]?",
+    "options": [
+      "1432",
+      "1660",
+      "1568",
+      "1576"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (6 * 21 + 18) * 4 = 1576."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Regular BST (worst case)?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "answer": 3,
+    "explanation": "For Regular BST (worst case), performing a 'Search' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 30, 29, 35, 27, 47, 14], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "173",
+      "190",
+      "168",
+      "220"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 173."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][21] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][19]?",
+    "options": [
+      "2672",
+      "2984",
+      "3168",
+      "3000"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (11 * 21 + 19) * 8 = 3000."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "625",
+      "1035",
+      "579",
+      "556"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 56% density, total edges = 579."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 4, 7, 21, 4, 36, 44], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "74",
+      "110",
+      "72",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 74."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "42",
+      "28",
+      "91",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 31% density, total edges = 28."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 47, 18, 44, 25, 49, 14, 26, 17, 4, 49], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "157",
+      "140",
+      "165",
+      "134"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 140."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][24] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][22]?",
+    "options": [
+      "2836",
+      "2884",
+      "2832",
+      "2776"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (4 * 24 + 22) * 2 = 2836."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][15] starts at base address 2200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[8][1]?",
+    "options": [
+      "2321",
+      "2319",
+      "2336",
+      "2208"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (8 * 15 + 1) * 1 = 2321."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
+    "options": [
+      "78",
+      "210",
+      "109",
+      "88"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 42% density, total edges = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "76",
+      "118",
+      "378",
+      "90"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 24% density, total edges = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "211",
+      "406",
+      "168",
+      "182"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 45% density, total edges = 182."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Doubly Linked List?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": 0,
+    "explanation": "For Doubly Linked List, performing a 'Search' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "459",
+      "820",
+      "439",
+      "500"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 56% density, total edges = 459."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][36] starts at base address 2100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][4]?",
+    "options": [
+      "2452",
+      "5284",
+      "5300",
+      "5588"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (11 * 36 + 4) * 8 = 5300."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "231",
+      "127",
+      "116",
+      "149"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 55% density, total edges = 127."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][11] starts at base address 2000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[9][3]?",
+    "options": [
+      "2132",
+      "2128",
+      "2170",
+      "2054"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (3 * 19 + 9) * 2 = 2132."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 21, 45, 11, 37, 50, 25, 50], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "229",
+      "189",
+      "221",
+      "204"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 204."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "352",
+      "304",
+      "1128",
+      "280"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 27% density, total edges = 304."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 11, 1, 5, 21, 21, 26, 45, 16, 23], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "178",
+      "133",
+      "130",
+      "150"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "333",
+      "368",
+      "316",
+      "595"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 56% density, total edges = 333."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [49, 3, 24, 36, 11, 13, 45, 10, 20, 31, 46], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "112",
+      "129",
       "148",
-      "123",
+      "63"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 112."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 17, 39, 48, 30, 22], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "173",
+      "125",
+      "142",
+      "104"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 125."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][29] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[7][7]?",
+    "options": [
+      "2980",
+      "2964",
+      "1692",
+      "3212"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (7 * 29 + 7) * 8 = 2980."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Sorted Array?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": 1,
+    "explanation": "For Sorted Array, performing a 'Deletion' takes O(n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 42, 14, 44, 7, 8, 16, 9], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "76",
+      "56",
+      "93",
       "90"
     ],
     "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 106."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [28, 34, 16, 49, 17, 12, 23, 36, 20, 13, 2, 13], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "252",
+      "267",
+      "222",
+      "250"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 250."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[22][33] starts at base address 2300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[8][15]?",
+    "question": "A 2D array A[12][26] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][10]?",
     "options": [
-      "5004",
-      "3260",
-      "4988",
-      "5180"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (15 * 22 + 8) * 8 = 5004."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
-    "options": [
-      "141",
-      "113",
-      "99",
-      "378"
+      "1160",
+      "1496",
+      "1544",
+      "1488"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 30% density, total edges = 113."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "36",
-      "47",
-      "55",
-      "31"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 66% density, total edges = 36."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (10 * 12 + 4) * 4 = 1496."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[8][32] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][2]?",
+    "question": "A 2D array A[14][13] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][2]?",
     "options": [
-      "1972",
-      "1916",
-      "1964",
-      "2004"
+      "1712",
+      "1728",
+      "1832",
+      "1448"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (3 * 13 + 2) * 8 = 1728."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [46, 28, 19, 46, 2, 24, 8, 30, 22], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "139",
+      "185",
+      "156",
+      "93"
     ],
     "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (2 * 8 + 2) * 4 = 1972."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 139."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
     "options": [
-      "990",
-      "272",
-      "205",
+      "212",
+      "258",
+      "465",
       "227"
     ],
     "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 23% density, total edges = 227."
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 49% density, total edges = 227."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "795",
+      "847",
+      "1326",
+      "769"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 60% density, total edges = 795."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [26, 16, 16, 2, 49, 6, 46, 33, 39], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "89",
+      "115",
+      "132",
+      "121"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 115."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "166",
+      "179",
+      "351",
+      "206"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 51% density, total edges = 179."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 25%, how many edges are present in G?",
+    "options": [
+      "903",
+      "204",
+      "268",
+      "225"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 25% density, total edges = 225."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "690",
+      "760",
+      "713",
+      "1081"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 66% density, total edges = 713."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 38, 5, 14, 31, 43, 49], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "88",
+      "131",
+      "148",
+      "162"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 131."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "options": [
+      "300",
+      "75",
+      "87",
+      "112"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 29% density, total edges = 87."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "options": [
+      "30",
+      "45",
+      "105",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 29% density, total edges = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 20, 12, 32, 19, 2, 48], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "92",
+      "109",
+      "94",
+      "85"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 92."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 19, 43, 16, 20, 40, 38, 14, 4, 7, 34, 11], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "255",
+      "194",
+      "238",
+      "242"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 238."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [45, 25, 24, 2, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "113",
+      "51",
+      "96",
+      "98"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 96."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 39, 42, 11, 15, 16, 39, 46, 36, 36, 8], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "167",
+      "150",
+      "165",
+      "107"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 150."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "265",
+      "250",
+      "435",
+      "295"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 61% density, total edges = 265."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 24, 20, 29, 44], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "129",
+      "117",
+      "100",
+      "73"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 100."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[8][19] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][6]?",
+    "question": "A 2D array A[23][27] starts at base address 1600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[10][10]?",
     "options": [
-      "1436",
-      "1452",
-      "1454",
-      "1462"
+      "2156",
+      "1800",
+      "2160",
+      "2214"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (6 * 8 + 6) * 1 = 1454."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (10 * 27 + 10) * 2 = 2160."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "1081",
+      "511",
+      "441",
+      "464"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 43% density, total edges = 464."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 9, 13, 36, 4, 43, 40, 7, 28, 43, 35], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "223",
+      "257",
+      "240",
+      "283"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 240."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][36] starts at base address 2400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][20]?",
+    "options": [
+      "2880",
+      "3336",
+      "3344",
+      "3488"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (6 * 36 + 20) * 4 = 3344."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 12, 9, 46, 42, 47, 2, 35, 12, 36], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "237",
+      "219",
+      "202",
+      "193"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 202."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 49, 48, 2, 45, 49, 20, 2, 44, 9, 24], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "270",
+      "255",
+      "215",
+      "253"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 253."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "134",
+      "185",
+      "151",
+      "561"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 27% density, total edges = 151."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][18] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[10][6]?",
+    "options": [
+      "2520",
+      "2712",
+      "1880",
+      "2536"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (6 * 22 + 10) * 8 = 2536."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "886",
+      "1485",
+      "831",
+      "804"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 56% density, total edges = 831."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][39] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][17]?",
+    "options": [
+      "3372",
+      "2444",
+      "3216",
+      "3208"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (8 * 39 + 17) * 4 = 3216."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 28, 23, 45, 48, 10, 39, 7, 32, 39], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "144",
+      "156",
+      "204",
+      "173"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 156."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [49, 17, 19, 14, 21, 44, 17], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "99",
+      "50",
+      "116",
+      "113"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 99."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 45, 48, 45, 14, 50, 10, 11, 2], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "152",
+      "187",
+      "201",
+      "204"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 187."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 20, 46, 31, 20, 50, 30, 42], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "197",
+      "240",
+      "270",
+      "257"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 240."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "45",
+      "28",
+      "23",
+      "38"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 64% density, total edges = 28."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][15] starts at base address 1900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][7]?",
+    "options": [
+      "2404",
+      "2492",
+      "2012",
+      "2420"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (7 * 9 + 2) * 8 = 2420."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][19] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[9][5]?",
+    "options": [
+      "2692",
+      "1660",
+      "2708",
+      "2860"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (9 * 19 + 5) * 8 = 2708."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][21] starts at base address 1300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][4]?",
+    "options": [
+      "1381",
+      "1312",
+      "1383",
+      "1403"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (4 * 20 + 3) * 1 = 1383."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 18, 50, 48, 34, 35, 31, 50, 18, 27], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "323",
+      "284",
+      "322",
+      "305"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 305."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][13] starts at base address 2400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][2]?",
+    "options": [
+      "2456",
+      "2426",
+      "2404",
+      "2430"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (1 * 13 + 2) * 2 = 2430."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
+    "options": [
+      "1431",
+      "273",
+      "354",
+      "300"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 21% density, total edges = 300."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][10] starts at base address 2000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[10][3]?",
+    "options": [
+      "2113",
+      "2030",
+      "2103",
+      "2101"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (10 * 10 + 3) * 1 = 2103."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [30, 20, 27, 42, 20, 30], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "109",
+      "156",
+      "139",
+      "159"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 139."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 34, 22, 46, 31, 20, 28, 33, 18, 38, 27, 36], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "309",
+      "297",
+      "326",
+      "336"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 309."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "248",
+      "267",
+      "703",
+      "305"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 38% density, total edges = 267."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "714",
+      "1035",
+      "691",
+      "760"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 69% density, total edges = 714."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][16] starts at base address 2600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[11][6]?",
+    "options": [
+      "3372",
+      "2864",
+      "3268",
+      "3260"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (6 * 26 + 11) * 4 = 3268."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][35] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[9][31]?",
+    "options": [
+      "4844",
+      "3816",
+      "4912",
+      "4836"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (31 * 17 + 9) * 4 = 4844."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 17, 21, 41, 4, 46, 18, 25], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "58",
+      "38",
+      "62",
+      "41"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 41."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "73",
+      "190",
+      "43",
+      "53"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 28% density, total edges = 53."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][19] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][15]?",
+    "options": [
+      "2782",
+      "2744",
+      "2690",
+      "2740"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (3 * 19 + 15) * 2 = 2744."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 7, 38, 46, 43, 42, 16, 40, 8], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "192",
+      "213",
+      "197",
+      "214"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 197."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "595",
+      "303",
+      "338",
+      "286"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 51% density, total edges = 303."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 4, 28, 5, 20, 46, 1, 13, 9, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "47",
+      "37",
+      "42",
+      "59"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 42."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][35] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[12][29]?",
+    "options": [
+      "2896",
+      "2492",
+      "3036",
+      "2888"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (12 * 35 + 29) * 4 = 2896."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "166",
+      "465",
+      "181",
+      "212"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 39% density, total edges = 181."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][39] starts at base address 1600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[16][19]?",
+    "options": [
+      "3504",
+      "3412",
+      "2816",
+      "3404"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (19 * 23 + 16) * 4 = 3412."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "250",
+      "211",
+      "325",
+      "224"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 69% density, total edges = 224."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 15, 8, 20, 49, 36, 38], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "75",
+      "55",
+      "43",
+      "72"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 48, 35, 22, 25, 32, 12, 22], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "127",
+      "83",
+      "144",
+      "162"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 127."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][29] starts at base address 2400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[6][8]?",
+    "options": [
+      "2822",
+      "2496",
+      "2760",
+      "2764"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (6 * 29 + 8) * 2 = 2764."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][33] starts at base address 2700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][13]?",
+    "options": [
+      "2739",
+      "2820",
+      "2829",
+      "2818"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (13 * 9 + 3) * 1 = 2820."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "151",
+      "496",
+      "103",
+      "119"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 24% density, total edges = 119."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "options": [
+      "80",
+      "253",
+      "69",
+      "103"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 32% density, total edges = 80."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "1485",
+      "460",
+      "515",
+      "433"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 31% density, total edges = 460."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "47",
+      "66",
+      "38",
+      "171"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 28% density, total edges = 47."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][16] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][3]?",
+    "options": [
+      "1865",
+      "1812",
+      "1867",
+      "1883"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (4 * 16 + 3) * 1 = 1867."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 16, 14, 43, 42, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "94",
+      "73",
+      "111",
+      "137"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 94."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "171",
+      "80",
+      "99",
+      "71"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 47% density, total edges = 80."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [37, 3, 21, 16, 1, 41, 17], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "77",
+      "94",
+      "93",
+      "40"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 77."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][34] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[14][24]?",
+    "options": [
+      "2036",
+      "1672",
+      "2078",
+      "2032"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (24 * 21 + 14) * 2 = 2036."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [36, 29, 47, 1, 25, 14, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "130",
+      "77",
+      "113",
+      "114"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 113."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][30] starts at base address 2300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][18]?",
+    "options": [
+      "3092",
+      "3212",
+      "3084",
+      "2732"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (6 * 30 + 18) * 4 = 3092."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 23, 43, 19, 7, 13, 18, 4, 32, 43, 7, 32], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "229",
+      "219",
+      "212",
+      "209"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 212."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][18] starts at base address 2600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][2]?",
+    "options": [
+      "2712",
+      "2632",
+      "2680",
+      "2672"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (2 * 8 + 4) * 4 = 2680."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
+    "options": [
+      "136",
+      "88",
+      "80",
+      "105"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 65% density, total edges = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][33] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][5]?",
+    "options": [
+      "1600",
+      "3024",
+      "2760",
+      "2744"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (5 * 33 + 5) * 8 = 2760."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][14] starts at base address 2400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][11]?",
+    "options": [
+      "2936",
+      "2808",
+      "2664",
+      "2824"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (3 * 14 + 11) * 8 = 2824."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [31, 50, 15, 25, 22, 43], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "143",
+      "160",
+      "165",
+      "112"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 143."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [29, 9, 32, 50, 31, 23, 9, 12], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "151",
+      "122",
+      "182",
+      "168"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 151."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][39] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][29]?",
+    "options": [
+      "3392",
+      "2816",
+      "3424",
+      "3400"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (29 * 6 + 1) * 4 = 3400."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [28, 5, 11, 8, 26, 5, 6, 32], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "104",
+      "95",
+      "78",
+      "50"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 17, 45, 14, 31, 1, 5, 6, 20, 39], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "142",
+      "173",
+      "159",
+      "107"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 142."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "557",
+      "499",
+      "518",
+      "741"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 70% density, total edges = 518."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "946",
+      "510",
+      "488",
+      "554"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 54% density, total edges = 510."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Search' operation on a Stack?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "answer": 2,
+    "explanation": "For Stack, performing a 'Search' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
+    "options": [
+      "265",
+      "343",
+      "1326",
+      "291"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 22% density, total edges = 291."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a AVL Tree?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": 1,
+    "explanation": "For AVL Tree, performing a 'Insertion' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "33",
+      "45",
+      "66",
+      "27"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 50% density, total edges = 33."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 18, 37, 50, 42], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "70",
+      "55",
+      "107",
+      "87"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 70."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][26] starts at base address 2700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][19]?",
+    "options": [
+      "2776",
+      "3046",
+      "3042",
+      "3064"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (19 * 9 + 2) * 2 = 3046."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "780",
+      "530",
+      "510",
+      "570"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 68% density, total edges = 530."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][33] starts at base address 2200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[14][27]?",
+    "options": [
+      "3174",
+      "3178",
+      "2956",
+      "3244"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (14 * 33 + 27) * 2 = 3178."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [39, 18, 6, 30, 40, 14, 45, 8, 13, 13, 16], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "239",
+      "187",
+      "226",
+      "243"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 226."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "39",
+      "52",
+      "78",
+      "33"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 51% density, total edges = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][23] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][12]?",
+    "options": [
+      "1800",
+      "1708",
+      "1700",
+      "1440"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (5 * 23 + 12) * 4 = 1708."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][15] starts at base address 2100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][1]?",
+    "options": [
+      "2104",
+      "2224",
+      "2156",
+      "2164"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (1 * 15 + 1) * 4 = 2164."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][20] starts at base address 2400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[12][16]?",
+    "options": [
+      "5624",
+      "5440",
+      "3936",
+      "5424"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (16 * 23 + 12) * 8 = 5440."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 38, 18, 32, 17, 23, 24, 38, 10, 11, 27], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "211",
+      "241",
+      "230",
+      "247"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 230."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[24][11] starts at base address 2100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][8]?",
+    "options": [
+      "2256",
+      "2264",
+      "2196",
+      "2308"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (3 * 11 + 8) * 4 = 2264."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 37, 30, 43, 37], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "148",
+      "131",
+      "174",
+      "110"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 131."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [50, 45, 46, 12, 50, 22, 23, 14, 15, 42], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "292",
+      "277",
+      "294",
+      "227"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 277."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][29] starts at base address 2500 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[15][4]?",
+    "options": [
+      "2939",
+      "2968",
+      "2560",
+      "2937"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (15 * 29 + 4) * 1 = 2939."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[24][13] starts at base address 2200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[20][9]?",
+    "options": [
+      "3144",
+      "2920",
+      "3240",
+      "3136"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (9 * 24 + 20) * 4 = 3144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][30] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][2]?",
+    "options": [
+      "2516",
+      "2748",
+      "2868",
+      "2740"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (2 * 30 + 2) * 4 = 2748."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [28, 8, 38, 24, 45, 29, 9, 25], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "115",
+      "98",
+      "122",
+      "70"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 98."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
+    "options": [
+      "535",
+      "469",
+      "946",
+      "491"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 52% density, total edges = 491."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][38] starts at base address 2500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[20][30]?",
+    "options": [
+      "4900",
+      "6176",
+      "6060",
+      "6052"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (30 * 29 + 20) * 4 = 6060."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][35] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][7]?",
+    "options": [
+      "2488",
+      "2348",
+      "2340",
+      "1424"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (8 * 35 + 7) * 4 = 2348."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "41",
+      "171",
+      "32",
+      "60"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 24% density, total edges = 41."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][27] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][11]?",
+    "options": [
+      "1244",
+      "1336",
+      "1348",
+      "1332"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (11 * 6 + 2) * 2 = 1336."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
+    "options": [
+      "903",
+      "189",
+      "168",
+      "232"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 21% density, total edges = 189."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 45, 47, 2, 48, 15, 8, 19, 37, 11, 6, 22], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "238",
+      "261",
+      "250",
+      "244"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 244."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "445",
+      "526",
+      "1431",
+      "472"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 33% density, total edges = 472."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
+    "options": [
+      "26",
+      "66",
+      "8",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 22% density, total edges = 14."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [29, 41, 25, 25, 22, 20, 32, 9], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "194",
+      "226",
+      "165",
+      "211"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 194."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "412",
+      "476",
+      "433",
+      "903"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 48% density, total edges = 433."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][10] starts at base address 1200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "1296",
+      "1336",
+      "1232",
+      "1288"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 10 + 4) * 4 = 1296."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a Doubly Linked List?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer": 3,
+    "explanation": "For Doubly Linked List, performing a 'Deletion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "322",
+      "990",
+      "277",
+      "255"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 28% density, total edges = 277."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "321",
+      "291",
+      "435",
+      "276"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 67% density, total edges = 291."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "1275",
+      "573",
+      "497",
+      "522"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 41% density, total edges = 522."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][24] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[13][14]?",
+    "options": [
+      "3512",
+      "3520",
+      "2628",
+      "3632"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (14 * 28 + 13) * 4 = 3520."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "320",
+      "262",
+      "741",
+      "281"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 38% density, total edges = 281."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 32, 12, 12, 47, 19, 50, 46, 26, 36, 29, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "96",
+      "113",
+      "56",
+      "108"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 96."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][14] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[13][4]?",
+    "options": [
+      "1836",
+      "1900",
+      "1308",
+      "1844"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (13 * 14 + 4) * 4 = 1844."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [42, 42, 7, 38, 30, 35, 8, 8, 26], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "152",
+      "229",
+      "194",
+      "211"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 194."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][36] starts at base address 2700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][27]?",
+    "options": [
+      "3348",
+      "4068",
+      "3780",
+      "3764"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (3 * 36 + 27) * 8 = 3780."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "70",
+      "253",
+      "59",
+      "93"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 28% density, total edges = 70."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "666",
+      "159",
+      "141",
+      "196"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 24% density, total edges = 159."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][35] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][1]?",
+    "options": [
+      "2592",
+      "2608",
+      "2888",
+      "1240"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (5 * 35 + 1) * 8 = 2608."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][39] starts at base address 2300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[9][18]?",
+    "options": [
+      "3128",
+      "3120",
+      "3172",
+      "2948"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (18 * 11 + 9) * 4 = 3128."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "648",
+      "723",
+      "1225",
+      "673"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 55% density, total edges = 673."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 12, 8, 29, 18, 23, 1, 15, 19, 9], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "67",
+      "100",
+      "83",
+      "101"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 83."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 11, 15, 33, 39, 13, 16, 21, 11, 26, 33], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "82",
+      "65",
+      "59",
+      "98"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 46, 3, 9, 5, 47, 35, 49, 20], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "151",
+      "168",
+      "145",
+      "186"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 151."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 13, 4, 24, 7, 38, 19, 33, 7, 50, 37, 41], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "41",
+      "61",
+      "85",
+      "78"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][18] starts at base address 1700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[14][6]?",
+    "options": [
+      "1868",
+      "1870",
+      "1784",
+      "1896"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (6 * 26 + 14) * 1 = 1870."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][36] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[4][19]?",
+    "options": [
+      "4724",
+      "4892",
+      "2108",
+      "4708"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (19 * 21 + 4) * 8 = 4724."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 12, 7, 15, 1], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "34",
+      "57",
+      "55",
+      "40"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 40."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][35] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][8]?",
+    "options": [
+      "2964",
+      "1756",
+      "2684",
+      "2668"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (4 * 35 + 8) * 8 = 2684."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][21] starts at base address 1500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[7][6]?",
+    "options": [
+      "1760",
+      "1668",
+      "1808",
+      "1768"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (6 * 10 + 7) * 4 = 1768."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 29, 28, 44, 50, 44, 45, 17], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "301",
+      "240",
+      "256",
+      "273"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 256."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "options": [
+      "45",
+      "10",
+      "5",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 23% density, total edges = 10."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][32] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][10]?",
+    "options": [
+      "1170",
+      "1261",
+      "1247",
+      "1245"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (10 * 14 + 7) * 1 = 1247."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "39",
+      "69",
+      "49",
+      "190"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 26% density, total edges = 49."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "356",
+      "312",
+      "290",
+      "946"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 33% density, total edges = 312."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][37] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[12][16]?",
+    "options": [
+      "2360",
+      "2397",
+      "2358",
+      "2092"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (12 * 37 + 16) * 1 = 2360."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][39] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][17]?",
+    "options": [
+      "2704",
+      "2718",
+      "2706",
+      "2534"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (17 * 12 + 2) * 1 = 2706."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 24, 22, 25, 21, 47, 35], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "105",
+      "113",
+      "88",
+      "71"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "1596",
+      "663",
+      "578",
+      "606"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 38% density, total edges = 606."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "944",
+      "1431",
+      "917",
+      "998"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 66% density, total edges = 944."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][21] starts at base address 2400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[7][5]?",
+    "options": [
+      "2573",
+      "2552",
+      "2550",
+      "2435"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (7 * 21 + 5) * 1 = 2552."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "39",
+      "78",
+      "58",
+      "45"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 58% density, total edges = 45."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [8, 11, 42, 23, 16, 20, 50, 23, 3, 40, 11, 7], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "258",
+      "264",
+      "239",
+      "247"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 247."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "104",
+      "325",
+      "143",
+      "117"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 36% density, total edges = 117."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "13",
+      "55",
+      "18",
+      "29"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 33% density, total edges = 18."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "228",
+      "260",
+      "212",
+      "496"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 46% density, total edges = 228."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][13] starts at base address 2400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[15][5]?",
+    "options": [
+      "2610",
+      "2550",
+      "2646",
+      "2606"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (5 * 18 + 15) * 2 = 2610."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][16] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[17][3]?",
+    "options": [
+      "3528",
+      "3384",
+      "1608",
+      "3400"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (17 * 16 + 3) * 8 = 3400."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][26] starts at base address 2600 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][6]?",
+    "options": [
+      "2704",
+      "2700",
+      "2648",
+      "2720"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (6 * 8 + 4) * 2 = 2704."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 27, 50, 31, 15, 27, 45, 35], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "160",
+      "129",
+      "146",
+      "108"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 129."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][18] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[23][2]?",
+    "options": [
+      "2884",
+      "3016",
+      "3140",
+      "3024"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (2 * 29 + 23) * 4 = 3024."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 20, 28, 13, 5, 18, 40, 3], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "207",
+      "184",
+      "167",
+      "124"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 167."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][38] starts at base address 2900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[7][8]?",
+    "options": [
+      "5092",
+      "3348",
+      "5396",
+      "5076"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (7 * 38 + 8) * 8 = 5092."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [39, 3, 19, 38, 29, 6, 44, 30, 12, 17, 1], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "198",
+      "254",
+      "237",
+      "254"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 237."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "25",
+      "78",
+      "19",
+      "38"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 33% density, total edges = 25."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "24",
+      "13",
+      "8",
+      "55"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 24% density, total edges = 13."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "670",
+      "647",
+      "1081",
+      "717"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 62% density, total edges = 670."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
+    "options": [
+      "214",
+      "237",
+      "284",
+      "1081"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 22% density, total edges = 237."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [34, 35, 3, 22, 41, 7, 2, 10, 11, 24, 33, 20], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "144",
+      "146",
+      "110",
+      "161"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "716",
+      "742",
+      "1326",
+      "794"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 56% density, total edges = 742."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][12] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[11][8]?",
+    "options": [
+      "1652",
+      "1852",
+      "1860",
+      "1908"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (11 * 12 + 8) * 4 = 1860."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 17, 14, 12, 2, 25], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "64",
+      "43",
+      "76",
+      "81"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 64."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
+    "options": [
+      "49",
+      "41",
+      "120",
+      "65"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 41% density, total edges = 49."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "options": [
+      "126",
+      "406",
+      "83",
+      "97"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 24% density, total edges = 97."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "465",
+      "540",
+      "490",
+      "1225"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 40% density, total edges = 490."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 2, 10, 37, 45, 44, 7, 22, 22, 9, 17, 50], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "207",
+      "167",
+      "224",
+      "229"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 207."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [36, 11, 1, 33, 12, 47], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "98",
+      "114",
+      "45",
+      "81"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 81."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [46, 14, 43, 35, 19, 40, 37, 8], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "92",
+      "138",
+      "173",
+      "155"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 138."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][12] starts at base address 2000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[17][7]?",
+    "options": [
+      "2193",
+      "2119",
+      "2171",
+      "2169"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (7 * 22 + 17) * 1 = 2171."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "785",
+      "757",
+      "841",
+      "1540"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 51% density, total edges = 785."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [37, 37, 33, 40, 43, 21, 6, 40, 22], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "233",
+      "153",
+      "190",
+      "207"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 190."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "86",
+      "55",
+      "65",
+      "210"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 31% density, total edges = 65."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
+    "options": [
+      "335",
+      "392",
+      "307",
+      "1596"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 21% density, total edges = 335."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "65",
+      "136",
+      "48",
+      "40"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 36% density, total edges = 48."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][12] starts at base address 1300 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[12][3]?",
+    "options": [
+      "1618",
+      "1594",
+      "1590",
+      "1372"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (12 * 12 + 3) * 2 = 1594."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][12] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][6]?",
+    "options": [
+      "2228",
+      "2132",
+      "1892",
+      "2116"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (4 * 12 + 6) * 8 = 2132."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "46",
+      "120",
+      "62",
+      "38"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 39% density, total edges = 46."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "264",
+      "219",
+      "435",
+      "234"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 54% density, total edges = 234."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][27] starts at base address 1000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[16][7]?",
+    "options": [
+      "1437",
+      "1439",
+      "1112",
+      "1466"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (16 * 27 + 7) * 1 = 1439."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 45, 7, 14, 20, 26, 20, 3, 10], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "132",
+      "169",
+      "172",
+      "152"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][11] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][6]?",
+    "options": [
+      "1456",
+      "1496",
+      "1440",
+      "1296"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (6 * 5 + 2) * 8 = 1456."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [48, 8, 35, 48, 28, 45, 9, 9, 7, 31], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "237",
+      "254",
+      "189",
+      "244"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 237."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][38] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][12]?",
+    "options": [
+      "1610",
+      "1614",
+      "1640",
+      "1324"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (12 * 13 + 1) * 2 = 1614."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "373",
+      "393",
+      "820",
+      "434"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 48% density, total edges = 393."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 24, 25, 27, 22], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "92",
+      "49",
+      "117",
+      "109"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 92."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 13, 6, 40, 19, 27, 41, 43], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "79",
+      "96",
+      "119",
+      "59"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 79."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][28] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][15]?",
+    "options": [
+      "1497",
+      "1445",
+      "1527",
+      "1499"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (3 * 28 + 15) * 1 = 1499."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [37, 34, 48, 25, 6, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "161",
+      "169",
+      "107",
+      "144"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "351",
+      "334",
+      "386",
+      "595"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 59% density, total edges = 351."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "1225",
+      "685",
+      "760",
+      "710"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 58% density, total edges = 710."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "325",
+      "107",
+      "94",
+      "133"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 33% density, total edges = 107."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "1094",
+      "1039",
+      "1485",
+      "1012"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 70% density, total edges = 1039."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 14, 49, 47, 23], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "201",
+      "171",
+      "110",
+      "154"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 154."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][39] starts at base address 2200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][30]?",
+    "options": [
+      "2826",
+      "2380",
+      "2804",
+      "2806"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (30 * 20 + 6) * 1 = 2806."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [36, 45, 45, 35, 38], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "196",
+      "125",
+      "161",
+      "178"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 161."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][21] starts at base address 2800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][11]?",
+    "options": [
+      "2976",
+      "2996",
+      "2980",
+      "2844"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (11 * 8 + 2) * 2 = 2980."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [42, 27, 45, 45, 29, 12, 27, 44], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "72",
+      "114",
+      "159",
+      "131"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 114."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "271",
+      "334",
+      "292",
+      "861"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 34% density, total edges = 292."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][32] starts at base address 2800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][5]?",
+    "options": [
+      "2874",
+      "2870",
+      "2810",
+      "2938"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (1 * 32 + 5) * 2 = 2874."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 50, 39, 17, 8, 6, 47, 12, 29, 12, 1, 44], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "111",
+      "128",
+      "128",
+      "106"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 111."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 29, 13, 2, 13, 9, 3, 1], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "69",
+      "107",
+      "90",
+      "93"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 90."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][13] starts at base address 2700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[11][1]?",
+    "options": [
+      "2732",
+      "2757",
+      "2711",
+      "2734"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (1 * 23 + 11) * 1 = 2734."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 7, 22, 31, 5, 7], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "103",
+      "60",
+      "134",
+      "120"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 103."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][13] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[7][2]?",
+    "options": [
+      "1950",
+      "1968",
+      "1946",
+      "1928"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (2 * 9 + 7) * 2 = 1950."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [34, 17, 35, 41, 21, 26], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "121",
+      "103",
+      "86",
+      "52"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][33] starts at base address 2300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[20][21]?",
+    "options": [
+      "4724",
+      "3980",
+      "4844",
+      "4732"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (21 * 28 + 20) * 4 = 4732."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "378",
+      "288",
+      "246",
+      "260"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 69% density, total edges = 260."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][38] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][17]?",
+    "options": [
+      "1468",
+      "1567",
+      "1607",
+      "1569"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (4 * 38 + 17) * 1 = 1569."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][30] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[8][16]?",
+    "options": [
+      "2324",
+      "3332",
+      "3348",
+      "3588"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (8 * 30 + 16) * 8 = 3348."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 20, 33, 46, 39, 43, 10, 33, 19, 18, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "155",
+      "99",
+      "109",
+      "126"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 109."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [36, 9, 3, 33, 12, 22, 16, 30, 32], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "125",
+      "161",
+      "178",
+      "191"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 161."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 3, 29, 42, 15, 30], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "32",
+      "89",
+      "101",
+      "72"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 72."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 47, 2, 36, 35, 36, 14, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "85",
+      "148",
+      "129",
+      "112"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 112."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][21] starts at base address 2700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "2834",
+      "2788",
+      "2792",
+      "2716"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (2 * 21 + 4) * 2 = 2792."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][26] starts at base address 2500 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[6][12]?",
+    "options": [
+      "2644",
+      "2836",
+      "2888",
+      "2832"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (6 * 26 + 12) * 2 = 2836."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][38] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[18][6]?",
+    "options": [
+      "5412",
+      "5260",
+      "2932",
+      "5252"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (18 * 38 + 6) * 4 = 5260."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 34, 2, 8, 36, 36, 20, 46, 21, 38, 47, 17], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "36",
+      "39",
+      "41",
+      "56"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 39."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "171",
+      "143",
+      "129",
+      "378"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 38% density, total edges = 143."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 20, 18, 50, 17, 4, 27], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "105",
+      "123",
+      "123",
+      "106"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 106."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 10, 48, 26, 16, 5, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "129",
+      "120",
+      "103",
+      "84"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 103."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][30] starts at base address 2300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][23]?",
+    "options": [
+      "2852",
+      "3112",
+      "3232",
+      "3104"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (6 * 30 + 23) * 4 = 3112."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][11] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][3]?",
+    "options": [
+      "1628",
+      "1420",
+      "1724",
+      "1612"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (3 * 12 + 5) * 8 = 1628."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [28, 6, 23, 4, 45, 47, 33, 44, 28, 2, 36], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "74",
+      "80",
+      "29",
+      "57"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 57."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][21] starts at base address 2200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][16]?",
+    "options": [
+      "4160",
+      "4344",
+      "4176",
+      "3608"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (11 * 21 + 16) * 8 = 4176."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 49 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "682",
+      "658",
+      "731",
+      "1176"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 49*(48)/2 = 1176. At 58% density, total edges = 682."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [2, 24, 33, 2, 13, 27, 50, 46, 6, 41, 46, 30], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "61",
+      "59",
+      "78",
+      "63"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 61."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][36] starts at base address 2900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[10][9]?",
+    "options": [
+      "3620",
+      "5836",
+      "5852",
+      "6140"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (10 * 36 + 9) * 8 = 5852."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][21] starts at base address 1100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][16]?",
+    "options": [
+      "1200",
+      "1179",
+      "1177",
+      "1148"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (3 * 21 + 16) * 1 = 1179."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "378",
+      "258",
+      "216",
+      "230"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 61% density, total edges = 230."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "67",
+      "153",
+      "58",
+      "85"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 44% density, total edges = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 34, 34, 42, 3, 4, 45, 50, 31, 32, 24], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "117",
+      "118",
+      "135",
+      "122"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 118."
   },
   {
     "subject": "DSA",
@@ -5271,567 +7679,1547 @@ window.quizData.dsa = [
     "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
     "options": [
       "397",
+      "364",
       "348",
-      "528",
-      "364"
+      "528"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 69% density, total edges = 364."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][25] starts at base address 2100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][5]?",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [39, 19, 42, 9, 12, 35, 20, 34, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "2178",
-      "2205",
-      "2180",
-      "2115"
+      "70",
+      "118",
+      "109",
+      "126"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (3 * 25 + 5) * 1 = 2180."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][39] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[9][29]?",
-    "options": [
-      "7552",
-      "7320",
-      "3088",
-      "7336"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (29 * 27 + 9) * 8 = 7336."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 109."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[18][26] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[13][13]?",
+    "question": "A 2D array A[14][36] starts at base address 1800 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][19]?",
     "options": [
-      "2352",
-      "4016",
-      "3808",
-      "3792"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (13 * 26 + 13) * 8 = 3808."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 50, 4, 3, 6, 40, 33, 29], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "73",
-      "54",
-      "60",
-      "56"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 56."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [19, 13, 8, 7, 5, 20, 7, 40, 49, 50, 48], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "86",
-      "60",
-      "79",
-      "96"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 79."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 28, 30, 49, 34], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "107",
-      "163",
-      "114",
-      "131"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 114."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][34] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][32]?",
-    "options": [
-      "2720",
-      "1128",
-      "2660",
-      "2668"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (32 * 13 + 1) * 4 = 2668."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [38, 49, 17, 47, 24, 42, 17, 25], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "251",
-      "196",
-      "251",
-      "234"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 234."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 4, 49, 50, 40, 26], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "103",
-      "53",
-      "152",
-      "120"
+      "3976",
+      "2712",
+      "3960",
+      "4088"
     ],
     "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 103."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (19 * 14 + 6) * 8 = 3976."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[15][24] starts at base address 2600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[11][16]?",
+    "question": "A 2D array A[11][12] starts at base address 2300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
     "options": [
-      "2880",
-      "2776",
-      "2878",
-      "2904"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (11 * 24 + 16) * 1 = 2880."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][20] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[12][4]?",
-    "options": [
-      "2012",
-      "1948",
-      "2037",
-      "2010"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (4 * 25 + 12) * 1 = 2012."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][35] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[22][14]?",
-    "options": [
-      "3216",
-      "4238",
-      "4168",
-      "4164"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (22 * 35 + 14) * 2 = 4168."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
-    "options": [
-      "820",
-      "410",
-      "390",
-      "451"
+      "2354",
+      "2332",
+      "2310",
+      "2328"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 50% density, total edges = 410."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
-    "options": [
-      "210",
-      "496",
-      "162",
-      "178"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 36% density, total edges = 178."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (1 * 11 + 5) * 2 = 2332."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 7, 2, 15, 2, 1, 4, 25], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [39, 45, 24, 26, 7, 24, 18, 6, 11, 3, 37], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
     "options": [
-      "49",
-      "66",
-      "51",
-      "26"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 49."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][29] starts at base address 1800 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][9]?",
-    "options": [
-      "2624",
-      "2528",
-      "2544",
-      "2016"
+      "220",
+      "164",
+      "203",
+      "206"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (9 * 10 + 3) * 8 = 2544."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[24][38] starts at base address 2500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[13][29]?",
-    "options": [
-      "3254",
-      "3914",
-      "3918",
-      "3966"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (29 * 24 + 13) * 2 = 3918."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][23] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[12][15]?",
-    "options": [
-      "2900",
-      "2972",
-      "2908",
-      "2620"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (15 * 16 + 12) * 4 = 2908."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
-    "options": [
-      "360",
-      "401",
-      "340",
-      "820"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 44% density, total edges = 360."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][26] starts at base address 1100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][18]?",
-    "options": [
-      "1868",
-      "1388",
-      "1660",
-      "1644"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (2 * 26 + 18) * 8 = 1660."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][32] starts at base address 2300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[5][13]?",
-    "options": [
-      "2711",
-      "2680",
-      "2365",
-      "2682"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (13 * 29 + 5) * 1 = 2682."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][30] starts at base address 2200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][15]?",
-    "options": [
-      "2620",
-      "3100",
-      "3220",
-      "3092"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (7 * 30 + 15) * 4 = 3100."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "255",
-      "238",
-      "595",
-      "290"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 43% density, total edges = 255."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 203."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 48, 13, 30, 31, 28, 19, 8, 27, 7, 43], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "question": "Given the 1D integer array [36, 8, 2, 44, 16, 8, 33, 33, 15, 43, 37], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "244",
-      "261",
-      "211",
-      "251"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 244."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][21] starts at base address 2000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[9][5]?",
-    "options": [
-      "2636",
-      "2528",
-      "2536",
-      "2180"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (5 * 25 + 9) * 4 = 2536."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [39, 41, 35, 21, 28, 30, 10, 8, 46, 22], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "229",
-      "173",
-      "212",
-      "220"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 212."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [35, 41, 15, 37, 2, 15], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "132",
-      "130",
-      "95",
+      "111",
+      "164",
+      "180",
       "147"
     ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 130."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 38, 37, 35, 23], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "75",
-      "126",
-      "146",
-      "109"
-    ],
     "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 109."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [20, 38, 1, 4, 8, 39, 17, 25, 8, 25], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "127",
-      "110",
-      "90",
-      "149"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 110."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 147."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[29][32] starts at base address 1000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][16]?",
+    "question": "A 2D array A[15][20] starts at base address 2400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[7][12]?",
     "options": [
-      "1466",
-      "1495",
-      "1464",
-      "1032"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (16 * 29 + 2) * 1 = 1466."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][28] starts at base address 1600 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][9]?",
-    "options": [
-      "1609",
-      "1741",
-      "1727",
-      "1725"
+      "2568",
+      "2770",
+      "2774",
+      "2804"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (9 * 14 + 1) * 1 = 1727."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (12 * 15 + 7) * 2 = 2774."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "1275",
+      "816",
+      "740",
+      "765"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 60% density, total edges = 765."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [31, 10, 48, 33, 5, 20, 50, 36, 40, 41], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [35, 14, 35, 34, 50, 25, 1, 6, 27, 38], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "244",
+      "192",
+      "227",
+      "254"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 227."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "933",
+      "1540",
+      "877",
+      "849"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 57% density, total edges = 877."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 29, 31, 13, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "92",
+      "109",
+      "73",
+      "105"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 92."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [49, 38, 48, 32, 35, 28, 24, 46, 40, 38, 13], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "395",
+      "329",
+      "378",
+      "416"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 378."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 28, 3, 28, 13, 20, 9], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "97",
+      "84",
+      "101",
+      "72"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 84."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][33] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][19]?",
+    "options": [
+      "3336",
+      "2360",
+      "3056",
+      "3072"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (5 * 33 + 19) * 8 = 3072."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [24, 48, 47, 50, 14, 20, 39, 14, 31, 3, 29], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "242",
+      "218",
+      "281",
+      "259"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 242."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][24] starts at base address 2900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][21]?",
+    "options": [
+      "2993",
+      "2967",
+      "2942",
+      "2969"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (2 * 24 + 21) * 1 = 2969."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][17] starts at base address 1500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[11][8]?",
+    "options": [
+      "2348",
+      "2272",
+      "1852",
+      "2280"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (11 * 17 + 8) * 4 = 2280."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][23] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][14]?",
+    "options": [
+      "3132",
+      "4220",
+      "4036",
+      "4020"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (11 * 23 + 14) * 8 = 4036."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [22, 44, 34, 5, 22, 34, 37], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "117",
+      "134",
+      "78",
+      "100"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 11, 33, 38, 39, 5, 27, 13, 31, 15, 7, 7], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "197",
+      "207",
+      "180",
+      "153"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 180."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "412",
+      "346",
+      "368",
+      "946"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 39% density, total edges = 368."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 42, 16, 47, 38, 36, 33, 36, 42, 41, 25, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "212",
+      "259",
+      "243",
+      "226"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 226."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 37, 18, 26, 10, 38, 41, 40, 26, 15], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "248",
+      "265",
+      "210",
+      "288"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 248."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "382",
+      "331",
+      "306",
+      "1275"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 26% density, total edges = 331."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "options": [
+      "464",
+      "548",
+      "492",
+      "1540"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 32% density, total edges = 492."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][23] starts at base address 1100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][20]?",
+    "options": [
+      "1278",
+      "1274",
+      "1324",
+      "1220"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (3 * 23 + 20) * 2 = 1278."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][32] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[4][25]?",
+    "options": [
+      "1279",
+      "1277",
+      "1200",
+      "1286"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (25 * 7 + 4) * 1 = 1279."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 48, 19, 29, 6], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "67",
+      "79",
+      "98",
+      "96"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 79."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [32, 42, 8, 24, 14, 49], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "90",
+      "99",
+      "82",
+      "50"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 34, 28, 19, 1, 29, 40], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "117",
+      "128",
+      "62",
+      "100"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [49, 34, 6, 13, 23], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "106",
+      "40",
+      "89",
+      "95"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 89."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [46, 9, 3, 18, 17, 24], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "12",
+      "61",
+      "75",
+      "58"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "1431",
+      "883",
+      "802",
+      "829"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 58% density, total edges = 829."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][19] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[13][2]?",
+    "options": [
+      "1544",
+      "1480",
+      "1472",
+      "1404"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (2 * 16 + 13) * 4 = 1480."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][22] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[14][9]?",
+    "options": [
+      "1739",
+      "1717",
+      "1715",
+      "1526"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (14 * 22 + 9) * 1 = 1717."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][15] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][11]?",
+    "options": [
+      "1932",
+      "2068",
+      "1764",
+      "1948"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (3 * 15 + 11) * 8 = 1948."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][15] starts at base address 2100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][5]?",
+    "options": [
+      "3460",
+      "3444",
+      "3580",
+      "2540"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (11 * 15 + 5) * 8 = 3460."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [31, 35, 2, 14, 35], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "37",
+      "68",
+      "85",
+      "70"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][13] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[8][11]?",
+    "options": [
+      "2104",
+      "2608",
+      "2712",
+      "2592"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (11 * 13 + 8) * 8 = 2608."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 44, 13, 23, 9], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "99",
+      "116",
+      "122",
+      "80"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 99."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][27] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][11]?",
+    "options": [
+      "1388",
+      "1668",
+      "1552",
+      "1560"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (2 * 27 + 11) * 4 = 1560."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][21] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][4]?",
+    "options": [
+      "1388",
+      "1456",
+      "1380",
+      "1164"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (4 * 17 + 4) * 4 = 1388."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
+    "options": [
+      "1431",
+      "645",
+      "726",
+      "672"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 47% density, total edges = 672."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][22] starts at base address 2900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][12]?",
+    "options": [
+      "2996",
+      "3272",
+      "3244",
+      "3236"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (12 * 7 + 2) * 4 = 3244."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 14, 4, 49, 15, 27], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "109",
+      "111",
+      "94",
+      "82"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 94."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "958",
+      "1431",
+      "931",
+      "1012"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 67% density, total edges = 958."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 13, 18, 34, 37, 39, 24, 5], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "31",
+      "71",
+      "89",
+      "88"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 71."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "30",
+      "45",
+      "20",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 46% density, total edges = 20."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "530",
+      "551",
+      "861",
+      "593"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 64% density, total edges = 551."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 16, 50, 48, 37, 36, 15, 42, 2], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "284",
+      "244",
+      "301",
+      "326"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 284."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 12, 39, 12, 12, 41, 29, 18, 36], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "116",
+      "158",
+      "117",
+      "134"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 117."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "170",
+      "630",
+      "152",
+      "206"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 27% density, total edges = 170."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "64",
+      "171",
+      "92",
+      "73"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 43% density, total edges = 73."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 3, 23, 5, 32, 14, 8, 38, 10, 9, 8, 30], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "152",
+      "169",
+      "142",
+      "161"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "487",
+      "403",
+      "431",
+      "1540"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 28% density, total edges = 431."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][18] starts at base address 2600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][16]?",
+    "options": [
+      "3096",
+      "3024",
+      "3016",
+      "2920"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (5 * 18 + 16) * 4 = 3024."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
+    "options": [
+      "772",
+      "745",
+      "827",
+      "1485"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 52% density, total edges = 772."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [49, 10, 36, 34, 44, 32, 1], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "146",
+      "80",
+      "129",
+      "163"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 129."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 38, 49, 17, 39, 4, 47], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
       "147",
-      "116",
-      "164",
-      "167"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 147."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [30, 41, 48, 21, 33, 50], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "110",
-      "140",
-      "161",
-      "157"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 140."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 8, 45, 30, 17], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "119",
-      "106",
-      "83",
-      "89"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 89."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
-    "options": [
-      "59",
-      "120",
-      "83",
-      "67"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 56% density, total edges = 67."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
-    "options": [
-      "666",
-      "153",
-      "190",
-      "135"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 23% density, total edges = 153."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][12] starts at base address 2500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][5]?",
-    "options": [
-      "2772",
-      "2560",
-      "2764",
-      "2824"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (5 * 13 + 3) * 4 = 2772."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "483",
-      "442",
-      "422",
-      "820"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 54% density, total edges = 442."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][17] starts at base address 2000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[22][6]?",
-    "options": [
-      "2264",
-      "2388",
-      "2450",
-      "2392"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (6 * 29 + 22) * 2 = 2392."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 10, 24, 50, 8, 21, 33], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "84",
       "168",
+      "164",
+      "181"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 164."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "310",
+      "279",
+      "264",
+      "465"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 60% density, total edges = 279."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "841",
+      "787",
+      "760",
+      "1431"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 55% density, total edges = 787."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][21] starts at base address 2000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][6]?",
+    "options": [
+      "2704",
+      "2888",
+      "2192",
+      "2720"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (4 * 21 + 6) * 8 = 2720."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][11] starts at base address 1600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "1664",
+      "1776",
+      "1760",
+      "1816"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (4 * 5 + 2) * 8 = 1776."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 12, 48, 4, 21, 33, 40], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "108",
+      "112",
+      "64",
+      "125"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 108."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "314",
+      "861",
+      "377",
+      "335"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 39% density, total edges = 335."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "154",
+      "181",
+      "351",
+      "141"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 44% density, total edges = 154."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][12] starts at base address 2200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][4]?",
+    "options": [
+      "2220",
+      "2262",
+      "2264",
+      "2276"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (5 * 12 + 4) * 1 = 2264."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 30, 27, 41, 23, 30], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "98",
+      "138",
+      "179",
+      "155"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 138."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "382",
+      "406",
+      "454",
+      "1128"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 36% density, total edges = 406."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][26] starts at base address 1000 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][12]?",
+    "options": [
+      "1352",
+      "1464",
+      "1144",
+      "1360"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (3 * 26 + 12) * 4 = 1360."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [47, 16, 36, 38, 42, 28, 49, 32, 9, 39, 41], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "221",
+      "179",
+      "196",
+      "132"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 179."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [30, 50, 48, 20, 5, 23, 3, 44], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "170",
+      "153",
+      "158",
+      "123"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 153."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][14] starts at base address 1200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][6]?",
+    "options": [
+      "1484",
+      "1528",
+      "1320",
+      "1476"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (6 * 11 + 5) * 4 = 1484."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "537",
+      "1485",
+      "619",
+      "564"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 38% density, total edges = 564."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [31, 8, 43, 16, 35, 37], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "82",
+      "125",
+      "99",
+      "51"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 82."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][38] starts at base address 1500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][27]?",
+    "options": [
+      "2672",
+      "2256",
+      "2824",
+      "2664"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (7 * 38 + 27) * 4 = 2672."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [39, 29, 26, 43, 3, 26, 48, 40, 9], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "120",
+      "55",
+      "94",
+      "111"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 94."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 49, 13, 7, 49, 42, 10, 11, 26], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "184",
+      "152",
+      "135",
+      "118"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 135."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [7, 48, 25, 50, 13, 11, 28, 17], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "143",
+      "136",
+      "156",
+      "160"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 143."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][36] starts at base address 1000 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[14][17]?",
+    "options": [
+      "3084",
+      "3228",
+      "3076",
+      "1952"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (14 * 36 + 17) * 4 = 3084."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "172",
+      "496",
+      "220",
+      "188"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 38% density, total edges = 188."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][10] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][8]?",
+    "options": [
+      "1995",
+      "2008",
+      "1997",
+      "1972"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (8 * 11 + 9) * 1 = 1997."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][21] starts at base address 2400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[9][16]?",
+    "options": [
+      "2605",
+      "2544",
+      "2626",
+      "2603"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (9 * 21 + 16) * 1 = 2605."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][31] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[23][3]?",
+    "options": [
+      "1604",
+      "1538",
+      "1662",
+      "1608"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (3 * 27 + 23) * 2 = 1608."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "55",
+      "9",
+      "25",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 27% density, total edges = 14."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [43, 42, 44, 5, 27], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "91",
+      "151",
+      "134",
+      "139"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 134."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 13, 24, 27, 1], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "100",
+      "64",
+      "110",
+      "83"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 83."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "options": [
+      "97",
+      "136",
+      "80",
+      "72"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 59% density, total edges = 80."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [30, 29, 27, 46, 7, 45], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "56",
+      "86",
+      "103",
+      "113"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 86."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [34, 1, 50, 2, 24, 14, 45, 38, 18, 35, 27], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "170",
+      "215",
+      "136",
+      "187"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 170."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [37, 31, 20, 10, 47, 31, 35, 45], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "207",
+      "176",
+      "139",
+      "193"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 176."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "228",
+      "200",
+      "378",
+      "186"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 53% density, total edges = 200."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][18] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][10]?",
+    "options": [
+      "1984",
+      "1968",
+      "2080",
+      "1240"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (10 * 12 + 3) * 8 = 1984."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "55",
+      "35",
+      "19",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 44% density, total edges = 24."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "options": [
+      "107",
+      "126",
+      "98",
+      "171"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 63% density, total edges = 107."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [23, 33, 42, 29, 26, 39, 12, 14, 23, 38], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "140",
+      "115",
+      "98",
+      "75"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 98."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 19, 17, 30, 10, 31, 13, 45], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "155",
+      "172",
+      "120",
+      "168"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 155."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 8, 46, 37, 5, 11, 2, 31, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "113",
+      "133",
+      "96",
+      "91"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 96."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
+    "options": [
+      "417",
+      "342",
+      "367",
+      "1225"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 30% density, total edges = 367."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][16] starts at base address 2100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[12][14]?",
+    "options": [
+      "2490",
+      "2268",
+      "2517",
+      "2488"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (14 * 27 + 12) * 1 = 2490."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 41, 30, 30, 21, 36, 50, 39, 6, 43, 27, 24], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "122",
+      "71",
+      "92",
+      "109"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 92."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
+    "options": [
+      "153",
+      "88",
+      "61",
+      "70"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 46% density, total edges = 70."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "options": [
+      "7",
+      "12",
+      "23",
+      "55"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 23% density, total edges = 12."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][18] starts at base address 2000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[11][11]?",
+    "options": [
+      "2242",
+      "2454",
+      "2418",
+      "2414"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (11 * 18 + 11) * 2 = 2418."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][37] starts at base address 2400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
+    "options": [
+      "2440",
+      "2706",
+      "2702",
+      "2780"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (4 * 37 + 5) * 2 = 2706."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "352",
+      "331",
+      "395",
+      "903"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 39% density, total edges = 352."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][30] starts at base address 2800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][11]?",
+    "options": [
+      "2811",
+      "2871",
+      "2839",
+      "2841"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (1 * 30 + 11) * 1 = 2841."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "1540",
+      "939",
+      "995",
+      "911"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 61% density, total edges = 939."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "820",
+      "541",
+      "500",
+      "480"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 61% density, total edges = 500."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [19, 8, 5, 17, 31, 43, 24, 48, 21, 9, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "97",
+      "61",
+      "80",
+      "111"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 80."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [24, 31, 49, 14, 30, 40, 32, 50, 13, 7, 29, 20], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "132",
+      "94",
       "118",
       "135"
     ],
@@ -5842,2531 +9230,1565 @@ window.quizData.dsa = [
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[5][34] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][5]?",
+    "question": "A 2D array A[26][11] starts at base address 2600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[15][2]?",
     "options": [
-      "1215",
-      "1233",
-      "1226",
-      "1228"
+      "3312",
+      "3268",
+      "2720",
+      "3260"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (15 * 11 + 2) * 4 = 3268."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 24, 42, 15, 6, 9, 29, 20, 44, 10, 32, 39], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "135",
+      "66",
+      "110",
+      "93"
     ],
     "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (5 * 5 + 3) * 1 = 1228."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 93."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
     "options": [
-      "95",
-      "104",
-      "171",
-      "123"
+      "72",
+      "87",
+      "65",
+      "105"
     ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 61% density, total edges = 104."
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 69% density, total edges = 72."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 27, 15, 38, 43, 45, 21], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [36, 29, 40, 50, 27, 49, 25, 18, 12, 35, 23], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
     "options": [
-      "103",
-      "80",
-      "141",
-      "120"
+      "298",
+      "250",
+      "303",
+      "286"
     ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 103."
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 286."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[9][36] starts at base address 2200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][32]?",
+    "question": "A 2D array A[13][36] starts at base address 2400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][22]?",
     "options": [
-      "3328",
-      "3096",
-      "3336",
-      "3480"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (7 * 36 + 32) * 4 = 3336."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [38, 12, 13, 26, 5, 30, 3, 42, 43, 40, 3, 8], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
-    "options": [
-      "217",
-      "255",
-      "272",
-      "258"
+      "4688",
+      "4704",
+      "2752",
+      "4808"
     ],
     "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 255."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (22 * 13 + 2) * 8 = 4704."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "630",
+      "321",
+      "357",
+      "303"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 51% density, total edges = 321."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "465",
+      "319",
+      "288",
+      "273"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 62% density, total edges = 288."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [47, 42, 16, 14, 30, 14, 33, 25, 45, 48], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [16, 36, 25, 45, 8, 46, 14, 15, 18, 39, 15, 3], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "166",
-      "102",
-      "149",
-      "179"
+      "207",
+      "174",
+      "204",
+      "190"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 190."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [40, 9, 41, 5, 26, 36, 32, 29, 30, 23, 34, 38], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "138",
+      "121",
+      "81",
+      "147"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 121."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [39, 10, 28, 11, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "99",
+      "88",
+      "105",
+      "49"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][14] starts at base address 2100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[18][1]?",
+    "options": [
+      "2404",
+      "2244",
+      "2388",
+      "2564"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (1 * 20 + 18) * 8 = 2404."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "903",
+      "404",
+      "361",
+      "340"
     ],
     "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 40% density, total edges = 361."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 33, 18, 27, 35, 12, 20, 17], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "80",
+      "81",
+      "63",
+      "51"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 63."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][17] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][7]?",
+    "options": [
+      "2272",
+      "2268",
+      "2282",
+      "2214"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (7 * 5 + 1) * 2 = 2272."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 27, 17, 6, 40, 40, 46, 7, 35, 37, 21, 45], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "130",
+      "142",
+      "182",
+      "159"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 142."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Deletion' operation on a AVL Tree?",
+    "options": [
+      "O(1)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": 3,
+    "explanation": "For AVL Tree, performing a 'Deletion' takes O(log n)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "280",
+      "229",
+      "246",
+      "561"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 44% density, total edges = 246."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][13] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][6]?",
+    "options": [
+      "1860",
+      "1596",
+      "1740",
+      "1756"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (2 * 13 + 6) * 8 = 1756."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 41, 37, 36, 39, 12, 9, 41, 46], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "208",
+      "200",
+      "191",
+      "174"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 191."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [18, 32, 19, 22, 7, 48, 36, 43, 45, 11, 2, 3], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "98",
+      "105",
+      "80",
+      "115"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 98."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][16] starts at base address 1100 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][13]?",
+    "options": [
+      "1284",
+      "1302",
+      "1178",
+      "1288"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (13 * 7 + 3) * 2 = 1288."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "84",
+      "105",
+      "210",
+      "74"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 40% density, total edges = 84."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "options": [
+      "855",
+      "1596",
+      "798",
+      "770"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 50% density, total edges = 798."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
+    "options": [
+      "581",
+      "603",
+      "648",
+      "990"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 61% density, total edges = 603."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 23 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "174",
+      "253",
+      "163",
+      "197"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 23*(22)/2 = 253. At 69% density, total edges = 174."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[11][21] starts at base address 2600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][19]?",
+    "options": [
+      "2695",
+      "2724",
+      "2745",
+      "2722"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (5 * 21 + 19) * 1 = 2724."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of performing a 'Insertion' operation on a Queue?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": 3,
+    "explanation": "For Queue, performing a 'Insertion' takes O(1)."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 11, 19, 12, 2, 44, 39, 44, 9, 9, 17], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "44",
+      "56",
+      "73",
+      "58"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 56."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][19] starts at base address 2900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][17]?",
+    "options": [
+      "2968",
+      "3120",
+      "3036",
+      "3044"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (1 * 19 + 17) * 4 = 3044."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
+    "options": [
+      "53",
+      "78",
+      "34",
+      "40"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 52% density, total edges = 40."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][14] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[14][5]?",
+    "options": [
+      "3320",
+      "2160",
+      "3192",
+      "3208"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (14 * 14 + 5) * 8 = 3208."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][31] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[9][16]?",
+    "options": [
+      "2272",
+      "2280",
+      "2404",
+      "1676"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (9 * 31 + 16) * 4 = 2280."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [47, 35, 1, 41, 25, 47, 40, 41], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "166",
+      "174",
+      "102",
+      "149"
+    ],
+    "answer": 3,
     "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 149."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [31, 20, 11, 14, 29, 3, 24, 42], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [34, 27, 27, 30, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "111",
-      "77",
-      "108",
-      "125"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 108."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 18, 25, 33, 32, 20, 23], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "94",
-      "76",
-      "110",
-      "77"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 77."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "487",
-      "400",
-      "429",
-      "1653"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 26% density, total edges = 429."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
-    "options": [
-      "24",
-      "34",
-      "45",
-      "19"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 55% density, total edges = 24."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][36] starts at base address 2600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][4]?",
-    "options": [
-      "4072",
-      "3768",
-      "3784",
-      "2728"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (4 * 36 + 4) * 8 = 3784."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][33] starts at base address 2000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][1]?",
-    "options": [
-      "2248",
-      "2136",
-      "2024",
-      "2120"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (1 * 14 + 3) * 8 = 2136."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[8][21] starts at base address 1100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][8]?",
-    "options": [
-      "1684",
-      "1620",
-      "1604",
-      "1164"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (8 * 8 + 1) * 8 = 1620."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][31] starts at base address 2900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][28]?",
-    "options": [
-      "3620",
-      "3868",
-      "3604",
-      "3348"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (2 * 31 + 28) * 8 = 3620."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "944",
-      "917",
-      "998",
-      "1431"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 66% density, total edges = 944."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][15] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][5]?",
-    "options": [
-      "2610",
-      "2636",
-      "2640",
-      "2670"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (1 * 15 + 5) * 2 = 2640."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
-    "options": [
-      "1128",
-      "675",
-      "747",
-      "699"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 62% density, total edges = 699."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 7, 44, 33, 17, 15, 31, 16, 12, 28, 8], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "243",
-      "254",
-      "226",
-      "203"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 226."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
-    "options": [
-      "528",
-      "353",
-      "337",
-      "386"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 67% density, total edges = 353."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 38, 43, 38, 11, 23, 6, 37], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "165",
-      "159",
-      "130",
+      "84",
+      "135",
+      "118",
       "148"
     ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 148."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 47, 35, 23, 6, 49, 28, 49, 1, 45], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "145",
-      "111",
-      "128",
-      "134"
-    ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 128."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][26] starts at base address 1200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[10][14]?",
-    "options": [
-      "2128",
-      "2200",
-      "2136",
-      "1760"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (14 * 16 + 10) * 4 = 2136."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 118."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 41, 20, 7, 9, 4, 47, 5, 34], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [1, 37, 28, 40, 7, 10], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "85",
-      "81",
-      "102",
-      "89"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 85."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
-    "options": [
-      "21",
-      "31",
-      "45",
-      "16"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 48% density, total edges = 21."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
-    "options": [
-      "854",
-      "907",
-      "828",
-      "1378"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 62% density, total edges = 854."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
-    "options": [
-      "494",
-      "563",
-      "1035",
-      "517"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 50% density, total edges = 517."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 25, 29, 35, 41, 37, 35, 40, 44, 31], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "239",
-      "204",
-      "202",
-      "221"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 204."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 49 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
-    "options": [
-      "529",
-      "1176",
-      "578",
-      "505"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 49*(48)/2 = 1176. At 45% density, total edges = 529."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a Unsorted Array?",
-    "options": [
-      "O(n)",
-      "O(1)",
-      "O(log n)",
-      "O(n log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Unsorted Array, performing a 'Deletion' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
-    "options": [
-      "231",
-      "102",
-      "113",
-      "135"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 49% density, total edges = 113."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [13, 34, 28, 19, 12, 4, 15, 34, 35, 18], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "193",
-      "159",
-      "176",
-      "146"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 159."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [48, 19, 19, 13, 13, 44, 38, 32, 35, 49], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "226",
-      "258",
-      "178",
-      "243"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 226."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][28] starts at base address 2500 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[13][5]?",
-    "options": [
-      "2867",
-      "2565",
-      "2869",
-      "2897"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (13 * 28 + 5) * 1 = 2869."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "406",
-      "91",
-      "105",
-      "134"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 26% density, total edges = 105."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 4, 34, 17, 9, 29, 11, 24, 33, 7], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "179",
-      "128",
-      "172",
-      "155"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 155."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 20%, how many edges are present in G?",
-    "options": [
-      "112",
+      "106",
       "146",
-      "95",
-      "561"
+      "105",
+      "123"
     ],
     "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 20% density, total edges = 112."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
-    "options": [
-      "139",
-      "124",
-      "170",
-      "465"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 30% density, total edges = 139."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[24][29] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[12][2]?",
-    "options": [
-      "2558",
-      "2584",
-      "2560",
-      "2524"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (2 * 24 + 12) * 1 = 2560."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][11] starts at base address 1100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][8]?",
-    "options": [
-      "1140",
-      "1174",
-      "1161",
-      "1163"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (5 * 11 + 8) * 1 = 1163."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 106."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [44, 16, 6, 39, 1, 2, 22], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [21, 10, 50, 50, 17, 48, 27, 10, 36, 38, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "64",
-      "110",
-      "108",
-      "125"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 108."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][20] starts at base address 2700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][9]?",
-    "options": [
-      "2808",
-      "2896",
-      "2816",
-      "2736"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (1 * 20 + 9) * 4 = 2816."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
-      "276",
-      "84",
+      "131",
+      "81",
       "60",
-      "48"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 22% density, total edges = 60."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [41, 4, 5, 10, 48, 4, 32, 49, 16, 21, 31, 45], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "67",
-      "108",
-      "156",
-      "125"
+      "98"
     ],
     "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 108."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 81."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][34] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[17][8]?",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
     "options": [
-      "3772",
-      "3768",
-      "2872",
-      "3840"
+      "65",
+      "82",
+      "136",
+      "57"
     ],
     "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (17 * 34 + 8) * 2 = 3772."
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 48% density, total edges = 65."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[26][19] starts at base address 2900 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[21][8]?",
+    "question": "A 2D array A[10][16] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][3]?",
     "options": [
-      "4716",
-      "4732",
-      "4244",
-      "4940"
+      "2824",
+      "2832",
+      "2560",
+      "2896"
     ],
     "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (8 * 26 + 21) * 8 = 4732."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [24, 13, 17, 21, 46, 27], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "51",
-      "96",
-      "75",
-      "92"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 75."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][30] starts at base address 1800 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[9][1]?",
-    "options": [
-      "1984",
-      "2096",
-      "1968",
-      "1872"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (1 * 14 + 9) * 8 = 1984."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (5 * 16 + 3) * 4 = 2832."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
     "options": [
-      "262",
-      "217",
-      "195",
-      "990"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 22% density, total edges = 217."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][29] starts at base address 1400 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[17][20]?",
-    "options": [
-      "2080",
-      "2274",
-      "2270",
-      "2316"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (20 * 21 + 17) * 2 = 2274."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][14] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[5][3]?",
-    "options": [
-      "2230",
-      "2252",
-      "2266",
-      "2248"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (3 * 7 + 5) * 2 = 2252."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
-    "options": [
-      "66",
-      "37",
-      "25",
-      "19"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 38% density, total edges = 25."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [22, 49, 43, 19, 15, 7, 47, 43, 8, 13], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "162",
-      "172",
-      "133",
-      "155"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 155."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][33] starts at base address 2400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][17]?",
-    "options": [
-      "2549",
-      "2547",
-      "2468",
-      "2582"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (4 * 33 + 17) * 1 = 2549."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][12] starts at base address 1600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[4][4]?",
-    "options": [
-      "1650",
-      "1616",
-      "1652",
-      "1664"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (4 * 12 + 4) * 1 = 1652."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [19, 27, 34, 10, 22, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "134",
-      "112",
-      "93",
-      "129"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 112."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [37, 30, 45, 9, 28, 43], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "75",
-      "112",
-      "129",
-      "157"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 112."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][32] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][26]?",
-    "options": [
-      "2532",
-      "2516",
-      "2132",
-      "2788"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (4 * 32 + 26) * 8 = 2532."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "461",
-      "421",
-      "780",
-      "401"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 54% density, total edges = 421."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "120",
-      "55",
-      "39",
-      "31"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 33% density, total edges = 39."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][29] starts at base address 2100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][13]?",
-    "options": [
-      "3348",
-      "3596",
-      "3364",
-      "2620"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (5 * 29 + 13) * 8 = 3364."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][26] starts at base address 1700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[24][15]?",
-    "options": [
-      "4360",
-      "4256",
-      "3140",
-      "4248"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (24 * 26 + 15) * 4 = 4256."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
-    "options": [
-      "43",
-      "27",
-      "120",
-      "19"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 23% density, total edges = 27."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][20] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][2]?",
-    "options": [
-      "2036",
-      "1876",
-      "1716",
-      "1860"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (1 * 20 + 2) * 8 = 1876."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "716",
-      "1326",
-      "690",
-      "768"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 54% density, total edges = 716."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][14] starts at base address 2800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[14][12]?",
-    "options": [
-      "3212",
-      "3244",
-      "3216",
-      "3136"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (14 * 14 + 12) * 2 = 3216."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][13] starts at base address 2500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[23][7]?",
-    "options": [
-      "2934",
-      "2994",
-      "2822",
-      "2938"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (7 * 28 + 23) * 2 = 2938."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][32] starts at base address 2200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[8][8]?",
-    "options": [
-      "2408",
-      "2406",
-      "2264",
-      "2433"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (8 * 25 + 8) * 1 = 2408."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[8][17] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
-    "options": [
-      "1884",
-      "1844",
-      "1820",
-      "1852"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (1 * 8 + 5) * 4 = 1852."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
-    "options": [
-      "231",
-      "903",
-      "295",
-      "252"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 28% density, total edges = 252."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "265",
-      "202",
-      "861",
-      "223"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 26% density, total edges = 223."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "102",
-      "122",
-      "92",
-      "190"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 54% density, total edges = 102."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][25] starts at base address 1800 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[7][2]?",
-    "options": [
-      "1912",
-      "2128",
-      "2144",
-      "2288"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (2 * 18 + 7) * 8 = 2144."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][21] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[4][1]?",
-    "options": [
-      "1344",
-      "1272",
-      "1232",
-      "1288"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (1 * 7 + 4) * 8 = 1288."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
-    "options": [
-      "333",
-      "368",
-      "595",
-      "316"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 56% density, total edges = 333."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 50 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "1225",
-      "674",
-      "624",
-      "599"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 50*(49)/2 = 1225. At 51% density, total edges = 624."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 24, 15, 25, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "64",
-      "109",
-      "134",
-      "126"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 109."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][35] starts at base address 2100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][3]?",
-    "options": [
-      "2120",
-      "2103",
-      "2122",
-      "2129"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (3 * 7 + 1) * 1 = 2122."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [9, 12, 40, 47, 20, 14, 46, 30], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "156",
-      "159",
-      "133",
-      "142"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 142."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][36] starts at base address 2900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[7][31]?",
-    "options": [
-      "5152",
-      "5160",
-      "5232",
-      "3768"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (31 * 18 + 7) * 4 = 5160."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [38, 40, 25, 18, 45, 27, 31, 20, 28, 3, 46], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
-    "options": [
-      "289",
-      "272",
-      "234",
-      "300"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 272."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[11][38] starts at base address 2300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][22]?",
-    "options": [
-      "4244",
-      "2476",
-      "4228",
-      "4332"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (22 * 11 + 1) * 8 = 4244."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [46, 16, 24, 41, 32, 9, 21], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "110",
-      "40",
-      "86",
-      "103"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 86."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 21, 49, 25, 10, 38, 46, 34, 50], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "242",
-      "259",
-      "225",
-      "223"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 225."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][38] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][14]?",
-    "options": [
-      "1596",
-      "1524",
-      "1616",
-      "1592"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (14 * 10 + 8) * 2 = 1596."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][33] starts at base address 2800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][4]?",
-    "options": [
-      "3272",
-      "3396",
-      "2864",
-      "3280"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (4 * 29 + 4) * 4 = 3280."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][35] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][31]?",
-    "options": [
-      "1570",
-      "1586",
-      "1262",
-      "1574"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (31 * 6 + 1) * 2 = 1574."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Insertion' operation on a Sorted Array?",
-    "options": [
-      "O(n)",
-      "O(n log n)",
-      "O(1)",
-      "O(log n)"
-    ],
-    "answer": 0,
-    "explanation": "For Sorted Array, performing a 'Insertion' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][21] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[18][5]?",
-    "options": [
-      "4648",
-      "4832",
-      "2320",
-      "4664"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (18 * 21 + 5) * 8 = 4664."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
-      "183",
-      "666",
-      "128",
-      "146"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 22% density, total edges = 146."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][27] starts at base address 2900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[11][5]?",
-    "options": [
-      "3222",
-      "3168",
-      "3010",
-      "3172"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (5 * 25 + 11) * 2 = 3172."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][10] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[9][3]?",
-    "options": [
-      "2326",
-      "2322",
-      "2362",
-      "2254"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (3 * 18 + 9) * 2 = 2326."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][10] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[18][2]?",
-    "options": [
-      "3040",
-      "3056",
-      "1888",
-      "3136"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (18 * 10 + 2) * 8 = 3056."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][16] starts at base address 2500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][10]?",
-    "options": [
-      "3028",
-      "2660",
-      "3036",
-      "3088"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (10 * 13 + 4) * 4 = 3036."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [49, 48, 40, 39, 36, 44, 4, 11], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "277",
-      "211",
-      "264",
-      "260"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 260."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
-    "options": [
-      "485",
-      "463",
-      "530",
-      "990"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 49% density, total edges = 485."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
-    "options": [
-      "700",
-      "727",
-      "782",
+      "284",
+      "311",
+      "366",
       "1485"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 49% density, total edges = 727."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
-    "options": [
-      "73",
-      "91",
-      "153",
-      "64"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 48% density, total edges = 73."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [3, 44, 9, 47, 9, 15, 32, 42], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "53",
-      "65",
-      "56",
-      "73"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 56."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [47, 6, 28, 21, 48, 6, 28, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "198",
-      "150",
-      "167",
-      "103"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 150."
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 21% density, total edges = 311."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[18][22] starts at base address 2000 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[7][19]?",
+    "question": "A 2D array A[25][36] starts at base address 2000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[12][14]?",
     "options": [
-      "2171",
-      "2195",
-      "2173",
-      "2133"
+      "5096",
+      "4880",
+      "3344",
+      "4896"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (7 * 22 + 19) * 1 = 2173."
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (14 * 25 + 12) * 8 = 4896."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "386",
+      "1485",
+      "441",
+      "359"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 26% density, total edges = 386."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [19, 43, 11, 3, 11, 50, 13, 40, 37, 37, 38, 15], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "question": "Given the 1D integer array [27, 33, 43, 10, 32, 29, 8, 2, 8, 27], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "84",
-      "90",
-      "73",
-      "54"
+      "123",
+      "130",
+      "86",
+      "113"
     ],
-    "answer": 2,
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 113."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][35] starts at base address 1800 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][5]?",
+    "options": [
+      "2100",
+      "2240",
+      "2092",
+      "1840"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (2 * 35 + 5) * 4 = 2100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [28, 44, 37, 44, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "125",
+      "153",
+      "170",
+      "197"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 153."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][15] starts at base address 2200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][7]?",
+    "options": [
+      "2348",
+      "2408",
+      "2256",
+      "2340"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (2 * 15 + 7) * 4 = 2348."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "743",
+      "801",
+      "714",
+      "1653"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 45% density, total edges = 743."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [47, 25, 50, 42, 9, 4, 42, 2], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "122",
+      "75",
+      "172",
+      "139"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 122."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][24] starts at base address 1200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][19]?",
+    "options": [
+      "1238",
+      "1282",
+      "1334",
+      "1286"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (1 * 24 + 19) * 2 = 1286."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "9",
+      "25",
+      "55",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 26% density, total edges = 14."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 25, 1, 11, 45, 45, 3, 7, 11, 25, 33], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "95",
+      "82",
+      "112",
+      "140"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 95."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][12] starts at base address 2100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[14][9]?",
+    "options": [
+      "2808",
+      "2856",
+      "2604",
+      "2800"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (14 * 12 + 9) * 4 = 2808."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "300",
+      "105",
+      "93",
+      "130"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 35% density, total edges = 105."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][18] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
+    "options": [
+      "1440",
+      "1240",
+      "1424",
+      "1640"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (1 * 25 + 5) * 8 = 1440."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][26] starts at base address 1900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[20][23]?",
+    "options": [
+      "2820",
+      "3038",
+      "2982",
+      "2986"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (20 * 26 + 23) * 2 = 2986."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][15] starts at base address 2100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[11][3]?",
+    "options": [
+      "3444",
+      "3564",
+      "2364",
+      "3428"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (11 * 15 + 3) * 8 = 3444."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][31] starts at base address 1500 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[9][8]?",
+    "options": [
+      "1787",
+      "1572",
+      "1818",
+      "1785"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (9 * 31 + 8) * 1 = 1787."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 49, 19, 9, 3, 48], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "92",
+      "73",
+      "90",
+      "68"
+    ],
+    "answer": 1,
     "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 73."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
     "options": [
-      "918",
-      "834",
-      "862",
-      "1540"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 56% density, total edges = 862."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][23] starts at base address 2400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[10][21]?",
-    "options": [
-      "3240",
-      "3396",
-      "3404",
-      "3496"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (10 * 23 + 21) * 4 = 3404."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
-    "options": [
-      "666",
-      "368",
-      "386",
-      "423"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 58% density, total edges = 386."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][23] starts at base address 2100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][13]?",
-    "options": [
-      "2339",
-      "2191",
-      "2359",
-      "2341"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (13 * 18 + 7) * 1 = 2341."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][23] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[11][15]?",
-    "options": [
-      "1447",
-      "1265",
-      "1426",
-      "1424"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (15 * 21 + 11) * 1 = 1426."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
-    "options": [
-      "48",
-      "136",
-      "31",
-      "23"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 23% density, total edges = 31."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 5, 16, 37, 1, 24], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "64",
-      "81",
-      "59",
-      "65"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 64."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][28] starts at base address 2700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][10]?",
-    "options": [
-      "2888",
-      "2740",
-      "2832",
-      "2828"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (2 * 28 + 10) * 2 = 2832."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][31] starts at base address 2300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][1]?",
-    "options": [
-      "2340",
-      "3532",
-      "3796",
-      "3548"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (5 * 31 + 1) * 8 = 3548."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 20, 21, 41, 24], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "149",
-      "82",
-      "125",
-      "108"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 108."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [40, 2, 34, 48, 46, 40, 2, 49, 34, 45, 38], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "227",
-      "250",
-      "170",
-      "210"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 210."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
-    "options": [
-      "780",
-      "475",
-      "515",
-      "455"
+      "406",
+      "150",
+      "179",
+      "136"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 61% density, total edges = 475."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][20] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][11]?",
-    "options": [
-      "1263",
-      "1277",
-      "1199",
-      "1261"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (11 * 14 + 9) * 1 = 1263."
+    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 37% density, total edges = 150."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [32, 23, 4, 48, 24, 36, 7, 10, 22], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [7, 15, 14, 25, 1, 31, 7, 45, 18, 14, 29], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
-      "135",
-      "203",
-      "167",
-      "184"
+      "110",
+      "124",
+      "86",
+      "93"
     ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 167."
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 93."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[12][23] starts at base address 2400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][20]?",
+    "question": "A 2D array A[15][34] starts at base address 2700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[10][4]?",
     "options": [
-      "2720",
-      "3376",
-      "3424",
-      "3368"
+      "2860",
+      "4076",
+      "4068",
+      "4212"
     ],
     "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (20 * 12 + 4) * 4 = 3376."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (10 * 34 + 4) * 4 = 4076."
   },
   {
     "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [14, 19, 40, 25, 6, 39, 50, 23, 15, 43, 16, 30], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
     "options": [
-      "216",
-      "202",
-      "239",
-      "233"
+      "1275",
+      "624",
+      "548",
+      "573"
     ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 216."
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 45% density, total edges = 573."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[27][35] starts at base address 1200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[10][23]?",
+    "question": "A 2D array A[10][21] starts at base address 2100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][5]?",
     "options": [
-      "1946",
-      "1942",
-      "2016",
-      "1660"
+      "2204",
+      "2196",
+      "2288",
+      "2120"
     ],
     "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (10 * 35 + 23) * 2 = 1946."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 25, 9, 7, 8, 21, 9], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "96",
-      "70",
-      "75",
-      "92"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 75."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (1 * 21 + 5) * 4 = 2204."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
     "options": [
-      "332",
-      "280",
-      "297",
-      "595"
+      "535",
+      "484",
+      "459",
+      "1275"
     ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 50% density, total edges = 297."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 38% density, total edges = 484."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
     "options": [
-      "295",
+      "414",
+      "344",
       "1081",
-      "248",
-      "225"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 23% density, total edges = 248."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
-    "options": [
-      "1126",
-      "1069",
-      "1596",
-      "1041"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 67% density, total edges = 1069."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
-    "options": [
-      "31",
-      "66",
-      "49",
-      "37"
+      "367"
     ],
     "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 57% density, total edges = 37."
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 34% density, total edges = 367."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "options": [
+      "329",
+      "383",
+      "1431",
+      "302"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 23% density, total edges = 329."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "417",
+      "446",
+      "1653",
+      "504"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 27% density, total edges = 446."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][39] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[8][34]?",
+    "options": [
+      "2056",
+      "2083",
+      "1472",
+      "2058"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (34 * 25 + 8) * 1 = 2058."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][20] starts at base address 1100 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[9][15]?",
+    "options": [
+      "1630",
+      "1594",
+      "1598",
+      "1370"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (15 * 16 + 9) * 2 = 1598."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 39, 48, 17, 15, 23, 18, 36], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "191",
+      "173",
+      "160",
+      "190"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 173."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 44, 22, 41, 4, 35], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "66",
+      "98",
+      "93",
+      "76"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [32, 21, 44, 50, 15, 27, 16, 8, 41, 6, 34, 5], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "222",
+      "254",
+      "271",
+      "295"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 254."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "276",
+      "340",
+      "903",
+      "297"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 33% density, total edges = 297."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
     "options": [
       "35",
-      "16",
-      "78",
-      "22"
+      "25",
+      "20",
+      "45"
     ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 29% density, total edges = 22."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "1326",
-      "411",
-      "437",
-      "489"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 33% density, total edges = 437."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 57% density, total edges = 25."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[17][10] starts at base address 2500 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][5]?",
+    "question": "A 2D array A[14][26] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][20]?",
     "options": [
-      "2570",
-      "2546",
-      "2550",
-      "2520"
+      "2720",
+      "2796",
+      "2848",
+      "2792"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (2 * 10 + 5) * 2 = 2550."
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (3 * 26 + 20) * 2 = 2796."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[13][28] starts at base address 1700 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][18]?",
+    "question": "A 2D array A[6][12] starts at base address 2800 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][4]?",
     "options": [
-      "2200",
-      "1808",
-      "2174",
-      "2170"
+      "3008",
+      "2952",
+      "2960",
+      "2848"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (18 * 13 + 3) * 2 = 2174."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][36] starts at base address 1100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[19][10]?",
-    "options": [
-      "2620",
-      "6940",
-      "6652",
-      "6636"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (19 * 36 + 10) * 8 = 6652."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "328",
-      "1081",
-      "281",
-      "258"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 26% density, total edges = 281."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (3 * 12 + 4) * 4 = 2960."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 42, 11, 31, 4, 1, 44, 20, 49, 29], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [7, 38, 6, 34, 1, 16, 22, 35, 15, 34, 45], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
     "options": [
-      "100",
-      "117",
-      "84",
-      "131"
+      "189",
+      "191",
+      "174",
+      "167"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 174."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][33] starts at base address 2600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[22][22]?",
+    "options": [
+      "7512",
+      "6472",
+      "7528",
+      "7744"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (22 * 27 + 22) * 8 = 7528."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][33] starts at base address 2200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[17][13]?",
+    "options": [
+      "4920",
+      "4936",
+      "3968",
+      "5136"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (13 * 25 + 17) * 8 = 4936."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][16] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][11]?",
+    "options": [
+      "2468",
+      "2076",
+      "2422",
+      "2418"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (11 * 23 + 8) * 2 = 2422."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "569",
+      "615",
+      "1035",
+      "546"
     ],
     "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 100."
+    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 55% density, total edges = 569."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
     "options": [
-      "582",
-      "820",
-      "521",
-      "541"
+      "327",
+      "496",
+      "359",
+      "311"
     ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 66% density, total edges = 541."
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 66% density, total edges = 327."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [39, 45, 29, 22, 9, 12, 10, 30, 21], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "question": "Given the 1D integer array [12, 26, 18, 29, 30, 9, 4], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
-      "130",
-      "113",
-      "142",
+      "112",
+      "133",
+      "141",
+      "124"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 124."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 42, 6, 24, 12, 27], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "93",
+      "110",
+      "105",
+      "84"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 93."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [29, 26, 3, 47, 5, 22, 19, 37], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "151",
+      "168",
+      "122",
+      "170"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 151."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 37, 45, 16, 36, 33, 38, 50], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "150",
+      "149",
+      "133",
+      "98"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[24][15] starts at base address 1300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[16][9]?",
+    "options": [
+      "2288",
+      "2296",
+      "2356",
+      "1876"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (16 * 15 + 9) * 4 = 2296."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][16] starts at base address 2700 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[5][8]?",
+    "options": [
+      "2939",
+      "2913",
+      "2911",
+      "2740"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (8 * 26 + 5) * 1 = 2913."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][24] starts at base address 2300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][19]?",
+    "options": [
+      "3900",
+      "3892",
+      "3984",
+      "2376"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (19 * 21 + 1) * 4 = 3900."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][33] starts at base address 2600 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[24][21]?",
+    "options": [
+      "3240",
+      "3104",
+      "3210",
+      "3212"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (21 * 28 + 24) * 1 = 3212."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
+    "options": [
+      "231",
+      "300",
+      "206",
+      "194"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 69% density, total edges = 206."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 44, 37, 24, 25, 48, 9, 41, 46], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "307",
+      "266",
+      "228",
+      "283"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 266."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][33] starts at base address 2700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][28]?",
+    "options": [
+      "3596",
+      "3860",
+      "4000",
+      "3868"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (8 * 33 + 28) * 4 = 3868."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 46, 5, 48, 4, 23, 21], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "126",
+      "157",
+      "140",
+      "163"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 140."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][24] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][5]?",
+    "options": [
+      "1760",
+      "2392",
+      "2408",
+      "2600"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (4 * 24 + 5) * 8 = 2408."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [32, 19, 37, 13, 48], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "105",
+      "88",
+      "125",
+      "56"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 33, 24, 44, 34, 11, 41, 29, 39, 29, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "101",
+      "105",
+      "149",
+      "122"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 105."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[23][29] starts at base address 1300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][10]?",
+    "options": [
+      "1460",
+      "2328",
+      "2228",
+      "2236"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (10 * 23 + 4) * 4 = 2236."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 39, 31, 1, 40, 35, 44], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "164",
+      "124",
+      "111",
+      "141"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 124."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [33, 11, 11, 17, 30, 30, 44, 47, 12, 21], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "190",
+      "240",
+      "223",
+      "270"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 223."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][26] starts at base address 2600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[10][21]?",
+    "options": [
+      "7784",
+      "4280",
+      "7536",
+      "7552"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (21 * 29 + 10) * 8 = 7552."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [16, 34, 16, 17, 15, 20, 11, 13, 34, 7], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "135",
+      "118",
+      "102",
+      "138"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 118."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [26, 31, 17, 32, 26, 17, 17, 15, 9, 43, 22], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "91",
+      "48",
+      "91",
       "74"
     ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 113."
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 74."
   },
   {
     "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][11] starts at base address 2500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[11][9]?",
     "options": [
-      "425",
-      "1081",
-      "378",
-      "355"
+      "4084",
+      "4100",
+      "4268",
+      "3292"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (9 * 21 + 11) * 8 = 4100."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][20] starts at base address 2500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[8][13]?",
+    "options": [
+      "3428",
+      "3364",
+      "2916",
+      "3356"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (13 * 16 + 8) * 4 = 3364."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][26] starts at base address 2000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[15][15]?",
+    "options": [
+      "5448",
+      "3800",
+      "5240",
+      "5224"
     ],
     "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 35% density, total edges = 378."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "40",
-      "22",
-      "66",
-      "28"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 43% density, total edges = 28."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (15 * 26 + 15) * 8 = 5240."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [43, 46, 34, 38, 49, 9, 48, 7, 15, 8], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [48, 37, 32, 16, 15, 24, 39, 7, 5, 30, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "227",
-      "167",
-      "210",
-      "259"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 210."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][17] starts at base address 2200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[9][9]?",
-    "options": [
-      "3496",
-      "2848",
-      "3632",
-      "3480"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (9 * 17 + 9) * 8 = 3496."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][10] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][4]?",
-    "options": [
-      "1348",
-      "1216",
-      "1384",
-      "1344"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (4 * 18 + 2) * 2 = 1348."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [39, 22, 49, 50, 29, 7, 8, 48], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "71",
-      "159",
-      "127",
-      "110"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 110."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
-    "options": [
-      "1081",
-      "236",
-      "306",
-      "259"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 24% density, total edges = 259."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
-    "options": [
-      "136",
-      "39",
-      "47",
-      "64"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 35% density, total edges = 47."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][16] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][14]?",
-    "options": [
-      "1928",
-      "1930",
-      "1946",
-      "1914"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (1 * 16 + 14) * 1 = 1930."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][32] starts at base address 1600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][15]?",
-    "options": [
-      "2684",
-      "2548",
-      "2020",
-      "2556"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (7 * 32 + 15) * 4 = 2556."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
-    "options": [
-      "86",
-      "105",
-      "64",
-      "71"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 68% density, total edges = 71."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 15, 12, 20, 35], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "80",
-      "83",
-      "47",
-      "63"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 63."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 35, 7, 43, 28, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "180",
-      "163",
-      "113",
-      "191"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 163."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 48, 15, 45, 42, 27, 4, 33, 32, 8], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "237",
-      "253",
-      "220",
-      "214"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 220."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][12] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[6][4]?",
-    "options": [
-      "1988",
-      "1976",
-      "1924",
-      "1974"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (6 * 12 + 4) * 1 = 1976."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [29, 43, 25, 37, 37, 15, 39, 5], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "201",
-      "157",
-      "186",
-      "203"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 186."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
-    "options": [
-      "595",
-      "273",
-      "256",
-      "308"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 46% density, total edges = 273."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
-    "options": [
-      "88",
-      "153",
-      "79",
-      "106"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 58% density, total edges = 88."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][33] starts at base address 2800 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][23]?",
-    "options": [
-      "3292",
-      "3007",
-      "3290",
-      "3313"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (23 * 21 + 9) * 1 = 3292."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
-    "options": [
-      "479",
-      "499",
-      "539",
-      "780"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 64% density, total edges = 499."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 5, 41, 47, 22, 2, 22], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "79",
-      "96",
-      "120",
-      "46"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 79."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][31] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[13][2]?",
-    "options": [
-      "2302",
-      "2252",
-      "2346",
-      "2306"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (2 * 20 + 13) * 2 = 2306."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [3, 33, 5, 36, 43, 18, 30, 6, 23, 17, 2, 16], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "211",
-      "231",
-      "214",
-      "231"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 214."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][12] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
-    "options": [
-      "2612",
-      "2604",
-      "2660",
-      "2532"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (2 * 12 + 4) * 4 = 2612."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
-    "options": [
-      "328",
-      "288",
-      "780",
-      "268"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 37% density, total edges = 288."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [20, 3, 18, 48, 8, 36], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "77",
-      "97",
-      "114",
-      "105"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 97."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][39] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][33]?",
-    "options": [
-      "3628",
-      "3620",
-      "2832",
-      "3656"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (33 * 7 + 1) * 4 = 3628."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
-    "options": [
-      "52",
-      "68",
-      "120",
-      "44"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 44% density, total edges = 52."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "441",
-      "511",
-      "1081",
-      "464"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 43% density, total edges = 464."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
-    "options": [
-      "243",
-      "285",
-      "257",
-      "378"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 68% density, total edges = 257."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][28] starts at base address 2300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[9][13]?",
-    "options": [
-      "2417",
-      "2563",
-      "2593",
-      "2565"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (9 * 28 + 13) * 1 = 2565."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 8, 41, 24, 21, 34, 14, 24, 32, 29, 9, 19], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "210",
-      "217",
-      "166",
-      "193"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 193."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
+      "150",
       "149",
-      "100",
-      "528",
-      "116"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 22% density, total edges = 116."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [38, 25, 33, 28, 27, 46, 14, 3, 28, 43, 1], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "214",
-      "231",
-      "176",
-      "217"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 214."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
-    "options": [
-      "162",
-      "129",
-      "231",
-      "140"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 61% density, total edges = 140."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
-    "options": [
-      "469",
-      "666",
-      "432",
-      "414"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 65% density, total edges = 432."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
-    "options": [
-      "584",
-      "515",
-      "538",
-      "1035"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 52% density, total edges = 538."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
-    "options": [
-      "130",
-      "100",
       "85",
-      "435"
+      "133"
     ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 23% density, total edges = 100."
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 133."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
     "options": [
-      "57",
-      "91",
-      "71",
-      "50"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 63% density, total edges = 57."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][10] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][4]?",
-    "options": [
-      "2216",
-      "2340",
-      "2374",
-      "2336"
+      "1485",
+      "801",
+      "774",
+      "856"
     ],
     "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (4 * 17 + 2) * 2 = 2340."
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 54% density, total edges = 801."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
     "options": [
-      "267",
-      "288",
-      "331",
-      "903"
+      "1026",
+      "942",
+      "1540",
+      "970"
     ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 32% density, total edges = 288."
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 63% density, total edges = 970."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
     "options": [
-      "903",
-      "207",
-      "250",
-      "186"
+      "496",
+      "152",
+      "200",
+      "168"
     ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 23% density, total edges = 207."
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 34% density, total edges = 168."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [9, 19, 46, 38, 35, 30], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [20, 30, 9, 1, 27, 9, 21, 43, 40], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
     "options": [
-      "138",
-      "164",
-      "182",
-      "147"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 147."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "903",
-      "638",
-      "574",
-      "595"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 66% density, total edges = 595."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [40, 19, 41, 8, 39, 2, 21], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "125",
-      "68",
-      "108",
-      "116"
+      "203",
+      "140",
+      "160",
+      "177"
     ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 108."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 160."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][35] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][1]?",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
     "options": [
-      "1852",
-      "1804",
-      "1824",
-      "1828"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (1 * 12 + 2) * 2 = 1828."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 4, 40, 11, 44], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "44",
-      "94",
-      "117",
-      "77"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 77."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 40, 28, 22, 15, 19, 44], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "149",
-      "132",
-      "147",
-      "105"
+      "45",
+      "32",
+      "26",
+      "78"
     ],
     "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 132."
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 42% density, total edges = 32."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 11, 7, 42, 31, 23, 34], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [30, 18, 7, 21, 30, 50, 6], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
       "173",
-      "179",
-      "114",
+      "126",
+      "206",
       "156"
     ],
     "answer": 3,
@@ -8376,3305 +10798,29 @@ window.quizData.dsa = [
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
     "options": [
-      "47",
+      "600",
+      "528",
+      "552",
+      "1128"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 49% density, total edges = 552."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
       "66",
-      "35",
-      "29"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 54% density, total edges = 35."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
-    "options": [
-      "21",
-      "15",
-      "66",
-      "33"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 32% density, total edges = 21."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 43, 45, 8, 42, 41, 1, 15, 41, 43, 47, 2], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
-    "options": [
-      "377",
-      "326",
-      "347",
-      "330"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 330."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][25] starts at base address 1000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[9][23]?",
-    "options": [
-      "1492",
-      "1546",
-      "1414",
-      "1496"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (9 * 25 + 23) * 2 = 1496."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 49%, how many edges are present in G?",
-    "options": [
-      "675",
-      "649",
-      "1378",
-      "728"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 49% density, total edges = 675."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [49, 40, 8, 27, 46, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "105",
-      "48",
-      "97",
-      "114"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 97."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
-    "options": [
-      "120",
-      "325",
-      "81",
-      "94"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 29% density, total edges = 94."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
-    "options": [
-      "52",
-      "34",
-      "40",
-      "66"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 62% density, total edges = 40."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [49, 35, 5, 46, 41, 47, 9, 25, 44, 41, 3], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "241",
-      "232",
-      "183",
-      "249"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 232."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 21, 33, 1, 9, 26, 19], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "137",
-      "121",
-      "104",
-      "54"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 104."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
-    "options": [
-      "780",
-      "374",
-      "354",
-      "414"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 48% density, total edges = 374."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[11][13] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][1]?",
-    "options": [
-      "1912",
-      "2032",
-      "1928",
-      "1440"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (5 * 13 + 1) * 8 = 1928."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 35, 26, 3, 21, 29], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "151",
-      "147",
-      "85",
-      "130"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 130."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
-    "options": [
-      "43",
-      "190",
-      "53",
-      "73"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 28% density, total edges = 53."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [40, 26, 15, 9, 22, 10, 50, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "90",
-      "107",
-      "99",
-      "50"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 90."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [19, 14, 19, 20, 47], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "52",
-      "33",
-      "71",
-      "69"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 52."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][33] starts at base address 2200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][3]?",
-    "options": [
-      "2218",
-      "2285",
-      "2287",
-      "2314"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (3 * 27 + 6) * 1 = 2287."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 47, 10, 28, 31, 45, 23, 16, 26, 17], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
-    "options": [
-      "262",
-      "253",
-      "226",
-      "236"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 236."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 2, 16, 47, 18, 35, 16, 26, 32, 27], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "213",
-      "204",
-      "160",
-      "187"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 187."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 49, 30, 20, 41, 21, 40, 40, 18, 21, 48, 42], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "211",
-      "251",
-      "201",
-      "228"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 211."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [44, 14, 43, 19, 34, 39, 46], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "118",
-      "144",
-      "101",
-      "57"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 101."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [48, 25, 4, 28, 48, 11, 14], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "77",
-      "94",
-      "81",
-      "29"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 77."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][37] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][14]?",
-    "options": [
-      "1812",
-      "1774",
-      "1328",
-      "1778"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (14 * 17 + 1) * 2 = 1778."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "277",
-      "378",
-      "249",
-      "235"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 66% density, total edges = 249."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][17] starts at base address 2100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][1]?",
-    "options": [
-      "2348",
-      "2588",
-      "2140",
-      "2364"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (1 * 28 + 5) * 8 = 2364."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [43, 45, 30, 14, 44, 19], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "118",
-      "75",
-      "135",
-      "148"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 118."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [29, 31, 27, 2, 23], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "91",
-      "60",
-      "89",
-      "106"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 89."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
-    "options": [
-      "105",
-      "28",
-      "35",
-      "50"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 34% density, total edges = 35."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][20] starts at base address 1800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[9][12]?",
-    "options": [
-      "3336",
-      "3320",
-      "2664",
-      "3496"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (9 * 20 + 12) * 8 = 3336."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 17, 16, 11, 31, 9, 14, 45, 14, 45, 37, 25], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "98",
-      "138",
-      "135",
-      "121"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 121."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
-    "options": [
-      "470",
-      "388",
-      "415",
-      "1485"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 28% density, total edges = 415."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][14] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][7]?",
-    "options": [
-      "1536",
-      "1312",
-      "1496",
-      "1480"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (7 * 5 + 2) * 8 = 1496."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[11][36] starts at base address 2000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][21]?",
-    "options": [
-      "3944",
-      "3856",
-      "3840",
-      "2168"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (21 * 11 + 1) * 8 = 3856."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
-    "options": [
-      "45",
-      "39",
-      "78",
-      "58"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 58% density, total edges = 45."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 25%, how many edges are present in G?",
-    "options": [
-      "344",
-      "371",
-      "1485",
-      "426"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 25% density, total edges = 371."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 39, 32, 16, 31, 4, 44, 15, 35, 4, 29], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "171",
-      "122",
-      "167",
-      "184"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 167."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Complexity Analysis",
-    "difficulty": "Medium",
-    "question": "What is the time complexity of performing a 'Deletion' operation on a Sorted Array?",
-    "options": [
-      "O(log n)",
-      "O(n log n)",
-      "O(1)",
-      "O(n)"
-    ],
-    "answer": 3,
-    "explanation": "For Sorted Array, performing a 'Deletion' takes O(n)."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [8, 40, 11, 4, 4, 13, 19, 44, 10], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "91",
-      "118",
-      "99",
-      "116"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 99."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
-    "options": [
-      "1485",
-      "418",
-      "500",
-      "445"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 30% density, total edges = 445."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][24] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[7][4]?",
-    "options": [
-      "2268",
-      "2180",
-      "1912",
-      "2172"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 22 + 7) * 4 = 2180."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
-    "options": [
-      "380",
-      "438",
-      "351",
-      "1653"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 23% density, total edges = 380."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][37] starts at base address 1800 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[9][16]?",
-    "options": [
-      "3196",
-      "3188",
-      "2376",
-      "3344"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (9 * 37 + 16) * 4 = 3196."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][12] starts at base address 1700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[21][1]?",
-    "options": [
-      "1742",
-      "2202",
-      "2206",
-      "2230"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (21 * 12 + 1) * 2 = 2206."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
-    "options": [
-      "728",
-      "658",
-      "681",
-      "1081"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 63% density, total edges = 681."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 4, 25, 26, 14, 3, 16, 24, 37], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "131",
-      "117",
-      "114",
-      "72"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 114."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
-    "options": [
-      "559",
-      "477",
-      "504",
-      "1485"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 34% density, total edges = 504."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
       "29",
-      "45",
-      "14",
-      "19"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 43% density, total edges = 19."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 25%, how many edges are present in G?",
-    "options": [
-      "190",
-      "67",
-      "47",
-      "37"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 25% density, total edges = 47."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][36] starts at base address 2200 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][22]?",
-    "options": [
-      "3492",
-      "3436",
-      "3428",
-      "2288"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (22 * 14 + 1) * 4 = 3436."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 46%, how many edges are present in G?",
-    "options": [
-      "818",
-      "731",
-      "760",
-      "1653"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 46% density, total edges = 760."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
-    "options": [
-      "378",
-      "260",
-      "288",
-      "246"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 69% density, total edges = 260."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
-    "options": [
-      "144",
-      "351",
-      "157",
-      "184"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 45% density, total edges = 157."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "13",
-      "45",
-      "18",
-      "28"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 41% density, total edges = 18."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
-    "options": [
-      "973",
-      "1596",
-      "945",
-      "1030"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 61% density, total edges = 973."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][21] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][2]?",
-    "options": [
-      "1148",
-      "1156",
-      "1232",
-      "1008"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (2 * 19 + 1) * 4 = 1156."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 46, 29, 7, 7], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "102",
-      "75",
-      "114",
-      "85"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 85."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 13, 20, 36, 24, 2], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "118",
-      "94",
-      "111",
-      "93"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 94."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [3, 41, 36, 21, 18, 29, 41, 32, 9, 24, 31, 24], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "278",
-      "271",
-      "251",
-      "254"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 254."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][38] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[21][14]?",
-    "options": [
-      "2582",
-      "2632",
-      "2586",
-      "2488"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (14 * 23 + 21) * 2 = 2586."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
-    "options": [
-      "241",
-      "561",
-      "207",
-      "190"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 37% density, total edges = 207."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][22] starts at base address 1000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][17]?",
-    "options": [
-      "1235",
-      "1220",
-      "1017",
-      "1222"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (17 * 13 + 1) * 1 = 1222."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [39, 13, 13, 4, 12, 4, 14, 38, 27, 3, 10, 48], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
-    "options": [
-      "138",
-      "187",
-      "177",
-      "194"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 177."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 47, 6, 7, 47, 16, 48, 14, 15, 20, 25], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "120",
-      "103",
-      "53",
-      "109"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 103."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
-    "options": [
-      "448",
-      "508",
-      "780",
-      "468"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 60% density, total edges = 468."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 46, 37, 15, 8, 14], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "120",
-      "122",
-      "98",
-      "105"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 105."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "480",
-      "1035",
-      "411",
-      "434"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 42% density, total edges = 434."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [8, 2, 36, 36, 15, 7, 49, 20, 12, 20], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "96",
-      "111",
-      "104",
-      "121"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 104."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "66",
-      "43",
-      "37",
-      "55"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 66% density, total edges = 43."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][28] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[15][22]?",
-    "options": [
-      "3820",
-      "4380",
-      "4260",
-      "4268"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (15 * 28 + 22) * 4 = 4268."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][33] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[6][22]?",
-    "options": [
-      "5420",
-      "5404",
-      "2556",
-      "5596"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (22 * 22 + 6) * 8 = 5420."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[8][13] starts at base address 1200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][3]?",
-    "options": [
-      "1640",
-      "1536",
-      "1272",
-      "1520"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (3 * 13 + 3) * 8 = 1536."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 41, 17, 36, 40, 30], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "219",
-      "179",
-      "134",
-      "196"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 179."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 42, 32, 40, 3, 35, 25, 40, 9, 50, 1, 43], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
-    "options": [
-      "283",
-      "300",
-      "277",
-      "284"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 283."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][12] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][6]?",
-    "options": [
-      "1542",
-      "1609",
-      "1607",
-      "1626"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (6 * 17 + 7) * 1 = 1609."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
-    "options": [
-      "94",
-      "76",
-      "153",
-      "67"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 50% density, total edges = 76."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 37, 35, 14, 17, 5, 31], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "125",
-      "72",
-      "107",
-      "90"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 90."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][25] starts at base address 1700 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[12][13]?",
-    "options": [
-      "3340",
-      "3356",
-      "3476",
-      "2948"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1700 + (13 * 15 + 12) * 8 = 3356."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "240",
-      "192",
-      "208",
-      "496"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 42% density, total edges = 208."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
-    "options": [
-      "719",
-      "1653",
-      "661",
-      "632"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 40% density, total edges = 661."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][13] starts at base address 2700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[8][4]?",
-    "options": [
-      "2732",
-      "2808",
-      "2821",
-      "2806"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (8 * 13 + 4) * 1 = 2808."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [29, 31, 17, 47, 12, 6, 8, 34, 7], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "150",
-      "167",
-      "158",
-      "121"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 150."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][28] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][7]?",
-    "options": [
-      "1356",
-      "1580",
-      "1564",
-      "1804"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (1 * 28 + 7) * 8 = 1580."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[11][25] starts at base address 2200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][23]?",
-    "options": [
-      "2292",
-      "2710",
-      "2732",
-      "2706"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (23 * 11 + 2) * 2 = 2710."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 4, 33, 11, 8, 10, 36, 50, 35], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "44",
-      "61",
-      "77",
-      "37"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 44."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 59 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
-    "options": [
-      "914",
-      "826",
-      "1711",
-      "855"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 59*(58)/2 = 1711. At 50% density, total edges = 855."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[11][16] starts at base address 2200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][7]?",
-    "options": [
-      "2237",
-      "2214",
-      "2239",
-      "2255"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (2 * 16 + 7) * 1 = 2239."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][20] starts at base address 2100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[7][5]?",
-    "options": [
-      "2240",
-      "2672",
-      "2760",
-      "2680"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (7 * 20 + 5) * 4 = 2680."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 30, 27, 38, 31, 18, 30, 21, 5, 13, 4, 43], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "76",
-      "86",
-      "59",
-      "57"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 59."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "283",
-      "302",
-      "340",
-      "703"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 43% density, total edges = 302."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [28, 1, 9, 40, 31, 34, 25, 24, 49, 34], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "50",
-      "95",
-      "118",
-      "78"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 78."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 39, 20, 5, 28], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "97",
-      "77",
-      "94",
-      "59"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 77."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
-    "options": [
-      "232",
-      "496",
-      "280",
-      "248"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 50% density, total edges = 248."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [35, 38, 39, 48, 2, 31, 13], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "151",
-      "112",
-      "129",
-      "77"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 112."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 38, 19, 50, 28, 34, 43, 34, 50, 31], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "159",
-      "109",
-      "107",
-      "126"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 109."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [3, 43, 13, 31, 50, 4, 20, 24, 37], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "161",
-      "181",
-      "184",
-      "164"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 164."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 44, 11, 3, 21, 22, 36, 11, 47, 15, 23], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "148",
-      "210",
-      "193",
-      "204"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 193."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [49, 13, 1, 8, 15], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "14",
-      "64",
-      "63",
-      "80"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 63."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][36] starts at base address 2500 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[18][20]?",
-    "options": [
-      "3836",
-      "3908",
-      "3220",
-      "3832"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (18 * 36 + 20) * 2 = 3836."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 11, 27, 29, 18, 8, 46, 36, 15], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "64",
-      "91",
-      "38",
-      "81"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 64."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][27] starts at base address 2800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][8]?",
-    "options": [
-      "3048",
-      "3044",
-      "2864",
-      "3078"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (8 * 15 + 4) * 2 = 3048."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 19, 41, 16, 37, 49, 4, 1], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "193",
-      "210",
-      "197",
-      "166"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 193."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
-    "options": [
-      "990",
-      "334",
-      "356",
-      "401"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 36% density, total edges = 356."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 4, 35, 22, 42, 20, 6], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "157",
-      "174",
-      "123",
-      "177"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 157."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
-    "options": [
-      "780",
-      "296",
-      "336",
-      "276"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 38% density, total edges = 296."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 4, 36, 40, 25, 3, 8, 9], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "113",
-      "130",
-      "108",
-      "116"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 113."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][29] starts at base address 1600 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][15]?",
-    "options": [
-      "1814",
-      "1660",
-      "1828",
-      "1810"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (15 * 7 + 2) * 2 = 1814."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
-    "options": [
-      "378",
-      "201",
-      "215",
-      "243"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 57% density, total edges = 215."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [15, 15, 17, 2, 28, 44, 41, 24], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "66",
-      "51",
-      "34",
-      "49"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 49."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][38] starts at base address 2800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[2][17]?",
-    "options": [
-      "2868",
-      "3344",
-      "3348",
-      "3380"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (17 * 16 + 2) * 2 = 3348."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][37] starts at base address 2500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][10]?",
-    "options": [
-      "2688",
-      "2540",
-      "2836",
-      "2680"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (1 * 37 + 10) * 4 = 2688."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "13",
-      "29",
-      "18",
-      "55"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 33% density, total edges = 18."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "344",
-      "820",
-      "385",
-      "324"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 42% density, total edges = 344."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
-    "options": [
-      "321",
-      "291",
-      "276",
-      "435"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 67% density, total edges = 291."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
-    "options": [
-      "120",
-      "94",
-      "78",
-      "70"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 65% density, total edges = 78."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][25] starts at base address 1300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[16][5]?",
-    "options": [
-      "1940",
-      "2676",
-      "2468",
-      "2452"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (5 * 26 + 16) * 8 = 2468."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
-    "options": [
-      "171",
-      "95",
-      "67",
-      "76"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 45% density, total edges = 76."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
-    "options": [
-      "780",
-      "570",
-      "530",
-      "510"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 68% density, total edges = 530."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "666",
-      "173",
-      "155",
-      "210"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 26% density, total edges = 173."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
-    "options": [
-      "195",
-      "666",
-      "213",
-      "250"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 32% density, total edges = 213."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [19, 26, 25, 14, 9], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "98",
-      "84",
-      "101",
-      "65"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 84."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "780",
-      "335",
-      "315",
-      "375"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 43% density, total edges = 335."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 4, 34, 20, 50, 23, 41, 37], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "38",
-      "78",
-      "61",
-      "95"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 61."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 12, 15, 3, 22, 21, 28, 28, 19], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "30",
-      "80",
-      "63",
-      "66"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 63."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][28] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[13][14]?",
-    "options": [
-      "4924",
-      "3356",
-      "5148",
-      "4908"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (13 * 28 + 14) * 8 = 4924."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
-    "options": [
-      "117",
-      "129",
-      "276",
-      "153"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 47% density, total edges = 129."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][11] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[26][9]?",
-    "options": [
-      "1406",
-      "1334",
-      "1376",
-      "1378"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (9 * 28 + 26) * 1 = 1378."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [12, 49, 10, 4, 15, 27, 2, 47, 44, 21, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "88",
-      "81",
-      "59",
-      "71"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 71."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
-    "options": [
-      "602",
-      "538",
-      "559",
-      "903"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 62% density, total edges = 559."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [13, 48, 12, 49, 41, 42, 1], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "163",
-      "180",
-      "150",
-      "204"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 163."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [40, 11, 30, 25, 43, 26, 23, 15], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "81",
-      "41",
-      "98",
-      "111"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 81."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][14] starts at base address 1200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][2]?",
-    "options": [
-      "1256",
-      "1288",
-      "1260",
-      "1208"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1200 + (2 * 14 + 2) * 2 = 1260."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
-    "options": [
-      "406",
-      "231",
-      "260",
-      "217"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 57% density, total edges = 231."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
-    "options": [
-      "503",
-      "446",
-      "1596",
-      "418"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 28% density, total edges = 446."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 27, 33, 25, 16, 14, 13, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "101",
-      "152",
-      "135",
-      "151"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 135."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 38 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
-    "options": [
-      "421",
-      "703",
-      "402",
-      "459"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 38*(37)/2 = 703. At 60% density, total edges = 421."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
-    "options": [
-      "55",
-      "91",
-      "76",
-      "62"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 69% density, total edges = 62."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [28, 38, 35, 2, 27], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "103",
-      "120",
-      "105",
-      "75"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 103."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
-    "options": [
-      "129",
-      "149",
-      "190",
-      "119"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 68% density, total edges = 129."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][15] starts at base address 1100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[22][3]?",
-    "options": [
-      "1604",
-      "1364",
-      "1500",
-      "1492"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (3 * 26 + 22) * 4 = 1500."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "646",
-      "618",
-      "1540",
-      "702"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 42% density, total edges = 646."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 20%, how many edges are present in G?",
-    "options": [
-      "340",
-      "286",
-      "259",
-      "1431"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 20% density, total edges = 286."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 25%, how many edges are present in G?",
-    "options": [
-      "94",
-      "378",
-      "122",
-      "80"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 25% density, total edges = 94."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "465",
-      "237",
-      "222",
-      "268"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 51% density, total edges = 237."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][21] starts at base address 1500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[8][19]?",
-    "options": [
-      "5668",
-      "2716",
-      "5652",
-      "5884"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (19 * 27 + 8) * 8 = 5668."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 29 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
-    "options": [
-      "219",
-      "205",
-      "406",
-      "248"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 29*(28)/2 = 406. At 54% density, total edges = 219."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][28] starts at base address 2600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][20]?",
-    "options": [
-      "3080",
-      "3464",
-      "3352",
-      "3344"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (6 * 28 + 20) * 4 = 3352."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 50, 10, 42, 7, 31], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "176",
-      "166",
-      "109",
-      "159"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 159."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
-    "options": [
-      "653",
-      "595",
-      "1653",
-      "566"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 36% density, total edges = 595."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 15, 48, 25, 15, 47, 37, 8, 13, 4, 37], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "247",
-      "230",
-      "234",
-      "212"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 230."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [11, 42, 24, 28, 43, 29], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "122",
-      "105",
-      "94",
-      "133"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 105."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 19 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "171",
-      "92",
-      "64",
-      "73"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 19*(18)/2 = 171. At 43% density, total edges = 73."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[24][38] starts at base address 2600 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[4][24]?",
-    "options": [
-      "7240",
-      "7432",
-      "7224",
-      "3368"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2600 + (24 * 24 + 4) * 8 = 7240."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][11] starts at base address 2400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[14][2]?",
-    "options": [
-      "2556",
-      "2554",
-      "2428",
-      "2567"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (14 * 11 + 2) * 1 = 2556."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [14, 22, 15, 30, 11, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "66",
-      "37",
-      "51",
-      "68"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 51."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [32, 47, 12, 48, 29, 3, 26, 18, 41, 20, 43, 29], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "91",
-      "103",
-      "59",
-      "108"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 91."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
-    "options": [
-      "173",
-      "595",
-      "225",
-      "190"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 32% density, total edges = 190."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
-    "options": [
-      "418",
-      "437",
-      "741",
-      "476"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 59% density, total edges = 437."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][14] starts at base address 2700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[2][3]?",
-    "options": [
-      "2824",
-      "2880",
-      "2816",
-      "2724"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (2 * 14 + 3) * 4 = 2824."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][26] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][6]?",
-    "options": [
-      "1172",
-      "1200",
-      "1164",
-      "1024"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (6 * 7 + 1) * 4 = 1172."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [38, 41, 6, 7, 43, 44, 18], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "99",
-      "109",
-      "54",
-      "92"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 92."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][15] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][8]?",
-    "options": [
-      "1492",
-      "1432",
-      "1260",
-      "1424"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (5 * 15 + 8) * 4 = 1432."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[24][12] starts at base address 2200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[8][7]?",
-    "options": [
-      "2301",
-      "2256",
-      "2315",
-      "2303"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (8 * 12 + 7) * 1 = 2303."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
-    "options": [
-      "300",
-      "178",
-      "153",
-      "141"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 51% density, total edges = 153."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 12, 7, 25, 23, 33, 19, 35], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "46",
-      "63",
-      "19",
-      "53"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 46."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][21] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[12][10]?",
-    "options": [
-      "1480",
-      "1888",
-      "1880",
-      "1972"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (10 * 21 + 12) * 4 = 1888."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
-    "options": [
-      "309",
-      "375",
-      "331",
-      "946"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 35% density, total edges = 331."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][36] starts at base address 2000 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[15][22]?",
-    "options": [
-      "4240",
-      "4248",
-      "4392",
-      "3320"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (15 * 36 + 22) * 4 = 4248."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 16, 16, 44, 41, 30, 25, 22, 41], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "123",
-      "164",
-      "117",
-      "140"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 123."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][13] starts at base address 2000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][3]?",
-    "options": [
-      "2024",
-      "2164",
-      "2216",
-      "2156"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (3 * 13 + 2) * 4 = 2164."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][33] starts at base address 1600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[13][25]?",
-    "options": [
-      "2087",
-      "2052",
-      "2054",
-      "1925"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (13 * 33 + 25) * 1 = 2054."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "331",
-      "306",
-      "382",
-      "1275"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 26% density, total edges = 331."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 5, 3, 33, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "41",
-      "47",
-      "80",
-      "64"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 47."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 59 vertices. If the graph connectivity density is 61%, how many edges are present in G?",
-    "options": [
-      "1043",
-      "1014",
-      "1711",
-      "1102"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 59*(58)/2 = 1711. At 61% density, total edges = 1043."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [31, 29, 30, 45, 36, 45, 22], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "90",
-      "59",
-      "107",
-      "120"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 90."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 25, 35, 10, 41, 5, 40], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "78",
-      "113",
-      "60",
-      "95"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 78."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 41, 36, 10, 9, 46, 45], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "77",
-      "136",
-      "119",
-      "155"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 119."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [3, 15, 33, 47, 31, 40, 10, 4, 10, 20, 4], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "146",
-      "129",
-      "160",
-      "126"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 129."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "490",
-      "420",
-      "443",
-      "1081"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 41% density, total edges = 443."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 47, 14, 7, 37], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "68",
-      "92",
-      "75",
-      "82"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 75."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "115",
-      "103",
-      "139",
-      "276"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 42% density, total edges = 115."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][13] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[8][11]?",
-    "options": [
-      "2776",
-      "2856",
-      "2830",
-      "2826"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (8 * 13 + 11) * 2 = 2830."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 39, 25, 8, 26, 11, 16, 30, 38], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "212",
-      "199",
-      "182",
-      "155"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 182."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][11] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][8]?",
-    "options": [
-      "2220",
-      "2404",
-      "2492",
-      "2388"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (5 * 11 + 8) * 8 = 2404."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
-    "options": [
-      "425",
-      "741",
-      "444",
-      "483"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 60% density, total edges = 444."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 59 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
-    "options": [
-      "555",
-      "1711",
-      "467",
-      "496"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 59*(58)/2 = 1711. At 29% density, total edges = 496."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "658",
-      "1596",
-      "743",
-      "686"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 43% density, total edges = 686."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
-    "options": [
-      "19",
-      "4",
-      "9",
-      "45"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 22% density, total edges = 9."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][37] starts at base address 1100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[11][18]?",
-    "options": [
-      "1523",
-      "1298",
-      "1525",
-      "1562"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (11 * 37 + 18) * 1 = 1525."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][30] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[11][9]?",
-    "options": [
-      "1828",
-      "1836",
-      "1396",
-      "1924"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (9 * 22 + 11) * 4 = 1836."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
-    "options": [
-      "59",
-      "46",
-      "40",
-      "78"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 59% density, total edges = 46."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [31, 5, 30, 18, 7, 36, 38, 16, 23, 3, 34, 26], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "176",
-      "210",
-      "224",
-      "207"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 207."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
-    "options": [
-      "351",
-      "220",
-      "180",
-      "193"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 55% density, total edges = 193."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 21, 7, 14, 27], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "28",
-      "71",
-      "61",
-      "54"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 54."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
-    "options": [
-      "186",
-      "300",
-      "198",
-      "223"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 66% density, total edges = 198."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [48, 26, 36, 23, 36, 36, 38], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "169",
-      "205",
-      "186",
-      "121"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 169."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [30, 9, 33, 19, 27, 6, 47], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "61",
-      "110",
-      "91",
-      "108"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 91."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][27] starts at base address 2400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][22]?",
-    "options": [
-      "4248",
-      "2576",
-      "4168",
-      "4160"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (22 * 20 + 2) * 4 = 4168."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "82",
-      "49",
-      "60",
-      "231"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 26% density, total edges = 60."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [8, 3, 36, 9, 4, 41, 20, 23, 45], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "142",
-      "118",
-      "101",
-      "93"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 101."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [41, 40, 19, 42, 9, 17, 35, 33, 30, 39, 41], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "203",
-      "238",
-      "162",
-      "220"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 203."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][36] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[11][10]?",
-    "options": [
-      "2771",
-      "2797",
-      "2610",
-      "2769"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (10 * 26 + 11) * 1 = 2771."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [35, 40, 23, 45, 4, 45, 48, 8, 7, 15], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "164",
-      "147",
-      "112",
-      "151"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 147."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][11] starts at base address 2000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[8][6]?",
-    "options": [
-      "2096",
-      "2188",
-      "2184",
-      "2210"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (8 * 11 + 6) * 2 = 2188."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][37] starts at base address 2200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[25][10]?",
-    "options": [
-      "2522",
-      "2450",
-      "2493",
-      "2495"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2200 + (10 * 27 + 25) * 1 = 2495."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 49, 42, 4, 38, 5, 41, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "133",
-      "159",
-      "197",
-      "176"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 159."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
-    "options": [
-      "206",
-      "861",
-      "248",
-      "185"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 24% density, total edges = 206."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 15, 32, 34, 36, 5, 18, 2, 34, 5], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "185",
-      "202",
-      "203",
-      "140"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 185."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][22] starts at base address 2300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[19][17]?",
-    "options": [
-      "3116",
-      "2946",
-      "3120",
-      "3166"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (17 * 23 + 19) * 2 = 3120."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [36, 23, 32, 33, 7, 36, 10], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "138",
-      "148",
-      "95",
-      "131"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 131."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "30",
-      "51",
-      "91",
-      "37"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 41% density, total edges = 37."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "184",
-      "465",
-      "230",
-      "199"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 43% density, total edges = 199."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [12, 3, 24, 2, 16, 30, 42], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "73",
-      "45",
-      "74",
-      "57"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 57."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][26] starts at base address 2300 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[18][11]?",
-    "options": [
-      "3508",
-      "3092",
-      "3620",
-      "3516"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (11 * 26 + 18) * 4 = 3516."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][39] starts at base address 2500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[10][17]?",
-    "options": [
-      "3026",
-      "2840",
-      "3030",
-      "3060"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (17 * 15 + 10) * 2 = 3030."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [44, 16, 19, 32, 5, 5, 8], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "126",
-      "121",
-      "77",
-      "138"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 121."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][37] starts at base address 2200 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][27]?",
-    "options": [
-      "2632",
-      "3304",
-      "2992",
-      "3008"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (2 * 37 + 27) * 8 = 3008."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][16] starts at base address 2400 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[11][11]?",
-    "options": [
-      "2774",
-      "2806",
-      "2642",
-      "2770"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (11 * 16 + 11) * 2 = 2774."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 3, 1, 33, 44, 34, 46, 38, 10], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "191",
-      "115",
-      "157",
-      "174"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 157."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 47, 21, 31, 43, 48, 48, 28, 31, 40, 36], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "243",
-      "190",
-      "195",
-      "212"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 195."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
-    "options": [
-      "492",
-      "452",
-      "432",
-      "780"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 58% density, total edges = 452."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 17, 46, 2, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "151",
-      "63",
-      "105",
-      "122"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 105."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [26, 17, 6, 9, 18, 5, 33, 2, 45, 35], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "131",
-      "88",
-      "114",
-      "147"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 114."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [30, 29, 40, 13, 2, 11, 30, 44, 42, 28, 14], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "243",
-      "169",
-      "216",
-      "199"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 199."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][31] starts at base address 1000 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][17]?",
-    "options": [
-      "1136",
-      "2052",
-      "1990",
-      "1994"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (17 * 29 + 4) * 2 = 1994."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 24, 7, 17, 30, 27, 32, 36], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "75",
-      "75",
-      "48",
-      "58"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 58."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 42%, how many edges are present in G?",
-    "options": [
-      "431",
-      "1081",
-      "501",
-      "454"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 42% density, total edges = 454."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 1, 28, 5, 33, 10], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "81",
-      "34",
-      "93",
-      "76"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 76."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "68",
-      "50",
-      "153",
+      "23",
       "41"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 33% density, total edges = 50."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
-    "options": [
-      "542",
-      "490",
-      "464",
-      "1326"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 37% density, total edges = 490."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][13] starts at base address 1100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[12][11]?",
-    "options": [
-      "2436",
-      "2420",
-      "2540",
-      "2156"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (12 * 13 + 11) * 8 = 2436."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
-    "options": [
-      "392",
-      "307",
-      "1596",
-      "335"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 21% density, total edges = 335."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [21, 14, 2, 33, 5, 4, 7, 25], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "92",
-      "54",
-      "75",
-      "80"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 75."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][34] starts at base address 1600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[8][26]?",
-    "options": [
-      "2432",
-      "3036",
-      "2984",
-      "2976"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (26 * 13 + 8) * 4 = 2984."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
-    "options": [
-      "113",
-      "123",
-      "143",
-      "190"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 65% density, total edges = 123."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 19, 29, 5, 21, 20, 42, 7, 13, 40, 41, 6], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
-    "options": [
-      "237",
-      "247",
-      "288",
-      "264"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 247."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [14, 1, 32, 40, 36, 30, 22], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "170",
-      "139",
-      "153",
-      "183"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 153."
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 45% density, total edges = 29."
   },
   {
     "subject": "DSA",
@@ -11682,2169 +10828,1413 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
     "options": [
-      "522",
-      "1275",
       "471",
-      "446"
+      "446",
+      "522",
+      "1275"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 37% density, total edges = 471."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][34] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][30]?",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [1, 22, 6, 12, 6, 4, 8, 8, 25, 32], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
     "options": [
-      "1912",
-      "2184",
-      "1896",
-      "1640"
+      "75",
+      "67",
+      "84",
+      "66"
     ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (1 * 34 + 30) * 8 = 1912."
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 67."
   },
   {
     "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [39, 16, 22, 27, 9, 22, 21, 6, 22, 37, 13, 38], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][15] starts at base address 2400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[8][2]?",
+    "options": [
+      "2736",
+      "2528",
+      "2720",
+      "2872"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (2 * 17 + 8) * 8 = 2736."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
+    "options": [
+      "95",
+      "136",
+      "70",
+      "78"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 58% density, total edges = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
     "options": [
       "77",
-      "94",
-      "99",
-      "38"
+      "85",
+      "102",
+      "136"
     ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 77."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
-    "options": [
-      "457",
-      "387",
-      "410",
-      "1081"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 38% density, total edges = 410."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][37] starts at base address 2900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[6][30]?",
-    "options": [
-      "3752",
-      "3748",
-      "3780",
-      "3260"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (30 * 14 + 6) * 2 = 3752."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 65%, how many edges are present in G?",
-    "options": [
-      "913",
-      "835",
-      "1326",
-      "861"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 65% density, total edges = 861."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 49 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
-    "options": [
-      "352",
-      "1176",
-      "401",
-      "328"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 49*(48)/2 = 1176. At 30% density, total edges = 352."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "318",
-      "1035",
-      "341",
-      "387"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 33% density, total edges = 341."
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 63% density, total edges = 85."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [12, 12, 24, 24, 34], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [12, 45, 41, 10, 15, 9, 19, 35, 3, 32], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
     "options": [
-      "72",
-      "89",
-      "60",
-      "96"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 72."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][38] starts at base address 1400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][17]?",
-    "options": [
-      "2856",
-      "2768",
-      "1672",
-      "2776"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (17 * 20 + 4) * 4 = 2776."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
-    "options": [
-      "261",
-      "903",
-      "240",
-      "304"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 29% density, total edges = 261."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][15] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[3][11]?",
-    "options": [
-      "1954",
-      "1971",
-      "1956",
-      "1933"
+      "203",
+      "174",
+      "186",
+      "221"
     ],
     "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (3 * 15 + 11) * 1 = 1956."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 186."
   },
   {
     "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [27, 19, 43, 21, 8, 8], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "41",
-      "78",
-      "54",
-      "35"
+      "127",
+      "110",
+      "131",
+      "83"
     ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 53% density, total edges = 41."
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 110."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[12][29] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][3]?",
+    "question": "A 2D array A[27][33] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[25][24]?",
     "options": [
-      "2012",
-      "1984",
-      "1948",
-      "1988"
+      "5500",
+      "5384",
+      "5392",
+      "5100"
     ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (3 * 12 + 8) * 2 = 1988."
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (24 * 27 + 25) * 4 = 5392."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
     "options": [
-      "143",
-      "104",
-      "117",
+      "561",
+      "375",
+      "426",
+      "392"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 70% density, total edges = 392."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 10 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "45",
+      "25",
+      "30",
+      "40"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 10*(9)/2 = 45. At 67% density, total edges = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "302",
+      "279",
+      "1081",
+      "349"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 28% density, total edges = 302."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 24, 31, 46, 43, 28, 50, 49, 32, 17, 23, 44], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "352",
+      "320",
+      "335",
+      "352"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 335."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [34, 47, 24, 33, 30, 27, 16, 21, 34, 8, 14, 34], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "249",
+      "198",
+      "253",
+      "232"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 232."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 66%, how many edges are present in G?",
+    "options": [
+      "698",
+      "631",
+      "653",
+      "990"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 66% density, total edges = 653."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [33, 44, 12, 6, 17, 40, 33, 5, 39, 28], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "152",
+      "192",
+      "119",
+      "169"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "780",
+      "182",
+      "202",
+      "242"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 26% density, total edges = 202."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "675",
+      "903",
+      "611",
+      "632"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 70% density, total edges = 632."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 26, 12, 43, 48, 33, 42], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "130",
+      "87",
+      "81",
+      "104"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 87."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][22] starts at base address 2900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[20][18]?",
+    "options": [
+      "3812",
+      "3860",
+      "3816",
+      "3620"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (20 * 22 + 18) * 2 = 3816."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 5, 49, 1, 18, 26, 27, 9, 15], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "197",
+      "126",
+      "187",
+      "170"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 170."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][22] starts at base address 1700 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[5][10]?",
+    "options": [
+      "1940",
+      "1936",
+      "1800",
+      "1984"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (5 * 22 + 10) * 2 = 1940."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [30, 6, 26, 8, 50, 47, 43, 47, 20], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "274",
+      "227",
+      "304",
+      "257"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 257."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [21, 15, 26, 31, 21, 50, 18, 39, 29, 16, 20], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "283",
+      "266",
+      "245",
+      "282"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 266."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][36] starts at base address 2000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[6][17]?",
+    "options": [
+      "2560",
+      "2568",
+      "2600",
+      "2408"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (17 * 8 + 6) * 4 = 2568."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][29] starts at base address 2800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[1][4]?",
+    "options": [
+      "3002",
+      "2998",
+      "2808",
+      "3052"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (4 * 25 + 1) * 2 = 3002."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][24] starts at base address 2900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][10]?",
+    "options": [
+      "3540",
+      "3140",
+      "3748",
+      "3556"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (3 * 24 + 10) * 8 = 3556."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "445",
+      "990",
+      "490",
+      "423"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 45% density, total edges = 445."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 17 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "53",
+      "36",
+      "28",
+      "136"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 17*(16)/2 = 136. At 27% density, total edges = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 3, 2, 25, 29, 37, 2, 16, 38, 41], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "5",
+      "33",
+      "16",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 16."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 68%, how many edges are present in G?",
+    "options": [
+      "537",
+      "820",
+      "598",
+      "557"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 68% density, total edges = 557."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "223",
+      "289",
+      "245",
+      "946"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 26% density, total edges = 245."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][26] starts at base address 2100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[12][9]?",
+    "options": [
+      "2208",
+      "2447",
+      "2421",
+      "2419"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (12 * 26 + 9) * 1 = 2421."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][26] starts at base address 2800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[3][4]?",
+    "options": [
+      "2870",
+      "2824",
+      "2886",
+      "2866"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (4 * 8 + 3) * 2 = 2870."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 49 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "705",
+      "729",
+      "778",
+      "1176"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 49*(48)/2 = 1176. At 62% density, total edges = 729."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][32] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][5]?",
+    "options": [
+      "1970",
+      "1972",
+      "1985",
+      "1935"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (5 * 13 + 7) * 1 = 1972."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][35] starts at base address 2400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][23]?",
+    "options": [
+      "3144",
+      "2768",
+      "3424",
+      "3128"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (2 * 35 + 23) * 8 = 3144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 45%, how many edges are present in G?",
+    "options": [
+      "103",
+      "125",
+      "231",
+      "92"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 45% density, total edges = 103."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 20%, how many edges are present in G?",
+    "options": [
+      "136",
+      "780",
+      "156",
+      "196"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 20% density, total edges = 156."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "165",
+      "204",
+      "178",
       "325"
     ],
     "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 36% density, total edges = 117."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [15, 6, 50, 27, 14, 28, 45, 11, 9, 9, 43, 42], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
-    "options": [
-      "257",
-      "274",
-      "300",
-      "242"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 257."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 34, 20, 23, 21, 14, 6, 49], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "118",
-      "135",
-      "132",
-      "112"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 118."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 47%, how many edges are present in G?",
-    "options": [
-      "300",
-      "166",
-      "129",
-      "141"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 47% density, total edges = 141."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [47, 23, 35, 48, 30, 40, 48, 28, 10, 42], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "183",
-      "136",
-      "213",
-      "200"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 183."
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 55% density, total edges = 178."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[10][16] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[8][14]?",
+    "question": "A 2D array A[28][31] starts at base address 2800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[20][2]?",
     "options": [
-      "2116",
-      "2024",
-      "2096",
-      "2092"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (14 * 10 + 8) * 2 = 2096."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [46, 24, 18, 24, 27, 21, 37, 39, 20], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "42",
-      "105",
-      "106",
-      "88"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 88."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
-    "options": [
-      "332",
-      "528",
-      "365",
-      "316"
+      "7776",
+      "8024",
+      "7760",
+      "3120"
     ],
     "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 63% density, total edges = 332."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 20, 19, 11, 16, 12, 32, 35, 5, 41], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "40",
-      "59",
-      "57",
-      "39"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 40."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [9, 11, 34, 16, 7, 41], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "61",
-      "86",
-      "70",
-      "87"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 70."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [27, 14, 46, 23, 38, 44], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "148",
-      "121",
-      "165",
-      "186"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 148."
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (20 * 31 + 2) * 8 = 7776."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 24%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 13 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
     "options": [
-      "40",
-      "25",
-      "105",
-      "18"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 24% density, total edges = 25."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
-    "options": [
-      "164",
-      "200",
-      "176",
-      "276"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 64% density, total edges = 176."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 37 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
-    "options": [
-      "223",
-      "666",
-      "186",
-      "168"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 37*(36)/2 = 666. At 28% density, total edges = 186."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][16] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[13][13]?",
-    "options": [
-      "1773",
-      "1669",
-      "1793",
-      "1771"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (13 * 20 + 13) * 1 = 1773."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [19, 17, 11, 19, 24, 44, 6, 26, 2, 48], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
-    "options": [
-      "170",
-      "149",
-      "185",
-      "168"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 168."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 18 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
-    "options": [
-      "73",
-      "46",
-      "55",
-      "153"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 18*(17)/2 = 153. At 36% density, total edges = 55."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 22, 29, 19, 33], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "70",
-      "122",
-      "103",
-      "120"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 103."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [36, 20, 3, 40, 44, 22, 30], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "187",
-      "143",
-      "160",
-      "107"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 143."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 43, 39, 44, 34], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "82",
-      "100",
-      "122",
-      "83"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 83."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 11, 49, 49, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "192",
-      "143",
-      "160",
-      "109"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 143."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[14][32] starts at base address 1900 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][20]?",
-    "options": [
-      "2000",
-      "2080",
-      "2112",
-      "2078"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (5 * 32 + 20) * 1 = 2080."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 63%, how many edges are present in G?",
-    "options": [
-      "447",
-      "466",
-      "741",
-      "505"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 63% density, total edges = 466."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [3, 47, 38, 4, 37, 30], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "166",
-      "146",
-      "129",
-      "126"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 129."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][21] starts at base address 2300 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[5][13]?",
-    "options": [
-      "3572",
-      "3684",
-      "2820",
-      "3588"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (13 * 12 + 5) * 8 = 3588."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 58%, how many edges are present in G?",
-    "options": [
-      "646",
-      "600",
-      "1035",
-      "577"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 58% density, total edges = 600."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
-    "options": [
-      "91",
-      "118",
+      "16",
+      "10",
       "78",
-      "351"
+      "29"
     ],
     "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 26% density, total edges = 91."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[25][36] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[15][26]?",
-    "options": [
-      "3163",
-      "3165",
-      "3190",
-      "2890"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (26 * 25 + 15) * 1 = 3165."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
-    "options": [
-      "55",
-      "33",
-      "22",
-      "17"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 40% density, total edges = 22."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
-    "options": [
-      "1081",
-      "376",
-      "446",
-      "399"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 37% density, total edges = 399."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][35] starts at base address 1400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[11][4]?",
-    "options": [
-      "2948",
-      "1576",
-      "2956",
-      "3096"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (11 * 35 + 4) * 4 = 2956."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][17] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
-    "options": [
-      "1788",
-      "1940",
-      "1804",
-      "1564"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (2 * 17 + 4) * 8 = 1804."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
-    "options": [
-      "132",
-      "300",
-      "157",
-      "120"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 44% density, total edges = 132."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][13] starts at base address 2000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[9][3]?",
-    "options": [
-      "2054",
-      "2236",
-      "2240",
-      "2266"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (9 * 13 + 3) * 2 = 2240."
+    "explanation": "Max edges = V*(V-1)/2 = 13*(12)/2 = 78. At 21% density, total edges = 16."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 44, 22, 36, 45, 11], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [25, 21, 35, 21, 24, 17, 37, 25, 20, 12], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "155",
-      "119",
-      "136",
-      "102"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 119."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [36, 34, 38, 32, 9, 2, 20, 3, 30, 15, 31, 41], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "177",
-      "174",
-      "191",
-      "138"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 174."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][31] starts at base address 2400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[17][2]?",
-    "options": [
-      "2480",
-      "2457",
-      "2459",
-      "2434"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (2 * 21 + 17) * 1 = 2459."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][25] starts at base address 1400 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[26][5]?",
-    "options": [
-      "2080",
-      "2053",
-      "2055",
-      "1530"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (26 * 25 + 5) * 1 = 2055."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 37%, how many edges are present in G?",
-    "options": [
-      "549",
-      "522",
-      "604",
-      "1485"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 37% density, total edges = 549."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
-    "options": [
-      "231",
-      "109",
-      "87",
-      "76"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 38% density, total edges = 87."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][16] starts at base address 1600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][5]?",
-    "options": [
-      "1680",
-      "2024",
-      "1896",
-      "1880"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (2 * 16 + 5) * 8 = 1896."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
-    "options": [
-      "385",
-      "439",
-      "630",
-      "403"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 64% density, total edges = 403."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
-    "options": [
-      "55",
-      "32",
-      "43",
-      "27"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 59% density, total edges = 32."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[5][26] starts at base address 1800 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[1][3]?",
-    "options": [
-      "1968",
-      "1912",
-      "1824",
-      "1928"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (3 * 5 + 1) * 8 = 1928."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
-    "options": [
-      "989",
-      "1596",
-      "1046",
-      "961"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 62% density, total edges = 989."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [10, 30, 34, 7, 9, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "81",
-      "98",
-      "71",
-      "88"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 81."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
-    "options": [
-      "353",
-      "371",
-      "630",
-      "407"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 59% density, total edges = 371."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [8, 30, 20, 1, 15, 19, 32], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "112",
-      "110",
-      "93",
-      "85"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 93."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[17][19] starts at base address 2300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[14][13]?",
-    "options": [
-      "2664",
-      "2804",
-      "2770",
-      "2766"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (13 * 17 + 14) * 2 = 2770."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [6, 31, 4, 5, 43, 13], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "83",
-      "89",
-      "106",
-      "132"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 89."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 23, 4, 10, 9, 11, 19, 33, 10, 19, 21, 9], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "147",
-      "109",
-      "131",
-      "114"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 114."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [13, 31, 13, 29, 32, 28, 19], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "135",
-      "118",
-      "150",
-      "105"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 118."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[24][28] starts at base address 2400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[21][20]?",
-    "options": [
-      "4080",
-      "4404",
-      "4396",
-      "4500"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (20 * 24 + 21) * 4 = 4404."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [50, 20, 12, 37, 45, 47, 41, 26, 30], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "293",
-      "252",
-      "202",
-      "269"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 252."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [22, 48, 9, 11, 16], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "107",
+      "143",
+      "126",
       "101",
-      "90",
-      "68"
+      "150"
     ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 90."
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 126."
   },
   {
     "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 48, 17, 22, 26], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
     "options": [
-      "92",
-      "114",
-      "109",
-      "87"
+      "654",
+      "711",
+      "1596",
+      "626"
     ],
     "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 92."
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 41% density, total edges = 654."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [45, 16, 21, 24, 43, 2, 13, 15, 24, 5], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "question": "Given the 1D integer array [24, 12, 27, 9, 34, 9, 37, 50], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "103",
-      "37",
-      "99",
+      "123",
+      "140",
+      "106",
       "82"
     ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 82."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][32] starts at base address 2000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[17][22]?",
-    "options": [
-      "6184",
-      "6368",
-      "4992",
-      "6168"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (22 * 23 + 17) * 8 = 6184."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [23, 13, 20, 8, 48], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "81",
-      "64",
-      "41",
-      "72"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 64."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][34] starts at base address 1000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[7][14]?",
-    "options": [
-      "1196",
-      "1504",
-      "1572",
-      "1500"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (7 * 34 + 14) * 2 = 1504."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][37] starts at base address 1800 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][1]?",
-    "options": [
-      "1838",
-      "1875",
-      "1801",
-      "1836"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (1 * 37 + 1) * 1 = 1838."
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 106."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
     "options": [
-      "278",
-      "237",
-      "217",
-      "820"
+      "442",
+      "1128",
+      "394",
+      "370"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 35% density, total edges = 394."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][13] starts at base address 2100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[10][10]?",
+    "options": [
+      "2852",
+      "2860",
+      "2932",
+      "2500"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 29% density, total edges = 237."
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (10 * 18 + 10) * 4 = 2860."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [47, 50, 21, 48, 37, 1, 17], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "question": "Given the 1D integer array [49, 9, 1, 49, 8, 28, 8, 9, 6, 11, 49], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
     "options": [
-      "71",
-      "139",
-      "135",
-      "118"
+      "178",
+      "195",
+      "189",
+      "129"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 178."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 13, 50, 24, 17, 26, 24, 12], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "174",
+      "154",
+      "181",
+      "157"
     ],
     "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 118."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 157."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 46 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
     "options": [
-      "507",
-      "486",
-      "861",
+      "1035",
+      "227",
+      "204",
+      "273"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 46*(45)/2 = 1035. At 22% density, total edges = 227."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 55 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "638",
+      "693",
+      "1485",
+      "611"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 55*(54)/2 = 1485. At 43% density, total edges = 638."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 41 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "590",
+      "820",
+      "529",
       "549"
     ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 59% density, total edges = 507."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [5, 39, 3, 31, 4, 25, 8, 25, 30], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
-    "options": [
-      "165",
-      "135",
-      "157",
-      "140"
-    ],
     "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 140."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[22][24] starts at base address 1000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[9][7]?",
-    "options": [
-      "1161",
-      "1185",
-      "1163",
-      "1063"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (7 * 22 + 9) * 1 = 1163."
+    "explanation": "Max edges = V*(V-1)/2 = 41*(40)/2 = 820. At 67% density, total edges = 549."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [33, 33, 4, 25, 28, 43, 44, 20, 44, 26, 14], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "151",
-      "140",
-      "90",
-      "123"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 123."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][13] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[23][10]?",
-    "options": [
-      "3024",
-      "2820",
-      "3032",
-      "3136"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (10 * 26 + 23) * 4 = 3032."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [16, 2, 32, 41, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "75",
-      "91",
-      "108",
-      "132"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 91."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][28] starts at base address 2500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[24][18]?",
-    "options": [
-      "8020",
-      "8244",
-      "8004",
-      "5956"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (24 * 28 + 18) * 8 = 8020."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 30%, how many edges are present in G?",
-    "options": [
-      "1128",
-      "338",
-      "386",
-      "314"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 30% density, total edges = 338."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][32] starts at base address 1600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[9][26]?",
-    "options": [
-      "2536",
-      "3196",
-      "3256",
-      "3188"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (26 * 15 + 9) * 4 = 3196."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[19][36] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][21]?",
-    "options": [
-      "1393",
-      "1321",
-      "1355",
-      "1357"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (1 * 36 + 21) * 1 = 1357."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [13, 34, 24, 37, 8, 25, 6, 4], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "145",
-      "95",
-      "125",
-      "108"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 108."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][18] starts at base address 1500 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][14]?",
-    "options": [
-      "1548",
-      "1550",
-      "1568",
-      "1528"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (2 * 18 + 14) * 1 = 1550."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 7, 12, 29, 32, 33, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "148",
-      "113",
-      "164",
-      "131"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 131."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 7, 7, 38, 18], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "25",
-      "18",
-      "14",
-      "35"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 18."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][28] starts at base address 1700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][20]?",
-    "options": [
-      "1804",
-      "1774",
-      "1740",
-      "1776"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (2 * 28 + 20) * 1 = 1776."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][22] starts at base address 2900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[20][14]?",
-    "options": [
-      "4716",
-      "4708",
-      "4804",
-      "4020"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (20 * 22 + 14) * 4 = 4716."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][34] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[20][26]?",
-    "options": [
-      "6648",
-      "5160",
-      "6920",
-      "6632"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (20 * 34 + 26) * 8 = 6648."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [38, 21, 40, 22, 50, 49, 17, 5, 34, 49], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "83",
-      "121",
-      "143",
-      "138"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 121."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 10, 13, 37, 40, 17, 15, 4, 3, 42, 8], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "198",
-      "181",
-      "240",
-      "215"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 198."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [25, 40, 25, 17, 49, 18, 42, 23, 34, 1, 34], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
-    "options": [
-      "291",
-      "249",
-      "275",
-      "274"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 274."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][31] starts at base address 1900 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[7][27]?",
-    "options": [
-      "2882",
-      "2278",
-      "2886",
-      "2922"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (27 * 18 + 7) * 2 = 2886."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][38] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[24][31]?",
-    "options": [
-      "9228",
-      "7652",
-      "9244",
-      "9548"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (24 * 38 + 31) * 8 = 9244."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [29, 15, 22, 11, 19, 49, 44, 14, 12, 4], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "115",
-      "113",
-      "67",
-      "96"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 96."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][23] starts at base address 1400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[8][20]?",
-    "options": [
-      "2308",
-      "2208",
-      "2040",
-      "2216"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (8 * 23 + 20) * 4 = 2216."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][36] starts at base address 1500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[11][17]?",
-    "options": [
-      "1970",
-      "1968",
-      "1687",
-      "1997"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (17 * 27 + 11) * 1 = 1970."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][34] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[11][30]?",
-    "options": [
-      "2830",
-      "2899",
-      "2914",
-      "2901"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (30 * 13 + 11) * 1 = 2901."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [41, 46, 12, 29, 16], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "116",
-      "111",
-      "58",
-      "99"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 99."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
-    "options": [
-      "325",
-      "397",
-      "349",
-      "1128"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 31% density, total edges = 349."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[27][33] starts at base address 2500 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[4][26]?",
-    "options": [
-      "8148",
-      "3332",
-      "8364",
-      "8132"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (26 * 27 + 4) * 8 = 8148."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 29, 38, 33, 6, 35], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [24, 45, 8, 47, 20, 27], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
       "100",
-      "159",
-      "142",
-      "175"
+      "171",
+      "124",
+      "141"
     ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 142."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
-    "options": [
-      "1275",
-      "867",
-      "816",
-      "791"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 64% density, total edges = 816."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
-    "options": [
-      "384",
-      "946",
-      "318",
-      "340"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 36% density, total edges = 340."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 124."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[25][34] starts at base address 1500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[17][25]?",
+    "question": "A 2D array A[5][18] starts at base address 1700 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][6]?",
     "options": [
-      "2784",
-      "2350",
-      "2834",
-      "2780"
+      "1796",
+      "2036",
+      "2020",
+      "2180"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (2 * 18 + 6) * 8 = 2036."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 59 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "965",
+      "877",
+      "906",
+      "1711"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 59*(58)/2 = 1711. At 53% density, total edges = 906."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "516",
+      "495",
+      "861",
+      "558"
     ],
     "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1500 + (25 * 25 + 17) * 2 = 2784."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[16][24] starts at base address 2900 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[2][17]?",
-    "options": [
-      "3078",
-      "2968",
-      "3026",
-      "3030"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (2 * 24 + 17) * 2 = 3030."
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 60% density, total edges = 516."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 19, 20, 34, 46, 49, 13], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [48, 40, 22, 17, 45, 1, 6, 34, 40], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "203",
-      "235",
-      "186",
-      "168"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 186."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
-    "options": [
-      "745",
-      "824",
-      "1378",
-      "771"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 56% density, total edges = 771."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[13][28] starts at base address 2800 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[1][15]?",
-    "options": [
-      "2942",
-      "2882",
-      "2830",
-      "2886"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (1 * 28 + 15) * 2 = 2886."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[20][26] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[12][8]?",
-    "options": [
-      "3544",
-      "1768",
-      "3560",
-      "3768"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (12 * 26 + 8) * 8 = 3560."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][37] starts at base address 1300 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[16][17]?",
-    "options": [
-      "6172",
-      "3476",
-      "6468",
-      "6156"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (16 * 37 + 17) * 8 = 6172."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 12, 21, 46, 18, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "97",
+      "144",
+      "127",
       "79",
-      "126",
-      "80"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 80."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 30 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
-    "options": [
-      "150",
-      "165",
-      "195",
-      "435"
+      "144"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 30*(29)/2 = 435. At 38% density, total edges = 165."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "630",
-      "270",
-      "306",
-      "252"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 43% density, total edges = 270."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 69%, how many edges are present in G?",
-    "options": [
-      "326",
-      "342",
-      "374",
-      "496"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 69% density, total edges = 342."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 127."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [20, 45, 41, 12, 31, 7, 20, 1], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [37, 35, 4, 45, 1, 16, 2, 36], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "149",
-      "129",
-      "166",
-      "180"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 149."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 43 vertices. If the graph connectivity density is 59%, how many edges are present in G?",
-    "options": [
-      "511",
-      "903",
-      "532",
-      "575"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 43*(42)/2 = 903. At 59% density, total edges = 532."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [22, 38, 9, 43, 5, 3, 28, 24, 26, 11, 11, 46], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "134",
-      "117",
-      "95",
+      "85",
+      "123",
+      "139",
       "122"
     ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 117."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][34] starts at base address 2000 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[4][29]?",
-    "options": [
-      "2326",
-      "2232",
-      "2330",
-      "2398"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (4 * 34 + 29) * 2 = 2330."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 32 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
-    "options": [
-      "213",
-      "197",
-      "496",
-      "245"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 32*(31)/2 = 496. At 43% density, total edges = 213."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
-    "options": [
-      "237",
-      "741",
-      "218",
-      "276"
-    ],
-    "answer": 0,
-    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 32% density, total edges = 237."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][17] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][10]?",
-    "options": [
-      "2260",
-      "2124",
-      "2108",
-      "1820"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (4 * 17 + 10) * 8 = 2124."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[15][16] starts at base address 1400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][1]?",
-    "options": [
-      "1536",
-      "1416",
-      "1468",
-      "1476"
-    ],
     "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (1 * 15 + 4) * 4 = 1476."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[21][23] starts at base address 1300 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[15][5]?",
-    "options": [
-      "1582",
-      "1540",
-      "1536",
-      "1450"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1300 + (5 * 21 + 15) * 2 = 1540."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 122."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [15, 19, 7, 46, 30, 16, 46, 6, 50, 50, 29], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "question": "Given the 1D integer array [28, 32, 37, 8, 40, 13, 49, 1, 27], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
     "options": [
-      "191",
       "185",
-      "170",
-      "202"
+      "145",
+      "117",
+      "162"
     ],
     "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 185."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 52 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
-    "options": [
-      "807",
-      "729",
-      "1326",
-      "755"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 52*(51)/2 = 1326. At 57% density, total edges = 755."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 145."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [36, 4, 48, 50, 29, 35, 46, 12, 39, 18], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "question": "Given the 1D integer array [39, 27, 23, 10, 50, 11, 9, 23, 33, 2, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
     "options": [
-      "166",
-      "202",
-      "237",
-      "219"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 202."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
-    "options": [
-      "102",
-      "115",
-      "351",
-      "142"
-    ],
-    "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 33% density, total edges = 115."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [42, 13, 29, 40, 15, 27], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
-    "options": [
-      "42",
-      "101",
-      "84",
-      "113"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 84."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [18, 22, 24, 45, 45, 11, 37, 21, 26], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "199",
       "171",
-      "154",
-      "136"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 154."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [12, 28, 12, 26, 39, 14, 8, 16], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
-    "options": [
-      "127",
-      "147",
-      "156",
-      "139"
-    ],
-    "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 139."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [1, 27, 3, 9, 21, 28, 39, 4, 21], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
-    "options": [
-      "78",
-      "82",
-      "61",
-      "60"
-    ],
-    "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 61."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "510",
-      "1128",
-      "438",
-      "462"
-    ],
-    "answer": 3,
-    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 41% density, total edges = 462."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[28][13] starts at base address 2300 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][6]?",
-    "options": [
-      "2420",
-      "2576",
-      "2584",
-      "2636"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (5 * 13 + 6) * 4 = 2584."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[8][27] starts at base address 2500 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][21]?",
-    "options": [
-      "2920",
-      "3224",
-      "3192",
-      "3184"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (21 * 8 + 5) * 4 = 3192."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 26, 39, 5, 43, 30, 18, 10, 14, 34, 9, 4], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "143",
-      "177",
       "160",
-      "190"
+      "177",
+      "121"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 160."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [37, 50, 28, 15, 38, 13], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [28, 4, 11, 32, 30], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "206",
-      "168",
-      "185",
-      "131"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 168."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
-    "options": [
-      "47",
-      "68",
+      "15",
+      "60",
       "54",
-      "91"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 60% density, total edges = 54."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Graph Theory",
-    "difficulty": "Medium",
-    "question": "An undirected simple graph G has 21 vertices. If the graph connectivity density is 41%, how many edges are present in G?",
-    "options": [
-      "76",
-      "107",
-      "86",
-      "210"
-    ],
-    "answer": 2,
-    "explanation": "Max edges = V*(V-1)/2 = 21*(20)/2 = 210. At 41% density, total edges = 86."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [17, 30, 37, 11, 22, 27, 35, 47], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "144",
-      "171",
-      "161",
-      "127"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 144."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[26][26] starts at base address 1400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[23][17]?",
-    "options": [
-      "5328",
-      "4528",
-      "5104",
-      "5120"
+      "43"
     ],
     "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (17 * 26 + 23) * 8 = 5120."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][24] starts at base address 1900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][1]?",
-    "options": [
-      "1903",
-      "1910",
-      "1908",
-      "1917"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (1 * 7 + 3) * 1 = 1910."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][37] starts at base address 1200 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[23][16]?",
-    "options": [
-      "2174",
-      "2170",
-      "2232",
-      "1936"
-    ],
-    "answer": 0,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (16 * 29 + 23) * 2 = 2174."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[23][34] starts at base address 2700 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[6][10]?",
-    "options": [
-      "2940",
-      "3644",
-      "3736",
-      "3636"
-    ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2700 + (10 * 23 + 6) * 4 = 3644."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [4, 3, 5, 37, 24, 32, 35], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
-    "options": [
-      "105",
-      "137",
-      "122",
-      "101"
-    ],
-    "answer": 0,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 105."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[10][25] starts at base address 1400 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[3][18]?",
-    "options": [
-      "2128",
-      "2344",
-      "2144",
-      "1832"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1400 + (3 * 25 + 18) * 8 = 2144."
-  },
-  {
-    "subject": "DSA",
-    "topic": "Prefix Sum Algorithm",
-    "difficulty": "Easy",
-    "question": "Given the 1D integer array [8, 13, 6, 35, 32], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
-    "options": [
-      "54",
-      "62",
-      "79",
-      "97"
-    ],
-    "answer": 1,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 62."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 43."
   },
   {
     "subject": "DSA",
     "topic": "Graph Theory",
     "difficulty": "Medium",
-    "question": "An undirected simple graph G has 39 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 50%, how many edges are present in G?",
     "options": [
-      "741",
-      "422",
-      "461",
-      "403"
+      "797",
+      "826",
+      "884",
+      "1653"
     ],
     "answer": 1,
-    "explanation": "Max edges = V*(V-1)/2 = 39*(38)/2 = 741. At 57% density, total edges = 422."
+    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 50% density, total edges = 826."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[7][16] starts at base address 1900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[2][14]?",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
     "options": [
-      "2252",
-      "2124",
-      "2268",
-      "2396"
+      "300",
+      "217",
+      "180",
+      "192"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (2 * 16 + 14) * 8 = 2268."
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 64% density, total edges = 192."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [7, 2, 18, 26, 45, 30], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "question": "Given the 1D integer array [48, 3, 42, 42, 24], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
     "options": [
-      "79",
-      "70",
-      "53",
-      "46"
+      "177",
+      "152",
+      "87",
+      "135"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 135."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][16] starts at base address 2100 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[14][13]?",
+    "options": [
+      "2606",
+      "2464",
+      "2570",
+      "2574"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (14 * 16 + 13) * 2 = 2574."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][33] starts at base address 2000 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[12][12]?",
+    "options": [
+      "3632",
+      "3764",
+      "2576",
+      "3624"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2000 + (12 * 33 + 12) * 4 = 3632."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 13, 10, 4, 12, 18, 46, 49, 13, 46], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "192",
+      "188",
+      "175",
+      "165"
     ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 53."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 175."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "42",
+      "49",
+      "91",
+      "63"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 54% density, total edges = 49."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][21] starts at base address 2500 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][8]?",
+    "options": [
+      "2620",
+      "2616",
+      "2564",
+      "2634"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (8 * 7 + 4) * 2 = 2620."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 23, 20, 48, 12], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "91",
+      "97",
+      "114",
+      "145"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 97."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [44, 6, 37, 28, 8, 46, 10, 16, 9], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "43",
+      "124",
+      "104",
+      "87"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 87."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [26, 46, 6, 17, 28, 10, 10, 34, 42, 9, 17, 32], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "107",
+      "133",
+      "150",
+      "143"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 44, 15, 50, 34, 33, 24], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "113",
+      "109",
+      "130",
+      "163"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 113."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 35%, how many edges are present in G?",
+    "options": [
+      "482",
+      "456",
+      "1378",
+      "535"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 35% density, total edges = 482."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 15 vertices. If the graph connectivity density is 26%, how many edges are present in G?",
+    "options": [
+      "42",
+      "27",
+      "105",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 15*(14)/2 = 105. At 26% density, total edges = 27."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "231",
+      "196",
+      "179",
+      "595"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 33% density, total edges = 196."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][30] starts at base address 1800 with each element occupying 2 bytes. If stored in column-major order, what is the memory address of A[4][25]?",
+    "options": [
+      "2554",
+      "2558",
+      "2588",
+      "2000"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (25 * 15 + 4) * 2 = 2558."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 27 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "351",
+      "160",
+      "120",
+      "133"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 27*(26)/2 = 351. At 38% density, total edges = 133."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 55%, how many edges are present in G?",
+    "options": [
+      "469",
+      "409",
+      "429",
+      "780"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 55% density, total edges = 429."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [33, 21, 43, 21, 18], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "118",
+      "139",
+      "85",
+      "135"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 118."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][27] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[18][13]?",
+    "options": [
+      "3064",
+      "3148",
+      "2836",
+      "3056"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (13 * 21 + 18) * 4 = 3064."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 44 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "337",
+      "271",
+      "293",
+      "946"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 44*(43)/2 = 946. At 31% density, total edges = 293."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [31, 25, 19, 1, 12, 33], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "77",
+      "45",
+      "76",
+      "93"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 76."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 57 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "902",
+      "1596",
+      "845",
+      "817"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 57*(56)/2 = 1596. At 53% density, total edges = 845."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][14] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[14][4]?",
+    "options": [
+      "2712",
+      "3028",
+      "2996",
+      "3000"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (14 * 14 + 4) * 2 = 3000."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 48 vertices. If the graph connectivity density is 67%, how many edges are present in G?",
+    "options": [
+      "755",
+      "803",
+      "731",
+      "1128"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 48*(47)/2 = 1128. At 67% density, total edges = 755."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 22 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "153",
+      "120",
+      "231",
+      "131"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 22*(21)/2 = 231. At 57% density, total edges = 131."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][16] starts at base address 2900 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][2]?",
+    "options": [
+      "2928",
+      "2930",
+      "2944",
+      "2904"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (2 * 14 + 2) * 1 = 2930."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][14] starts at base address 2200 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[11][7]?",
+    "options": [
+      "2375",
+      "2361",
+      "2277",
+      "2359"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (11 * 14 + 7) * 1 = 2361."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 35, 42, 40, 15], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "169",
+      "129",
+      "117",
+      "146"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 129."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 28%, how many edges are present in G?",
+    "options": [
+      "201",
+      "149",
+      "595",
+      "166"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 28% density, total edges = 166."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][37] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[20][20]?",
+    "options": [
+      "7876",
+      "7580",
+      "7564",
+      "4700"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (20 * 37 + 20) * 8 = 7580."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 34, 45, 6, 13, 36, 18, 32, 5], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "111",
+      "85",
+      "94",
+      "100"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 94."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 54%, how many edges are present in G?",
+    "options": [
+      "269",
+      "318",
+      "528",
+      "285"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 54% density, total edges = 285."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][20] starts at base address 2200 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[12][2]?",
+    "options": [
+      "3248",
+      "3168",
+      "2296",
+      "3160"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (12 * 20 + 2) * 4 = 3168."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][30] starts at base address 1200 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[6][13]?",
+    "options": [
+      "1581",
+      "1583",
+      "1612",
+      "1278"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (13 * 29 + 6) * 1 = 1583."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][27] starts at base address 1600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[6][16]?",
+    "options": [
+      "2896",
+      "1984",
+      "2984",
+      "2904"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (16 * 20 + 6) * 4 = 2904."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][13] starts at base address 2000 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[17][6]?",
+    "options": [
+      "2167",
+      "2165",
+      "2192",
+      "2102"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2000 + (6 * 25 + 17) * 1 = 2167."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[8][18] starts at base address 1000 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[1][7]?",
+    "options": [
+      "1200",
+      "1184",
+      "1344",
+      "1056"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1000 + (1 * 18 + 7) * 8 = 1200."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 47, 30, 22, 22, 31, 46, 45, 31, 32, 41, 11], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "279",
+      "233",
+      "250",
+      "198"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 233."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][11] starts at base address 2300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[1][2]?",
+    "options": [
+      "2313",
+      "2315",
+      "2322",
+      "2302"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (2 * 7 + 1) * 1 = 2315."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 15, 9, 35, 44, 38, 9], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "108",
+      "59",
+      "90",
+      "73"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 73."
   },
   {
     "subject": "DSA",
@@ -13852,152 +12242,1762 @@ window.quizData.dsa = [
     "difficulty": "Medium",
     "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 23%, how many edges are present in G?",
     "options": [
-      "121",
-      "154",
       "528",
-      "105"
+      "105",
+      "154",
+      "121"
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 23% density, total edges = 121."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[18][27] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[16][1]?",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [46, 10, 33, 35, 22, 20, 47, 25, 23, 25, 27], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
     "options": [
-      "1628",
-      "4964",
-      "4948",
-      "5180"
+      "106",
+      "89",
+      "122",
+      "43"
     ],
     "answer": 1,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (16 * 27 + 1) * 8 = 4964."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[6][22] starts at base address 1100 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[2][3]?",
-    "options": [
-      "1308",
-      "1244",
-      "1148",
-      "1260"
-    ],
-    "answer": 3,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (3 * 6 + 2) * 8 = 1260."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 89."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [34, 16, 42, 30, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "question": "Given the 1D integer array [4, 28, 36, 24, 17, 46, 24, 40, 22, 37, 42, 42], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
     "options": [
-      "134",
-      "109",
-      "92",
-      "58"
+      "258",
+      "263",
+      "241",
+      "237"
     ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 92."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 241."
   },
   {
     "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[29][34] starts at base address 2500 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[1][14]?",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
     "options": [
-      "2514",
-      "2546",
-      "2582",
-      "2548"
+      "98",
+      "128",
+      "190",
+      "108"
     ],
     "answer": 3,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2500 + (1 * 34 + 14) * 1 = 2548."
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 57% density, total edges = 108."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 3, 12, 16, 12, 26, 22, 3], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "61",
+      "31",
+      "44",
+      "60"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 44."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[20][39] starts at base address 1000 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[17][9]?",
+    "question": "A 2D array A[23][15] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[1][13]?",
+    "options": [
+      "2992",
+      "3092",
+      "3000",
+      "1852"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (13 * 23 + 1) * 4 = 3000."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [28, 3, 6, 2, 9, 3, 14, 44], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "23",
+      "68",
+      "54",
+      "51"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 51."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][13] starts at base address 2600 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][4]?",
+    "options": [
+      "3136",
+      "3256",
+      "2760",
+      "3152"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (5 * 13 + 4) * 8 = 3152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [31, 40, 30, 30, 50, 24, 7, 37], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "231",
+      "150",
+      "181",
+      "198"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 181."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 5, 28, 13, 34, 33, 39, 1], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "151",
+      "118",
+      "135",
+      "113"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 118."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 35 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "339",
+      "595",
+      "374",
+      "322"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 35*(34)/2 = 595. At 57% density, total edges = 339."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "131",
+      "107",
+      "95",
+      "276"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 39% density, total edges = 107."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][10] starts at base address 2800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[3][3]?",
+    "options": [
+      "2836",
+      "2920",
+      "2956",
+      "2912"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2800 + (3 * 9 + 3) * 4 = 2920."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][28] starts at base address 2900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[6][14]?",
+    "options": [
+      "3620",
+      "3740",
+      "3628",
+      "3236"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (6 * 28 + 14) * 4 = 3628."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 62%, how many edges are present in G?",
+    "options": [
+      "34",
+      "45",
+      "29",
+      "55"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 62% density, total edges = 34."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 53 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "521",
+      "468",
+      "442",
+      "1378"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 53*(52)/2 = 1378. At 34% density, total edges = 468."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [42, 43, 16, 21, 23, 50, 33, 49, 38], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "326",
+      "235",
+      "294",
+      "277"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 277."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [31, 9, 50, 13, 46, 23, 22, 25, 23, 16, 27, 12], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "211",
+      "242",
+      "259",
+      "265"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 242."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [11, 38, 27, 20, 33, 12, 39, 34], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "85",
+      "96",
+      "116",
+      "113"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 96."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 47 vertices. If the graph connectivity density is 48%, how many edges are present in G?",
+    "options": [
+      "518",
+      "1081",
+      "495",
+      "565"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 47*(46)/2 = 1081. At 48% density, total edges = 518."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [25, 36, 37, 16, 38, 36, 47, 29, 50, 12, 23], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "293",
+      "281",
+      "239",
+      "264"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 264."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 43%, how many edges are present in G?",
+    "options": [
+      "55",
+      "23",
+      "18",
+      "34"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 43% density, total edges = 23."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 37, 11, 29, 25, 19, 3, 8, 46, 42], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "77",
+      "120",
+      "108",
+      "91"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 91."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][22] starts at base address 2600 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[10][14]?",
+    "options": [
+      "3068",
+      "2880",
+      "3064",
+      "3112"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (10 * 22 + 14) * 2 = 3068."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[24][22] starts at base address 2400 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[3][1]?",
+    "options": [
+      "2424",
+      "2616",
+      "2808",
+      "2600"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2400 + (1 * 24 + 3) * 8 = 2616."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][25] starts at base address 2100 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[10][23]?",
+    "options": [
+      "3940",
+      "4484",
+      "4268",
+      "4284"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2100 + (10 * 25 + 23) * 8 = 4284."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 49 vertices. If the graph connectivity density is 52%, how many edges are present in G?",
+    "options": [
+      "587",
+      "660",
+      "611",
+      "1176"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 49*(48)/2 = 1176. At 52% density, total edges = 611."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [38, 49, 19, 13, 33, 8], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "125",
+      "123",
+      "68",
+      "106"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 106."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "383",
+      "343",
+      "780",
+      "323"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 44% density, total edges = 343."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 11 vertices. If the graph connectivity density is 56%, how many edges are present in G?",
+    "options": [
+      "30",
+      "41",
+      "55",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 11*(10)/2 = 55. At 56% density, total edges = 30."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[10][16] starts at base address 2900 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[5][2]?",
+    "options": [
+      "3540",
+      "2980",
+      "3556",
+      "3684"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2900 + (5 * 16 + 2) * 8 = 3556."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [32, 13, 13, 4, 39, 28, 11], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "26",
+      "58",
+      "75",
+      "71"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[12][20] starts at base address 1200 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[7][9]?",
+    "options": [
+      "2120",
+      "2104",
+      "2216",
+      "1704"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1200 + (9 * 12 + 7) * 8 = 2120."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "990",
+      "314",
+      "381",
+      "336"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 34% density, total edges = 336."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [20, 36, 29, 31, 40, 33, 15, 32], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "133",
+      "147",
+      "96",
+      "116"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 116."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 51 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "1275",
+      "434",
+      "459",
+      "510"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 51*(50)/2 = 1275. At 36% density, total edges = 459."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [48, 34, 50, 14, 1, 5, 47, 49], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "157",
+      "169",
+      "152",
+      "104"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 15, 1, 28, 7], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "46",
+      "30",
+      "29",
+      "16"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 29."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 54 vertices. If the graph connectivity density is 34%, how many edges are present in G?",
+    "options": [
+      "486",
+      "459",
+      "540",
+      "1431"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 54*(53)/2 = 1431. At 34% density, total edges = 486."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 42 vertices. If the graph connectivity density is 36%, how many edges are present in G?",
+    "options": [
+      "861",
+      "288",
+      "351",
+      "309"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 42*(41)/2 = 861. At 36% density, total edges = 309."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [42, 50, 12, 50, 3, 36, 13, 48], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "174",
+      "160",
+      "157",
+      "115"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 157."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[5][20] starts at base address 1600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][7]?",
     "options": [
       "1868",
-      "1788",
-      "1780",
-      "1612"
+      "1684",
+      "1948",
+      "1860"
     ],
-    "answer": 1,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (9 * 20 + 17) * 4 = 1788."
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (3 * 20 + 7) * 4 = 1868."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[20][21] starts at base address 2700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[4][19]?",
+    "question": "A 2D array A[17][27] starts at base address 2100 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[5][4]?",
     "options": [
-      "3004",
-      "3104",
-      "3112",
-      "3196"
+      "2392",
+      "2460",
+      "2180",
+      "2384"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2700 + (4 * 21 + 19) * 4 = 3112."
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2100 + (4 * 17 + 5) * 4 = 2392."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [11, 30, 36, 6, 19, 22, 23], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "question": "Given the 1D integer array [20, 36, 12, 40, 30, 31, 21, 33, 27, 15, 13], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
     "options": [
-      "91",
-      "119",
-      "102",
+      "250",
+      "267",
+      "230",
+      "277"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 250."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][38] starts at base address 2300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[18][11]?",
+    "options": [
+      "2591",
+      "2618",
+      "2498",
+      "2593"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (11 * 25 + 18) * 1 = 2593."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [13, 20, 38, 34, 5], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "139",
+      "122",
+      "92",
+      "105"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 105."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [37, 40, 39, 38, 5, 34, 10], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "117",
+      "154",
+      "192",
+      "171"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 154."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][39] starts at base address 2800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[14][16]?",
+    "options": [
+      "7608",
+      "7296",
+      "4592",
+      "7280"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2800 + (14 * 39 + 16) * 8 = 7296."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "options": [
+      "153",
+      "137",
+      "186",
+      "528"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 29% density, total edges = 153."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 25 vertices. If the graph connectivity density is 39%, how many edges are present in G?",
+    "options": [
+      "300",
+      "105",
+      "117",
+      "142"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 25*(24)/2 = 300. At 39% density, total edges = 117."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [50, 7, 16, 24, 12], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "73",
+      "23",
+      "89",
+      "90"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 73."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 16 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "120",
+      "88",
+      "64",
+      "72"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 16*(15)/2 = 120. At 60% density, total edges = 72."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [36, 25, 18, 25, 17, 45, 13], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "68",
+      "129",
+      "104",
       "121"
     ],
     "answer": 2,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 102."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 104."
   },
   {
     "subject": "DSA",
     "topic": "2D Arrays Address Mapping",
     "difficulty": "Hard",
-    "question": "A 2D array A[7][13] starts at base address 2200 with each element occupying 2 bytes. If stored in row-major order, what is the memory address of A[3][2]?",
+    "question": "A 2D array A[27][39] starts at base address 1000 with each element occupying 8 bytes. If stored in column-major order, what is the memory address of A[15][5]?",
     "options": [
-      "2212",
-      "2308",
-      "2282",
-      "2278"
+      "2416",
+      "1600",
+      "2184",
+      "2200"
     ],
-    "answer": 2,
-    "explanation": "Address = Base + (i * Cols + j) * Size = 2200 + (3 * 13 + 2) * 2 = 2282."
-  },
-  {
-    "subject": "DSA",
-    "topic": "2D Arrays Address Mapping",
-    "difficulty": "Hard",
-    "question": "A 2D array A[12][14] starts at base address 2300 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[10][7]?",
-    "options": [
-      "2370",
-      "2406",
-      "2394",
-      "2392"
-    ],
-    "answer": 2,
-    "explanation": "Address = Base + (j * Rows + i) * Size = 2300 + (7 * 12 + 10) * 1 = 2394."
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1000 + (5 * 27 + 15) * 8 = 2200."
   },
   {
     "subject": "DSA",
     "topic": "Prefix Sum Algorithm",
     "difficulty": "Easy",
-    "question": "Given the 1D integer array [2, 35, 43, 35, 19, 10, 32, 11, 21, 39, 26, 3], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "question": "Given the 1D integer array [46, 47, 20, 33, 49, 45, 50, 1, 30, 8, 25], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
     "options": [
-      "271",
       "290",
-      "299",
-      "273"
+      "340",
+      "307",
+      "244"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 290."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 31 vertices. If the graph connectivity density is 51%, how many edges are present in G?",
+    "options": [
+      "268",
+      "465",
+      "237",
+      "222"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 31*(30)/2 = 465. At 51% density, total edges = 237."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[24][29] starts at base address 1500 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[12][22]?",
+    "options": [
+      "4692",
+      "3612",
+      "4460",
+      "4444"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (12 * 29 + 22) * 8 = 4460."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 33 vertices. If the graph connectivity density is 27%, how many edges are present in G?",
+    "options": [
+      "142",
+      "126",
+      "175",
+      "528"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 33*(32)/2 = 528. At 27% density, total edges = 142."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [41, 23, 15, 38, 40, 7], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "157",
+      "174",
+      "197",
+      "116"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 157."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][20] starts at base address 1100 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[14][14]?",
+    "options": [
+      "2276",
+      "1884",
+      "2356",
+      "2268"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (14 * 20 + 14) * 4 = 2276."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [23, 49, 43, 8, 30, 22, 8, 20, 1, 31], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "183",
+      "160",
+      "200",
+      "191"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 183."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [29, 1, 46, 46, 40, 4, 9, 9, 3], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "183",
+      "137",
+      "170",
+      "166"
     ],
     "answer": 3,
-    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 273."
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 166."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 20 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "options": [
+      "55",
+      "190",
+      "45",
+      "75"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 20*(19)/2 = 190. At 29% density, total edges = 55."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 32%, how many edges are present in G?",
+    "options": [
+      "106",
+      "378",
+      "120",
+      "148"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 32% density, total edges = 120."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 26 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
+    "options": [
+      "94",
+      "68",
+      "55",
+      "325"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 26*(25)/2 = 325. At 21% density, total edges = 68."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[9][10] starts at base address 1500 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[3][5]?",
+    "options": [
+      "1632",
+      "1680",
+      "1560",
+      "1640"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1500 + (3 * 10 + 5) * 4 = 1640."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[29][27] starts at base address 1300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[26][3]?",
+    "options": [
+      "2032",
+      "2005",
+      "1378",
+      "2003"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1300 + (26 * 27 + 3) * 1 = 2005."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 28 vertices. If the graph connectivity density is 70%, how many edges are present in G?",
+    "options": [
+      "264",
+      "378",
+      "250",
+      "292"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 28*(27)/2 = 378. At 70% density, total edges = 264."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][34] starts at base address 1800 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][4]?",
+    "options": [
+      "1864",
+      "2144",
+      "2152",
+      "2236"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1800 + (4 * 21 + 4) * 4 = 2152."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[25][27] starts at base address 1700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[22][18]?",
+    "options": [
+      "3284",
+      "4140",
+      "4148",
+      "4256"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (22 * 27 + 18) * 4 = 4148."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][36] starts at base address 2400 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[5][29]?",
+    "options": [
+      "2980",
+      "3236",
+      "3228",
+      "3380"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2400 + (5 * 36 + 29) * 4 = 3236."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 34 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "342",
+      "393",
+      "561",
+      "359"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 34*(33)/2 = 561. At 64% density, total edges = 359."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [14, 49, 21, 4, 41, 27, 33, 23, 10, 10, 11], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "105",
+      "88",
+      "92",
+      "74"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 88."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][15] starts at base address 1400 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[12][10]?",
+    "options": [
+      "1720",
+      "1690",
+      "1520",
+      "1692"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (10 * 28 + 12) * 1 = 1692."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [25, 30, 6, 38, 8], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "116",
+      "137",
+      "74",
+      "99"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 99."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [12, 6, 38, 37, 23, 16], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "139",
+      "104",
+      "116",
+      "133"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 116."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][37] starts at base address 1400 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[18][7]?",
+    "options": [
+      "1904",
+      "2060",
+      "2144",
+      "2052"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1400 + (7 * 21 + 18) * 4 = 2060."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[16][28] starts at base address 2500 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[2][24]?",
+    "options": [
+      "2884",
+      "2886",
+      "2548",
+      "2902"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2500 + (24 * 16 + 2) * 1 = 2886."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 1, 14, 31, 11, 40, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "89",
+      "72",
+      "57",
+      "83"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 72."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 59 vertices. If the graph connectivity density is 21%, how many edges are present in G?",
+    "options": [
+      "359",
+      "1711",
+      "418",
+      "330"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 59*(58)/2 = 1711. At 21% density, total edges = 359."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [5, 47, 44, 50, 18, 14, 25, 9, 21, 14, 39], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "247",
+      "264",
+      "261",
+      "242"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 247."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 40%, how many edges are present in G?",
+    "options": [
+      "36",
+      "50",
+      "29",
+      "91"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 40% density, total edges = 36."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [15, 44, 27, 38, 34, 44, 24, 36, 49, 49, 42, 6], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "162",
+      "141",
+      "124",
+      "109"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 124."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 58 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "913",
+      "942",
+      "1000",
+      "1653"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 58*(57)/2 = 1653. At 57% density, total edges = 942."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[27][14] starts at base address 2900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[2][1]?",
+    "options": [
+      "2908",
+      "3016",
+      "3124",
+      "3008"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 2900 + (1 * 27 + 2) * 4 = 3016."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 12 vertices. If the graph connectivity density is 57%, how many edges are present in G?",
+    "options": [
+      "49",
+      "31",
+      "66",
+      "37"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 12*(11)/2 = 66. At 57% density, total edges = 37."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 44%, how many edges are present in G?",
+    "options": [
+      "145",
+      "121",
+      "109",
+      "276"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 44% density, total edges = 121."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[15][35] starts at base address 2300 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[5][14]?",
+    "options": [
+      "2487",
+      "2370",
+      "2489",
+      "2524"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2300 + (5 * 35 + 14) * 1 = 2489."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[20][17] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[3][7]?",
+    "options": [
+      "1243",
+      "1121",
+      "1263",
+      "1241"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (7 * 20 + 3) * 1 = 1243."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [46, 1, 6, 31, 40], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "115",
+      "84",
+      "38",
+      "101"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 84."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 46, 24, 6, 17, 42, 42, 26, 16], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "161",
+      "144",
+      "186",
+      "135"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 144."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [17, 3, 29, 6, 33, 16, 15, 30, 2, 17], what is the prefix sum prefix[8] value (0-indexed sum from index 0 to 8)?",
+    "options": [
+      "168",
+      "134",
+      "153",
+      "151"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 8 of the given array = 151."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [25, 9, 3, 6, 18, 15, 2, 34, 47], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "95",
+      "78",
+      "80",
+      "53"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 78."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 36 vertices. If the graph connectivity density is 38%, how many edges are present in G?",
+    "options": [
+      "221",
+      "239",
+      "630",
+      "275"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 36*(35)/2 = 630. At 38% density, total edges = 239."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [22, 3, 41, 41, 48, 10, 14, 45], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "155",
+      "172",
+      "203",
+      "133"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 155."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 1, 39, 31, 48, 7, 1, 24, 22], what is the prefix sum prefix[7] value (0-indexed sum from index 0 to 7)?",
+    "options": [
+      "186",
+      "210",
+      "151",
+      "203"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 7 of the given array = 186."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[28][24] starts at base address 1900 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[13][12]?",
+    "options": [
+      "3188",
+      "3292",
+      "2524",
+      "3196"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1900 + (13 * 24 + 12) * 4 = 3196."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 33%, how many edges are present in G?",
+    "options": [
+      "990",
+      "304",
+      "326",
+      "371"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 33% density, total edges = 326."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 22, 25, 46, 40], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "97",
+      "93",
+      "114",
+      "143"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 97."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[22][37] starts at base address 1600 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[15][27]?",
+    "options": [
+      "2005",
+      "2219",
+      "2182",
+      "2180"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1600 + (15 * 37 + 27) * 1 = 2182."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [30, 13, 47, 33, 42], what is the prefix sum prefix[3] value (0-indexed sum from index 0 to 3)?",
+    "options": [
+      "156",
+      "123",
+      "140",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 3 of the given array = 123."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[21][28] starts at base address 1700 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[1][1]?",
+    "options": [
+      "1704",
+      "1928",
+      "1808",
+      "1816"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (1 * 28 + 1) * 4 = 1816."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 14 vertices. If the graph connectivity density is 64%, how many edges are present in G?",
+    "options": [
+      "72",
+      "58",
+      "91",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 14*(13)/2 = 91. At 64% density, total edges = 58."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[7][24] starts at base address 1800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[4][6]?",
+    "options": [
+      "2616",
+      "1992",
+      "2600",
+      "2808"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (4 * 24 + 6) * 8 = 2616."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[6][27] starts at base address 1900 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[4][13]?",
+    "options": [
+      "2252",
+      "2108",
+      "2220",
+      "2228"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1900 + (13 * 6 + 4) * 4 = 2228."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[17][22] starts at base address 1800 with each element occupying 8 bytes. If stored in row-major order, what is the memory address of A[13][2]?",
+    "options": [
+      "4088",
+      "2008",
+      "4280",
+      "4104"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1800 + (13 * 22 + 2) * 8 = 4104."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[26][32] starts at base address 1100 with each element occupying 1 bytes. If stored in column-major order, what is the memory address of A[7][20]?",
+    "options": [
+      "1653",
+      "1240",
+      "1627",
+      "1625"
+    ],
+    "answer": 2,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1100 + (20 * 26 + 7) * 1 = 1627."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[19][29] starts at base address 2600 with each element occupying 4 bytes. If stored in row-major order, what is the memory address of A[13][10]?",
+    "options": [
+      "4148",
+      "4140",
+      "4264",
+      "3120"
+    ],
+    "answer": 0,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 2600 + (13 * 29 + 10) * 4 = 4148."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 56 vertices. If the graph connectivity density is 29%, how many edges are present in G?",
+    "options": [
+      "1540",
+      "418",
+      "446",
+      "502"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 56*(55)/2 = 1540. At 29% density, total edges = 446."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [35, 36, 42, 31, 28, 26], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "189",
+      "200",
+      "137",
+      "172"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 172."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[18][10] starts at base address 1600 with each element occupying 4 bytes. If stored in column-major order, what is the memory address of A[14][7]?",
+    "options": [
+      "2152",
+      "2160",
+      "1992",
+      "2232"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (j * Rows + i) * Size = 1600 + (7 * 18 + 14) * 4 = 2160."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [37, 49, 17, 9, 35, 29, 9, 45, 9, 36, 48, 36], what is the prefix sum prefix[9] value (0-indexed sum from index 0 to 9)?",
+    "options": [
+      "238",
+      "275",
+      "292",
+      "311"
+    ],
+    "answer": 1,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 9 of the given array = 275."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [10, 16, 9, 14, 40], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "25",
+      "52",
+      "35",
+      "44"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 35."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [9, 41, 17, 9, 45, 47], what is the prefix sum prefix[2] value (0-indexed sum from index 0 to 2)?",
+    "options": [
+      "67",
+      "84",
+      "58",
+      "84"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 2 of the given array = 67."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [3, 19, 14, 23, 26, 21, 29, 5, 13, 32], what is the prefix sum prefix[6] value (0-indexed sum from index 0 to 6)?",
+    "options": [
+      "164",
+      "152",
+      "132",
+      "135"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 6 of the given array = 135."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [30, 44, 26, 36, 21, 31, 11], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "174",
+      "178",
+      "157",
+      "127"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 157."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 60%, how many edges are present in G?",
+    "options": [
+      "639",
+      "594",
+      "990",
+      "572"
+    ],
+    "answer": 1,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 60% density, total edges = 594."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [36, 37, 26, 48, 35, 47, 8], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "229",
+      "246",
+      "193",
+      "276"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 229."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 24 vertices. If the graph connectivity density is 31%, how many edges are present in G?",
+    "options": [
+      "276",
+      "73",
+      "85",
+      "109"
+    ],
+    "answer": 2,
+    "explanation": "Max edges = V*(V-1)/2 = 24*(23)/2 = 276. At 31% density, total edges = 85."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 45 vertices. If the graph connectivity density is 53%, how many edges are present in G?",
+    "options": [
+      "524",
+      "569",
+      "990",
+      "502"
+    ],
+    "answer": 0,
+    "explanation": "Max edges = V*(V-1)/2 = 45*(44)/2 = 990. At 53% density, total edges = 524."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [26, 24, 8, 34, 43, 28, 2, 31, 46], what is the prefix sum prefix[4] value (0-indexed sum from index 0 to 4)?",
+    "options": [
+      "178",
+      "152",
+      "135",
+      "109"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 4 of the given array = 135."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[13][22] starts at base address 1100 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[10][10]?",
+    "options": [
+      "1352",
+      "1200",
+      "1328",
+      "1330"
+    ],
+    "answer": 3,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1100 + (10 * 22 + 10) * 1 = 1330."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [6, 7, 40, 10, 8, 47, 11], what is the prefix sum prefix[5] value (0-indexed sum from index 0 to 5)?",
+    "options": [
+      "118",
+      "135",
+      "165",
+      "112"
+    ],
+    "answer": 0,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 5 of the given array = 118."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Prefix Sum Algorithm",
+    "difficulty": "Easy",
+    "question": "Given the 1D integer array [4, 24, 15, 32, 8, 35, 46, 11, 6, 12, 30, 32], what is the prefix sum prefix[10] value (0-indexed sum from index 0 to 10)?",
+    "options": [
+      "240",
+      "253",
+      "219",
+      "223"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating prefix sum: sum up indices from 0 to 10 of the given array = 223."
+  },
+  {
+    "subject": "DSA",
+    "topic": "Graph Theory",
+    "difficulty": "Medium",
+    "question": "An undirected simple graph G has 40 vertices. If the graph connectivity density is 22%, how many edges are present in G?",
+    "options": [
+      "211",
+      "151",
+      "780",
+      "171"
+    ],
+    "answer": 3,
+    "explanation": "Max edges = V*(V-1)/2 = 40*(39)/2 = 780. At 22% density, total edges = 171."
+  },
+  {
+    "subject": "DSA",
+    "topic": "2D Arrays Address Mapping",
+    "difficulty": "Hard",
+    "question": "A 2D array A[14][32] starts at base address 1700 with each element occupying 1 bytes. If stored in row-major order, what is the memory address of A[2][4]?",
+    "options": [
+      "1800",
+      "1768",
+      "1766",
+      "1708"
+    ],
+    "answer": 1,
+    "explanation": "Address = Base + (i * Cols + j) * Size = 1700 + (2 * 32 + 4) * 1 = 1768."
   }
 ];

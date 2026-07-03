@@ -1,9 +1,9 @@
 const { genDSA, save, pad } = require('./gen_part1');
 const { genAIML, genJava, genOS } = require('./gen_part2');
-const { genCN, genCloud, genCOA, genFSD } = require('./gen_part3');
+const { genCN, genCloud, genCOA, genFSD, genDBMS } = require('./gen_part3');
 const { execSync } = require('child_process');
 
-console.log('⚡ Generating all 8 subjects (1000 questions each)...');
+console.log('⚡ Generating all 9 subjects (1000 questions each)...');
 
 const subjects = [
     { key: 'dsa', gen: genDSA },
@@ -13,7 +13,8 @@ const subjects = [
     { key: 'cn', gen: genCN },
     { key: 'cloud', gen: genCloud },
     { key: 'coa', gen: genCOA },
-    { key: 'fsd', gen: genFSD }
+    { key: 'fsd', gen: genFSD },
+    { key: 'dbms', gen: genDBMS }
 ];
 
 for (const sub of subjects) {

@@ -98,4 +98,28 @@ function genFSD() {
     return all;
 }
 
-module.exports = { genCN, genCloud, genCOA, genFSD };
+// ===================== DATABASE MANAGEMENT SYSTEMS =====================
+function genDBMS() {
+    const S = 'DBMS'; const all = [];
+    const items = [
+        { q: 'Which normal form deals with multi-valued dependencies?', c: 'Fourth Normal Form (4NF)', w: ['First Normal Form (1NF)', 'Second Normal Form (2NF)', 'Third Normal Form (3NF)'], e: '4NF removes multi-valued dependencies.', d: 'Hard' },
+        { q: 'Under ACID properties, which property ensures that all operations within a database transaction are completed successfully or none are?', c: 'Atomicity', w: ['Consistency', 'Isolation', 'Durability'], e: 'Atomicity is the "all-or-nothing" rule of transactions.', d: 'Easy' },
+        { q: 'Which database index structure is typically preferred for range query scans over disk blocks?', c: 'B+ Tree', w: ['Hash Index', 'Binary Search Tree', 'AVL Tree'], e: 'B+ Trees store values sequentially in leaf nodes linked together, optimizing range read access.', d: 'Medium' },
+        { q: 'The SQL query "SELECT name FROM Employees GROUP BY name HAVING count(*) > 1" behaves as:', c: 'Filters out unique names and lists only names that appear multiple times.', w: ['Lists all employee names once', 'Finds employees who have worked on more than 1 project', 'Triggers a syntax error since HAVING requires WHERE'], e: 'GROUP BY aggregates by name, and HAVING filters groups where the count is greater than 1.', d: 'Medium' },
+        { q: 'What does a database transaction constraint "ON DELETE CASCADE" enforce?', c: 'Automatically deletes child rows when the parent row is deleted.', w: ['Prevents deletion of parent rows', 'Sets foreign key values in child rows to default constants', 'Disables referential integrity bounds during deletion'], e: 'ON DELETE CASCADE propagates parent deletions down to referencing foreign key rows.', d: 'Medium' },
+        { q: 'In MongoDB, what is the document storage container equivalent to a relational Database Table?', c: 'Collection', w: ['Document', 'Schema', 'View'], e: 'In NoSQL database systems, collections hold multiple documents (equivalent to rows).', d: 'Easy' },
+        { q: 'What is an index in databases primarily used for?', c: 'To speed up data retrieval operations.', w: ['To encrypt table contents', 'To enforce primary key uniqueness constraints only', 'To shrink physical disc storage footprint'], e: 'Indices act like book indices, allowing rows to be searched without full table scans.', d: 'Easy' },
+        { q: 'Which concurrency control lock level permits concurrent read operations but prevents write operations?', c: 'Shared Lock (S-Lock)', w: ['Exclusive Lock (X-Lock)', 'Implicit Lock', 'Intent Lock'], e: 'Shared locks allow readers to access data in parallel, blocking writers.', d: 'Easy' },
+        { q: 'A direct constraint mapping between a Primary Key and a Foreign Key represents:', c: 'Referential Integrity', w: ['Domain Integrity', 'Entity Integrity', 'Key Value Isolation'], e: 'Referential integrity requires that pointer FK values must exist in the target PK column.', d: 'Easy' },
+        { q: 'In SQL, which join type returns all rows from the left table and only matching rows from the right table?', c: 'LEFT JOIN', w: ['INNER JOIN', 'RIGHT JOIN', 'FULL JOIN'], e: 'LEFT JOIN preserves all entries from the left dataset, returning NULLs on the right if unmatched.', d: 'Easy' },
+        { q: 'Which property of ACID prevents transactions from reading uncommitted modifications from other transactions?', c: 'Isolation', w: ['Atomicity', 'Consistency', 'Durability'], e: 'Isolation levels determine row visibility across competing operations.', d: 'Easy' },
+        { q: 'What normal form requires all non-key attributes to be fully functionally dependent on the primary key (no partial dependencies)?', c: 'Second Normal Form (2NF)', w: ['First Normal Form (1NF)', 'Third Normal Form (3NF)', 'Boyce-Codd Normal Form (BCNF)'], e: '2NF removes partial key dependencies.', d: 'Medium' },
+        { q: 'What does BCNF stand for in normalization theory?', c: 'Boyce-Codd Normal Form', w: ['Binary Coding Network Format', 'Byzantine Concurrency Node Framework', 'Balanced Cache Node Fraction'], e: 'Boyce-Codd Normal Form is a strict version of 3NF.', d: 'Medium' },
+        { q: 'In NoSQL database architectures, what is the main benefit of document scaling over SQL databases?', c: 'Horizontal scalability with schema-less elasticity', w: ['Forced strongly consistent reads natively', 'Higher normal form representation configurations', 'Smaller total file system storage usage footprint'], e: 'NoSQL document models partition data horizontally across clusters easily.', d: 'Medium' },
+        { q: 'Which isolation level prevents Dirty Reads but allows Non-Repeatable Reads?', c: 'Read Committed', w: ['Read Uncommitted', 'Repeatable Read', 'Serializable'], e: 'Read Committed ensures only committed modifications are read, but reads can vary if updated during execution.', d: 'Hard' }
+    ];
+    items.forEach(it => all.push(Q(S, 'DBMS', it.d, it.q, it.c, it.w, it.e)));
+    return all;
+}
+
+module.exports = { genCN, genCloud, genCOA, genFSD, genDBMS };

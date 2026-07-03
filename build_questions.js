@@ -106,9 +106,9 @@ function loadBank(filename) {
 // ============================================================
 // MAIN
 // ============================================================
-const SUBJECTS = ['dsa', 'aiml', 'java', 'os', 'cn', 'cloud', 'coa', 'fsd'];
+const SUBJECTS = ['dsa', 'aiml', 'java', 'os', 'cn', 'cloud', 'coa', 'fsd', 'dbms'];
 
-console.log('🚀 Building 8000 questions...\n');
+console.log('🚀 Building 9000 questions...\n');
 
 let totalBias = 0;
 let totalQs = 0;
