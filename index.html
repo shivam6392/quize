@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen Placement Prep - 8000 Questions</title>
+    <meta name="description"
+        content="Master placement interviews with 8000 unique questions across 8 core CS subjects. Practice by subject, difficulty, or take full assessments.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +41,24 @@
                     <p>Select a mode below to generate your customized mock assessment.</p>
                 </div>
 
-                <div class="mode-cards">
+                <!-- Resume Quiz Section -->
+                <div class="resume-section" id="resume-section">
+                    <div class="resume-card">
+                        <div class="resume-icon">🔄</div>
+                        <div class="resume-info">
+                            <h3>Resume Previous Quiz</h3>
+                            <p>Enter your 4-digit code to continue from where you left off.</p>
+                        </div>
+                        <div class="resume-input-group">
+                            <input type="text" id="resume-code-input" maxlength="4" placeholder="Enter 4-digit code"
+                                class="resume-input">
+                            <button class="btn-primary" id="resume-btn">Resume</button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Mode Cards -->
+                <div class="mode-cards">
                     <div class="mode-card" data-mode="quick">
                         <div class="mode-icon">⚡</div>
                         <h2>Quick Mode</h2>
@@ -61,12 +79,39 @@
                         <p class="mode-desc">8,000 Questions Total (All). The ultimate OA simulation.</p>
                         <button class="btn-primary start-btn">Start Deep</button>
                     </div>
-
                 </div>
 
+                <!-- Difficulty-Level Assessment -->
                 <div class="section-title">
-                    <h2>Practice by Subject</h2>
-                    <p>Focus your prep on a specific technical domain (100 questions per session).</p>
+                    <h2>Assessment by Difficulty</h2>
+                    <p>Filter all 8000 questions by difficulty level.</p>
+                </div>
+
+                <div class="difficulty-grid">
+                    <div class="difficulty-card" data-difficulty="Easy">
+                        <div class="diff-icon diff-easy">🟢</div>
+                        <h3>Easy</h3>
+                        <p class="diff-desc">Foundation-level questions for quick confidence building.</p>
+                        <button class="btn-diff btn-diff-easy start-diff-btn">Start Easy</button>
+                    </div>
+                    <div class="difficulty-card" data-difficulty="Medium">
+                        <div class="diff-icon diff-medium">🟡</div>
+                        <h3>Medium</h3>
+                        <p class="diff-desc">Intermediate problems that test real understanding.</p>
+                        <button class="btn-diff btn-diff-medium start-diff-btn">Start Medium</button>
+                    </div>
+                    <div class="difficulty-card" data-difficulty="Hard">
+                        <div class="diff-icon diff-hard">🔴</div>
+                        <h3>Hard</h3>
+                        <p class="diff-desc">Advanced challenges for top-tier placement preparation.</p>
+                        <button class="btn-diff btn-diff-hard start-diff-btn">Start Hard</button>
+                    </div>
+                </div>
+
+                <!-- Subject-Wise Assessment -->
+                <div class="section-title">
+                    <h2>Full Assessment by Subject</h2>
+                    <p>Complete 1,000 question assessment on a single subject.</p>
                 </div>
 
                 <div class="subject-grid">
@@ -74,48 +119,105 @@
                         <div class="subject-icon">💻</div>
                         <h3>DSA</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="aiml">
                         <div class="subject-icon">🤖</div>
                         <h3>AI / ML</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="java">
                         <div class="subject-icon">☕</div>
                         <h3>Java</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="os">
                         <div class="subject-icon">📁</div>
                         <h3>OS</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="cn">
                         <div class="subject-icon">🌐</div>
                         <h3>CN</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="cloud">
                         <div class="subject-icon">☁️</div>
                         <h3>Cloud</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="coa">
                         <div class="subject-icon">🔌</div>
                         <h3>COA</h3>
                         <span class="subject-count">1,000 Qs</span>
-                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
                     </div>
                     <div class="subject-card" data-subject="fsd">
                         <div class="subject-icon">🛠️</div>
                         <h3>Full Stack</h3>
                         <span class="subject-count">1,000 Qs</span>
+                        <button class="btn-secondary start-assess-btn">Full Assessment</button>
+                    </div>
+                </div>
+
+                <!-- Quick Practice by Subject (100 Qs) -->
+                <div class="section-title">
+                    <h2>Quick Practice by Subject</h2>
+                    <p>100 random questions from a specific domain for quick practice.</p>
+                </div>
+
+                <div class="subject-grid">
+                    <div class="subject-card" data-subject="dsa">
+                        <div class="subject-icon">💻</div>
+                        <h3>DSA</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="aiml">
+                        <div class="subject-icon">🤖</div>
+                        <h3>AI / ML</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="java">
+                        <div class="subject-icon">☕</div>
+                        <h3>Java</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="os">
+                        <div class="subject-icon">📁</div>
+                        <h3>OS</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="cn">
+                        <div class="subject-icon">🌐</div>
+                        <h3>CN</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="cloud">
+                        <div class="subject-icon">☁️</div>
+                        <h3>Cloud</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="coa">
+                        <div class="subject-icon">🔌</div>
+                        <h3>COA</h3>
+                        <span class="subject-count">100 Qs</span>
+                        <button class="btn-secondary start-sub-btn">Start Practice</button>
+                    </div>
+                    <div class="subject-card" data-subject="fsd">
+                        <div class="subject-icon">🛠️</div>
+                        <h3>Full Stack</h3>
+                        <span class="subject-count">100 Qs</span>
                         <button class="btn-secondary start-sub-btn">Start Practice</button>
                     </div>
                 </div>
@@ -133,8 +235,11 @@
                             <div class="progress-fill" id="progress-fill"></div>
                         </div>
                     </div>
-                    <div class="score-pill">
-                        Score: <span id="current-score">0</span>
+                    <div class="quiz-header-right">
+                        <div class="score-pill">
+                            Score: <span id="current-score">0</span>
+                        </div>
+                        <button class="btn-save" id="save-quit-btn">💾 Save & Quit</button>
                     </div>
                 </div>
 
@@ -166,8 +271,26 @@
         </main>
     </div>
 
+    <!-- Save Modal -->
+    <div class="modal-overlay" id="save-modal">
+        <div class="modal-card">
+            <h2>💾 Save Your Progress</h2>
+            <p class="modal-desc">Enter your name to save. You'll get a 4-digit code to resume later.</p>
+            <input type="text" id="save-name-input" placeholder="Enter your name" class="modal-input" maxlength="30">
+            <button class="btn-primary" id="save-confirm-btn">Save & Get Code</button>
+
+            <div class="code-display" id="code-display" style="display:none;">
+                <p>Your resume code is:</p>
+                <div class="code-value" id="code-value">0000</div>
+                <p class="code-hint">📝 Memorize or write down this code. You will need it to resume.</p>
+                <button class="btn-primary" id="save-done-btn">Got It, Quit</button>
+            </div>
+
+            <button class="btn-cancel" id="save-cancel-btn">Cancel</button>
+        </div>
+    </div>
+
     <!-- Data Files -->
-    <!-- We assign global array window.quizData in these files -->
     <script>window.quizData = {};</script>
     <script src="data/dsa.js"></script>
     <script src="data/aiml.js"></script>

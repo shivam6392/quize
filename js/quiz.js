@@ -4,12 +4,13 @@ let currentQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 let isAnswered = false;
+let currentSessionMode = ''; // track mode for save/resume
 
-// Mode targets are the desired items per subject.
+// Mode targets
 const MODE_TOTALS = {
     quick: 1000,
     standard: 2500,
-    deep: 8000 // 1000 per subject for 8 subjects
+    deep: 8000
 };
 
 // DOM Elements
@@ -28,7 +29,11 @@ const explanationBox = document.getElementById('explanation-box');
 const explanationText = document.getElementById('explanation-text');
 const feedbackTitle = document.getElementById('feedback-title');
 
-// Listeners for mode start
+// ============================================================
+// EVENT LISTENERS
+// ============================================================
+
+// Mode start buttons (Quick, Standard, Deep)
 document.querySelectorAll('.start-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         const mode = e.target.closest('.mode-card').getAttribute('data-mode');
@@ -36,7 +41,7 @@ document.querySelectorAll('.start-btn').forEach(btn => {
     });
 });
 
-// Listeners for subject-specific practice start
+// Subject-specific quick practice (100 Qs)
 document.querySelectorAll('.start-sub-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         const subject = e.target.closest('.subject-card').getAttribute('data-subject');
@@ -44,12 +49,170 @@ document.querySelectorAll('.start-sub-btn').forEach(btn => {
     });
 });
 
+// Subject full assessment (1000 Qs)
+document.querySelectorAll('.start-assess-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const subject = e.target.closest('.subject-card').getAttribute('data-subject');
+        initQuiz('assessment', subject);
+    });
+});
+
+// Difficulty-level assessment
+document.querySelectorAll('.start-diff-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const difficulty = e.target.closest('.difficulty-card').getAttribute('data-difficulty');
+        initQuiz('difficulty', null, difficulty);
+    });
+});
+
+// Home button
 document.getElementById('home-btn').addEventListener('click', () => {
     resultScreen.classList.remove('active');
     setupScreen.classList.add('active');
 });
 
-// Utility: Shuffle Array
+// ============================================================
+// SAVE & RESUME LOGIC
+// ============================================================
+
+const saveModal = document.getElementById('save-modal');
+const saveNameInput = document.getElementById('save-name-input');
+const saveConfirmBtn = document.getElementById('save-confirm-btn');
+const saveCancelBtn = document.getElementById('save-cancel-btn');
+const saveDoneBtn = document.getElementById('save-done-btn');
+const codeDisplay = document.getElementById('code-display');
+const codeValue = document.getElementById('code-value');
+const saveQuitBtn = document.getElementById('save-quit-btn');
+const resumeBtn = document.getElementById('resume-btn');
+const resumeCodeInput = document.getElementById('resume-code-input');
+
+// Generate a unique 4-digit code
+function generate4DigitCode() {
+    // Check existing codes in localStorage to avoid collisions
+    const existing = new Set();
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.startsWith('quizSave_')) {
+            existing.add(key.replace('quizSave_', ''));
+        }
+    }
+    let code;
+    do {
+        code = Math.floor(1000 + Math.random() * 9000).toString();
+    } while (existing.has(code));
+    return code;
+}
+
+// Save progress to localStorage
+function saveProgress(name) {
+    const code = generate4DigitCode();
+    const saveData = {
+        name: name,
+        code: code,
+        mode: currentSessionMode,
+        score: score,
+        currentIndex: currentQuestionIndex,
+        questions: currentQuestions,
+        timestamp: Date.now()
+    };
+    localStorage.setItem('quizSave_' + code, JSON.stringify(saveData));
+    return code;
+}
+
+// Resume progress from localStorage
+function resumeProgress(code) {
+    const key = 'quizSave_' + code;
+    const dataStr = localStorage.getItem(key);
+    if (!dataStr) return false;
+
+    try {
+        const data = JSON.parse(dataStr);
+        currentQuestions = data.questions;
+        currentQuestionIndex = data.currentIndex;
+        score = data.score;
+        currentSessionMode = data.mode;
+
+        currentScoreElement.innerText = score;
+
+        // Switch screens
+        setupScreen.classList.remove('active');
+        resultScreen.classList.remove('active');
+        quizScreen.classList.add('active');
+
+        loadQuestion();
+
+        // Remove the save after successful resume
+        localStorage.removeItem(key);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
+// Save & Quit button click
+saveQuitBtn.addEventListener('click', () => {
+    saveModal.classList.add('active');
+    saveNameInput.value = '';
+    codeDisplay.style.display = 'none';
+    saveConfirmBtn.style.display = 'block';
+    saveNameInput.style.display = 'block';
+    saveCancelBtn.style.display = 'block';
+    saveNameInput.focus();
+});
+
+// Save confirm click
+saveConfirmBtn.addEventListener('click', () => {
+    const name = saveNameInput.value.trim();
+    if (!name) {
+        saveNameInput.style.border = '2px solid var(--error)';
+        saveNameInput.placeholder = 'Please enter your name!';
+        return;
+    }
+    const code = saveProgress(name);
+    codeValue.innerText = code;
+    codeDisplay.style.display = 'block';
+    saveConfirmBtn.style.display = 'none';
+    saveNameInput.style.display = 'none';
+    saveCancelBtn.style.display = 'none';
+});
+
+// Save done — quit to home
+saveDoneBtn.addEventListener('click', () => {
+    saveModal.classList.remove('active');
+    quizScreen.classList.remove('active');
+    setupScreen.classList.add('active');
+});
+
+// Cancel save
+saveCancelBtn.addEventListener('click', () => {
+    saveModal.classList.remove('active');
+});
+
+// Resume button click
+resumeBtn.addEventListener('click', () => {
+    const code = resumeCodeInput.value.trim();
+    if (code.length !== 4) {
+        resumeCodeInput.style.border = '2px solid var(--error)';
+        resumeCodeInput.placeholder = 'Must be 4 digits!';
+        return;
+    }
+    const success = resumeProgress(code);
+    if (!success) {
+        resumeCodeInput.value = '';
+        resumeCodeInput.style.border = '2px solid var(--error)';
+        resumeCodeInput.placeholder = 'Invalid code! Try again.';
+    }
+});
+
+// Allow Enter key on resume input
+resumeCodeInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') resumeBtn.click();
+});
+
+// ============================================================
+// UTILITY
+// ============================================================
+
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
     while (currentIndex !== 0) {
@@ -60,33 +223,54 @@ function shuffle(array) {
     return array;
 }
 
-// Initialization
-function initQuiz(mode, subjectKey = null) {
+// ============================================================
+// INITIALIZATION
+// ============================================================
+
+function initQuiz(mode, subjectKey = null, difficultyLevel = null) {
     currentQuestions = [];
+    currentSessionMode = mode;
 
     if (mode === 'subject' && subjectKey) {
+        // Quick practice: 100 random from a subject
         let qs = window.quizData[subjectKey];
         if (qs && qs.length > 0) {
-            // Take 100 random questions from this specific subject
             currentQuestions = shuffle([...qs]).slice(0, 100);
         }
+    } else if (mode === 'assessment' && subjectKey) {
+        // Full assessment: all 1000 from a subject
+        let qs = window.quizData[subjectKey];
+        if (qs && qs.length > 0) {
+            currentQuestions = shuffle([...qs]);
+        }
+    } else if (mode === 'difficulty' && difficultyLevel) {
+        // Difficulty filter: collect matching questions from all subjects
+        const subjectKeys = Object.keys(window.quizData);
+        subjectKeys.forEach(key => {
+            let qs = window.quizData[key];
+            if (qs && qs.length > 0) {
+                qs.forEach(q => {
+                    if (q.difficulty && q.difficulty.toLowerCase() === difficultyLevel.toLowerCase()) {
+                        currentQuestions.push(q);
+                    }
+                });
+            }
+        });
+        currentQuestions = shuffle(currentQuestions);
     } else {
+        // Mode: quick / standard / deep
         let targetTotal = MODE_TOTALS[mode];
         const subjectKeys = Object.keys(window.quizData);
         let itemsPerSubject = Math.ceil(targetTotal / subjectKeys.length);
 
-        // Collect questions from all subjects securely
         subjectKeys.forEach(key => {
             let qs = window.quizData[key];
             if (qs && qs.length > 0) {
-                // Shuffle a copy of the subject's questions
                 let shuffledQs = shuffle([...qs]);
-                // Take the requested amount, or as many as available
                 currentQuestions = currentQuestions.concat(shuffledQs.slice(0, itemsPerSubject));
             }
         });
 
-        // Shuffle the final batched array so subjects are mixed seamlessly
         currentQuestions = shuffle(currentQuestions);
     }
 
@@ -105,6 +289,10 @@ function initQuiz(mode, subjectKey = null) {
 
     loadQuestion();
 }
+
+// ============================================================
+// QUIZ FLOW
+// ============================================================
 
 function loadQuestion() {
     isAnswered = false;
@@ -162,7 +350,7 @@ function checkAnswer(selectedIndex, btnElement) {
     explanationText.innerText = currentQ.explanation || "No explanation provided.";
     explanationBox.style.display = 'block';
 
-    // Auto Advance after 1.8 seconds for incorrect, 0.8s for correct
+    // Auto Advance after 0.8s for correct, 1.8s for incorrect
     const delay = isCorrect ? 800 : 1800;
 
     setTimeout(() => {
